@@ -1,4 +1,4 @@
-/*
+ï»¿/*
 * All or portions of this file Copyright (c) Amazon.com, Inc. or its affiliates or
 * its licensors.
 *
@@ -111,7 +111,7 @@ namespace LmbrCentral
         virtual float GetFallOffDirLatitude() { return FLT_MAX; }
         /**
          * Sets vertical fall off direction. Controls the latitude of the world space fall off direction of the fog. 
-         * A value of 90° lets the fall off direction point upwards in world space (respectively, -90° points downwards).
+         * A value of 90?lets the fall off direction point upwards in world space (respectively, -90?points downwards).
          */
         virtual void SetFallOffDirLatitude(float fallOffDirLatitude) {};
 

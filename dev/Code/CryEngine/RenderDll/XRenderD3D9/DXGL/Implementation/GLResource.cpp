@@ -1,4 +1,4 @@
-/*
+ï»¿/*
 * All or portions of this file Copyright (c) Amazon.com, Inc. or its affiliates or
 * its licensors.
 *
@@ -2614,7 +2614,7 @@ namespace NCryOpenGL
             uint32 glVersion = pContext->GetDevice()->GetFeatureSpec().m_kVersion.ToUint();
             if (DXGLES && glVersion == DXGLES_VERSION_30 && gRenDev->GetFeatures() & RFT_HW_QUALCOMM)
             {
-                // OpenGLES 3.0 Qualcomm driver has a bug that rotates the image 90° when doing a
+                // OpenGLES 3.0 Qualcomm driver has a bug that rotates the image 90?when doing a
                 // glBlitFramebuffer into the default framebuffer when in landscape mode. Because of this we
                 // do the blitting using a shader instead.
                 if (!m_kInputFBOColorTextureView)
