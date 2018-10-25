@@ -87,7 +87,7 @@ namespace HierarchyHelpers
         const QPoint* optionalPos)
     {
         QAction* action = new QAction(QIcon(":/Icons/Eye_Open.png"),
-                QString("&Empty element%1").arg(!addAtRoot && selectedItems.size() > 1 ? "s" : ""),
+                QString(QObject::tr("&Empty element%1")).arg(!addAtRoot && selectedItems.size() > 1 ? "s" : ""),
                 hierarchy);
         QObject::connect(action,
             &QAction::triggered,

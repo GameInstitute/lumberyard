@@ -21,6 +21,11 @@
         <source>New sequence name:</source>
         <translation>新序列名称:</translation>
     </message>
+    <message>
+        <location filename="../../Plugins/UiCanvasEditor/Animation/UiAnimViewNewSequenceDialog.cpp" line="29"/>
+        <source>Add New Sequence</source>
+        <translation>添加新序列</translation>
+    </message>
 </context>
 <context>
     <name>CUiAVSequenceProps</name>
@@ -104,6 +109,11 @@
         <translation>曲线编辑器</translation>
     </message>
     <message>
+        <location filename="../../Plugins/UiCanvasEditor/Animation/UiAnimViewDialog.cpp" line="264"/>
+        <source>Sequence/Node:</source>
+        <translation>序列/节点:</translation>
+    </message>
+    <message>
         <location filename="../../Plugins/UiCanvasEditor/Animation/UiAnimViewDialog.cpp" line="265"/>
         <source>Add Sequence</source>
         <translation>添加序列</translation>
@@ -134,6 +144,11 @@
         <translation>切换禁用</translation>
     </message>
     <message>
+        <location filename="../../Plugins/UiCanvasEditor/Animation/UiAnimViewDialog.cpp" line="301"/>
+        <source>View:</source>
+        <translation>视图:</translation>
+    </message>
+    <message>
         <location filename="../../Plugins/UiCanvasEditor/Animation/UiAnimViewDialog.cpp" line="302"/>
         <source>Track Editor</source>
         <translation>轨迹编辑器</translation>
@@ -142,6 +157,11 @@
         <location filename="../../Plugins/UiCanvasEditor/Animation/UiAnimViewDialog.cpp" line="315"/>
         <source>Both</source>
         <translation>两者</translation>
+    </message>
+    <message>
+        <location filename="../../Plugins/UiCanvasEditor/Animation/UiAnimViewDialog.cpp" line="324"/>
+        <source>Play:</source>
+        <translation>播放:</translation>
     </message>
     <message>
         <location filename="../../Plugins/UiCanvasEditor/Animation/UiAnimViewDialog.cpp" line="325"/>
@@ -193,6 +213,11 @@
         <location filename="../../Plugins/UiCanvasEditor/Animation/UiAnimViewDialog.cpp" line="423"/>
         <source>Redo</source>
         <translation>恢复</translation>
+    </message>
+    <message>
+        <location filename="../../Plugins/UiCanvasEditor/Animation/UiAnimViewDialog.cpp" line="436"/>
+        <source>Keys:</source>
+        <translation>关键帧:</translation>
     </message>
     <message>
         <location filename="../../Plugins/UiCanvasEditor/Animation/UiAnimViewDialog.cpp" line="437"/>
@@ -285,6 +310,16 @@
         <translation>自定义&amp;轨迹颜色...</translation>
     </message>
     <message>
+        <location filename="../../Plugins/UiCanvasEditor/Animation/UiAnimViewDialog.cpp" line="968"/>
+        <source>UI Animation</source>
+        <translation>UI动画</translation>
+    </message>
+    <message>
+        <location filename="../../Plugins/UiCanvasEditor/Animation/UiAnimViewDialog.cpp" line="968"/>
+        <source>Delete current sequence?</source>
+        <translation>删除当前序列?</translation>
+    </message>
+    <message>
         <location filename="../../Plugins/UiCanvasEditor/Animation/UiAnimViewDialog.cpp" line="1387"/>
         <source>Frame rate for frame snapping</source>
         <translation>用于帧对齐的帧率</translation>
@@ -351,6 +386,32 @@
     </message>
 </context>
 <context>
+    <name>ComponentButton</name>
+    <message>
+        <location filename="../../Plugins/UiCanvasEditor/ComponentButton.cpp" line="20"/>
+        <source>Add Component...</source>
+        <translation>添加组件...</translation>
+    </message>
+</context>
+<context>
+    <name>CoordinateSystemToolbarSection</name>
+    <message>
+        <location filename="../../Plugins/UiCanvasEditor/CoordinateSystemToolbarSection.cpp" line="30"/>
+        <source>Snap to grid</source>
+        <translation>吸附到网格</translation>
+    </message>
+    <message>
+        <location filename="../../Plugins/UiCanvasEditor/CoordinateSystemToolbarSection.cpp" line="34"/>
+        <source>Reference coordinate system (%1)</source>
+        <translation>参考坐标系 (%1)</translation>
+    </message>
+    <message>
+        <location filename="../../Plugins/UiCanvasEditor/CoordinateSystemToolbarSection.cpp" line="62"/>
+        <source>Toggle snap to grid (%1)</source>
+        <translation>切换吸附到网格 (%1)</translation>
+    </message>
+</context>
+<context>
     <name>EditorWindow</name>
     <message>
         <location filename="../../Plugins/UiCanvasEditor/EditorWindow.cpp" line="178"/>
@@ -361,6 +422,31 @@
         <location filename="../../Plugins/UiCanvasEditor/EditorWindow.cpp" line="185"/>
         <source>New Canvas (Ctrl+N)</source>
         <translation>新建画布 (Ctrl+N)</translation>
+    </message>
+    <message>
+        <location filename="../../Plugins/UiCanvasEditor/EditorWindow.cpp" line="231"/>
+        <source>Hierarchy</source>
+        <translation>层次</translation>
+    </message>
+    <message>
+        <location filename="../../Plugins/UiCanvasEditor/EditorWindow.cpp" line="241"/>
+        <source>Properties</source>
+        <translation>属性</translation>
+    </message>
+    <message>
+        <location filename="../../Plugins/UiCanvasEditor/EditorWindow.cpp" line="250"/>
+        <source>Animation Editor</source>
+        <translation>动画编辑器</translation>
+    </message>
+    <message>
+        <location filename="../../Plugins/UiCanvasEditor/EditorWindow.cpp" line="259"/>
+        <source>Action Log</source>
+        <translation>操作日志</translation>
+    </message>
+    <message>
+        <location filename="../../Plugins/UiCanvasEditor/EditorWindow.cpp" line="268"/>
+        <source>Animation List</source>
+        <translation>动画列表</translation>
     </message>
     <message>
         <location filename="../../Plugins/UiCanvasEditor/EditorWindow.cpp" line="506"/>
@@ -432,6 +518,11 @@ Would you still like to save to this location?</source>
         <location filename="../../Plugins/UiCanvasEditor/EditorWindow.cpp" line="1556"/>
         <source>The current UI canvas is still running slice operations. Please wait until complete before changing tabs.</source>
         <translation>当前的UI画布仍在运行slice操作。 请等到完成后再更改标签。</translation>
+    </message>
+    <message>
+        <location filename="../../Plugins/UiCanvasEditor/EditorWindow.cpp" line="1582"/>
+        <source>Copy Full Path</source>
+        <translation>复制全部路径</translation>
     </message>
     <message>
         <location filename="../../Plugins/UiCanvasEditor/EditorMenu.cpp" line="53"/>
@@ -642,6 +733,52 @@ Would you still like to save to this location?</source>
     </message>
 </context>
 <context>
+    <name>PreviewAnimationList</name>
+    <message>
+        <location filename="../../Plugins/UiCanvasEditor/PreviewAnimationList.cpp" line="93"/>
+        <source>&amp;View</source>
+        <translation>&amp;视图</translation>
+    </message>
+</context>
+<context>
+    <name>PreviewToolbar</name>
+    <message>
+        <location filename="../../Plugins/UiCanvasEditor/PreviewToolbar.cpp" line="26"/>
+        <source>The current size of the viewport</source>
+        <translation>视口的当前大小</translation>
+    </message>
+    <message>
+        <location filename="../../Plugins/UiCanvasEditor/PreviewToolbar.cpp" line="31"/>
+        <source>Preview canvas size: </source>
+        <translation>预览画布大小: </translation>
+    </message>
+    <message>
+        <location filename="../../Plugins/UiCanvasEditor/PreviewToolbar.cpp" line="37"/>
+        <source>The scale used to fit the canvas in the viewport</source>
+        <translation>用于视口中适应画布的缩放比例</translation>
+    </message>
+    <message>
+        <location filename="../../Plugins/UiCanvasEditor/PreviewToolbar.cpp" line="46"/>
+        <source>End Preview</source>
+        <translation>结束预览</translation>
+    </message>
+    <message>
+        <location filename="../../Plugins/UiCanvasEditor/PreviewToolbar.cpp" line="62"/>
+        <source>Switch back to Edit mode</source>
+        <translation>切换回编辑模式</translation>
+    </message>
+    <message>
+        <location filename="../../Plugins/UiCanvasEditor/PreviewToolbar.cpp" line="76"/>
+        <source>Viewport size: %1 x %2</source>
+        <translation>视口大小: %1 x %2</translation>
+    </message>
+    <message>
+        <location filename="../../Plugins/UiCanvasEditor/PreviewToolbar.cpp" line="82"/>
+        <source>Canvas scale: %1%</source>
+        <translation>画布大小: %1%</translation>
+    </message>
+</context>
+<context>
     <name>PropertyUiParticleColorKeyframeCtrl</name>
     <message>
         <location filename="../../Plugins/UiCanvasEditor/PropertyHandlerUiParticleColorKeyframe.cpp" line="48"/>
@@ -800,6 +937,21 @@ Are you sure you want to detach the selected instances?</source>
         <location filename="../../Plugins/UiCanvasEditor/UiSliceManager.cpp" line="960"/>
         <source>Cancel</source>
         <translation>取消</translation>
+    </message>
+    <message>
+        <location filename="../../Plugins/UiCanvasEditor/HierarchyHelpers.cpp" line="90"/>
+        <source>&amp;Empty element%1</source>
+        <translation>&amp;空元素%1</translation>
+    </message>
+    <message>
+        <location filename="../../Plugins/UiCanvasEditor/PrefabHelpers.cpp" line="22"/>
+        <source>(Deprecated) Save as Prefab...</source>
+        <translation>(废弃) 另存为预制...</translation>
+    </message>
+    <message>
+        <location filename="../../Plugins/UiCanvasEditor/PrefabHelpers.cpp" line="142"/>
+        <source>(Deprecated) Element%1 from prefab</source>
+        <translation>(废弃) 来自预制的元素%1</translation>
     </message>
 </context>
 <context>

@@ -26,7 +26,7 @@ CUiAVNewSequenceDialog::CUiAVNewSequenceDialog(QWidget* parent)
 {
     ui->setupUi(this);
     connect(ui->buttonBox, &QDialogButtonBox::accepted, this, &CUiAVNewSequenceDialog::OnOK);
-    setWindowTitle("Add New Sequence");
+	setWindowTitle(tr("Add New Sequence"));
 }
 
 CUiAVNewSequenceDialog::~CUiAVNewSequenceDialog()

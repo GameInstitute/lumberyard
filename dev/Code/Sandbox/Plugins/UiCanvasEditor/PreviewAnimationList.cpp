@@ -90,7 +90,7 @@ QSize PreviewAnimationList::sizeHint() const
 
 void PreviewAnimationList::AddMenuItems()
 {
-    QMenu* menu = menuBar()->addMenu("&View");
+    QMenu* menu = menuBar()->addMenu(tr("&View"));
     menu->setStyleSheet(UICANVASEDITOR_QMENU_ITEM_DISABLED_STYLESHEET);
 
     QList<QToolBar*> list = findChildren<QToolBar*>();

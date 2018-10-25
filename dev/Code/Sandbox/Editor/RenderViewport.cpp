@@ -2032,13 +2032,13 @@ bool CRenderViewport::AddCameraMenuItems(QMenu* menu)
         menu->addSeparator();
     }
 
-    AddCheckbox(menu, "Lock Camera Movement", &m_bLockCameraMovement);
+    AddCheckbox(menu, tr("Lock Camera Movement"), &m_bLockCameraMovement);
     menu->addSeparator();
 
     // Camera Sub menu
     QMenu* customCameraMenu = menu->addMenu(tr("Camera"));
 
-    QAction* action = customCameraMenu->addAction("Editor Camera");
+    QAction* action = customCameraMenu->addAction(tr("Editor Camera"));
     action->setCheckable(true);
     action->setChecked(m_viewSourceType == ViewSourceType::None);
     connect(action, &QAction::triggered, this, &CRenderViewport::SetDefaultCamera);

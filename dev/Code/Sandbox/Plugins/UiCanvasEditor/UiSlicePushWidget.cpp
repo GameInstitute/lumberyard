@@ -576,11 +576,11 @@ namespace UiCanvasEditor
 
             if (item->m_isEntityRemoval)
             {
-                m_infoLabel->setText(QString("Remove entity \"%1\" from slice:").arg(item->m_entity->GetName().c_str()));
+                m_infoLabel->setText(QString(tr("Remove entity \"%1\" from slice:")).arg(item->m_entity->GetName().c_str()));
             }
             else
             {
-                m_infoLabel->setText(QString("Choose target slice for %1\"%2\":")
+                m_infoLabel->setText(QString(tr("Choose target slice for %1\"%2\":"))
                     .arg(isLeaf ? "" : "children of ")
                     .arg((item->parent() == nullptr) ? item->m_entity->GetName().c_str() : GetNodeDisplayName(*item->m_node).c_str()));
             }

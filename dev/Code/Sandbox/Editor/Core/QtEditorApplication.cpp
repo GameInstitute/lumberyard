@@ -615,7 +615,7 @@ namespace Editor
 		m_EditorCommonTranslator = CreateAndInitializeTranslator("EditorCommon_zh-cn.qm", ":/Translations");
 		m_ComponentEntityEditorPluginTranslator = CreateAndInitializeTranslator("ComponentEntityEditorPlugin_zh-cn.qm", ":/Translations");
 		m_CryDesignerTranslator = CreateAndInitializeTranslator("CryDesigner_zh-cn.qm", ":/Translations");
-		m_DeploymentToolTranslator = CreateAndInitializeTranslator("DeploymentTool_zh-cn.qm", ":/Translations");
+		//m_DeploymentToolTranslator = CreateAndInitializeTranslator("DeploymentTool_zh-cn.qm", ":/Translations");
 		m_EditorAssetImporterTranslator = CreateAndInitializeTranslator("EditorAssetImporter_zh-cn.qm", ":/Translations");
 		m_EditorAudioControlsEditorTranslator = CreateAndInitializeTranslator("EditorAudioControlsEditor_zh-cn.qm", ":/Translations");
 
@@ -653,7 +653,7 @@ namespace Editor
 		// Plugins 
 		DeleteTranslator(m_ComponentEntityEditorPluginTranslator);
 		DeleteTranslator(m_CryDesignerTranslator);
-		DeleteTranslator(m_DeploymentToolTranslator);
+		//DeleteTranslator(m_DeploymentToolTranslator);
 		DeleteTranslator(m_EditorAssetImporterTranslator);
 		DeleteTranslator(m_EditorAudioControlsEditorTranslator);
 		DeleteTranslator(m_EditorCommonTranslator);

@@ -19,7 +19,7 @@ namespace PrefabHelpers
 {
     QAction* CreateSavePrefabAction(HierarchyWidget* hierarchy)
     {
-        QAction* action = new QAction("(Deprecated) Save as Prefab...", hierarchy);
+        QAction* action = new QAction(QObject::tr("(Deprecated) Save as Prefab..."), hierarchy);
         QObject::connect(action,
             &QAction::triggered,
             hierarchy,
@@ -139,7 +139,7 @@ namespace PrefabHelpers
             return;
         }
 
-        QMenu* prefabMenu = parent->addMenu(QString("(Deprecated) Element%1 from prefab").arg(!addAtRoot && selectedItems.size() > 1 ? "s" : ""));
+        QMenu* prefabMenu = parent->addMenu(QString(QObject::tr("(Deprecated) Element%1 from prefab")).arg(!addAtRoot && selectedItems.size() > 1 ? "s" : ""));
 
         QList<QAction*> result;
         {

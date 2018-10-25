@@ -228,7 +228,7 @@ EditorWindow::EditorWindow(QWidget* parent, Qt::WindowFlags flags)
 
     // Hierarchy pane.
     {
-        m_hierarchyDockWidget = new AzQtComponents::StyledDockWidget("Hierarchy");
+        m_hierarchyDockWidget = new AzQtComponents::StyledDockWidget(tr("Hierarchy"));
         m_hierarchyDockWidget->setObjectName("HierarchyDockWidget");    // needed to save state
         m_hierarchyDockWidget->setWidget(m_hierarchy);
         // needed to get keyboard shortcuts properly
@@ -238,7 +238,7 @@ EditorWindow::EditorWindow(QWidget* parent, Qt::WindowFlags flags)
 
     // Properties pane.
     {
-        m_propertiesDockWidget = new AzQtComponents::StyledDockWidget("Properties");
+        m_propertiesDockWidget = new AzQtComponents::StyledDockWidget(tr("Properties"));
         m_propertiesDockWidget->setObjectName("PropertiesDockWidget");    // needed to save state
         m_propertiesDockWidget->setWidget(m_properties);
         m_properties->setFocusPolicy(Qt::StrongFocus);
@@ -247,7 +247,7 @@ EditorWindow::EditorWindow(QWidget* parent, Qt::WindowFlags flags)
 
     // Animation pane.
     {
-        m_animationDockWidget = new AzQtComponents::StyledDockWidget("Animation Editor");
+        m_animationDockWidget = new AzQtComponents::StyledDockWidget(tr("Animation Editor"));
         m_animationDockWidget->setObjectName("AnimationDockWidget");    // needed to save state
         m_animationDockWidget->setWidget(m_animationWidget);
         m_animationWidget->setFocusPolicy(Qt::StrongFocus);
@@ -256,7 +256,7 @@ EditorWindow::EditorWindow(QWidget* parent, Qt::WindowFlags flags)
 
     // Preview action log pane (only shown in preview mode)
     {
-        m_previewActionLogDockWidget = new AzQtComponents::StyledDockWidget("Action Log");
+        m_previewActionLogDockWidget = new AzQtComponents::StyledDockWidget(tr("Action Log"));
         m_previewActionLogDockWidget->setObjectName("PreviewActionLog");    // needed to save state
         m_previewActionLogDockWidget->setWidget(m_previewActionLog);
         m_previewActionLog->setFocusPolicy(Qt::StrongFocus);
@@ -265,7 +265,7 @@ EditorWindow::EditorWindow(QWidget* parent, Qt::WindowFlags flags)
 
     // Preview animation list pane (only shown in preview mode)
     {
-        m_previewAnimationListDockWidget = new AzQtComponents::StyledDockWidget("Animation List");
+        m_previewAnimationListDockWidget = new AzQtComponents::StyledDockWidget(tr("Animation List"));
         m_previewAnimationListDockWidget->setObjectName("PreviewAnimationList");    // needed to save state
         m_previewAnimationListDockWidget->setWidget(m_previewAnimationList);
         m_previewAnimationList->setFocusPolicy(Qt::StrongFocus);
@@ -1579,7 +1579,7 @@ void EditorWindow::OnCanvasTabContextMenuRequested(const QPoint &point)
         menu.addAction(CreateCloseAllOtherCanvasesAction(canvasEntityId, true));
         menu.addSeparator();
 
-        QAction* action = new QAction("Copy Full Path", this);
+        QAction* action = new QAction(tr("Copy Full Path"), this);
         UiCanvasMetadata *canvasMetadata = GetCanvasMetadata(canvasEntityId);
         action->setEnabled(canvasMetadata && !canvasMetadata->m_canvasSourceAssetPathname.empty());
         QObject::connect(action,

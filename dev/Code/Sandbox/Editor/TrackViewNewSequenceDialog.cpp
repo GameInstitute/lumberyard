@@ -42,7 +42,7 @@ CTVNewSequenceDialog::CTVNewSequenceDialog(QWidget* parent)
     ui->setupUi(this);
     connect(ui->buttonBox, &QDialogButtonBox::accepted, this, &CTVNewSequenceDialog::OnOK);
     connect(ui->NAME, &QLineEdit::returnPressed, this, &CTVNewSequenceDialog::OnOK);
-    setWindowTitle("Add New Sequence");
+    setWindowTitle(tr("Add New Sequence"));
 
     OnInitDialog();
 }

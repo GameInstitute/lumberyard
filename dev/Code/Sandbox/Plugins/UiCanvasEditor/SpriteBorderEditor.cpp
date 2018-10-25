@@ -54,7 +54,7 @@ SpriteBorderEditor::SpriteBorderEditor(const char* path, QWidget* parent)
 
     CreateLayout();
 
-    setWindowTitle("Sprite Editor");
+    setWindowTitle(tr("Sprite Editor"));
     setModal(true);
     setWindowModality(Qt::ApplicationModal);
 
