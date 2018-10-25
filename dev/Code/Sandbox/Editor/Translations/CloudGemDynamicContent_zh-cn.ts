@@ -31,27 +31,27 @@
     <message>
         <location filename="../../../../Gems/CloudGemDynamicContent/Code/EditorPlugin/change_target_platform.ui" line="158"/>
         <source>iOS</source>
-        <translation type="unfinished"></translation>
+        <translation>iOS</translation>
     </message>
     <message>
         <location filename="../../../../Gems/CloudGemDynamicContent/Code/EditorPlugin/change_target_platform.ui" line="183"/>
         <source>macOS</source>
-        <translation type="unfinished"></translation>
+        <translation>macOS</translation>
     </message>
     <message>
         <location filename="../../../../Gems/CloudGemDynamicContent/Code/EditorPlugin/change_target_platform.ui" line="208"/>
         <source>Windows</source>
-        <translation type="unfinished"></translation>
+        <translation>Windows</translation>
     </message>
     <message>
         <location filename="../../../../Gems/CloudGemDynamicContent/Code/EditorPlugin/change_target_platform.ui" line="233"/>
         <source>PlayStation®4</source>
-        <translation type="unfinished"></translation>
+        <translation>PlayStation®4</translation>
     </message>
     <message>
         <location filename="../../../../Gems/CloudGemDynamicContent/Code/EditorPlugin/change_target_platform.ui" line="258"/>
         <source>Xbox One</source>
-        <translation type="unfinished"></translation>
+        <translation>Xbox One</translation>
     </message>
 </context>
 <context>
@@ -74,7 +74,7 @@
     <message>
         <location filename="../../../../Gems/CloudGemDynamicContent/Code/EditorPlugin/create_new_manifest.ui" line="96"/>
         <source>.json</source>
-        <translation type="unfinished"></translation>
+        <translation>.json</translation>
     </message>
     <message>
         <location filename="../../../../Gems/CloudGemDynamicContent/Code/EditorPlugin/create_new_manifest.ui" line="125"/>
@@ -94,27 +94,27 @@
     <message>
         <location filename="../../../../Gems/CloudGemDynamicContent/Code/EditorPlugin/create_new_manifest.ui" line="188"/>
         <source>iOS</source>
-        <translation type="unfinished"></translation>
+        <translation>iOS</translation>
     </message>
     <message>
         <location filename="../../../../Gems/CloudGemDynamicContent/Code/EditorPlugin/create_new_manifest.ui" line="213"/>
         <source>macOS</source>
-        <translation type="unfinished"></translation>
+        <translation>macOS</translation>
     </message>
     <message>
         <location filename="../../../../Gems/CloudGemDynamicContent/Code/EditorPlugin/create_new_manifest.ui" line="238"/>
         <source>Windows</source>
-        <translation type="unfinished"></translation>
+        <translation>Windows</translation>
     </message>
     <message>
         <location filename="../../../../Gems/CloudGemDynamicContent/Code/EditorPlugin/create_new_manifest.ui" line="263"/>
         <source>PlayStation®4</source>
-        <translation type="unfinished"></translation>
+        <translation>PlayStation®4</translation>
     </message>
     <message>
         <location filename="../../../../Gems/CloudGemDynamicContent/Code/EditorPlugin/create_new_manifest.ui" line="288"/>
         <source>Xbox One</source>
-        <translation type="unfinished"></translation>
+        <translation>Xbox One</translation>
     </message>
 </context>
 <context>
@@ -147,27 +147,27 @@
     <message>
         <location filename="../../../../Gems/CloudGemDynamicContent/Code/EditorPlugin/create_package.ui" line="183"/>
         <source>iOS</source>
-        <translation type="unfinished"></translation>
+        <translation>iOS</translation>
     </message>
     <message>
         <location filename="../../../../Gems/CloudGemDynamicContent/Code/EditorPlugin/create_package.ui" line="211"/>
         <source>macOS</source>
-        <translation type="unfinished"></translation>
+        <translation>macOS</translation>
     </message>
     <message>
         <location filename="../../../../Gems/CloudGemDynamicContent/Code/EditorPlugin/create_package.ui" line="239"/>
         <source>Windows</source>
-        <translation type="unfinished"></translation>
+        <translation>Windows</translation>
     </message>
     <message>
         <location filename="../../../../Gems/CloudGemDynamicContent/Code/EditorPlugin/create_package.ui" line="267"/>
         <source>PlayStation®4</source>
-        <translation type="unfinished"></translation>
+        <translation>PlayStation®4</translation>
     </message>
     <message>
         <location filename="../../../../Gems/CloudGemDynamicContent/Code/EditorPlugin/create_package.ui" line="295"/>
         <source>Xbox One</source>
-        <translation type="unfinished"></translation>
+        <translation>Xbox One</translation>
     </message>
 </context>
 <context>
@@ -314,7 +314,7 @@
     <message>
         <location filename="../../../../Gems/CloudGemDynamicContent/Code/EditorPlugin/QDynamicContentEditorMainWindow.h" line="364"/>
         <source>Cancel</source>
-        <translation type="unfinished">取消</translation>
+        <translation>取消</translation>
     </message>
 </context>
 <context>
@@ -327,7 +327,7 @@
     <message>
         <location filename="../../../../Gems/CloudGemDynamicContent/Code/EditorPlugin/incompatible_files.ui" line="64"/>
         <source>These files will not be added. Continue with adding the remaining compatible files?</source>
-        <translation type="unfinished"></translation>
+        <translation>这些文件将不会被添加。 继续添加其余的兼容文件？</translation>
     </message>
 </context>
 <context>
@@ -340,7 +340,7 @@
     <message>
         <location filename="../../../../Gems/CloudGemDynamicContent/Code/EditorPlugin/platform_warning.ui" line="54"/>
         <source>The platform type of the current selected files are not unsupported by the manifest and will be added but hidden until the target platforms for this manifest are updated.</source>
-        <translation type="unfinished"></translation>
+        <translation>当前选定文件的平台类型并非不受清单支持，而是会被添加，但在此清单的目标平台更新之前都是隐藏的。</translation>
     </message>
 </context>
 <context>
@@ -443,7 +443,7 @@
     <message>
         <location filename="../../../../Gems/CloudGemDynamicContent/Code/EditorPlugin/dynamic_content.ui" line="388"/>
         <source>Dynamic Content Documentation</source>
-        <translation type="unfinished"></translation>
+        <translation>动态内容文档</translation>
     </message>
 </context>
 <context>
@@ -481,7 +481,7 @@
     <message>
         <location filename="../../../../Gems/CloudGemDynamicContent/Code/EditorPlugin/upload_packages.ui" line="138"/>
         <source>Generate security key?</source>
-        <translation type="unfinished"></translation>
+        <translation>生成安全密钥？</translation>
     </message>
 </context>
 </TS>

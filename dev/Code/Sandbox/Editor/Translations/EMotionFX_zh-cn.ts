@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1">
+<TS version="2.1" language="zh_CN">
 <context>
     <name>EMStudio::RenderViewWidget</name>
     <message>
@@ -24,7 +24,7 @@
     <message>
         <location filename="../../../../Gems/EMotionFX/Code/Source/Integration/Editor/Components/EditorActorComponent.cpp" line="337"/>
         <source>Select Target Joint</source>
-        <translation type="unfinished"></translation>
+        <translation>选择目标关节</translation>
     </message>
 </context>
 <context>
@@ -32,7 +32,7 @@
     <message>
         <location filename="../../../../Gems/EMotionFX/Code/EMotionFX/Tools/EMotionStudio/EMStudioSDK/Source/MainWindow.cpp" line="295"/>
         <source>&amp;File</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;文件</translation>
     </message>
     <message>
         <location filename="../../../../Gems/EMotionFX/Code/EMotionFX/Tools/EMotionStudio/EMStudioSDK/Source/MainWindow.cpp" line="298"/>
@@ -77,42 +77,42 @@
     <message>
         <location filename="../../../../Gems/EMotionFX/Code/EMotionFX/Tools/EMotionStudio/EMStudioSDK/Source/MainWindow.cpp" line="337"/>
         <source>Save Workspace As</source>
-        <translation type="unfinished"></translation>
+        <translation>保存工作空间为</translation>
     </message>
     <message>
         <location filename="../../../../Gems/EMotionFX/Code/EMotionFX/Tools/EMotionStudio/EMStudioSDK/Source/MainWindow.cpp" line="345"/>
         <source>&amp;Edit</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;编辑</translation>
     </message>
     <message>
         <location filename="../../../../Gems/EMotionFX/Code/EMotionFX/Tools/EMotionStudio/EMStudioSDK/Source/MainWindow.cpp" line="346"/>
         <source>Undo</source>
-        <translation type="unfinished"></translation>
+        <translation>撤销</translation>
     </message>
     <message>
         <location filename="../../../../Gems/EMotionFX/Code/EMotionFX/Tools/EMotionStudio/EMStudioSDK/Source/MainWindow.cpp" line="348"/>
         <source>Redo</source>
-        <translation type="unfinished"></translation>
+        <translation>恢复</translation>
     </message>
     <message>
         <location filename="../../../../Gems/EMotionFX/Code/EMotionFX/Tools/EMotionStudio/EMStudioSDK/Source/MainWindow.cpp" line="353"/>
         <source>&amp;Preferences</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;首选项</translation>
     </message>
     <message>
         <location filename="../../../../Gems/EMotionFX/Code/EMotionFX/Tools/EMotionStudio/EMStudioSDK/Source/MainWindow.cpp" line="357"/>
         <source>&amp;Layouts</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;布局</translation>
     </message>
     <message>
         <location filename="../../../../Gems/EMotionFX/Code/EMotionFX/Tools/EMotionStudio/EMStudioSDK/Source/MainWindow.cpp" line="366"/>
         <source>&amp;View</source>
-        <translation type="unfinished">&amp;视图</translation>
+        <translation>&amp;视图</translation>
     </message>
     <message>
         <location filename="../../../../Gems/EMotionFX/Code/EMotionFX/Tools/EMotionStudio/EMStudioSDK/Source/MainWindow.cpp" line="370"/>
         <source>&amp;Help</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;帮助</translation>
     </message>
 </context>
 </TS>

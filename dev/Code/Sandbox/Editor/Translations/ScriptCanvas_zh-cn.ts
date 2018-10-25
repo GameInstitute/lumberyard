@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1">
+<TS version="2.1" language="zh_CN" sourcelanguage="en_US">
 <context>
     <name>CanvasWidget</name>
     <message>
@@ -11,7 +11,7 @@
     <message>
         <location filename="../../../../Gems/ScriptCanvas/Code/Editor/View/Widgets/CanvasWidget.ui" line="66"/>
         <source>Debugging: OFF</source>
-        <translation type="unfinished"></translation>
+        <translation>调试: 关闭</translation>
     </message>
 </context>
 <context>
@@ -29,7 +29,7 @@
     <message>
         <location filename="../../../../Gems/ScriptCanvas/Code/Editor/View/Widgets/Debugging.ui" line="64"/>
         <source>Disconnected</source>
-        <translation type="unfinished"></translation>
+        <translation>断开连接</translation>
     </message>
 </context>
 <context>
@@ -37,12 +37,12 @@
     <message>
         <location filename="../../../../Gems/ScriptCanvas/Code/Editor/View/Windows/ebushandleractionlistwidget.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished"></translation>
+        <translation>Form</translation>
     </message>
     <message>
         <location filename="../../../../Gems/ScriptCanvas/Code/Editor/View/Windows/ebushandleractionlistwidget.ui" line="26"/>
         <source>Search...</source>
-        <translation type="unfinished">搜索...</translation>
+        <translation>搜索...</translation>
     </message>
 </context>
 <context>
@@ -108,7 +108,7 @@
     <message>
         <location filename="../../../../Gems/ScriptCanvas/Code/Editor/View/Windows/mainwindow.ui" line="149"/>
         <source>Ctrl+L</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+L</translation>
     </message>
     <message>
         <location filename="../../../../Gems/ScriptCanvas/Code/Editor/View/Windows/mainwindow.ui" line="167"/>
@@ -118,7 +118,7 @@
     <message>
         <location filename="../../../../Gems/ScriptCanvas/Code/Editor/View/Windows/mainwindow.ui" line="170"/>
         <source>Ctrl+P</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+P</translation>
     </message>
     <message>
         <location filename="../../../../Gems/ScriptCanvas/Code/Editor/View/Windows/mainwindow.ui" line="184"/>
@@ -128,7 +128,7 @@
     <message>
         <location filename="../../../../Gems/ScriptCanvas/Code/Editor/View/Windows/mainwindow.ui" line="187"/>
         <source>Ctrl+Shift+L</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+L</translation>
     </message>
     <message>
         <location filename="../../../../Gems/ScriptCanvas/Code/Editor/View/Windows/mainwindow.ui" line="198"/>
@@ -138,7 +138,7 @@
     <message>
         <location filename="../../../../Gems/ScriptCanvas/Code/Editor/View/Windows/mainwindow.ui" line="201"/>
         <source>Ctrl+Shift+O</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+O</translation>
     </message>
     <message>
         <location filename="../../../../Gems/ScriptCanvas/Code/Editor/View/Windows/mainwindow.ui" line="212"/>
@@ -148,7 +148,7 @@
     <message>
         <location filename="../../../../Gems/ScriptCanvas/Code/Editor/View/Windows/mainwindow.ui" line="215"/>
         <source>Ctrl+Shift+I</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+I</translation>
     </message>
     <message>
         <location filename="../../../../Gems/ScriptCanvas/Code/Editor/View/Windows/mainwindow.ui" line="232"/>
@@ -158,7 +158,7 @@
     <message>
         <location filename="../../../../Gems/ScriptCanvas/Code/Editor/View/Windows/mainwindow.ui" line="235"/>
         <source>Ctrl+Shift+D</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+D</translation>
     </message>
     <message>
         <location filename="../../../../Gems/ScriptCanvas/Code/Editor/View/Windows/mainwindow.ui" line="243"/>
@@ -183,7 +183,7 @@
     <message>
         <location filename="../../../../Gems/ScriptCanvas/Code/Editor/View/Windows/mainwindow.ui" line="270"/>
         <source>Ctrl+Shift+Z</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+Z</translation>
     </message>
     <message>
         <location filename="../../../../Gems/ScriptCanvas/Code/Editor/View/Windows/mainwindow.ui" line="281"/>
@@ -208,7 +208,7 @@
     <message>
         <location filename="../../../../Gems/ScriptCanvas/Code/Editor/View/Windows/mainwindow.ui" line="317"/>
         <source>Ctrl+D</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+D</translation>
     </message>
     <message>
         <location filename="../../../../Gems/ScriptCanvas/Code/Editor/View/Windows/mainwindow.ui" line="328"/>
@@ -238,7 +238,7 @@
     <message>
         <location filename="../../../../Gems/ScriptCanvas/Code/Editor/View/Windows/mainwindow.ui" line="363"/>
         <source>Ctrl+Shift+B</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+B</translation>
     </message>
     <message>
         <location filename="../../../../Gems/ScriptCanvas/Code/Editor/View/Windows/mainwindow.ui" line="374"/>
@@ -248,12 +248,12 @@
     <message>
         <location filename="../../../../Gems/ScriptCanvas/Code/Editor/View/Windows/mainwindow.ui" line="377"/>
         <source>Ctrl+Shift+M</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+M</translation>
     </message>
     <message>
         <location filename="../../../../Gems/ScriptCanvas/Code/Editor/View/Windows/mainwindow.ui" line="388"/>
         <source>Variable Manager</source>
-        <translation type="unfinished">变量管理器</translation>
+        <translation>变量管理器</translation>
     </message>
     <message>
         <location filename="../../../../Gems/ScriptCanvas/Code/Editor/View/Windows/MainWindow.cpp" line="551"/>
@@ -263,7 +263,7 @@
     <message>
         <location filename="../../../../Gems/ScriptCanvas/Code/Editor/View/Windows/MainWindow.cpp" line="581"/>
         <source>+</source>
-        <translation type="unfinished"></translation>
+        <translation>+</translation>
     </message>
     <message>
         <location filename="../../../../Gems/ScriptCanvas/Code/Editor/View/Windows/MainWindow.cpp" line="617"/>
@@ -274,7 +274,8 @@
         <location filename="../../../../Gems/ScriptCanvas/Code/Editor/View/Windows/MainWindow.cpp" line="744"/>
         <source>Ctrl+Shift+S</source>
         <comment>File|Save As...</comment>
-        <translation type="unfinished"></translation>
+        <translatorcomment>文件|另存为...</translatorcomment>
+        <translation>Ctrl+Shift+S</translation>
     </message>
     <message>
         <location filename="../../../../Gems/ScriptCanvas/Code/Editor/View/Windows/MainWindow.cpp" line="1611"/>
@@ -308,7 +309,7 @@
     <message>
         <location filename="../../../../Gems/ScriptCanvas/Code/Editor/View/Dialogs/NewGraphDialog.ui" line="53"/>
         <source>Cancel</source>
-        <translation type="unfinished">取消</translation>
+        <translation>取消</translation>
     </message>
 </context>
 <context>
@@ -321,7 +322,7 @@
     <message>
         <location filename="../../../../Gems/ScriptCanvas/Code/Editor/View/Widgets/VariablePanel/VariableDockWidget.cpp" line="210"/>
         <source>Get %1</source>
-        <translation type="unfinished"></translation>
+        <translation>获取 %1</translation>
     </message>
     <message>
         <location filename="../../../../Gems/ScriptCanvas/Code/Editor/View/Widgets/VariablePanel/VariableDockWidget.cpp" line="211"/>
@@ -332,7 +333,7 @@
     <message>
         <location filename="../../../../Gems/ScriptCanvas/Code/Editor/View/Widgets/VariablePanel/VariableDockWidget.cpp" line="229"/>
         <source>Set %1</source>
-        <translation type="unfinished"></translation>
+        <translation>设置 %1</translation>
     </message>
     <message>
         <location filename="../../../../Gems/ScriptCanvas/Code/Editor/View/Widgets/VariablePanel/VariableDockWidget.cpp" line="230"/>
@@ -343,7 +344,7 @@
     <message>
         <location filename="../../../../Gems/ScriptCanvas/Code/Editor/View/Widgets/VariablePanel/VariableDockWidget.cpp" line="248"/>
         <source>Delete %1</source>
-        <translation type="unfinished"></translation>
+        <translation>删除 %1</translation>
     </message>
     <message>
         <location filename="../../../../Gems/ScriptCanvas/Code/Editor/View/Widgets/VariablePanel/VariableDockWidget.cpp" line="249"/>
@@ -511,7 +512,7 @@
     <message>
         <location filename="../../../../Gems/ScriptCanvas/Code/Editor/View/Windows/SlotContextMenu.cpp" line="29"/>
         <source>Delete all connections</source>
-        <translation type="unfinished"></translation>
+        <translation>删除所有连接</translation>
     </message>
 </context>
 <context>
@@ -658,7 +659,7 @@
     <message>
         <location filename="../../../../Gems/ScriptCanvas/Code/Editor/View/Dialogs/UnsavedChangesDialog.ui" line="69"/>
         <source>Save Script Canvas Changes?</source>
-        <translation type="unfinished"></translation>
+        <translation>保存脚本画布更改？</translation>
     </message>
 </context>
 <context>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1">
+<TS version="2.1" language="zh_CN">
 <context>
     <name>BookmarkDockWidget</name>
     <message>
@@ -21,7 +21,7 @@
     <message>
         <location filename="../../../../Gems/GraphCanvas/Code/StaticLib/GraphCanvas/Widgets/Bookmarks/BookmarkDockWidget.ui" line="184"/>
         <source>Delete</source>
-        <translation type="unfinished"></translation>
+        <translation>删除</translation>
     </message>
 </context>
 <context>
@@ -29,7 +29,7 @@
     <message>
         <location filename="../../../../Gems/GraphCanvas/Code/StaticLib/GraphCanvas/Widgets/GraphCanvasEditor/GraphCanvasEditorCentralWidget.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished"></translation>
+        <translation>Form</translation>
     </message>
     <message>
         <location filename="../../../../Gems/GraphCanvas/Code/StaticLib/GraphCanvas/Widgets/GraphCanvasEditor/GraphCanvasEditorCentralWidget.ui" line="38"/>
@@ -42,7 +42,7 @@
     <message>
         <location filename="../../../../Gems/GraphCanvas/Code/StaticLib/GraphCanvas/Widgets/GraphCanvasEditor/GraphCanvasEditorDockWidget.ui" line="82"/>
         <source>...</source>
-        <translation type="unfinished"></translation>
+        <translation>...</translation>
     </message>
 </context>
 <context>
@@ -55,7 +55,7 @@
     <message>
         <location filename="../../../../Gems/GraphCanvas/Code/Source/Components/NodePropertyDisplays/ItemModelInspectionDialog.ui" line="38"/>
         <source>Search...</source>
-        <translation type="unfinished">搜索...</translation>
+        <translation>搜索...</translation>
     </message>
 </context>
 <context>
@@ -63,7 +63,7 @@
     <message>
         <location filename="../../../../Gems/GraphCanvas/Code/StaticLib/GraphCanvas/Widgets/NodePalette/NodePaletteDockWidget.ui" line="75"/>
         <source>Search...</source>
-        <translation type="unfinished">搜索...</translation>
+        <translation>搜索...</translation>
     </message>
 </context>
 <context>
@@ -88,7 +88,7 @@
         <location filename="../../../../Gems/GraphCanvas/Code/StaticLib/GraphCanvas/Widgets/Bookmarks/BookmarkDockWidget.cpp" line="51"/>
         <location filename="../../../../Gems/GraphCanvas/Code/StaticLib/GraphCanvas/Widgets/Bookmarks/BookmarkDockWidget.cpp" line="52"/>
         <source>Deletes the selected bookmark from the graph.</source>
-        <translation type="unfinished"></translation>
+        <translation>从图表删除所选书签。</translation>
     </message>
 </context>
 </TS>

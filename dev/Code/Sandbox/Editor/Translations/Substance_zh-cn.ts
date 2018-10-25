@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1">
+<TS version="2.1" language="zh_CN" sourcelanguage="en_US">
 <context>
     <name>GIImageInput</name>
     <message>
         <location filename="../../../../Gems/Substance/Code/EditorPlugin/GraphInputWidgets.cpp" line="359"/>
         <source>...</source>
-        <translation type="unfinished"></translation>
+        <translation>...</translation>
     </message>
     <message>
         <location filename="../../../../Gems/Substance/Code/EditorPlugin/GraphInputWidgets.cpp" line="389"/>
@@ -24,7 +24,7 @@
     <message>
         <location filename="../../../../Gems/Substance/Code/EditorPlugin/GraphInputWidgets.cpp" line="461"/>
         <source>Randomize</source>
-        <translation type="unfinished"></translation>
+        <translation>随机化</translation>
     </message>
 </context>
 <context>
@@ -32,22 +32,22 @@
     <message>
         <location filename="../../../../Gems/Substance/Code/EditorPlugin/QProceduralMaterialEditorMainWindow.ui" line="14"/>
         <source>MainWindow</source>
-        <translation type="unfinished"></translation>
+        <translation>MainWindow</translation>
     </message>
     <message>
         <location filename="../../../../Gems/Substance/Code/EditorPlugin/QProceduralMaterialEditorMainWindow.ui" line="41"/>
         <source>Substance:</source>
-        <translation type="unfinished"></translation>
+        <translation>Substance:</translation>
     </message>
     <message>
         <location filename="../../../../Gems/Substance/Code/EditorPlugin/QProceduralMaterialEditorMainWindow.ui" line="61"/>
         <source>Tab 1</source>
-        <translation type="unfinished"></translation>
+        <translation>Tab 1</translation>
     </message>
     <message>
         <location filename="../../../../Gems/Substance/Code/EditorPlugin/QProceduralMaterialEditorMainWindow.ui" line="66"/>
         <source>Tab 2</source>
-        <translation type="unfinished"></translation>
+        <translation>Tab 2</translation>
     </message>
     <message>
         <location filename="../../../../Gems/Substance/Code/EditorPlugin/QProceduralMaterialEditorMainWindow.ui" line="112"/>
@@ -180,7 +180,7 @@
         <location filename="../../../../Gems/Substance/Code/EditorPlugin/QProceduralMaterialEditorMainWindow.cpp" line="846"/>
         <location filename="../../../../Gems/Substance/Code/EditorPlugin/QProceduralMaterialEditorMainWindow.cpp" line="949"/>
         <source>N/A</source>
-        <translation type="unfinished"></translation>
+        <translation>N/A</translation>
     </message>
     <message>
         <location filename="../../../../Gems/Substance/Code/EditorPlugin/QProceduralMaterialEditorMainWindow.cpp" line="847"/>
@@ -192,7 +192,7 @@
         <location filename="../../../../Gems/Substance/Code/EditorPlugin/QProceduralMaterialEditorMainWindow.cpp" line="950"/>
         <location filename="../../../../Gems/Substance/Code/EditorPlugin/QProceduralMaterialEditorMainWindow.cpp" line="954"/>
         <source>Failed to load Substance</source>
-        <translation type="unfinished"></translation>
+        <translation>加载Substance失败</translation>
     </message>
 </context>
 </TS>
