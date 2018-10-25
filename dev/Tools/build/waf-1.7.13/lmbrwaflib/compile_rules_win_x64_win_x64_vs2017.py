@@ -26,7 +26,7 @@ def load_win_x64_win_x64_vs2017_common_settings(conf):
     global PLATFORM
 
     # Add defines to indicate a win64 build
-    v['DEFINES'] += ['_WIN32', '_WIN64', 'NOMINMAX', '_SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING']
+    v['DEFINES'] += ['_WIN32', '_WIN64', 'NOMINMAX', '_SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING', '_ENABLE_EXTENDED_ALIGNED_STORAGE']
 
     restricted_tool_list_macro_header = 'AZ_TOOLS_EXPAND_FOR_RESTRICTED_PLATFORMS='
     restricted_tool_list_macro = restricted_tool_list_macro_header
