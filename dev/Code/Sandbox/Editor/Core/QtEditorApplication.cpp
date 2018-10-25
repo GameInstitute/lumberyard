@@ -603,9 +603,35 @@ namespace Editor
 
     void EditorQtApplication::InstallEditorTranslators()
     {
-        m_editorTranslator =        CreateAndInitializeTranslator("editor_en-us.qm", ":/Translations");
-        m_flowgraphTranslator =     CreateAndInitializeTranslator("flowgraph_en-us.qm", ":/Translations");
-        m_assetBrowserTranslator =  CreateAndInitializeTranslator("assetbrowser_en-us.qm", ":/Translations");
+		// Sandbox
+		m_SandboxTranslator = CreateAndInitializeTranslator("Sandbox_zh-cn.qm", ":/Translations");
+
+		// Framework
+		m_AzQtComponentsTranslator = CreateAndInitializeTranslator("AzQtComponents_zh-cn.qm", ":/Translations");
+		m_AzToolsFrameworkTranslator = CreateAndInitializeTranslator("AzToolsFramework_zh-cn.qm", ":/Translations");
+
+		// Plugins
+		m_EditorUI_QTTranslator = CreateAndInitializeTranslator("EditorUI_QT_zh-cn.qm", ":/Translations");
+		m_EditorCommonTranslator = CreateAndInitializeTranslator("EditorCommon_zh-cn.qm", ":/Translations");
+		m_ComponentEntityEditorPluginTranslator = CreateAndInitializeTranslator("ComponentEntityEditorPlugin_zh-cn.qm", ":/Translations");
+		m_CryDesignerTranslator = CreateAndInitializeTranslator("CryDesigner_zh-cn.qm", ":/Translations");
+		m_DeploymentToolTranslator = CreateAndInitializeTranslator("DeploymentTool_zh-cn.qm", ":/Translations");
+		m_EditorAssetImporterTranslator = CreateAndInitializeTranslator("EditorAssetImporter_zh-cn.qm", ":/Translations");
+		m_EditorAudioControlsEditorTranslator = CreateAndInitializeTranslator("EditorAudioControlsEditor_zh-cn.qm", ":/Translations");
+
+		m_FBXPluginTranslator = CreateAndInitializeTranslator("FBXPlugin_zh-cn.qm", ":/Translations");
+		m_MaglevControlPanelTranslator = CreateAndInitializeTranslator("MaglevControlPanel_zh-cn.qm", ":/Translations");
+		m_ParticleEditorPluginTranslator = CreateAndInitializeTranslator("ParticleEditorPlugin_zh-cn.qm", ":/Translations");
+		m_PerforcePluginTranslator = CreateAndInitializeTranslator("PerforcePlugin_zh-cn.qm", ":/Translations");
+		m_UiCanvasEditorTranslator = CreateAndInitializeTranslator("UiCanvasEditor_zh-cn.qm", ":/Translations");
+
+		// Gems
+		m_CloudGemDynamicContentTranslator = CreateAndInitializeTranslator("CloudGemDynamicContent_zh-cn.qm", ":/Translations");
+		m_EMotionFXTranslator = CreateAndInitializeTranslator("EMotionFX_zh-cn.qm", ":/Translations");
+		m_GraphCanvasTranslator = CreateAndInitializeTranslator("GraphCanvas_zh-cn.qm", ":/Translations");
+		m_ScriptCanvasTranslator = CreateAndInitializeTranslator("ScriptCanvas_zh-cn.qm", ":/Translations");
+		m_ScriptCanvasDeveloperTranslator = CreateAndInitializeTranslator("ScriptCanvasDeveloper_zh-cn.qm", ":/Translations");
+		m_SubstanceTranslator = CreateAndInitializeTranslator("Substance_zh-cn.qm", ":/Translations");
     }
 
     void EditorQtApplication::DeleteTranslator(QTranslator*& translator)
@@ -617,9 +643,34 @@ namespace Editor
 
     void EditorQtApplication::UninstallEditorTranslators()
     {
-        DeleteTranslator(m_editorTranslator);
-        DeleteTranslator(m_flowgraphTranslator);
-        DeleteTranslator(m_assetBrowserTranslator);
+		// Sandbox
+		DeleteTranslator(m_SandboxTranslator);
+
+		// Framework
+		DeleteTranslator(m_AzQtComponentsTranslator);
+		DeleteTranslator(m_AzToolsFrameworkTranslator);
+
+		// Plugins 
+		DeleteTranslator(m_ComponentEntityEditorPluginTranslator);
+		DeleteTranslator(m_CryDesignerTranslator);
+		DeleteTranslator(m_DeploymentToolTranslator);
+		DeleteTranslator(m_EditorAssetImporterTranslator);
+		DeleteTranslator(m_EditorAudioControlsEditorTranslator);
+		DeleteTranslator(m_EditorCommonTranslator);
+		DeleteTranslator(m_EditorUI_QTTranslator);
+		DeleteTranslator(m_FBXPluginTranslator);
+		DeleteTranslator(m_MaglevControlPanelTranslator);
+		DeleteTranslator(m_ParticleEditorPluginTranslator);
+		DeleteTranslator(m_PerforcePluginTranslator);
+		DeleteTranslator(m_UiCanvasEditorTranslator);
+
+		// Gems
+		DeleteTranslator(m_CloudGemDynamicContentTranslator);
+		DeleteTranslator(m_EMotionFXTranslator);
+		DeleteTranslator(m_GraphCanvasTranslator);
+		DeleteTranslator(m_ScriptCanvasTranslator);
+		DeleteTranslator(m_ScriptCanvasDeveloperTranslator);
+		DeleteTranslator(m_SubstanceTranslator);
     }
 
     void EditorQtApplication::EnableOnIdle(bool enable)

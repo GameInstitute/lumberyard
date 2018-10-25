@@ -7,11 +7,29 @@
             "ManipulatorShim.h",
             "ManipulatorShim.cpp"
         ],
-        "Translations": [
-            "Translations/editor_en-us.ts",
-            "Translations/flowgraph_en-us.ts",
-            "Translations/assetbrowser_en-us.ts"
-        ],
+      "Translations": [
+        "Translations/AzQtComponents_zh-cn.ts",
+        "Translations/AzToolsFramework_zh-cn.ts",
+        "Translations/CloudGemDynamicContent_zh-cn.ts",
+        "Translations/ComponentEntityEditorPlugin_zh-cn.ts",
+        "Translations/CryDesigner_zh-cn.ts",
+        "Translations/DeploymentTool_zh-cn.ts",
+        "Translations/EditorAssetImporter_zh-cn.ts",
+        "Translations/EditorAudioControlsEditor_zh-cn.ts",
+        "Translations/EditorCommon_zh-cn.ts",
+        "Translations/EditorUI_QT_zh-cn.ts",
+        "Translations/EMotionFX_zh-cn.ts",
+        "Translations/FBXPlugin_zh-cn.ts",
+        "Translations/GraphCanvas_zh-cn.ts",
+        "Translations/MaglevControlPanel_zh-cn.ts",
+        "Translations/ParticleEditorPlugin_zh-cn.ts",
+        "Translations/PerforcePlugin_zh-cn.ts",
+        "Translations/Sandbox_zh-cn.ts",
+        "Translations/ScriptCanvas_zh-cn.ts",
+        "Translations/ScriptCanvasDeveloper_zh-cn.ts",
+        "Translations/Substance_zh-cn.ts",
+        "Translations/UiCanvasEditor_zh-cn.ts"
+      ],
         "Resource Files": [
             "DPIAware.xml",
             "res/AVI_Recorder.bmp",
