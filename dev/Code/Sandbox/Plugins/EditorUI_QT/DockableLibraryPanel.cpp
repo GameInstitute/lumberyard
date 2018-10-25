@@ -872,8 +872,8 @@ void DockableLibraryPanel::DecorateDefaultLibraryView()
     m_defaultView->SetSpaceBetweenLabelsAndButtons(30);
     QString labelText = tr("You have 0 loaded libraries.\n Please import an existing library \n or create a new one.");
     m_defaultView->SetLabel(labelText);
-    m_defaultView->AddButton("Import a library", GetMenuAction(DockableLibraryPanel::LibraryActions::IMPORT, tr("Import a library"), false, m_defaultView, Qt::QueuedConnection));
-    m_defaultView->AddButton("Create new library", GetMenuAction(DockableLibraryPanel::LibraryActions::ADD, tr("Create new library"), false, m_defaultView, Qt::QueuedConnection));
+    m_defaultView->AddButton(tr("Import a library"), GetMenuAction(DockableLibraryPanel::LibraryActions::IMPORT, tr("Import a library"), false, m_defaultView, Qt::QueuedConnection));
+    m_defaultView->AddButton(tr("Create new library"), GetMenuAction(DockableLibraryPanel::LibraryActions::ADD, tr("Create new library"), false, m_defaultView, Qt::QueuedConnection));
 }
 
 void DockableLibraryPanel::ShowDefaultView()

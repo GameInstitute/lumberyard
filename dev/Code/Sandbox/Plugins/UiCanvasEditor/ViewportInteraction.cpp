@@ -715,7 +715,7 @@ void ViewportInteraction::SetCanvasToViewportScale(float newScale, Vec2i* option
 void ViewportInteraction::UpdateZoomFactorLabel()
 {
     float percentage = m_canvasViewportMatrixProps.scale * 100.0f;
-    m_editorWindow->GetMainToolbar()->GetZoomFactorLabel()->setText(QString("Zoom: %1 %").arg(QString::number(percentage, 'f', 0)));
+    m_editorWindow->GetMainToolbar()->GetZoomFactorLabel()->setText(QString(tr("Zoom: %1 %")).arg(QString::number(percentage, 'f', 0)));
 }
 
 AZ::Entity* ViewportInteraction::GetActiveElement() const

@@ -1020,6 +1020,16 @@ Reloading library will discard all modifications to this library!</source>
         <translation></translation>
     </message>
     <message>
+        <location filename="../../Plugins/EditorUI_QT/VariableWidgets/QPresetSelectorWidget.cpp" line="477"/>
+        <source>Create New Library...</source>
+        <translation>创建新库...</translation>
+    </message>
+    <message>
+        <location filename="../../Plugins/EditorUI_QT/VariableWidgets/QPresetSelectorWidget.cpp" line="493"/>
+        <source>Load Library...</source>
+        <translation>加载库...</translation>
+    </message>
+    <message>
         <location filename="../../Plugins/EditorUI_QT/VariableWidgets/QPresetSelectorWidget.cpp" line="502"/>
         <location filename="../../Plugins/EditorUI_QT/VariableWidgets/QPresetSelectorWidget.cpp" line="511"/>
         <source>Preset Files (*.cpf)</source>

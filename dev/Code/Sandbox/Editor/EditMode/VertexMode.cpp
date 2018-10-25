@@ -190,12 +190,12 @@ void CSubObjectModeTool::BeginEditParams(IEditor* ie, int flags)
     {
         m_pTypePanel = new CSubObjSelectionTypePanel;
         m_pTypePanel->SelectElemtType(m_currSelectionType);
-        m_selectionTypePanelId = GetIEditor()->AddRollUpPage(ROLLUP_OBJECTS, "Selection Type", m_pTypePanel);
+        m_selectionTypePanelId = GetIEditor()->AddRollUpPage(ROLLUP_OBJECTS, tr("Selection Type"), m_pTypePanel);
     }
     if (!m_selectionPanelId)
     {
         CSubObjSelectionPanel* pPanel = new CSubObjSelectionPanel;
-        m_selectionPanelId = GetIEditor()->AddRollUpPage(ROLLUP_OBJECTS, "Selection", pPanel);
+        m_selectionPanelId = GetIEditor()->AddRollUpPage(ROLLUP_OBJECTS, tr("Selection"), pPanel);
     }
     /*
     if (!m_displayPanelId)

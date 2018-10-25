@@ -383,8 +383,8 @@ void QRollupCtrl::_q_widgetDestroyed(QObject* object)
 void QRollupCtrl::_q_custumButtonMenu(const QPoint& pos)
 {
     QMenu menu;
-    menu.addAction("Expand All")->setData(-1);
-    menu.addAction("Collapse All")->setData(-2);
+    menu.addAction(tr("Expand All"))->setData(-1);
+    menu.addAction(tr("Collapse All"))->setData(-2);
     menu.addSeparator();
     for (int i = 0; i < m_pageList.size(); ++i)
     {

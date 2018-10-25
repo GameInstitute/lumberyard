@@ -108,11 +108,11 @@ void CObjectCreateTool::SelectCategory(const QString& category)
 
     if (category == "Geometry")
     {
-        m_objectBrowserPanelId = GetIEditor()->AddRollUpPage(ROLLUP_OBJECTS, "Geometry Type", panel, 1);
+        m_objectBrowserPanelId = GetIEditor()->AddRollUpPage(ROLLUP_OBJECTS, tr("Geometry Type"), panel, 1);
     }
     else
     {
-        m_objectBrowserPanelId = GetIEditor()->AddRollUpPage(ROLLUP_OBJECTS, "Object Type", panel, 1);
+        m_objectBrowserPanelId = GetIEditor()->AddRollUpPage(ROLLUP_OBJECTS, tr("Object Type"), panel, 1);
     }
 
     MainWindow::instance()->setFocus();
@@ -149,7 +149,7 @@ void CObjectCreateTool::StartCreation(const QString& type, const QString& param)
                 br->SetDragAndDropCallback(functor(*this, &CObjectCreateTool::OnCreateObjectFromFile));
                 if (m_fileBrowserPanelId == 0)
                 {
-                    m_fileBrowserPanelId = GetIEditor()->AddRollUpPage(ROLLUP_OBJECTS, "Browser", br, 1);
+                    m_fileBrowserPanelId = GetIEditor()->AddRollUpPage(ROLLUP_OBJECTS, tr("Browser"), br, 1);
                 }
                 br->AddPreviewPanel();
                 MainWindow::instance()->setFocus();

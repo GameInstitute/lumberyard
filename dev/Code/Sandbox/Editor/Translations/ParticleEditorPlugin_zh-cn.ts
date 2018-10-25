@@ -73,7 +73,7 @@
         <location filename="../../Plugins/ParticleEditorPlugin/QT/MainWindow.cpp" line="1052"/>
         <source>Libraries with unsaved changes: 
 </source>
-        <translation>库有未保存的修改:
+        <translation>库有未保存的修改: 
 </translation>
     </message>
     <message>
@@ -135,6 +135,7 @@
     <message>
         <location filename="../../Plugins/ParticleEditorPlugin/QT/MainWindow.cpp" line="1304"/>
         <location filename="../../Plugins/ParticleEditorPlugin/QT/MainWindow.cpp" line="2397"/>
+        <location filename="../../Plugins/ParticleEditorPlugin/QT/MainWindow.cpp" line="2418"/>
         <source>Add Folder</source>
         <translation>添加文件夹</translation>
     </message>
@@ -258,6 +259,11 @@
         <translation>显示布局</translation>
     </message>
     <message>
+        <location filename="../../Plugins/ParticleEditorPlugin/QT/MainWindow.cpp" line="1694"/>
+        <source>Default Layout</source>
+        <translation>默认布局</translation>
+    </message>
+    <message>
         <location filename="../../Plugins/ParticleEditorPlugin/QT/MainWindow.cpp" line="2398"/>
         <source>Save</source>
         <translation>保存</translation>
@@ -277,11 +283,16 @@
         <source>Particle library is empty
 Add a new folder or emitter to continue.</source>
         <translation>粒子库是空的
-添加一个新文件夹或发射器继续</translation>
+添加一个新文件夹或发射器继续。</translation>
     </message>
 </context>
 <context>
     <name>DockableLODPanel</name>
+    <message>
+        <location filename="../../Plugins/ParticleEditorPlugin/QT/DockableLODPanel.cpp" line="665"/>
+        <source>Level of detail</source>
+        <translation>LOD</translation>
+    </message>
     <message>
         <location filename="../../Plugins/ParticleEditorPlugin/QT/DockableLODPanel.cpp" line="1033"/>
         <source>Add an LOD to an item to continue</source>
@@ -299,6 +310,42 @@ Add a new folder or emitter to continue.</source>
         <location filename="../../Plugins/ParticleEditorPlugin/QT/DockableParticleLibraryPanel.cpp" line="163"/>
         <source>Add Folder</source>
         <translation>添加文件夹</translation>
+    </message>
+</context>
+<context>
+    <name>LODLevelWidget</name>
+    <message>
+        <location filename="../../Plugins/ParticleEditorPlugin/QT/LODLevelWidget.cpp" line="137"/>
+        <source>LOD Distance</source>
+        <translation>LOD距离</translation>
+    </message>
+    <message>
+        <location filename="../../Plugins/ParticleEditorPlugin/QT/LODLevelWidget.cpp" line="454"/>
+        <source>Remove</source>
+        <translation>移除</translation>
+    </message>
+</context>
+<context>
+    <name>LodWidget</name>
+    <message>
+        <location filename="../../Plugins/ParticleEditorPlugin/QT/DockableLODPanel.cpp" line="197"/>
+        <source>Blend In</source>
+        <translation>融合入</translation>
+    </message>
+    <message>
+        <location filename="../../Plugins/ParticleEditorPlugin/QT/DockableLODPanel.cpp" line="198"/>
+        <source>Blend Out</source>
+        <translation>融合出</translation>
+    </message>
+    <message>
+        <location filename="../../Plugins/ParticleEditorPlugin/QT/DockableLODPanel.cpp" line="199"/>
+        <source>Overlap</source>
+        <translation>覆盖</translation>
+    </message>
+    <message>
+        <location filename="../../Plugins/ParticleEditorPlugin/QT/DockableLODPanel.cpp" line="215"/>
+        <source>+ Add Level of Detail</source>
+        <translation>+ 添加LOD</translation>
     </message>
 </context>
 <context>

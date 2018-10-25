@@ -373,7 +373,7 @@ void CShapeObject::BeginEditMultiSelParams(bool bAllOfSameType)
     if (!m_panelMulty)
     {
         m_panelMulty = new CShapeMultySelPanel;
-        m_rollupMultyId = GetIEditor()->AddRollUpPage(ROLLUP_OBJECTS, "Multi Shape Operation", m_panelMulty);
+        m_rollupMultyId = GetIEditor()->AddRollUpPage(ROLLUP_OBJECTS, tr("Multi Shape Operation"), m_panelMulty);
     }
 }
 
@@ -2247,7 +2247,7 @@ void CShapeObject::UpdateSoundPanelParams()
     {
         if (!m_nSoundPanelID)
         {
-            m_nSoundPanelID = GetIEditor()->AddRollUpPage(ROLLUP_OBJECTS, "Sound Obstruction", m_pSoundPropertiesPanel);
+            m_nSoundPanelID = GetIEditor()->AddRollUpPage(ROLLUP_OBJECTS, tr("Sound Obstruction"), m_pSoundPropertiesPanel);
         }
 
         m_pSoundPropertiesPanel->DeleteVars();
@@ -2982,7 +2982,7 @@ void CAITerritoryObject::BeginEditMultiSelParams(bool bAllOfSameType)
     if (!m_panelMulty)
     {
         m_panelMulty = new CShapeMultySelPanel;
-        m_rollupMultyId = GetIEditor()->AddRollUpPage(ROLLUP_OBJECTS, "Multi Shape Operation", m_panelMulty);
+        m_rollupMultyId = GetIEditor()->AddRollUpPage(ROLLUP_OBJECTS, tr("Multi Shape Operation"), m_panelMulty);
     }
 }
 

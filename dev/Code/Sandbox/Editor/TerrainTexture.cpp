@@ -182,29 +182,29 @@ public:
         switch (section)
         {
         case ColumnLayerName:
-            return "Layer";
+            return QObject::tr("Layer");
         case ColumnMaterial:
-            return "Material";
+            return QObject::tr("Material");
         case ColumnSplatMap:
-            return "Splat Map Path";
+            return QObject::tr("Splat Map Path");
         case ColumnMinHeight:
-            return "Min Height";
+            return QObject::tr("Min Height");
         case ColumnMaxHeight:
-            return "Max Height";
+            return QObject::tr("Max Height");
         case ColumnMinAngle:
-            return "Min Angle";
+            return QObject::tr("Min Angle");
         case ColumnMaxAngle:
-            return "Max Angle";
+            return QObject::tr("Max Angle");
         case ColumnBrightness:
-            return "Brightness";
+            return QObject::tr("Brightness");
         case ColumnBaseTiling:
-            return "Base Tiling (test)";
+            return QObject::tr("Base Tiling (test)");
         case ColumnSortOrder:
-            return "Sort Order (test)";
+            return QObject::tr("Sort Order (test)");
         case ColumnSpecularAmount:
-            return "Specular Amount (test)";
+            return QObject::tr("Specular Amount (test)");
         case ColumnUseRemesh:
-            return "UseRemeshing";
+            return QObject::tr("UseRemeshing");
         default:
             return {};
         }
@@ -825,8 +825,8 @@ void CTerrainTextureDialog::UpdateControlData()
 
     if (layers.size() == 0)
     {
-        m_ui->layerInfoLabel->setText("No layer selected");
-        m_ui->texturePreviewLabel->setText("No layer selected");
+        m_ui->layerInfoLabel->setText(tr("No layer selected"));
+        m_ui->texturePreviewLabel->setText(tr("No layer selected"));
         m_ui->layerTextureInfoLabel->setText("");
     }
     else if (layers.size() == 1)
@@ -856,8 +856,8 @@ void CTerrainTextureDialog::UpdateControlData()
     }
     else
     {
-        m_ui->layerInfoLabel->setText("Multiple layers selected");
-        m_ui->texturePreviewLabel->setText("Multiple layers selected");
+        m_ui->layerInfoLabel->setText(tr("Multiple layers selected"));
+        m_ui->texturePreviewLabel->setText(tr("Multiple layers selected"));
         m_ui->layerTextureInfoLabel->setText("");
     }
 
@@ -959,7 +959,7 @@ void CTerrainTextureDialog::OnFileExportLargePreview()
         return;
     }
 
-    GetIEditor()->SetStatusText("Saving preview...");
+    GetIEditor()->SetStatusText(tr("Saving preview..."));
 
     // Save the texture to disk
     QString tempDirectory = Path::AddPathSlash(gSettings.strStandardTempDirectory);

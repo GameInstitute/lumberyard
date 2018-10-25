@@ -503,7 +503,7 @@ void CModelViewport::LoadObject(const QString& fileName, float scale)
         s_varsPanel = new ReflectedPropertiesPanel(this);
         s_varsPanel->Setup();
         s_varsPanel->AddVars(m_vars.GetVarBlock());
-        s_varsPanelId = GetIEditor()->AddRollUpPage(ROLLUP_OBJECTS, "Debug Options", s_varsPanel);
+        s_varsPanelId = GetIEditor()->AddRollUpPage(ROLLUP_OBJECTS, tr("Debug Options"), s_varsPanel);
     }
 
     if (!reload)

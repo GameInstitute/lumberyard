@@ -266,9 +266,24 @@
         <translation>+</translation>
     </message>
     <message>
+        <location filename="../../../../Gems/ScriptCanvas/Code/Editor/View/Windows/MainWindow.cpp" line="606"/>
+        <source>Node Inspector</source>
+        <translation>节点检视器</translation>
+    </message>
+    <message>
         <location filename="../../../../Gems/ScriptCanvas/Code/Editor/View/Windows/MainWindow.cpp" line="617"/>
         <source>Node Palette</source>
         <translation>节点选项板</translation>
+    </message>
+    <message>
+        <location filename="../../../../Gems/ScriptCanvas/Code/Editor/View/Windows/MainWindow.cpp" line="709"/>
+        <source>Open &amp;Recent</source>
+        <translation>打开&amp;最近的</translation>
+    </message>
+    <message>
+        <location filename="../../../../Gems/ScriptCanvas/Code/Editor/View/Windows/MainWindow.cpp" line="723"/>
+        <source>&amp;Clear Recent Files</source>
+        <translation>&amp;清除最近的文件</translation>
     </message>
     <message>
         <location filename="../../../../Gems/ScriptCanvas/Code/Editor/View/Windows/MainWindow.cpp" line="744"/>

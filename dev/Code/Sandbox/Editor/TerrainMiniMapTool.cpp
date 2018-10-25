@@ -284,7 +284,7 @@ void CTerrainMiniMapTool::BeginEditParams(IEditor* ie, int flags)
     if (!s_panelId)
     {
         s_panel = new CTerrainMiniMapPanel(this);
-        s_panelId = GetIEditor()->AddRollUpPage(ROLLUP_TERRAIN, "Mini Map", s_panel);
+        s_panelId = GetIEditor()->AddRollUpPage(ROLLUP_TERRAIN, tr("Mini Map"), s_panel);
         MainWindow::instance()->setFocus();
     }
 }

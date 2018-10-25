@@ -286,7 +286,7 @@ namespace Camera
             : QWidget(parent)
         {
             setLayout(new QVBoxLayout(this));
-            auto label = new QLabel("Select the camera you wish to view and navigate through.  Closing this window will return you to the default editor camera.", this);
+            auto label = new QLabel(QObject::tr("Select the camera you wish to view and navigate through.  Closing this window will return you to the default editor camera."), this);
             label->setWordWrap(true);
             layout()->addWidget(label);
             layout()->addWidget(new ViewportCameraSelectorWindow(this));

@@ -1691,7 +1691,7 @@ void CMainWindow::View_PopulateMenu()
     }
 
     //Add the "default" layout option to show layouts
-    action = m_showLayoutMenu->addAction("Default Layout");
+    action = m_showLayoutMenu->addAction(tr("Default Layout"));
     connect(action, &QAction::triggered, this, &CMainWindow::ResetToDefaultEditorLayout);
 
     menu->addMenu(m_showLayoutMenu);
@@ -2414,8 +2414,8 @@ void CMainWindow::Library_DecorateTreesDefaultView(const QString& lib, DefaultVi
 {
     CRY_ASSERT(view);
     view->SetLabel(tr("Particle library is empty\nAdd a new folder or emitter to continue."));
-    view->AddButton("Add Particle", m_libraryTreeViewDock->GetMenuAction(DockableLibraryPanel::ItemActions::ADD_ITEM, lib, tr("Add Particle"), false, view, Qt::QueuedConnection));
-    view->AddButton("Add Folder", m_libraryTreeViewDock->GetMenuAction(DockableLibraryPanel::ItemActions::ADD_FOLDER, lib, tr("Add Particle"), false, view, Qt::QueuedConnection));
+    view->AddButton(tr("Add Particle"), m_libraryTreeViewDock->GetMenuAction(DockableLibraryPanel::ItemActions::ADD_ITEM, lib, tr("Add Particle"), false, view, Qt::QueuedConnection));
+    view->AddButton(tr("Add Folder"), m_libraryTreeViewDock->GetMenuAction(DockableLibraryPanel::ItemActions::ADD_FOLDER, lib, tr("Add Particle"), false, view, Qt::QueuedConnection));
 }
 
 void CMainWindow::Library_SelecteItem(const QString& fullname)

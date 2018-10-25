@@ -926,7 +926,7 @@ void CAreaBox::UpdateSoundPanelParams()
     {
         if (!m_nSoundPanelID)
         {
-            m_nSoundPanelID = GetIEditor()->AddRollUpPage(ROLLUP_OBJECTS, "Sound Obstruction", m_pSoundPropertiesPanel);
+            m_nSoundPanelID = GetIEditor()->AddRollUpPage(ROLLUP_OBJECTS, tr("Sound Obstruction"), m_pSoundPropertiesPanel);
         }
 
         m_pSoundPropertiesPanel->DeleteVars();

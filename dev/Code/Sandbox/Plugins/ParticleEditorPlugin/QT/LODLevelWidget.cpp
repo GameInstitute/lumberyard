@@ -134,7 +134,7 @@ void LODLevelWidget::Init(SLodInfo* lod)
     m_TitleLayout->addWidget(m_TitleActive, 0, Qt::AlignLeft);
     connect(m_TitleActive, &QCheckBox::stateChanged, this, &LODLevelWidget::LODStateChanged);
 
-    m_TitleLabel = new QLabel("LOD Distance", m_TitleWidget);
+    m_TitleLabel = new QLabel(tr("LOD Distance"), m_TitleWidget);
     m_TitleLayout->addWidget(m_TitleLabel, 0, Qt::AlignLeft);
 
     m_TitleDistanceBox = new QDoubleSpinBox(m_TitleWidget);
@@ -451,7 +451,7 @@ void LODLevelWidget::OnItemContextMenu(const QPoint& pos)
     }
     QMenu menu;
     //ignore selection
-    QAction* removeaction = menu.addAction("Remove");
+    QAction* removeaction = menu.addAction(tr("Remove"));
 
     bool* removed = new bool(false);
     connect(removeaction, &QAction::triggered, this, [=]()

@@ -706,7 +706,7 @@ namespace ScriptCanvasEditor
 
         // List of recent files.
         {
-            QMenu* recentMenu = new QMenu("Open &Recent");
+            QMenu* recentMenu = new QMenu(tr("Open &Recent"));
 
             for (int i = 0; i < m_recentActions.size(); ++i)
             {
@@ -720,7 +720,7 @@ namespace ScriptCanvasEditor
 
             // Clear Recent Files.
             {
-                QAction* action = new QAction("&Clear Recent Files", this);
+                QAction* action = new QAction(tr("&Clear Recent Files"), this);
 
                 QObject::connect(action,
                     &QAction::triggered,

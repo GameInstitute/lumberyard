@@ -55,7 +55,7 @@ void CTerrainHoleTool::BeginEditParams(IEditor* ie, int flags)
     if (!m_panelId)
     {
         m_panel = new CTerrainHolePanel(this);
-        m_panelId = GetIEditor()->AddRollUpPage(ROLLUP_TERRAIN, "Modify Terrain", m_panel);
+        m_panelId = GetIEditor()->AddRollUpPage(ROLLUP_TERRAIN, tr("Modify Terrain"), m_panel);
         MainWindow::instance()->setFocus();
     }
 }

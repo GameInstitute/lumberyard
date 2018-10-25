@@ -33,7 +33,7 @@ HierarchyMenu::HierarchyMenu(HierarchyWidget* hierarchy,
     if (showMask & (Show::kNew_EmptyElement | Show::kNew_ElementFromPrefabs |
                     Show::kNew_EmptyElementAtRoot | Show::kNew_ElementFromPrefabsAtRoot))
     {
-        QMenu* menu = (addMenuForNewElement ? addMenu("&New...") : this);
+        QMenu* menu = (addMenuForNewElement ? addMenu(tr("&New...")) : this);
 
         if (showMask & (Show::kNew_EmptyElement | Show::kNew_EmptyElementAtRoot))
         {
@@ -97,7 +97,7 @@ void HierarchyMenu::CutCopyPaste(HierarchyWidget* hierarchy,
 
     // Cut element.
     {
-        action = new QAction("Cut", this);
+        action = new QAction(tr("Cut"), this);
         action->setShortcut(QKeySequence::Cut);
         action->setShortcutContext(Qt::WidgetWithChildrenShortcut);
         QObject::connect(action,
@@ -119,7 +119,7 @@ void HierarchyMenu::CutCopyPaste(HierarchyWidget* hierarchy,
 
     // Copy element.
     {
-        action = new QAction("Copy", this);
+        action = new QAction(tr("Copy"), this);
         action->setShortcut(QKeySequence::Copy);
         action->setShortcutContext(Qt::WidgetWithChildrenShortcut);
         QObject::connect(action,
@@ -143,7 +143,7 @@ void HierarchyMenu::CutCopyPaste(HierarchyWidget* hierarchy,
 
     // Paste element.
     {
-        action = new QAction(QIcon(":/Icons/Eye_Open.png"), (itemsAreSelected ? "Paste as sibling" : "Paste"), this);
+        action = new QAction(QIcon(":/Icons/Eye_Open.png"), (itemsAreSelected ? tr("Paste as sibling") : tr("Paste")), this);
         action->setShortcut(QKeySequence::Paste);
         action->setShortcutContext(Qt::WidgetWithChildrenShortcut);
         QObject::connect(action,
@@ -164,7 +164,7 @@ void HierarchyMenu::CutCopyPaste(HierarchyWidget* hierarchy,
 
         if (itemsAreSelected)
         {
-            action = new QAction(QIcon(":/Icons/Eye_Open.png"), ("Paste as child"), this);
+            action = new QAction(QIcon(":/Icons/Eye_Open.png"), (tr("Paste as child")), this);
             {
                 action->setShortcuts(QList<QKeySequence>{QKeySequence(Qt::CTRL + Qt::SHIFT + Qt::Key_V),
                                                          QKeySequence(Qt::META + Qt::SHIFT + Qt::Key_V)});
@@ -251,7 +251,7 @@ void HierarchyMenu::SliceMenuItems(HierarchyWidget* hierarchy,
 
         if (showMask & Show::kNewSlice)
         {
-            QAction* action = addAction("Make Cascaded Slice from Selected Slices && Entities...");
+            QAction* action = addAction(tr("Make Cascaded Slice from Selected Slices && Entities..."));
             QObject::connect(action, &QAction::triggered, hierarchy, [hierarchy, selectedEntities]
                 {
                     hierarchy->GetEditorWindow()->GetSliceManager()->MakeSliceFromSelectedItems(hierarchy, true);
@@ -412,7 +412,7 @@ void HierarchyMenu::DeleteElement(HierarchyWidget* hierarchy,
 
     // Delete element.
     {
-        action = new QAction("Delete", this);
+        action = new QAction(tr("Delete"), this);
         action->setShortcut(QKeySequence::Delete);
         action->setShortcutContext(Qt::WidgetWithChildrenShortcut);
         QObject::connect(action,

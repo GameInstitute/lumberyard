@@ -93,12 +93,12 @@ void CVegetationTool::BeginEditParams(IEditor* ie, int flags)
     {
         WaitCursor wait;
         m_panel = new CVegetationPanel(this);
-        m_panelId = GetIEditor()->AddRollUpPage(ROLLUP_TERRAIN, "Vegetation", m_panel);
+        m_panelId = GetIEditor()->AddRollUpPage(ROLLUP_TERRAIN, tr("Vegetation"), m_panel);
 
         if (gSettings.bPreviewGeometryWindow)
         {
             m_panelPreview = new CPanelPreview;
-            m_panelPreviewId = GetIEditor()->AddRollUpPage(ROLLUP_TERRAIN, "Object Preview", m_panelPreview);
+            m_panelPreviewId = GetIEditor()->AddRollUpPage(ROLLUP_TERRAIN, tr("Object Preview"), m_panelPreview);
             m_panel->SetPreviewPanel(m_panelPreview);
         }
 

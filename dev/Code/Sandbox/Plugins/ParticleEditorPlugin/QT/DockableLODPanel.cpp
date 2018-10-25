@@ -194,9 +194,9 @@ void LodWidget::RefreshGUI(CParticleItem* item, int selectedLevel)
     m_Layout->addWidget(m_TopWidget);
     m_TopLayout = new QGridLayout(m_TopWidget);
 
-    m_BlendInLabel = new QLabel("Blend In", m_TopWidget);
-    m_BlendOutLabel = new QLabel("Blend Out", m_TopWidget);
-    m_OverlapLabel = new QLabel("Overlap", m_TopWidget);
+    m_BlendInLabel = new QLabel(tr("Blend In"), m_TopWidget);
+    m_BlendOutLabel = new QLabel(tr("Blend Out"), m_TopWidget);
+    m_OverlapLabel = new QLabel(tr("Overlap"), m_TopWidget);
 
     m_BlendInBox = new QDoubleSpinBox(m_TopWidget);
     m_BlendInBox->setMinimum(0.0);
@@ -212,7 +212,7 @@ void LodWidget::RefreshGUI(CParticleItem* item, int selectedLevel)
     connect(m_BlendOutBox, SIGNAL(valueChanged(double)), this, SLOT(BlendOutValueChanged(double)));
     connect(m_OverlapBox, SIGNAL(valueChanged(double)), this, SLOT(OverlapValueChanged(double)));
 
-    m_AddLevelOfDetailButton = new QPushButton("+ Add Level of Detail", m_TopWidget);
+    m_AddLevelOfDetailButton = new QPushButton(tr("+ Add Level of Detail"), m_TopWidget);
     connect(m_AddLevelOfDetailButton, SIGNAL(released()), this, SLOT(AddLodLevelSlot()));
 
 
@@ -662,7 +662,7 @@ void DockableLODPanel::Init(const QString& panelName)
     m_centralWidget->setLayout(m_layout);
     BuildGUI();
     //Build menu
-    setWindowTitle("Level of detail");
+    setWindowTitle(tr("Level of detail"));
     ShowDefaultView();
 }
 

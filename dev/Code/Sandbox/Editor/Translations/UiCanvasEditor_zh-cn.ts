@@ -733,6 +733,70 @@ Would you still like to save to this location?</source>
     </message>
 </context>
 <context>
+    <name>EnterPreviewToolbar</name>
+    <message>
+        <location filename="../../Plugins/UiCanvasEditor/EnterPreviewToolbar.cpp" line="28"/>
+        <source>Preview</source>
+        <translation>预览</translation>
+    </message>
+    <message>
+        <location filename="../../Plugins/UiCanvasEditor/EnterPreviewToolbar.cpp" line="37"/>
+        <source>Switch to Preview mode</source>
+        <translation>切换到预览模式</translation>
+    </message>
+</context>
+<context>
+    <name>HierarchyMenu</name>
+    <message>
+        <location filename="../../Plugins/UiCanvasEditor/HierarchyMenu.cpp" line="36"/>
+        <source>&amp;New...</source>
+        <translation>&amp;新建...</translation>
+    </message>
+    <message>
+        <location filename="../../Plugins/UiCanvasEditor/HierarchyMenu.cpp" line="100"/>
+        <source>Cut</source>
+        <translation>剪切</translation>
+    </message>
+    <message>
+        <location filename="../../Plugins/UiCanvasEditor/HierarchyMenu.cpp" line="122"/>
+        <source>Copy</source>
+        <translation>复制</translation>
+    </message>
+    <message>
+        <location filename="../../Plugins/UiCanvasEditor/HierarchyMenu.cpp" line="146"/>
+        <source>Paste as sibling</source>
+        <translation>粘贴为兄弟</translation>
+    </message>
+    <message>
+        <location filename="../../Plugins/UiCanvasEditor/HierarchyMenu.cpp" line="146"/>
+        <source>Paste</source>
+        <translation>粘贴</translation>
+    </message>
+    <message>
+        <location filename="../../Plugins/UiCanvasEditor/HierarchyMenu.cpp" line="167"/>
+        <source>Paste as child</source>
+        <translation>粘贴为子级</translation>
+    </message>
+    <message>
+        <location filename="../../Plugins/UiCanvasEditor/HierarchyMenu.cpp" line="254"/>
+        <source>Make Cascaded Slice from Selected Slices &amp;&amp; Entities...</source>
+        <translation>从选中切片&amp;&amp;实体组制作级联切片...</translation>
+    </message>
+    <message>
+        <location filename="../../Plugins/UiCanvasEditor/HierarchyMenu.cpp" line="415"/>
+        <source>Delete</source>
+        <translation>删除</translation>
+    </message>
+</context>
+<context>
+    <name>NewElementToolbarSection</name>
+    <message>
+        <location filename="../../Plugins/UiCanvasEditor/NewElementToolbarSection.cpp" line="21"/>
+        <source>New...</source>
+        <translation>新建...</translation>
+    </message>
+</context>
+<context>
     <name>PreviewAnimationList</name>
     <message>
         <location filename="../../Plugins/UiCanvasEditor/PreviewAnimationList.cpp" line="93"/>
@@ -1224,6 +1288,14 @@ Are you sure you want to detach the selected instances?</source>
         <location filename="../../Plugins/UiCanvasEditor/UiSliceManager.cpp" line="389"/>
         <source>Push to Slice(es)</source>
         <translation>推送到Slice</translation>
+    </message>
+</context>
+<context>
+    <name>ViewportInteraction</name>
+    <message>
+        <location filename="../../Plugins/UiCanvasEditor/ViewportInteraction.cpp" line="718"/>
+        <source>Zoom: %1 %</source>
+        <translation>缩放: %1 %</translation>
     </message>
 </context>
 </TS>

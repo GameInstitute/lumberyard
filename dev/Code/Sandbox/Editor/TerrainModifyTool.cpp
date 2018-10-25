@@ -121,7 +121,7 @@ void CTerrainModifyTool::BeginEditParams(IEditor* ie, int flags)
         // different enough to make it impossible to use.
         m_panel = new CTerrainModifyPanel;
         m_panel->SetModifyTool(this);
-        m_panelId = GetIEditor()->AddRollUpPage(ROLLUP_TERRAIN, "Modify Terrain", m_panel);
+        m_panelId = GetIEditor()->AddRollUpPage(ROLLUP_TERRAIN, tr("Modify Terrain"), m_panel);
         MainWindow::instance()->setFocus();
 
         UpdateUI();

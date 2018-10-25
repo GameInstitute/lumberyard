@@ -391,7 +391,7 @@ void CPanelTreeBrowser::AddPreviewPanel()
         {
             // Create Preview.
             m_panelPreview = new CPanelPreview;
-            m_panelPreviewId = GetIEditor()->AddRollUpPage(ROLLUP_OBJECTS, "Object Preview", m_panelPreview, 2); // add it after the other panels but before the end of the list.
+            m_panelPreviewId = GetIEditor()->AddRollUpPage(ROLLUP_OBJECTS, tr("Object Preview"), m_panelPreview, 2); // add it after the other panels but before the end of the list.
         }
     }
 }

@@ -1050,7 +1050,9 @@ maxSlope = %17</source>
         <source>%1:
 
 Pathfinding properties unknown.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1:
+
+寻路属性未知。</translation>
     </message>
 </context>
 <context>
@@ -1072,6 +1074,14 @@ Pathfinding properties unknown.</source>
         <location filename="../AIPointPanel.cpp" line="52"/>
         <source>Pick AIPoint to Link Impass</source>
         <translation>拾取要Impass链接的AIPoint</translation>
+    </message>
+</context>
+<context>
+    <name>CAITerritoryObject</name>
+    <message>
+        <location filename="../Objects/ShapeObject.cpp" line="2985"/>
+        <source>Multi Shape Operation</source>
+        <translation>多个形状操作</translation>
     </message>
 </context>
 <context>
@@ -1185,6 +1195,14 @@ Pathfinding properties unknown.</source>
         <location filename="../CharacterEditor/AnimationBrowser.cpp" line="1081"/>
         <source>Reload for testing</source>
         <translation>重新载入以进行测试</translation>
+    </message>
+</context>
+<context>
+    <name>CAreaBox</name>
+    <message>
+        <location filename="../Objects/AreaBox.cpp" line="929"/>
+        <source>Sound Obstruction</source>
+        <translation>声音障碍</translation>
     </message>
 </context>
 <context>
@@ -5893,6 +5911,11 @@ Actions 文件 - %1</translation>
         <source>Preview of this file type not supported.</source>
         <translation>不支持预览此文件类型。</translation>
     </message>
+    <message>
+        <location filename="../ModelViewport.cpp" line="506"/>
+        <source>Debug Options</source>
+        <translation>调试选项</translation>
+    </message>
 </context>
 <context>
     <name>CModellingModeTool</name>
@@ -6029,6 +6052,16 @@ Actions 文件 - %1</translation>
 <context>
     <name>CObjectCreateTool</name>
     <message>
+        <location filename="../ObjectCreateTool.cpp" line="111"/>
+        <source>Geometry Type</source>
+        <translation>几何体类型</translation>
+    </message>
+    <message>
+        <location filename="../ObjectCreateTool.cpp" line="115"/>
+        <source>Object Type</source>
+        <translation>对象类型</translation>
+    </message>
+    <message>
         <location filename="../ObjectCreateTool.cpp" line="135"/>
         <source>Warning</source>
         <translation>警告</translation>
@@ -6037,6 +6070,11 @@ Actions 文件 - %1</translation>
         <location filename="../ObjectCreateTool.cpp" line="135"/>
         <source>Object creation failed, unknown object type.</source>
         <translation>对象创建失败，未知对象类型。</translation>
+    </message>
+    <message>
+        <location filename="../ObjectCreateTool.cpp" line="152"/>
+        <source>Browser</source>
+        <translation>浏览器</translation>
     </message>
 </context>
 <context>
@@ -6592,6 +6630,14 @@ Reload anyway?</source>
         <location filename="../PanelDisplayRender.ui" line="389"/>
         <source>Highlight Missing Surface Type</source>
         <translation>高亮缺少的表面类型</translation>
+    </message>
+</context>
+<context>
+    <name>CPanelTreeBrowser</name>
+    <message>
+        <location filename="../PanelTreeBrowser.cpp" line="394"/>
+        <source>Object Preview</source>
+        <translation>对象预览</translation>
     </message>
 </context>
 <context>
@@ -7646,6 +7692,19 @@ Do you wish to continue?</source>
     </message>
 </context>
 <context>
+    <name>CShapeObject</name>
+    <message>
+        <location filename="../Objects/ShapeObject.cpp" line="376"/>
+        <source>Multi Shape Operation</source>
+        <translation>多个形状操作</translation>
+    </message>
+    <message>
+        <location filename="../Objects/ShapeObject.cpp" line="2250"/>
+        <source>Sound Obstruction</source>
+        <translation>声音障碍</translation>
+    </message>
+</context>
+<context>
     <name>CSimpleEntity</name>
     <message>
         <location filename="../Objects/SimpleEntity.cpp" line="118"/>
@@ -8190,6 +8249,16 @@ Creation canceled...</source>
         <source>Sub Object Selection</source>
         <translation>子对象选择</translation>
     </message>
+    <message>
+        <location filename="../EditMode/VertexMode.cpp" line="193"/>
+        <source>Selection Type</source>
+        <translation>选择类型</translation>
+    </message>
+    <message>
+        <location filename="../EditMode/VertexMode.cpp" line="198"/>
+        <source>Selection</source>
+        <translation>选择...</translation>
+    </message>
 </context>
 <context>
     <name>CTVCustomizeTrackColorsDlg</name>
@@ -8240,7 +8309,7 @@ Still continue?</source>
     <message>
         <location filename="../TrackViewNewSequenceDialog.cpp" line="45"/>
         <source>Add New Sequence</source>
-        <translation type="unfinished"></translation>
+        <translation>添加新序列</translation>
     </message>
 </context>
 <context>
@@ -8438,6 +8507,14 @@ Still continue?</source>
     </message>
 </context>
 <context>
+    <name>CTerrainHoleTool</name>
+    <message>
+        <location filename="../TerrainHoleTool.cpp" line="58"/>
+        <source>Modify Terrain</source>
+        <translation>修改地形</translation>
+    </message>
+</context>
+<context>
     <name>CTerrainLighting</name>
     <message>
         <location filename="../TerrainLighting.cpp" line="532"/>
@@ -8515,11 +8592,24 @@ Still continue?</source>
     </message>
 </context>
 <context>
+    <name>CTerrainMiniMapTool</name>
+    <message>
+        <location filename="../TerrainMiniMapTool.cpp" line="287"/>
+        <source>Mini Map</source>
+        <translation>小地图</translation>
+    </message>
+</context>
+<context>
     <name>CTerrainModifyTool</name>
     <message>
         <location filename="../TerrainModifyTool.cpp" line="69"/>
         <source>Modify Terrain Heightmap</source>
         <translation>修改地形高度图</translation>
+    </message>
+    <message>
+        <location filename="../TerrainModifyTool.cpp" line="124"/>
+        <source>Modify Terrain</source>
+        <translation>修改地形</translation>
     </message>
 </context>
 <context>
@@ -8629,6 +8719,12 @@ Still continue?</source>
 <context>
     <name>CTerrainTextureDialog</name>
     <message>
+        <location filename="../TerrainTexture.cpp" line="828"/>
+        <location filename="../TerrainTexture.cpp" line="829"/>
+        <source>No layer selected</source>
+        <translation>无选中图层</translation>
+    </message>
+    <message>
         <location filename="../TerrainTexture.cpp" line="838"/>
         <source>LayerId</source>
         <translation>图层ID</translation>
@@ -8642,6 +8738,17 @@ Still continue?</source>
         <location filename="../TerrainTexture.cpp" line="849"/>
         <source>Surface Type Count</source>
         <translation>表面类型数</translation>
+    </message>
+    <message>
+        <location filename="../TerrainTexture.cpp" line="859"/>
+        <location filename="../TerrainTexture.cpp" line="860"/>
+        <source>Multiple layers selected</source>
+        <translation>选中多个图层</translation>
+    </message>
+    <message>
+        <location filename="../TerrainTexture.cpp" line="962"/>
+        <source>Saving preview...</source>
+        <translation>保存预览...</translation>
     </message>
     <message>
         <location filename="../TerrainTexture.cpp" line="1086"/>
@@ -8781,9 +8888,292 @@ Do you want to re - assign this shortcut ?</source>
         <translation>多轨计数</translation>
     </message>
     <message>
+        <location filename="../TrackView/TrackViewDialog.cpp" line="270"/>
+        <source>Key</source>
+        <translation>关键帧</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewDialog.cpp" line="278"/>
+        <location filename="../TrackView/TrackViewDialog.cpp" line="437"/>
+        <source>Curve Editor</source>
+        <translation>曲线编辑器</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewDialog.cpp" line="355"/>
+        <source>Sequence/Node:</source>
+        <translation>序列/节点:</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewDialog.cpp" line="356"/>
+        <source>Add Sequence</source>
+        <translation>添加序列</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewDialog.cpp" line="360"/>
+        <source>Delete Sequence</source>
+        <translation>删除序列</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewDialog.cpp" line="364"/>
+        <source>Edit Sequence Properties</source>
+        <translation>编辑序列属性</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewDialog.cpp" line="370"/>
+        <source>Select the sequence</source>
+        <translation>选择序列</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewDialog.cpp" line="377"/>
+        <source>Add Selected Node</source>
+        <translation>添加所选节点</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewDialog.cpp" line="389"/>
+        <source>Add Director Node</source>
+        <translation>添加导演节点</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewDialog.cpp" line="393"/>
+        <source>Find</source>
+        <translation>查找</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewDialog.cpp" line="398"/>
+        <source>Toggle Disable</source>
+        <translation>切换禁用</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewDialog.cpp" line="403"/>
+        <source>Toggle Mute</source>
+        <translation>切换静音</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewDialog.cpp" line="408"/>
+        <source>Mute Selected Tracks</source>
+        <translation>静音所选轨迹</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewDialog.cpp" line="412"/>
+        <source>Unmute Selected Tracks</source>
+        <translation>取消静音所选轨迹</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewDialog.cpp" line="417"/>
+        <source>Create Light Animation Set</source>
+        <translation>创建光源动画集</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewDialog.cpp" line="421"/>
+        <source>Add Light Animation Node</source>
+        <translation>添加光源动画节点</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewDialog.cpp" line="430"/>
+        <source>Track Editor</source>
+        <translation>轨迹编辑器</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewDialog.cpp" line="443"/>
+        <source>Both</source>
+        <translation>两者</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewDialog.cpp" line="453"/>
+        <source>Go to start of sequence</source>
+        <translation>转到序列开头</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewDialog.cpp" line="460"/>
+        <source>Play Animation</source>
+        <translation>播放动画</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewDialog.cpp" line="493"/>
+        <source>Sequence Camera</source>
+        <translation>序列摄像机</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewDialog.cpp" line="501"/>
+        <location filename="../TrackView/TrackViewDialog.cpp" line="509"/>
+        <source>Stop</source>
+        <translation>停止</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewDialog.cpp" line="512"/>
+        <source>Stop with Hard Reset</source>
+        <translation>硬重启停止</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewDialog.cpp" line="519"/>
+        <source>Pause</source>
+        <translation>暂停</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewDialog.cpp" line="524"/>
+        <source>Go to end of sequence</source>
+        <translation>转到序列结束</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewDialog.cpp" line="529"/>
+        <source>Start Animation Recording</source>
+        <translation>开始动画录制</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewDialog.cpp" line="537"/>
+        <source>Start Auto Recording</source>
+        <translation>开始自动录制</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewDialog.cpp" line="552"/>
+        <source> 1 sec</source>
+        <translation> 1 秒</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewDialog.cpp" line="556"/>
+        <source>1/%1 sec</source>
+        <translation>1/%1 秒</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewDialog.cpp" line="568"/>
+        <source>Loop</source>
+        <translation>循环</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewDialog.cpp" line="576"/>
+        <source>Frame Rate</source>
+        <translation>帧率</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewDialog.cpp" line="584"/>
+        <source>Undo</source>
+        <translation>撤销</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewDialog.cpp" line="591"/>
+        <source>Redo</source>
+        <translation>恢复</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewDialog.cpp" line="604"/>
+        <source>Keys:</source>
+        <translation>关键帧:</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewDialog.cpp" line="605"/>
+        <source>Go to previous key</source>
+        <translation>转到上一个关键帧</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewDialog.cpp" line="609"/>
+        <source>Go to next key</source>
+        <translation>转到下一个关键帧</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewDialog.cpp" line="614"/>
+        <source>Move Keys</source>
+        <translation>移动关键帧</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewDialog.cpp" line="618"/>
+        <source>Slide Keys</source>
+        <translation>滑动关键帧</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewDialog.cpp" line="622"/>
+        <source>Scale Keys</source>
+        <translation>缩放关键帧</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewDialog.cpp" line="626"/>
+        <source>Add Keys</source>
+        <translation>添加关键帧</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewDialog.cpp" line="630"/>
+        <source>Delete Keys</source>
+        <translation>删除关键帧</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewDialog.cpp" line="635"/>
+        <source>No Snapping</source>
+        <translation>无吸附</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewDialog.cpp" line="639"/>
+        <source>Magnet Snapping</source>
+        <translation>磁性吸附</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewDialog.cpp" line="643"/>
+        <source>Frame Snapping</source>
+        <translation>关键帧吸附</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewDialog.cpp" line="647"/>
+        <source>Tick Snapping</source>
+        <translation>Tick吸附</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewDialog.cpp" line="652"/>
+        <source>Sync Selected Entity Nodes to Base Position</source>
+        <translation>同步所选实体节点到基位置</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewDialog.cpp" line="656"/>
+        <source>Sync Selected Entity Nodes from Base Position</source>
+        <translation>从基位置同步所选实体节点</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewDialog.cpp" line="691"/>
+        <source>&amp;Sequence</source>
+        <translation>&amp;序列</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewDialog.cpp" line="692"/>
+        <source>New Sequence...</source>
+        <translation>新建序列...</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewDialog.cpp" line="697"/>
+        <source>&amp;View</source>
+        <translation>&amp;视图</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewDialog.cpp" line="702"/>
+        <source>Tick in Seconds</source>
+        <translation>Tick 秒</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewDialog.cpp" line="707"/>
+        <source>Tick in Frames</source>
+        <translation>Tick 帧</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewDialog.cpp" line="713"/>
+        <source>T&amp;ools</source>
+        <translation>工&amp;具</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewDialog.cpp" line="714"/>
+        <source>Render Output...</source>
+        <translation>渲染输出...</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewDialog.cpp" line="718"/>
+        <source>Customize &amp;Track Colors...</source>
+        <translation>自定义&amp;轨迹颜色...</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewDialog.cpp" line="968"/>
+        <location filename="../TrackView/TrackViewDialog.cpp" line="973"/>
+        <source>Active Camera</source>
+        <translation>活动摄像机</translation>
+    </message>
+    <message>
         <location filename="../TrackView/TrackViewDialog.cpp" line="1270"/>
         <source>Delete current sequence?</source>
-        <translation type="unfinished"></translation>
+        <translation>删除当前序列?</translation>
     </message>
     <message>
         <location filename="../TrackView/TrackViewDialog.cpp" line="1657"/>
@@ -8945,6 +9335,280 @@ Please reduce the length.</source>
         <location filename="../TrackView/TrackViewNodes.cpp" line="1978"/>
         <source>The name already exists. Use another.</source>
         <translation>该名称已存在。 使用其它名称。</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewNodes.cpp" line="2005"/>
+        <source>Create Folder</source>
+        <translation>创建文件夹</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewNodes.cpp" line="2010"/>
+        <source>Add Selected Entity</source>
+        <translation>添加所选Entity</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewNodes.cpp" line="2010"/>
+        <source>Add Selected Entities</source>
+        <translation>添加所选实体组</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewNodes.cpp" line="2022"/>
+        <source>Add Current Layer</source>
+        <translation>添加当前图层</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewNodes.cpp" line="2027"/>
+        <source>Add Radial Blur Node</source>
+        <translation>添加径向模糊节点</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewNodes.cpp" line="2032"/>
+        <source>Add Color Correction Node</source>
+        <translation>添加颜色校正节点</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewNodes.cpp" line="2037"/>
+        <source>Add Depth of Field Node</source>
+        <translation>添加景深节点</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewNodes.cpp" line="2042"/>
+        <source>Add Screen Fader</source>
+        <translation>添加屏幕衰减器</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewNodes.cpp" line="2047"/>
+        <source>Add Shadows Setup Node</source>
+        <translation>添加阴影设置节点</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewNodes.cpp" line="2052"/>
+        <source>Add Environment Node</source>
+        <translation>添加环境节点</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewNodes.cpp" line="2058"/>
+        <source>Add Director(Scene) Node</source>
+        <translation>添加导演(场景)节点</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewNodes.cpp" line="2061"/>
+        <source>Add Comment Node</source>
+        <translation>添加注释节点</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewNodes.cpp" line="2062"/>
+        <source>Add Console Variable Node</source>
+        <translation>添加控制台变量节点</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewNodes.cpp" line="2063"/>
+        <source>Add Script Variable Node</source>
+        <translation>添加脚本变量节点</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewNodes.cpp" line="2064"/>
+        <source>Add Material Node</source>
+        <translation>添加材质节点</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewNodes.cpp" line="2065"/>
+        <source>Add Event Node</source>
+        <translation>添加事件节点</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewNodes.cpp" line="2124"/>
+        <location filename="../TrackView/TrackViewNodes.cpp" line="2133"/>
+        <location filename="../TrackView/TrackViewNodes.cpp" line="2429"/>
+        <source>Select In Viewport</source>
+        <translation>在视口中选中</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewNodes.cpp" line="2137"/>
+        <source>Set As View Camera</source>
+        <translation>设置为视口摄像机</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewNodes.cpp" line="2150"/>
+        <source>Copy</source>
+        <translation>复制</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewNodes.cpp" line="2156"/>
+        <source>Paste</source>
+        <translation>粘贴</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewNodes.cpp" line="2162"/>
+        <source>Delete</source>
+        <translation>删除</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewNodes.cpp" line="2170"/>
+        <source>Rename</source>
+        <translation>重命名</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewNodes.cpp" line="2181"/>
+        <source>Copy Keys</source>
+        <translation>复制关键帧</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewNodes.cpp" line="2182"/>
+        <source>Copy Selected Keys</source>
+        <translation>复制所选关键帧</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewNodes.cpp" line="2183"/>
+        <source>Paste Keys</source>
+        <translation>粘贴关键帧</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewNodes.cpp" line="2194"/>
+        <source>Disabled</source>
+        <translation>禁用</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewNodes.cpp" line="2207"/>
+        <source>Muted</source>
+        <translation>静音</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewNodes.cpp" line="2219"/>
+        <source>Active Director</source>
+        <translation>活动导演</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewNodes.cpp" line="2234"/>
+        <source>Expand all</source>
+        <translation>展开所有</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewNodes.cpp" line="2235"/>
+        <source>Collapse all</source>
+        <translation>折叠所有</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewNodes.cpp" line="2238"/>
+        <source>Expand Folders</source>
+        <translation>展开文件夹</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewNodes.cpp" line="2239"/>
+        <source>Collapse Folders</source>
+        <translation>折叠文件夹</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewNodes.cpp" line="2240"/>
+        <source>Expand Entities</source>
+        <translation>展开实体组</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewNodes.cpp" line="2241"/>
+        <source>Collapse Entities</source>
+        <translation>折叠实体组</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewNodes.cpp" line="2242"/>
+        <source>Expand Cameras</source>
+        <translation>展开摄像机</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewNodes.cpp" line="2243"/>
+        <source>Collapse Cameras</source>
+        <translation>折叠摄像机</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewNodes.cpp" line="2244"/>
+        <source>Expand Materials</source>
+        <translation>展开材质</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewNodes.cpp" line="2245"/>
+        <source>Collapse Materials</source>
+        <translation>折叠材质</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewNodes.cpp" line="2246"/>
+        <source>Expand Events</source>
+        <translation>展开事件</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewNodes.cpp" line="2247"/>
+        <source>Collapse Events</source>
+        <translation>折叠事件</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewNodes.cpp" line="2249"/>
+        <location filename="../TrackView/TrackViewNodes.cpp" line="2628"/>
+        <source>Expand</source>
+        <translation>展开</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewNodes.cpp" line="2251"/>
+        <location filename="../TrackView/TrackViewNodes.cpp" line="2628"/>
+        <source>Collapse</source>
+        <translation>折叠</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewNodes.cpp" line="2290"/>
+        <source>Import FBX File...</source>
+        <translation>导入FBX文件...</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewNodes.cpp" line="2291"/>
+        <source>Export FBX File...</source>
+        <translation>导出FBX文件...</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewNodes.cpp" line="2299"/>
+        <source>Edit Events...</source>
+        <translation>编辑事件...</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewNodes.cpp" line="2348"/>
+        <source>Set Animation Layer</source>
+        <translation>设置动画图层</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewNodes.cpp" line="2358"/>
+        <source>Customize Track Color...</source>
+        <translation>自定义轨迹颜色...</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewNodes.cpp" line="2361"/>
+        <source>Clear Custom Track Color</source>
+        <translation>清除自定义轨迹颜色</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewNodes.cpp" line="2370"/>
+        <source>%1 Tracks</source>
+        <translation>%1 轨迹</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewNodes.cpp" line="2421"/>
+        <source>Copy Selected Nodes</source>
+        <translation>复制所选节点</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewNodes.cpp" line="2424"/>
+        <source>Remove Selected Nodes/Tracks</source>
+        <translation>移除所选节点/轨迹</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewNodes.cpp" line="2440"/>
+        <source>Import From FBX File</source>
+        <translation>从FBX文件导入</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewNodes.cpp" line="2441"/>
+        <source>Save To FBX File</source>
+        <translation>保存到FBX文件</translation>
+    </message>
+    <message>
+        <location filename="../TrackView/TrackViewNodes.cpp" line="2850"/>
+        <source>Layer #%1</source>
+        <translation>图层 #%1</translation>
     </message>
 </context>
 <context>
@@ -9395,28 +10059,35 @@ Is it a scope/barrel attachment that needs a gun tag setting first?</source>
         <location filename="../VegetationDataBasePage.cpp" line="600"/>
         <source>Groups %1 / %2
 </source>
-        <translation type="unfinished"></translation>
+        <translation>组合 %1 / %2
+</translation>
     </message>
     <message>
         <location filename="../VegetationDataBasePage.cpp" line="601"/>
         <source>Instance Count:
    %1 / %2
 </source>
-        <translation type="unfinished"></translation>
+        <translation>实例数:
+   %1 / %2
+</translation>
     </message>
     <message>
         <location filename="../VegetationDataBasePage.cpp" line="602"/>
         <source>Texture Usage:
    %1 K / %2 K
 </source>
-        <translation type="unfinished"></translation>
+        <translation>贴图使用:
+   %1 K / %2 K
+</translation>
     </message>
     <message>
         <location filename="../VegetationDataBasePage.cpp" line="603"/>
         <source>Sprite Memory Usage:
    %1 K / %2 K
 </source>
-        <translation type="unfinished"></translation>
+        <translation>Sprite内存使用:
+   %1 K / %2 K
+</translation>
     </message>
     <message>
         <location filename="../VegetationDataBasePage.cpp" line="717"/>
@@ -9743,6 +10414,19 @@ Is it a scope/barrel attachment that needs a gun tag setting first?</source>
         <location filename="../VegetationPanel.cpp" line="1732"/>
         <source>Export Objects</source>
         <translation>导出对象</translation>
+    </message>
+</context>
+<context>
+    <name>CVegetationTool</name>
+    <message>
+        <location filename="../VegetationTool.cpp" line="96"/>
+        <source>Vegetation</source>
+        <translation>植被</translation>
+    </message>
+    <message>
+        <location filename="../VegetationTool.cpp" line="101"/>
+        <source>Object Preview</source>
+        <translation>对象预览</translation>
     </message>
 </context>
 <context>
@@ -11006,32 +11690,6 @@ If a sound is specified the time of &apos;Delay&apos; is relative to the end of 
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../DialogEditor/DialogScriptView.cpp" line="1024"/>
-        <source>Facial expression. Normally, every sound is already lip-synced and may already contain facial expressions. So use with care.
-Can be useful when you don&apos;t play a sound, but simply want the Actor make look with a specific mood/expression.
-Use #RESET# to reset expression to default state.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../DialogEditor/DialogScriptView.cpp" line="1026"/>
-        <source>Weight of the facial expression [0-1]. How strong the facial expression should be applied.
-When sound already contains a facial expression, use only small values &lt; 0.5.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../DialogEditor/DialogScriptView.cpp" line="1030"/>
-        <source>Lookat target of the Actor. Actor will try to look at his target before he starts to talk/animate.
-Sometimes this cannot be guaranteed. Also, while doing his animation or talking he may no longer face his target. For these cases use Sticky lookat. To disable sticky look-at use #RESET#.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../DialogEditor/DialogScriptView.cpp" line="1032"/>
-        <source>Delay in seconds before advancing to the next line. When a sound is played, Delay is relative to the end of the sound.
-So, to slightly overlap lines and to make dialog more natural, you can use negative delays.
-When no sound is specified, the delay is relative to the start of the line.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../DialogEditor/DialogScriptView.cpp" line="1036"/>
         <source>When checked, Exact Positioning [EP] will be used to play the animation. The target for the EP is the LookAt target.
 If you want to make sure that an animation is exactly oriented, use this option.</source>
@@ -11055,9 +11713,35 @@ You can reset Sticky lookat by #RESET# as LookAt target or a new lookat target w
         <translation>Signal = OneShot动画。 动作=循环动画。 启用[同步]时，动画可以自动停止。</translation>
     </message>
     <message>
+        <location filename="../DialogEditor/DialogScriptView.cpp" line="1024"/>
+        <source>Facial expression. Normally, every sound is already lip-synced and may already contain facial expressions. So use with care.
+Can be useful when you don&apos;t play a sound, but simply want the Actor make look with a specific mood/expression.
+Use #RESET# to reset expression to default state.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../DialogEditor/DialogScriptView.cpp" line="1026"/>
+        <source>Weight of the facial expression [0-1]. How strong the facial expression should be applied.
+When sound already contains a facial expression, use only small values &lt; 0.5.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../DialogEditor/DialogScriptView.cpp" line="1028"/>
         <source>Fade-time of the facial expression in seconds. How fast the facial expression should be applied.</source>
         <translation>面部表情的淡入时间，以秒为单位。 面部表情的应用速度有多快。</translation>
+    </message>
+    <message>
+        <location filename="../DialogEditor/DialogScriptView.cpp" line="1030"/>
+        <source>Lookat target of the Actor. Actor will try to look at his target before he starts to talk/animate.
+Sometimes this cannot be guaranteed. Also, while doing his animation or talking he may no longer face his target. For these cases use Sticky lookat. To disable sticky look-at use #RESET#.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../DialogEditor/DialogScriptView.cpp" line="1032"/>
+        <source>Delay in seconds before advancing to the next line. When a sound is played, Delay is relative to the end of the sound.
+So, to slightly overlap lines and to make dialog more natural, you can use negative delays.
+When no sound is specified, the delay is relative to the start of the line.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../DialogEditor/DialogScriptView.cpp" line="1034"/>
@@ -16667,20 +17351,6 @@ Do you want to save it now?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../CryEdit.cpp" line="4079"/>
-        <source>Refine TerrainTexture?
-(all terrain texture tiles become split in 4 parts so a tile with 2048x2048
-no longer limits the resolution) You need to save afterwards!</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../CryEdit.cpp" line="4889"/>
-        <source>The following object(s) already exist(s) in the level.
-
-</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../CryEdit.cpp" line="3411"/>
         <source>Credentials Error</source>
         <translation>凭据错误</translation>
@@ -16738,6 +17408,13 @@ no longer limits the resolution) You need to save afterwards!</source>
         <translation>该关卡已成功导出</translation>
     </message>
     <message>
+        <location filename="../CryEdit.cpp" line="4079"/>
+        <source>Refine TerrainTexture?
+(all terrain texture tiles become split in 4 parts so a tile with 2048x2048
+no longer limits the resolution) You need to save afterwards!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../CryEdit.cpp" line="4085"/>
         <source>TerrainTexture refine failed (make sure current data is saved)</source>
         <translation>地形贴图细化失败（确保保存当前数据）</translation>
@@ -16772,6 +17449,13 @@ no longer limits the resolution) You need to save afterwards!</source>
         <location filename="../CryEdit.cpp" line="4877"/>
         <source>Error at loading group file.</source>
         <translation>加载组合文件出错。</translation>
+    </message>
+    <message>
+        <location filename="../CryEdit.cpp" line="4889"/>
+        <source>The following object(s) already exist(s) in the level.
+
+</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../CryEdit.cpp" line="5164"/>
@@ -17891,15 +18575,15 @@ All object of replaced layer will be deleted.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../Objects/ObjectLayerManager.cpp" line="825"/>
+        <source>Confirm Replace Layer</source>
+        <translation>确认替换图层</translation>
+    </message>
+    <message>
         <location filename="../Objects/ObjectLayerManager.cpp" line="837"/>
         <source>Layer name &apos;%1&apos; already in use.
 Would you like to rename the layer being imported?</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Objects/ObjectLayerManager.cpp" line="825"/>
-        <source>Confirm Replace Layer</source>
-        <translation>确认替换图层</translation>
     </message>
     <message>
         <location filename="../Objects/ObjectLayerManager.cpp" line="838"/>
@@ -17944,16 +18628,16 @@ Attempt to locate this file?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../Objects/ObjectManager.cpp" line="3735"/>
+        <source>Object missing</source>
+        <translation>对象丢失</translation>
+    </message>
+    <message>
         <location filename="../Objects/ObjectManager.cpp" line="3857"/>
         <source>Material for object &quot;%1&quot; is missing/removed. 
 File: %2
 Attempt to locate this file?</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Objects/ObjectManager.cpp" line="3735"/>
-        <source>Object missing</source>
-        <translation>对象丢失</translation>
     </message>
     <message>
         <location filename="../Objects/ObjectManager.cpp" line="3858"/>
@@ -18265,18 +18949,6 @@ Check if Source Control Provider is correctly setup and working directory is cor
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Util/FileUtil.cpp" line="2042"/>
-        <source>Source Control Undo Check Out Failed.
-Check if Source Control Provider is correctly setup and working directory is correct.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Util/FileUtil.cpp" line="2054"/>
-        <source>Source Control failed to get latest.
-Check if Source Control Provider is correctly setup and working directory is correct.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../Util/FileUtil.cpp" line="2065"/>
         <source>Source Control Add Failed.
 Check if Source Control Provider is correctly setup and working directory is correct.</source>
@@ -18288,9 +18960,21 @@ Check if Source Control Provider is correctly setup and working directory is cor
         <translation>撤销签出</translation>
     </message>
     <message>
+        <location filename="../Util/FileUtil.cpp" line="2042"/>
+        <source>Source Control Undo Check Out Failed.
+Check if Source Control Provider is correctly setup and working directory is correct.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../Util/FileUtil.cpp" line="2047"/>
         <source>Get Latest Version</source>
         <translation>获取最新版本</translation>
+    </message>
+    <message>
+        <location filename="../Util/FileUtil.cpp" line="2054"/>
+        <source>Source Control failed to get latest.
+Check if Source Control Provider is correctly setup and working directory is correct.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Util/FileUtil.cpp" line="2060"/>
@@ -18342,6 +19026,79 @@ Check if Source Control Provider is correctly setup and working directory is cor
         <location filename="../WelcomeScreen/WelcomeScreenDialog.cpp" line="390"/>
         <source>You may re-enable the Welcome dialog at any time by going to Edit &gt; Editor Settings &gt; Global Preferences in the menu bar.</source>
         <translation>您可以随时转到菜单栏中的编辑&gt;编辑器设置&gt;全局首选项来重新启用欢迎对话框。</translation>
+    </message>
+    <message>
+        <location filename="../TerrainTexture.cpp" line="185"/>
+        <source>Layer</source>
+        <translation>图层</translation>
+    </message>
+    <message>
+        <location filename="../TerrainTexture.cpp" line="187"/>
+        <source>Material</source>
+        <translation>材质</translation>
+    </message>
+    <message>
+        <location filename="../TerrainTexture.cpp" line="189"/>
+        <source>Splat Map Path</source>
+        <translation>拼图路径</translation>
+    </message>
+    <message>
+        <location filename="../TerrainTexture.cpp" line="191"/>
+        <source>Min Height</source>
+        <translation>最小高度</translation>
+    </message>
+    <message>
+        <location filename="../TerrainTexture.cpp" line="193"/>
+        <source>Max Height</source>
+        <translation>最大高度</translation>
+    </message>
+    <message>
+        <location filename="../TerrainTexture.cpp" line="195"/>
+        <source>Min Angle</source>
+        <translation>最小角度</translation>
+    </message>
+    <message>
+        <location filename="../TerrainTexture.cpp" line="197"/>
+        <source>Max Angle</source>
+        <translation>最大角度</translation>
+    </message>
+    <message>
+        <location filename="../TerrainTexture.cpp" line="199"/>
+        <source>Brightness</source>
+        <translation>亮度</translation>
+    </message>
+    <message>
+        <location filename="../TerrainTexture.cpp" line="201"/>
+        <source>Base Tiling (test)</source>
+        <translation>基础平铺砖(测试)</translation>
+    </message>
+    <message>
+        <location filename="../TerrainTexture.cpp" line="203"/>
+        <source>Sort Order (test)</source>
+        <translation>排序顺序(测试)</translation>
+    </message>
+    <message>
+        <location filename="../TerrainTexture.cpp" line="205"/>
+        <source>Specular Amount (test)</source>
+        <translation>高光量 (测试)</translation>
+    </message>
+    <message>
+        <location filename="../TerrainTexture.cpp" line="207"/>
+        <source>UseRemeshing</source>
+        <translation>使用网格划分</translation>
+    </message>
+</context>
+<context>
+    <name>QRollupCtrl</name>
+    <message>
+        <location filename="../Controls/QRollupCtrl.cpp" line="386"/>
+        <source>Expand All</source>
+        <translation>展开所有</translation>
+    </message>
+    <message>
+        <location filename="../Controls/QRollupCtrl.cpp" line="387"/>
+        <source>Collapse All</source>
+        <translation>折叠所有</translation>
     </message>
 </context>
 <context>

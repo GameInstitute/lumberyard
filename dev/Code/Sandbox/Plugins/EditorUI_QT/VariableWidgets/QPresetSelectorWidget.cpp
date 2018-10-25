@@ -474,7 +474,7 @@ void QPresetSelectorWidget::BuildMainMenu()
     //////////////////////////////////////////////////////////////////////////
     if (!m_amCreatingLib)
     {
-        action = m_menu->addAction("Create New Library...");
+        action = m_menu->addAction(tr("Create New Library..."));
         connect(action, &QAction::triggered, this, [ = ] {
                 m_amCreatingLib = true;
                 panelName.setText("");
@@ -490,7 +490,7 @@ void QPresetSelectorWidget::BuildMainMenu()
         m_menu->addMenu(libSelectMenu);
     }
     //////////////////////////////////////////////////////////////////////////
-    action = m_menu->addAction("Load Library...");
+    action = m_menu->addAction(tr("Load Library..."));
     connect(action, &QAction::triggered, this, [ = ] {
             if (newLibFlag[m_currentLibrary])
             {
