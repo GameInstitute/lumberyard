@@ -93,7 +93,7 @@
     <message>
         <location filename="../../../../../Gems/GraphCanvas/Code/StaticLib/GraphCanvas/Widgets/MiniMapGraphicsView/MiniMapGraphicsView.cpp" line="333"/>
         <source>MiniMap</source>
-        <translation type="unfinished"></translation>
+        <translation>小地图</translation>
     </message>
 </context>
 </TS>

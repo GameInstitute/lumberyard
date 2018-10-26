@@ -45,27 +45,27 @@
     <message>
         <location filename="../../../../../Gems/ScriptCanvasDeveloper/Code/Editor/Source/NodeListDumpAction.cpp" line="44"/>
         <source>Dumps a list of all EBus nodes(their inputs and outputs) to the clipboard</source>
-        <translation type="unfinished"></translation>
+        <translation>将所有EBUS节点(其输入和输出)的列表转储到剪贴板</translation>
     </message>
     <message>
         <location filename="../../../../../Gems/ScriptCanvasDeveloper/Code/Editor/Source/NodePaletteFullCreation.cpp" line="128"/>
         <source>Tries to create every node in the node palette. All of them. At once.</source>
-        <translation type="unfinished"></translation>
+        <translation>尝试创建节点调色板中的每个节点。所有的。立刻。</translation>
     </message>
     <message>
         <location filename="../../../../../Gems/ScriptCanvasDeveloper/Code/Editor/Source/TSGenerateAction.cpp" line="51"/>
         <source>Creates a QT .TS file of all EBus nodes(their inputs and outputs) to a file in the current folder.</source>
-        <translation type="unfinished"></translation>
+        <translation>将所有EBUS节点(其输入和输出)的Qt.ts文件创建为当前文件夹中的一个文件。</translation>
     </message>
     <message>
         <location filename="../../../../../Gems/ScriptCanvasDeveloper/Code/Editor/Source/WrapperMock.cpp" line="68"/>
         <source>Add Mock Node</source>
-        <translation type="unfinished"></translation>
+        <translation>添加Mock节点</translation>
     </message>
     <message>
         <location filename="../../../../../Gems/ScriptCanvasDeveloper/Code/Editor/Source/WrapperMock.cpp" line="69"/>
         <source>Add Wrapper Mock Node</source>
-        <translation type="unfinished"></translation>
+        <translation>添加Wrapper Mock节点</translation>
     </message>
 </context>
 </TS>

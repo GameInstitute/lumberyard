@@ -451,57 +451,57 @@
     <message>
         <location filename="../../../../../Gems/CloudGemDynamicContent/Code/EditorPlugin/QDynamicContentEditorMainWindow.cpp" line="322"/>
         <source>Change Target Platforms</source>
-        <translation type="unfinished"></translation>
+        <translation>更改目标平台</translation>
     </message>
     <message>
         <location filename="../../../../../Gems/CloudGemDynamicContent/Code/EditorPlugin/QDynamicContentEditorMainWindow.cpp" line="324"/>
         <source>Delete Manifest</source>
-        <translation type="unfinished"></translation>
+        <translation>删除Manifest</translation>
     </message>
     <message>
         <location filename="../../../../../Gems/CloudGemDynamicContent/Code/EditorPlugin/QDynamicContentEditorMainWindow.cpp" line="383"/>
         <source>Choose / create a manifest</source>
-        <translation type="unfinished"></translation>
+        <translation>选择 / 创建一个Manifest</translation>
     </message>
     <message>
         <location filename="../../../../../Gems/CloudGemDynamicContent/Code/EditorPlugin/QDynamicContentEditorMainWindow.cpp" line="699"/>
         <source>Upload packages</source>
-        <translation type="unfinished">上传包</translation>
+        <translation>上传包</translation>
     </message>
     <message>
         <location filename="../../../../../Gems/CloudGemDynamicContent/Code/EditorPlugin/QDynamicContentEditorMainWindow.cpp" line="715"/>
         <source>Generate new keys</source>
-        <translation type="unfinished"></translation>
+        <translation>生成新密钥</translation>
     </message>
     <message>
         <location filename="../../../../../Gems/CloudGemDynamicContent/Code/EditorPlugin/QDynamicContentEditorMainWindow.cpp" line="959"/>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation>错误</translation>
     </message>
     <message>
         <location filename="../../../../../Gems/CloudGemDynamicContent/Code/EditorPlugin/QDynamicContentEditorMainWindow.cpp" line="1136"/>
         <source>Valid characters are 0-9a-zA-Z!_. and the maximum length is 100</source>
-        <translation type="unfinished"></translation>
+        <translation>有效字符为0-9a-zA-Z!_.最大长度为100</translation>
     </message>
     <message>
         <location filename="../../../../../Gems/CloudGemDynamicContent/Code/EditorPlugin/QDynamicContentEditorMainWindow.cpp" line="1786"/>
         <source>Remove File</source>
-        <translation type="unfinished"></translation>
+        <translation>移除文件</translation>
     </message>
     <message>
         <location filename="../../../../../Gems/CloudGemDynamicContent/Code/EditorPlugin/QDynamicContentEditorMainWindow.cpp" line="1802"/>
         <source>Remove File from Package</source>
-        <translation type="unfinished"></translation>
+        <translation>从包中移除文件</translation>
     </message>
     <message>
         <location filename="../../../../../Gems/CloudGemDynamicContent/Code/EditorPlugin/QDynamicContentEditorMainWindow.cpp" line="1807"/>
         <source>Delete Package</source>
-        <translation type="unfinished">删除包</translation>
+        <translation>删除包</translation>
     </message>
     <message>
         <location filename="../../../../../Gems/CloudGemDynamicContent/Code/EditorPlugin/QDynamicContentEditorMainWindow.cpp" line="1813"/>
         <source>New Package</source>
-        <translation type="unfinished">新建包</translation>
+        <translation>新建包</translation>
     </message>
 </context>
 <context>

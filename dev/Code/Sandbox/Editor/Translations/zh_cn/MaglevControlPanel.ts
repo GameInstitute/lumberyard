@@ -828,28 +828,28 @@
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/AWSProjectModel.cpp" line="278"/>
         <source>File node with source control monitoring</source>
-        <translation type="unfinished"></translation>
+        <translation>具有源代码管理监视的文件节点</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/AWSResourceManager.cpp" line="524"/>
         <source>Cloud Gem Portal Administrator Account Creation</source>
-        <translation type="unfinished"></translation>
+        <translation>CloudGem Portal管理员帐户创建</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/AWSResourceManager.cpp" line="530"/>
         <source>Please use the username and password below to log into the site as an administrator.  Do not lose these.</source>
-        <translation type="unfinished"></translation>
+        <translation>请使用下面的用户名和密码以管理员身份登录站点。别把这些弄丢了。</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/AWSResourceManager.cpp" line="540"/>
         <source>OK</source>
-        <translation type="unfinished">确定</translation>
+        <translation>确定</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/DetailWidget/CloudFormationTemplateDetailWidget.h" line="76"/>
         <location filename="../../../Plugins/MaglevControlPanel/DetailWidget/ResourceGroupDetailWidget.cpp" line="109"/>
         <source>Add resource</source>
-        <translation type="unfinished"></translation>
+        <translation>添加资源</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/DetailWidget/CloudFormationTemplateDetailWidget.h" line="91"/>
@@ -857,13 +857,13 @@
         <location filename="../../../Plugins/MaglevControlPanel/DetailWidget/FileContentDetailWidget.h" line="151"/>
         <location filename="../../../Plugins/MaglevControlPanel/ResourceManagementView.cpp" line="250"/>
         <source>Save file</source>
-        <translation type="unfinished"></translation>
+        <translation>保存文件</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/DetailWidget/CloudFormationTemplateDetailWidget.h" line="98"/>
         <location filename="../../../Plugins/MaglevControlPanel/DetailWidget/FileContentDetailWidget.h" line="158"/>
         <source>Delete file</source>
-        <translation type="unfinished"></translation>
+        <translation>删除文件</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/DetailWidget/CloudFormationTemplateDetailWidget.h" line="103"/>
@@ -871,7 +871,7 @@
         <location filename="../../../Plugins/MaglevControlPanel/DetailWidget/FileContentDetailWidget.h" line="165"/>
         <location filename="../../../Plugins/MaglevControlPanel/FilePathLabel.h" line="151"/>
         <source>Open in script editor</source>
-        <translation type="unfinished"></translation>
+        <translation>在脚本编辑器中打开</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/DetailWidget/CloudFormationTemplateDetailWidget.h" line="107"/>
@@ -881,7 +881,7 @@
         <location filename="../../../Plugins/MaglevControlPanel/FilePathLabel.h" line="141"/>
         <location filename="../../../Plugins/MaglevControlPanel/FilePathLabel.h" line="155"/>
         <source>View in Explorer</source>
-        <translation type="unfinished"></translation>
+        <translation>在浏览器中查看</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/DetailWidget/CloudFormationTemplateDetailWidget.h" line="113"/>
@@ -890,124 +890,124 @@
         <location filename="../../../Plugins/MaglevControlPanel/FilePathLabel.h" line="145"/>
         <location filename="../../../Plugins/MaglevControlPanel/FilePathLabel.h" line="161"/>
         <source>Copy path to clipboard</source>
-        <translation type="unfinished"></translation>
+        <translation>复制路径到剪切板</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/DetailWidget/CloudFormationTemplateResourceDetailWidget.h" line="42"/>
         <location filename="../../../Plugins/MaglevControlPanel/DetailWidget/CloudFormationTemplateResourceDetailWidget.h" line="135"/>
         <source>Delete resource</source>
-        <translation type="unfinished"></translation>
+        <translation>删除资源</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/DetailWidget/CloudFormationTemplateResourceDetailWidget.h" line="70"/>
         <location filename="../../../Plugins/MaglevControlPanel/DetailWidget/ResourceGroupDetailWidget.cpp" line="125"/>
         <source>Upload Lambda function code</source>
-        <translation type="unfinished"></translation>
+        <translation>上传Lambda函数代码</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/DetailWidget/CloudFormationTemplateResourceDetailWidget.h" line="71"/>
         <location filename="../../../Plugins/MaglevControlPanel/DetailWidget/ResourceGroupDetailWidget.cpp" line="126"/>
         <location filename="../../../Plugins/MaglevControlPanel/DetailWidget/ResourceGroupStatusWidget.cpp" line="62"/>
         <source>Upload the Lambda function code without a full feature stack update.</source>
-        <translation type="unfinished"></translation>
+        <translation>上传Lambda函数代码，而不进行完整的特性堆栈更新。</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/DetailWidget/CloudFormationTemplateResourceDetailWidget.h" line="74"/>
         <source>View Cloud Watch Logs</source>
-        <translation type="unfinished"></translation>
+        <translation>查看云监听日志</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/DetailWidget/CloudFormationTemplateResourceDetailWidget.h" line="145"/>
         <source>Delete the &quot;</source>
-        <translation type="unfinished"></translation>
+        <translation>删除 &quot;</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/DetailWidget/CloudFormationTemplateResourceDetailWidget.h" line="145"/>
         <source>&quot; resource?</source>
-        <translation type="unfinished"></translation>
+        <translation>&quot; 资源？</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/DetailWidget/CodeDirectoryDetailWidget.h" line="53"/>
         <source>New file</source>
-        <translation type="unfinished"></translation>
+        <translation>新建文件</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/DetailWidget/CodeDirectoryDetailWidget.h" line="57"/>
         <source>New directory</source>
-        <translation type="unfinished"></translation>
+        <translation>新建目录</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/DetailWidget/CodeDirectoryDetailWidget.h" line="65"/>
         <source>Delete directory</source>
-        <translation type="unfinished"></translation>
+        <translation>删除目录</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/DetailWidget/CodeDirectoryDetailWidget.h" line="66"/>
         <source>Delete the directory from disk.</source>
-        <translation type="unfinished"></translation>
+        <translation>从硬盘删除此目录。</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/DetailWidget/DeploymentListDetailWidget.cpp" line="46"/>
         <source>Create deployment</source>
-        <translation type="unfinished">创建部署</translation>
+        <translation>创建部署</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/DetailWidget/DeploymentListDetailWidget.cpp" line="47"/>
         <location filename="../../../Plugins/MaglevControlPanel/ResourceManagementView.cpp" line="366"/>
         <source>Create an AWS CloudFormation stack for a new deployment.</source>
-        <translation type="unfinished">为新部署创建AWS CloudFormation堆栈。</translation>
+        <translation>为新部署创建AWS CloudFormation堆栈。</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/DetailWidget/FileContentDetailWidget.h" line="63"/>
         <source>Upload function code</source>
-        <translation type="unfinished"></translation>
+        <translation>上传函数代码</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/DetailWidget/FileContentDetailWidget.h" line="175"/>
         <source>Copy to clipboard</source>
-        <translation type="unfinished">复制到剪贴板</translation>
+        <translation>复制到剪贴板</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/DetailWidget/ImportableResourcesWidget.cpp" line="70"/>
         <source>Select resources </source>
-        <translation type="unfinished"></translation>
+        <translation>选择资源 </translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/DetailWidget/ImportableResourcesWidget.cpp" line="86"/>
         <source>Region:</source>
-        <translation type="unfinished"></translation>
+        <translation>区域：</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/DetailWidget/ImportableResourcesWidget.cpp" line="109"/>
         <source>Type of the resource to list</source>
-        <translation type="unfinished"></translation>
+        <translation>要列出的资源类型</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/DetailWidget/ImportableResourcesWidget.cpp" line="135"/>
         <source>Loading...</source>
-        <translation type="unfinished">加载中...</translation>
+        <translation>加载中...</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/DetailWidget/ImportableResourcesWidget.cpp" line="203"/>
         <location filename="../../../Plugins/MaglevControlPanel/ResourceManagementView.cpp" line="258"/>
         <source>Copy</source>
-        <translation type="unfinished"></translation>
+        <translation>复制</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/DetailWidget/ImportableResourcesWidget.cpp" line="205"/>
         <source>Configure</source>
-        <translation type="unfinished">配置</translation>
+        <translation>配置</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/DetailWidget/ImportableResourcesWidget.cpp" line="212"/>
         <source>Delete</source>
-        <translation type="unfinished"></translation>
+        <translation>删除</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/DetailWidget/ImportableResourcesWidget.cpp" line="216"/>
         <location filename="../../../Plugins/MaglevControlPanel/DetailWidget/StackResourcesWidget.cpp" line="168"/>
         <source>View resource in AWS console</source>
-        <translation type="unfinished"></translation>
+        <translation>在AWS控制台中查看资源</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/DetailWidget/ImportableResourcesWidget.cpp" line="241"/>
@@ -1016,426 +1016,426 @@
         <location filename="../../../Plugins/MaglevControlPanel/DetailWidget/ImportableResourcesWidget.cpp" line="335"/>
         <location filename="../../../Plugins/MaglevControlPanel/DetailWidget/ImportableResourcesWidget.cpp" line="475"/>
         <source>unselected</source>
-        <translation type="unfinished"></translation>
+        <translation>未选择</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/DetailWidget/ImportableResourcesWidget.cpp" line="245"/>
         <location filename="../../../Plugins/MaglevControlPanel/DetailWidget/ImportableResourcesWidget.cpp" line="332"/>
         <source>selected</source>
-        <translation type="unfinished"></translation>
+        <translation>已选择</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/DetailWidget/ImportableResourcesWidget.cpp" line="349"/>
         <source>Import all the selected resources.</source>
-        <translation type="unfinished"></translation>
+        <translation>导入所有所选资源。</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/DetailWidget/ImportableResourcesWidget.cpp" line="451"/>
         <source>Importing Resource...</source>
-        <translation type="unfinished"></translation>
+        <translation>导入资源...</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/DetailWidget/ImportableResourcesWidget.cpp" line="451"/>
         <location filename="../../../Plugins/MaglevControlPanel/InitializeCloudCanvasProject.cpp" line="388"/>
         <source>Cancel</source>
-        <translation type="unfinished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/DetailWidget/ImportableResourcesWidget.cpp" line="452"/>
         <source>Importing</source>
-        <translation type="unfinished"></translation>
+        <translation>导入</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/DetailWidget/ImportableResourcesWidget.cpp" line="571"/>
         <source>Configure the selected resources for import.</source>
-        <translation type="unfinished"></translation>
+        <translation>配置要导入的所选资源。</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/DetailWidget/ImportableResourcesWidget.cpp" line="573"/>
         <source>Select one or more resources after all the importable resources are listed.</source>
-        <translation type="unfinished"></translation>
+        <translation>列出所有可输入资源后，选择一个或多个资源。</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/DetailWidget/ImportableResourcesWidget.cpp" line="580"/>
         <source>Import all the selected resources</source>
-        <translation type="unfinished"></translation>
+        <translation>导入所有选定的资源</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/DetailWidget/ImportableResourcesWidget.cpp" line="582"/>
         <source>Provide names for all the resources.</source>
-        <translation type="unfinished"></translation>
+        <translation>提供所有资源的名称。</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/DetailWidget/LoadingErrorWidget.cpp" line="76"/>
         <source>Retry the failed commands.</source>
-        <translation type="unfinished"></translation>
+        <translation>重试失败的命令。</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/DetailWidget/LoadingErrorWidget.cpp" line="87"/>
         <source>Closes the Cloud Canvas Resource Manager window.</source>
-        <translation type="unfinished"></translation>
+        <translation>关闭云画布资源管理器窗口。</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/DetailWidget/NoResourceWidget.cpp" line="52"/>
         <location filename="../../../Plugins/MaglevControlPanel/DetailWidget/ResourceGroupStatusWidget.cpp" line="54"/>
         <source>Import an existing AWS resource to your resource group.</source>
-        <translation type="unfinished"></translation>
+        <translation>将现有的AWS资源导入到资源组中。</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/DetailWidget/ResourceGroupDetailWidget.cpp" line="110"/>
         <source>Select an AWS resource to add to your resource group</source>
-        <translation type="unfinished"></translation>
+        <translation>选择要添加到资源组的AWS资源</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/DetailWidget/ResourceGroupDetailWidget.cpp" line="120"/>
         <source>Import resource</source>
-        <translation type="unfinished"></translation>
+        <translation>导入资源</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/DetailWidget/ResourceGroupDetailWidget.cpp" line="121"/>
         <location filename="../../../Plugins/MaglevControlPanel/ResourceManagementView.cpp" line="1842"/>
         <source>Import existing resources</source>
-        <translation type="unfinished"></translation>
+        <translation>导入现有资源</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/DetailWidget/ResourceGroupListDetailWidget.cpp" line="50"/>
         <source>Add resource group</source>
-        <translation type="unfinished">添加资源组</translation>
+        <translation>添加资源组</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/DetailWidget/ResourceGroupListDetailWidget.cpp" line="51"/>
         <source>Add a resource group to the Lumberyard project.</source>
-        <translation type="unfinished">将资源组添加到Lumberyard项目。</translation>
+        <translation>将资源组添加到Lumberyard项目。</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/DetailWidget/ResourceGroupStatusWidget.cpp" line="45"/>
         <source>Select an AWS resource to add to your resource group.</source>
-        <translation type="unfinished">选择要添加到资源组的AWS资源。</translation>
+        <translation>选择要添加到资源组的AWS资源。</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/DetailWidget/StackResourcesWidget.cpp" line="163"/>
         <source>Resource not yet available</source>
-        <translation type="unfinished"></translation>
+        <translation>资源还不可用</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/DetailWidget/StackResourcesWidget.cpp" line="170"/>
         <source>Copy resource ID to clipboard</source>
-        <translation type="unfinished"></translation>
+        <translation>复制资源ID到剪切板</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/FilePathLabel.h" line="53"/>
         <source>Double click to open in script editor or Explorer.</source>
-        <translation type="unfinished"></translation>
+        <translation>双击在脚本编辑器或浏览器中打开。</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/InitializeCloudCanvasProject.cpp" line="157"/>
         <source>AWS region:</source>
-        <translation type="unfinished"></translation>
+        <translation>AWS区域：</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/InitializeCloudCanvasProject.cpp" line="166"/>
         <source>This list contains the supported regions for our core services including CloudFormation, Cognito, DynamoDB, Kinesis, Lambda, S3, SNS, SQS and STS. You can also edit the region according to the services you need.</source>
-        <translation type="unfinished"></translation>
+        <translation>这个列表包含了我们的核心服务所支持的区域，包括Cloudformation、CONMITO、DynamoDB、Kiness、Lambda、S3、SNS、SQS和STS。您还可以根据您需要的服务编辑区域。</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/InitializeCloudCanvasProject.cpp" line="219"/>
         <location filename="../../../Plugins/MaglevControlPanel/QAWSCredentialsEditor.cpp" line="356"/>
         <source>Add profile</source>
-        <translation type="unfinished"></translation>
+        <translation>添加档案</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/InitializeCloudCanvasProject.cpp" line="224"/>
         <location filename="../../../Plugins/MaglevControlPanel/ResourceManagementView.cpp" line="256"/>
         <source>Edit</source>
-        <translation type="unfinished"></translation>
+        <translation>编辑</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/InitializeCloudCanvasProject.cpp" line="243"/>
         <source>AWS profile:</source>
-        <translation type="unfinished"></translation>
+        <translation>AWS档案：</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/InitializeCloudCanvasProject.cpp" line="392"/>
         <source>Create</source>
-        <translation type="unfinished">创建</translation>
+        <translation>创建创建</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/QAWSCredentialsEditor.cpp" line="92"/>
         <source>Profiles</source>
-        <translation type="unfinished"></translation>
+        <translation>档案</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/QAWSCredentialsEditor.cpp" line="97"/>
         <source>Remove</source>
-        <translation type="unfinished"></translation>
+        <translation>移除</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/QAWSCredentialsEditor.cpp" line="110"/>
         <source>&lt;a href=&quot;Edit selected profile&quot; &gt; Edit selected profile&lt;/a&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;a href=&quot;Edit selected profile&quot; &gt; 编辑所选档案&lt;/a&gt;</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/QAWSCredentialsEditor.cpp" line="274"/>
         <source>Delete profile?</source>
-        <translation type="unfinished"></translation>
+        <translation>删除档案？</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/QAWSCredentialsEditor.cpp" line="290"/>
         <source>Yes</source>
-        <translation type="unfinished">是</translation>
+        <translation>是</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/QAWSCredentialsEditor.cpp" line="291"/>
         <source>No</source>
-        <translation type="unfinished">否</translation>
+        <translation>否</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/ResourceManagementView.cpp" line="248"/>
         <location filename="../../../Plugins/MaglevControlPanel/ResourceManagementView.cpp" line="371"/>
         <source>File</source>
-        <translation type="unfinished"></translation>
+        <translation>文件</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/ResourceManagementView.cpp" line="251"/>
         <source>Save file as...</source>
-        <translation type="unfinished"></translation>
+        <translation>另存文件为...</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/ResourceManagementView.cpp" line="257"/>
         <source>Cut</source>
-        <translation type="unfinished"></translation>
+        <translation>剪切</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/ResourceManagementView.cpp" line="259"/>
         <source>Paste</source>
-        <translation type="unfinished"></translation>
+        <translation>粘贴</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/ResourceManagementView.cpp" line="262"/>
         <source>Undo</source>
-        <translation type="unfinished"></translation>
+        <translation>撤销</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/ResourceManagementView.cpp" line="263"/>
         <source>Redo</source>
-        <translation type="unfinished"></translation>
+        <translation>恢复</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/ResourceManagementView.cpp" line="266"/>
         <source>Search</source>
-        <translation type="unfinished"></translation>
+        <translation>搜需哦</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/ResourceManagementView.cpp" line="268"/>
         <source>Find Next</source>
-        <translation type="unfinished"></translation>
+        <translation>查找下一个</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/ResourceManagementView.cpp" line="269"/>
         <source>Find Previous</source>
-        <translation type="unfinished"></translation>
+        <translation>查找上一个</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/ResourceManagementView.cpp" line="270"/>
         <source>Hide Search</source>
-        <translation type="unfinished"></translation>
+        <translation>隐藏搜索</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/ResourceManagementView.cpp" line="271"/>
         <source>Save</source>
-        <translation type="unfinished"></translation>
+        <translation>保存</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/ResourceManagementView.cpp" line="280"/>
         <source>Help</source>
-        <translation type="unfinished"></translation>
+        <translation>帮助</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/ResourceManagementView.cpp" line="282"/>
         <source>Cloud Canvas documentation</source>
-        <translation type="unfinished"></translation>
+        <translation>Cloud Canvas 文档</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/ResourceManagementView.cpp" line="285"/>
         <source>Cloud Canvas forum</source>
-        <translation type="unfinished"></translation>
+        <translation>Cloud Canvas 论坛</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/ResourceManagementView.cpp" line="354"/>
         <source>Add new</source>
-        <translation type="unfinished"></translation>
+        <translation>添加新的</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/ResourceManagementView.cpp" line="357"/>
         <source>Resource</source>
-        <translation type="unfinished"></translation>
+        <translation>资源</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/ResourceManagementView.cpp" line="359"/>
         <source>Resource group...</source>
-        <translation type="unfinished"></translation>
+        <translation>资源组合...</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/ResourceManagementView.cpp" line="361"/>
         <source>Define a set of related resources that are needed by the Lumberyard project.</source>
-        <translation type="unfinished"></translation>
+        <translation>定义Lumberyard项目所需的一组相关资源。</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/ResourceManagementView.cpp" line="364"/>
         <source>Deployment...</source>
-        <translation type="unfinished"></translation>
+        <translation>部署...</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/ResourceManagementView.cpp" line="373"/>
         <source>Add a new file to the selected code directory.</source>
-        <translation type="unfinished"></translation>
+        <translation>向选定的代码目录添加一个新文件。</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/ResourceManagementView.cpp" line="375"/>
         <source>Directory</source>
-        <translation type="unfinished"></translation>
+        <translation>目录</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/ResourceManagementView.cpp" line="377"/>
         <source>Add a new directory to the selected code directory.</source>
-        <translation type="unfinished"></translation>
+        <translation>向选定的代码目录添加一个新目录。</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/ResourceManagementView.cpp" line="405"/>
         <source>Validate template</source>
-        <translation type="unfinished"></translation>
+        <translation>验证模板</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/ResourceManagementView.cpp" line="420"/>
         <source>Querying source control.</source>
-        <translation type="unfinished"></translation>
+        <translation>查询版本控制。</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/ResourceManagementView.cpp" line="427"/>
         <source>Source control is unavailable.</source>
-        <translation type="unfinished"></translation>
+        <translation>版本控制不可用。</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/ResourceManagementView.cpp" line="434"/>
         <source>Check file out of source control.</source>
-        <translation type="unfinished"></translation>
+        <translation>检出文件版本控制。</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/ResourceManagementView.cpp" line="441"/>
         <location filename="../../../Plugins/MaglevControlPanel/ResourceManagementView.cpp" line="448"/>
         <source>This file is already editable. Submit changes in your source control tool.</source>
-        <translation type="unfinished"></translation>
+        <translation>此文件已可编辑。在版本控制工具中提交更改。</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/ResourceManagementView.cpp" line="455"/>
         <source>Add file to source control.</source>
-        <translation type="unfinished"></translation>
+        <translation>添加文件到版本控制。</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/ResourceManagementView.cpp" line="545"/>
         <source>Find:</source>
-        <translation type="unfinished"></translation>
+        <translation>查找：</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/ResourceManagementView.cpp" line="555"/>
         <source>Clear your search.</source>
-        <translation type="unfinished"></translation>
+        <translation>清除搜索。</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/ResourceManagementView.cpp" line="562"/>
         <source>Previous</source>
-        <translation type="unfinished"></translation>
+        <translation>上一个</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/ResourceManagementView.cpp" line="563"/>
         <source>The keyboard shortcut is SHIFT + F3.</source>
-        <translation type="unfinished"></translation>
+        <translation>键盘快捷键是 SHIFT + F3.</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/ResourceManagementView.cpp" line="567"/>
         <source>Next</source>
-        <translation type="unfinished"></translation>
+        <translation>下一个</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/ResourceManagementView.cpp" line="568"/>
         <source>The keyboard shortcut is F3.</source>
-        <translation type="unfinished"></translation>
+        <translation>键盘快捷键是 F3.</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/ResourceManagementView.cpp" line="575"/>
         <source>Hide search function.</source>
-        <translation type="unfinished"></translation>
+        <translation>隐藏搜索函数。</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/ResourceManagementView.cpp" line="1390"/>
         <source>It is OK that this will permamently DELETE resources.</source>
-        <translation type="unfinished"></translation>
+        <translation>这将永久地删除资源，这是可以的。</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/ResourceManagementView.cpp" line="1395"/>
         <source>It is OK that this will impact resource SECURITY.</source>
-        <translation type="unfinished"></translation>
+        <translation>这将影响资源安全，这是可以接受的。</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/ResourceManagementView.cpp" line="1439"/>
         <source>No changes found.</source>
-        <translation type="unfinished"></translation>
+        <translation>未找到更改。</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/ResourceManagementView.cpp" line="1720"/>
         <location filename="../../../Plugins/MaglevControlPanel/ResourceManagementView.cpp" line="1766"/>
         <source>Please provide the resource Name and ARN</source>
-        <translation type="unfinished"></translation>
+        <translation>请提供资源名称和ARN</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/ResourceManagementView.cpp" line="1726"/>
         <source>The name used for the resource in the resource group.</source>
-        <translation type="unfinished"></translation>
+        <translation>资源组中用于资源的名称。</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/ResourceManagementView.cpp" line="1733"/>
         <source>ARN of the AWS resource to import.</source>
-        <translation type="unfinished"></translation>
+        <translation>要导入的AWS资源的ARN。</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/ResourceManagementView.cpp" line="1771"/>
         <source>Import the resource</source>
-        <translation type="unfinished"></translation>
+        <translation>导入资源</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/ResourceManagementView.cpp" line="1816"/>
         <source>Service API</source>
-        <translation type="unfinished"></translation>
+        <translation>服务API</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/ResourceManagementView.cpp" line="1817"/>
         <source>Add a service API resource.</source>
-        <translation type="unfinished"></translation>
+        <translation>添加一个服务API资源。</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/ResourceManagementView.cpp" line="1830"/>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation>错误</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/ResourceManagementView.cpp" line="1844"/>
         <source>Import using ARN</source>
-        <translation type="unfinished">使用ARN导入</translation>
+        <translation>使用ARN导入</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/ResourceManagementView.cpp" line="1845"/>
         <source>Import a resource by providing its ARN.</source>
-        <translation type="unfinished"></translation>
+        <translation>通过提供资源的ARN来导入资源。</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/ResourceManagementView.cpp" line="1848"/>
         <source>Import from list</source>
-        <translation type="unfinished">从列表导入</translation>
+        <translation>使用ARN导入</translation>
     </message>
     <message>
         <location filename="../../../Plugins/MaglevControlPanel/ResourceManagementView.cpp" line="1849"/>
         <source>Import a resource from a list of importable resources.</source>
-        <translation type="unfinished"></translation>
+        <translation>从可导入资源的列表中导入资源。</translation>
     </message>
 </context>
 <context>

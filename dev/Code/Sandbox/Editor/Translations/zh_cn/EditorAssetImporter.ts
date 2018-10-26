@@ -57,22 +57,22 @@
     <message>
         <location filename="../../../Plugins/EditorAssetImporter/AssetBrowserContextProvider.cpp" line="79"/>
         <source>Edit Settings...</source>
-        <translation type="unfinished"></translation>
+        <translation>编辑设置...</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorAssetImporter/AssetImporterWindow.cpp" line="442"/>
         <source>Close</source>
-        <translation type="unfinished"></translation>
+        <translation>关闭</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorAssetImporter/AssetImporterWindow.cpp" line="446"/>
         <source>Please close the inspector to continue editing the settings.</source>
-        <translation type="unfinished"></translation>
+        <translation>请关闭检视器以继续编辑设置。</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorAssetImporter/AssetImporterWindow.cpp" line="504"/>
         <source>%1 Settings (PREVIEW) - %2</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 设置 (预览) - %2</translation>
     </message>
 </context>
 </TS>

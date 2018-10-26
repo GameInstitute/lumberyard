@@ -357,42 +357,42 @@ You can always refresh manually at a later time through the Audio menu.</source>
     <message>
         <location filename="../../../Plugins/EditorAudioControlsEditor/ATLControlsPanel.cpp" line="119"/>
         <source>Unassigned</source>
-        <translation type="unfinished"></translation>
+        <translation>未分配</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorAudioControlsEditor/ATLControlsPanel.cpp" line="127"/>
         <source>Triggers</source>
-        <translation type="unfinished"></translation>
+        <translation>触发器</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorAudioControlsEditor/ATLControlsPanel.cpp" line="128"/>
         <source>RTPCs</source>
-        <translation type="unfinished"></translation>
+        <translation>RTPCs</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorAudioControlsEditor/ATLControlsPanel.cpp" line="129"/>
         <source>Switches</source>
-        <translation type="unfinished"></translation>
+        <translation>开关</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorAudioControlsEditor/ATLControlsPanel.cpp" line="130"/>
         <source>Environments</source>
-        <translation type="unfinished"></translation>
+        <translation>环境</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorAudioControlsEditor/ATLControlsPanel.cpp" line="131"/>
         <source>Preloads</source>
-        <translation type="unfinished"></translation>
+        <translation>预载</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorAudioControlsEditor/ATLControlsPanel.cpp" line="606"/>
         <source>Are you sure you want to delete &quot;</source>
-        <translation type="unfinished"></translation>
+        <translation>确定要删除 &quot;</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorAudioControlsEditor/ATLControlsPanel.cpp" line="611"/>
         <source>Are you sure you want to delete the selected controls and folders?</source>
-        <translation type="unfinished"></translation>
+        <translation>确定要删除所选控件和文件夹？</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorAudioControlsEditor/ATLControlsPanel.cpp" line="615"/>
@@ -402,27 +402,27 @@ You can always refresh manually at a later time through the Audio menu.</source>
         <location filename="../../../Plugins/EditorAudioControlsEditor/QATLControlsTreeModel.cpp" line="307"/>
         <location filename="../../../Plugins/EditorAudioControlsEditor/QConnectionsWidget.cpp" line="200"/>
         <source>Audio Controls Editor</source>
-        <translation type="unfinished">音频控件编辑器</translation>
+        <translation>音频控件编辑器</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorAudioControlsEditor/QATLControlsTreeModel.cpp" line="308"/>
         <source>This destination already contains a folder named &apos;</source>
-        <translation type="unfinished"></translation>
+        <translation>此目标已经包含一个文件夹 &apos;</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorAudioControlsEditor/QConnectionsWidget.cpp" line="207"/>
         <source>Are you sure you want to delete the connection between &quot;</source>
-        <translation type="unfinished"></translation>
+        <translation>确定要删除连接 &apos;</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorAudioControlsEditor/QConnectionsWidget.cpp" line="211"/>
         <source>Are you sure you want to delete the </source>
-        <translation type="unfinished"></translation>
+        <translation>确定要删除 </translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorAudioControlsEditor/QConnectionsWidget.cpp" line="211"/>
         <source> selected connections?</source>
-        <translation type="unfinished"></translation>
+        <translation> 所选连接?</translation>
     </message>
 </context>
 </TS>

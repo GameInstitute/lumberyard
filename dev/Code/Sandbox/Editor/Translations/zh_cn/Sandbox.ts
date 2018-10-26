@@ -17946,7 +17946,7 @@ Do you want to save your changes?</source>
     <message>
         <location filename="../../HyperGraph/FlowGraphSearchCtrl.cpp" line="148"/>
         <source>Search</source>
-        <translation type="unfinished">搜索</translation>
+        <translation>搜索</translation>
     </message>
     <message>
         <location filename="../../HyperGraph/FlowGraphSearchCtrl.cpp" line="310"/>
@@ -17993,32 +17993,32 @@ Do you want to save your changes?</source>
     <message>
         <location filename="../../HyperGraph/FlowGraphSearchCtrl.cpp" line="838"/>
         <source>Search Results</source>
-        <translation type="unfinished"></translation>
+        <translation>搜索结果</translation>
     </message>
     <message>
         <location filename="../../HyperGraph/FlowGraphSearchCtrl.cpp" line="887"/>
         <source>Columns</source>
-        <translation type="unfinished">列</translation>
+        <translation>列</translation>
     </message>
     <message>
         <location filename="../../HyperGraph/FlowGraphSearchCtrl.cpp" line="900"/>
         <source>Sort ascending</source>
-        <translation type="unfinished"></translation>
+        <translation>升序</translation>
     </message>
     <message>
         <location filename="../../HyperGraph/FlowGraphSearchCtrl.cpp" line="901"/>
         <source>Sort descending</source>
-        <translation type="unfinished"></translation>
+        <translation>降序</translation>
     </message>
     <message>
         <location filename="../../HyperGraph/FlowGraphSearchCtrl.cpp" line="903"/>
         <source>Group by this field</source>
-        <translation type="unfinished"></translation>
+        <translation>通过此字段组合</translation>
     </message>
     <message>
         <location filename="../../HyperGraph/FlowGraphSearchCtrl.cpp" line="906"/>
         <source>Ungroup</source>
-        <translation type="unfinished">解组</translation>
+        <translation>解组</translation>
     </message>
     <message>
         <location filename="../../HyperGraph/FlowGraphVariables.cpp" line="59"/>
@@ -18039,7 +18039,8 @@ Do you want to save your changes?</source>
         <location filename="../../HyperGraph/FlowGraphVariables.cpp" line="68"/>
         <source>
 Description: </source>
-        <translation type="unfinished"></translation>
+        <translation>
+描述： </translation>
     </message>
     <message>
         <location filename="../../HyperGraph/FlowGraphVariables.cpp" line="73"/>
@@ -19040,12 +19041,12 @@ Check if Source Control Provider is correctly setup and working directory is cor
     <message>
         <location filename="../../WelcomeScreen/WelcomeScreenDialog.cpp" line="83"/>
         <source>Switch project...</source>
-        <translation type="unfinished"></translation>
+        <translation>切换项目...</translation>
     </message>
     <message>
         <location filename="../../WelcomeScreen/WelcomeScreenDialog.cpp" line="84"/>
         <source>Setup Assistant...</source>
-        <translation type="unfinished"></translation>
+        <translation>设置助手...</translation>
     </message>
     <message>
         <location filename="../../WelcomeScreen/WelcomeScreenDialog.cpp" line="389"/>
@@ -19120,22 +19121,22 @@ Check if Source Control Provider is correctly setup and working directory is cor
     <message>
         <location filename="../../Alembic/AlembicCompileDialog.cpp" line="48"/>
         <source>Recompile .cax File</source>
-        <translation type="unfinished"></translation>
+        <translation>重新编译.cax文件</translation>
     </message>
     <message>
         <location filename="../../Alembic/AlembicCompileDialog.cpp" line="49"/>
         <source>Use Existing .cax File</source>
-        <translation type="unfinished"></translation>
+        <translation>使用现有 .cax文件</translation>
     </message>
     <message>
         <location filename="../../Amazon/Login.cpp" line="161"/>
         <source>Connecting to Amazon...</source>
-        <translation type="unfinished"></translation>
+        <translation>链接到亚马逊...</translation>
     </message>
     <message>
         <location filename="../../AssetImporter/UI/ProcessingAssetsDialog.cpp" line="67"/>
         <source>Processing assets</source>
-        <translation type="unfinished">处理资产</translation>
+        <translation>处理资产</translation>
     </message>
     <message>
         <location filename="../../AssetImporter/UI/ProcessingAssetsDialog.cpp" line="68"/>
@@ -19145,7 +19146,7 @@ Check if Source Control Provider is correctly setup and working directory is cor
     <message>
         <location filename="../../AssetImporter/UI/ProcessingAssetsDialog.cpp" line="72"/>
         <source>Processing asset</source>
-        <translation type="unfinished"></translation>
+        <translation>处理资产</translation>
     </message>
     <message>
         <location filename="../../AssetImporter/UI/ProcessingAssetsDialog.cpp" line="73"/>
@@ -19155,7 +19156,7 @@ Check if Source Control Provider is correctly setup and working directory is cor
     <message>
         <location filename="../../Controls/ImageHistogramCtrl.cpp" line="53"/>
         <source>Image Histogram</source>
-        <translation type="unfinished"></translation>
+        <translation>图像直方图</translation>
     </message>
     <message>
         <location filename="../../Controls/QToolTipWidget.cpp" line="143"/>
@@ -19170,368 +19171,368 @@ Check if Source Control Provider is correctly setup and working directory is cor
     <message>
         <location filename="../../Controls/RampControl.cpp" line="244"/>
         <source>&amp;Add</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;添加</translation>
     </message>
     <message>
         <location filename="../../Controls/RampControl.cpp" line="248"/>
         <source>&amp;Delete</source>
-        <translation type="unfinished">&amp;删除</translation>
+        <translation>&amp;删除</translation>
     </message>
     <message>
         <location filename="../../Controls/RampControl.cpp" line="251"/>
         <source>&amp;Select</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;选择</translation>
     </message>
     <message>
         <location filename="../../Controls/RampControl.cpp" line="255"/>
         <source>Select &amp;All</source>
-        <translation type="unfinished">全&amp;选</translation>
+        <translation>全&amp;选</translation>
     </message>
     <message>
         <location filename="../../Controls/RampControl.cpp" line="256"/>
         <source>Select &amp;None</source>
-        <translation type="unfinished">选择&amp;无</translation>
+        <translation>选择&amp;无</translation>
     </message>
     <message>
         <location filename="../../Controls/ReflectedPropertyControl/PropertyResourceCtrl.cpp" line="50"/>
         <source>Browse...</source>
-        <translation type="unfinished"></translation>
+        <translation>浏览...</translation>
     </message>
     <message>
         <location filename="../../EntityLinksPanel.cpp" line="254"/>
         <source>Change Target Entity</source>
-        <translation type="unfinished"></translation>
+        <translation>更改目标实体</translation>
     </message>
     <message>
         <location filename="../../EntityLinksPanel.cpp" line="255"/>
         <source>Rename Link</source>
-        <translation type="unfinished"></translation>
+        <translation>重命名链接</translation>
     </message>
     <message>
         <location filename="../../EntityLinksPanel.cpp" line="256"/>
         <source>Delete Link</source>
-        <translation type="unfinished"></translation>
+        <translation>删除链接</translation>
     </message>
     <message>
         <location filename="../../EntityLinksPanel.cpp" line="259"/>
         <location filename="../../EntityLinksPanel.cpp" line="263"/>
         <source>Pick New Target</source>
-        <translation type="unfinished"></translation>
+        <translation>拾取新目标</translation>
     </message>
     <message>
         <location filename="../../GraphicsSettingsDialog.cpp" line="49"/>
         <source>Graphics Settings</source>
-        <translation type="unfinished">图形设置</translation>
+        <translation>图形设置</translation>
     </message>
     <message>
         <location filename="../../HyperGraph/FlowGraphModuleDlgs.cpp" line="294"/>
         <source>Edit Module Input</source>
-        <translation type="unfinished"></translation>
+        <translation>编辑模块输入</translation>
     </message>
     <message>
         <location filename="../../HyperGraph/FlowGraphModuleDlgs.cpp" line="298"/>
         <source>Edit Module Output</source>
-        <translation type="unfinished"></translation>
+        <translation>编辑模块输出</translation>
     </message>
     <message>
         <location filename="../../HyperGraph/HyperGraphDialog.cpp" line="1653"/>
         <source>Breakpoints</source>
-        <translation type="unfinished"></translation>
+        <translation>断点</translation>
     </message>
     <message>
         <location filename="../../HyperGraph/HyperGraphDialog.cpp" line="1805"/>
         <source>&amp;File</source>
-        <translation type="unfinished">&amp;文件</translation>
+        <translation>&amp;文件</translation>
     </message>
     <message>
         <location filename="../../HyperGraph/HyperGraphDialog.cpp" line="1806"/>
         <source>New</source>
-        <translation type="unfinished">新建</translation>
+        <translation>新建</translation>
     </message>
     <message>
         <location filename="../../HyperGraph/HyperGraphDialog.cpp" line="1813"/>
         <source>New Flow Graph Module...</source>
-        <translation type="unfinished"></translation>
+        <translation>新建流程图模块...</translation>
     </message>
     <message>
         <location filename="../../HyperGraph/HyperGraphDialog.cpp" line="1814"/>
         <source>Global</source>
-        <translation type="unfinished">全局</translation>
+        <translation>全局</translation>
     </message>
     <message>
         <location filename="../../HyperGraph/HyperGraphDialog.cpp" line="1816"/>
         <source>Level</source>
-        <translation type="unfinished">关卡</translation>
+        <translation>关卡</translation>
     </message>
     <message>
         <location filename="../../HyperGraph/HyperGraphDialog.cpp" line="1820"/>
         <source>New MaterialFX Graph...</source>
-        <translation type="unfinished"></translation>
+        <translation>新建MaterialFX图表...</translation>
     </message>
     <message>
         <location filename="../../HyperGraph/HyperGraphDialog.cpp" line="1822"/>
         <source>Open...</source>
-        <translation type="unfinished">打开...</translation>
+        <translation>打开...</translation>
     </message>
     <message>
         <location filename="../../HyperGraph/HyperGraphDialog.cpp" line="1824"/>
         <source>&amp;Save</source>
-        <translation type="unfinished">&amp;保存</translation>
+        <translation>&amp;保存</translation>
     </message>
     <message>
         <location filename="../../HyperGraph/HyperGraphDialog.cpp" line="1826"/>
         <source>Save &amp;As...</source>
-        <translation type="unfinished">另存&amp;为...</translation>
+        <translation>另存&amp;为...</translation>
     </message>
     <message>
         <location filename="../../HyperGraph/HyperGraphDialog.cpp" line="1829"/>
         <source>&amp;Import...</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;导入...</translation>
     </message>
     <message>
         <location filename="../../HyperGraph/HyperGraphDialog.cpp" line="1831"/>
         <source>&amp;Export Selection...</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;导出所选...</translation>
     </message>
     <message>
         <location filename="../../HyperGraph/HyperGraphDialog.cpp" line="1835"/>
         <source>&amp;Edit</source>
-        <translation type="unfinished">&amp;编辑</translation>
+        <translation>&amp;编辑</translation>
     </message>
     <message>
         <location filename="../../HyperGraph/HyperGraphDialog.cpp" line="1836"/>
         <source>Undo</source>
-        <translation type="unfinished">撤销</translation>
+        <translation>撤销</translation>
     </message>
     <message>
         <location filename="../../HyperGraph/HyperGraphDialog.cpp" line="1838"/>
         <source>Redo</source>
-        <translation type="unfinished">恢复</translation>
+        <translation>恢复</translation>
     </message>
     <message>
         <location filename="../../HyperGraph/HyperGraphDialog.cpp" line="1861"/>
         <source>&amp;Find</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;查找</translation>
     </message>
     <message>
         <location filename="../../HyperGraph/HyperGraphDialog.cpp" line="1865"/>
         <source>&amp;View</source>
-        <translation type="unfinished">&amp;视图</translation>
+        <translation>&amp;视图</translation>
     </message>
     <message>
         <location filename="../../HyperGraph/HyperGraphDialog.cpp" line="1880"/>
         <source>Components</source>
-        <translation type="unfinished">组件</translation>
+        <translation>组件</translation>
     </message>
     <message>
         <location filename="../../HyperGraph/HyperGraphDialog.cpp" line="1881"/>
         <source>Release</source>
-        <translation type="unfinished"></translation>
+        <translation>释放</translation>
     </message>
     <message>
         <location filename="../../HyperGraph/HyperGraphDialog.cpp" line="1885"/>
         <source>Advanced</source>
-        <translation type="unfinished"></translation>
+        <translation>高级</translation>
     </message>
     <message>
         <location filename="../../HyperGraph/HyperGraphDialog.cpp" line="1889"/>
         <source>Debug</source>
-        <translation type="unfinished"></translation>
+        <translation>调试</translation>
     </message>
     <message>
         <location filename="../../HyperGraph/HyperGraphDialog.cpp" line="1893"/>
         <source>Obsolete</source>
-        <translation type="unfinished"></translation>
+        <translation>废弃</translation>
     </message>
     <message>
         <location filename="../../HyperGraph/HyperGraphDialog.cpp" line="1901"/>
         <source>Multiplayer</source>
-        <translation type="unfinished"></translation>
+        <translation>多人</translation>
     </message>
     <message>
         <location filename="../../HyperGraph/HyperGraphDialog.cpp" line="1910"/>
         <source>T&amp;ools</source>
-        <translation type="unfinished">工&amp;具</translation>
+        <translation>工&amp;具</translation>
     </message>
     <message>
         <location filename="../../HyperGraph/HyperGraphDialog.cpp" line="1911"/>
         <source>Edit &amp;Graph Tokens...</source>
-        <translation type="unfinished"></translation>
+        <translation>编辑&amp;图表Token...</translation>
     </message>
     <message>
         <location filename="../../HyperGraph/HyperGraphDialog.cpp" line="1913"/>
         <source>Edit &amp;Module...</source>
-        <translation type="unfinished"></translation>
+        <translation>编辑&amp;模块...</translation>
     </message>
     <message>
         <location filename="../../HyperGraph/HyperGraphDialog.cpp" line="1917"/>
         <source>&amp;Debug</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;调试</translation>
     </message>
     <message>
         <location filename="../../HyperGraph/HyperGraphDialog.cpp" line="1918"/>
         <source>Toggle Debugging</source>
-        <translation type="unfinished"></translation>
+        <translation>切换调试</translation>
     </message>
     <message>
         <location filename="../../HyperGraph/HyperGraphDialog.cpp" line="1921"/>
         <source>Erase Debug Information</source>
-        <translation type="unfinished"></translation>
+        <translation>擦除调试信息</translation>
     </message>
     <message>
         <location filename="../../HyperGraph/HyperGraphDialog.cpp" line="1924"/>
         <source>Ignore Flowgraph Type</source>
-        <translation type="unfinished"></translation>
+        <translation>忽略流程图类型</translation>
     </message>
     <message>
         <location filename="../../HyperGraph/HyperGraphDialog.cpp" line="1925"/>
         <source>AI Action</source>
-        <translation type="unfinished"></translation>
+        <translation>AI Action</translation>
     </message>
     <message>
         <location filename="../../HyperGraph/HyperGraphDialog.cpp" line="1929"/>
         <source>Module</source>
-        <translation type="unfinished">模块</translation>
+        <translation>模块</translation>
     </message>
     <message>
         <location filename="../../HyperGraph/HyperGraphDialog.cpp" line="1933"/>
         <source>Custom Action</source>
-        <translation type="unfinished"></translation>
+        <translation>自定义Action</translation>
     </message>
     <message>
         <location filename="../../HyperGraph/HyperGraphDialog.cpp" line="1937"/>
         <source>MaterialFX</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../../HyperGraph/HyperGraphDialog.cpp" line="1986"/>
         <source>Graphs</source>
-        <translation type="unfinished"></translation>
+        <translation>图表</translation>
     </message>
     <message>
         <location filename="../../HyperGraph/HyperGraphDialog.cpp" line="3306"/>
         <source>New Global Flow Graph Module</source>
-        <translation type="unfinished"></translation>
+        <translation>新建全局流程图模块</translation>
     </message>
     <message>
         <location filename="../../HyperGraph/HyperGraphDialog.cpp" line="3311"/>
         <source>New Level Flow Graph Module</source>
-        <translation type="unfinished"></translation>
+        <translation>新建关卡流程图模块</translation>
     </message>
     <message>
         <location filename="../../HyperGraph/HyperGraphDialog.cpp" line="3318"/>
         <source>Enable</source>
-        <translation type="unfinished">启用</translation>
+        <translation>启用</translation>
     </message>
     <message>
         <location filename="../../HyperGraph/HyperGraphDialog.cpp" line="3318"/>
         <source>Disable</source>
-        <translation type="unfinished">禁用</translation>
+        <translation>禁用</translation>
     </message>
     <message>
         <location filename="../../HyperGraph/HyperGraphDialog.cpp" line="3349"/>
         <source>Select Entity</source>
-        <translation type="unfinished"></translation>
+        <translation>选择实体</translation>
     </message>
     <message>
         <location filename="../../HyperGraph/HyperGraphDialog.cpp" line="3351"/>
         <source>Delete Graph</source>
-        <translation type="unfinished"></translation>
+        <translation>删除图表</translation>
     </message>
     <message>
         <location filename="../../HyperGraph/HyperGraphDialog.cpp" line="3356"/>
         <source>Change Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>更改文件夹</translation>
     </message>
     <message>
         <location filename="../../HyperGraph/HyperGraphDialog.cpp" line="3364"/>
         <source>Change Group Name</source>
-        <translation type="unfinished"></translation>
+        <translation>更改组合名称</translation>
     </message>
     <message>
         <location filename="../../HyperGraph/HyperGraphDialog.cpp" line="3370"/>
         <source>Enable All</source>
-        <translation type="unfinished"></translation>
+        <translation>启用所有</translation>
     </message>
     <message>
         <location filename="../../HyperGraph/HyperGraphDialog.cpp" line="3371"/>
         <source>Disable All</source>
-        <translation type="unfinished"></translation>
+        <translation>禁用所有</translation>
     </message>
     <message>
         <location filename="../../HyperGraph/HyperGraphDialog.cpp" line="3377"/>
         <source>Enable (Break/Trace) points</source>
-        <translation type="unfinished"></translation>
+        <translation>启用 断点/追踪点</translation>
     </message>
     <message>
         <location filename="../../HyperGraph/HyperGraphDialog.cpp" line="3380"/>
         <source>Disable (Break/Trace) points</source>
-        <translation type="unfinished"></translation>
+        <translation>禁用断点/追踪点</translation>
     </message>
     <message>
         <location filename="../../HyperGraph/HyperGraphDialog.cpp" line="4076"/>
         <source>Remove Breakpoints for Graph</source>
-        <translation type="unfinished"></translation>
+        <translation>为图表移除断点</translation>
     </message>
     <message>
         <location filename="../../HyperGraph/HyperGraphDialog.cpp" line="4081"/>
         <source>Remove Breakpoints for Node</source>
-        <translation type="unfinished"></translation>
+        <translation>为节点移除断点</translation>
     </message>
     <message>
         <location filename="../../HyperGraph/HyperGraphDialog.cpp" line="4088"/>
         <source>Remove Breakpoint</source>
-        <translation type="unfinished">移除断点</translation>
+        <translation>移除断点</translation>
     </message>
     <message>
         <location filename="../../HyperGraph/HyperGraphDialog.cpp" line="4092"/>
         <source>Enabled</source>
-        <translation type="unfinished">启用</translation>
+        <translation>启用</translation>
     </message>
     <message>
         <location filename="../../HyperGraph/HyperGraphDialog.cpp" line="4097"/>
         <source>Tracepoint</source>
-        <translation type="unfinished">追踪点</translation>
+        <translation>追踪点</translation>
     </message>
     <message>
         <location filename="../../Mannequin/Controls/FragmentBrowser.cpp" line="312"/>
         <source>Fragment Browser</source>
-        <translation type="unfinished"></translation>
+        <translation>片段浏览器</translation>
     </message>
     <message>
         <location filename="../../Mannequin/Controls/PreviewerPage.cpp" line="126"/>
         <source>Preview Filter Tags</source>
-        <translation type="unfinished"></translation>
+        <translation>预览筛选器标签</translation>
     </message>
     <message>
         <location filename="../../Mannequin/MannNewSubADBFilterDialog.cpp" line="119"/>
         <source>Edit Context</source>
-        <translation type="unfinished">编辑上下文</translation>
+        <translation>编辑上下文</translation>
     </message>
     <message>
         <location filename="../../Mannequin/MannNewSubADBFilterDialog.cpp" line="122"/>
         <source>Clone Context</source>
-        <translation type="unfinished">克隆上下文</translation>
+        <translation>克隆上下文</translation>
     </message>
     <message>
         <location filename="../../Mannequin/MannTagEditorDialog.cpp" line="57"/>
         <source>Mannequin FragmentID Editor</source>
-        <translation type="unfinished"></translation>
+        <translation>Mannequin FragmentID编辑器</translation>
     </message>
     <message>
         <location filename="../../MatEditMainDlg.cpp" line="71"/>
         <source>Material Editor</source>
-        <translation type="unfinished"></translation>
+        <translation>材质编辑器</translation>
     </message>
     <message>
         <location filename="../../Material/MaterialDialog.cpp" line="313"/>
         <source>2D</source>
-        <translation type="unfinished"></translation>
+        <translation>2D贴图</translation>
     </message>
     <message>
         <location filename="../../Material/MaterialDialog.cpp" line="314"/>
         <source>Cube-Map</source>
-        <translation type="unfinished"></translation>
+        <translation>立方图</translation>
     </message>
     <message>
         <location filename="../../Material/MaterialDialog.cpp" line="315"/>
@@ -19541,140 +19542,140 @@ Check if Source Control Provider is correctly setup and working directory is cor
     <message>
         <location filename="../../Material/MaterialDialog.cpp" line="316"/>
         <source>Dynamic 2D-Map</source>
-        <translation type="unfinished"></translation>
+        <translation>动态2D贴图</translation>
     </message>
     <message>
         <location filename="../../Material/MaterialDialog.cpp" line="317"/>
         <source>From User Params</source>
-        <translation type="unfinished"></translation>
+        <translation>从用户参数</translation>
     </message>
     <message>
         <location filename="../../Material/MaterialDialog.cpp" line="320"/>
         <source>Stream</source>
-        <translation type="unfinished"></translation>
+        <translation>流</translation>
     </message>
     <message>
         <location filename="../../Material/MaterialDialog.cpp" line="321"/>
         <source>World</source>
-        <translation type="unfinished">世界</translation>
+        <translation>世界</translation>
     </message>
     <message>
         <location filename="../../Material/MaterialDialog.cpp" line="322"/>
         <source>Camera</source>
-        <translation type="unfinished">摄像机</translation>
+        <translation>摄像机</translation>
     </message>
     <message>
         <location filename="../../Material/MaterialDialog.cpp" line="325"/>
         <location filename="../../Material/MaterialDialog.cpp" line="331"/>
         <location filename="../../Material/MaterialDialog.cpp" line="340"/>
         <source>No Change</source>
-        <translation type="unfinished"></translation>
+        <translation>无更改</translation>
     </message>
     <message>
         <location filename="../../Material/MaterialDialog.cpp" line="326"/>
         <source>Fixed Rotation</source>
-        <translation type="unfinished"></translation>
+        <translation>固定旋转</translation>
     </message>
     <message>
         <location filename="../../Material/MaterialDialog.cpp" line="327"/>
         <source>Constant Rotation</source>
-        <translation type="unfinished"></translation>
+        <translation>常量旋转</translation>
     </message>
     <message>
         <location filename="../../Material/MaterialDialog.cpp" line="328"/>
         <source>Oscillated Rotation</source>
-        <translation type="unfinished"></translation>
+        <translation>振荡旋转</translation>
     </message>
     <message>
         <location filename="../../Material/MaterialDialog.cpp" line="332"/>
         <location filename="../../Material/MaterialDialog.cpp" line="341"/>
         <source>Fixed Moving</source>
-        <translation type="unfinished"></translation>
+        <translation>固定移动</translation>
     </message>
     <message>
         <location filename="../../Material/MaterialDialog.cpp" line="333"/>
         <location filename="../../Material/MaterialDialog.cpp" line="342"/>
         <source>Constant Moving</source>
-        <translation type="unfinished"></translation>
+        <translation>常量移动</translation>
     </message>
     <message>
         <location filename="../../Material/MaterialDialog.cpp" line="334"/>
         <location filename="../../Material/MaterialDialog.cpp" line="343"/>
         <source>Jitter Moving</source>
-        <translation type="unfinished"></translation>
+        <translation>抖动移动</translation>
     </message>
     <message>
         <location filename="../../Material/MaterialDialog.cpp" line="335"/>
         <location filename="../../Material/MaterialDialog.cpp" line="344"/>
         <source>Pan Moving</source>
-        <translation type="unfinished"></translation>
+        <translation>平移</translation>
     </message>
     <message>
         <location filename="../../Material/MaterialDialog.cpp" line="336"/>
         <location filename="../../Material/MaterialDialog.cpp" line="345"/>
         <source>Stretch Moving</source>
-        <translation type="unfinished"></translation>
+        <translation>拉伸移动</translation>
     </message>
     <message>
         <location filename="../../Material/MaterialDialog.cpp" line="337"/>
         <location filename="../../Material/MaterialDialog.cpp" line="346"/>
         <source>Stretch-Repeat Moving</source>
-        <translation type="unfinished"></translation>
+        <translation>拉伸重复移动</translation>
     </message>
     <message>
         <location filename="../../Material/MaterialDialog.cpp" line="349"/>
         <source>Default</source>
-        <translation type="unfinished">默认</translation>
+        <translation>默认</translation>
     </message>
     <message>
         <location filename="../../Material/MaterialDialog.cpp" line="350"/>
         <source>Point</source>
-        <translation type="unfinished"></translation>
+        <translation>点</translation>
     </message>
     <message>
         <location filename="../../Material/MaterialDialog.cpp" line="351"/>
         <source>Linear</source>
-        <translation type="unfinished"></translation>
+        <translation>线性</translation>
     </message>
     <message>
         <location filename="../../Material/MaterialDialog.cpp" line="352"/>
         <source>Bilinear</source>
-        <translation type="unfinished"></translation>
+        <translation>双线性</translation>
     </message>
     <message>
         <location filename="../../Material/MaterialDialog.cpp" line="353"/>
         <source>Trilinear</source>
-        <translation type="unfinished"></translation>
+        <translation>三线性</translation>
     </message>
     <message>
         <location filename="../../Material/MaterialDialog.cpp" line="354"/>
         <source>Anisotropic 2x</source>
-        <translation type="unfinished"></translation>
+        <translation>各向异性 2x</translation>
     </message>
     <message>
         <location filename="../../Material/MaterialDialog.cpp" line="355"/>
         <source>Anisotropic 4x</source>
-        <translation type="unfinished"></translation>
+        <translation>各向异性 4x</translation>
     </message>
     <message>
         <location filename="../../Material/MaterialDialog.cpp" line="356"/>
         <source>Anisotropic 8x</source>
-        <translation type="unfinished"></translation>
+        <translation>各向异性 8x</translation>
     </message>
     <message>
         <location filename="../../Material/MaterialDialog.cpp" line="357"/>
         <source>Anisotropic 16x</source>
-        <translation type="unfinished"></translation>
+        <translation>各向异性 16x</translation>
     </message>
     <message>
         <location filename="../../Material/MaterialDialog.cpp" line="364"/>
         <source>Sin Wave</source>
-        <translation type="unfinished"></translation>
+        <translation>正弦波</translation>
     </message>
     <message>
         <location filename="../../Material/MaterialDialog.cpp" line="365"/>
         <source>Sin Wave using vertex color</source>
-        <translation type="unfinished"></translation>
+        <translation>使用顶点颜色正弦波</translation>
     </message>
     <message>
         <location filename="../../Material/MaterialDialog.cpp" line="366"/>
@@ -19689,17 +19690,17 @@ Check if Source Control Provider is correctly setup and working directory is cor
     <message>
         <location filename="../../Material/MaterialDialog.cpp" line="368"/>
         <source>FixedOffset</source>
-        <translation type="unfinished"></translation>
+        <translation>固定偏移</translation>
     </message>
     <message>
         <location filename="../../Material/MaterialDialog.cpp" line="373"/>
         <source>Sin</source>
-        <translation type="unfinished"></translation>
+        <translation>正弦</translation>
     </message>
     <message>
         <location filename="../../Objects/BrushObject.cpp" line="121"/>
         <source>Hideable</source>
-        <translation type="unfinished"></translation>
+        <translation>可隐藏</translation>
     </message>
     <message>
         <location filename="../../Objects/BrushObject.cpp" line="122"/>
@@ -19709,62 +19710,62 @@ Check if Source Control Provider is correctly setup and working directory is cor
     <message>
         <location filename="../../Objects/CameraObject.cpp" line="459"/>
         <source>Set As View Camera</source>
-        <translation type="unfinished">设置为视口摄像机</translation>
+        <translation>设置为视口摄像机</translation>
     </message>
     <message>
         <location filename="../../Objects/EnvironmentProbeObject.cpp" line="60"/>
         <source>skip update</source>
-        <translation type="unfinished"></translation>
+        <translation>跳过更新</translation>
     </message>
     <message>
         <location filename="../../Objects/PrefabObject.cpp" line="290"/>
         <source>Convert to Procedural Object</source>
-        <translation type="unfinished"></translation>
+        <translation>转换为程序化对象</translation>
     </message>
     <message>
         <location filename="../../QtViewPaneManager.cpp" line="1275"/>
         <source>User Legacy Layout</source>
-        <translation type="unfinished"></translation>
+        <translation>使用废弃的布局</translation>
     </message>
     <message>
         <location filename="../../ScriptHelpDialog.cpp" line="276"/>
         <source>Script Help (Copied &quot;%1&quot; to clipboard)</source>
-        <translation type="unfinished"></translation>
+        <translation>脚本帮助 (复制 &quot;%1&quot; 到剪切板)</translation>
     </message>
     <message>
         <location filename="../../TrackView/SequenceBatchRenderDialog.cpp" line="231"/>
         <source>Frame</source>
-        <translation type="unfinished">帧</translation>
+        <translation>帧</translation>
     </message>
     <message>
         <location filename="../../TrackView/SequenceBatchRenderDialog.cpp" line="233"/>
         <source>Not running</source>
-        <translation type="unfinished"></translation>
+        <translation>未运行</translation>
     </message>
     <message>
         <location filename="../../TrackView/TrackViewDialog.cpp" line="429"/>
         <source>View:</source>
-        <translation type="unfinished"></translation>
+        <translation>视图:</translation>
     </message>
     <message>
         <location filename="../../TrackView/TrackViewDialog.cpp" line="452"/>
         <source>Play:</source>
-        <translation type="unfinished"></translation>
+        <translation>播放：</translation>
     </message>
     <message>
         <location filename="../../TrackView/TrackViewDialog.cpp" line="2131"/>
         <source>Add </source>
-        <translation type="unfinished"></translation>
+        <translation>添加 </translation>
     </message>
     <message>
         <location filename="../../TrackView/TrackViewDialog.cpp" line="2131"/>
         <source> Track</source>
-        <translation type="unfinished"></translation>
+        <translation> 轨迹</translation>
     </message>
     <message>
         <location filename="../../TrackView/TrackViewDialog.cpp" line="2143"/>
         <source>Tracks:</source>
-        <translation type="unfinished"></translation>
+        <translation>轨迹：</translation>
     </message>
 </context>
 <context>

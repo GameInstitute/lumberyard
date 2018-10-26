@@ -968,490 +968,490 @@ Reloading library will discard all modifications to this library!</source>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/AttributeItem.cpp" line="1274"/>
         <source>Fill the panel by dragging parameter in.</source>
-        <translation type="unfinished"></translation>
+        <translation>拖拽参数到面板中填充面板。</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/PanelWidget/paneltitlebar.cpp" line="441"/>
         <source>Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>重命名</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/PanelWidget/paneltitlebar.cpp" line="442"/>
         <source>Remove all</source>
-        <translation type="unfinished"></translation>
+        <translation>移除所有</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/PanelWidget/paneltitlebar.cpp" line="447"/>
         <source>Export</source>
-        <translation type="unfinished">导出</translation>
+        <translation>导出导出</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/PanelWidget/paneltitlebar.cpp" line="456"/>
         <source>Close</source>
-        <translation type="unfinished">关闭</translation>
+        <translation>关闭关闭</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/PanelWidget/panelwidget.cpp" line="224"/>
         <location filename="../../../Plugins/EditorUI_QT/PanelWidget/panelwidget.cpp" line="226"/>
         <source>Unnamed widget</source>
-        <translation type="unfinished"></translation>
+        <translation>未命名控件</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/PanelWidget/panelwidget.cpp" line="274"/>
         <source>Show All</source>
-        <translation type="unfinished"></translation>
+        <translation>显示所有</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/PanelWidget/panelwidget.cpp" line="293"/>
         <source>Hide All</source>
-        <translation type="unfinished"></translation>
+        <translation>隐藏所有</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/PanelWidget/panelwidget.cpp" line="312"/>
         <source>Show Changed</source>
-        <translation type="unfinished"></translation>
+        <translation>显示已更改</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/PreviewWindowView.cpp" line="74"/>
         <source>Wireframe view</source>
-        <translation type="unfinished"></translation>
+        <translation>线框视图</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/PreviewWindowView.cpp" line="77"/>
         <source>Show particle count</source>
-        <translation type="unfinished"></translation>
+        <translation>显示粒子数</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/PreviewWindowView.cpp" line="81"/>
         <source>Hide particle count</source>
-        <translation type="unfinished"></translation>
+        <translation>隐藏粒子数</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/PreviewWindowView.cpp" line="86"/>
         <source>Hide bounding box</source>
-        <translation type="unfinished">隐藏边界框</translation>
+        <translation>隐藏边界框</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/PreviewWindowView.cpp" line="90"/>
         <source>Show bounding box</source>
-        <translation type="unfinished">显示边界框</translation>
+        <translation>显示边界框</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/PreviewWindowView.cpp" line="95"/>
         <source>Hide gizmo</source>
-        <translation type="unfinished">隐藏gizmo</translation>
+        <translation>隐藏gizmo</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/PreviewWindowView.cpp" line="99"/>
         <source>Show gizmo</source>
-        <translation type="unfinished">显示gizmo</translation>
+        <translation>显示gizmo</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/PreviewWindowView.cpp" line="104"/>
         <source>Show playback controls</source>
-        <translation type="unfinished"></translation>
+        <translation>显示回放控件</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/PreviewWindowView.cpp" line="108"/>
         <source>Hide playback controls</source>
-        <translation type="unfinished"></translation>
+        <translation>隐藏回放控件</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/PreviewWindowView.cpp" line="113"/>
         <source>Hide grid</source>
-        <translation type="unfinished">隐藏网格</translation>
+        <translation>隐藏网格</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/PreviewWindowView.cpp" line="117"/>
         <source>Show grid</source>
-        <translation type="unfinished">显示网格</translation>
+        <translation>显示网格</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/PreviewWindowView.cpp" line="122"/>
         <source>Hide Emitter Shape</source>
-        <translation type="unfinished"></translation>
+        <translation>隐藏发射器形状</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/PreviewWindowView.cpp" line="126"/>
         <source>Show Emitter Shape</source>
-        <translation type="unfinished"></translation>
+        <translation>显示发射器形状</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/PreviewWindowView.cpp" line="130"/>
         <source>Background color...</source>
-        <translation type="unfinished">背景颜色...</translation>
+        <translation>背景颜色...</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/PreviewWindowView.cpp" line="131"/>
         <source>Grid color...</source>
-        <translation type="unfinished">网格颜色...</translation>
+        <translation>网格颜色...</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/PreviewWindowView.cpp" line="132"/>
         <source>Reset colors</source>
-        <translation type="unfinished">重置颜色</translation>
+        <translation>重置颜色</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/PreviewWindowView.cpp" line="138"/>
         <source>Move on spline</source>
-        <translation type="unfinished"></translation>
+        <translation>在样条线上移动</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/PreviewWindowView.cpp" line="140"/>
         <source>Spline mode</source>
-        <translation type="unfinished"></translation>
+        <translation>样条线模式</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/PreviewWindowView.cpp" line="142"/>
         <source>Single path</source>
-        <translation type="unfinished"></translation>
+        <translation>单个路径</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/PreviewWindowView.cpp" line="154"/>
         <source>Loop</source>
-        <translation type="unfinished"></translation>
+        <translation>循环</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/PreviewWindowView.cpp" line="166"/>
         <source>Ping-pong</source>
-        <translation type="unfinished"></translation>
+        <translation>乒乓</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/PreviewWindowView.cpp" line="178"/>
         <source>Spline shape</source>
-        <translation type="unfinished"></translation>
+        <translation>样条线形状</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/PreviewWindowView.cpp" line="180"/>
         <source>Line</source>
-        <translation type="unfinished"></translation>
+        <translation>线</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/PreviewWindowView.cpp" line="192"/>
         <source>Sine Wave</source>
-        <translation type="unfinished"></translation>
+        <translation>正弦波</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/PreviewWindowView.cpp" line="204"/>
         <source>Coil</source>
-        <translation type="unfinished"></translation>
+        <translation>卷</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/PreviewWindowView.cpp" line="216"/>
         <source>spline speed</source>
-        <translation type="unfinished"></translation>
+        <translation>样条线速度</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/PreviewWindowView.cpp" line="218"/>
         <source>Speed x1</source>
-        <translation type="unfinished"></translation>
+        <translation>速度 x1</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/PreviewWindowView.cpp" line="230"/>
         <source>Speed x2</source>
-        <translation type="unfinished"></translation>
+        <translation>速度 x2</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/PreviewWindowView.cpp" line="242"/>
         <source>Speed x3</source>
-        <translation type="unfinished"></translation>
+        <translation>速度 x3</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/PreviewWindowView.cpp" line="254"/>
         <source>Speed x5</source>
-        <translation type="unfinished"></translation>
+        <translation>速度 x5</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/PreviewWindowView.cpp" line="267"/>
         <source>Reset spline settings</source>
-        <translation type="unfinished"></translation>
+        <translation>重置样条线设置</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/PreviewWindowView.cpp" line="271"/>
         <location filename="../../../Plugins/EditorUI_QT/VariableWidgets/QCopyableWidget.cpp" line="99"/>
         <location filename="../../../Plugins/EditorUI_QT/VariableWidgets/QPresetSelectorWidget.cpp" line="554"/>
         <source>Reset to default</source>
-        <translation type="unfinished">重置为默认</translation>
+        <translation>重置为默认</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/PreviewWindowView.cpp" line="357"/>
         <source>0P</source>
-        <translation type="unfinished"></translation>
+        <translation>0P</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/Toolbar/ToolbarLibrary.cpp" line="24"/>
         <source>Library</source>
-        <translation type="unfinished"></translation>
+        <translation>库</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/Toolbar/ToolbarLibrary.cpp" line="42"/>
         <source>&lt;loading..&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;加载中..&gt;</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/Toolbar/ToolbarLibraryItem.cpp" line="21"/>
         <source>Item</source>
-        <translation type="unfinished"></translation>
+        <translation>项</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/Toolbar/ToolbarLibraryItem.cpp" line="32"/>
         <source>Add</source>
-        <translation type="unfinished">添加</translation>
+        <translation>添加</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/Toolbar/ToolbarLibraryItem.cpp" line="32"/>
         <source>Add new item</source>
-        <translation type="unfinished"></translation>
+        <translation>添加新项</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/Toolbar/ToolbarLibraryItem.cpp" line="33"/>
         <source>Clone</source>
-        <translation type="unfinished"></translation>
+        <translation>克隆</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/Toolbar/ToolbarLibraryItem.cpp" line="33"/>
         <source>Clone library item</source>
-        <translation type="unfinished"></translation>
+        <translation>克隆库项</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/Toolbar/ToolbarLibraryItem.cpp" line="34"/>
         <source>Remove</source>
-        <translation type="unfinished">移除</translation>
+        <translation>移除移除</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/Toolbar/ToolbarLibraryItem.cpp" line="34"/>
         <source>Remove item</source>
-        <translation type="unfinished"></translation>
+        <translation>移除项</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/Toolbar/ToolbarLibraryItem.cpp" line="35"/>
         <source>Assign</source>
-        <translation type="unfinished"></translation>
+        <translation>分配</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/Toolbar/ToolbarLibraryItem.cpp" line="35"/>
         <source>Assign item to selected objects</source>
-        <translation type="unfinished"></translation>
+        <translation>分配项到选定对象</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/Toolbar/ToolbarLibraryItem.cpp" line="37"/>
         <source>Get Properties</source>
-        <translation type="unfinished"></translation>
+        <translation>获得属性</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/Toolbar/ToolbarLibraryItem.cpp" line="37"/>
         <source>Get properties from selection</source>
-        <translation type="unfinished"></translation>
+        <translation>从选中获得属性</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/Toolbar/ToolbarLibraryItem.cpp" line="38"/>
         <source>Reload</source>
-        <translation type="unfinished">重新载入</translation>
+        <translation>重新加载</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/Toolbar/ToolbarLibraryItem.cpp" line="38"/>
         <source>Reload item</source>
-        <translation type="unfinished"></translation>
+        <translation>重新加载项</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/Toolbar/ToolbarParticleSpecific.cpp" line="21"/>
         <source>Particle Specific</source>
-        <translation type="unfinished"></translation>
+        <translation>粒子专用</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/Toolbar/ToolbarParticleSpecific.cpp" line="30"/>
         <location filename="../../../Plugins/EditorUI_QT/VariableWidgets/QColorCurve.cpp" line="222"/>
         <location filename="../../../Plugins/EditorUI_QT/VariableWidgets/QColorWidgetImp.cpp" line="465"/>
         <source>Reset</source>
-        <translation type="unfinished">重置</translation>
+        <translation>重置</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/Toolbar/ToolbarParticleSpecific.cpp" line="30"/>
         <source>Reset item to default</source>
-        <translation type="unfinished"></translation>
+        <translation>重置项为默认</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/Toolbar/ToolbarParticleSpecific.cpp" line="31"/>
         <source>Activate</source>
-        <translation type="unfinished"></translation>
+        <translation>激活</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/Toolbar/ToolbarParticleSpecific.cpp" line="31"/>
         <source>Enable/Disable item and all children</source>
-        <translation type="unfinished"></translation>
+        <translation>启用/禁用项及其子项</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/Toolbar/ToolbarStandard.cpp" line="23"/>
         <source>Standard</source>
-        <translation type="unfinished"></translation>
+        <translation>标准</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/Toolbar/ToolbarStandard.cpp" line="33"/>
         <source>Undo</source>
-        <translation type="unfinished"></translation>
+        <translation>撤销</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/Toolbar/ToolbarStandard.cpp" line="35"/>
         <source>Redo</source>
-        <translation type="unfinished"></translation>
+        <translation>恢复</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/Toolbar/ToolbarStandard.cpp" line="37"/>
         <location filename="../../../Plugins/EditorUI_QT/VariableWidgets/QCopyableWidget.cpp" line="57"/>
         <source>Copy</source>
-        <translation type="unfinished"></translation>
+        <translation>复制</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/Toolbar/ToolbarStandard.cpp" line="37"/>
         <source>Copy item</source>
-        <translation type="unfinished"></translation>
+        <translation>复制项</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/Toolbar/ToolbarStandard.cpp" line="39"/>
         <location filename="../../../Plugins/EditorUI_QT/VariableWidgets/QCopyableWidget.cpp" line="68"/>
         <source>Paste</source>
-        <translation type="unfinished"></translation>
+        <translation>粘贴</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/Toolbar/ToolbarStandard.cpp" line="39"/>
         <source>Paste item</source>
-        <translation type="unfinished"></translation>
+        <translation>粘贴项</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/VariableWidgets/QColorCurve.cpp" line="190"/>
         <source>Random between two gradients</source>
-        <translation type="unfinished"></translation>
+        <translation>两个灰阶之间随机</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/VariableWidgets/QColorCurve.cpp" line="204"/>
         <source>One gradient over time</source>
-        <translation type="unfinished"></translation>
+        <translation>随着时间变化的一个灰阶</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/VariableWidgets/QColorCurve.cpp" line="217"/>
         <source>Save to library</source>
-        <translation type="unfinished"></translation>
+        <translation>保存到库</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/VariableWidgets/QColorPickerWidget.cpp" line="62"/>
         <source>Add To Library</source>
-        <translation type="unfinished">添加到库</translation>
+        <translation>添加到库</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/VariableWidgets/QColorPickerWidget.cpp" line="102"/>
         <source>New</source>
-        <translation type="unfinished"></translation>
+        <translation>新建</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/VariableWidgets/QColorPickerWidget.cpp" line="103"/>
         <source>Current</source>
-        <translation type="unfinished"></translation>
+        <translation>当前</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/VariableWidgets/QColorWidgetImp.cpp" line="449"/>
         <source>Single color</source>
-        <translation type="unfinished"></translation>
+        <translation>单个颜色</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/VariableWidgets/QColorWidgetImp.cpp" line="453"/>
         <source>Random between two colors</source>
-        <translation type="unfinished"></translation>
+        <translation>两个颜色之间随机</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/VariableWidgets/QCopyableWidget.cpp" line="88"/>
         <source>Duplicate</source>
-        <translation type="unfinished"></translation>
+        <translation>克隆</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/VariableWidgets/QFileSelectWidget.cpp" line="135"/>
         <source>Unamed Button</source>
-        <translation type="unfinished"></translation>
+        <translation>未命名按钮</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/VariableWidgets/QGradientColorDialog.cpp" line="45"/>
         <source>Gradient Editor</source>
-        <translation type="unfinished"></translation>
+        <translation>灰阶编辑器</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/VariableWidgets/QGradientColorDialog.cpp" line="64"/>
         <source>Add to Library</source>
-        <translation type="unfinished"></translation>
+        <translation>添加到库</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/VariableWidgets/QGradientColorDialog.cpp" line="96"/>
         <source>Location</source>
-        <translation type="unfinished"></translation>
+        <translation>位置</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/VariableWidgets/QGradientColorPickerWidget.cpp" line="462"/>
         <source>Add Curve to presets</source>
-        <translation type="unfinished"></translation>
+        <translation>添加曲线到预设</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/VariableWidgets/QGradientColorPickerWidget.cpp" line="469"/>
         <source>Reset curve</source>
-        <translation type="unfinished"></translation>
+        <translation>重置取消</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/VariableWidgets/QKeySequenceCaptureWidget.cpp" line="116"/>
         <location filename="../../../Plugins/EditorUI_QT/VariableWidgets/QKeySequenceCaptureWidget.cpp" line="139"/>
         <source>Click to assign</source>
-        <translation type="unfinished">点击分配</translation>
+        <translation>点击分配</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/VariableWidgets/QKeySequenceCaptureWidget.cpp" line="130"/>
         <source>Clear</source>
-        <translation type="unfinished"></translation>
+        <translation>清除</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/VariableWidgets/QKeySequenceEditorDialog.cpp" line="27"/>
         <source>HotKey Configuration</source>
-        <translation type="unfinished"></translation>
+        <translation>热键配置</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/VariableWidgets/QPresetSelectorWidget.cpp" line="94"/>
         <source>Preset preview size</source>
-        <translation type="unfinished"></translation>
+        <translation>预设预览大小</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/VariableWidgets/QPresetSelectorWidget.cpp" line="454"/>
         <source>List</source>
-        <translation type="unfinished"></translation>
+        <translation>列表</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/VariableWidgets/QPresetSelectorWidget.cpp" line="460"/>
         <source>Grid</source>
-        <translation type="unfinished"></translation>
+        <translation>网格</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/VariableWidgets/QPresetSelectorWidget.cpp" line="502"/>
         <source>Select preset to load</source>
-        <translation type="unfinished"></translation>
+        <translation>选择要加载的预设</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/VariableWidgets/QPresetSelectorWidget.cpp" line="507"/>
         <source>Export...</source>
-        <translation type="unfinished">导出...</translation>
+        <translation>导出...</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/VariableWidgets/QPresetSelectorWidget.cpp" line="511"/>
         <source>Select location to save preset</source>
-        <translation type="unfinished"></translation>
+        <translation>选择保存预设的位置</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/VariableWidgets/QPresetSelectorWidget.cpp" line="524"/>
         <source>Rename Library</source>
-        <translation type="unfinished"></translation>
+        <translation>重命名库</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/VariableWidgets/QPresetSelectorWidget.cpp" line="536"/>
         <source>Remove Library</source>
-        <translation type="unfinished"></translation>
+        <translation>移除库</translation>
     </message>
     <message>
         <location filename="../../../Plugins/EditorUI_QT/VariableWidgets/QPresetSelectorWidget.cpp" line="572"/>
         <source>Remove All Libraries</source>
-        <translation type="unfinished"></translation>
+        <translation>移除所有库</translation>
     </message>
 </context>
 <context>

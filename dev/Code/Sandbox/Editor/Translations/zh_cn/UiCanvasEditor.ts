@@ -992,37 +992,37 @@ Are you sure you want to detach the selected instances?</source>
     <message>
         <location filename="../../../Plugins/UiCanvasEditor/SpriteBorderEditor.cpp" line="370"/>
         <source>Rows</source>
-        <translation type="unfinished"></translation>
+        <translation>行</translation>
     </message>
     <message>
         <location filename="../../../Plugins/UiCanvasEditor/SpriteBorderEditor.cpp" line="374"/>
         <source>Columns</source>
-        <translation type="unfinished"></translation>
+        <translation>列</translation>
     </message>
     <message>
         <location filename="../../../Plugins/UiCanvasEditor/SpriteBorderEditor.cpp" line="744"/>
         <source>Alias</source>
-        <translation type="unfinished"></translation>
+        <translation>别名</translation>
     </message>
     <message>
         <location filename="../../../Plugins/UiCanvasEditor/SpriteBorderEditor.cpp" line="876"/>
         <source>Configure Spritesheet</source>
-        <translation type="unfinished"></translation>
+        <translation>配置样式表</translation>
     </message>
     <message>
         <location filename="../../../Plugins/UiCanvasEditor/SpriteBorderEditor.cpp" line="896"/>
         <source>Save</source>
-        <translation type="unfinished"></translation>
+        <translation>保存</translation>
     </message>
     <message>
         <location filename="../../../Plugins/UiCanvasEditor/SpriteBorderEditor.cpp" line="940"/>
         <source>Error</source>
-        <translation type="unfinished">错误</translation>
+        <translation>错误错误</translation>
     </message>
     <message>
         <location filename="../../../Plugins/UiCanvasEditor/SpriteBorderEditor.cpp" line="941"/>
         <source>Unable to save file. Is the file read-only?</source>
-        <translation type="unfinished"></translation>
+        <translation>未能保存文件。是否是只读文件？</translation>
     </message>
     <message>
         <location filename="../../../Plugins/UiCanvasEditor/SpriteBorderEditor.cpp" line="948"/>
@@ -1048,143 +1048,144 @@ Are you sure you want to detach the selected instances?</source>
     <message>
         <location filename="../../../Plugins/UiCanvasEditor/Animation/UiAnimViewNodes.cpp" line="1184"/>
         <source>Add Selected UI Element(s)</source>
-        <translation type="unfinished"></translation>
+        <translation>添加所选UI元素</translation>
     </message>
     <message>
         <location filename="../../../Plugins/UiCanvasEditor/Animation/UiAnimViewNodes.cpp" line="1191"/>
         <source>Add Comment Node</source>
-        <translation type="unfinished"></translation>
+        <translation>添加注释节点</translation>
     </message>
     <message>
         <location filename="../../../Plugins/UiCanvasEditor/Animation/UiAnimViewNodes.cpp" line="1192"/>
         <source>Add Console Variable</source>
-        <translation type="unfinished"></translation>
+        <translation>添加控制台变量</translation>
     </message>
     <message>
         <location filename="../../../Plugins/UiCanvasEditor/Animation/UiAnimViewNodes.cpp" line="1193"/>
         <source>Add Script Variable</source>
-        <translation type="unfinished"></translation>
+        <translation>添加脚本变量</translation>
     </message>
     <message>
         <location filename="../../../Plugins/UiCanvasEditor/Animation/UiAnimViewNodes.cpp" line="1194"/>
         <source>Add Material</source>
-        <translation type="unfinished"></translation>
+        <translation>添加材质</translation>
     </message>
     <message>
         <location filename="../../../Plugins/UiCanvasEditor/Animation/UiAnimViewNodes.cpp" line="1195"/>
         <source>Add Event</source>
-        <translation type="unfinished"></translation>
+        <translation>添加事件</translation>
     </message>
     <message>
         <location filename="../../../Plugins/UiCanvasEditor/Animation/UiAnimViewNodes.cpp" line="1240"/>
         <location filename="../../../Plugins/UiCanvasEditor/Animation/UiAnimViewNodes.cpp" line="1407"/>
         <source>Select In Viewport</source>
-        <translation type="unfinished"></translation>
+        <translation>在视口中选择</translation>
     </message>
     <message>
         <location filename="../../../Plugins/UiCanvasEditor/Animation/UiAnimViewNodes.cpp" line="1244"/>
         <source>Set As View Camera</source>
-        <translation type="unfinished"></translation>
+        <translation>设置为视图摄像机</translation>
     </message>
     <message>
         <location filename="../../../Plugins/UiCanvasEditor/Animation/UiAnimViewNodes.cpp" line="1254"/>
         <source>Delete</source>
-        <translation type="unfinished">删除</translation>
+        <translation>删除</translation>
     </message>
     <message>
         <location filename="../../../Plugins/UiCanvasEditor/Animation/UiAnimViewNodes.cpp" line="1263"/>
         <source>Copy Keys</source>
-        <translation type="unfinished"></translation>
+        <translation>复制关键帧</translation>
     </message>
     <message>
         <location filename="../../../Plugins/UiCanvasEditor/Animation/UiAnimViewNodes.cpp" line="1264"/>
         <source>Copy Selected Keys</source>
-        <translation type="unfinished"></translation>
+        <translation>复制所选关键帧</translation>
     </message>
     <message>
         <location filename="../../../Plugins/UiCanvasEditor/Animation/UiAnimViewNodes.cpp" line="1265"/>
         <source>Paste Keys</source>
-        <translation type="unfinished"></translation>
+        <translation>粘贴关键帧</translation>
     </message>
     <message>
         <location filename="../../../Plugins/UiCanvasEditor/Animation/UiAnimViewNodes.cpp" line="1276"/>
         <source>Disabled</source>
-        <translation type="unfinished"></translation>
+        <translation>禁用</translation>
     </message>
     <message>
         <location filename="../../../Plugins/UiCanvasEditor/Animation/UiAnimViewNodes.cpp" line="1340"/>
         <source>Customize Track Color...</source>
-        <translation type="unfinished"></translation>
+        <translation>自定义轨迹颜色...</translation>
     </message>
     <message>
         <location filename="../../../Plugins/UiCanvasEditor/Animation/UiAnimViewNodes.cpp" line="1343"/>
         <source>Clear Custom Track Color</source>
-        <translation type="unfinished"></translation>
+        <translation>清除自定义轨迹颜色</translation>
     </message>
     <message>
         <location filename="../../../Plugins/UiCanvasEditor/Animation/UiAnimViewNodes.cpp" line="1402"/>
         <source>Remove Selected Nodes/Tracks</source>
-        <translation type="unfinished"></translation>
+        <translation>移除所选节点/轨迹</translation>
     </message>
     <message>
         <location filename="../../../Plugins/UiCanvasEditor/CommandCanvasPropertiesChange.cpp" line="25"/>
         <location filename="../../../Plugins/UiCanvasEditor/CommandPropertiesChange.cpp" line="28"/>
         <source>properties change</source>
-        <translation type="unfinished"></translation>
+        <translation>属性改变</translation>
     </message>
     <message>
         <location filename="../../../Plugins/UiCanvasEditor/FeedbackDialog.cpp" line="16"/>
         <source>&lt;h3&gt;We love getting feedback from our customers.&lt;/h3&gt;Feedback from our community helps us to constantly improve the UI Editor.&lt;br/&gt;&lt;br/&gt;In addition to using our forums and AWS support channels, you can always email us with your comments and suggestions at &lt;a href=&quot;mailto:lumberyard-feedback@amazon.com?subject=UI Editor Feedback&quot; style=&quot;color: #4285F4;&quot;&gt;lumberyard-feedback@amazon.com&lt;/a&gt;.  While we do not respond to everyone who submits feedback, we read everything and aspire to use your feedback to improve the UI Editor for everyone.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;h3&gt;We love getting feedback from our customers.&lt;/h3&gt;Feedback from our community helps us to constantly improve the UI Editor.&lt;br/&gt;&lt;br/&gt;In addition to using our forums and AWS support channels, you can always email us with your comments and suggestions at &lt;a href=&quot;mailto:lumberyard-feedback@amazon.com?subject=UI Editor Feedback&quot; style=&quot;color: #4285F4;&quot;&gt;lumberyard-feedback@amazon.com&lt;/a&gt;.  While we do not respond to everyone who submits feedback, we read everything and aspire to use your feedback to improve the UI Editor for everyone.</translation>
     </message>
     <message>
         <location filename="../../../Plugins/UiCanvasEditor/FeedbackDialog.cpp" line="26"/>
         <source>Give Us Feedback</source>
-        <translation type="unfinished"></translation>
+        <translation>给我们反馈</translation>
     </message>
     <message>
         <location filename="../../../Plugins/UiCanvasEditor/NewElementToolbarSection.cpp" line="21"/>
         <source>New...</source>
-        <translation type="unfinished">新建...</translation>
+        <translation>新建...</translation>
     </message>
     <message>
         <location filename="../../../Plugins/UiCanvasEditor/PropertiesWrapper.cpp" line="34"/>
         <source>No Canvas Loaded</source>
-        <translation type="unfinished"></translation>
+        <translation>未加载画布</translation>
     </message>
     <message>
         <location filename="../../../Plugins/UiCanvasEditor/PropertyHandlerAnchor.cpp" line="45"/>
         <source>Anchors and Offsets are
 controlled by parent</source>
-        <translation type="unfinished"></translation>
+        <translation>锚点和偏移是
+通过父级控制的</translation>
     </message>
     <message>
         <location filename="../../../Plugins/UiCanvasEditor/PropertyHandlerUiParticleColorKeyframe.cpp" line="38"/>
         <location filename="../../../Plugins/UiCanvasEditor/PropertyHandlerUiParticleFloatKeyframe.cpp" line="38"/>
         <source>Time</source>
-        <translation type="unfinished"></translation>
+        <translation>时间</translation>
     </message>
     <message>
         <location filename="../../../Plugins/UiCanvasEditor/PropertyHandlerUiParticleColorKeyframe.cpp" line="58"/>
         <source>Color</source>
-        <translation type="unfinished"></translation>
+        <translation>颜色</translation>
     </message>
     <message>
         <location filename="../../../Plugins/UiCanvasEditor/PropertyHandlerUiParticleColorKeyframe.cpp" line="85"/>
         <location filename="../../../Plugins/UiCanvasEditor/PropertyHandlerUiParticleFloatKeyframe.cpp" line="88"/>
         <source>In tangent</source>
-        <translation type="unfinished"></translation>
+        <translation>入切线</translation>
     </message>
     <message>
         <location filename="../../../Plugins/UiCanvasEditor/PropertyHandlerUiParticleColorKeyframe.cpp" line="102"/>
         <location filename="../../../Plugins/UiCanvasEditor/PropertyHandlerUiParticleFloatKeyframe.cpp" line="105"/>
         <source>Out tangent</source>
-        <translation type="unfinished"></translation>
+        <translation>出切线</translation>
     </message>
     <message>
         <location filename="../../../Plugins/UiCanvasEditor/PropertyHandlerUiParticleFloatKeyframe.cpp" line="58"/>
         <source>Multiplier</source>
-        <translation type="unfinished"></translation>
+        <translation>乘数</translation>
     </message>
 </context>
 <context>

@@ -270,12 +270,12 @@
     <message>
         <location filename="../../../Plugins/DeploymentTool/DeploymentToolWindow.cpp" line="137"/>
         <source>Deploying...</source>
-        <translation type="unfinished"></translation>
+        <translation>部署中...</translation>
     </message>
     <message>
         <location filename="../../../Plugins/DeploymentTool/DeploymentToolWindow.cpp" line="309"/>
         <source>Deploy</source>
-        <translation type="unfinished">部署</translation>
+        <translation>部署</translation>
     </message>
 </context>
 </TS>

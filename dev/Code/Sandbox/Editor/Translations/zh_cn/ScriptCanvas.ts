@@ -527,78 +527,79 @@
     <message>
         <location filename="../../../../../Gems/ScriptCanvas/Code/Editor/GraphCanvas/DataInterfaces/ScriptCanvasEntityIdDataInterface.h" line="80"/>
         <source>Set to Self</source>
-        <translation type="unfinished"></translation>
+        <translation>设置为自身</translation>
     </message>
     <message>
         <location filename="../../../../../Gems/ScriptCanvas/Code/Editor/GraphCanvas/DataInterfaces/ScriptCanvasEntityIdDataInterface.h" line="81"/>
         <source>Reset the EntityId to the Entity that owns this graph.</source>
-        <translation type="unfinished"></translation>
+        <translation>重置EntityID为拥有此图表的实体。</translation>
     </message>
     <message>
         <location filename="../../../../../Gems/ScriptCanvas/Code/Editor/View/Widgets/CanvasWidget.cpp" line="192"/>
         <source>Debugging: On</source>
-        <translation type="unfinished"></translation>
+        <translation>调试：开</translation>
     </message>
     <message>
         <location filename="../../../../../Gems/ScriptCanvas/Code/Editor/View/Widgets/CanvasWidget.cpp" line="205"/>
         <source>Debugging: Off</source>
-        <translation type="unfinished"></translation>
+        <translation>调试：关</translation>
     </message>
     <message>
         <location filename="../../../../../Gems/ScriptCanvas/Code/Editor/View/Widgets/NodeFavorites.h" line="31"/>
         <source>Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>收藏夹</translation>
     </message>
     <message>
         <location filename="../../../../../Gems/ScriptCanvas/Code/Editor/View/Widgets/NodeOutliner.cpp" line="42"/>
         <source>Node Outliner</source>
-        <translation type="unfinished"></translation>
+        <translation>节点大纲</translation>
     </message>
     <message>
         <location filename="../../../../../Gems/ScriptCanvas/Code/Editor/View/Widgets/NodePalette/SpecializedNodePaletteTreeItemTypes.cpp" line="141"/>
         <source>Comment box for notes. Does not affect script execution or data.</source>
-        <translation type="unfinished"></translation>
+        <translation>注释框。不影响脚本执行或数据。</translation>
     </message>
     <message>
         <location filename="../../../../../Gems/ScriptCanvas/Code/Editor/View/Widgets/NodePalette/VariableNodePaletteTreeItemTypes.cpp" line="92"/>
         <source>After specifying a variable name, this node will expose output slots that return the specified variable&apos;s values.
 Variable names must begin with # (for example, #MyVar).</source>
-        <translation type="unfinished"></translation>
+        <translation>指定变量名后，此节点将公开返回指定变量值的输出槽。
+变量名必须以#开头(例如，#MyVar)。</translation>
     </message>
     <message>
         <location filename="../../../../../Gems/ScriptCanvas/Code/Editor/View/Widgets/NodePalette/VariableNodePaletteTreeItemTypes.cpp" line="185"/>
         <source>This node changes a variable&apos;s values according to the data connected to the input slots</source>
-        <translation type="unfinished"></translation>
+        <translation>此节点根据连接到输入槽的数据更改变量的值</translation>
     </message>
     <message>
         <location filename="../../../../../Gems/ScriptCanvas/Code/Editor/View/Windows/CreateNodeContextMenu.cpp" line="67"/>
         <source>Reference Selected Entity</source>
-        <translation type="unfinished"></translation>
+        <translation>引用所选实体</translation>
     </message>
     <message>
         <location filename="../../../../../Gems/ScriptCanvas/Code/Editor/View/Windows/CreateNodeContextMenu.cpp" line="71"/>
         <source>Reference Selected Entities</source>
-        <translation type="unfinished"></translation>
+        <translation>引用所选实体组</translation>
     </message>
     <message>
         <location filename="../../../../../Gems/ScriptCanvas/Code/Editor/View/Windows/CreateNodeContextMenu.cpp" line="320"/>
         <source>Create Block Comment For Selection</source>
-        <translation type="unfinished"></translation>
+        <translation>创建用于选择的块注释</translation>
     </message>
     <message>
         <location filename="../../../../../Gems/ScriptCanvas/Code/Editor/View/Windows/CreateNodeContextMenu.cpp" line="321"/>
         <source>Will create a block comment around the selected nodes.</source>
-        <translation type="unfinished"></translation>
+        <translation>将在选定的节点周围创建块注释。</translation>
     </message>
     <message>
         <location filename="../../../../../Gems/ScriptCanvas/Code/Editor/View/Windows/CreateNodeContextMenu.cpp" line="325"/>
         <source>Create Block Comment</source>
-        <translation type="unfinished"></translation>
+        <translation>创建块注释</translation>
     </message>
     <message>
         <location filename="../../../../../Gems/ScriptCanvas/Code/Editor/View/Windows/CreateNodeContextMenu.cpp" line="326"/>
         <source>Will create a block comment at the specified point.</source>
-        <translation type="unfinished"></translation>
+        <translation>将在指定点创建块注释。</translation>
     </message>
 </context>
 <context>

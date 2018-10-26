@@ -587,112 +587,112 @@
     <message>
         <location filename="../../../../Framework/AzToolsFramework/AzToolsFramework/AssetBrowser/Search/SearchParametersWidget.cpp" line="39"/>
         <source>&lt;b&gt;Filtered by:&lt;/b&gt; </source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;筛选:&lt;/b&gt; </translation>
     </message>
     <message>
         <location filename="../../../../Framework/AzToolsFramework/AzToolsFramework/AssetEditor/AssetEditorWidget.cpp" line="132"/>
         <source>&amp;Open</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;打开</translation>
     </message>
     <message>
         <location filename="../../../../Framework/AzToolsFramework/AzToolsFramework/AssetEditor/AssetEditorWidget.cpp" line="135"/>
         <source>&amp;Save</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;保存</translation>
     </message>
     <message>
         <location filename="../../../../Framework/AzToolsFramework/AzToolsFramework/UI/LegacyFramework/UIFrameworkPreferences.cpp" line="101"/>
         <source>Double-click to change hotkey assignment</source>
-        <translation type="unfinished"></translation>
+        <translation>双击更改热键分配</translation>
     </message>
     <message>
         <location filename="../../../../Framework/AzToolsFramework/AzToolsFramework/UI/LegacyFramework/UIFrameworkPreferences.cpp" line="300"/>
         <source>Override a System global hotkey?</source>
-        <translation type="unfinished"></translation>
+        <translation>覆盖一个系统全局热键？</translation>
     </message>
     <message>
         <location filename="../../../../Framework/AzToolsFramework/AzToolsFramework/UI/LegacyFramework/UIFrameworkPreferences.cpp" line="318"/>
         <source>Replace an existing hotkey?</source>
-        <translation type="unfinished"></translation>
+        <translation>替换一个现有的热键？</translation>
     </message>
     <message>
         <location filename="../../../../Framework/AzToolsFramework/AzToolsFramework/UI/Logging/NewLogTabDialog.cpp" line="33"/>
         <source>All</source>
-        <translation type="unfinished"></translation>
+        <translation>所有</translation>
     </message>
     <message>
         <location filename="../../../../Framework/AzToolsFramework/AzToolsFramework/UI/PropertyEditor/PropertyAssetCtrl.cpp" line="85"/>
         <source>Edit asset</source>
-        <translation type="unfinished"></translation>
+        <translation>编辑资产</translation>
     </message>
     <message>
         <location filename="../../../../Framework/AzToolsFramework/AzToolsFramework/UI/PropertyEditor/PropertyAssetCtrl.cpp" line="95"/>
         <source>Clear Asset</source>
-        <translation type="unfinished"></translation>
+        <translation>清除资产</translation>
     </message>
     <message>
         <location filename="../../../../Framework/AzToolsFramework/AzToolsFramework/UI/PropertyEditor/PropertyAssetCtrl.cpp" line="104"/>
         <source>Browse...</source>
-        <translation type="unfinished">浏览...</translation>
+        <translation>浏览...</translation>
     </message>
     <message>
         <location filename="../../../../Framework/AzToolsFramework/AzToolsFramework/UI/PropertyEditor/PropertyAssetCtrl.cpp" line="397"/>
         <source>Show Errors</source>
-        <translation type="unfinished">显示错误</translation>
+        <translation>显示错误</translation>
     </message>
     <message>
         <location filename="../../../../Framework/AzToolsFramework/AzToolsFramework/UI/PropertyEditor/PropertyAssetCtrl.cpp" line="409"/>
         <source>Asset Errors</source>
-        <translation type="unfinished"></translation>
+        <translation>资产错误</translation>
     </message>
     <message>
         <location filename="../../../../Framework/AzToolsFramework/AzToolsFramework/UI/PropertyEditor/PropertyAudioCtrl.cpp" line="63"/>
         <source>Browse for ATL control...</source>
-        <translation type="unfinished"></translation>
+        <translation>浏览ATL控件...</translation>
     </message>
     <message>
         <location filename="../../../../Framework/AzToolsFramework/AzToolsFramework/UI/PropertyEditor/PropertyAudioCtrl.cpp" line="72"/>
         <source>Clear ATL control</source>
-        <translation type="unfinished"></translation>
+        <translation>清除ATL控件</translation>
     </message>
     <message>
         <location filename="../../../../Framework/AzToolsFramework/AzToolsFramework/UI/PropertyEditor/PropertyBoolComboBoxCtrl.cpp" line="30"/>
         <source>False</source>
-        <translation type="unfinished"></translation>
+        <translation>假</translation>
     </message>
     <message>
         <location filename="../../../../Framework/AzToolsFramework/AzToolsFramework/UI/PropertyEditor/PropertyBoolComboBoxCtrl.cpp" line="31"/>
         <source>True</source>
-        <translation type="unfinished"></translation>
+        <translation>真</translation>
     </message>
     <message>
         <location filename="../../../../Framework/AzToolsFramework/AzToolsFramework/UI/PropertyEditor/PropertyEntityIdCtrl.cpp" line="63"/>
         <source>Pick an object in the viewport</source>
-        <translation type="unfinished"></translation>
+        <translation>从视口中拾取一个对象</translation>
     </message>
     <message>
         <location filename="../../../../Framework/AzToolsFramework/AzToolsFramework/UI/PropertyEditor/PropertyEntityIdCtrl.cpp" line="72"/>
         <source>Clear entity reference</source>
-        <translation type="unfinished"></translation>
+        <translation>清除实体引用</translation>
     </message>
     <message>
         <location filename="../../../../Framework/AzToolsFramework/AzToolsFramework/UI/PropertyEditor/PropertyRowWidget.cpp" line="421"/>
         <source>(DIFFERING SIZES)</source>
-        <translation type="unfinished"></translation>
+        <translation>(不同大小)</translation>
     </message>
     <message>
         <location filename="../../../../Framework/AzToolsFramework/AzToolsFramework/UI/SearchWidget/SearchCriteriaWidget.cpp" line="53"/>
         <source>Filter by </source>
-        <translation type="unfinished"></translation>
+        <translation>筛选 </translation>
     </message>
     <message>
         <location filename="../../../../Framework/AzToolsFramework/AzToolsFramework/UI/SearchWidget/SearchCriteriaWidget.cpp" line="345"/>
         <source>Create filters by &quot;</source>
-        <translation type="unfinished"></translation>
+        <translation>创建筛选器 通过 &apos;</translation>
     </message>
     <message>
         <location filename="../../../../Framework/AzToolsFramework/AzToolsFramework/UI/SearchWidget/SearchCriteriaWidget.cpp" line="703"/>
         <source>Load Filter</source>
-        <translation type="unfinished"></translation>
+        <translation>加载筛选器</translation>
     </message>
     <message>
         <location filename="../../../../Framework/AzToolsFramework/AzToolsFramework/UI/UICore/TargetSelectorButton.cpp" line="87"/>
@@ -701,13 +701,13 @@
         <location filename="../../../../Framework/AzToolsFramework/AzToolsFramework/UI/UICore/TargetSelectorButton.cpp" line="128"/>
         <location filename="../../../../Framework/AzToolsFramework/AzToolsFramework/UI/UICore/TargetSelectorButton.cpp" line="135"/>
         <source>Target: None</source>
-        <translation type="unfinished"></translation>
+        <translation>目标：无</translation>
     </message>
     <message>
         <location filename="../../../../Framework/AzToolsFramework/AzToolsFramework/UI/UICore/TargetSelectorButton.cpp" line="110"/>
         <location filename="../../../../Framework/AzToolsFramework/AzToolsFramework/UI/UICore/TargetSelectorButton.cpp" line="139"/>
         <source>Target: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>目标：%1</translation>
     </message>
 </context>
 <context>

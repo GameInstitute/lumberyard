@@ -374,23 +374,23 @@ Would you like to recover the libraries?</source>
     <message>
         <location filename="../../../Plugins/ParticleEditorPlugin/QT/DockableAttributePanel.cpp" line="112"/>
         <source>Attributes</source>
-        <translation type="unfinished">数学</translation>
+        <translation>属性</translation>
     </message>
     <message>
         <location filename="../../../Plugins/ParticleEditorPlugin/QT/MainWindow.cpp" line="1248"/>
         <source>Arrange</source>
-        <translation type="unfinished"></translation>
+        <translation>排列</translation>
     </message>
     <message>
         <location filename="../../../Plugins/ParticleEditorPlugin/QT/MainWindow.cpp" line="1275"/>
         <source>Close</source>
-        <translation type="unfinished">关闭</translation>
+        <translation>关闭</translation>
     </message>
     <message>
         <location filename="../../../Plugins/ParticleEditorPlugin/QT/MainWindow.cpp" line="1298"/>
         <location filename="../../../Plugins/ParticleEditorPlugin/QT/MainWindow.cpp" line="2394"/>
         <source>Add New</source>
-        <translation type="unfinished"></translation>
+        <translation>添加新的</translation>
     </message>
 </context>
 </TS>

@@ -1247,7 +1247,7 @@ p, li { white-space: pre-wrap; }
         <location filename="../../../../Framework/AzQtComponents/AzQtComponents/StyleGallery/main.cpp" line="248"/>
         <location filename="../../../../Framework/AzQtComponents/AzQtComponents/StyleGallery/main.cpp" line="258"/>
         <source>Status</source>
-        <translation type="unfinished"></translation>
+        <translation>状态</translation>
     </message>
     <message>
         <location filename="../../../../Framework/AzQtComponents/AzQtComponents/StyleGallery/main.cpp" line="225"/>
@@ -1255,7 +1255,7 @@ p, li { white-space: pre-wrap; }
         <location filename="../../../../Framework/AzQtComponents/AzQtComponents/StyleGallery/main.cpp" line="247"/>
         <location filename="../../../../Framework/AzQtComponents/AzQtComponents/StyleGallery/main.cpp" line="259"/>
         <source>Platform</source>
-        <translation type="unfinished">平台</translation>
+        <translation>平台</translation>
     </message>
     <message>
         <location filename="../../../../Framework/AzQtComponents/AzQtComponents/StyleGallery/main.cpp" line="226"/>
@@ -1263,7 +1263,7 @@ p, li { white-space: pre-wrap; }
         <location filename="../../../../Framework/AzQtComponents/AzQtComponents/StyleGallery/main.cpp" line="238"/>
         <location filename="../../../../Framework/AzQtComponents/AzQtComponents/StyleGallery/main.cpp" line="246"/>
         <source>Message</source>
-        <translation type="unfinished"></translation>
+        <translation>消息</translation>
     </message>
     <message>
         <location filename="../../../../Framework/AzQtComponents/AzQtComponents/StyleGallery/main.cpp" line="229"/>
@@ -1355,7 +1355,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../../../../Framework/AzQtComponents/AzQtComponents/StyleGallery/mainwidget.cpp" line="24"/>
         <source>Controls</source>
-        <translation type="unfinished"></translation>
+        <translation>控件</translation>
     </message>
     <message>
         <location filename="../../../../Framework/AzQtComponents/AzQtComponents/StyleGallery/mainwidget.cpp" line="24"/>
@@ -1365,17 +1365,17 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../../../../Framework/AzQtComponents/AzQtComponents/StyleGallery/mainwidget.cpp" line="24"/>
         <source>Styles</source>
-        <translation type="unfinished"></translation>
+        <translation>样式</translation>
     </message>
     <message>
         <location filename="../../../../Framework/AzQtComponents/AzQtComponents/StyleGallery/mainwidget.cpp" line="24"/>
         <source>Layouts</source>
-        <translation type="unfinished"></translation>
+        <translation>布局</translation>
     </message>
     <message>
         <location filename="../../../../Framework/AzQtComponents/AzQtComponents/StyleGallery/mainwidget.cpp" line="34"/>
         <source>File</source>
-        <translation type="unfinished"></translation>
+        <translation>文件</translation>
     </message>
     <message>
         <location filename="../../../../Framework/AzQtComponents/AzQtComponents/StyleGallery/mainwidget.cpp" line="36"/>
@@ -1395,27 +1395,27 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../../../../Framework/AzQtComponents/AzQtComponents/StyleGallery/mainwidget.cpp" line="40"/>
         <source>Edit</source>
-        <translation type="unfinished"></translation>
+        <translation>编辑</translation>
     </message>
     <message>
         <location filename="../../../../Framework/AzQtComponents/AzQtComponents/StyleGallery/mainwidget.cpp" line="41"/>
         <source>Create</source>
-        <translation type="unfinished"></translation>
+        <translation>创建</translation>
     </message>
     <message>
         <location filename="../../../../Framework/AzQtComponents/AzQtComponents/StyleGallery/mainwidget.cpp" line="42"/>
         <source>Select</source>
-        <translation type="unfinished"></translation>
+        <translation>选择</translation>
     </message>
     <message>
         <location filename="../../../../Framework/AzQtComponents/AzQtComponents/StyleGallery/mainwidget.cpp" line="43"/>
         <source>Modify</source>
-        <translation type="unfinished"></translation>
+        <translation>修改</translation>
     </message>
     <message>
         <location filename="../../../../Framework/AzQtComponents/AzQtComponents/StyleGallery/mainwidget.cpp" line="44"/>
         <source>Display</source>
-        <translation type="unfinished"></translation>
+        <translation>显示</translation>
     </message>
     <message>
         <location filename="../../../../Framework/AzQtComponents/AzQtComponents/StyleGallery/mainwidget.cpp" line="68"/>
@@ -1432,32 +1432,32 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../../../../Framework/AzQtComponents/AzQtComponents/StyleGallery/mainwidget.cpp" line="98"/>
         <source>Enter 4 digits</source>
-        <translation type="unfinished"></translation>
+        <translation>输入4个数字</translation>
     </message>
     <message>
         <location filename="../../../../Framework/AzQtComponents/AzQtComponents/StyleGallery/mainwidget.cpp" line="164"/>
         <source>Healthy</source>
-        <translation type="unfinished"></translation>
+        <translation>健康</translation>
     </message>
     <message>
         <location filename="../../../../Framework/AzQtComponents/AzQtComponents/StyleGallery/mainwidget.cpp" line="165"/>
         <source>Laughing</source>
-        <translation type="unfinished"></translation>
+        <translation>大笑</translation>
     </message>
     <message>
         <location filename="../../../../Framework/AzQtComponents/AzQtComponents/StyleGallery/mainwidget.cpp" line="166"/>
         <source>Smiling</source>
-        <translation type="unfinished"></translation>
+        <translation>微笑</translation>
     </message>
     <message>
         <location filename="../../../../Framework/AzQtComponents/AzQtComponents/StyleGallery/mainwidget.cpp" line="167"/>
         <source>Happy</source>
-        <translation type="unfinished"></translation>
+        <translation>高兴</translation>
     </message>
     <message>
         <location filename="../../../../Framework/AzQtComponents/AzQtComponents/StyleGallery/mainwidget.cpp" line="168"/>
         <source>Weapon Left</source>
-        <translation type="unfinished"></translation>
+        <translation>武器剩余</translation>
     </message>
 </context>
 <context>

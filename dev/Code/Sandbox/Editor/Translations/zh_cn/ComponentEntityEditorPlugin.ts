@@ -322,7 +322,7 @@ Drag some components here.</source>
     <message>
         <location filename="../../../Plugins/ComponentEntityEditorPlugin/SandboxIntegration.cpp" line="802"/>
         <source>Add</source>
-        <translation type="unfinished"></translation>
+        <translation>添加</translation>
     </message>
     <message>
         <location filename="../../../Plugins/ComponentEntityEditorPlugin/SandboxIntegration.cpp" line="807"/>

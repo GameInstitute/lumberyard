@@ -122,150 +122,150 @@
         <location filename="../../../Plugins/CryDesigner/UIs/CubeEditorPanel.cpp" line="46"/>
         <location filename="../../../Plugins/CryDesigner/UIs/SubdivisionPanel.cpp" line="57"/>
         <source>Add</source>
-        <translation type="unfinished"></translation>
+        <translation>添加</translation>
     </message>
     <message>
         <location filename="../../../Plugins/CryDesigner/UIs/CubeEditorPanel.cpp" line="47"/>
         <source>Remove</source>
-        <translation type="unfinished"></translation>
+        <translation>移除</translation>
     </message>
     <message>
         <location filename="../../../Plugins/CryDesigner/UIs/CubeEditorPanel.cpp" line="48"/>
         <source>Paint</source>
-        <translation type="unfinished"></translation>
+        <translation>绘制</translation>
     </message>
     <message>
         <location filename="../../../Plugins/CryDesigner/UIs/CubeEditorPanel.cpp" line="51"/>
         <source>Merge Sides</source>
-        <translation type="unfinished"></translation>
+        <translation>合并边</translation>
     </message>
     <message>
         <location filename="../../../Plugins/CryDesigner/UIs/CubeEditorPanel.cpp" line="63"/>
         <source>Brush Size</source>
-        <translation type="unfinished"></translation>
+        <translation>画刷大小</translation>
     </message>
     <message>
         <location filename="../../../Plugins/CryDesigner/UIs/CubeEditorPanel.cpp" line="65"/>
         <location filename="../../../Plugins/CryDesigner/UIs/DesignerPanel.cpp" line="218"/>
         <source>Sub Mat ID</source>
-        <translation type="unfinished"></translation>
+        <translation>自材质ID</translation>
     </message>
     <message>
         <location filename="../../../Plugins/CryDesigner/UIs/MirrorPanel.cpp" line="28"/>
         <source>Apply</source>
-        <translation type="unfinished"></translation>
+        <translation>应用</translation>
     </message>
     <message>
         <location filename="../../../Plugins/CryDesigner/UIs/MirrorPanel.cpp" line="29"/>
         <location filename="../../../Plugins/CryDesigner/UIs/SlicePanel.cpp" line="36"/>
         <source>Invert</source>
-        <translation type="unfinished"></translation>
+        <translation>反转</translation>
     </message>
     <message>
         <location filename="../../../Plugins/CryDesigner/UIs/MirrorPanel.cpp" line="30"/>
         <location filename="../../../Plugins/CryDesigner/UIs/SubdivisionPanel.cpp" line="56"/>
         <source>Freeze</source>
-        <translation type="unfinished"></translation>
+        <translation>冻结</translation>
     </message>
     <message>
         <location filename="../../../Plugins/CryDesigner/UIs/MirrorPanel.cpp" line="31"/>
         <source>Center Pivot</source>
-        <translation type="unfinished"></translation>
+        <translation>居中枢轴</translation>
     </message>
     <message>
         <location filename="../../../Plugins/CryDesigner/UIs/MirrorPanel.cpp" line="32"/>
         <source>AlignX</source>
-        <translation type="unfinished"></translation>
+        <translation>对齐X</translation>
     </message>
     <message>
         <location filename="../../../Plugins/CryDesigner/UIs/MirrorPanel.cpp" line="33"/>
         <source>AlignY</source>
-        <translation type="unfinished"></translation>
+        <translation>对齐Y</translation>
     </message>
     <message>
         <location filename="../../../Plugins/CryDesigner/UIs/MirrorPanel.cpp" line="34"/>
         <source>AlignZ</source>
-        <translation type="unfinished"></translation>
+        <translation>对齐Z</translation>
     </message>
     <message>
         <location filename="../../../Plugins/CryDesigner/UIs/ResetXFormPanel.cpp" line="41"/>
         <source>Position</source>
-        <translation type="unfinished"></translation>
+        <translation>位置</translation>
     </message>
     <message>
         <location filename="../../../Plugins/CryDesigner/UIs/ResetXFormPanel.cpp" line="42"/>
         <source>Rotation</source>
-        <translation type="unfinished"></translation>
+        <translation>旋转</translation>
     </message>
     <message>
         <location filename="../../../Plugins/CryDesigner/UIs/ResetXFormPanel.cpp" line="43"/>
         <source>Scale</source>
-        <translation type="unfinished"></translation>
+        <translation>缩放</translation>
     </message>
     <message>
         <location filename="../../../Plugins/CryDesigner/UIs/ResetXFormPanel.cpp" line="44"/>
         <source>Reset X Form</source>
-        <translation type="unfinished"></translation>
+        <translation>重置X变换</translation>
     </message>
     <message>
         <location filename="../../../Plugins/CryDesigner/UIs/SlicePanel.cpp" line="29"/>
         <source>Take Front Away</source>
-        <translation type="unfinished"></translation>
+        <translation>剥离前面</translation>
     </message>
     <message>
         <location filename="../../../Plugins/CryDesigner/UIs/SlicePanel.cpp" line="30"/>
         <source>Take Back Away</source>
-        <translation type="unfinished"></translation>
+        <translation>剥离背面</translation>
     </message>
     <message>
         <location filename="../../../Plugins/CryDesigner/UIs/SlicePanel.cpp" line="31"/>
         <source>Clip</source>
-        <translation type="unfinished"></translation>
+        <translation>裁剪</translation>
     </message>
     <message>
         <location filename="../../../Plugins/CryDesigner/UIs/SlicePanel.cpp" line="32"/>
         <source>Divide</source>
-        <translation type="unfinished"></translation>
+        <translation>分离</translation>
     </message>
     <message>
         <location filename="../../../Plugins/CryDesigner/UIs/SlicePanel.cpp" line="33"/>
         <source>Align X</source>
-        <translation type="unfinished"></translation>
+        <translation>对齐 X</translation>
     </message>
     <message>
         <location filename="../../../Plugins/CryDesigner/UIs/SlicePanel.cpp" line="34"/>
         <source>Align Y</source>
-        <translation type="unfinished"></translation>
+        <translation>对齐 Y</translation>
     </message>
     <message>
         <location filename="../../../Plugins/CryDesigner/UIs/SlicePanel.cpp" line="35"/>
         <source>Align Z</source>
-        <translation type="unfinished"></translation>
+        <translation>对齐 Z</translation>
     </message>
     <message>
         <location filename="../../../Plugins/CryDesigner/UIs/SlicePanel.cpp" line="44"/>
         <source>Slice Number</source>
-        <translation type="unfinished"></translation>
+        <translation>切片数</translation>
     </message>
     <message>
         <location filename="../../../Plugins/CryDesigner/UIs/SubdivisionPanel.cpp" line="58"/>
         <source>Delete</source>
-        <translation type="unfinished"></translation>
+        <translation>删除</translation>
     </message>
     <message>
         <location filename="../../../Plugins/CryDesigner/UIs/SubdivisionPanel.cpp" line="59"/>
         <source>Delete Unused</source>
-        <translation type="unfinished"></translation>
+        <translation>删除未使用</translation>
     </message>
     <message>
         <location filename="../../../Plugins/CryDesigner/UIs/SubdivisionPanel.cpp" line="60"/>
         <source>Clear</source>
-        <translation type="unfinished"></translation>
+        <translation>清除</translation>
     </message>
     <message>
         <location filename="../../../Plugins/CryDesigner/UIs/SubdivisionPanel.cpp" line="61"/>
         <source>Smoothing Surface</source>
-        <translation type="unfinished"></translation>
+        <translation>平滑表面</translation>
     </message>
     <message>
         <location filename="../../../Plugins/CryDesigner/UIs/SubdivisionPanel.cpp" line="62"/>
