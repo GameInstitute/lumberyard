@@ -2160,7 +2160,7 @@ void CImageCompiler::AnalyzeImageAndSuggest(const ImageObject* pSourceImage)
             // empirical threshold
             if (fDXTError < 0.02f)
             {
-                label->setText("For this normal map you can use Normalmap_lowQ preset which has nearly the same quality and saves memory!");
+                label->setText(QObject::tr("For this normal map you can use Normalmap_lowQ preset which has nearly the same quality and saves memory!"));
             }
         }
     }

@@ -418,7 +418,7 @@ namespace AzToolsFramework
                     m_defaultLabel->show();
                     if (m_isMultiSizeContainer)
                     {
-                        m_defaultLabel->setText("(DIFFERING SIZES)");
+                        m_defaultLabel->setText(QObject::tr("(DIFFERING SIZES)"));
                     }
                     else if (dataNode->GetClassMetadata()->m_container->IsSmartPointer())
                     {

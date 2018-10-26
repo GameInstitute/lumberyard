@@ -29,7 +29,7 @@ namespace AZ
 
         QWidget* GraphTypeSelector::CreateGUI(QWidget* parent)
         {
-            QPushButton* base = new QPushButton("Select required graph types", parent);
+            QPushButton* base = new QPushButton(QObject::tr("Select required graph types"), parent);
             QMenu* menu = new QMenu(base);
             menu->setLayoutDirection(Qt::LeftToRight);
             menu->setStyleSheet("border: none; background-color: #333333;");

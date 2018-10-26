@@ -135,12 +135,12 @@ void PropertyRowContainer::generateMenu(QMenu& menu, QPropertyTree* tree, bool a
     {
         if (!inlined_)
         {
-            menu.addAction("[ Fixed Size Container ]")->setEnabled(false);
+            menu.addAction(QObject::tr("[ Fixed Size Container ]"))->setEnabled(false);
         }
     }
     else if (userReadOnly())
     {
-        menu.addAction("[ Read Only Container ]")->setEnabled(false);
+        menu.addAction(QObject::tr("[ Read Only Container ]"))->setEnabled(false);
     }
     else
     {
@@ -149,7 +149,7 @@ void PropertyRowContainer::generateMenu(QMenu& menu, QPropertyTree* tree, bool a
             PropertyRow* row = defaultRow(tree->model());
             if (row && row->isPointer())
             {
-                QMenu* createItem = menu.addMenu("Add");
+                QMenu* createItem = menu.addMenu(QObject::tr("Add"));
                 menu.addSeparator();
 
                 PropertyRowPointer* pointerRow = static_cast<PropertyRowPointer*>(row);
@@ -157,8 +157,8 @@ void PropertyRowContainer::generateMenu(QMenu& menu, QPropertyTree* tree, bool a
             }
             else
             {
-                menu.addAction("Insert", handler, SLOT(onMenuAddElement()));
-                menu.addAction("Add", handler, SLOT(onMenuAppendElement()), Qt::Key_Insert);
+                menu.addAction(QObject::tr("Insert"), handler, SLOT(onMenuAddElement()));
+                menu.addAction(QObject::tr("Add"), handler, SLOT(onMenuAppendElement()), Qt::Key_Insert);
             }
         }
 
@@ -167,7 +167,7 @@ void PropertyRowContainer::generateMenu(QMenu& menu, QPropertyTree* tree, bool a
             menu.addSeparator();
         }
 
-        QAction* removeAll = menu.addAction(pulledUp() ? "Remove Children" : "Remove All");
+        QAction* removeAll = menu.addAction(pulledUp() ? QObject::tr("Remove Children") : QObject::tr("Remove All"));
         removeAll->setShortcut(QKeySequence("Shift+Delete"));
         removeAll->setEnabled(!userReadOnly());
         QObject::connect(removeAll, SIGNAL(triggered()), handler, SLOT(onMenuRemoveAll()));

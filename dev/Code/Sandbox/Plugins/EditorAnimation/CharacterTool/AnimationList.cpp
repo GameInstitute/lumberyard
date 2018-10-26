@@ -1855,7 +1855,7 @@ namespace CharacterTool {
 
         QPropertyDialog dialog(0);
         dialog.setSerializer(Serialization::SStruct(parameters));
-        dialog.setWindowTitle("Footstep Generator");
+        dialog.setWindowTitle(QObject::tr("Footstep Generator"));
         dialog.setWindowStateFilename("CharacterTool/FootstepGenerator.state");
         dialog.setSizeHint(QSize(600, 900));
         dialog.setArchiveContext(m_system->contextList->Tail());
@@ -1964,7 +1964,7 @@ namespace CharacterTool {
         parent.setWindowModality(Qt::ApplicationModal);
 
         ListSelectionDialog dialog(&parent);
-        dialog.setWindowTitle("Animation Alias Selection");
+        dialog.setWindowTitle(QObject::tr("Animation Alias Selection"));
         dialog.setWindowIcon(QIcon(GetIEditor()->GetResourceSelectorHost()->ResourceIconPath(x.typeName)));
 
         IAnimationSet* animationSet = character->GetIAnimationSet();

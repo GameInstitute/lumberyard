@@ -21,7 +21,7 @@ MainWidget::MainWidget(QWidget *parent) :
     ui->setupUi(this);
 
     QStringList stripeButtonsNames = QStringList();
-    stripeButtonsNames << "Controls" << "ItemViews" << "Styles" << "Layouts";
+    stripeButtonsNames << QObject::tr("Controls") << QObject::tr("ItemViews") << QObject::tr("Styles") << QObject::tr("Layouts");
     ui->buttonStripe->addButtons(stripeButtonsNames, ui->stackedWidget->currentIndex());
     connect(ui->buttonStripe, &AzQtComponents::ButtonStripe::buttonClicked,
             ui->stackedWidget, &QStackedWidget::setCurrentIndex);
@@ -31,17 +31,17 @@ MainWidget::MainWidget(QWidget *parent) :
 
     connect(ui->button1, &QPushButton::clicked, this, []{
         auto mainwindow = new QMainWindow();
-        auto menu = new QMenu("File");
+        auto menu = new QMenu(QObject::tr("File"));
         auto mb = new QMenuBar();
-        menu->addAction("Action1");
-        menu->addAction("Action2");
-        menu->addAction("Action3");
+        menu->addAction(QObject::tr("Action1"));
+        menu->addAction(QObject::tr("Action2"));
+        menu->addAction(QObject::tr("Action3"));
         mb->addMenu(menu);
-        mb->addAction("Edit");
-        mb->addMenu("Create");
-        mb->addMenu("Select");
-        mb->addMenu("Modify");
-        mb->addMenu("Display");
+        mb->addAction(QObject::tr("Edit"));
+        mb->addMenu(QObject::tr("Create"));
+        mb->addMenu(QObject::tr("Select"));
+        mb->addMenu(QObject::tr("Modify"));
+        mb->addMenu(QObject::tr("Display"));
         mainwindow->setMenuBar(mb);
         mainwindow->resize(400, 400);
         mainwindow->show();
@@ -65,13 +65,13 @@ void MainWidget::mouseReleaseEvent(QMouseEvent *event)
 void MainWidget::initializeControls()
 {
     auto menu = new QMenu();
-    menu->addAction("Test 1");
-    menu->addAction("Test 2");
+    menu->addAction(QObject::tr("Test 1"));
+    menu->addAction(QObject::tr("Test 2"));
     ui->button3->setMenu(menu);
 
     auto menu2 = new QMenu();
-    menu2->addAction("Test 1");
-    menu2->addAction("Test 2");
+    menu2->addAction(QObject::tr("Test 1"));
+    menu2->addAction(QObject::tr("Test 2"));
     ui->disabledButton3->setMenu(menu2);
 
     ui->selectedCheckBox->setCheckState(Qt::Checked);
@@ -95,7 +95,7 @@ void MainWidget::initializeControls()
     ui->infoLineEdit->setFlavor(AzQtComponents::StyledLineEdit::Information);
 
     // In order to try out validator impact on flavor
-    ui->invalidLineEdit->setPlaceholderText("Enter 4 digits");
+    ui->invalidLineEdit->setPlaceholderText(QObject::tr("Enter 4 digits"));
     ui->invalidLineEdit->setValidator(new QRegExpValidator(QRegExp("[1-9]\\d{3,3}")));
 
     ui->disabledVectorEdit->setColors(qRgb(84, 190, 93), qRgb(226, 82, 67), qRgb(66, 133, 244));
@@ -161,11 +161,11 @@ void MainWidget::initializeControls()
     ui->tagSelector->Reinit(availableTags);
 
     // Pre-select some of the tags.
-    ui->tagSelector->SelectTag("Healthy");
-    ui->tagSelector->SelectTag("Laughing");
-    ui->tagSelector->SelectTag("Smiling");
-    ui->tagSelector->SelectTag("Happy");
-    ui->tagSelector->SelectTag("Weapon Left");
+    ui->tagSelector->SelectTag(QObject::tr("Healthy"));
+    ui->tagSelector->SelectTag(QObject::tr("Laughing"));
+    ui->tagSelector->SelectTag(QObject::tr("Smiling"));
+    ui->tagSelector->SelectTag(QObject::tr("Happy"));
+    ui->tagSelector->SelectTag(QObject::tr("Weapon Left"));
 
 
     ui->toolButton->setProperty("class", "QToolBar");

@@ -42,7 +42,7 @@ void ResourceGroupStatusWidget::CreateUI()
     m_addResourceButton = new QPushButton{
         QString::fromStdWString(L"Add resource \u25BC")
     };
-    m_addResourceButton->setToolTip("Select an AWS resource to add to your resource group.");
+    m_addResourceButton->setToolTip(QObject::tr("Select an AWS resource to add to your resource group."));
     m_addResourceButton->setDisabled(m_resourceGroupStatusModel->IsPendingDelete());
     connect(m_addResourceButton, &QPushButton::clicked, this, &ResourceGroupStatusWidget::OnAddResource);
     stackWidget->AddButton(m_addResourceButton);
@@ -51,7 +51,7 @@ void ResourceGroupStatusWidget::CreateUI()
         QString::fromStdWString(L"Import resource \u25BC")
     };
     m_importResourceButton->setObjectName("ImportExistingButton");
-    m_importResourceButton->setToolTip("Import an existing AWS resource to your resource group.");
+    m_importResourceButton->setToolTip(QObject::tr("Import an existing AWS resource to your resource group."));
     m_importResourceButton->setDisabled(m_resourceGroupStatusModel->IsPendingDelete());
     connect(m_importResourceButton, &QPushButton::clicked, this, &ResourceGroupStatusWidget::OnImportResource);
     stackWidget->AddButton(m_importResourceButton);
@@ -59,7 +59,7 @@ void ResourceGroupStatusWidget::CreateUI()
     m_uploadLambdaCodeButton = new QPushButton{
         QString::fromStdWString(L"Upload Lambda code")
     };
-    m_uploadLambdaCodeButton->setToolTip("Upload the Lambda function code without a full feature stack update.");
+    m_uploadLambdaCodeButton->setToolTip(QObject::tr("Upload the Lambda function code without a full feature stack update."));
     m_uploadLambdaCodeButton->setDisabled(m_resourceGroupStatusModel->IsPendingDelete());
     connect(m_uploadLambdaCodeButton, &QPushButton::clicked, this, &ResourceGroupStatusWidget::OnUploadLambdaCode);
     stackWidget->AddButton(m_uploadLambdaCodeButton);

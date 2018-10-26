@@ -64,11 +64,11 @@ namespace ScriptCanvasEditor
 
         if (selectedEntities.size() <= 1)
         {
-            setText("Reference Selected Entity");
+            setText(QObject::tr("Reference Selected Entity"));
         }
         else
         {
-            setText("Reference Selected Entities");
+            setText(QObject::tr("Reference Selected Entities"));
         }
     }
 
@@ -317,13 +317,13 @@ namespace ScriptCanvasEditor
 
         if (hasSelection)
         {
-            setText("Create Block Comment For Selection");
-            setToolTip("Will create a block comment around the selected nodes.");
+            setText(QObject::tr("Create Block Comment For Selection"));
+            setToolTip(QObject::tr("Will create a block comment around the selected nodes."));
         }
         else
         {
-            setText("Create Block Comment");
-            setToolTip("Will create a block comment at the specified point.");
+            setText(QObject::tr("Create Block Comment"));
+            setToolTip(QObject::tr("Will create a block comment at the specified point."));
         }
     }
 

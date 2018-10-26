@@ -48,7 +48,7 @@ namespace ScriptCanvasDeveloperEditor
             {
                 qAction = new QAction(QAction::tr("Create EBus Localization File"), mainWindow);
                 qAction->setAutoRepeat(false);
-                qAction->setToolTip("Creates a QT .TS file of all EBus nodes(their inputs and outputs) to a file in the current folder.");
+                qAction->setToolTip(QObject::tr("Creates a QT .TS file of all EBus nodes(their inputs and outputs) to a file in the current folder."));
                 qAction->setShortcut(QKeySequence(QAction::tr("Ctrl+Alt+X", "Debug|Build EBus .TS file")));
                 mainWindow->addAction(qAction);
                 mainWindow->connect(qAction, &QAction::triggered, &GenerateTSFile);

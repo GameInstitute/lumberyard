@@ -123,11 +123,11 @@ namespace EMotionFX
         {
             if (m_singleSelection)
             {
-                m_pickButton->setText("Select node");
+                m_pickButton->setText(QObject::tr("Select node"));
             }
             else
             {
-                m_pickButton->setText("Select nodes");
+                m_pickButton->setText(QObject::tr("Select nodes"));
             }
 
             m_resetButton->setVisible(false);
@@ -139,7 +139,7 @@ namespace EMotionFX
         }
         else
         {
-            m_pickButton->setText(QString("%1 nodes").arg(numNodes));
+            m_pickButton->setText(QString(QObject::tr("%1 nodes")).arg(numNodes));
             m_resetButton->setVisible(true);
         }
 

@@ -355,22 +355,22 @@ namespace EMStudio
         // add actions
         if (items.size() > 0)
         {
-            QAction* copyAction = menu.addAction("Copy");
+            QAction* copyAction = menu.addAction(QObject::tr("Copy"));
             connect(copyAction, SIGNAL(triggered()), this, SLOT(Copy()));
         }
         if (numRows > 0)
         {
-            QAction* selectAllAction = menu.addAction("Select All");
+            QAction* selectAllAction = menu.addAction(QObject::tr("Select All"));
             connect(selectAllAction, SIGNAL(triggered()), this, SLOT(SelectAll()));
         }
         if (items.size() > 0)
         {
-            QAction* UnselectAllAction = menu.addAction("Unselect All");
+            QAction* UnselectAllAction = menu.addAction(QObject::tr("Unselect All"));
             connect(UnselectAllAction, SIGNAL(triggered()), this, SLOT(UnselectAll()));
         }
         if (numRows > 0)
         {
-            QAction* clearAction = menu.addAction("Clear");
+            QAction* clearAction = menu.addAction(QObject::tr("Clear"));
             connect(clearAction, SIGNAL(triggered()), this, SLOT(Clear()));
         }
 

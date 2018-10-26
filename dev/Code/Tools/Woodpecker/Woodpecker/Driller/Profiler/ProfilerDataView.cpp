@@ -201,7 +201,7 @@ namespace Driller
                 chartTypeMenu->addAction(CreateChartTypeAction(menuTypeStrings[i]));
             }
 
-            m_gui->chartTypeButton->setText("Excl.Time");
+            m_gui->chartTypeButton->setText(QObject::tr("Excl.Time"));
             m_gui->chartTypeButton->setMenu(chartTypeMenu);
         }
         else if (m_viewType == Profiler::RegisterInfo::PRT_VALUE)
@@ -213,7 +213,7 @@ namespace Driller
                 chartTypeMenu->addAction(CreateChartTypeAction(menuValueTypeStrings[i]));
             }
 
-            m_gui->chartTypeButton->setText("Value 1");
+            m_gui->chartTypeButton->setText(QObject::tr("Value 1"));
             m_gui->chartTypeButton->setMenu(chartTypeMenu);
         }
 
@@ -226,7 +226,7 @@ namespace Driller
 
         connect(m_gui->threadSelectorButton, SIGNAL(clicked()), this, SLOT(OnThreadSelectorButtonClick()));
 
-        m_gui->chartLengthButton->setText("60 Frames");
+        m_gui->chartLengthButton->setText(QObject::tr("60 Frames"));
         m_gui->chartLengthButton->setMenu(chartLengthMenu);
 
         m_aggregatorIdentityCached = m_aggregator->GetIdentity();

@@ -35,7 +35,7 @@ PropertyUiParticleColorKeyframeCtrl::PropertyUiParticleColorKeyframeCtrl(QWidget
     layout->setSpacing(2);
 
     QLabel* timeLabel = new QLabel(parent);
-    timeLabel->setText("Time");
+    timeLabel->setText(QObject::tr("Time"));
     timeLabel->setObjectName("Time");
     layout->addWidget(timeLabel);
 
@@ -55,7 +55,7 @@ PropertyUiParticleColorKeyframeCtrl::PropertyUiParticleColorKeyframeCtrl(QWidget
     layout->addWidget(m_timeCtrl);
 
     QLabel* colorLabel = new QLabel(parent);
-    colorLabel->setText("Color");
+    colorLabel->setText(QObject::tr("Color"));
     colorLabel->setObjectName("Color");
     layout->addWidget(colorLabel);
 
@@ -82,7 +82,7 @@ PropertyUiParticleColorKeyframeCtrl::PropertyUiParticleColorKeyframeCtrl(QWidget
     stepTangent.second = "Step";
 
     QLabel* inTangentLabel = new QLabel(parent);
-    inTangentLabel->setText("In tangent");
+    inTangentLabel->setText(QObject::tr("In tangent"));
     inTangentLabel->setObjectName("In tangent");
     layoutRow2->addWidget(inTangentLabel);
 
@@ -99,7 +99,7 @@ PropertyUiParticleColorKeyframeCtrl::PropertyUiParticleColorKeyframeCtrl(QWidget
     layoutRow2->addWidget(m_inTangentCtrl);
 
     QLabel* outTangentLabel = new QLabel(parent);
-    outTangentLabel->setText("Out tangent");
+    outTangentLabel->setText(QObject::tr("Out tangent"));
     outTangentLabel->setObjectName("Out tangent");
     layoutRow2->addWidget(outTangentLabel);
 

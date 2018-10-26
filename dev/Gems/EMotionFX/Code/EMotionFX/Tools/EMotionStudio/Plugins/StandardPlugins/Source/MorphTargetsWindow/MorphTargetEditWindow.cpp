@@ -33,7 +33,7 @@ namespace EMStudio
         mPhonemeSelectionWindow = nullptr;
 
         // set the window name
-        setWindowTitle(QString("Edit Morph Target: %1").arg(morphTarget->GetName()));
+        setWindowTitle(QString(QObject::tr("Edit Morph Target: %1")).arg(morphTarget->GetName()));
 
         // create the layout
         QVBoxLayout* layout = new QVBoxLayout();
@@ -44,7 +44,7 @@ namespace EMStudio
         const float morphTargetRangeMax = mMorphTarget->GetRangeMax();
 
         // create the range min label
-        QLabel* rangeMinLabel = new QLabel("Range Min");
+        QLabel* rangeMinLabel = new QLabel(QObject::tr("Range Min"));
 
         // create the range min double spinbox
         mRangeMin = new MysticQt::DoubleSpinBox();
@@ -54,7 +54,7 @@ namespace EMStudio
         connect(mRangeMin, SIGNAL(valueChanged(double)), this, SLOT(MorphTargetRangeMinValueChanged(double)));
 
         // create the range max label
-        QLabel* rangeMaxLabel = new QLabel("Range Max");
+        QLabel* rangeMaxLabel = new QLabel(QObject::tr("Range Max"));
 
         // create the range max double spinbox
         mRangeMax = new MysticQt::DoubleSpinBox();
@@ -75,11 +75,11 @@ namespace EMStudio
         buttonsLayout->setMargin(0);
 
         // create the OK button
-        QPushButton* OKButton = new QPushButton("OK");
+        QPushButton* OKButton = new QPushButton(QObject::tr("OK"));
         connect(OKButton, SIGNAL(clicked()), this, SLOT(Accepted()));
 
         // create the cancel button
-        QPushButton* cancelButton = new QPushButton("Cancel");
+		QPushButton* cancelButton = new QPushButton(QObject::tr("Cancel"));
         connect(cancelButton, SIGNAL(clicked()), this, SLOT(reject()));
 
         // add widgets in the buttons layout

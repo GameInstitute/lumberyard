@@ -87,7 +87,7 @@ namespace EMStudio
         vLayout->setMargin(0);
         vLayout->addWidget(mTableWidget);
 
-        QLabel* label = new QLabel("Double-click to adjust shortcut");
+        QLabel* label = new QLabel(QObject::tr("Double-click to adjust shortcut"));
         label->setAlignment(Qt::AlignCenter);
         vLayout->addWidget(label);
         mHLayout->addLayout(vLayout);
@@ -356,10 +356,10 @@ namespace EMStudio
         // create the context menu
         QMenu menu(this);
 
-        QAction* defaultAction = menu.addAction("Reset To Default");
+        QAction* defaultAction = menu.addAction(QObject::tr("Reset To Default"));
         connect(defaultAction, SIGNAL(triggered()), this, SLOT(OnResetToDefault()));
 
-        QAction* newKeyAction = menu.addAction("Assign New Key");
+        QAction* newKeyAction = menu.addAction(QObject::tr("Assign New Key"));
         connect(newKeyAction, SIGNAL(triggered()), this, SLOT(OnAssignNewKey()));
 
         // show the menu at the given position
@@ -376,7 +376,7 @@ namespace EMStudio
         setObjectName("ShortcutReceiverDialog");
 
         setWindowTitle(" ");
-        layout->addWidget(new QLabel("Press the new shortcut on the keyboard:"));
+        layout->addWidget(new QLabel(QObject::tr("Press the new shortcut on the keyboard:")));
 
         // find the initial shortcut
         //MysticQt::KeyboardShortcutManager* shortcutManager = GetMainWindow()->GetShortcutManager();
@@ -407,15 +407,15 @@ namespace EMStudio
         QHBoxLayout* buttonLayout = new QHBoxLayout();
         buttonLayout->setMargin(0);
 
-        mOKButton = new QPushButton("OK");
+        mOKButton = new QPushButton(QObject::tr("OK"));
         buttonLayout->addWidget(mOKButton);
         connect(mOKButton, SIGNAL(clicked()), this, SLOT(accept()));
 
-        QPushButton* defaultButton = new QPushButton("Default");
+        QPushButton* defaultButton = new QPushButton(QObject::tr("Default"));
         buttonLayout->addWidget(defaultButton);
         connect(defaultButton, SIGNAL(clicked()), this, SLOT(ResetToDefault()));
 
-        QPushButton* cancelButton = new QPushButton("Cancel");
+		QPushButton* cancelButton = new QPushButton(QObject::tr("Cancel"));
         buttonLayout->addWidget(cancelButton);
         connect(cancelButton, SIGNAL(clicked()), this, SLOT(reject()));
 

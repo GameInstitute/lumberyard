@@ -142,7 +142,7 @@ void PropertyRowResourceFilePath::clear()
 
 bool PropertyRowResourceFilePath::onContextMenu(QMenu& menu, QPropertyTree* tree)
 {
-    QAction* action = menu.addAction("Clear");
+    QAction* action = menu.addAction(QObject::tr("Clear"));
     Serialization::SharedPtr<PropertyRow> selfPointer(this);
 
     ResourceFilePathMenuHandler* handler = new ResourceFilePathMenuHandler(tree, this);

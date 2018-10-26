@@ -118,7 +118,7 @@ namespace EMStudio
         mLockDisabledIcon   = new QIcon(AZStd::string(MysticQt::GetDataDir() + "/Images/Icons/LockDisabled.png").c_str());
 
         mCommandEdit = new QLineEdit();
-        mCommandEdit->setPlaceholderText("Enter command");
+        mCommandEdit->setPlaceholderText(QObject::tr("Enter command"));
         connect(mCommandEdit, SIGNAL(returnPressed()), this, SLOT(OnEnter()));
         mCommandEditAction = mBar->addWidget(mCommandEdit);
 
@@ -131,12 +131,12 @@ namespace EMStudio
         mSpeedSlider->setMinimumWidth(30);
         mSpeedSlider->setRange(0, 100);
         mSpeedSlider->setValue(50);
-        mSpeedSlider->setToolTip("The global simulation speed factor.\nA value of 1.0 means the normal speed, which is when the slider handle is in the center.\nPress the button on the right of this slider to reset to the normal speed.");
+        mSpeedSlider->setToolTip(QObject::tr("The global simulation speed factor.\nA value of 1.0 means the normal speed, which is when the slider handle is in the center.\nPress the button on the right of this slider to reset to the normal speed."));
         connect(mSpeedSlider, SIGNAL(valueChanged(int)), this, SLOT(OnSpeedSliderValueChanged(int)));
         mBar->addWidget(mSpeedSlider);
 
         mSpeedResetButton = CreateButton("/Images/Icons/Reset.png");
-        mSpeedResetButton->setToolTip("Reset the global simulation speed factor to its normal speed");
+        mSpeedResetButton->setToolTip(QObject::tr("Reset the global simulation speed factor to its normal speed"));
         connect(mSpeedResetButton, SIGNAL(clicked()), this, SLOT(ResetGlobalSpeed()));
 
         mProgressText = new QLabel();
@@ -155,27 +155,27 @@ namespace EMStudio
         mProgressBarAction->setVisible(false);
 
         mLockSelectionButton = CreateButton();
-        mLockSelectionButton->setToolTip("Lock or unlock the selection of actor instances");
+        mLockSelectionButton->setToolTip(QObject::tr("Lock or unlock the selection of actor instances"));
         connect(mLockSelectionButton, SIGNAL(clicked()), this, SLOT(OnLockSelectionButton()));
 
         mSeekBackwardButton = CreateButton("/Images/Icons/SkipBackward.png");
-        mSeekBackwardButton->setToolTip("Seek backward the selected motions");
+        mSeekBackwardButton->setToolTip(QObject::tr("Seek backward the selected motions"));
         connect(mSeekBackwardButton, SIGNAL(clicked()), this, SLOT(OnSeekBackwardButton()));
 
         mPauseButton = CreateButton("/Images/Icons/Pause.png");
-        mPauseButton->setToolTip("Pause the selected motions");
+        mPauseButton->setToolTip(QObject::tr("Pause the selected motions"));
         connect(mPauseButton, SIGNAL(clicked()), this, SLOT(OnPauseButton()));
 
         mStopButton = CreateButton("/Images/Icons/Stop.png");
-        mStopButton->setToolTip("Stop all motions");
+        mStopButton->setToolTip(QObject::tr("Stop all motions"));
         connect(mStopButton, SIGNAL(clicked()), this, SLOT(OnStopButton()));
 
         mPlayForwardButton = CreateButton("/Images/Icons/PlayForward.png");
-        mPlayForwardButton->setToolTip("Play the selected motions");
+        mPlayForwardButton->setToolTip(QObject::tr("Play the selected motions"));
         connect(mPlayForwardButton, SIGNAL(clicked()), this, SLOT(OnPlayForwardButton()));
 
         mSeekForwardButton = CreateButton("/Images/Icons/SkipForward.png");
-        mSeekForwardButton->setToolTip("Seek forward the selected motions");
+        mSeekForwardButton->setToolTip(QObject::tr("Seek forward the selected motions"));
         connect(mSeekForwardButton, SIGNAL(clicked()), this, SLOT(OnSeekForwardButton()));
 
         UpdateLockSelectionIcon();

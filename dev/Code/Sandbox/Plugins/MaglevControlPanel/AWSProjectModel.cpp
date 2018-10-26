@@ -275,7 +275,7 @@ SourceControlFileNode::SourceControlFileNode(const QString& path, AWSProjectMode
     QObject::connect(projectModel, &IAWSProjectModel::RequestCheckoutWriteCheckResources, this, &SourceControlFileNode::CheckOutFile);
     QObject::connect(projectModel, &IAWSProjectModel::FileSourceStatusUpdated, this, &SourceControlFileNode::OnFileSourceStatusUpdated);
 
-    setToolTip("File node with source control monitoring");
+    setToolTip(QObject::tr("File node with source control monitoring"));
 
     m_sourceStatus.reset(new SourceControlStatusModel{ });
 

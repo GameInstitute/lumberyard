@@ -168,34 +168,34 @@ namespace MysticQt
         if (mDockWidget->allowedAreas() == Qt::NoDockWidgetArea)
         {
             mPinButton->setIcon(GetMysticQt()->FindIcon("Images/Icons/DockPinned.png"));
-            mPinButton->setToolTip("The window is currently pinned, so you can move it freely over the interface, without it being inserted into it");
+            mPinButton->setToolTip(QObject::tr("The window is currently pinned, so you can move it freely over the interface, without it being inserted into it"));
         }
         else
         {
-            mPinButton->setToolTip("The window is currently unpinned, so moving it over the interface will allow you to dock it at a given location");
+            mPinButton->setToolTip(QObject::tr("The window is currently unpinned, so moving it over the interface will allow you to dock it at a given location"));
             mPinButton->setIcon(GetMysticQt()->FindIcon("Images/Icons/DockPin.png"));
         }
 
         if (mDockWidget->windowState() & Qt::WindowMaximized)
         {
             mMaximizeButton->setIcon(GetMysticQt()->FindIcon("Images/Icons/DockRestore.png"));
-            mMaximizeButton->setToolTip("Restore the window to a non-maximized state");
+            mMaximizeButton->setToolTip(QObject::tr("Restore the window to a non-maximized state"));
         }
         else
         {
             mMaximizeButton->setIcon(GetMysticQt()->FindIcon("Images/Icons/DockMaximize.png"));
-            mMaximizeButton->setToolTip("Maximize");
+            mMaximizeButton->setToolTip(QObject::tr("Maximize"));
         }
 
         if (mDockWidget->isFloating())
         {
             mDockButton->setIcon(GetMysticQt()->FindIcon("Images/Icons/DockDock.png"));
-            mDockButton->setToolTip("Dock the window, putting it back into the interface");
+            mDockButton->setToolTip(QObject::tr("Dock the window, putting it back into the interface"));
         }
         else
         {
             mDockButton->setIcon(GetMysticQt()->FindIcon("Images/Icons/DockUndock.png"));
-            mDockButton->setToolTip("Undock the window, making it a floating window");
+            mDockButton->setToolTip(QObject::tr("Undock the window, making it a floating window"));
         }
     }
 

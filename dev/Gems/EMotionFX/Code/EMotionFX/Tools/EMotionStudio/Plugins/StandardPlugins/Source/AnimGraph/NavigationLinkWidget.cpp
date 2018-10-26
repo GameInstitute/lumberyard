@@ -390,7 +390,7 @@ namespace EMStudio
             QListWidgetItem* item = new QListWidgetItem(historyWidget);
             if (historyNodeNames[i] == "")
             {
-                item->setText("Root"); // root node handling
+                item->setText(QObject::tr("Root")); // root node handling
             }
             else
             {

@@ -68,7 +68,7 @@ void CMatEditMainDlg::showEvent(QShowEvent*)
     {
         // Make sure our top-level window decorator wrapper set this exact title
         // 3ds Max Exporter will use ::FindWindow with this name
-        win->setTitle("Material Editor");
+        win->setTitle(QObject::tr("Material Editor"));
     }
 }
 

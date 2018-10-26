@@ -36,14 +36,14 @@ namespace EMStudio
     {
         if (!editParameter)
         {
-            setWindowTitle("Create Parameter");
-            m_createButton = new QPushButton("Create");
+            setWindowTitle(QObject::tr("Create Parameter"));
+            m_createButton = new QPushButton(QObject::tr("Create"));
         }
         else
         {
             m_parameter.reset(MCore::ReflectionSerializer::Clone(editParameter));
-            setWindowTitle("Edit Parameter");
-            m_createButton = new QPushButton("Apply");
+            setWindowTitle(QObject::tr("Edit Parameter"));
+            m_createButton = new QPushButton(QObject::tr("Apply"));
             m_originalName = editParameter->GetName();
         }
         QVBoxLayout* mainLayout = new QVBoxLayout();
@@ -51,7 +51,7 @@ namespace EMStudio
 
         // Value Type
         QHBoxLayout* valueTypeLayout = new QHBoxLayout();
-        QLabel* valueTypeLabel = new QLabel("Value type");
+        QLabel* valueTypeLabel = new QLabel(QObject::tr("Value type"));
         valueTypeLabel->setFixedWidth(100);
         valueTypeLayout->addWidget(valueTypeLabel);
         m_valueTypeCombo = new MysticQt::ComboBox();
@@ -77,7 +77,7 @@ namespace EMStudio
         m_previewFrame->setObjectName("previewFrame");
         m_previewFrame->setStyleSheet("QFrame#previewFrame { border: 2px dashed #979797; background-color: #85858580; }");
         m_previewFrame->setLayout(new QHBoxLayout());
-        QLabel* previewLabel = new QLabel("Preview", m_previewFrame);
+        QLabel* previewLabel = new QLabel(QObject::tr("Preview"), m_previewFrame);
         previewLabel->setAutoFillBackground(false);
         previewLabel->setStyleSheet("background: transparent");
         m_previewFrame->layout()->addWidget(previewLabel);
@@ -93,7 +93,7 @@ namespace EMStudio
 
         // create the create or apply button and the cancel button
         QHBoxLayout* buttonLayout = new QHBoxLayout();
-        QPushButton* cancelButton = new QPushButton("Cancel");
+		QPushButton* cancelButton = new QPushButton(QObject::tr("Cancel"));
         buttonLayout->addWidget(m_createButton);
         buttonLayout->addWidget(cancelButton);
         mainLayout->addItem(buttonLayout);

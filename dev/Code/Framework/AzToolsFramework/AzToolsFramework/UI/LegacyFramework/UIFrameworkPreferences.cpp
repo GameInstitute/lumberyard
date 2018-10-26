@@ -98,7 +98,7 @@ namespace AzToolsFramework
         item->setDragEnabled(false);
         item->setDropEnabled(false);
         item->setSelectable(false);
-        item->setToolTip("Double-click to change hotkey assignment");
+        item->setToolTip(QObject::tr("Double-click to change hotkey assignment"));
         item->setEditable(false);
         item->setEnabled(true);
         return item;
@@ -297,7 +297,7 @@ namespace AzToolsFramework
                     {
                         // yes/no dialog to verify overriding a global hotkey with a forceful warning
                         QMessageBox msgBox;
-                        msgBox.setText("Override a System global hotkey?");
+                        msgBox.setText(QObject::tr("Override a System global hotkey?"));
                         msgBox.setInformativeText((*iter)->hotkeyData.m_desc.m_description.c_str());
                         msgBox.setStandardButtons(QMessageBox::Ok | QMessageBox::Cancel);
                         msgBox.setDefaultButton(QMessageBox::Cancel);
@@ -315,7 +315,7 @@ namespace AzToolsFramework
                     {
                         // yes/no dialog to verify override with an advisement
                         QMessageBox msgBox;
-                        msgBox.setText("Replace an existing hotkey?");
+                        msgBox.setText(QObject::tr("Replace an existing hotkey?"));
                         msgBox.setInformativeText((*iter)->hotkeyData.m_desc.m_description.c_str());
                         msgBox.setStandardButtons(QMessageBox::Ok | QMessageBox::Cancel);
                         msgBox.setDefaultButton(QMessageBox::Cancel);

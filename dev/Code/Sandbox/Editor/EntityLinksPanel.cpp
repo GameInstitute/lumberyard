@@ -251,16 +251,16 @@ void CEntityLinksPanel::OnRclickLinks(QPoint localPoint)
 
     if (pLink)
     {
-        menu.addAction("Change Target Entity")->setData(CMD_PICK);
-        menu.addAction("Rename Link")->setData(CMD_RENAME);
-        menu.addAction("Delete Link")->setData(CMD_DELETE);
+        menu.addAction(QObject::tr("Change Target Entity"))->setData(CMD_PICK);
+        menu.addAction(QObject::tr("Rename Link"))->setData(CMD_RENAME);
+        menu.addAction(QObject::tr("Delete Link"))->setData(CMD_DELETE);
 
         menu.addSeparator();
-        menu.addAction("Pick New Target")->setData(CMD_PICK_NEW);
+        menu.addAction(QObject::tr("Pick New Target"))->setData(CMD_PICK_NEW);
     }
     else
     {
-        menu.addAction("Pick New Target")->setData(CMD_PICK);
+        menu.addAction(QObject::tr("Pick New Target"))->setData(CMD_PICK);
     }
 
     QAction* action = menu.exec(QCursor::pos());

@@ -181,7 +181,7 @@ namespace AZ
                 UI::OverlayWidgetButtonList buttons;
 
                 UI::OverlayWidgetButton button;
-                button.m_text = "Ok";
+                button.m_text = QObject::tr("Ok");
                 button.m_triggersPop = true;
                 button.m_isCloseButton = true;
                 button.m_enabledCheck = [this]() -> bool
@@ -190,7 +190,7 @@ namespace AZ
                 };
                 buttons.push_back(&button);
 
-                m_progressLabel = new QLabel("Processing...");
+                m_progressLabel = new QLabel(QObject::tr("Processing..."));
                 m_progressLabel->setAlignment(Qt::AlignCenter);
                 m_layerId = m_overlay->PushLayer(m_progressLabel, this, "File progress", buttons);
                 return m_layerId;
@@ -316,7 +316,7 @@ namespace AZ
                 }
                 else if (m_progressLabel != nullptr)
                 {
-                    m_progressLabel->setText("Close the processing report to continue editing settings.");
+                    m_progressLabel->setText(QObject::tr("Close the processing report to continue editing settings."));
                 }
             }
 

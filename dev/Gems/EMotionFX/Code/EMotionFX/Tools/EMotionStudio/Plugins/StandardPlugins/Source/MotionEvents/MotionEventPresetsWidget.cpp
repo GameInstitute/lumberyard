@@ -370,8 +370,8 @@ namespace EMStudio
     {
         // show message box
         QMessageBox msgBox(this);
-        msgBox.setWindowTitle("Delete All Motion Event Presets?");
-        msgBox.setText("Are you sure to really delete all motion event presets?");
+        msgBox.setWindowTitle(QObject::tr("Delete All Motion Event Presets?"));
+		msgBox.setText(QObject::tr("Are you sure to really delete all motion event presets?"));
         msgBox.setStandardButtons(QMessageBox::Yes | QMessageBox::No);
         msgBox.setDefaultButton(QMessageBox::Yes);
         int result = msgBox.exec();

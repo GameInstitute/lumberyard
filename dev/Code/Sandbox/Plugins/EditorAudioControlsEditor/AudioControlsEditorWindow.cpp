@@ -143,7 +143,7 @@ namespace AudioControls
             messageBox.setInformativeText(tr("Do you want to save your changes?"));
             messageBox.setStandardButtons(QMessageBox::Save | QMessageBox::Discard | QMessageBox::Cancel);
             messageBox.setDefaultButton(QMessageBox::Save);
-            messageBox.setWindowTitle("Audio Controls Editor");
+            messageBox.setWindowTitle(QObject::tr("Audio Controls Editor"));
             switch (messageBox.exec())
             {
             case QMessageBox::Save:
@@ -178,7 +178,7 @@ namespace AudioControls
             messageBox.setInformativeText(tr("Are you sure you want to reload?"));
             messageBox.setStandardButtons(QMessageBox::Yes | QMessageBox::No);
             messageBox.setDefaultButton(QMessageBox::No);
-            messageBox.setWindowTitle("Audio Controls Editor");
+            messageBox.setWindowTitle(QObject::tr("Audio Controls Editor"));
             bReload = (messageBox.exec() == QMessageBox::Yes);
         }
 
@@ -220,7 +220,7 @@ namespace AudioControls
             messageBox.setText(tr("Preload requests have been modified.\n\nFor the new data to be loaded the audio system needs to be refreshed, this will stop all currently playing audio. Do you want to do this now?\n\nYou can always refresh manually at a later time through the Audio menu."));
             messageBox.setStandardButtons(QMessageBox::Yes | QMessageBox::No);
             messageBox.setDefaultButton(QMessageBox::No);
-            messageBox.setWindowTitle("Audio Controls Editor");
+            messageBox.setWindowTitle(QObject::tr("Audio Controls Editor"));
             if (messageBox.exec() == QMessageBox::Yes)
             {
                 QString sLevelName = GetIEditor()->GetLevelName();

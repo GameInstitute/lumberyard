@@ -26,7 +26,7 @@ namespace LUA
 
         AZStd::string context("Default");
         EBUS_EVENT(LUAEditor::LUATargetContextRequestMessages::Bus, SetCurrentTargetContext, context);
-        this->setText("Context: Default");
+        this->setText(QObject::tr("Context: Default"));
 
         QSizePolicy sizePolicy1(QSizePolicy::Preferred, QSizePolicy::Preferred);
         sizePolicy1.setHorizontalStretch(0);
@@ -67,14 +67,14 @@ namespace LUA
         if (resultAction)
         {
             AZStd::string context = resultAction->property("context").toString().toUtf8().data();
-            this->setText("Context: None"); // prepare for failure
+            this->setText(QObject::tr("Context: None")); // prepare for failure
             EBUS_EVENT(LUAEditor::LUATargetContextRequestMessages::Bus, SetCurrentTargetContext, context);
         }
     }
 
     void TargetContextButton::OnTargetContextPrepared(AZStd::string& contextName)
     {
-        QString qstr = QString("Context: %1").arg(contextName.c_str());
+        QString qstr = QString(QObject::tr("Context: %1")).arg(contextName.c_str());
         this->setText(qstr); // plan for success
     }
 

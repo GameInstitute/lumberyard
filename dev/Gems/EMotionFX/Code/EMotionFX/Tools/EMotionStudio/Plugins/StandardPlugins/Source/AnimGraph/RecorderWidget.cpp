@@ -117,11 +117,11 @@ namespace EMStudio
 
         QHBoxLayout* filterLayout = new QHBoxLayout();
         filterLayout->setSpacing(6);
-        filterLayout->addWidget(new QLabel("Filter:"));
+        filterLayout->addWidget(new QLabel(QObject::tr("Filter:")));
         mFilterButtonGroup = new MysticQt::ButtonGroup(this, 1, 3);
-        mFilterButtonGroup->GetButton(0, 0)->setText("Motions Only");
-        mFilterButtonGroup->GetButton(0, 1)->setText("States Only");
-        mFilterButtonGroup->GetButton(0, 2)->setText("Events");
+        mFilterButtonGroup->GetButton(0, 0)->setText(QObject::tr("Motions Only"));
+        mFilterButtonGroup->GetButton(0, 1)->setText(QObject::tr("States Only"));
+        mFilterButtonGroup->GetButton(0, 2)->setText(QObject::tr("Events"));
         mFilterButtonGroup->GetButton(0, 0)->setChecked(true);
         mFilterButtonGroup->GetButton(0, 1)->setChecked(false);
         mFilterButtonGroup->GetButton(0, 2)->setChecked(true);
@@ -167,7 +167,7 @@ namespace EMStudio
 
     void RecorderWidget::OnRecordingFailed(const AZStd::string& why)
     {
-        QMessageBox::critical(this, "EMotionFX recording failed", why.c_str());
+        QMessageBox::critical(this, QObject::tr("EMotionFX recording failed"), why.c_str());
     }
 
 
@@ -393,7 +393,7 @@ namespace EMStudio
         if (recorder.GetIsRecording() == false)
         {
             mRecordButton->setIcon(MysticQt::GetMysticQt()->FindIcon("Images/Icons/RecordButton.png"));
-            mRecordButton->setToolTip("Start recording");
+            mRecordButton->setToolTip(QObject::tr("Start recording"));
             mRecordButton->setEnabled(true);
         }
 
@@ -412,7 +412,7 @@ namespace EMStudio
             mRecordButton->setEnabled(true);
 
             mRecordButton->setIcon(MysticQt::GetMysticQt()->FindIcon("Images/Icons/StopRecorder.png"));
-            mRecordButton->setToolTip("Stop recording");
+            mRecordButton->setToolTip(QObject::tr("Stop recording"));
         }
         else
         if (recorder.GetIsInPlayMode()) // we are playing back a recording
@@ -431,12 +431,12 @@ namespace EMStudio
             if (recorder.GetIsInAutoPlayMode())
             {
                 mPlayButton->setIcon(MysticQt::GetMysticQt()->FindIcon("Images/Icons/Pause.png"));
-                mPlayButton->setToolTip("Pause playback");
+                mPlayButton->setToolTip(QObject::tr("Pause playback"));
             }
             else
             {
                 mPlayButton->setIcon(MysticQt::GetMysticQt()->FindIcon("Images/Icons/PlayForward.png"));
-                mPlayButton->setToolTip("Play recording");
+                mPlayButton->setToolTip(QObject::tr("Play recording"));
             }
         }
         else
@@ -453,7 +453,7 @@ namespace EMStudio
             mPlayButton->setEnabled(false);
             mRecordButton->setEnabled(true);
             mPlayButton->setIcon(MysticQt::GetMysticQt()->FindIcon("Images/Icons/PlayForward.png"));
-            mPlayButton->setToolTip("Play recording");
+            mPlayButton->setToolTip(QObject::tr("Play recording"));
         }
         else // we have a recording but are not playing yet
         {

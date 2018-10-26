@@ -73,7 +73,7 @@ public:
         if (m_templateModel->CanAddResources())
         {
             auto addResource = m_view->CreateAddResourceMenu(m_templateModel, this);
-            addResource->setTitle("Add resource");
+            addResource->setTitle(QObject::tr("Add resource"));
             menu->addMenu(addResource);
         }
 
@@ -88,29 +88,29 @@ public:
 
         menu->addSeparator();
 
-        auto saveFile = menu->addAction("Save file");
+        auto saveFile = menu->addAction(QObject::tr("Save file"));
         saveFile->setToolTip(m_view->m_menuSave->toolTip());
         saveFile->setEnabled(ShouldAllowSave());
         connectUntilDeleted(saveFile, &QAction::triggered, this, &FileContentDetailWidget::OnSaveRequested);
 
         if (!IsContentDoNotDelete())
         {
-            auto deleteFile = menu->addAction("Delete file");
+            auto deleteFile = menu->addAction(QObject::tr("Delete file"));
             deleteFile->setToolTip(tr("Delete the file from disk."));
             connectUntilDeleted(deleteFile, &QAction::triggered, this, &FileContentDetailWidget::OnDeleteRequested);
         }
 
-        auto openFile = menu->addAction("Open in script editor");
+        auto openFile = menu->addAction(QObject::tr("Open in script editor"));
         openFile->setToolTip(tr("Open file in the default script editor."));
         connectUntilDeleted(openFile, &QAction::triggered, this, &FileContentDetailWidget::OnOpenInScriptEditor);
 
-        auto openPathInExplorer = menu->addAction("View in Explorer");
+        auto openPathInExplorer = menu->addAction(QObject::tr("View in Explorer"));
         openPathInExplorer->setToolTip(tr("View the file in Windows Explorer."));
         connectUntilDeleted(openPathInExplorer, &QAction::triggered, this, &FileContentDetailWidget::OnOpenLocationInExplorer);
 
         menu->addSeparator();
 
-        auto copyPathToClipboard = menu->addAction("Copy path to clipboard");
+        auto copyPathToClipboard = menu->addAction(QObject::tr("Copy path to clipboard"));
         copyPathToClipboard->setToolTip(tr("Copy the file's path to the clipboard."));
         connectUntilDeleted(copyPathToClipboard, &QAction::triggered, this, &FileContentDetailWidget::OnCopyPathToClipboard);
 

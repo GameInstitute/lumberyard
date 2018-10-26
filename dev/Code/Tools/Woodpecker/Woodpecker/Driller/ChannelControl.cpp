@@ -427,7 +427,7 @@ namespace Driller
 
             connect(m_configurationDialog, SIGNAL(DialogClosed(QDialog*)), SLOT(OnDialogClosed(QDialog*)));
 
-            m_configurationDialog->setWindowTitle(QString("%1's Channel Configurations.").arg(channelName->text()));
+            m_configurationDialog->setWindowTitle(QString(QObject::tr("%1's Channel Configurations.")).arg(channelName->text()));
         }
 
         if (m_configurationDialog->isMinimized())

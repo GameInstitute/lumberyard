@@ -202,7 +202,7 @@ namespace News
         if (!m_loadingLabel)
         {
             m_loadingLabel = new QLabel(this);
-            m_loadingLabel->setText("Retrieving news...");
+            m_loadingLabel->setText(QObject::tr("Retrieving news..."));
             auto layout = static_cast<QVBoxLayout*>(m_ui->articleViewContents->layout());
             layout->insertWidget(0, m_loadingLabel);
         }

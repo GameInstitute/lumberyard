@@ -42,7 +42,7 @@ ListSelectionDialog::ListSelectionDialog(QWidget* parent)
     : QDialog(parent)
     , m_currentColumn(0)
 {
-    setWindowTitle("Choose...");
+    setWindowTitle(QObject::tr("Choose..."));
     setWindowModality(Qt::ApplicationModal);
 
     QBoxLayout* layout = new QBoxLayout(QBoxLayout::TopToBottom);
@@ -51,7 +51,7 @@ ListSelectionDialog::ListSelectionDialog(QWidget* parent)
     QBoxLayout* filterBox = new QBoxLayout(QBoxLayout::LeftToRight);
     layout->addLayout(filterBox);
     {
-        filterBox->addWidget(new QLabel("Filter:", this), 0);
+        filterBox->addWidget(new QLabel(QObject::tr("Filter:"), this), 0);
         filterBox->addWidget(m_filterEdit = new QLineEdit(this), 1);
         connect(m_filterEdit, SIGNAL(textChanged(const QString&)), this, SLOT(onFilterChanged(const QString&)));
         m_filterEdit->installEventFilter(this);

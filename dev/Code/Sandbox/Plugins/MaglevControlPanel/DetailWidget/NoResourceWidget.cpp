@@ -49,7 +49,7 @@ NoResourceWidget::NoResourceWidget(ResourceManagementView* view, const QSharedPo
         QString::fromStdWString(L"Import resource \u25BC")
     };
     importResourceButton->setObjectName("ImportExistingButton");
-    importResourceButton->setToolTip("Import an existing AWS resource to your resource group.");
+    importResourceButton->setToolTip(QObject::tr("Import an existing AWS resource to your resource group."));
     importResourceButton->setDisabled(m_resourceGroupStatusModel->IsPendingDelete());
     connect(importResourceButton, &QPushButton::clicked, this, [this, importResourceButton]() {OnImportResource(importResourceButton); });
     AddButton(importResourceButton);

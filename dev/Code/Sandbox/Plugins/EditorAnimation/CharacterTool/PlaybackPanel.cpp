@@ -97,9 +97,9 @@ namespace CharacterTool
                     m_activeControls.push_back(m_timeTotalLabel);
 
                     hbox->addWidget(m_timeUnitsCombo = new QComboBox(), 0);
-                    m_timeUnitsCombo->addItem("Seconds");
-                    m_timeUnitsCombo->addItem("Frames");
-                    m_timeUnitsCombo->addItem("Normalized");
+                    m_timeUnitsCombo->addItem(QObject::tr("Seconds"));
+                    m_timeUnitsCombo->addItem(QObject::tr("Frames"));
+                    m_timeUnitsCombo->addItem(QObject::tr("Normalized"));
                     m_timeUnitsCombo->setCurrentIndex(0);
                     EXPECTED(connect(m_timeUnitsCombo, SIGNAL(currentIndexChanged(int)), this, SLOT(OnTimeUnitsChanged(int))));
                     vbox->addLayout(hbox);
@@ -122,13 +122,13 @@ namespace CharacterTool
                     hbox->setSpacing(4);
                     vbox->addLayout(hbox);
 
-                    hbox->addWidget(m_playPauseButton = new QPushButton("Play"), 1);
+                    hbox->addWidget(m_playPauseButton = new QPushButton(QObject::tr("Play")), 1);
                     connect(m_playPauseButton, SIGNAL(clicked()), this, SLOT(OnPlayPausePushed()));
                     m_playPauseButton->setIcon(m_playIcon);
                     m_playPauseButton->setEnabled(false);
                     m_activeControls.push_back(m_playPauseButton);
 
-                    m_loopButton = new QPushButton("Loop", this);
+                    m_loopButton = new QPushButton(QObject::tr("Loop"), this);
                     m_loopButton->setCheckable(true);
                     m_loopButton->setChecked(m_system->document->GetPlaybackOptions().loopAnimation);
                     connect(m_loopButton, SIGNAL(toggled(bool)), this, SLOT(OnLoopToggled(bool)));
@@ -140,19 +140,19 @@ namespace CharacterTool
                         QMenu* optionsMenu = new QMenu(this);
                         m_optionsButton->setMenu(optionsMenu);
 
-                        m_actionPlayOnSelection = optionsMenu->addAction("Play when animation selected", this, SLOT(OnOptionPlayOnSelection()));
+                        m_actionPlayOnSelection = optionsMenu->addAction(QObject::tr("Play when animation selected"), this, SLOT(OnOptionPlayOnSelection()));
                         m_actionPlayOnSelection->setCheckable(true);
 
-                        m_actionPlayFromTheStart = optionsMenu->addAction("Always play from the begining", this, SLOT(OnOptionPlayFromTheStart()));
+                        m_actionPlayFromTheStart = optionsMenu->addAction(QObject::tr("Always play from the begining"), this, SLOT(OnOptionPlayFromTheStart()));
                         m_actionPlayFromTheStart->setCheckable(true);
 
-                        m_actionFirstFrameAtEnd = optionsMenu->addAction("First frame at the end of timeline", this, SLOT(OnOptionFirstFrameAtEnd()));
+                        m_actionFirstFrameAtEnd = optionsMenu->addAction(QObject::tr("First frame at the end of timeline"), this, SLOT(OnOptionFirstFrameAtEnd()));
                         m_actionFirstFrameAtEnd->setCheckable(true);
 
-                        m_actionWrapSlider = optionsMenu->addAction("Wrap timeline slider", this, SLOT(OnOptionWrapSlider()));
+                        m_actionWrapSlider = optionsMenu->addAction(QObject::tr("Wrap timeline slider"), this, SLOT(OnOptionWrapSlider()));
                         m_actionWrapSlider->setCheckable(true);
 
-                        m_actionSmoothTimelineSlider = optionsMenu->addAction("Smooth timeline slider", this, SLOT(OnOptionSmoothTimelineSlider()));
+                        m_actionSmoothTimelineSlider = optionsMenu->addAction(QObject::tr("Smooth timeline slider"), this, SLOT(OnOptionSmoothTimelineSlider()));
                         m_actionSmoothTimelineSlider->setCheckable(true);
                     }
                     m_activeControls.push_back(m_optionsButton);
@@ -474,19 +474,19 @@ namespace CharacterTool
         bool controlsEnabled = true;
         if (state == PLAYBACK_PLAY)
         {
-            m_playPauseButton->setText("Pause");
+            m_playPauseButton->setText(QObject::tr("Pause"));
             controlsEnabled = true;
             m_playing = true;
         }
         else if (state == PLAYBACK_PAUSE)
         {
-            m_playPauseButton->setText("Play");
+            m_playPauseButton->setText(QObject::tr("Play"));
             controlsEnabled = true;
             m_playing = false;
         }
         else
         {
-            m_playPauseButton->setText("Play");
+            m_playPauseButton->setText(QObject::tr("Play"));
             controlsEnabled = false;
             m_playing = false;
         }

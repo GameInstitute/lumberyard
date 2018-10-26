@@ -30,7 +30,7 @@ namespace AzToolsFramework
             EBUS_EVENT(LegacyFramework::LogComponentAPI::Bus, EnumWindowTypes, knownWindows);
 
             // hardwired into the incoming message filter, "All" will take any source's message
-            uiManager.windowNameBox->addItem("All");
+            uiManager.windowNameBox->addItem(QObject::tr("All"));
 
             for (AZStd::vector<AZStd::string>::iterator it = knownWindows.begin(); it != knownWindows.end(); ++it)
             {

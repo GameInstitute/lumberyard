@@ -48,7 +48,7 @@ namespace EMStudio
         mPlugin = plugin;
 
         // set the window title
-        setWindowTitle("Mirror Setup");
+        setWindowTitle(QObject::tr("Mirror Setup"));
 
         // set the minimum size
         setMinimumWidth(800);
@@ -96,13 +96,13 @@ namespace EMStudio
         toolBarLayout->addSpacerItem(new QSpacerItem(100, 1, QSizePolicy::Expanding, QSizePolicy::Minimum));
 
         QHBoxLayout* leftRightLayout = new QHBoxLayout();
-        leftRightLayout->addWidget(new QLabel("Left:"), 0, Qt::AlignRight);
+        leftRightLayout->addWidget(new QLabel(QObject::tr("Left:")), 0, Qt::AlignRight);
         mLeftEdit = new QLineEdit("Bip01 L");
         mLeftEdit->setMaximumWidth(75);
         leftRightLayout->addWidget(mLeftEdit, 0, Qt::AlignRight);
         mRightEdit = new QLineEdit("Bip01 R");
         mRightEdit->setMaximumWidth(75);
-        leftRightLayout->addWidget(new QLabel("Right:"), 0, Qt::AlignRight);
+        leftRightLayout->addWidget(new QLabel(QObject::tr("Right:")), 0, Qt::AlignRight);
         leftRightLayout->addWidget(mRightEdit, 0, Qt::AlignRight);
         leftRightLayout->addWidget(mButtonGuess, 0, Qt::AlignRight);
         leftRightLayout->setSpacing(6);
@@ -131,7 +131,7 @@ namespace EMStudio
         // add the search filter button
         QHBoxLayout* curSearchLayout = new QHBoxLayout();
         leftListLayout->addLayout(curSearchLayout);
-        QLabel* curLabel = new QLabel("<b>Left Nodes</b>");
+        QLabel* curLabel = new QLabel(QObject::tr("<b>Left Nodes</b>"));
         curLabel->setTextFormat(Qt::RichText);
         curSearchLayout->addWidget(curLabel);
         QWidget* spacerWidget = new QWidget();
@@ -178,7 +178,7 @@ namespace EMStudio
         QVBoxLayout* middleLayout = new QVBoxLayout();
         middleLayout->setMargin(0);
         topPartLayout->addLayout(middleLayout);
-        QPushButton* linkButton = new QPushButton("link");
+        QPushButton* linkButton = new QPushButton(QObject::tr("link"));
         connect(linkButton, SIGNAL(clicked()), this, SLOT(OnLinkPressed()));
         middleLayout->addWidget(linkButton);
 
@@ -191,7 +191,7 @@ namespace EMStudio
         // add the search filter button
         QHBoxLayout* sourceSearchLayout = new QHBoxLayout();
         rightListLayout->addLayout(sourceSearchLayout);
-        QLabel* sourceLabel = new QLabel("<b>Right Nodes</b>");
+        QLabel* sourceLabel = new QLabel(QObject::tr("<b>Right Nodes</b>"));
         sourceLabel->setTextFormat(Qt::RichText);
         sourceSearchLayout->addWidget(sourceLabel);
         //QPushButton* loadSourceButton = new QPushButton();
@@ -246,7 +246,7 @@ namespace EMStudio
         QHBoxLayout* mappingLayout = new QHBoxLayout();
         mappingLayout->setMargin(0);
         lowerLayout->addLayout(mappingLayout);
-        mappingLayout->addWidget(new QLabel("Mapping:"), 0, Qt::AlignLeft | Qt::AlignVCenter);
+        mappingLayout->addWidget(new QLabel(QObject::tr("Mapping:")), 0, Qt::AlignLeft | Qt::AlignVCenter);
         //mButtonGuess = new QPushButton();
         //EMStudioManager::MakeTransparentButton( mButtonGuess, "/Images/Icons/Character.png",  "Best guess mapping" );
         //connect( mButtonGuess, SIGNAL(clicked()), this, SLOT(OnBestGuessGeometrical()) );

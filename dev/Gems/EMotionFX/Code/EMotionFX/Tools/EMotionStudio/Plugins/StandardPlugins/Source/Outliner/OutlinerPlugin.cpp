@@ -335,7 +335,7 @@ namespace EMStudio
         mCategoryRootItem->setExpanded(true);
 
         // create the categories label
-        QLabel* categoriesLabel = new QLabel("Categories:");
+        QLabel* categoriesLabel = new QLabel(QObject::tr("Categories:"));
         categoriesLabel->setContentsMargins(1, 2, 2, 3);
         categoriesLabel->setAlignment(Qt::AlignLeft);
 
@@ -403,7 +403,7 @@ namespace EMStudio
         mViewerTableWidget->setColumnWidth(1, 0);
 
         // create the num items label
-        mNumItemsLabel = new QLabel("0 items");
+        mNumItemsLabel = new QLabel(QObject::tr("0 items"));
 
         // create the list mode button
         QPushButton* listModeButton = new QPushButton("L");
@@ -547,7 +547,7 @@ namespace EMStudio
 
         // show the menu
         QMenu menu(mDock);
-        QAction* loadAction = menu.addAction("Load");
+        QAction* loadAction = menu.addAction(QObject::tr("Load"));
         loadAction->setIcon(MysticQt::GetMysticQt()->FindIcon("Images/Icons/Plus.png"));
         if (menu.exec(mCategoryTreeWidget->mapToGlobal(pos)))
         {
@@ -571,7 +571,7 @@ namespace EMStudio
 
         // show the menu
         QMenu menu(mDock);
-        QAction* removeAction = menu.addAction("Remove");
+        QAction* removeAction = menu.addAction(QObject::tr("Remove"));
         removeAction->setIcon(MysticQt::GetMysticQt()->FindIcon("Images/Icons/Minus.png"));
         if (menu.exec(mViewerListWidget->mapToGlobal(pos)))
         {
@@ -594,7 +594,7 @@ namespace EMStudio
 
         // show the menu
         QMenu menu(mDock);
-        QAction* removeAction = menu.addAction("Remove");
+        QAction* removeAction = menu.addAction(QObject::tr("Remove"));
         removeAction->setIcon(MysticQt::GetMysticQt()->FindIcon("Images/Icons/Minus.png"));
         if (menu.exec(mViewerTableWidget->mapToGlobal(pos)))
         {
@@ -831,7 +831,7 @@ namespace EMStudio
             if (item->mCategory->GetCallback())
             {
                 const QString name = item->mCategory->GetCallback()->BuildNameItem(item);
-                listWidgetItem->setText(name.isEmpty() ? "<no name>" : name);
+                listWidgetItem->setText(name.isEmpty() ? QObject::tr("<no name>") : name);
                 listWidgetItem->setToolTip(item->mCategory->GetCallback()->BuildToolTipItem(item));
                 const QIcon icon = item->mCategory->GetCallback()->GetIcon(item);
                 if (icon.availableSizes().size() == 0)
@@ -845,7 +845,7 @@ namespace EMStudio
             }
             else
             {
-                listWidgetItem->setText("<no name>");
+                listWidgetItem->setText(QObject::tr("<no name>"));
                 listWidgetItem->setIcon(MysticQt::GetMysticQt()->FindIcon("Images/OutlinerPlugin/UnknownCategory.png"));
             }
             mViewerListWidget->addItem(listWidgetItem);
@@ -856,11 +856,11 @@ namespace EMStudio
             const QList<QListWidgetItem*> selectedItems = mViewerListWidget->selectedItems();
             if (selectedItems.isEmpty())
             {
-                mNumItemsLabel->setText(QString("%1 items").arg(mViewerListWidget->count()));
+                mNumItemsLabel->setText(QString(QObject::tr("%1 items")).arg(mViewerListWidget->count()));
             }
             else
             {
-                mNumItemsLabel->setText(QString("%1 items (%2 selected)").arg(mViewerListWidget->count()).arg(selectedItems.size()));
+                mNumItemsLabel->setText(QString(QObject::tr("%1 items (%2 selected)")).arg(mViewerListWidget->count()).arg(selectedItems.size()));
             }
         }
         else
@@ -875,13 +875,13 @@ namespace EMStudio
             if (item->mCategory->GetCallback())
             {
                 const QString name = item->mCategory->GetCallback()->BuildNameItem(item);
-                nameTableWidgetItem->setText(name.isEmpty() ? "<no name>" : name);
+                nameTableWidgetItem->setText(name.isEmpty() ? QObject::tr("<no name>") : name);
                 nameTableWidgetItem->setToolTip(item->mCategory->GetCallback()->BuildToolTipItem(item));
                 categoryTableWidgetItem->setToolTip(item->mCategory->GetCallback()->BuildToolTipItem(item));
             }
             else
             {
-                nameTableWidgetItem->setText("<no name");
+                nameTableWidgetItem->setText(QObject::tr("<no name"));
             }
             const int newRowIndex = mViewerTableWidget->rowCount();
             mViewerTableWidget->insertRow(newRowIndex);
@@ -1028,7 +1028,7 @@ namespace EMStudio
                 if (categoryItem->mCategory->GetCallback())
                 {
                     const QString name = categoryItem->mCategory->GetCallback()->BuildNameItem(categoryItem);
-                    item->setText(name.isEmpty() ? "<no name>" : name);
+                    item->setText(name.isEmpty() ? QObject::tr("<no name>") : name);
                     item->setToolTip(categoryItem->mCategory->GetCallback()->BuildToolTipItem(categoryItem));
                     const QIcon icon = categoryItem->mCategory->GetCallback()->GetIcon(categoryItem);
                     if (icon.availableSizes().size() == 0)
@@ -1042,7 +1042,7 @@ namespace EMStudio
                 }
                 else
                 {
-                    item->setText("<no name>");
+                    item->setText(QObject::tr("<no name>"));
                     item->setIcon(MysticQt::GetMysticQt()->FindIcon("Images/OutlinerPlugin/UnknownCategory.png"));
                 }
                 const bool itemContainsText = item->text().contains(m_searchWidgetText.c_str(), Qt::CaseInsensitive);
@@ -1060,13 +1060,13 @@ namespace EMStudio
                 if (categoryItem->mCategory->GetCallback())
                 {
                     const QString name = categoryItem->mCategory->GetCallback()->BuildNameItem(categoryItem);
-                    nameTableWidgetItem->setText(name.isEmpty() ? "<no name>" : name);
+                    nameTableWidgetItem->setText(name.isEmpty() ? QObject::tr("<no name>") : name);
                     nameTableWidgetItem->setToolTip(categoryItem->mCategory->GetCallback()->BuildToolTipItem(categoryItem));
                     mViewerTableWidget->item(i, 1)->setToolTip(categoryItem->mCategory->GetCallback()->BuildToolTipItem(categoryItem));
                 }
                 else
                 {
-                    nameTableWidgetItem->setText("<no name");
+                    nameTableWidgetItem->setText(QObject::tr("<no name"));
                     nameTableWidgetItem->setToolTip("");
                     mViewerTableWidget->item(i, 1)->setToolTip("");
                 }
@@ -1268,7 +1268,7 @@ namespace EMStudio
                         if (category->GetCallback())
                         {
                             const QString name = category->GetCallback()->BuildNameItem(item);
-                            listWidgetItem->setText(name.isEmpty() ? "<no name>" : name);
+                            listWidgetItem->setText(name.isEmpty() ? QObject::tr("<no name>") : name);
                             listWidgetItem->setToolTip(category->GetCallback()->BuildToolTipItem(item));
                             const QIcon icon = category->GetCallback()->GetIcon(item);
                             if (icon.availableSizes().size() == 0)
@@ -1282,7 +1282,7 @@ namespace EMStudio
                         }
                         else
                         {
-                            listWidgetItem->setText("<no name>");
+                            listWidgetItem->setText(QObject::tr("<no name>"));
                             listWidgetItem->setIcon(MysticQt::GetMysticQt()->FindIcon("Images/OutlinerPlugin/UnknownCategory.png"));
                         }
                         mViewerListWidget->addItem(listWidgetItem);
@@ -1307,7 +1307,7 @@ namespace EMStudio
                         if (category->GetCallback())
                         {
                             const QString name = category->GetCallback()->BuildNameItem(item);
-                            listWidgetItem->setText(name.isEmpty() ? "<no name>" : name);
+                            listWidgetItem->setText(name.isEmpty() ? QObject::tr("<no name>") : name);
                             listWidgetItem->setToolTip(category->GetCallback()->BuildToolTipItem(item));
                             const QIcon icon = category->GetCallback()->GetIcon(item);
                             if (icon.availableSizes().size() == 0)
@@ -1321,7 +1321,7 @@ namespace EMStudio
                         }
                         else
                         {
-                            listWidgetItem->setText("<no name>");
+                            listWidgetItem->setText(QObject::tr("<no name>"));
                             listWidgetItem->setIcon(MysticQt::GetMysticQt()->FindIcon("Images/OutlinerPlugin/UnknownCategory.png"));
                         }
                         mViewerListWidget->addItem(listWidgetItem);
@@ -1332,7 +1332,7 @@ namespace EMStudio
             }
 
             // update the num items label
-            mNumItemsLabel->setText(QString("%1 items").arg(mViewerListWidget->count()));
+            mNumItemsLabel->setText(QString(QObject::tr("%1 items")).arg(mViewerListWidget->count()));
         }
         else
         {
@@ -1357,13 +1357,13 @@ namespace EMStudio
                         if (category->GetCallback())
                         {
                             const QString name = category->GetCallback()->BuildNameItem(item);
-                            nameTableWidgetItem->setText(name.isEmpty() ? "<no name>" : name);
+                            nameTableWidgetItem->setText(name.isEmpty() ? QObject::tr("<no name>") : name);
                             nameTableWidgetItem->setToolTip(category->GetCallback()->BuildToolTipItem(item));
                             categoryTableWidgetItem->setToolTip(category->GetCallback()->BuildToolTipItem(item));
                         }
                         else
                         {
-                            nameTableWidgetItem->setText("<no name");
+                            nameTableWidgetItem->setText(QObject::tr("<no name"));
                         }
                         const int newRowIndex = mViewerTableWidget->rowCount();
                         mViewerTableWidget->insertRow(newRowIndex);
@@ -1392,13 +1392,13 @@ namespace EMStudio
                         if (category->GetCallback())
                         {
                             const QString name = category->GetCallback()->BuildNameItem(item);
-                            nameTableWidgetItem->setText(name.isEmpty() ? "<no name>" : name);
+                            nameTableWidgetItem->setText(name.isEmpty() ? QObject::tr("<no name>") : name);
                             nameTableWidgetItem->setToolTip(category->GetCallback()->BuildToolTipItem(item));
                             categoryTableWidgetItem->setToolTip(category->GetCallback()->BuildToolTipItem(item));
                         }
                         else
                         {
-                            nameTableWidgetItem->setText("<no name");
+                            nameTableWidgetItem->setText(QObject::tr("<no name"));
                         }
                         const int newRowIndex = mViewerTableWidget->rowCount();
                         mViewerTableWidget->insertRow(newRowIndex);
@@ -1415,7 +1415,7 @@ namespace EMStudio
             mViewerTableWidget->setSortingEnabled(true);
 
             // update the num items label
-            mNumItemsLabel->setText(QString("%1 items").arg(mViewerTableWidget->rowCount()));
+            mNumItemsLabel->setText(QString(QObject::tr("%1 items")).arg(mViewerTableWidget->rowCount()));
         }
     }
 } // namespace EMStudio

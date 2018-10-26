@@ -25,11 +25,11 @@
 CUnsavedChangedDialog::CUnsavedChangedDialog(QWidget* parent)
     : QDialog(parent)
 {
-    setWindowTitle("Unsaved Changes");
+    setWindowTitle(QObject::tr("Unsaved Changes"));
     setModal(true);
 
     auto layout = new QBoxLayout(QBoxLayout::TopToBottom);
-    auto label = new QLabel("The following files were modified.\n\nWould you like to save them before closing?");
+    auto label = new QLabel(QObject::tr("The following files were modified.\n\nWould you like to save them before closing?"));
     layout->addWidget(label, 0);
 
     m_list = new QListWidget();

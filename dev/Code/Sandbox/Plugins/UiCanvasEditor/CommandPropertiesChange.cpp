@@ -25,7 +25,7 @@ CommandPropertiesChange::CommandPropertiesChange(UndoStack* stack,
 {
     AZ_Assert(!m_entryList.empty(), "Entry list is empty");
 
-    setText("properties change");
+    setText(QObject::tr("properties change"));
 }
 
 void CommandPropertiesChange::undo()

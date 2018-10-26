@@ -20,7 +20,7 @@ CToolbarStandard::CToolbarStandard(QMainWindow* mainWindow)
     , m_actionUndo(nullptr)
     , m_actionRedo(nullptr)
 {
-    setWindowTitle("Standard");
+    setWindowTitle(QObject::tr("Standard"));
 }
 
 CToolbarStandard::~CToolbarStandard()
@@ -30,13 +30,13 @@ CToolbarStandard::~CToolbarStandard()
 void CToolbarStandard::init()
 {
     QAction* action = nullptr;
-    m_actionUndo = action = createAction("actionStandardUndo", "Undo", "Undo", "standardUndo.png");
+    m_actionUndo = action = createAction("actionStandardUndo", QObject::tr("Undo"), QObject::tr("Undo"), "standardUndo.png");
     action->setEnabled(false);
-    m_actionRedo = action = createAction("actionStandardRedo", "Redo", "Redo", "standardRedo.png");
+    m_actionRedo = action = createAction("actionStandardRedo", QObject::tr("Redo"), QObject::tr("Redo"), "standardRedo.png");
     action->setEnabled(false);
-    action = createAction("actionStandardCopy", "Copy", "Copy item", "standardCopy.png");
+    action = createAction("actionStandardCopy", QObject::tr("Copy"), QObject::tr("Copy item"), "standardCopy.png");
     insertSeparator(action);
-    action = createAction("actionStandardPaste", "Paste", "Paste item", "standardPaste.png");
+    action = createAction("actionStandardPaste", QObject::tr("Paste"), QObject::tr("Paste item"), "standardPaste.png");
 }
 
 void CToolbarStandard::SignalNumUndoRedo(const unsigned int& numUndo, const unsigned int& numRedo)

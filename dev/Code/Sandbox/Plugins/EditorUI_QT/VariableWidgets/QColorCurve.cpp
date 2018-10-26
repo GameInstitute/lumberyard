@@ -187,7 +187,7 @@ void QColorCurve::buildMenu(bool RandomGradient)
     {
         if (RandomGradient == false)
         {
-            QAction* action = m_menu->addAction("Random between two gradients");//launch random dlg
+            QAction* action = m_menu->addAction(QObject::tr("Random between two gradients"));//launch random dlg
             connect(action, &QAction::triggered, this, [&]()
                 {
                     m_VarEnableVar1->Set(true);
@@ -201,7 +201,7 @@ void QColorCurve::buildMenu(bool RandomGradient)
         }
         else
         {
-            QAction* action = m_menu->addAction("One gradient over time");//launch random dlg
+            QAction* action = m_menu->addAction(QObject::tr("One gradient over time"));//launch random dlg
             connect(action, &QAction::triggered, this, [&]()
                 {
                     m_VarEnableVar1->Set(false);
@@ -214,12 +214,12 @@ void QColorCurve::buildMenu(bool RandomGradient)
                 });
         }
     }
-    action = m_menu->addAction("Save to library");//launch save to lib dlg
+    action = m_menu->addAction(QObject::tr("Save to library"));//launch save to lib dlg
     connect(action, &QAction::triggered, this, [&]()
         {
             UIFactory::GetGradientEditor(m_swatch->GetContent(), m_swatch->GetStops())->AddGradientToLibrary(QString("Default"));
         });
-    action = m_menu->addAction("Reset");//launch export dlg
+    action = m_menu->addAction(QObject::tr("Reset"));//launch export dlg
     connect(action, &QAction::triggered, this, [&]()
         {
             UpdateGradient(m_defaultStops, 0);

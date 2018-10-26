@@ -33,7 +33,7 @@ namespace EMStudio
         : QDialog(parent)
         , m_stateMachine(nullptr)
     {
-        setWindowTitle("Select States");
+        setWindowTitle(QObject::tr("Select States"));
 
         QVBoxLayout* mainLayout = new QVBoxLayout();
         setLayout(mainLayout);
@@ -53,12 +53,12 @@ namespace EMStudio
         QHBoxLayout* buttonLayout = new QHBoxLayout();
         mainLayout->addLayout(buttonLayout);
 
-        QPushButton* okButton = new QPushButton("OK");
+        QPushButton* okButton = new QPushButton(QObject::tr("OK"));
         okButton->setDefault(true);
         buttonLayout->addWidget(okButton);
         connect(okButton, SIGNAL(clicked()), this, SLOT(accept()));
 
-        QPushButton* cancelButton = new QPushButton("Cancel");
+		QPushButton* cancelButton = new QPushButton(QObject::tr("Cancel"));
         buttonLayout->addWidget(cancelButton);
         connect(cancelButton, SIGNAL(clicked()), this, SLOT(reject()));
 

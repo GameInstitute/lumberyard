@@ -117,9 +117,9 @@ CBrushObject::CBrushObject()
     static QString sVarName_ShadowLodBias = "ShadowLodBias";
 
     CVarEnumList<int>* pHideModeList = new CVarEnumList<int>();
-    pHideModeList->AddItem("None", 0);
-    pHideModeList->AddItem("Hideable", 1);
-    pHideModeList->AddItem("Secondary", 2);
+    pHideModeList->AddItem(QObject::tr("None"), 0);
+    pHideModeList->AddItem(QObject::tr("Hideable"), 1);
+    pHideModeList->AddItem(QObject::tr("Secondary"), 2);
     mv_hideable.SetEnumList(pHideModeList);
 
     ReserveNumVariables(16);

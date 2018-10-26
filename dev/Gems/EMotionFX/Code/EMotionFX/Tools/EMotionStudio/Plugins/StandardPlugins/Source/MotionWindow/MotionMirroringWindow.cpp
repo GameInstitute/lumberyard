@@ -49,12 +49,12 @@ namespace EMStudio
         layout->setMargin(0);
         setLayout(layout);
 
-        mMotionMirroringButton = new QCheckBox("Use Motion Mirroring");
+        mMotionMirroringButton = new QCheckBox(QObject::tr("Use Motion Mirroring"));
         layout->addWidget(mMotionMirroringButton);
         connect(mMotionMirroringButton, SIGNAL(clicked()), this, SLOT(UpdateMotions()));
 
         mVerifyButton = new QPushButton();
-        mVerifyButton->setText("Verify Motion Bind Pose vs. Actor Bind pose");
+        mVerifyButton->setText(QObject::tr("Verify Motion Bind Pose vs. Actor Bind pose"));
         connect(mVerifyButton, SIGNAL(pressed()), this, SLOT(OnVerifyButtonPressed()));
         layout->addWidget(mVerifyButton);
     }

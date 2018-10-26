@@ -435,7 +435,7 @@ namespace LUAEditor
         }
 
         QMenu menu(this);
-        menu.addAction("Close All Except This", this, SLOT(closeAllTabsExceptThisTabContextMenu()));
+        menu.addAction(QObject::tr("Close All Except This"), this, SLOT(closeAllTabsExceptThisTabContextMenu()));
         menu.exec(emitter->mapToGlobal(pos));
     }
 
@@ -793,7 +793,7 @@ namespace LUAEditor
             viewInfo.luaViewWidget()->IsModified())
         {
             QMessageBox msgBox;
-            msgBox.setText("This file has been modified.\nDo you really want to Reload and lose changes?");
+            msgBox.setText(QObject::tr("This file has been modified.\nDo you really want to Reload and lose changes?"));
             msgBox.setInformativeText(currentView->m_Info.m_assetName.c_str());
             msgBox.setStandardButtons(QMessageBox::Ok | QMessageBox::Cancel);
             msgBox.setDefaultButton(QMessageBox::Cancel);
@@ -1211,7 +1211,7 @@ namespace LUAEditor
         if (currentView->IsReadOnly())
         {
             QMessageBox msgBox;
-            msgBox.setText("Checkout This File To Edit?");
+            msgBox.setText(QObject::tr("Checkout This File To Edit?"));
             msgBox.setInformativeText(currentView->m_Info.m_assetName.c_str());
             msgBox.setStandardButtons(QMessageBox::Ok | QMessageBox::Cancel);
             msgBox.setDefaultButton(QMessageBox::Cancel);

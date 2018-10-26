@@ -45,8 +45,8 @@ CAlembicCompileDialog::~CAlembicCompileDialog()
 void CAlembicCompileDialog::OnInitDialog()
 {
     // custom 'Ok' and 'Cancel' text for this dialog
-    m_ui->buttonBox->button(QDialogButtonBox::Ok)->setText("Recompile .cax File");
-    m_ui->buttonBox->button(QDialogButtonBox::Cancel)->setText("Use Existing .cax File");
+    m_ui->buttonBox->button(QDialogButtonBox::Ok)->setText(QObject::tr("Recompile .cax File"));
+    m_ui->buttonBox->button(QDialogButtonBox::Cancel)->setText(QObject::tr("Use Existing .cax File"));
 
     m_ui->m_blockCompressionFormatCombo->addItem(QStringLiteral("store"));
     m_ui->m_blockCompressionFormatCombo->addItem(QStringLiteral("deflate"));

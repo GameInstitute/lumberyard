@@ -1625,11 +1625,11 @@ bool QPropertyTree::onContextMenu(PropertyRow* r, QMenu& menu)
 	if (config_.undoEnabled){
 		if (!menu.isEmpty())
 			menu.addSeparator();
-		QAction* undo = menu.addAction("Undo", handler, SLOT(onMenuUndo()));
+		QAction* undo = menu.addAction(QObject::tr("Undo"), handler, SLOT(onMenuUndo()));
 		undo->setEnabled(model()->canUndo());
 		undo->setShortcut(QKeySequence("Ctrl+Z"));
 
-		QAction* redo = menu.addAction("Redo", handler, SLOT(onMenuRedo()));
+		QAction* redo = menu.addAction(QObject::tr("Redo"), handler, SLOT(onMenuRedo()));
 		redo->setEnabled(model()->canRedo());
 		redo->setShortcut(QKeySequence("Ctrl+Shift+Z"));
 	}
@@ -1637,18 +1637,18 @@ bool QPropertyTree::onContextMenu(PropertyRow* r, QMenu& menu)
 		menu.addSeparator();
 
 	if (!row->userNonCopyable()){
-		menu.addAction("Copy", handler, SLOT(onMenuCopy()), QKeySequence("Ctrl+C"));
+		menu.addAction(QObject::tr("Copy"), handler, SLOT(onMenuCopy()), QKeySequence("Ctrl+C"));
 
 		if(!row->userReadOnly()){
-			QAction* paste = menu.addAction("Paste", handler, SLOT(onMenuPaste()), QKeySequence("Ctrl+V"));
+			QAction* paste = menu.addAction(QObject::tr("Paste"), handler, SLOT(onMenuPaste()), QKeySequence("Ctrl+V"));
 			paste->setEnabled(canBePasted(row));
 		}
 
 		menu.addSeparator();
 	}
 
-	menu.addAction("Filter...", handler, SLOT(onMenuFilter()), QKeySequence("Ctrl+F"));
-	QMenu* filter = menu.addMenu("Filter by");
+	menu.addAction(QObject::tr("Filter..."), handler, SLOT(onMenuFilter()), QKeySequence("Ctrl+F"));
+	QMenu* filter = menu.addMenu(QObject::tr("Filter by"));
 	{
 		string nameFilter = "#";
 		nameFilter += quoteIfNeeded(row->labelUndecorated());

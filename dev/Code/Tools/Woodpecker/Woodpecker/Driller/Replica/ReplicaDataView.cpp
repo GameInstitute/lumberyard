@@ -688,10 +688,10 @@ namespace Driller
             switch (i)
             {
             case TFT_NONE:
-                m_gui->tableFilterComboBox->addItem("No Filter");
+                m_gui->tableFilterComboBox->addItem(QObject::tr("No Filter"));
                 break;
             case TFT_ACTIVE_ONLY:
-                m_gui->tableFilterComboBox->addItem("Active Types");
+                m_gui->tableFilterComboBox->addItem(QObject::tr("Active Types"));
                 break;
             }
         }

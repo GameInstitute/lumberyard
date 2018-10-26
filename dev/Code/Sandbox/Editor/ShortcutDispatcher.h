@@ -80,7 +80,7 @@ static const char* SHORTCUT_DISPATCHER_CONTEXT_BREAK_PROPERTY = "ShortcutDispatc
      - Qt::WidgetWithChildrenShortcut (Round2!)
        Actually it's not the QAction's parent that counts but the associated widget! (Misleading docs)
        So if you also add the action to the window, it works:
-       QAction *action = menu->addAction("Del");
+       QAction *action = menu->addAction(QObject::tr("Del"));
        myWindow->addAction(action); // success!
 
        Are we happy ?

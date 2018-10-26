@@ -204,13 +204,13 @@ namespace Driller
         activateWindow();
         setFocus();
 
-        setWindowTitle(QString("%1's breakdown - %2").arg(replicaChunkType).arg(replicaDataView->m_aggregator->GetInspectionFileName()));
+        setWindowTitle(QString(QObject::tr("%1's breakdown - %2")).arg(replicaChunkType).arg(replicaDataView->m_aggregator->GetInspectionFileName()));
 
         m_gui->replicaName->setText(replicaChunkType);
 
         // Ordering here needs to match ordering in BaseDetailView.h
-        m_gui->aggregationTypeComboBox->addItem(QString("Replica"));
-        m_gui->aggregationTypeComboBox->addItem(QString("Combined"));
+        m_gui->aggregationTypeComboBox->addItem(QString(QObject::tr("Replica")));
+        m_gui->aggregationTypeComboBox->addItem(QString(QObject::tr("Combined")));
 
         if (m_gui->aggregationTypeComboBox->count() == 1)
         {

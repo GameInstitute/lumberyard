@@ -228,9 +228,9 @@ void CSequenceBatchRenderDialog::OnInitDialog()
     }
     m_ui->m_buffersToCaptureCombo->setCurrentIndex(0);
 
-    m_ui->BATCH_RENDER_FILE_PREFIX->setText("Frame");
+    m_ui->BATCH_RENDER_FILE_PREFIX->setText(QObject::tr("Frame"));
 
-    m_ui->m_progressStatusMsg->setText("Not running");
+    m_ui->m_progressStatusMsg->setText(QObject::tr("Not running"));
 
     m_ui->BATCH_RENDER_REMOVE_SEQ->setEnabled(false);
     m_ui->m_pGoBtn->setEnabled(false);
@@ -519,7 +519,7 @@ void CSequenceBatchRenderDialog::OnGo()
     else
     {
         // Start a new batch.
-        m_ui->m_pGoBtn->setText("Cancel");
+        m_ui->m_pGoBtn->setText(QObject::tr("Cancel"));
         m_ui->m_pGoBtn->setIcon(QPixmap(":/Trackview/clapperboard_cancel.png"));
         // Inform the movie system that it soon will be in a batch-rendering mode.
         GetIEditor()->GetMovieSystem()->EnableBatchRenderMode(true);

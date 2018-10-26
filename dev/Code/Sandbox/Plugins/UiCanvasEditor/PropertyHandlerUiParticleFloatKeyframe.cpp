@@ -35,7 +35,7 @@ PropertyUiParticleFloatKeyframeCtrl::PropertyUiParticleFloatKeyframeCtrl(QWidget
     layout->setSpacing(2);
 
     QLabel* timeLabel = new QLabel(parent);
-    timeLabel->setText("Time");
+    timeLabel->setText(QObject::tr("Time"));
     timeLabel->setObjectName("Time");
     layout->addWidget(timeLabel);
 
@@ -55,7 +55,7 @@ PropertyUiParticleFloatKeyframeCtrl::PropertyUiParticleFloatKeyframeCtrl(QWidget
     layout->addWidget(m_timeCtrl);
 
     QLabel* multiplierLabel = new QLabel(parent);
-    multiplierLabel->setText("Multiplier");
+    multiplierLabel->setText(QObject::tr("Multiplier"));
     multiplierLabel->setObjectName("Multiplier");
     layout->addWidget(multiplierLabel);
 
@@ -85,7 +85,7 @@ PropertyUiParticleFloatKeyframeCtrl::PropertyUiParticleFloatKeyframeCtrl(QWidget
     stepTangent.second = "Step";
 
     QLabel* inTangentLabel = new QLabel(parent);
-    inTangentLabel->setText("In tangent");
+    inTangentLabel->setText(QObject::tr("In tangent"));
     inTangentLabel->setObjectName("In tangent");
     layoutRow2->addWidget(inTangentLabel);
 
@@ -102,7 +102,7 @@ PropertyUiParticleFloatKeyframeCtrl::PropertyUiParticleFloatKeyframeCtrl(QWidget
     layoutRow2->addWidget(m_inTangentCtrl);
 
     QLabel* outTangentLabel = new QLabel(parent);
-    outTangentLabel->setText("Out tangent");
+    outTangentLabel->setText(QObject::tr("Out tangent"));
     outTangentLabel->setObjectName("Out tangent");
     layoutRow2->addWidget(outTangentLabel);
 

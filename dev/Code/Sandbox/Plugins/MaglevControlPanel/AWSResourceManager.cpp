@@ -521,13 +521,13 @@ void AWSResourceManager::ProcessOutputCreateAdmin(RequestId requestId, const QVa
 
     QDialog loginInfo;
     loginInfo.setWindowFlags(Qt::WindowCloseButtonHint);
-    loginInfo.setWindowTitle("Cloud Gem Portal Administrator Account Creation");
+    loginInfo.setWindowTitle(QObject::tr("Cloud Gem Portal Administrator Account Creation"));
     loginInfo.setMinimumHeight(140);
     loginInfo.setFixedWidth(350);
 
     QVBoxLayout* loginInfoLayout = new QVBoxLayout;
 
-    QLabel helpInfo("Please use the username and password below to log into the site as an administrator.  Do not lose these.");
+    QLabel helpInfo(QObject::tr("Please use the username and password below to log into the site as an administrator.  Do not lose these."));
     helpInfo.setWordWrap(true);
     loginInfoLayout->addWidget(&helpInfo);
 
@@ -537,7 +537,7 @@ void AWSResourceManager::ProcessOutputCreateAdmin(RequestId requestId, const QVa
     content->setTextInteractionFlags(Qt::TextSelectableByMouse);
     loginInfoLayout->addWidget(content);
 
-    QPushButton* createButton = new QPushButton("OK");
+    QPushButton* createButton = new QPushButton(QObject::tr("OK"));
     createButton->setProperty("class", "Primary");
 
     QDialogButtonBox* buttonBox = new QDialogButtonBox;

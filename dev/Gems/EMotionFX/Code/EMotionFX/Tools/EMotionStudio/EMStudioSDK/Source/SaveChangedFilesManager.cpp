@@ -318,7 +318,7 @@ namespace EMStudio
         mSaveDirtyFiles = true;
 
         // update title of the dialog
-        setWindowTitle("Save Changes To Files");
+        setWindowTitle(QObject::tr("Save Changes To Files"));
 
         // set the default size
         resize(1024, 576);
@@ -327,7 +327,7 @@ namespace EMStudio
         QVBoxLayout* vLayout = new QVBoxLayout(this);
 
         // add the top message
-        vLayout->addWidget(new QLabel("Do you want to save changes? The following files have been changed but have not been saved yet:"));
+        vLayout->addWidget(new QLabel(QObject::tr("Do you want to save changes? The following files have been changed but have not been saved yet:")));
 
         // create the lod information table
         mTableWidget = new QTableWidget();
@@ -450,15 +450,15 @@ namespace EMStudio
         QDialogButtonBox* buttonBox = new QDialogButtonBox(buttons);
         if (buttons & QDialogButtonBox::Save)
         {
-            buttonBox->button(QDialogButtonBox::Save)->setText("&Save Selected");
+            buttonBox->button(QDialogButtonBox::Save)->setText(QObject::tr("&Save Selected"));
         }
         if (buttons & QDialogButtonBox::Discard)
         {
-            buttonBox->button(QDialogButtonBox::Discard)->setText("&Discard Changes");
+            buttonBox->button(QDialogButtonBox::Discard)->setText(QObject::tr("&Discard Changes"));
         }
         if (buttons & QDialogButtonBox::Cancel)
         {
-            buttonBox->button(QDialogButtonBox::Cancel)->setText("&Cancel");
+            buttonBox->button(QDialogButtonBox::Cancel)->setText(QObject::tr("&Cancel"));
         }
         vLayout->addWidget(buttonBox);
 

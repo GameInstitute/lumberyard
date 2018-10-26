@@ -43,12 +43,12 @@ CubeEditorPanel::CubeEditorPanel(CubeEditor* pCubeEditor)
 {
     QGridLayout* pGridLayout = new QGridLayout;
 
-    m_pAddButton = new QPushButton("Add");
-    m_pRemoveButton = new QPushButton("Remove");
-    m_pPaintButton = new QPushButton("Paint");
+    m_pAddButton = new QPushButton(QObject::tr("Add"));
+    m_pRemoveButton = new QPushButton(QObject::tr("Remove"));
+    m_pPaintButton = new QPushButton(QObject::tr("Paint"));
     m_pBrushSizeComboBox = new QComboBox;
     m_pSubMatIdComboBox = new QComboBox;
-    m_pMergeSideCheckBox = new QCheckBox("Merge Sides");
+    m_pMergeSideCheckBox = new QCheckBox(QObject::tr("Merge Sides"));
 
     QObject::connect(m_pAddButton, &QPushButton::clicked, this, [ = ] {SelectEditMode(eCubeEditorMode_Add);
         });
@@ -60,9 +60,9 @@ CubeEditorPanel::CubeEditorPanel(CubeEditor* pCubeEditor)
     pGridLayout->addWidget(m_pAddButton, 0, 0, Qt::AlignTop);
     pGridLayout->addWidget(m_pRemoveButton, 0, 1, Qt::AlignTop);
     pGridLayout->addWidget(m_pPaintButton, 0, 2, Qt::AlignTop);
-    pGridLayout->addWidget(new QLabel("Brush Size"), 1, 0, Qt::AlignTop);
+    pGridLayout->addWidget(new QLabel(QObject::tr("Brush Size")), 1, 0, Qt::AlignTop);
     pGridLayout->addWidget(m_pBrushSizeComboBox, 1, 1, 1, 2, Qt::AlignTop);
-    pGridLayout->addWidget(new QLabel("Sub Mat ID"), 2, 0, Qt::AlignTop);
+    pGridLayout->addWidget(new QLabel(QObject::tr("Sub Mat ID")), 2, 0, Qt::AlignTop);
     pGridLayout->addWidget(m_pSubMatIdComboBox, 2, 1, 1, 2, Qt::AlignTop);
     pGridLayout->addWidget(m_pMergeSideCheckBox, 3, 0, 1, 3, Qt::AlignTop);
 

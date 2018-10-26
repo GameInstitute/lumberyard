@@ -65,7 +65,7 @@ bool PropertyRowLocalFrameBase::onContextMenu(QMenu& menu, QPropertyTree* tree)
 
     LocalFrameMenuHandler* handler = new LocalFrameMenuHandler(tree, this);
 
-    QAction* action = menu.addAction("Reset", handler, SLOT(onMenuReset()));
+    QAction* action = menu.addAction(QObject::tr("Reset"), handler, SLOT(onMenuReset()));
 
     tree->addMenuHandler(handler);
     return true;

@@ -100,27 +100,27 @@ namespace EMStudio
         if (GetCommandManager()->GetCurrentSelection().GetNumSelectedActorInstances() > 0)
         {
             // action to reset transformation
-            QAction* resetAction = menu.addAction("Reset Transform");
+            QAction* resetAction = menu.addAction(QObject::tr("Reset Transform"));
 
             // add seperator line
             menu.addSeparator();
 
             // action to unselect
-            QAction* unselectAction = menu.addAction("Unselect All Actor Instances");
+            QAction* unselectAction = menu.addAction(QObject::tr("Unselect All Actor Instances"));
 
             // add seperator line
             menu.addSeparator();
 
             // action for visibility
-            QAction* hideAction     = menu.addAction("Hide Selected Actor Instances");
-            QAction* unhideAction   = menu.addAction("Unhide Selected Actor Instances");
+            QAction* hideAction     = menu.addAction(QObject::tr("Hide Selected Actor Instances"));
+            QAction* unhideAction   = menu.addAction(QObject::tr("Unhide Selected Actor Instances"));
 
             // add seperator line
             menu.addSeparator();
 
             // actions for cloning/removing
-            QAction* cloneAction    = menu.addAction("Clone Selected Actor Instances");
-            QAction* removeAction   = menu.addAction("Remove Selected Actor Instances");
+            QAction* cloneAction    = menu.addAction(QObject::tr("Clone Selected Actor Instances"));
+            QAction* removeAction   = menu.addAction(QObject::tr("Remove Selected Actor Instances"));
 
             // add seperator line
             menu.addSeparator();
@@ -135,8 +135,8 @@ namespace EMStudio
         }
 
         // add actions for loading actors
-        QAction* openAction         = menu.addAction("Open Actor");
-        QAction* mergeAction        = menu.addAction("Merge Actor");
+        QAction* openAction         = menu.addAction(QObject::tr("Open Actor"));
+        QAction* mergeAction        = menu.addAction(QObject::tr("Merge Actor"));
 
         // create recent actors sub menu
         MysticQt::RecentFiles recentActors;
@@ -147,7 +147,7 @@ namespace EMStudio
         menu.addSeparator();
 
         // for opening projects
-        QAction* openProjectAction = menu.addAction("Open Workspace");
+        QAction* openProjectAction = menu.addAction(QObject::tr("Open Workspace"));
 
         // create recent projects sub menu
         MysticQt::RecentFiles recentProjects;
@@ -158,11 +158,11 @@ namespace EMStudio
         menu.addSeparator();
 
         // add actions for actor instance transformations
-        QMenu* modeMenu             = menu.addMenu("Transform");
-        QAction* selectAction       = modeMenu->addAction("Selection Mode");
-        QAction* translateAction    = modeMenu->addAction("Translate");
-        QAction* rotateAction       = modeMenu->addAction("Rotate");
-        QAction* scaleAction        = modeMenu->addAction("Scale");
+        QMenu* modeMenu             = menu.addMenu(QObject::tr("Transform"));
+        QAction* selectAction       = modeMenu->addAction(QObject::tr("Selection Mode"));
+        QAction* translateAction    = modeMenu->addAction(QObject::tr("Translate"));
+        QAction* rotateAction       = modeMenu->addAction(QObject::tr("Rotate"));
+        QAction* scaleAction        = modeMenu->addAction(QObject::tr("Scale"));
 
         // add a separator line
         menu.addSeparator();

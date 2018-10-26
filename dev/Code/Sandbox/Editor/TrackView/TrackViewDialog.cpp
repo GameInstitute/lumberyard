@@ -426,7 +426,7 @@ void CTrackViewDialog::InitToolbar()
     m_viewToolBar = addToolBar("View Toolbar");
     m_viewToolBar->setObjectName("m_viewToolBar");
     m_viewToolBar->setFloatable(false);
-    m_viewToolBar->addWidget(new QLabel("View:"));
+    m_viewToolBar->addWidget(new QLabel(QObject::tr("View:")));
     qaction = m_viewToolBar->addAction(QIcon(":/Trackview/view/tvview-00.png"), tr("Track Editor"));
     qaction->setData(ID_TV_MODE_DOPESHEET);
     qaction->setShortcut(QKeySequence("Ctrl+D"));
@@ -449,7 +449,7 @@ void CTrackViewDialog::InitToolbar()
     m_playToolBar = addToolBar("Play Toolbar");
     m_playToolBar->setObjectName("m_playToolBar");
     m_playToolBar->setFloatable(false);
-    m_playToolBar->addWidget(new QLabel("Play:"));
+    m_playToolBar->addWidget(new QLabel(QObject::tr("Play:")));
     qaction = m_playToolBar->addAction(QIcon(":/Trackview/play/tvplay-00.png"), tr("Go to start of sequence"));
     qaction->setData(ID_TV_JUMPSTART);
     m_actions[ID_TV_JUMPSTART] = qaction;
@@ -2128,7 +2128,7 @@ void CTrackViewDialog::UpdateTracksToolBar()
 
                 name = pAnimNode->GetParamName(paramType);
 
-                QString sToolTipText("Add " + name + " Track");
+                QString sToolTipText(QObject::tr("Add ") + name + QObject::tr(" Track"));
                 QIcon hIcon = m_wndNodesCtrl->GetIconForTrack(pTrack);
                 AddButtonToTracksToolBar(paramType, hIcon, sToolTipText);
             }
@@ -2140,7 +2140,7 @@ void CTrackViewDialog::UpdateTracksToolBar()
 void CTrackViewDialog::ClearTracksToolBar()
 {
     m_tracksToolBar->clear();
-    m_tracksToolBar->addWidget(new QLabel("Tracks:"));
+    m_tracksToolBar->addWidget(new QLabel(QObject::tr("Tracks:")));
 
     m_pNodeForTracksToolBar = NULL;
     m_toolBarParamTypes.clear();

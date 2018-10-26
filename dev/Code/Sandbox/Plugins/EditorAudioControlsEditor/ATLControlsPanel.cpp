@@ -116,7 +116,7 @@ namespace AudioControls
         pLayout->setSpacing(1);
         m_unassignedFilterButton = new QFilterButton(QIcon(":/AudioControlsEditor/Icons/Config_Red_Icon.png"), "", this);
         m_unassignedFilterButton->setChecked(m_showUnassignedControls);
-        m_unassignedFilterButton->setText("Unassigned");
+        m_unassignedFilterButton->setText(QObject::tr("Unassigned"));
         pLayout->addWidget(m_unassignedFilterButton);
         pLayout->setContentsMargins(margin, margin, margin, 0);
         pWidget->setLayout(pLayout);
@@ -124,11 +124,11 @@ namespace AudioControls
         m_filterMenu.addAction(pWidgetAction);
 
         m_pFiltersButton->setMenu(&m_filterMenu);
-        m_pControlTypeFilterButtons[eACET_TRIGGER]->setText("Triggers");
-        m_pControlTypeFilterButtons[eACET_RTPC]->setText("RTPCs");
-        m_pControlTypeFilterButtons[eACET_SWITCH]->setText("Switches");
-        m_pControlTypeFilterButtons[eACET_ENVIRONMENT]->setText("Environments");
-        m_pControlTypeFilterButtons[eACET_PRELOAD]->setText("Preloads");
+        m_pControlTypeFilterButtons[eACET_TRIGGER]->setText(QObject::tr("Triggers"));
+        m_pControlTypeFilterButtons[eACET_RTPC]->setText(QObject::tr("RTPCs"));
+        m_pControlTypeFilterButtons[eACET_SWITCH]->setText(QObject::tr("Switches"));
+        m_pControlTypeFilterButtons[eACET_ENVIRONMENT]->setText(QObject::tr("Environments"));
+        m_pControlTypeFilterButtons[eACET_PRELOAD]->setText(QObject::tr("Preloads"));
         connect(m_pControlTypeFilterButtons[eACET_TRIGGER], SIGNAL(clicked(bool)), this, SLOT(ShowTriggers(bool)));
         connect(m_pControlTypeFilterButtons[eACET_RTPC], SIGNAL(clicked(bool)), this, SLOT(ShowRTPCs(bool)));
         connect(m_pControlTypeFilterButtons[eACET_SWITCH], SIGNAL(clicked(bool)), this, SLOT(ShowSwitches(bool)));
@@ -603,16 +603,16 @@ namespace AudioControls
                 QStandardItem* pItem = m_pTreeModel->itemFromIndex(index);
                 if (pItem)
                 {
-                    messageBox.setText("Are you sure you want to delete \"" + pItem->text() + "\"?");
+                    messageBox.setText(QObject::tr("Are you sure you want to delete \"") + pItem->text() + "\"?");
                 }
             }
             else
             {
-                messageBox.setText("Are you sure you want to delete the selected controls and folders?");
+                messageBox.setText(QObject::tr("Are you sure you want to delete the selected controls and folders?"));
             }
             messageBox.setStandardButtons(QMessageBox::Yes | QMessageBox::No);
             messageBox.setDefaultButton(QMessageBox::Yes);
-            messageBox.setWindowTitle("Audio Controls Editor");
+            messageBox.setWindowTitle(QObject::tr("Audio Controls Editor"));
             if (messageBox.exec() == QMessageBox::Yes)
             {
                 CUndo undo("Audio Control Removed");

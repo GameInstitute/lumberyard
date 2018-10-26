@@ -439,11 +439,11 @@ void AssetImporterWindow::OnInspect()
 {
     AZ::SceneAPI::UI::OverlayWidgetButtonList buttons;
     AZ::SceneAPI::UI::OverlayWidgetButton closeButton;
-    closeButton.m_text = "Close";
+    closeButton.m_text = QObject::tr("Close");
     closeButton.m_triggersPop = true;
     buttons.push_back(&closeButton);
 
-    QLabel* label = new QLabel("Please close the inspector to continue editing the settings.");
+    QLabel* label = new QLabel(QObject::tr("Please close the inspector to continue editing the settings."));
     label->setWordWrap(true);
     label->setAlignment(Qt::AlignCenter);
     m_overlay->PushLayer(label, aznew AZ::SceneAPI::UI::SceneGraphInspectWidget(*m_assetImporterDocument->GetScene()), "Scene Inspector", buttons);
@@ -501,7 +501,7 @@ void AssetImporterWindow::SetTitle(const char* filePath)
             }
             AZStd::string fileName;
             AzFramework::StringFunc::Path::GetFileName(filePath, fileName);
-            converted->setWindowTitle(QString("%1 Settings (PREVIEW) - %2").arg(extension.c_str(), fileName.c_str()));
+            converted->setWindowTitle(QString(QObject::tr("%1 Settings (PREVIEW) - %2")).arg(extension.c_str(), fileName.c_str()));
             break;
         }
         else

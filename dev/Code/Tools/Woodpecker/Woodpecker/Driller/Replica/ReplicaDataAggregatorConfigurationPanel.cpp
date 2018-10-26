@@ -50,13 +50,13 @@ namespace Driller
             switch (static_cast<ReplicaDataConfigurationSettings::ConfigurationDisplayType>(i))
             {
             case ReplicaDataConfigurationSettings::CDT_Frame:
-                unitSelector->addItem("Bytes per Frame");
+                unitSelector->addItem(QObject::tr("Bytes per Frame"));
                 break;
             case ReplicaDataConfigurationSettings::CDT_Second:
-                unitSelector->addItem("Bytes per Second");
+                unitSelector->addItem(QObject::tr("Bytes per Second"));
                 break;
             case ReplicaDataConfigurationSettings::CDT_Minute:
-                unitSelector->addItem("Bytes per Minute");
+                unitSelector->addItem(QObject::tr("Bytes per Minute"));
                 break;
             default:
                 unitSelector->addItem("???");
@@ -135,13 +135,13 @@ namespace Driller
         switch (m_configurationSettings.m_configurationDisplay)
         {
         case ReplicaDataConfigurationSettings::CDT_Frame:
-            unitLabel->setText("Frame");
+            unitLabel->setText(QObject::tr("Frame"));
             break;
         case ReplicaDataConfigurationSettings::CDT_Second:
-            unitLabel->setText("Second");
+            unitLabel->setText(QObject::tr("Second"));
             break;
         case ReplicaDataConfigurationSettings::CDT_Minute:
-            unitLabel->setText("Minute");
+            unitLabel->setText(QObject::tr("Minute"));
             break;
         default:
             unitLabel->setText("???");

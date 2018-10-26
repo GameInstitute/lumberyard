@@ -136,7 +136,7 @@ bool PropertyRowSprite::onContextMenu(QMenu &menu, QPropertyTree* tree)
 {
     QAction* action = nullptr;
 
-    action = menu.addAction("Clear");
+    action = menu.addAction(QObject::tr("Clear"));
     QObject::connect( action,
                         &QAction::triggered,
                         tree,
@@ -147,7 +147,7 @@ bool PropertyRowSprite::onContextMenu(QMenu &menu, QPropertyTree* tree)
 
     int buttonIndex = ( buttonCount() - 1 );
 
-    action = menu.addAction(buttonIcon(tree, buttonIndex--), "Pick Resource...");
+    action = menu.addAction(buttonIcon(tree, buttonIndex--), QObject::tr("Pick Resource..."));
     QObject::connect( action,
                         &QAction::triggered,
                         tree,
@@ -160,7 +160,7 @@ bool PropertyRowSprite::onContextMenu(QMenu &menu, QPropertyTree* tree)
 
     if( buttonIndex >= 0 )
     {
-        action = menu.addAction(buttonIcon(tree, buttonIndex), "Edit");
+        action = menu.addAction(buttonIcon(tree, buttonIndex), QObject::tr("Edit"));
         QObject::connect( action,
                             &QAction::triggered,
                             tree,
@@ -210,7 +210,7 @@ bool PropertyRowSprite::showFilePicker(const PropertyActivationEvent& ev)
     // Open the file picker and get the filename the user selects
     // (QFileDialog can traverse symlinks and shortcuts)
     QString filename = QFileDialog::getOpenFileName(ev.tree,
-                                                    "Choose file",
+		QObject::tr("Choose file"),
                                                     QString(),
                                                     "*.tif;;*.sprite" );
 

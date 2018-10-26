@@ -242,7 +242,7 @@ namespace AZ
             {
                 if (m_objects.size() >= m_capSize)
                 {
-                    QMessageBox::warning(this, "Cap reached", QString("The group container reached its cap of %1 entries.\nPlease remove groups to free up space.").
+                    QMessageBox::warning(this, QObject::tr("Cap reached"), QString(QObject::tr("The group container reached its cap of %1 entries.\nPlease remove groups to free up space.")).
                         arg(m_capSize));
                     return;
                 }
@@ -253,7 +253,7 @@ namespace AZ
             {
                 if (m_classTypeIds.size() == 0)
                 {
-                    ui->m_addButton->setText("No types for this group");
+                    ui->m_addButton->setText(QObject::tr("No types for this group"));
                 }
                 else if (m_classTypeIds.size() == 1)
                 {

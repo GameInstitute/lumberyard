@@ -18,7 +18,7 @@
 CToolbarLibraryItem::CToolbarLibraryItem(QMainWindow* mainWindow)
     : IToolbar(mainWindow, TO_CSTR(CToolbarLibraryItem))
 {
-    setWindowTitle("Item");
+    setWindowTitle(QObject::tr("Item"));
 }
 
 CToolbarLibraryItem::~CToolbarLibraryItem()
@@ -29,11 +29,11 @@ void CToolbarLibraryItem::init()
 {
     QAction* action = nullptr;
 
-    action = createAction("actionItemAdd",              "Add",              "Add new item",                     "itemAdd.png");
-    action = createAction("actionItemClone",            "Clone",            "Clone library item",               "itemClone.png");
-    action = createAction("actionItemRemove",           "Remove",           "Remove item",                      "itemRemove.png");
-    action = createAction("actionItemAssign",           "Assign",           "Assign item to selected objects",  "itemAssign.png");
+    action = createAction("actionItemAdd", QObject::tr("Add"), QObject::tr("Add new item"),                     "itemAdd.png");
+    action = createAction("actionItemClone", QObject::tr("Clone"), QObject::tr("Clone library item"),               "itemClone.png");
+    action = createAction("actionItemRemove", QObject::tr("Remove"), QObject::tr("Remove item"),                      "itemRemove.png");
+    action = createAction("actionItemAssign", QObject::tr("Assign"), QObject::tr("Assign item to selected objects"),  "itemAssign.png");
     insertSeparator(action);
-    action = createAction("actionItemGetProperties",    "Get Properties",   "Get properties from selection",    "itemGetProperties.png");
-    action = createAction("actionItemReload",           "Reload",           "Reload item",                      "itemReload.png");
+    action = createAction("actionItemGetProperties", QObject::tr("Get Properties"), QObject::tr("Get properties from selection"),    "itemGetProperties.png");
+    action = createAction("actionItemReload", QObject::tr("Reload"), QObject::tr("Reload item"),                      "itemReload.png");
 }

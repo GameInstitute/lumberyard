@@ -106,7 +106,7 @@ namespace EMStudio
 
         // create layout for the edit field
         /*QHBoxLayout* editLayout = new QHBoxLayout();
-        editLayout->addWidget( new QLabel("Name:") );
+        editLayout->addWidget( new QLabel(QObject::tr("Name:")) );
         editLayout->addWidget( mNodeGroupNameEdit );
         editLayout->addWidget( mEnabledOnDefaultCheckbox );*/
 

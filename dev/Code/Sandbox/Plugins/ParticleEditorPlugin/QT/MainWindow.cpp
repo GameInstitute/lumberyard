@@ -1245,7 +1245,7 @@ void CMainWindow::LOD_PopulateTitleBarMenu(QMenu* toAddTo)
     ADD_ACTION(menu, "Add level", DockableLODPanel::TitleMenuActions::AddLevel);
 
     //Arrange
-    QMenu* arrangeMenu = menu->addMenu("Arrange");
+    QMenu* arrangeMenu = menu->addMenu(QObject::tr("Arrange"));
 
     //Arrange-> Move up
     ADD_ACTION(arrangeMenu, "Move Up", DockableLODPanel::TitleMenuActions::MoveUp);
@@ -1272,7 +1272,7 @@ void CMainWindow::LOD_PopulateTitleBarMenu(QMenu* toAddTo)
     ADD_ACTION(menu, "Remove all", DockableLODPanel::TitleMenuActions::RemoveAll);
 
     //Close
-    action = menu->addAction("Close");
+    action = menu->addAction(QObject::tr("Close"));
     connect(action, &QAction::triggered, this, [=](){ OnActionViewHideLOD(); });
 #undef ADD_ACTION
 }
@@ -1295,7 +1295,7 @@ void CMainWindow::Library_PopulateItemContextMenu(CLibraryTreeViewItem* focusedI
     action->setDisabled(focusedItem->IsVirtualItem());
     toAddTo->addSeparator();
     //ADD NEW EMITTER/FOLDER//////////////////////////////////////////////////
-    QMenu* submenu = new ContextMenu("Add New", toAddTo);
+    QMenu* submenu = new ContextMenu(QObject::tr("Add New"), toAddTo);
     toAddTo->addMenu(submenu);
     action = m_libraryTreeViewDock->GetMenuAction(DockableLibraryPanel::ItemActions::ADD_ITEM, itemName, tr("Add Particle"), false, toAddTo, Qt::QueuedConnection);
     submenu->addAction(action);
@@ -2391,7 +2391,7 @@ void CMainWindow::Library_PopulateLibraryContextMenu(ContextMenu* toAddTo, const
 
     QMenu* menu = toAddTo;
     //ADD NEW EMITTER/FOLDER//////////////////////////////////////////////////
-    QMenu* submenu = new ContextMenu("Add New", toAddTo);
+    QMenu* submenu = new ContextMenu(QObject::tr("Add New"), toAddTo);
     toAddTo->addMenu(submenu);
     submenu->addAction(m_libraryTreeViewDock->GetMenuAction(DockableLibraryPanel::ItemActions::ADD_ITEM, libName, tr("Add Particle"), false, submenu, Qt::QueuedConnection));
     submenu->addAction(m_libraryTreeViewDock->GetMenuAction(DockableLibraryPanel::ItemActions::ADD_FOLDER, libName, tr("Add Folder"), false, submenu, Qt::QueuedConnection));

@@ -39,7 +39,7 @@ namespace EMStudio
 
     void MotionEventPresetCreateDialog::Init(const char* eventType, const char* parameter, const char* mirrorType, uint32 color)
     {
-        setWindowTitle("Motion Event Preset Creation");
+        setWindowTitle(QObject::tr("Motion Event Preset Creation"));
 
         QVBoxLayout* verticalLayout = new QVBoxLayout();
         verticalLayout->setSpacing(5);
@@ -50,10 +50,10 @@ namespace EMStudio
         gridLayout->setSpacing(2);
         gridLayout->setMargin(0);
 
-        gridLayout->addWidget(new QLabel("Event Type:"),        0, 0, Qt::AlignRight);
-        gridLayout->addWidget(new QLabel("Event Mirror Type:"), 1, 0, Qt::AlignRight);
-        gridLayout->addWidget(new QLabel("Event Parameter:"),   2, 0, Qt::AlignRight);
-        gridLayout->addWidget(new QLabel("Color:"),             3, 0, Qt::AlignRight);
+        gridLayout->addWidget(new QLabel(QObject::tr("Event Type:")),        0, 0, Qt::AlignRight);
+        gridLayout->addWidget(new QLabel(QObject::tr("Event Mirror Type:")), 1, 0, Qt::AlignRight);
+        gridLayout->addWidget(new QLabel(QObject::tr("Event Parameter:")),   2, 0, Qt::AlignRight);
+        gridLayout->addWidget(new QLabel(QObject::tr("Color:")),             3, 0, Qt::AlignRight);
 
         mEventType = new QLineEdit(eventType);
         gridLayout->addWidget(mEventType, 0, 1);
@@ -71,8 +71,8 @@ namespace EMStudio
         verticalLayout->addLayout(gridLayout);
 
         QHBoxLayout* buttonsLayout = new QHBoxLayout();
-        QPushButton* createButton = new QPushButton("Create");
-        QPushButton* cancelButton = new QPushButton("Cancel");
+        QPushButton* createButton = new QPushButton(QObject::tr("Create"));
+        QPushButton* cancelButton = new QPushButton(QObject::tr("Cancel"));
         connect(createButton, SIGNAL(clicked()), this, SLOT(OnCreateButton()));
         connect(cancelButton, SIGNAL(clicked()), this, SLOT(reject()));
         buttonsLayout->addWidget(createButton);
@@ -89,7 +89,7 @@ namespace EMStudio
     {
         if (mEventType->text().length() == 0)
         {
-            QMessageBox::critical(this, "Missing Information", "Please enter at least an event type name.");
+            QMessageBox::critical(this, QObject::tr("Missing Information"), QObject::tr("Please enter at least an event type name."));
             return;
         }
 

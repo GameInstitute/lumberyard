@@ -74,12 +74,12 @@ namespace EMStudio
         layout->setMargin(0);
         setLayout(layout);
 
-        mMotionRetargetingButton = new QCheckBox("Use Motion Retargeting");
+        mMotionRetargetingButton = new QCheckBox(QObject::tr("Use Motion Retargeting"));
         layout->addWidget(mMotionRetargetingButton);
         connect(mMotionRetargetingButton, SIGNAL(clicked()), this, SLOT(UpdateMotions()));
 
-        mRenderMotionBindPose = new QCheckBox("Render Motion Bind Pose");
-        mRenderMotionBindPose->setToolTip("Render motion bind pose of the currently selected motion for the selected actor instances");
+        mRenderMotionBindPose = new QCheckBox(QObject::tr("Render Motion Bind Pose"));
+        mRenderMotionBindPose->setToolTip(QObject::tr("Render motion bind pose of the currently selected motion for the selected actor instances"));
         mRenderMotionBindPose->setChecked(false);
         layout->addWidget(mRenderMotionBindPose);
 
@@ -103,7 +103,7 @@ namespace EMStudio
         /*QHBoxLayout* retargetNodeLayout = new QHBoxLayout();
         retargetNodeLayout->setMargin(0);
 
-        QLabel* rootNodeLabel = new QLabel("Retarget Root Node:");
+        QLabel* rootNodeLabel = new QLabel(QObject::tr("Retarget Root Node:"));
         retargetNodeLayout->addWidget( rootNodeLabel, 0, Qt::AlignLeft );
 
         mRetargetingNode = new MysticQt::LinkWidget( mMotionWindowPlugin->GetDefaultNodeSelectionLabelText() );

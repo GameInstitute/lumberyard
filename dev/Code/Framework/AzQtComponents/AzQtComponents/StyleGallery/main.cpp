@@ -63,9 +63,9 @@ QToolBar * toolBar()
     t->addWidget(tble);
 
     auto combo = new QComboBox();
-    combo->addItem("Test1");
-    combo->addItem("Test3");
-    combo->addItem("Selection,Area");
+    combo->addItem(QObject::tr("Test1"));
+    combo->addItem(QObject::tr("Test3"));
+    combo->addItem(QObject::tr("Selection,Area"));
     t->addWidget(combo);
 
     const QStringList iconNames = {
@@ -122,9 +122,9 @@ QToolBar * toolBar()
     }
 
     combo = new MyComboBox();
-    combo->addItem("Test1");
-    combo->addItem("Test3");
-    combo->addItem("Selection,Area");
+    combo->addItem(QObject::tr("Test1"));
+    combo->addItem(QObject::tr("Test3"));
+    combo->addItem(QObject::tr("Selection,Area"));
     t->addWidget(combo);
 
     return t;
@@ -159,11 +159,11 @@ static void addMenu(QMainWindow *w, const QString &name)
     auto action = w->menuBar()->addAction(name);
     auto menu = new QMenu();
     action->setMenu(menu);
-    menu->addAction("Item 1");
-    menu->addAction("Item 2");
-    menu->addAction("Item 3");
-    menu->addAction("Longer item 4");
-    menu->addAction("Longer item 5");
+    menu->addAction(QObject::tr("Item 1"));
+    menu->addAction(QObject::tr("Item 2"));
+    menu->addAction(QObject::tr("Item 3"));
+    menu->addAction(QObject::tr("Longer item 4"));
+    menu->addAction(QObject::tr("Longer item 5"));
 }
 
 int main(int argv, char **argc)
@@ -179,7 +179,7 @@ int main(int argv, char **argc)
 
     auto wrapper = new AzQtComponents::WindowDecorationWrapper();
     QMainWindow *w = new MainWindow();
-    w->setWindowTitle("Component Gallery");
+    w->setWindowTitle(QObject::tr("Component Gallery"));
     auto widget = new MainWidget(w);
     w->resize(550, 900);
     w->setMinimumWidth(500);
@@ -189,14 +189,14 @@ int main(int argv, char **argc)
     w->setWindowFlags(w->windowFlags() | Qt::WindowStaysOnTopHint);
     w->show();
 
-    auto action = w->menuBar()->addAction("Menu 1");
+    auto action = w->menuBar()->addAction(QObject::tr("Menu 1"));
 
     auto fileMenu = new QMenu();
     action->setMenu(fileMenu);
-    auto openDock = fileMenu->addAction("Open dockwidget");
+    auto openDock = fileMenu->addAction(QObject::tr("Open dockwidget"));
     QObject::connect(openDock, &QAction::triggered, w, [&w] {
         auto dock = new AzQtComponents::StyledDockWidget(QLatin1String("Amazon Lumberyard"), w);
-        auto button = new QPushButton("Click to dock");
+        auto button = new QPushButton(QObject::tr("Click to dock"));
         auto wid = new QWidget();
         auto widLayout = new QVBoxLayout(wid);
         widLayout->addWidget(button);
@@ -212,22 +212,22 @@ int main(int argv, char **argc)
     });
 
 
-    QAction* newAction = fileMenu->addAction("Test StyledDetailsTableView");
+    QAction* newAction = fileMenu->addAction(QObject::tr("Test StyledDetailsTableView"));
     newAction->setShortcut(QKeySequence::Delete);
     QObject::connect(newAction, &QAction::triggered, w, [w]() {
         QDialog temp(w);
-        temp.setWindowTitle("StyleTableWidget Test");
+        temp.setWindowTitle(QObject::tr("StyleTableWidget Test"));
 
         QVBoxLayout* layout = new QVBoxLayout(&temp);
 
         AzQtComponents::StyledDetailsTableModel* tableModel = new AzQtComponents::StyledDetailsTableModel();
-        tableModel->AddColumn("Status", AzQtComponents::StyledDetailsTableModel::StatusIcon);
-        tableModel->AddColumn("Platform");
-        tableModel->AddColumn("Message");
-        tableModel->AddColumnAlias("message", "Message");
+        tableModel->AddColumn(QObject::tr("Status"), AzQtComponents::StyledDetailsTableModel::StatusIcon);
+        tableModel->AddColumn(QObject::tr("Platform"));
+        tableModel->AddColumn(QObject::tr("Message"));
+        tableModel->AddColumnAlias("message", QObject::tr("Message"));
 
-        tableModel->AddPrioritizedKey("Data3");
-        tableModel->AddDeprioritizedKey("Data1");
+        tableModel->AddPrioritizedKey(QObject::tr("Data3"));
+        tableModel->AddDeprioritizedKey(QObject::tr("Data1"));
 
         auto table = new AzQtComponents::StyledDetailsTableView();
         table->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
@@ -235,31 +235,31 @@ int main(int argv, char **argc)
 
         {
             AzQtComponents::StyledDetailsTableModel::TableEntry entry;
-            entry.Add("Message", "A very very long first message. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et maximus tortor, ac commodo ante. Maecenas porta posuere mauris, vel consectetur arcu ornare interdum. Praesent rhoncus consequat neque, non volutpat mauris cursus a. Proin a nisl quis dui consectetur malesuada a et diam. Integer finibus luctus nibh nec cursus.");
-            entry.Add("Platform", "PC");
-            entry.Add("Status", AzQtComponents::StyledDetailsTableModel::StatusSuccess);
+            entry.Add(QObject::tr("Message"), QObject::tr("A very very long first message. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et maximus tortor, ac commodo ante. Maecenas porta posuere mauris, vel consectetur arcu ornare interdum. Praesent rhoncus consequat neque, non volutpat mauris cursus a. Proin a nisl quis dui consectetur malesuada a et diam. Integer finibus luctus nibh nec cursus."));
+            entry.Add(QObject::tr("Platform"), "PC");
+            entry.Add(QObject::tr("Status"), AzQtComponents::StyledDetailsTableModel::StatusSuccess);
             tableModel->AddEntry(entry);
         }
 
         {
             AzQtComponents::StyledDetailsTableModel::TableEntry entry;
-            entry.Add("Message", "Second message. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et maximus tortor, ac commodo ante. Maecenas porta posuere mauris, vel consectetur arcu ornare interdum. Praesent rhoncus consequat neque, non volutpat mauris cursus a. Proin a nisl quis dui consectetur malesuada a et diam. Integer finibus luctus nibh nec cursus.");
-            entry.Add("Platform", "PC");
-            entry.Add("Status", AzQtComponents::StyledDetailsTableModel::StatusError);
-            entry.Add("Data1", "Deprioritized item.");
-            entry.Add("Data3", "Prioritized item.");
+            entry.Add(QObject::tr("Message"), QObject::tr("Second message. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et maximus tortor, ac commodo ante. Maecenas porta posuere mauris, vel consectetur arcu ornare interdum. Praesent rhoncus consequat neque, non volutpat mauris cursus a. Proin a nisl quis dui consectetur malesuada a et diam. Integer finibus luctus nibh nec cursus."));
+            entry.Add(QObject::tr("Platform"), "PC");
+            entry.Add(QObject::tr("Status"), AzQtComponents::StyledDetailsTableModel::StatusError);
+            entry.Add(QObject::tr("Data1"), QObject::tr("Deprioritized item."));
+            entry.Add(QObject::tr("Data3"), QObject::tr("Prioritized item."));
             tableModel->AddEntry(entry);
         }
 
         for (int i = 0; i < 4; i++)
         {
             AzQtComponents::StyledDetailsTableModel::TableEntry entry;
-            entry.Add("message", "Third message");
-            entry.Add("Status", AzQtComponents::StyledDetailsTableModel::StatusWarning);
-            entry.Add("Platform", "PC");
-            entry.Add("Index1", "A smaller detail.");
-            entry.Add("Index2", "Another small detail.");
-            entry.Add("Index3", "A final small detail.");
+            entry.Add("message", QObject::tr("Third message"));
+            entry.Add(QObject::tr("Status"), AzQtComponents::StyledDetailsTableModel::StatusWarning);
+            entry.Add(QObject::tr("Platform"), "PC");
+            entry.Add(QObject::tr("Index1"), QObject::tr("A smaller detail."));
+            entry.Add(QObject::tr("Index2"), QObject::tr("Another small detail."));
+            entry.Add(QObject::tr("Index3"), QObject::tr("A final small detail."));
             tableModel->AddEntry(entry);
         }
 
@@ -268,15 +268,15 @@ int main(int argv, char **argc)
         temp.exec();
     });
 
-    QAction* refreshAction = fileMenu->addAction("Refresh Stylesheet");
+    QAction* refreshAction = fileMenu->addAction(QObject::tr("Refresh Stylesheet"));
     QObject::connect(refreshAction, &QAction::triggered, refreshAction, [&stylesheet, &app]() {
         stylesheet.Refresh(&app);
     });
 
 
-    addMenu(w, "Menu 2");
-    addMenu(w, "Menu 3");
-    addMenu(w, "Menu 4");
+    addMenu(w, QObject::tr("Menu 2"));
+    addMenu(w, QObject::tr("Menu 3"));
+    addMenu(w, QObject::tr("Menu 4"));
 
     w->addToolBar(toolBar());
 

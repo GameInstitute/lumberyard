@@ -51,10 +51,10 @@ namespace CharacterTool
         toolbar->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
         toolbar->setFloatable(false);
         {
-            m_actionShowGrid = toolbar->addAction(QIcon("Editor/Icons/animation/grid.png"), "Show Grid");
+            m_actionShowGrid = toolbar->addAction(QIcon("Editor/Icons/animation/grid.png"), QObject::tr("Show Grid"));
             m_actionShowGrid->setCheckable(true);
             m_actionShowGrid->setChecked(true);
-            EXPECTED(connect(toolbar->addAction("Reset View"), SIGNAL(triggered()), this, SLOT(OnResetView())));
+            EXPECTED(connect(toolbar->addAction(QObject::tr("Reset View")), SIGNAL(triggered()), this, SLOT(OnResetView())));
 
             QWidget* spacer = new QWidget();
             spacer->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Preferred);

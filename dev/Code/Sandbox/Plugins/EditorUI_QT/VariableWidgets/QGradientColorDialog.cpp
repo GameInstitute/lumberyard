@@ -42,7 +42,7 @@ QGradientColorDialog::QGradientColorDialog(QWidget* parent,
     , cancelButton(this)
     , sessionStateLoaded(false)
 {
-    setWindowTitle("Gradient Editor");
+    setWindowTitle(QObject::tr("Gradient Editor"));
     //changed minimum width to account for clipping of text on buttons when resolution was lower
     setMinimumWidth(475);
     gradientSelectorWidget = new QGradientSelectorWidget(this);
@@ -61,7 +61,7 @@ QGradientColorDialog::QGradientColorDialog(QWidget* parent,
 
     m_gradientLineAction = new QWidgetAction(m_gradientmenu);
     m_gradientLineAction->setDefaultWidget(m_gradientLine);
-    m_gradientAddBtn->setText("Add to Library");
+    m_gradientAddBtn->setText(QObject::tr("Add to Library"));
     m_gradientAddAction = new QWidgetAction(m_gradientmenu);
     m_gradientAddAction->setDefaultWidget(m_gradientAddBtn);
 
@@ -93,7 +93,7 @@ QGradientColorDialog::QGradientColorDialog(QWidget* parent,
     //@eric - conffx
 
     localtionLabel = new QLabel(this);
-    localtionLabel->setText("Location");
+    localtionLabel->setText(QObject::tr("Location"));
     localtionLabel->setMinimumWidth(30);
     localtionLabel->setSizePolicy(QSizePolicy::Minimum, QSizePolicy::Maximum);
 

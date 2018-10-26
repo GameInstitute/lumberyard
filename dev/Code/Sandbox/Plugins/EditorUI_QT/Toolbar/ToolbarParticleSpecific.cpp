@@ -18,7 +18,7 @@
 CToolbarParticleSpecific::CToolbarParticleSpecific(QMainWindow* mainWindow)
     : IToolbar(mainWindow, TO_CSTR(CToolbarParticleSpecific))
 {
-    setWindowTitle("Particle Specific");
+    setWindowTitle(QObject::tr("Particle Specific"));
 }
 
 CToolbarParticleSpecific::~CToolbarParticleSpecific()
@@ -27,6 +27,6 @@ CToolbarParticleSpecific::~CToolbarParticleSpecific()
 
 void CToolbarParticleSpecific::init()
 {
-    createAction("actionParticleSpecialReset",      "Reset",        "Reset item to default",                "particleSpecialReset.png");
-    createAction("actionParticleSpecialActivate",   "Activate",     "Enable/Disable item and all children", "particleSpecialActivate.png");
+    createAction("actionParticleSpecialReset", QObject::tr("Reset"), QObject::tr("Reset item to default"),                "particleSpecialReset.png");
+    createAction("actionParticleSpecialActivate", QObject::tr("Activate"), QObject::tr("Enable/Disable item and all children"), "particleSpecialActivate.png");
 }

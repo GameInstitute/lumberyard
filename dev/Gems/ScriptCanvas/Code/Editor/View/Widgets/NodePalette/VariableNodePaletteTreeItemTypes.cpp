@@ -89,7 +89,7 @@ namespace ScriptCanvasEditor
     GetVariableNodePaletteTreeItem::GetVariableNodePaletteTreeItem()
         : DraggableNodePaletteTreeItem("Get Variable", ScriptCanvasEditor::AssetEditorId)
     {
-        SetToolTip("After specifying a variable name, this node will expose output slots that return the specified variable's values.\nVariable names must begin with # (for example, #MyVar).");
+        SetToolTip(QObject::tr("After specifying a variable name, this node will expose output slots that return the specified variable's values.\nVariable names must begin with # (for example, #MyVar)."));
     }
 
     GetVariableNodePaletteTreeItem::GetVariableNodePaletteTreeItem(const ScriptCanvas::VariableId& variableId, const AZ::EntityId& scriptCanvasGraphId)
@@ -182,7 +182,7 @@ namespace ScriptCanvasEditor
     SetVariableNodePaletteTreeItem::SetVariableNodePaletteTreeItem()
         : GraphCanvas::DraggableNodePaletteTreeItem("Set Variable", ScriptCanvasEditor::AssetEditorId)
     {
-        SetToolTip("This node changes a variable's values according to the data connected to the input slots");
+        SetToolTip(QObject::tr("This node changes a variable's values according to the data connected to the input slots"));
     }
 
     SetVariableNodePaletteTreeItem::SetVariableNodePaletteTreeItem(const ScriptCanvas::VariableId& variableId, const AZ::EntityId& scriptCanvasGraphId)

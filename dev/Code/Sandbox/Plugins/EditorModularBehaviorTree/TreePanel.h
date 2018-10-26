@@ -72,13 +72,13 @@ struct UnsavedChangesDialog
     UnsavedChangesDialog()
         : result(Cancel)
     {
-        setWindowTitle("Behavior Tree Editor");
+        setWindowTitle(QObject::tr("Behavior Tree Editor"));
 
-        QLabel* label = new QLabel("There are unsaved changes. Do you want to save them?");
+        QLabel* label = new QLabel(QObject::tr("There are unsaved changes. Do you want to save them?"));
 
-        QPushButton* yesButton = new QPushButton("Yes");
-        QPushButton* noButton = new QPushButton("No");
-        QPushButton* cancelButton = new QPushButton("Cancel");
+        QPushButton* yesButton = new QPushButton(QObject::tr("Yes"));
+        QPushButton* noButton = new QPushButton(QObject::tr("No"));
+		QPushButton* cancelButton = new QPushButton(QObject::tr("Cancel"));
 
         QGridLayout* gridLayout = new QGridLayout();
         gridLayout->addWidget(label, 0, 0);

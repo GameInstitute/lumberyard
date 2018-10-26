@@ -22,7 +22,7 @@ CommandCanvasPropertiesChange::CommandCanvasPropertiesChange(UndoStack* stack,
     , m_redoXml(redoXml)
     , m_editorWindow(editorWindow)
 {
-    setText("properties change");
+    setText(QObject::tr("properties change"));
 }
 
 void CommandCanvasPropertiesChange::undo()

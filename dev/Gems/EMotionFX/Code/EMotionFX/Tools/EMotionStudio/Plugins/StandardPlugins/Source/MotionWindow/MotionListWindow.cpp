@@ -45,7 +45,7 @@ namespace EMStudio
         : QDialog(parent)
     {
         // set the window title
-        setWindowTitle("Remove Motions Failed");
+        setWindowTitle(QObject::tr("Remove Motions Failed"));
 
         // resize the window
         resize(720, 405);
@@ -54,7 +54,7 @@ namespace EMStudio
         QVBoxLayout* layout = new QVBoxLayout();
 
         // add the top text
-        layout->addWidget(new QLabel("The following motions failed to get removed because they are used by a motion set:"));
+        layout->addWidget(new QLabel(QObject::tr("The following motions failed to get removed because they are used by a motion set:")));
 
         // create the table widget
         QTableWidget* tableWidget = new QTableWidget();
@@ -110,7 +110,7 @@ namespace EMStudio
         layout->addWidget(tableWidget);
 
         // add the button to close the window
-        QPushButton* okButton = new QPushButton("OK");
+        QPushButton* okButton = new QPushButton(QObject::tr("OK"));
         connect(okButton, SIGNAL(clicked()), this, SLOT(accept()));
         QHBoxLayout* buttonLayout = new QHBoxLayout();
         buttonLayout->setAlignment(Qt::AlignRight);
@@ -179,13 +179,13 @@ namespace EMStudio
 
         // add the sub column
         QTableWidgetItem* subHeaderItem = new QTableWidgetItem("Sub");
-        subHeaderItem->setToolTip("Number of submotions");
+        subHeaderItem->setToolTip(QObject::tr("Number of submotions"));
         subHeaderItem->setTextAlignment(Qt::AlignVCenter | Qt::AlignLeft);
         mMotionTable->setHorizontalHeaderItem(2, subHeaderItem);
 
         // add the msub column
         QTableWidgetItem* msubHeaderItem = new QTableWidgetItem("MSub");
-        msubHeaderItem->setToolTip("Number of morph submotions");
+        msubHeaderItem->setToolTip(QObject::tr("Number of morph submotions"));
         msubHeaderItem->setTextAlignment(Qt::AlignVCenter | Qt::AlignLeft);
         mMotionTable->setHorizontalHeaderItem(3, msubHeaderItem);
 
@@ -803,7 +803,7 @@ namespace EMStudio
                 if (!selectedMotionSets.empty())
                 {
                     // add the menu to add in motion sets
-                    QAction* addInSelectedMotionSetsAction = menu.addAction("Add To Selected Motion Sets");
+                    QAction* addInSelectedMotionSetsAction = menu.addAction(QObject::tr("Add To Selected Motion Sets"));
                     addInSelectedMotionSetsAction->setIcon(MysticQt::GetMysticQt()->FindIcon("Images/Icons/Plus.png"));
                     connect(addInSelectedMotionSetsAction, SIGNAL(triggered()), this, SLOT(OnAddMotionsInSelectedMotionSets()));
 
@@ -812,14 +812,14 @@ namespace EMStudio
             }
 
             // add the remove menu
-            QAction* removeAction = menu.addAction("Remove Selected Motions");
+            QAction* removeAction = menu.addAction(QObject::tr("Remove Selected Motions"));
             removeAction->setIcon(MysticQt::GetMysticQt()->FindIcon("Images/Icons/Minus.png"));
             connect(removeAction, SIGNAL(triggered()), this, SLOT(OnRemoveMotionsButtonPressed()));
 
             menu.addSeparator();
 
             // add the save menu
-            QAction* saveAction = menu.addAction("Save Selected Motions");
+            QAction* saveAction = menu.addAction(QObject::tr("Save Selected Motions"));
             saveAction->setIcon(MysticQt::GetMysticQt()->FindIcon("/Images/Menu/FileSave.png"));
             connect(saveAction, SIGNAL(triggered()), this, SLOT(OnSave()));
         }

@@ -33,8 +33,8 @@ namespace CharacterTool
 
         layout->setSpacing(2);
         m_comboSpace = new QComboBox();
-        m_comboSpace->addItem("Global");
-        m_comboSpace->addItem("Local");
+        m_comboSpace->addItem(QObject::tr("Global"));
+        m_comboSpace->addItem(QObject::tr("Local"));
         m_comboSpace->setCurrentIndex(0);
         EXPECTED(connect(m_comboSpace, SIGNAL(currentIndexChanged(int)), this, SLOT(OnSpaceChanged())));
         layout->addWidget(m_comboSpace);

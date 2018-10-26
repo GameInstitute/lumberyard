@@ -50,7 +50,7 @@ CImageHistogramCtrl::CImageHistogramCtrl(QWidget* parent)
     , m_drawMode(new QComboBox(this))
     , m_infoText(new QLabel)
 {
-    setWindowTitle("Image Histogram");
+    setWindowTitle(QObject::tr("Image Histogram"));
 
     m_drawMode->setFocusPolicy(Qt::NoFocus);
     m_drawMode->addItem(tr("Luminosity"),

@@ -80,7 +80,7 @@ void PropertyRowTagList::generateMenu(QMenu& item, QPropertyTree* tree, bool add
     }
 
 
-    QAction* action = item.addAction("Add");
+    QAction* action = item.addAction(QObject::tr("Add"));
     action->setData(QVariant(QString()));
     QObject::connect(action, SIGNAL(triggered()), handler, SLOT(onMenuAddTag()));
 

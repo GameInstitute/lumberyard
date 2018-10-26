@@ -65,8 +65,8 @@ namespace ScriptCanvasDeveloper
 
             QMenu menu;
 
-            QAction* addMock = menu.addAction("Add Mock Node");
-            QAction* addWrapperMock = menu.addAction("Add Wrapper Mock Node");
+            QAction* addMock = menu.addAction(QObject::tr("Add Mock Node"));
+            QAction* addWrapperMock = menu.addAction(QObject::tr("Add Wrapper Mock Node"));
 
             QAction* result = menu.exec(screenPoint);
 

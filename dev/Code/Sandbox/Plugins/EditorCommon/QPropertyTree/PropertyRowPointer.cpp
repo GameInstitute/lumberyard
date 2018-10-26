@@ -297,7 +297,7 @@ bool PropertyRowPointer::onContextMenu(QMenu& menu, QPropertyTree* tree)
     }
     if (!userReadOnly())
     {
-        QMenu* createItem = menu.addMenu("Set");
+        QMenu* createItem = menu.addMenu(QObject::tr("Set"));
         ClassMenuItemAdderRowPointer(this, tree).generateMenu(*createItem, tree->model()->typeStringList(baseType()));
     }
     return PropertyRow::onContextMenu(menu, tree);

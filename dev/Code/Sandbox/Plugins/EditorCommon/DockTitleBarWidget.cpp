@@ -176,7 +176,7 @@ CDockTitleBarWidget::CDockTitleBarWidget(QDockWidget* dockWidget)
     m_floatButton = new CDockWidgetTitleButton(dockWidget);
     m_floatButton->setIcon(QIcon("Editor/Icons/float.png"));
     m_floatButton->setVisible(opt.floatable);
-    m_floatButton->setToolTip("Toggle Floating");
+    m_floatButton->setToolTip(QObject::tr("Toggle Floating"));
     connect(m_floatButton, SIGNAL(clicked()), SLOT(OnFloatButtonPressed()));
     m_layout->addWidget(m_floatButton, 0);
 
@@ -187,7 +187,7 @@ CDockTitleBarWidget::CDockTitleBarWidget(QDockWidget* dockWidget)
     QIcon closeIcon("Editor/Icons/close.png");
     m_closeButton->setIcon(closeIcon);
     m_closeButton->setVisible(opt.closable);
-    m_closeButton->setToolTip("Close");
+    m_closeButton->setToolTip(QObject::tr("Close"));
     connect(m_closeButton, SIGNAL(clicked()), SLOT(OnCloseButtonPressed()));
     m_layout->addWidget(m_closeButton, 0);
 

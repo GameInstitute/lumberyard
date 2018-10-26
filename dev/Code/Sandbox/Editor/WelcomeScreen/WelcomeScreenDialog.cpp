@@ -80,8 +80,8 @@ WelcomeScreenDialog::WelcomeScreenDialog(QWidget* pParent)
     if (!isProjectExternal)
     {
 
-        auto switchProjAction = currentProjectButtonMenu->addAction("Switch project...");
-        auto openSAAction = currentProjectButtonMenu->addAction("Setup Assistant...");
+        auto switchProjAction = currentProjectButtonMenu->addAction(QObject::tr("Switch project..."));
+        auto openSAAction = currentProjectButtonMenu->addAction(QObject::tr("Setup Assistant..."));
 
         QObject::connect(switchProjAction, &QAction::triggered, this, [this] {
             // close this dialog first before attempting to close the editor

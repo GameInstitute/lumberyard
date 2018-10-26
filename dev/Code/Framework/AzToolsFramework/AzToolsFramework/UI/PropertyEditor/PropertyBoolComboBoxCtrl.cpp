@@ -27,8 +27,8 @@ namespace AzToolsFramework
         // and then a slider for the value.
         QHBoxLayout* pLayout = new QHBoxLayout(this);
         m_pComboBox = aznew DHQComboBox(this);
-        m_pComboBox->addItem("False");
-        m_pComboBox->addItem("True");
+        m_pComboBox->addItem(QObject::tr("False"));
+        m_pComboBox->addItem(QObject::tr("True"));
 
         pLayout->setSpacing(4);
         pLayout->setContentsMargins(1, 0, 1, 0);

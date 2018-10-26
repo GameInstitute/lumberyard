@@ -26,14 +26,14 @@ SlicePanel::SlicePanel(SliceTool* pSliceTool)
 {
     QGridLayout* pGridLayout = new QGridLayout;
 
-    QPushButton* pTakeFrontAwayButton = new QPushButton("Take Front Away");
-    QPushButton* pTakeBackAwayButton = new QPushButton("Take Back Away");
-    QPushButton* pClipButton = new QPushButton("Clip");
-    QPushButton* pDivideButton = new QPushButton("Divide");
-    QPushButton* pAlignXButton = new QPushButton("Align X");
-    QPushButton* pAlignYButton = new QPushButton("Align Y");
-    QPushButton* pAlignZButton = new QPushButton("Align Z");
-    QPushButton* pInvertButton = new QPushButton("Invert");
+    QPushButton* pTakeFrontAwayButton = new QPushButton(QObject::tr("Take Front Away"));
+    QPushButton* pTakeBackAwayButton = new QPushButton(QObject::tr("Take Back Away"));
+    QPushButton* pClipButton = new QPushButton(QObject::tr("Clip"));
+    QPushButton* pDivideButton = new QPushButton(QObject::tr("Divide"));
+    QPushButton* pAlignXButton = new QPushButton(QObject::tr("Align X"));
+    QPushButton* pAlignYButton = new QPushButton(QObject::tr("Align Y"));
+    QPushButton* pAlignZButton = new QPushButton(QObject::tr("Align Z"));
+    QPushButton* pInvertButton = new QPushButton(QObject::tr("Invert"));
     m_SliceNumberEdit = new QLineEdit();
     m_SliceNumberEdit->setText(QString("%1").arg(m_pSliceTool->GetNumberSlicePlane()));
 
@@ -41,7 +41,7 @@ SlicePanel::SlicePanel(SliceTool* pSliceTool)
     pGridLayout->addWidget(pTakeBackAwayButton, 0, 3, 1, 3);
     pGridLayout->addWidget(pClipButton, 1, 0, 1, 3);
     pGridLayout->addWidget(pDivideButton, 1, 3, 1, 3);
-    pGridLayout->addWidget(new QLabel("Slice Number"), 2, 0, 1, 2);
+    pGridLayout->addWidget(new QLabel(QObject::tr("Slice Number")), 2, 0, 1, 2);
     pGridLayout->addWidget(m_SliceNumberEdit, 2, 2, 1, 4);
     pGridLayout->addWidget(pAlignXButton, 3, 0, 1, 2);
     pGridLayout->addWidget(pAlignYButton, 3, 2, 1, 2);

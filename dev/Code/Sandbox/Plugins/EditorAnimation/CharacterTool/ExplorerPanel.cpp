@@ -370,7 +370,7 @@ namespace CharacterTool {
             m_filterButton->setCheckable(true);
             m_filterButton->setChecked(m_filterMode);
             m_filterButton->setAutoRaise(true);
-            m_filterButton->setToolTip("Enable Filter Options");
+            m_filterButton->setToolTip(QObject::tr("Enable Filter Options"));
             EXPECTED(connect(m_filterButton, SIGNAL(toggled(bool)), this, SLOT(OnFilterButtonToggled(bool))));
             hlayout->addWidget(m_filterButton, 0);
 
@@ -575,11 +575,11 @@ namespace CharacterTool {
         {
             if (m_explorerRootIndex == 0)
             {
-                m_dockWidget->setWindowTitle("Assets");
+                m_dockWidget->setWindowTitle(QObject::tr("Assets"));
             }
             else
             {
-                m_dockWidget->setWindowTitle(QString("Assets: ") + buttonText);
+                m_dockWidget->setWindowTitle(QString(QObject::tr("Assets: ")) + buttonText);
             }
         }
     }
@@ -743,9 +743,9 @@ namespace CharacterTool {
         bool hasSelection = m_system->document->HasAnimationsSelected();
 
         QMenu menu;
-        menu.addAction("Copy Name", this, SLOT(OnMenuCopyName()));
-        menu.addAction("Copy Path", this, SLOT(OnMenuCopyPath()), QKeySequence("Ctrl+C"));
-        menu.addAction("Paste Selection", this, SLOT(OnMenuPasteSelection()), QKeySequence("Ctrl+V"));
+        menu.addAction(QObject::tr("Copy Name"), this, SLOT(OnMenuCopyName()));
+        menu.addAction(QObject::tr("Copy Path"), this, SLOT(OnMenuCopyPath()), QKeySequence("Ctrl+C"));
+        menu.addAction(QObject::tr("Paste Selection"), this, SLOT(OnMenuPasteSelection()), QKeySequence("Ctrl+V"));
         menu.addSeparator();
 
         vector<ExplorerAction> actions;

@@ -245,30 +245,30 @@ QMenuBar* ResourceManagementView::CreateMenuBar()
     //menuBar->setStyleSheet("border: 1px solid orange");
 
     // File Menu
-    QMenu* fileMenu = menuBar->addMenu("File");
+    QMenu* fileMenu = menuBar->addMenu(QObject::tr("File"));
 
-    m_menuSave = fileMenu->addAction("Save file");
-    m_menuSaveAs = fileMenu->addAction("Save file as...");
+    m_menuSave = fileMenu->addAction(QObject::tr("Save file"));
+    m_menuSaveAs = fileMenu->addAction(QObject::tr("Save file as..."));
     m_menuSaveAs->setVisible(false); // Until implemented
 
 
     // Edit Menu
-    QMenu* editMenu = menuBar->addMenu("Edit");
-    m_menuCut = editMenu->addAction("Cut", nullptr, nullptr, QKeySequence::Cut);
-    m_menuCopy = editMenu->addAction("Copy", nullptr, nullptr, QKeySequence::Copy);
-    m_menuPaste = editMenu->addAction("Paste", nullptr, nullptr, QKeySequence::Paste);
+    QMenu* editMenu = menuBar->addMenu(QObject::tr("Edit"));
+    m_menuCut = editMenu->addAction(QObject::tr("Cut"), nullptr, nullptr, QKeySequence::Cut);
+    m_menuCopy = editMenu->addAction(QObject::tr("Copy"), nullptr, nullptr, QKeySequence::Copy);
+    m_menuPaste = editMenu->addAction(QObject::tr("Paste"), nullptr, nullptr, QKeySequence::Paste);
 
     editMenu->addSeparator();
-    m_menuUndo = editMenu->addAction("Undo", nullptr, nullptr, QKeySequence::Undo);
-    m_menuRedo = editMenu->addAction("Redo", nullptr, nullptr, QKeySequence::Redo);
+    m_menuUndo = editMenu->addAction(QObject::tr("Undo"), nullptr, nullptr, QKeySequence::Undo);
+    m_menuRedo = editMenu->addAction(QObject::tr("Redo"), nullptr, nullptr, QKeySequence::Redo);
 
     editMenu->addSeparator();
-    m_menuSearch = editMenu->addAction("Search", nullptr, nullptr, QKeySequence::Find);
+    m_menuSearch = editMenu->addAction(QObject::tr("Search"), nullptr, nullptr, QKeySequence::Find);
 
-    m_findNextShortcut = editMenu->addAction("Find Next", nullptr, nullptr, QKeySequence(Qt::Key_F3));
-    m_findPrevShortcut = editMenu->addAction("Find Previous", nullptr, nullptr, QKeySequence(Qt::SHIFT + Qt::Key_F3));
-    m_hideSearchShortcut = editMenu->addAction("Hide Search", nullptr, nullptr, QKeySequence(Qt::Key_Escape));
-    m_saveShortcut = editMenu->addAction("Save", nullptr, nullptr, QKeySequence(Qt::CTRL + Qt::Key_S));
+    m_findNextShortcut = editMenu->addAction(QObject::tr("Find Next"), nullptr, nullptr, QKeySequence(Qt::Key_F3));
+    m_findPrevShortcut = editMenu->addAction(QObject::tr("Find Previous"), nullptr, nullptr, QKeySequence(Qt::SHIFT + Qt::Key_F3));
+    m_hideSearchShortcut = editMenu->addAction(QObject::tr("Hide Search"), nullptr, nullptr, QKeySequence(Qt::Key_Escape));
+    m_saveShortcut = editMenu->addAction(QObject::tr("Save"), nullptr, nullptr, QKeySequence(Qt::CTRL + Qt::Key_S));
 
     // add actions to the containing widget so that they get matched when checking for keyboard shortcuts
     addAction(m_menuSearch);
@@ -277,12 +277,12 @@ QMenuBar* ResourceManagementView::CreateMenuBar()
     addAction(m_hideSearchShortcut);
     addAction(m_saveShortcut);
 
-    QMenu* helpMenu = menuBar->addMenu("Help");
+    QMenu* helpMenu = menuBar->addMenu(QObject::tr("Help"));
 
-    QAction* cloudCanvasHelp = helpMenu->addAction("Cloud Canvas documentation");
+    QAction* cloudCanvasHelp = helpMenu->addAction(QObject::tr("Cloud Canvas documentation"));
     QWidget::connect(cloudCanvasHelp, &QAction::triggered, this, &ResourceManagementView::OnMenuCloudCanvasHelp);
 
-    QAction* cloudCanvasForum = helpMenu->addAction("Cloud Canvas forum");
+    QAction* cloudCanvasForum = helpMenu->addAction(QObject::tr("Cloud Canvas forum"));
     QWidget::connect(cloudCanvasForum, &QAction::triggered, this, [](bool checked) { QDesktopServices::openUrl(QUrl(QString("https://gamedev.amazon.com/forums/spaces/133/cloud-canvas.html"))); });
 
     return menuBar;
@@ -351,30 +351,30 @@ void ResourceManagementView::AddToolBar(QHBoxLayout* horizontalLayout)
     AddVerticalSpacer(horizontalLayout);
 
     m_newMenu = new ToolTipMenu {
-        "Add new"
+		QObject::tr("Add new")
     };
 
-    m_menuNewResource = m_newMenu->addAction("Resource");
+    m_menuNewResource = m_newMenu->addAction(QObject::tr("Resource"));
 
-    m_menuNewResourceGroup = m_newMenu->addAction("Resource group...");
+    m_menuNewResourceGroup = m_newMenu->addAction(QObject::tr("Resource group..."));
     m_menuNewResourceGroup->setToolTip(
-        "Define a set of related resources that are needed by the Lumberyard project.");
+		QObject::tr("Define a set of related resources that are needed by the Lumberyard project."));
     QWidget::connect(m_menuNewResourceGroup, &QAction::triggered, this, &ResourceManagementView::OnMenuNewResourceGroup);
 
-    m_menuNewDeployment = m_newMenu->addAction("Deployment...");
+    m_menuNewDeployment = m_newMenu->addAction(QObject::tr("Deployment..."));
     m_menuNewDeployment->setToolTip(
-        "Create an AWS CloudFormation stack for a new deployment.");
+		QObject::tr("Create an AWS CloudFormation stack for a new deployment."));
     QWidget::connect(m_menuNewDeployment, &QAction::triggered, this, &ResourceManagementView::OnMenuNewDeployment);
 
     m_newMenu->addSeparator();
 
-    m_menuNewFile = m_newMenu->addAction("File");
+    m_menuNewFile = m_newMenu->addAction(QObject::tr("File"));
     m_menuNewFile->setToolTip(
-        "Add a new file to the selected code directory.");
+		QObject::tr("Add a new file to the selected code directory."));
 
-    m_menuNewDirectory = m_newMenu->addAction("Directory");
+    m_menuNewDirectory = m_newMenu->addAction(QObject::tr("Directory"));
     m_menuNewDirectory->setToolTip(
-        "Add a new directory to the selected code directory.");
+		QObject::tr("Add a new directory to the selected code directory."));
 
     m_saveButton = new ToolbarButton;
     m_saveButton->setObjectName("SaveButton");
@@ -402,7 +402,7 @@ void ResourceManagementView::AddToolBar(QHBoxLayout* horizontalLayout)
     SetSourceControlState(SourceControlState::NOT_APPLICABLE);
 
     m_validateTemplateButton = new ToolbarButton;
-    m_validateTemplateButton->setText("Validate template");
+    m_validateTemplateButton->setText(QObject::tr("Validate template"));
     m_validateTemplateButton->setVisible(false); // until implemented
     horizontalLayout->addWidget(m_validateTemplateButton);
 }
@@ -417,42 +417,42 @@ void ResourceManagementView::SetSourceControlState(SourceControlState newState, 
     {
         m_sourceControlButton->setEnabled(false);
         m_sourceControlButton->setIcon(QIcon("Editor/Icons/CloudCanvas/source_control_disabled.png"));
-        m_sourceControlButton->setToolTip(tooltipOverride.length() ? tooltipOverride : "Querying source control.");
+        m_sourceControlButton->setToolTip(tooltipOverride.length() ? tooltipOverride : QObject::tr("Querying source control."));
     }
     break;
     case SourceControlState::UNAVAILABLE_CHECK_OUT:
     {
         m_sourceControlButton->setEnabled(false);
         m_sourceControlButton->setIcon(QIcon("Editor/Icons/CloudCanvas/source_control_disabled.png"));
-        m_sourceControlButton->setToolTip(tooltipOverride.length() ? tooltipOverride : "Source control is unavailable.");
+        m_sourceControlButton->setToolTip(tooltipOverride.length() ? tooltipOverride : QObject::tr("Source control is unavailable."));
     }
     break;
     case SourceControlState::ENABLED_CHECK_OUT:
     {
         m_sourceControlButton->setEnabled(true);
         m_sourceControlButton->setIcon(QIcon("Editor/Icons/CloudCanvas/check_out_icon.png"));
-        m_sourceControlButton->setToolTip(tooltipOverride.length() ? tooltipOverride : "Check file out of source control.");
+        m_sourceControlButton->setToolTip(tooltipOverride.length() ? tooltipOverride : QObject::tr("Check file out of source control."));
     }
     break;
     case SourceControlState::DISABLED_CHECK_IN:
     {
         m_sourceControlButton->setEnabled(false);
         m_sourceControlButton->setIcon(QIcon("Editor/Icons/CloudCanvas/check_out_icon.png"));
-        m_sourceControlButton->setToolTip(tooltipOverride.length() ? tooltipOverride : "This file is already editable. Submit changes in your source control tool.");
+        m_sourceControlButton->setToolTip(tooltipOverride.length() ? tooltipOverride : QObject::tr("This file is already editable. Submit changes in your source control tool."));
     }
     break;
     case SourceControlState::DISABLED_ADD:
     {
         m_sourceControlButton->setEnabled(false);
         m_sourceControlButton->setIcon(QIcon("Editor/Icons/CloudCanvas/add_to_source_control.png"));
-        m_sourceControlButton->setToolTip(tooltipOverride.length() ? tooltipOverride : "This file is already editable. Submit changes in your source control tool.");
+        m_sourceControlButton->setToolTip(tooltipOverride.length() ? tooltipOverride : QObject::tr("This file is already editable. Submit changes in your source control tool."));
     }
     break;
     case SourceControlState::ENABLED_ADD:
     {
         m_sourceControlButton->setEnabled(true);
         m_sourceControlButton->setIcon(QIcon("Editor/Icons/CloudCanvas/add_to_source_control.png"));
-        m_sourceControlButton->setToolTip(tooltipOverride.length() ? tooltipOverride : "Add file to source control.");
+        m_sourceControlButton->setToolTip(tooltipOverride.length() ? tooltipOverride : QObject::tr("Add file to source control."));
     }
     break;
     case SourceControlState::NOT_APPLICABLE:
@@ -542,7 +542,7 @@ void ResourceManagementView::CreateSearchFrame()
 
     m_searchFrame->setMinimumWidth(cSearchFrameWidth);
 
-    m_searchLabel = new QLabel("Find:");
+    m_searchLabel = new QLabel(QObject::tr("Find:"));
     searchLayout->addWidget(m_searchLabel, 0, Qt::AlignRight);
 
     m_editSearchBox = new QLineEdit;
@@ -552,27 +552,27 @@ void ResourceManagementView::CreateSearchFrame()
     m_clearSearchBox = new QPushButton();
     m_clearSearchBox->setIcon(QIcon("Editor/Icons/CloudCanvas/clear_search_box.png"));
     m_clearSearchBox->setIconSize(QSize(11, 11));
-    m_clearSearchBox->setToolTip("Clear your search.");
+    m_clearSearchBox->setToolTip(QObject::tr("Clear your search."));
     m_clearSearchBox->setFlat(true);
     m_clearSearchBox->setFixedSize(QSize(11, 11));
     m_clearSearchBox->setVisible(false);
 
     searchLayout->addWidget(m_clearSearchBox);
 
-    m_findPrevious = new QPushButton("Previous");
-    m_findPrevious->setToolTip("The keyboard shortcut is SHIFT + F3.");
+    m_findPrevious = new QPushButton(QObject::tr("Previous"));
+    m_findPrevious->setToolTip(QObject::tr("The keyboard shortcut is SHIFT + F3."));
     searchLayout->addWidget(m_findPrevious);
     m_findPrevious->setDisabled(true);
 
-    m_findNext = new QPushButton("Next");
-    m_findNext->setToolTip("The keyboard shortcut is F3.");
+    m_findNext = new QPushButton(QObject::tr("Next"));
+    m_findNext->setToolTip(QObject::tr("The keyboard shortcut is F3."));
     searchLayout->addWidget(m_findNext);
     m_findNext->setDisabled(true);
 
     m_hideSearchBox = new QPushButton();
     m_hideSearchBox->setIcon(QIcon("Editor/Icons/CloudCanvas/clear_search_box.png"));
     m_hideSearchBox->setIconSize(QSize(11, 11));
-    m_hideSearchBox->setToolTip("Hide search function.");
+    m_hideSearchBox->setToolTip(QObject::tr("Hide search function."));
     m_hideSearchBox->setFlat(true);
     m_hideSearchBox->setFixedSize(QSize(11, 11));
     searchLayout->addWidget(m_hideSearchBox);
@@ -1387,12 +1387,12 @@ bool ResourceManagementView::UpdateStack(const QSharedPointer<IStackStatusModel>
     dialog.AddSpanningWidgetRow(&messageLabel);
 
     QCheckBox confirmDeletionCheckBox{};
-    confirmDeletionCheckBox.setText("It is OK that this will permamently DELETE resources.");
+    confirmDeletionCheckBox.setText(QObject::tr("It is OK that this will permamently DELETE resources."));
     confirmDeletionCheckBox.setEnabled(false);
     dialog.AddSpanningWidgetRow(&confirmDeletionCheckBox);
 
     QCheckBox confirmSecurityCheckBox{};
-    confirmSecurityCheckBox.setText("It is OK that this will impact resource SECURITY.");
+    confirmSecurityCheckBox.setText(QObject::tr("It is OK that this will impact resource SECURITY."));
     confirmSecurityCheckBox.setEnabled(false);
     dialog.AddSpanningWidgetRow(&confirmSecurityCheckBox);
 
@@ -1436,7 +1436,7 @@ bool ResourceManagementView::UpdateStack(const QSharedPointer<IStackStatusModel>
             }
             else
             {
-                statusLabel.setText("No changes found.");
+                statusLabel.setText(QObject::tr("No changes found."));
             }
 
         }
@@ -1717,20 +1717,20 @@ void ResourceManagementView::OnMenuImportUsingArn()
     QPushButton* primaryButton = dialog.GetPrimaryButton();
     primaryButton->show();
     primaryButton->setEnabled(false);
-    primaryButton->setToolTip("Please provide the resource Name and ARN");
+    primaryButton->setToolTip(QObject::tr("Please provide the resource Name and ARN"));
 
     QString resourceGroup = GetSelectedResourceGroupName();
 
     m_nameEdit = new QLineEdit;
     m_nameEdit->setParent(&dialog);
-    m_nameEdit->setToolTip("The name used for the resource in the resource group.");
+    m_nameEdit->setToolTip(QObject::tr("The name used for the resource in the resource group."));
     dialog.AddWidgetPairRow(new QLabel{ tr("Resource name") }, m_nameEdit);
     m_nameEdit->setFocus();
     connect(m_nameEdit, &QLineEdit::textEdited, this, [this, primaryButton](){OnImportResourceInfoGiven(primaryButton); });
 
     m_arnEdit = new QLineEdit;
     m_arnEdit->setParent(&dialog);
-    m_arnEdit->setToolTip("ARN of the AWS resource to import.");
+    m_arnEdit->setToolTip(QObject::tr("ARN of the AWS resource to import."));
     dialog.AddWidgetPairRow(new QLabel{ tr("Resource ARN") }, m_arnEdit);
     connect(m_arnEdit, &QLineEdit::textEdited, this, [this, primaryButton](){OnImportResourceInfoGiven(primaryButton); });
 
@@ -1763,12 +1763,12 @@ void ResourceManagementView::OnImportResourceInfoGiven(QPushButton* primaryButto
     if (m_nameEdit->text() == "" || m_arnEdit->text() == "")
     {
         primaryButton->setEnabled(false);
-        primaryButton->setToolTip("Please provide the resource Name and ARN");
+        primaryButton->setToolTip(QObject::tr("Please provide the resource Name and ARN"));
         return;
     }
 
     primaryButton->setEnabled(true);
-    primaryButton->setToolTip("Import the resource");
+    primaryButton->setToolTip(QObject::tr("Import the resource"));
 }
 
 void ResourceManagementView::DoImportResource(const QString& resourceGroup, const QString& resourceName, const QString& resourceArn)
@@ -1813,8 +1813,8 @@ QMenu* ResourceManagementView::CreateAddResourceMenu(QSharedPointer<ICloudFormat
     AddResourceMenuItem<AddSNSTopic>(menu, parent, this, templateModel, "SNS topic", "Add an SNS topic resource.");
     AddResourceMenuItem<AddSQSQueue>(menu, parent, this, templateModel, "SQS queue", "Add an SQS queue resource.");
 
-    auto addServiceApi = menu->addAction("Service API");
-    addServiceApi->setToolTip("Add a service API resource.");
+    auto addServiceApi = menu->addAction(QObject::tr("Service API"));
+    addServiceApi->setToolTip(QObject::tr("Add a service API resource."));
     connect(addServiceApi, &QAction::triggered, this, &ResourceManagementView::AddServiceApi);
 
     return menu;
@@ -1827,7 +1827,7 @@ void ResourceManagementView::AddServiceApi()
     {
         if (!errorMessage.isEmpty())
         {
-            QMessageBox::critical(this, "Error", errorMessage);
+            QMessageBox::critical(this, QObject::tr("Error"), errorMessage);
         }
     };
 
@@ -1839,14 +1839,14 @@ void ResourceManagementView::AddServiceApi()
 QMenu* ResourceManagementView::CreateImportResourceMenu(QWidget* parent)
 {
     auto menu = new QMenu{};
-    menu->setToolTip("Import existing resources");
+    menu->setToolTip(QObject::tr("Import existing resources"));
 
-    auto importUsingArn = menu->addAction("Import using ARN");
-    importUsingArn->setToolTip("Import a resource by providing its ARN.");
+    auto importUsingArn = menu->addAction(QObject::tr("Import using ARN"));
+    importUsingArn->setToolTip(QObject::tr("Import a resource by providing its ARN."));
     connect(importUsingArn, &QAction::triggered, this, &ResourceManagementView::OnMenuImportUsingArn);
 
-    auto importFromList = menu->addAction("Import from list");
-    importFromList->setToolTip("Import a resource from a list of importable resources.");
+    auto importFromList = menu->addAction(QObject::tr("Import from list"));
+    importFromList->setToolTip(QObject::tr("Import a resource from a list of importable resources."));
     connect(importFromList, &QAction::triggered, this, &ResourceManagementView::OnMenuImportFromList);
 
     return menu;

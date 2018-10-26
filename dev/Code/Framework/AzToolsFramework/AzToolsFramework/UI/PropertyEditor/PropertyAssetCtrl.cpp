@@ -82,7 +82,7 @@ namespace AzToolsFramework
         m_editButton->setMouseTracking(true);
         m_editButton->setContentsMargins(0, 0, 0, 0);
         m_editButton->setIcon(QIcon(":/PropertyEditor/Resources/edit-asset.png"));
-        m_editButton->setToolTip("Edit asset");
+        m_editButton->setToolTip(QObject::tr("Edit asset"));
         m_editButton->setVisible(false);
 
         m_clearButton = aznew QPushButton(this);
@@ -92,7 +92,7 @@ namespace AzToolsFramework
         m_clearButton->setMouseTracking(true);
         m_clearButton->setIcon(QIcon(":/PropertyEditor/Resources/cross-small.png"));
         m_clearButton->setContentsMargins(0, 0, 0, 0);
-        m_clearButton->setToolTip("Clear Asset");
+        m_clearButton->setToolTip(QObject::tr("Clear Asset"));
 
         m_browseButton = aznew QPushButton(this); //changed for preview to have right click to open new asset browser popup
         m_browseButton->setFlat(true);
@@ -101,7 +101,7 @@ namespace AzToolsFramework
         m_browseButton->setText("...");
         m_browseButton->setMouseTracking(true);
         m_browseButton->setContentsMargins(0, 0, 0, 0);
-        m_browseButton->setToolTip("Browse...");
+        m_browseButton->setToolTip(QObject::tr("Browse..."));
 
         connect(m_editButton, &QPushButton::clicked, this, &PropertyAssetCtrl::OnEditButtonClicked);
         connect(m_browseButton, &QPushButton::clicked, this, &PropertyAssetCtrl::PopupAssetBrowser);
@@ -394,7 +394,7 @@ namespace AzToolsFramework
             m_errorButton->setFixedSize(QSize(16, 16));
             m_errorButton->setMouseTracking(true);
             m_errorButton->setIcon(QIcon("Editor/Icons/PropertyEditor/error_icon.png"));
-            m_errorButton->setToolTip("Show Errors");
+            m_errorButton->setToolTip(QObject::tr("Show Errors"));
 
             // Insert the error button after the asset label
             qobject_cast<QHBoxLayout*>(layout())->insertWidget(1, m_errorButton);
@@ -406,7 +406,7 @@ namespace AzToolsFramework
             // Create the dialog for the log panel, and set the layout
             QDialog* logDialog = new QDialog();
             logDialog->setMinimumSize(1024, 400);
-            logDialog->setObjectName("Asset Errors");
+            logDialog->setObjectName(QObject::tr("Asset Errors"));
             QHBoxLayout* pLayout = new QHBoxLayout(logDialog);
             logDialog->setLayout(pLayout);
 

@@ -71,7 +71,7 @@ namespace EMStudio
         mFlagsWidget->setMinimumHeight(MOTIONEXTRACTIONWINDOW_HEIGHT);
         mFlagsWidget->setMaximumHeight(MOTIONEXTRACTIONWINDOW_HEIGHT);
 
-        mCaptureHeight = new QCheckBox("Capture Height Changes");
+        mCaptureHeight = new QCheckBox(QObject::tr("Capture Height Changes"));
         connect(mCaptureHeight, SIGNAL(clicked()), this, SLOT(OnMotionExtractionFlagsUpdated()));
 
         QVBoxLayout* layout = new QVBoxLayout();
@@ -93,7 +93,7 @@ namespace EMStudio
         mWarningWidget->setMinimumHeight(MOTIONEXTRACTIONWINDOW_HEIGHT);
         mWarningWidget->setMaximumHeight(MOTIONEXTRACTIONWINDOW_HEIGHT);
 
-        QLabel* warningLabel = new QLabel("<qt>No node has been selected yet to enable Motion Extraction.</qt>");
+        QLabel* warningLabel = new QLabel(QObject::tr("<qt>No node has been selected yet to enable Motion Extraction.</qt>"));
         warningLabel->setWordWrap(true);
         warningLabel->setSizePolicy(QSizePolicy::MinimumExpanding, QSizePolicy::Fixed);
 

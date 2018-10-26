@@ -154,7 +154,7 @@ void InitializeCloudCanvasProject::AddHorizontalLabelEdit(QVBoxLayout* verticalL
 void InitializeCloudCanvasProject::AddDeploymentRegionBox(QVBoxLayout* verticalLayout)
 {
     QHBoxLayout* deploymentRegionLayout = new QHBoxLayout;
-    QLabel* deploymentRegionLabel = new QLabel("AWS region:");
+    QLabel* deploymentRegionLabel = new QLabel(QObject::tr("AWS region:"));
     deploymentRegionLabel->setMinimumWidth(100);
     deploymentRegionLabel->setAlignment(Qt::AlignRight);
 
@@ -163,7 +163,7 @@ void InitializeCloudCanvasProject::AddDeploymentRegionBox(QVBoxLayout* verticalL
     QComboBox* deploymentRegionBox = new QComboBox;
     deploymentRegionBox->setFixedSize(boxWidth, boxHeight);
     deploymentRegionBox->setEditable(true);
-    deploymentRegionBox->setToolTip("This list contains the supported regions for our core services including CloudFormation, Cognito, DynamoDB, Kinesis, Lambda, S3, SNS, SQS and STS. You can also edit the region according to the services you need.");
+    deploymentRegionBox->setToolTip(QObject::tr("This list contains the supported regions for our core services including CloudFormation, Cognito, DynamoDB, Kinesis, Lambda, S3, SNS, SQS and STS. You can also edit the region according to the services you need."));
 
     GetIEditor()->GetAWSResourceManager()->GetRegionList();
 
@@ -216,12 +216,12 @@ void InitializeCloudCanvasProject::AddAddProfileEditButtons(QVBoxLayout* boxLayo
     QHBoxLayout* addEditLayout = new QHBoxLayout;
     addEditLayout->setContentsMargins(0, 0, 0, 0);
 
-    QPushButton* addProfile = new QPushButton("Add profile");
+    QPushButton* addProfile = new QPushButton(QObject::tr("Add profile"));
     addProfile->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
     addEditLayout->addWidget(addProfile);
     QWidget::connect(addProfile, &QPushButton::clicked, this, &InitializeCloudCanvasProject::OnAddProfileClicked);
 
-    QPushButton* editProfile = new QPushButton("Edit");
+    QPushButton* editProfile = new QPushButton(QObject::tr("Edit"));
     editProfile->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
     addEditLayout->addWidget(editProfile);
     QWidget::connect(editProfile, &QPushButton::clicked, this, &InitializeCloudCanvasProject::OnEditClicked);
@@ -240,7 +240,7 @@ void InitializeCloudCanvasProject::AddAddProfileEditButtons(QVBoxLayout* boxLayo
 void InitializeCloudCanvasProject::AddProfileSelectionLayout(QVBoxLayout* boxLayout)
 {
     QHBoxLayout* profileSelectionLayout = new QHBoxLayout;
-    QLabel* profileSelectLabel = new QLabel("AWS profile:");
+    QLabel* profileSelectLabel = new QLabel(QObject::tr("AWS profile:"));
     profileSelectionLayout->addWidget(profileSelectLabel, 0, Qt::AlignRight | Qt::AlignTop);
 
     QVBoxLayout* radioLayout = new QVBoxLayout;
@@ -385,11 +385,11 @@ void InitializeCloudCanvasProject::AddCreateCancelButtons(QVBoxLayout* verticalL
     QHBoxLayout* buttonLayout = new QHBoxLayout;
     buttonLayout->addStretch();
 
-    QPushButton* cancelButton = new QPushButton("Cancel");
+	QPushButton* cancelButton = new QPushButton(QObject::tr("Cancel"));
     buttonLayout->addWidget(cancelButton, 0, Qt::AlignRight);
     QWidget::connect(cancelButton, &QPushButton::clicked, this, &InitializeCloudCanvasProject::OnCancelClicked);
 
-    QPushButton* createButton = new QPushButton("Create");
+    QPushButton* createButton = new QPushButton(QObject::tr("Create"));
     createButton->setProperty("class", "Primary");
     createButton->setObjectName(CREATE_BUTTON);
 

@@ -241,19 +241,19 @@ void CRampControl::contextMenuEvent(QContextMenuEvent* event)
     bool maxed = GetHandleCount() == GetMaxHandles();
 
     QMenu menu;
-    QAction* action = menu.addAction("&Add");
+    QAction* action = menu.addAction(QObject::tr("&Add"));
     action->setData(ID_MENU_ADD);
     action->setEnabled(!maxed);
     menu.addSeparator();
-    action = menu.addAction("&Delete");
+    action = menu.addAction(QObject::tr("&Delete"));
     action->setData(ID_MENU_DELETE);
     action->setEnabled(hit);
-    action = menu.addAction("&Select");
+    action = menu.addAction(QObject::tr("&Select"));
     action->setData(ID_MENU_SELECT);
     action->setEnabled(hit);
     menu.addSeparator();
-    menu.addAction("Select &All")->setData(ID_MENU_SELECTALL);
-    menu.addAction("Select &None")->setData(ID_MENU_SELECTNONE);
+    menu.addAction(QObject::tr("Select &All"))->setData(ID_MENU_SELECTALL);
+    menu.addAction(QObject::tr("Select &None"))->setData(ID_MENU_SELECTNONE);
     AddCustomMenuOptions(menu);
 
     action = menu.exec(QCursor::pos());

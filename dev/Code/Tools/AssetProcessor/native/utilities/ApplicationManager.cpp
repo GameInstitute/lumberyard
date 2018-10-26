@@ -875,7 +875,7 @@ ApplicationManager::RegistryCheckInstructions ApplicationManager::CheckForRegist
                 // has a fixed width, which doesn't display the extremely large
                 // block of warning text well.
                 QDialog dialog(nullptr, Qt::WindowCloseButtonHint | Qt::WindowTitleHint);
-                dialog.setWindowTitle("Asset Processor Error");
+                dialog.setWindowTitle(QObject::tr("Asset Processor Error"));
 
                 QVBoxLayout* layout = new QVBoxLayout(&dialog);
                 layout->addSpacing(16);

@@ -215,7 +215,7 @@ void DesignerPanel::OrganizeSurfaceLayout(QTabWidget* pTab)
     pSurfaceGridLayout->addWidget(CD::CreateHorizontalLine(), ++row, 0, 1, 2, Qt::AlignTop);
 
     m_pSubMatIDComboBox = new QComboBox;
-    QLabel* pSubMatIDLabel = new QLabel("Sub Mat ID");
+    QLabel* pSubMatIDLabel = new QLabel(QObject::tr("Sub Mat ID"));
     pSubMatIDLabel->setAlignment(Qt::AlignHCenter);
     ++row;
     pSurfaceGridLayout->addWidget(pSubMatIDLabel, row, 0, Qt::AlignTop);

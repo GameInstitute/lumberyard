@@ -138,7 +138,7 @@ namespace ScriptCanvasEditor
     CommentNodePaletteTreeItem::CommentNodePaletteTreeItem(const QString& nodeName, const QString& iconPath)
         : DraggableNodePaletteTreeItem(nodeName, ScriptCanvasEditor::AssetEditorId)
     {
-        SetToolTip("Comment box for notes. Does not affect script execution or data.");
+        SetToolTip(QObject::tr("Comment box for notes. Does not affect script execution or data."));
     }
 
     GraphCanvas::GraphCanvasMimeEvent* CommentNodePaletteTreeItem::CreateMimeEvent() const

@@ -46,7 +46,7 @@ namespace EMStudio
         : QDialog(parent)
     {
         // set the window title
-        setWindowTitle("Remove Motions Failed");
+        setWindowTitle(QObject::tr("Remove Motions Failed"));
 
         // resize the window
         resize(720, 405);
@@ -55,7 +55,7 @@ namespace EMStudio
         QVBoxLayout* layout = new QVBoxLayout();
 
         // add the top text
-        layout->addWidget(new QLabel("The following motions failed to get removed because they are used by another motion set:"));
+        layout->addWidget(new QLabel(QObject::tr("The following motions failed to get removed because they are used by another motion set:")));
 
         // create the table widget
         QTableWidget* tableWidget = new QTableWidget();
@@ -108,7 +108,7 @@ namespace EMStudio
         layout->addWidget(tableWidget);
 
         // add the button to close the window
-        QPushButton* okButton = new QPushButton("OK");
+        QPushButton* okButton = new QPushButton(QObject::tr("OK"));
         connect(okButton, SIGNAL(clicked()), this, SLOT(accept()));
         QHBoxLayout* buttonLayout = new QHBoxLayout();
         buttonLayout->setAlignment(Qt::AlignRight);
@@ -130,7 +130,7 @@ namespace EMStudio
         mMotionSet->BuildIdStringList(m_existingIds);
 
         // Set the window title and minimum width.
-        setWindowTitle("Enter new motion ID");
+        setWindowTitle(QObject::tr("Enter new motion ID"));
         setMinimumWidth(300);
 
         QVBoxLayout* layout = new QVBoxLayout();
@@ -149,8 +149,8 @@ namespace EMStudio
         mErrorMsg->setVisible(false);*/
 
         QHBoxLayout* buttonLayout   = new QHBoxLayout();
-        mOKButton                   = new QPushButton("OK");
-        QPushButton* cancelButton   = new QPushButton("Cancel");
+        mOKButton                   = new QPushButton(QObject::tr("OK"));
+        QPushButton* cancelButton   = new QPushButton(QObject::tr("Cancel"));
         //buttonLayout->addWidget(mErrorMsg);
         buttonLayout->addWidget(mOKButton);
         buttonLayout->addWidget(cancelButton);
@@ -331,25 +331,25 @@ namespace EMStudio
         headerItem->setTextAlignment(Qt::AlignVCenter | Qt::AlignLeft);
         m_tableWidget->setHorizontalHeaderItem(1, headerItem);
 
-        headerItem = new QTableWidgetItem("Length");
+        headerItem = new QTableWidgetItem(QObject::tr("Length"));
         headerItem->setTextAlignment(Qt::AlignVCenter | Qt::AlignLeft);
         m_tableWidget->setHorizontalHeaderItem(2, headerItem);
 
-        headerItem = new QTableWidgetItem("Sub");
+        headerItem = new QTableWidgetItem(QObject::tr("Sub"));
         headerItem->setTextAlignment(Qt::AlignVCenter | Qt::AlignLeft);
-        headerItem->setToolTip("Number of submotions");
+        headerItem->setToolTip(QObject::tr("Number of submotions"));
         m_tableWidget->setHorizontalHeaderItem(3, headerItem);
 
-        headerItem = new QTableWidgetItem("MSub");
+		headerItem = new QTableWidgetItem(QObject::tr("MSub"));
         headerItem->setTextAlignment(Qt::AlignVCenter | Qt::AlignLeft);
-        headerItem->setToolTip("Number of morph submotions");
+        headerItem->setToolTip(QObject::tr("Number of morph submotions"));
         m_tableWidget->setHorizontalHeaderItem(4, headerItem);
 
-        headerItem = new QTableWidgetItem("Type");
+        headerItem = new QTableWidgetItem(QObject::tr("Type"));
         headerItem->setTextAlignment(Qt::AlignVCenter | Qt::AlignLeft);
         m_tableWidget->setHorizontalHeaderItem(5, headerItem);
 
-        headerItem = new QTableWidgetItem("FileName");
+        headerItem = new QTableWidgetItem(QObject::tr("FileName"));
         headerItem->setTextAlignment(Qt::AlignVCenter | Qt::AlignLeft);
         m_tableWidget->setHorizontalHeaderItem(6, headerItem);
 
@@ -1543,7 +1543,7 @@ namespace EMStudio
         QMenu menu(this);
 
         // add the remove action
-        QAction* removeSelectedMotionsAction = menu.addAction("Remove Selected Motions");
+        QAction* removeSelectedMotionsAction = menu.addAction(QObject::tr("Remove Selected Motions"));
         removeSelectedMotionsAction->setIcon(MysticQt::GetMysticQt()->FindIcon("Images/Icons/Minus.png"));
         connect(removeSelectedMotionsAction, SIGNAL(triggered()), this, SLOT(OnRemoveMotions()));
 
@@ -1551,21 +1551,21 @@ namespace EMStudio
         if (rowIndices.size() == 1)
         {
             // add the rename selected motion action
-            QAction* renameSelectedMotionAction = menu.addAction("Rename Motion ID");
+            QAction* renameSelectedMotionAction = menu.addAction(QObject::tr("Rename Motion ID"));
             connect(renameSelectedMotionAction, &QAction::triggered, this, &MotionSetWindow::OnRenameEntry);
 
             // Unassign the linked motion.
-            QAction* unassignMotionAction = menu.addAction("Unassign Motion");
+            QAction* unassignMotionAction = menu.addAction(QObject::tr("Unassign Motion"));
             connect(unassignMotionAction, &QAction::triggered, this, &MotionSetWindow::OnUnassignMotions);
 
             // add the copy selected motion ID action
-            QAction* copySelectedMotionIDAction = menu.addAction("Copy Selected Motion ID");
+            QAction* copySelectedMotionIDAction = menu.addAction(QObject::tr("Copy Selected Motion ID"));
             connect(copySelectedMotionIDAction, &QAction::triggered, this, &MotionSetWindow::OnCopyMotionID);
         }
         else if (rowIndices.size() > 1)
         {
             // Unassign linked motions for the selected entries.
-            QAction* unassignMotionAction = menu.addAction("Unassign Motions");
+            QAction* unassignMotionAction = menu.addAction(QObject::tr("Unassign Motions"));
             connect(unassignMotionAction, &QAction::triggered, this, &MotionSetWindow::OnUnassignMotions);
         }
 
@@ -1668,7 +1668,7 @@ namespace EMStudio
         mModifiedMotionIDs.reserve(motionSet->GetNumMotionEntries());
 
         // set the window title
-        setWindowTitle("Batch Edit Motion IDs");
+        setWindowTitle(QObject::tr("Batch Edit Motion IDs"));
 
         // set the initial size
         resize(848, 480);
@@ -1682,9 +1682,9 @@ namespace EMStudio
 
         // create the combobox
         mComboBox = new MysticQt::ComboBox();
-        mComboBox->addItem("Replace All");
-        mComboBox->addItem("Replace First");
-        mComboBox->addItem("Replace Last");
+        mComboBox->addItem(QObject::tr("Replace All"));
+        mComboBox->addItem(QObject::tr("Replace First"));
+        mComboBox->addItem(QObject::tr("Replace Last"));
 
         // connect the combobox
         connect(mComboBox, SIGNAL(currentIndexChanged(int)), this, SLOT(CurrentIndexChanged(int)));
@@ -1699,12 +1699,12 @@ namespace EMStudio
 
         // add the operation layout
         QHBoxLayout* operationLayout = new QHBoxLayout();
-        operationLayout->addWidget(new QLabel("Operation:"));
+        operationLayout->addWidget(new QLabel(QObject::tr("Operation:")));
         operationLayout->addWidget(mComboBox);
         operationLayout->addWidget(spacerWidget);
-        operationLayout->addWidget(new QLabel("StringA:"));
+        operationLayout->addWidget(new QLabel(QObject::tr("StringA:")));
         operationLayout->addWidget(mStringALineEdit);
-        operationLayout->addWidget(new QLabel("StringB:"));
+        operationLayout->addWidget(new QLabel(QObject::tr("StringB:")));
         operationLayout->addWidget(mStringBLineEdit);
         layout->addLayout(operationLayout);
 
@@ -1720,8 +1720,8 @@ namespace EMStudio
         // set the table widget columns
         mTableWidget->setColumnCount(2);
         QStringList headerLabels;
-        headerLabels.append("Before");
-        headerLabels.append("After");
+        headerLabels.append(QObject::tr("Before"));
+        headerLabels.append(QObject::tr("After"));
         mTableWidget->setHorizontalHeaderLabels(headerLabels);
         mTableWidget->horizontalHeader()->setStretchLastSection(true);
         mTableWidget->horizontalHeader()->setDefaultAlignment(Qt::AlignLeft);
@@ -1763,17 +1763,17 @@ namespace EMStudio
         // this label never change, it's the total of motion ID in the table
         mNumMotionIDsLabel = new QLabel();
         mNumMotionIDsLabel->setAlignment(Qt::AlignLeft);
-        mNumMotionIDsLabel->setText(QString("Number of motion IDs: %1").arg(numMotionIDs));
+        mNumMotionIDsLabel->setText(QString(QObject::tr("Number of motion IDs: %1")).arg(numMotionIDs));
 
         // create the num modified IDs label
         mNumModifiedIDsLabel = new QLabel();
         mNumModifiedIDsLabel->setAlignment(Qt::AlignCenter);
-        mNumModifiedIDsLabel->setText("Number of modified IDs: 0");
+        mNumModifiedIDsLabel->setText(QObject::tr("Number of modified IDs: 0"));
 
         // create the num duplicate IDs label
         mNumDuplicateIDsLabel = new QLabel();
         mNumDuplicateIDsLabel->setAlignment(Qt::AlignRight);
-        mNumDuplicateIDsLabel->setText("Number of duplicate IDs: 0");
+        mNumDuplicateIDsLabel->setText(QObject::tr("Number of duplicate IDs: 0"));
 
         // add the stats layout
         QHBoxLayout* statsLayout = new QHBoxLayout();
@@ -1784,8 +1784,8 @@ namespace EMStudio
 
         // add the bottom buttons
         QHBoxLayout* buttonLayout   = new QHBoxLayout();
-        mApplyButton                = new QPushButton("Apply");
-        QPushButton* closeButton    = new QPushButton("Close");
+        mApplyButton                = new QPushButton(QObject::tr("Apply"));
+        QPushButton* closeButton    = new QPushButton(QObject::tr("Close"));
         buttonLayout->addWidget(mApplyButton);
         buttonLayout->addWidget(closeButton);
         layout->addLayout(buttonLayout);
@@ -1889,8 +1889,8 @@ namespace EMStudio
         mTableWidget->resizeColumnToContents(0);
 
         // reset the stats
-        mNumModifiedIDsLabel->setText("Number of modified IDs: 0");
-        mNumDuplicateIDsLabel->setText("Number of duplicate IDs: 0");
+        mNumModifiedIDsLabel->setText(QObject::tr("Number of modified IDs: 0"));
+        mNumDuplicateIDsLabel->setText(QObject::tr("Number of duplicate IDs: 0"));
 
         // apply button is disabled because nothing is changed
         mApplyButton->setEnabled(false);
@@ -1939,8 +1939,8 @@ namespace EMStudio
             mTableWidget->setSortingEnabled(true);
 
             // reset the stats
-            mNumModifiedIDsLabel->setText("Number of modified IDs: 0");
-            mNumDuplicateIDsLabel->setText("Number of duplicate IDs: 0");
+            mNumModifiedIDsLabel->setText(QObject::tr("Number of modified IDs: 0"));
+            mNumDuplicateIDsLabel->setText(QObject::tr("Number of duplicate IDs: 0"));
 
             // apply button is disabled because nothing is changed
             mApplyButton->setEnabled(false);
@@ -2066,17 +2066,17 @@ namespace EMStudio
         mTableWidget->setSortingEnabled(true);
 
         // update the num modified label
-        mNumModifiedIDsLabel->setText(QString("Number of modified IDs: %1").arg(mValids.size()));
+        mNumModifiedIDsLabel->setText(QString(QObject::tr("Number of modified IDs: %1")).arg(mValids.size()));
 
         // update the num duplicate label
         // the number is in red if at least one found
         if (numDuplicateFound > 0)
         {
-            mNumDuplicateIDsLabel->setText(QString("Number of duplicate IDs: <font color='red'>%1</font>").arg(numDuplicateFound));
+            mNumDuplicateIDsLabel->setText(QString(QObject::tr("Number of duplicate IDs: <font color='red'>%1</font>")).arg(numDuplicateFound));
         }
         else
         {
-            mNumDuplicateIDsLabel->setText("Number of duplicate IDs: 0");
+            mNumDuplicateIDsLabel->setText(QObject::tr("Number of duplicate IDs: 0"));
         }
 
         // enable or disable the apply button

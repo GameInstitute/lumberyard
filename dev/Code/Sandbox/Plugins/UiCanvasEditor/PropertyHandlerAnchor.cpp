@@ -42,7 +42,7 @@ PropertyAnchorCtrl::PropertyAnchorCtrl(QWidget* parent)
     // when the transform is disabled.
     {
         m_disabledLabel = new QLabel(this);
-        m_disabledLabel->setText("Anchors and Offsets are\ncontrolled by parent");
+        m_disabledLabel->setText(QObject::tr("Anchors and Offsets are\ncontrolled by parent"));
         m_disabledLabel->setVisible(false);
         vLayout->addWidget(m_disabledLabel);
     }

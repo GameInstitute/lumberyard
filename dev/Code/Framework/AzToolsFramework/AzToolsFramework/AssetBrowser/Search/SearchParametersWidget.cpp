@@ -36,7 +36,7 @@ namespace AzToolsFramework
             if (!filterName.isEmpty())
             {
                 show();
-                m_ui->m_filtersLabel->setText("<b>Filtered by:</b> " + filterName);
+                m_ui->m_filtersLabel->setText(QObject::tr("<b>Filtered by:</b> ") + filterName);
                 if (m_allowClear)
                 {
                     m_ui->m_clearFiltersButton->show();

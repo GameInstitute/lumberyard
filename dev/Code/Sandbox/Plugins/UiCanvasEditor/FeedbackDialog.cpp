@@ -13,17 +13,17 @@
 #include "FeedbackDialog.h"
 
 namespace {
-    QString feedbackText = "<h3>We love getting feedback from our customers.</h3>"
+    QString feedbackText = QObject::tr("<h3>We love getting feedback from our customers.</h3>"
         "Feedback from our community helps us to constantly improve the UI Editor.<br/><br/>"
         "In addition to using our forums and AWS support channels, you can always email us with your comments and suggestions at "
         "<a href=\"mailto:lumberyard-feedback@amazon.com?subject=UI Editor Feedback\" style=\"color: #4285F4;\">lumberyard-feedback@amazon.com</a>.  "
-        "While we do not respond to everyone who submits feedback, we read everything and aspire to use your feedback to improve the UI Editor for everyone.";
+        "While we do not respond to everyone who submits feedback, we read everything and aspire to use your feedback to improve the UI Editor for everyone.");
 }
 
 FeedbackDialog::FeedbackDialog(QWidget* parent)
     : QDialog(parent)
 {
-    setWindowTitle("Give Us Feedback");
+    setWindowTitle(QObject::tr("Give Us Feedback"));
 
     setMinimumSize(580, 204);
 

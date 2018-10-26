@@ -132,7 +132,7 @@ void QFileSelectWidget::setMainButton(const QString& caption, const QString& too
 
 QPushButton* QFileSelectWidget::addButton(const QString& caption, const QString& tooltip, int row, int col, int rowspan, int colspan, const QIcon* icon)
 {
-    QPushButton* btn = new QPushButton("Unamed Button", this);
+    QPushButton* btn = new QPushButton(QObject::tr("Unamed Button"), this);
 
     if (icon)
     {

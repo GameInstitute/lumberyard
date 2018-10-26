@@ -113,11 +113,11 @@ namespace EMotionFX
         {
             if (m_singleSelection)
             {
-                m_pickButton->setText("Select parameter");
+                m_pickButton->setText(QObject::tr("Select parameter"));
             }
             else
             {
-                m_pickButton->setText("Select parameters");
+                m_pickButton->setText(QObject::tr("Select parameters"));
             }
 
             m_resetButton->setVisible(false);
@@ -129,7 +129,7 @@ namespace EMotionFX
         }
         else
         {
-            m_pickButton->setText(QString("%1 parameters").arg(numParameters));
+            m_pickButton->setText(QString(QObject::tr("%1 parameters")).arg(numParameters));
             m_resetButton->setVisible(true);
         }
 

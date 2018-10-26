@@ -159,6 +159,8 @@ namespace Editor
 		QTranslator* m_ParticleEditorPluginTranslator = nullptr;
 		QTranslator* m_PerforcePluginTranslator = nullptr;
 		QTranslator* m_UiCanvasEditorTranslator = nullptr;
+		QTranslator* m_EditorAnimationTranslator = nullptr;
+		QTranslator* m_EditorModularBehaviorTreeTranslator = nullptr;
 
 		// Gems
 		QTranslator* m_CloudGemDynamicContentTranslator = nullptr;
@@ -167,6 +169,8 @@ namespace Editor
 		QTranslator* m_ScriptCanvasTranslator = nullptr;
 		QTranslator* m_ScriptCanvasDeveloperTranslator = nullptr;
 		QTranslator* m_SubstanceTranslator = nullptr;
+		QTranslator* m_SceneProcessingTranslator = nullptr;
+
         QTimer* const m_idleTimer = nullptr;
         bool m_isMovingOrResizing = false;
 

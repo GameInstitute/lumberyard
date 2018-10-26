@@ -367,11 +367,11 @@ void SpriteBorderEditor::AddConfigureSection(QGridLayout* gridLayout, int& rowNu
 
     // Finally, add the widgets to the layout
     int innerLayoutCol = 0;
-    innerLayout->addWidget(new QLabel("Rows", this),                0, innerLayoutCol++, Qt::AlignLeft);
+    innerLayout->addWidget(new QLabel(QObject::tr("Rows"), this),                0, innerLayoutCol++, Qt::AlignLeft);
     innerLayout->addItem(new QSpacerItem(interElementSpacing, 0),   0, innerLayoutCol++, Qt::AlignLeft);
     innerLayout->addWidget(numRowsLineEdit,                         0, innerLayoutCol++, Qt::AlignLeft);
     innerLayout->addItem(new QSpacerItem(interElementSpacing, 0),   0, innerLayoutCol++, Qt::AlignLeft);
-    innerLayout->addWidget(new QLabel("Columns", this),             0, innerLayoutCol++, Qt::AlignLeft);
+    innerLayout->addWidget(new QLabel(QObject::tr("Columns"), this),             0, innerLayoutCol++, Qt::AlignLeft);
     innerLayout->addItem(new QSpacerItem(interElementSpacing, 0),   0, innerLayoutCol++, Qt::AlignLeft);
     innerLayout->addWidget(numColsLineEdit,                         0, innerLayoutCol++, Qt::AlignLeft);
 
@@ -741,7 +741,7 @@ void SpriteBorderEditor::AddPropertiesSection(QGridLayout* gridLayout, int& rowN
 
             // Text field for modifying cell string alias
             int columnCount = 0;
-            propertyFieldsLayout->addWidget(new QLabel("Alias", this), row, columnCount++, Qt::AlignLeft);
+            propertyFieldsLayout->addWidget(new QLabel(QObject::tr("Alias"), this), row, columnCount++, Qt::AlignLeft);
             propertyFieldsLayout->addItem(new QSpacerItem(interElementSpacing, 0), row, columnCount++, Qt::AlignLeft);
 
             m_cellAliasLineEdit = new QLineEdit(this);
@@ -873,7 +873,7 @@ void SpriteBorderEditor::AddButtonsSection(QGridLayout* gridLayout, int& rowNum)
         QGridLayout* leftAlignedLayout = new QGridLayout();
         gridLayout->addLayout(leftAlignedLayout, rowNum, 0, Qt::AlignLeft);
 
-        QPushButton* configureButton = new QPushButton("Configure Spritesheet", this);
+        QPushButton* configureButton = new QPushButton(QObject::tr("Configure Spritesheet"), this);
 
         QObject::connect(configureButton,
             &QPushButton::clicked, this,
@@ -893,7 +893,7 @@ void SpriteBorderEditor::AddButtonsSection(QGridLayout* gridLayout, int& rowNum)
     // Add buttons.
     {
         // Save button.
-        QPushButton* saveButton = new QPushButton("Save", this);
+        QPushButton* saveButton = new QPushButton(QObject::tr("Save"), this);
         QObject::connect(saveButton,
             &QPushButton::clicked, this,
             [this](bool checked)
@@ -937,15 +937,15 @@ void SpriteBorderEditor::AddButtonsSection(QGridLayout* gridLayout, int& rowNum)
                 }
 
                 QMessageBox(QMessageBox::Critical,
-                    "Error",
-                    "Unable to save file. Is the file read-only?",
+					QObject::tr("Error"),
+						QObject::tr("Unable to save file. Is the file read-only?"),
                     QMessageBox::Ok, QApplication::activeWindow()).exec();
             });
         saveButton->setProperty("class", "Primary");
         innerLayout->addWidget(saveButton, rowNum, 0);
 
         // Cancel button.
-        QPushButton* cancelButton = new QPushButton("Cancel", this);
+        QPushButton* cancelButton = new QPushButton(QObject::tr("Cancel"), this);
         QObject::connect(cancelButton,
             &QPushButton::clicked, this,
             [this](bool checked)

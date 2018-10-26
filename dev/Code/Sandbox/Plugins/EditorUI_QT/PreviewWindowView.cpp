@@ -71,75 +71,75 @@ void CPreviewWindowView::ExecContextMenu(QPoint position)
     ContextMenu* menu = new ContextMenu(this);
 
     menu->setVisible(false);
-    menu->addAction("Wireframe view")->setData(static_cast<unsigned int>(MenuActions::PRESET_WIREFRAME_VIEW));
+    menu->addAction(QObject::tr("Wireframe view"))->setData(static_cast<unsigned int>(MenuActions::PRESET_WIREFRAME_VIEW));
     if (m_numOfParticle->isHidden())
     {
-        menu->addAction("Show particle count")->setData(static_cast<unsigned int>(MenuActions::PRESET_HIDE_PARTICLE_COUNT));
+        menu->addAction(QObject::tr("Show particle count"))->setData(static_cast<unsigned int>(MenuActions::PRESET_HIDE_PARTICLE_COUNT));
     }
     else
     {
-        menu->addAction("Hide particle count")->setData(static_cast<unsigned int>(MenuActions::PRESET_HIDE_PARTICLE_COUNT));
+        menu->addAction(QObject::tr("Hide particle count"))->setData(static_cast<unsigned int>(MenuActions::PRESET_HIDE_PARTICLE_COUNT));
     }
 
     if (m_previewModelView->IsFlagSet(CPreviewModelView::PreviewModelViewFlag::SHOW_BOUNDINGBOX))
     {
-        menu->addAction("Hide bounding box")->setData(static_cast<unsigned int>(MenuActions::PRESET_HIDE_BOUNDING_BOX));
+        menu->addAction(QObject::tr("Hide bounding box"))->setData(static_cast<unsigned int>(MenuActions::PRESET_HIDE_BOUNDING_BOX));
     }
     else
     {
-        menu->addAction("Show bounding box")->setData(static_cast<unsigned int>(MenuActions::PRESET_HIDE_BOUNDING_BOX));
+        menu->addAction(QObject::tr("Show bounding box"))->setData(static_cast<unsigned int>(MenuActions::PRESET_HIDE_BOUNDING_BOX));
     }
 
     if (m_previewModelView->IsFlagSet(CPreviewModelView::PreviewModelViewFlag::SHOW_GIZMO))
     {
-        menu->addAction("Hide gizmo")->setData(static_cast<unsigned int>(MenuActions::PRESET_HIDE_GIZMO));
+        menu->addAction(QObject::tr("Hide gizmo"))->setData(static_cast<unsigned int>(MenuActions::PRESET_HIDE_GIZMO));
     }
     else
     {
-        menu->addAction("Show gizmo")->setData(static_cast<unsigned int>(MenuActions::PRESET_HIDE_GIZMO));
+        menu->addAction(QObject::tr("Show gizmo"))->setData(static_cast<unsigned int>(MenuActions::PRESET_HIDE_GIZMO));
     }
 
     if (m_botFrame->isHidden())
     {
-        menu->addAction("Show playback controls")->setData(static_cast<unsigned int>(MenuActions::PRESET_HIDE_PLAYBACK_CONTROLS));
+        menu->addAction(QObject::tr("Show playback controls"))->setData(static_cast<unsigned int>(MenuActions::PRESET_HIDE_PLAYBACK_CONTROLS));
     }
     else
     {
-        menu->addAction("Hide playback controls")->setData(static_cast<unsigned int>(MenuActions::PRESET_HIDE_PLAYBACK_CONTROLS));
+        menu->addAction(QObject::tr("Hide playback controls"))->setData(static_cast<unsigned int>(MenuActions::PRESET_HIDE_PLAYBACK_CONTROLS));
     }
 
     if (m_previewModelView->IsFlagSet(CPreviewModelView::PreviewModelViewFlag::SHOW_GRID))
     {
-        menu->addAction("Hide grid")->setData(static_cast<unsigned int>(MenuActions::PRESET_HIDE_GRID));
+        menu->addAction(QObject::tr("Hide grid"))->setData(static_cast<unsigned int>(MenuActions::PRESET_HIDE_GRID));
     }
     else
     {
-        menu->addAction("Show grid")->setData(static_cast<unsigned int>(MenuActions::PRESET_HIDE_GRID));
+        menu->addAction(QObject::tr("Show grid"))->setData(static_cast<unsigned int>(MenuActions::PRESET_HIDE_GRID));
     }
 
     if (m_previewModelView->IsFlagSet(CPreviewModelView::PreviewModelViewFlag::SHOW_EMITTER_SHAPE))
     {
-        menu->addAction("Hide Emitter Shape")->setData(static_cast<unsigned int>(MenuActions::PRESET_TOGGLE_EMITTERSHAPE));
+        menu->addAction(QObject::tr("Hide Emitter Shape"))->setData(static_cast<unsigned int>(MenuActions::PRESET_TOGGLE_EMITTERSHAPE));
     }
     else
     {
-        menu->addAction("Show Emitter Shape")->setData(static_cast<unsigned int>(MenuActions::PRESET_TOGGLE_EMITTERSHAPE));
+        menu->addAction(QObject::tr("Show Emitter Shape"))->setData(static_cast<unsigned int>(MenuActions::PRESET_TOGGLE_EMITTERSHAPE));
     }
 
     menu->addSeparator();
-    menu->addAction("Background color...")->setData(static_cast<unsigned int>(MenuActions::PRESET_BACKGROUND_COLOR));
-    menu->addAction("Grid color...")->setData(static_cast<unsigned int>(MenuActions::PRESET_GRID_COLOR));
-    menu->addAction("Reset colors")->setData(static_cast<unsigned int>(MenuActions::PRESET_RESET_COLOR));
+    menu->addAction(QObject::tr("Background color..."))->setData(static_cast<unsigned int>(MenuActions::PRESET_BACKGROUND_COLOR));
+    menu->addAction(QObject::tr("Grid color..."))->setData(static_cast<unsigned int>(MenuActions::PRESET_GRID_COLOR));
+    menu->addAction(QObject::tr("Reset colors"))->setData(static_cast<unsigned int>(MenuActions::PRESET_RESET_COLOR));
 
     //************************Spline Sub-menu********************************************************
     menu->addSeparator();
     QAction* newaction = nullptr;
     QMenu* splineMovementMenu = new ContextMenu(this);
-    splineMovementMenu->setTitle("Move on spline");
+    splineMovementMenu->setTitle(QObject::tr("Move on spline"));
 
-    QMenu* splineModeMenu = new ContextMenu("Spline mode", this);
+    QMenu* splineModeMenu = new ContextMenu(QObject::tr("Spline mode"), this);
     splineMovementMenu->addMenu(splineModeMenu);
-    newaction = splineModeMenu->addAction("Single path");
+    newaction = splineModeMenu->addAction(QObject::tr("Single path"));
     newaction->setData(static_cast<unsigned int>(MenuActions::PRESET_SINGLEPATH_EMITTER));
     if (m_previewModelView->IsFlagSet(CPreviewModelView::PreviewModelViewFlag::SPLINE_LOOPING) || m_previewModelView->IsFlagSet(CPreviewModelView::PreviewModelViewFlag::SPLINE_PINGPONG))
     {
@@ -151,7 +151,7 @@ void CPreviewWindowView::ExecContextMenu(QPoint position)
         newaction->setChecked(true);
     }
 
-    newaction = splineModeMenu->addAction("Loop");
+    newaction = splineModeMenu->addAction(QObject::tr("Loop"));
     newaction->setData(static_cast<unsigned int>(MenuActions::PRESET_LOOP_EMITTER));
     if (m_previewModelView->IsFlagSet(CPreviewModelView::PreviewModelViewFlag::SPLINE_LOOPING))
     {
@@ -163,7 +163,7 @@ void CPreviewWindowView::ExecContextMenu(QPoint position)
         newaction->setCheckable(false);
     }
 
-    newaction = splineModeMenu->addAction("Ping-pong");
+    newaction = splineModeMenu->addAction(QObject::tr("Ping-pong"));
     newaction->setData(static_cast<unsigned int>(MenuActions::PRESET_PINGPONG_EMITTER));
     if (m_previewModelView->IsFlagSet(CPreviewModelView::PreviewModelViewFlag::SPLINE_PINGPONG))
     {
@@ -175,9 +175,9 @@ void CPreviewWindowView::ExecContextMenu(QPoint position)
         newaction->setCheckable(false);
     }
 
-    QMenu* splineShapeMenu = new ContextMenu("Spline shape", this);
+    QMenu* splineShapeMenu = new ContextMenu(QObject::tr("Spline shape"), this);
     splineMovementMenu->addMenu(splineShapeMenu);
-    newaction = splineShapeMenu->addAction("Line");
+    newaction = splineShapeMenu->addAction(QObject::tr("Line"));
     newaction->setData(static_cast<unsigned int>(MenuActions::PRESET_SPLINE_LINE));
     if (m_previewModelView->GetSplineMode() == CPreviewModelView::SplineMode::LINE)
     {
@@ -189,7 +189,7 @@ void CPreviewWindowView::ExecContextMenu(QPoint position)
         newaction->setCheckable(false);
     }
 
-    newaction = splineShapeMenu->addAction("Sine Wave");
+    newaction = splineShapeMenu->addAction(QObject::tr("Sine Wave"));
     newaction->setData(static_cast<unsigned int>(MenuActions::PRESET_SPLINE_SINE));
     if (m_previewModelView->GetSplineMode() == CPreviewModelView::SplineMode::SINEWAVE)
     {
@@ -201,7 +201,7 @@ void CPreviewWindowView::ExecContextMenu(QPoint position)
         newaction->setCheckable(false);
     }
 
-    newaction = splineShapeMenu->addAction("Coil");
+    newaction = splineShapeMenu->addAction(QObject::tr("Coil"));
     newaction->setData(static_cast<unsigned int>(MenuActions::PRESET_SPLINE_COIL));
     if (m_previewModelView->GetSplineMode() == CPreviewModelView::SplineMode::COIL)
     {
@@ -213,9 +213,9 @@ void CPreviewWindowView::ExecContextMenu(QPoint position)
         newaction->setCheckable(false);
     }
 
-    QMenu* splideSpeedMenu = new ContextMenu("spline speed", this);
+    QMenu* splideSpeedMenu = new ContextMenu(QObject::tr("spline speed"), this);
     splineMovementMenu->addMenu(splideSpeedMenu);
-    newaction = splideSpeedMenu->addAction("Speed x1");
+    newaction = splideSpeedMenu->addAction(QObject::tr("Speed x1"));
     newaction->setData(static_cast<unsigned int>(MenuActions::PRESET_SPLINE_SPEED_X1));
     if (m_previewModelView->GetSplineSpeedMultiplier() == 1)
     {
@@ -227,7 +227,7 @@ void CPreviewWindowView::ExecContextMenu(QPoint position)
         newaction->setCheckable(false);
     }
 
-    newaction = splideSpeedMenu->addAction("Speed x2");
+    newaction = splideSpeedMenu->addAction(QObject::tr("Speed x2"));
     newaction->setData(static_cast<unsigned int>(MenuActions::PRESET_SPLINE_SPEED_X2));
     if (m_previewModelView->GetSplineSpeedMultiplier() == 2)
     {
@@ -239,7 +239,7 @@ void CPreviewWindowView::ExecContextMenu(QPoint position)
         newaction->setCheckable(false);
     }
 
-    newaction = splideSpeedMenu->addAction("Speed x3");
+    newaction = splideSpeedMenu->addAction(QObject::tr("Speed x3"));
     newaction->setData(static_cast<unsigned int>(MenuActions::PRESET_SPLINE_SPEED_X3));
     if (m_previewModelView->GetSplineSpeedMultiplier() == 3)
     {
@@ -251,7 +251,7 @@ void CPreviewWindowView::ExecContextMenu(QPoint position)
         newaction->setCheckable(false);
     }
 
-    newaction = splideSpeedMenu->addAction("Speed x5");
+	newaction = splideSpeedMenu->addAction(QObject::tr("Speed x5"));
     newaction->setData(static_cast<unsigned int>(MenuActions::PRESET_SPLINE_SPEED_X5));
     if (m_previewModelView->GetSplineSpeedMultiplier() == 5)
     {
@@ -264,11 +264,11 @@ void CPreviewWindowView::ExecContextMenu(QPoint position)
     }
 
     menu->addMenu(splineMovementMenu);
-    menu->addAction("Reset spline settings")->setData(static_cast<unsigned int>(MenuActions::PRESET_SPLINE_RESET_DEFAULT));
+    menu->addAction(QObject::tr("Reset spline settings"))->setData(static_cast<unsigned int>(MenuActions::PRESET_SPLINE_RESET_DEFAULT));
 
     //reset everything to default
     menu->addSeparator();
-    menu->addAction("Reset to default")->setData(static_cast<unsigned int>(MenuActions::PRESET_RESET_DEFAULT));
+    menu->addAction(QObject::tr("Reset to default"))->setData(static_cast<unsigned int>(MenuActions::PRESET_RESET_DEFAULT));
 
     //connect all actions
     connect(menu, SIGNAL(triggered(QAction*)), this, SLOT(OnMenuActionClicked(QAction*)));
@@ -354,7 +354,7 @@ void CPreviewWindowView::BuildPreviewWindowUI()
     m_timeOfDayButton->setIcon(QIcon(":/particleQT/icons/TimeOfDay.png"));
     topFrameLayout->addWidget(m_timeOfDayButton, Qt::AlignLeft);
 
-    m_numOfParticle = new QLabel("0P", this);
+    m_numOfParticle = new QLabel(QObject::tr("0P"), this);
     m_numOfParticle->setAlignment(Qt::AlignRight);
     QFont particleNumberFont = m_numOfParticle->font();
     particleNumberFont.setPointSize(14);

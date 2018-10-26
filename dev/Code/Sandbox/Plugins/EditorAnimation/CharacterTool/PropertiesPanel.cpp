@@ -137,21 +137,21 @@ namespace CharacterTool
         locationLayout->setSpacing(2);
         {
             m_backButton = new QToolButton();
-            m_backButton->setToolTip("Go back to previously selected item.");
+            m_backButton->setToolTip(QObject::tr("Go back to previously selected item."));
             m_backButton->setIcon(QIcon("Editor/Icons/animation/back_16.png"));
             EXPECTED(connect(m_backButton, SIGNAL(clicked()), this, SLOT(OnBackButton())));
             m_backButton->setAutoRaise(true);
             locationLayout->addWidget(m_backButton);
 
             m_forwardButton = new QToolButton();
-            m_forwardButton->setToolTip("Go forward to next selected item.");
+            m_forwardButton->setToolTip(QObject::tr("Go forward to next selected item."));
             m_forwardButton->setIcon(QIcon("Editor/Icons/animation/forward_16.png"));
             m_forwardButton->setAutoRaise(true);
             EXPECTED(connect(m_forwardButton, SIGNAL(clicked()), this, SLOT(OnForwardButton())));
             locationLayout->addWidget(m_forwardButton);
 
             m_locationButton = new QToolButton();
-            m_locationButton->setText("None");
+            m_locationButton->setText(QObject::tr("None"));
             m_locationButton->setIcon(QIcon());
             m_locationButton->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
             m_locationButton->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Minimum);
@@ -161,16 +161,16 @@ namespace CharacterTool
             locationLayout->addWidget(m_locationButton);
 
             m_followMenu = new QMenu();
-            m_followActions[FOLLOW_SELECTION] = m_followMenu->addAction(QIcon("Editor/Icons/animation/selection_16.png"), "Follow Selection", this, SLOT(OnFollowMenu()));
+            m_followActions[FOLLOW_SELECTION] = m_followMenu->addAction(QIcon("Editor/Icons/animation/selection_16.png"), QObject::tr("Follow Selection"), this, SLOT(OnFollowMenu()));
             m_followActions[FOLLOW_SELECTION]->setData(int(FOLLOW_SELECTION));
             if (m_system->explorer->HasProvider(SUBTREE_SOURCE_ASSETS))
             {
-                m_followActions[FOLLOW_SOURCE_ASSET] = m_followMenu->addAction(QIcon("Editor/Icons/animation/source_asset_16.png"), "Import Assets", this, SLOT(OnFollowMenu()));
+                m_followActions[FOLLOW_SOURCE_ASSET] = m_followMenu->addAction(QIcon("Editor/Icons/animation/source_asset_16.png"), QObject::tr("Import Assets"), this, SLOT(OnFollowMenu()));
                 ;
                 m_followActions[FOLLOW_SOURCE_ASSET]->setData(int(FOLLOW_SOURCE_ASSET));
             }
             m_followMenu->addSeparator();
-            m_followActions[FOLLOW_LOCK] = m_followMenu->addAction(QIcon("Editor/Icons/animation/lock_16.png"), "Lock", this, SLOT(OnFollowMenu()));
+            m_followActions[FOLLOW_LOCK] = m_followMenu->addAction(QIcon("Editor/Icons/animation/lock_16.png"), QObject::tr("Lock"), this, SLOT(OnFollowMenu()));
             m_followActions[FOLLOW_LOCK]->setData(int(FOLLOW_LOCK));
 
             m_followButton = new QToolButton();
@@ -181,11 +181,11 @@ namespace CharacterTool
             locationLayout->addWidget(m_followButton);
 
             m_settingsMenu = new QMenu();
-            m_settingActions[OUTLINE_ONE_TREE] = m_settingsMenu->addAction("Single Tree", this, SLOT(OnSettingMenu()));
+            m_settingActions[OUTLINE_ONE_TREE] = m_settingsMenu->addAction(QObject::tr("Single Tree"), this, SLOT(OnSettingMenu()));
             m_settingActions[OUTLINE_ONE_TREE]->setData(int(OUTLINE_ONE_TREE));
-            m_settingActions[OUTLINE_ON_TOP] = m_settingsMenu->addAction("Outline: Top", this, SLOT(OnSettingMenu()));
+            m_settingActions[OUTLINE_ON_TOP] = m_settingsMenu->addAction(QObject::tr("Outline: Top"), this, SLOT(OnSettingMenu()));
             m_settingActions[OUTLINE_ON_TOP]->setData(int(OUTLINE_ON_TOP));
-            m_settingActions[OUTLINE_ON_LEFT] = m_settingsMenu->addAction("Outline: Left", this, SLOT(OnSettingMenu()));
+            m_settingActions[OUTLINE_ON_LEFT] = m_settingsMenu->addAction(QObject::tr("Outline: Left"), this, SLOT(OnSettingMenu()));
             m_settingActions[OUTLINE_ON_LEFT]->setData(int(OUTLINE_ON_LEFT));
 
             m_settingsButton = new QToolButton();

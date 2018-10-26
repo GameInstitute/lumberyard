@@ -134,7 +134,7 @@ void DeploymentToolWindow::Deploy()
     // finished processing all of the assets that we write to so that the deploy 
     // command won't fail due to file permission errors.
 
-    m_ui->deployButton->setText("Deploying...");
+    m_ui->deployButton->setText(QObject::tr("Deploying..."));
     m_ui->deployButton->setEnabled(false);
     m_ui->outputTextEdit->setPlainText("");
 
@@ -306,7 +306,7 @@ void DeploymentToolWindow::ResetDeployWidget()
     m_animatedSpinningIcon.stop();
     m_ui->deploySpinnerLabel->setHidden(true);
 
-    m_ui->deployButton->setText("Deploy");
+    m_ui->deployButton->setText(QObject::tr("Deploy"));
     m_ui->deployButton->setEnabled(true);
 }
 

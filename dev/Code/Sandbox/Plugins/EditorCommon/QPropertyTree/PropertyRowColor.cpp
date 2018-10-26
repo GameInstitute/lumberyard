@@ -116,7 +116,7 @@ bool PropertyRowColor<ColorClass>::onContextMenu(QMenu& menu, QPropertyTree* tre
 {
     Serialization::SharedPtr<PropertyRowColor> selfPointer(this);
     ColorMenuHandler* handler = new ColorMenuHandler(tree, this);
-    menu.addAction("Pick Color", handler, SLOT(onMenuPickColor()));
+    menu.addAction(QObject::tr("Pick Color"), handler, SLOT(onMenuPickColor()));
     tree->addMenuHandler(handler);
     return true;
 }

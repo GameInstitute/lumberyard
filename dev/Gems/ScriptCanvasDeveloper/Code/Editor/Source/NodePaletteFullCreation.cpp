@@ -125,7 +125,7 @@ namespace ScriptCanvasDeveloperEditor
             {
                 createNodePaletteAction = new QAction(QAction::tr("Create Node Palette"), mainWindow);
                 createNodePaletteAction->setAutoRepeat(false);
-                createNodePaletteAction->setToolTip("Tries to create every node in the node palette. All of them. At once.");
+                createNodePaletteAction->setToolTip(QObject::tr("Tries to create every node in the node palette. All of them. At once."));
                 createNodePaletteAction->setShortcut(QKeySequence(QAction::tr("Ctrl+Shift+p", "Debug|Create Node Palette")));
 
                 mainWindow->addAction(createNodePaletteAction);

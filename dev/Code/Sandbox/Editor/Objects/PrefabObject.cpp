@@ -286,8 +286,8 @@ void CPrefabObject::OnContextMenu(QMenu* menu)
     CUsedResources resources;
     GatherUsedResources(resources);
 
-    menu->addAction("Properties", functor(*this, &CPrefabObject::OnMenuProperties));
-    menu->addAction("Convert to Procedural Object", functor(*this, &CPrefabObject::ConvertToProceduralObject));
+    menu->addAction(QObject::tr("Properties"), functor(*this, &CPrefabObject::OnMenuProperties));
+    menu->addAction(QObject::tr("Convert to Procedural Object"), functor(*this, &CPrefabObject::ConvertToProceduralObject));
 
     //TODO: to be re-added when AssetBrowser is loading fast
     //menu->Add("Show in Asset Browser", functor(*this, &CBaseObject::OnMenuShowInAssetBrowser)).Enable(!resources.files.empty());

@@ -59,7 +59,7 @@ QColorPickerWidget::QColorPickerWidget(QWidget* parent)
     selectedHue = 127;
 
     colorMenuBtn->installEventFilter(this);
-    colorMenuBtn->setText("Add To Library");
+    colorMenuBtn->setText(QObject::tr("Add To Library"));
     colorMenuEditAction->setDefaultWidget(colorMenuEdit);
     colorMenuBtnAction->setDefaultWidget(colorMenuBtn);
 
@@ -99,8 +99,8 @@ QColorPickerWidget::QColorPickerWidget(QWidget* parent)
 
 
     poundSign->setText("#");
-    newColorLabel->setText("New");
-    currentColorLabel->setText("Current");
+    newColorLabel->setText(QObject::tr("New"));
+    currentColorLabel->setText(QObject::tr("Current"));
 
     eyeDropperMode.setFixedSize(30, 30);
     eyeDropperMode.setStyleSheet(tr("QPushButton{background-image: url(:/particleQT/icons/eyedropper_ico.png); background-position: center; background-repeat: no-repeat;}"));

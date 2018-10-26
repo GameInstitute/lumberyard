@@ -209,7 +209,7 @@ namespace CharacterTool {
         parent.setWindowModality(Qt::ApplicationModal);
 
         ListSelectionDialog dialog(&parent);
-        dialog.setWindowTitle("Attachment Selection");
+        dialog.setWindowTitle(QObject::tr("Attachment Selection"));
         dialog.setWindowIcon(QIcon(GetIEditor()->GetResourceSelectorHost()->ResourceIconPath(x.typeName)));
 
         IAttachmentManager* attachmentManager = characterInstance->GetIAttachmentManager();

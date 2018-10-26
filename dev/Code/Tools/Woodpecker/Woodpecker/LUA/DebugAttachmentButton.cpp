@@ -95,15 +95,15 @@ namespace LUAEditor
         {
         case DAS_ATTACHED:
             this->setIcon(QIcon(":/debug/debugger_connected"));
-            this->setText("Debugging: ON");
+            this->setText(QObject::tr("Debugging: ON"));
             break;
         case DAS_UNATTACHED:
             this->setIcon(QIcon(":/debug/debugger_disconnected"));
-            this->setText("Debugging: OFF");
+            this->setText(QObject::tr("Debugging: OFF"));
             break;
         case DAS_REFUSED:
             this->setIcon(QIcon(":/general/target_none"));
-            this->setText("Debugging: Refused");
+            this->setText(QObject::tr("Debugging: Refused"));
             break;
         }
     }

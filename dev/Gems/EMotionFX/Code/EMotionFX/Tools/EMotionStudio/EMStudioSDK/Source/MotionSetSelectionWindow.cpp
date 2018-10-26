@@ -25,7 +25,7 @@ namespace EMStudio
     MotionSetSelectionWindow::MotionSetSelectionWindow(QWidget* parent, bool useSingleSelection, CommandSystem::SelectionList* selectionList)
         : QDialog(parent)
     {
-        setWindowTitle("Motion Selection Window");
+        setWindowTitle(QObject::tr("Motion Selection Window"));
         resize(850, 500);
 
         QVBoxLayout* layout = new QVBoxLayout();
@@ -34,8 +34,8 @@ namespace EMStudio
 
         // create the ok and cancel buttons
         QHBoxLayout* buttonLayout = new QHBoxLayout();
-        mOKButton       = new QPushButton("OK");
-        mCancelButton   = new QPushButton("Cancel");
+        mOKButton       = new QPushButton(QObject::tr("OK"));
+        mCancelButton   = new QPushButton(QObject::tr("Cancel"));
         buttonLayout->addWidget(mOKButton);
         buttonLayout->addWidget(mCancelButton);
 

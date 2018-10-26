@@ -129,11 +129,11 @@ namespace AZ
                 m_scaleWidget->setMinimum(0);
                 m_scaleWidget->setMaximum(10000);
                 
-                layout->addWidget(new QLabel("Position"), 0, 0);
+                layout->addWidget(new QLabel(QObject::tr("Position")), 0, 0);
                 layout->addWidget(m_translationWidget, 0, 1);
-                layout->addWidget(new QLabel("Rotation"), 1, 0);
+                layout->addWidget(new QLabel(QObject::tr("Rotation")), 1, 0);
                 layout->addWidget(m_rotationWidget, 1, 1);
-                layout->addWidget(new QLabel("Scale"), 2, 0);
+                layout->addWidget(new QLabel(QObject::tr("Scale")), 2, 0);
                 layout->addWidget(m_scaleWidget, 2, 1);
 
                 QObject::connect(m_translationWidget, &AzToolsFramework::PropertyVectorCtrl::valueChanged, this, [this]

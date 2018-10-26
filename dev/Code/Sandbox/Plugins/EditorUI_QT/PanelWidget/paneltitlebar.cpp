@@ -438,13 +438,13 @@ void ItemPanelTitleBar::BuildCustomMenu(QMenu *menu)
     // just rebuild menu by clearing
     menu->clear();
 
-    menu->addAction("Rename", this, &ItemPanelTitleBar::StartRename);
-    menu->addAction("Remove all", this, [this]
+    menu->addAction(QObject::tr("Rename"), this, &ItemPanelTitleBar::StartRename);
+    menu->addAction(QObject::tr("Remove all"), this, [this]
         {
             emit SignalRemoveAllParams((QDockWidget*)parentWidget());
         });
 
-    menu->addAction("Export", this, [this]
+    menu->addAction(QObject::tr("Export"), this, [this]
         {
             QString fileName = QFileDialog::getSaveFileName(this, tr("Export Panel"), QString(), tr("Panel file (*.custom_attribute)"));
             if (!fileName.isEmpty())
@@ -453,5 +453,5 @@ void ItemPanelTitleBar::BuildCustomMenu(QMenu *menu)
             }
         }, GetIEditor()->GetParticleUtils()->HotKey_GetShortcut("Attributes.Export Panel"));
 
-    menu->addAction("Close", this, &ItemPanelTitleBar::closePanel);
+    menu->addAction(QObject::tr("Close"), this, &ItemPanelTitleBar::closePanel);
 }

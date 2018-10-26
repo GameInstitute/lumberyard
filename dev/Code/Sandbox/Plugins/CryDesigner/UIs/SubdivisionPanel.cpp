@@ -53,13 +53,13 @@ SubdivisionPanel::SubdivisionPanel(SubdivisionTool* pSubdivisionTool)
     QObject::connect(m_pSemiSharpCreaseList, &QTreeWidget::itemChanged, this, [=](QTreeWidgetItem* item, int column){OnItemChanged(item, column); });
     QObject::connect(m_pSemiSharpCreaseList, &QTreeWidget::currentItemChanged, this, [=](QTreeWidgetItem* current, QTreeWidgetItem* previous){OnCurrentItemChanged(current, previous); });
 
-    QPushButton* pFreezeButton = new QPushButton("Freeze");
-    QPushButton* pAddButton = new QPushButton("Add");
-    QPushButton* pDeleteButton = new QPushButton("Delete");
-    QPushButton* pDeleteUnusedButton = new QPushButton("Delete Unused");
-    QPushButton* pClearButton = new QPushButton("Clear");
-    QCheckBox* pSmoothingSurfaceButton = new QCheckBox("Smoothing Surface");
-    QLabel* pLabel = new QLabel("Semi-sharp Creases");
+    QPushButton* pFreezeButton = new QPushButton(QObject::tr("Freeze"));
+    QPushButton* pAddButton = new QPushButton(QObject::tr("Add"));
+    QPushButton* pDeleteButton = new QPushButton(QObject::tr("Delete"));
+    QPushButton* pDeleteUnusedButton = new QPushButton(QObject::tr("Delete Unused"));
+    QPushButton* pClearButton = new QPushButton(QObject::tr("Clear"));
+    QCheckBox* pSmoothingSurfaceButton = new QCheckBox(QObject::tr("Smoothing Surface"));
+    QLabel* pLabel = new QLabel(QObject::tr("Semi-sharp Creases"));
     pLabel->setAlignment(Qt::AlignHCenter);
 
     pGridLayout->addWidget(m_pSubdivisionLevelSlider, 0, 0, 1, 6);

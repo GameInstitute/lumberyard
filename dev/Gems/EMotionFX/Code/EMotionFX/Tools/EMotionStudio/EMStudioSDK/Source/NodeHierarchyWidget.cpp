@@ -58,16 +58,16 @@ namespace EMStudio
         // create the display layout
         QHBoxLayout* displayLayout = new QHBoxLayout();
 
-        displayLayout->addWidget(new QLabel("Display:"));
+        displayLayout->addWidget(new QLabel(QObject::tr("Display:")));
 
         mDisplayButtonGroup     = new MysticQt::ButtonGroup(this, 1, 3);
         mDisplayMeshesButton    = mDisplayButtonGroup->GetButton(0, 0);
         mDisplayNodesButton     = mDisplayButtonGroup->GetButton(0, 1);
         mDisplayBonesButton     = mDisplayButtonGroup->GetButton(0, 2);
 
-        mDisplayMeshesButton->setText("Meshes");
-        mDisplayNodesButton->setText("Nodes");
-        mDisplayBonesButton->setText("Bones");
+        mDisplayMeshesButton->setText(QObject::tr("Meshes"));
+        mDisplayNodesButton->setText(QObject::tr("Nodes"));
+        mDisplayBonesButton->setText(QObject::tr("Bones"));
 
         mDisplayBonesButton->setIcon(*mBoneIcon);
         mDisplayNodesButton->setIcon(*mNodeIcon);
@@ -597,7 +597,7 @@ namespace EMStudio
 
         // show the menu
         QMenu menu(this);
-        menu.addAction("Add all towards root to selection");
+        menu.addAction(QObject::tr("Add all towards root to selection"));
 
         AZStd::vector<SelectionItem> itemsToAdd;
         if (menu.exec(mHierarchy->mapToGlobal(pos)))

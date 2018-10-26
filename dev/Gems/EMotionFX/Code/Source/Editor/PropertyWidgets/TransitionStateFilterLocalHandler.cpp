@@ -71,7 +71,7 @@ namespace EMotionFX
 
         if (numStates == 0 || !m_stateMachine)
         {
-            m_pickButton->setText("Select states");
+            m_pickButton->setText(QObject::tr("Select states"));
             m_resetButton->setVisible(false);
         }
         else if (numStates == 1)

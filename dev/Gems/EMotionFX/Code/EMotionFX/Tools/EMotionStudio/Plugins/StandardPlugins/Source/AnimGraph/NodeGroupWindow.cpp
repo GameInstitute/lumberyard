@@ -55,7 +55,7 @@ namespace EMStudio
         mNodeGroup = nodeGroup;
 
         // set the window title
-        setWindowTitle("Rename Node Group");
+        setWindowTitle(QObject::tr("Rename Node Group"));
 
         // set the minimum width
         setMinimumWidth(300);
@@ -64,7 +64,7 @@ namespace EMStudio
         QVBoxLayout* layout = new QVBoxLayout();
 
         // add the top text
-        layout->addWidget(new QLabel("Please enter the new node group name:"));
+        layout->addWidget(new QLabel(QObject::tr("Please enter the new node group name:")));
 
         // add the line edit
         mLineEdit = new QLineEdit();
@@ -82,8 +82,8 @@ namespace EMStudio
 
         // create the button layout
         QHBoxLayout* buttonLayout   = new QHBoxLayout();
-        mOKButton                   = new QPushButton("OK");
-        QPushButton* cancelButton   = new QPushButton("Cancel");
+        mOKButton                   = new QPushButton(QObject::tr("OK"));
+		QPushButton* cancelButton = new QPushButton(QObject::tr("Cancel"));
         //buttonLayout->addWidget(mErrorMsg);
         buttonLayout->addWidget(mOKButton);
         buttonLayout->addWidget(cancelButton);
@@ -217,13 +217,13 @@ namespace EMStudio
         mTableWidget->setColumnCount(3);
 
         // set header items for the table
-        QTableWidgetItem* headerItem = new QTableWidgetItem("Vis");
+        QTableWidgetItem* headerItem = new QTableWidgetItem(QObject::tr("Vis"));
         headerItem->setTextAlignment(Qt::AlignVCenter | Qt::AlignLeft);
         mTableWidget->setHorizontalHeaderItem(0, headerItem);
-        headerItem = new QTableWidgetItem("Color");
+        headerItem = new QTableWidgetItem(QObject::tr("Color"));
         headerItem->setTextAlignment(Qt::AlignVCenter | Qt::AlignLeft);
         mTableWidget->setHorizontalHeaderItem(1, headerItem);
-        headerItem = new QTableWidgetItem("Name");
+        headerItem = new QTableWidgetItem(QObject::tr("Name"));
         headerItem->setTextAlignment(Qt::AlignVCenter | Qt::AlignLeft);
         mTableWidget->setHorizontalHeaderItem(2, headerItem);
 
@@ -756,7 +756,7 @@ namespace EMStudio
         // at least one selected, remove action is possible
         if (rowIndices.GetLength() > 0)
         {
-            QAction* removeAction = menu.addAction("Remove Selected Node Groups");
+            QAction* removeAction = menu.addAction(QObject::tr("Remove Selected Node Groups"));
             removeAction->setIcon(MysticQt::GetMysticQt()->FindIcon("/Images/Icons/Minus.png"));
             connect(removeAction, SIGNAL(triggered()), this, SLOT(OnRemoveSelectedGroups()));
         }
@@ -764,7 +764,7 @@ namespace EMStudio
         // add rename if only one selected
         if (rowIndices.GetLength() == 1)
         {
-            QAction* renameAction = menu.addAction("Rename Selected Node Group");
+            QAction* renameAction = menu.addAction(QObject::tr("Rename Selected Node Group"));
             connect(renameAction, SIGNAL(triggered()), this, SLOT(OnRenameSelectedNodeGroup()));
         }
 

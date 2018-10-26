@@ -40,7 +40,7 @@ namespace EMStudio
         mNodeGroupName = nodeGroupName;
 
         // set the window title
-        setWindowTitle("Rename Node Group");
+        setWindowTitle(QObject::tr("Rename Node Group"));
 
         // set the minimum width
         setMinimumWidth(300);
@@ -49,7 +49,7 @@ namespace EMStudio
         QVBoxLayout* layout = new QVBoxLayout();
 
         // add the top text
-        layout->addWidget(new QLabel("Please enter the new node group name:"));
+        layout->addWidget(new QLabel(QObject::tr("Please enter the new node group name:")));
 
         // add the line edit
         mLineEdit = new QLineEdit();
@@ -62,8 +62,8 @@ namespace EMStudio
 
         // create the button layout
         QHBoxLayout* buttonLayout   = new QHBoxLayout();
-        mOKButton                   = new QPushButton("OK");
-        QPushButton* cancelButton   = new QPushButton("Cancel");
+        mOKButton                   = new QPushButton(QObject::tr("OK"));
+		QPushButton* cancelButton = new QPushButton(QObject::tr("Cancel"));
         buttonLayout->addWidget(mOKButton);
         buttonLayout->addWidget(cancelButton);
 
@@ -674,14 +674,14 @@ namespace EMStudio
         QMenu menu(this);
 
         // add node group is always enabled
-        QAction* addAction = menu.addAction("Add Node Group");
+        QAction* addAction = menu.addAction(QObject::tr("Add Node Group"));
         addAction->setIcon(MysticQt::GetMysticQt()->FindIcon("Images/Icons/Plus.png"));
         connect(addAction, SIGNAL(triggered()), this, SLOT(AddNodeGroup()));
 
         // add remove action
         if (rowIndices.size() > 0)
         {
-            QAction* removeAction = menu.addAction("Remove Selected Node Group");
+            QAction* removeAction = menu.addAction(QObject::tr("Remove Selected Node Group"));
             removeAction->setIcon(MysticQt::GetMysticQt()->FindIcon("Images/Icons/Minus.png"));
             connect(removeAction, SIGNAL(triggered()), this, SLOT(RemoveSelectedNodeGroup()));
         }
@@ -689,7 +689,7 @@ namespace EMStudio
         // add rename action if only one selected
         if (rowIndices.size() == 1)
         {
-            QAction* renameAction = menu.addAction("Rename Selected Node Group");
+            QAction* renameAction = menu.addAction(QObject::tr("Rename Selected Node Group"));
             connect(renameAction, SIGNAL(triggered()), this, SLOT(RenameSelectedNodeGroup()));
         }
 

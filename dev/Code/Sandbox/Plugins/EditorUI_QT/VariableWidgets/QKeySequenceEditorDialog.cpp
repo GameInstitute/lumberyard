@@ -24,7 +24,7 @@ QKeySequenceEditorDialog::QKeySequenceEditorDialog(QWidget* parent)
 {
     formLayout = new QFormLayout(this);
     layout = new QGridLayout(this);
-    setWindowTitle("HotKey Configuration");
+    setWindowTitle(QObject::tr("HotKey Configuration"));
     scrollArea = new QScrollArea(this);
     scrollWidget = new QWidget(scrollArea);
     scrollWidget->setLayout(formLayout);

@@ -38,12 +38,12 @@ namespace EMStudio
         layout->setMargin(0);
 
         // checkbox to enable/disable manual mode for all morph targets
-        mSelectAll = new QCheckBox("Select All");
+        mSelectAll = new QCheckBox(QObject::tr("Select All"));
         mSelectAll->setSizePolicy(QSizePolicy::Maximum, QSizePolicy::Fixed);
         connect(mSelectAll, SIGNAL(stateChanged(int)), this, SLOT(SetManualModeForAll(int)));
 
         // button for resetting all morph targets
-        QPushButton* resetAll = new QPushButton("Reset All");
+        QPushButton* resetAll = new QPushButton(QObject::tr("Reset All"));
         resetAll->setSizePolicy(QSizePolicy::MinimumExpanding, QSizePolicy::Fixed);
         connect(resetAll, SIGNAL(clicked()), this, SLOT(ResetAll()));
 
@@ -100,7 +100,7 @@ namespace EMStudio
             gridLayout->addWidget(nameLabel, intIndex, 3);
 
             // create the edit button
-            QPushButton* edit = new QPushButton("Edit");
+            QPushButton* edit = new QPushButton(QObject::tr("Edit"));
             edit->setProperty("MorphTargetIndex", intIndex);
             gridLayout->addWidget(edit, intIndex, 4);
             connect(edit, SIGNAL(clicked()), this, SLOT(EditClicked()));

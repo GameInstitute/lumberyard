@@ -39,7 +39,7 @@ namespace EMStudio
         : QDialog(parent)
     {
         // set the window title
-        setWindowTitle("Remove Motions Failed");
+        setWindowTitle(QObject::tr("Remove Motions Failed"));
 
         // resize the window
         resize(720, 405);
@@ -48,7 +48,7 @@ namespace EMStudio
         QVBoxLayout* layout = new QVBoxLayout();
 
         // add the top text
-        layout->addWidget(new QLabel("The following motions failed to get removed because they are used by another motion set:"));
+        layout->addWidget(new QLabel(QObject::tr("The following motions failed to get removed because they are used by another motion set:")));
 
         // create the table widget
         QTableWidget* tableWidget = new QTableWidget();
@@ -104,7 +104,7 @@ namespace EMStudio
         layout->addWidget(tableWidget);
 
         // add the button to close the window
-        QPushButton* okButton = new QPushButton("OK");
+        QPushButton* okButton = new QPushButton(QObject::tr("OK"));
         connect(okButton, SIGNAL(clicked()), this, SLOT(accept()));
         QHBoxLayout* buttonLayout = new QHBoxLayout();
         buttonLayout->setAlignment(Qt::AlignRight);
@@ -123,7 +123,7 @@ namespace EMStudio
         mMotionSet = motionSet;
 
         // set the window title
-        setWindowTitle("Enter new motion set name");
+        setWindowTitle(QObject::tr("Enter new motion set name"));
 
         // set the minimum width
         setMinimumWidth(300);
@@ -147,8 +147,8 @@ namespace EMStudio
 
         // create the button layout
         QHBoxLayout* buttonLayout   = new QHBoxLayout();
-        mOKButton                   = new QPushButton("OK");
-        QPushButton* cancelButton   = new QPushButton("Cancel");
+        mOKButton                   = new QPushButton(QObject::tr("OK"));
+		QPushButton* cancelButton = new QPushButton(QObject::tr("Cancel"));
         //buttonLayout->addWidget(mErrorMsg);
         buttonLayout->addWidget(mOKButton);
         buttonLayout->addWidget(cancelButton);
@@ -497,7 +497,7 @@ namespace EMStudio
         QMenu menu(this);
 
         // add motion set is always enabled
-        QAction* addAction = menu.addAction("Add Motion Set");
+        QAction* addAction = menu.addAction(QObject::tr("Add Motion Set"));
         addAction->setIcon(MysticQt::GetMysticQt()->FindIcon("Images/Icons/Plus.png"));
         connect(addAction, SIGNAL(triggered()), this, SLOT(OnCreateMotionSet()));
 
@@ -508,7 +508,7 @@ namespace EMStudio
         // add remove if at least one item selected
         if (numSelectedItems > 0)
         {
-            QAction* removeAction = menu.addAction("Remove Selected Motion Sets");
+            QAction* removeAction = menu.addAction(QObject::tr("Remove Selected Motion Sets"));
             removeAction->setIcon(MysticQt::GetMysticQt()->FindIcon("Images/Icons/Minus.png"));
             connect(removeAction, SIGNAL(triggered()), this, SLOT(OnRemoveSelectedMotionSets()));
         }
@@ -516,7 +516,7 @@ namespace EMStudio
         // add rename if only one item selected
         if (numSelectedItems == 1)
         {
-            QAction* renameAction = menu.addAction("Rename Selected Motion Set");
+            QAction* renameAction = menu.addAction(QObject::tr("Rename Selected Motion Set"));
             connect(renameAction, SIGNAL(triggered()), this, SLOT(OnRenameSelectedMotionSet()));
         }
 
@@ -526,7 +526,7 @@ namespace EMStudio
             menu.addSeparator();
 
             // add the save menu
-            QAction* saveAction = menu.addAction("Save Selected Root Motion Set");
+            QAction* saveAction = menu.addAction(QObject::tr("Save Selected Root Motion Set"));
             saveAction->setIcon(MysticQt::GetMysticQt()->FindIcon("/Images/Menu/FileSave.png"));
             connect(saveAction, SIGNAL(triggered()), this, SLOT(OnSave()));
         }

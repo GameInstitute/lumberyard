@@ -29,7 +29,7 @@ namespace EMStudio
         mOpacity = 210;
 
         // set the window title
-        setWindowTitle("Notification");
+        setWindowTitle(QObject::tr("Notification"));
 
         // window, no border, no focus, stays on top
         setWindowFlags(Qt::Popup | Qt::FramelessWindowHint | Qt::WindowDoesNotAcceptFocus);

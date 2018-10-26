@@ -97,12 +97,12 @@ namespace EMStudio
 
         // create the filter button group
         mFilterButtonGroup = new MysticQt::ButtonGroup(nullptr, 1, 6);
-        mFilterButtonGroup->GetButton(0, 0)->setText("Fatal");
-        mFilterButtonGroup->GetButton(0, 1)->setText("Error");
-        mFilterButtonGroup->GetButton(0, 2)->setText("Warning");
-        mFilterButtonGroup->GetButton(0, 3)->setText("Info");
-        mFilterButtonGroup->GetButton(0, 4)->setText("Detailed Info");
-        mFilterButtonGroup->GetButton(0, 5)->setText("Debug");
+        mFilterButtonGroup->GetButton(0, 0)->setText(QObject::tr("Fatal"));
+        mFilterButtonGroup->GetButton(0, 1)->setText(QObject::tr("Error"));
+        mFilterButtonGroup->GetButton(0, 2)->setText(QObject::tr("Warning"));
+        mFilterButtonGroup->GetButton(0, 3)->setText(QObject::tr("Info"));
+        mFilterButtonGroup->GetButton(0, 4)->setText(QObject::tr("Detailed Info"));
+        mFilterButtonGroup->GetButton(0, 5)->setText(QObject::tr("Debug"));
         mFilterButtonGroup->GetButton(0, 0)->setChecked(true);
         mFilterButtonGroup->GetButton(0, 1)->setChecked(true);
         mFilterButtonGroup->GetButton(0, 2)->setChecked(true);
@@ -126,7 +126,7 @@ namespace EMStudio
 
         // create the filter layout
         QHBoxLayout* topLayout = new QHBoxLayout();
-        topLayout->addWidget(new QLabel("Filter:"));
+        topLayout->addWidget(new QLabel(QObject::tr("Filter:")));
         topLayout->addWidget(mFilterButtonGroup);
         topLayout->addWidget(spacerWidget);
         topLayout->addWidget(searchWidget);

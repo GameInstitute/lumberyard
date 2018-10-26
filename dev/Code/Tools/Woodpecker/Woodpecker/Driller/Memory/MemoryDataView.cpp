@@ -156,7 +156,7 @@ namespace Driller
         m_gui = azcreate(Ui::MemoryDataView, ());
         m_gui->setupUi(this);
 
-        setWindowTitle(QString("Memory Data View %1 from %2").arg(profilerIndex).arg(aggregator->GetIdentity()));
+        setWindowTitle(QString(QObject::tr("Memory Data View %1 from %2")).arg(profilerIndex).arg(aggregator->GetIdentity()));
 
         m_ptrFormatter = aznew MemoryAxisFormatter(this);
         m_gui->widgetDataStrip->SetAxisTextFormatter(m_ptrFormatter);

@@ -50,7 +50,7 @@ public:
         }
         else
         {
-            setToolTip("Double click to open in script editor or Explorer.");
+            setToolTip(QObject::tr("Double click to open in script editor or Explorer."));
         }
 
         // QLabel isn't repainting correctly. This forces the issue.
@@ -138,27 +138,27 @@ public:
 
         if (fileInfo.isDir())
         {
-            auto openPathInExplorer = menu->addAction("View in Explorer");
+            auto openPathInExplorer = menu->addAction(QObject::tr("View in Explorer"));
             openPathInExplorer->setToolTip(tr("View the directory in Windows Explorer."));
             connect(openPathInExplorer, &QAction::triggered, this, &FilePathLabel::OnOpenPathInExplorer);
 
-            auto copyPathToClipboard = menu->addAction("Copy path to clipboard");
+            auto copyPathToClipboard = menu->addAction(QObject::tr("Copy path to clipboard"));
             copyPathToClipboard->setToolTip(tr("Copy the directory path to the clipboard."));
             connect(copyPathToClipboard, &QAction::triggered, this, &FilePathLabel::OnCopyPathToClipboard);
         }
         else
         {
-            auto openFile = menu->addAction("Open in script editor");
+            auto openFile = menu->addAction(QObject::tr("Open in script editor"));
             openFile->setToolTip(tr("Open file in the scripted editor configured in Lumberyard's global preferences."));
             connect(openFile, &QAction::triggered, this, &FilePathLabel::OnOpenInScriptEditor);
 
-            auto openPathInExplorer = menu->addAction("View in Explorer");
+            auto openPathInExplorer = menu->addAction(QObject::tr("View in Explorer"));
             openPathInExplorer->setToolTip(tr("View the file in Windows Explorer."));
             connect(openPathInExplorer, &QAction::triggered, this, &FilePathLabel::OnOpenLocationInExplorer);
 
             menu->addSeparator();
 
-            auto copyPathToClipboard = menu->addAction("Copy path to clipboard");
+            auto copyPathToClipboard = menu->addAction(QObject::tr("Copy path to clipboard"));
             copyPathToClipboard->setToolTip(tr("Copy the file path to the clipboard."));
             connect(copyPathToClipboard, &QAction::triggered, this, &FilePathLabel::OnCopyPathToClipboard);
         }

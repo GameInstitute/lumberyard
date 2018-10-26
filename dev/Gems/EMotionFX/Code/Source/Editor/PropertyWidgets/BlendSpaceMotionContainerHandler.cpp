@@ -93,7 +93,7 @@ namespace EMotionFX
         // Restore button.
         const int iconSize = 20;
         m_restoreButton = new QPushButton();
-        m_restoreButton->setToolTip("Restore value to automatically computed one");
+        m_restoreButton->setToolTip(QObject::tr("Restore value to automatically computed one"));
         m_restoreButton->setMinimumSize(iconSize, iconSize);
         m_restoreButton->setMaximumSize(iconSize, iconSize);
         m_restoreButton->setIcon(QIcon(":/EMotionFX/Restore.png"));
@@ -103,7 +103,7 @@ namespace EMotionFX
 
         // Remove motion from blend space button.
         m_removeButton = new QPushButton();
-        m_removeButton->setToolTip("Remove motion from blend space");
+        m_removeButton->setToolTip(QObject::tr("Remove motion from blend space"));
         m_removeButton->setMinimumSize(iconSize, iconSize);
         m_removeButton->setMaximumSize(iconSize, iconSize);
         m_removeButton->setIcon(QIcon(":/EMotionFX/Trash.png"));
@@ -163,7 +163,7 @@ namespace EMotionFX
         if (m_motion->TestFlag(EMotionFX::BlendSpaceNode::BlendSpaceMotion::TypeFlags::InvalidMotion))
         {
             m_labelMotion->setStyleSheet("#m_labelMotion { border: 1px solid red; }");
-            m_labelMotion->setToolTip("Invalid motion.Select a motion set that contains this motion or add it to the current one.");
+            m_labelMotion->setToolTip(QObject::tr("Invalid motion.Select a motion set that contains this motion or add it to the current one."));
         }
         else
         {
@@ -463,7 +463,7 @@ namespace EMotionFX
 
         if (m_motions.empty())
         {
-            m_addMotionsLabel->setText("Add motions and set coordinates.");
+            m_addMotionsLabel->setText(QObject::tr("Add motions and set coordinates."));
         }
         else
         {

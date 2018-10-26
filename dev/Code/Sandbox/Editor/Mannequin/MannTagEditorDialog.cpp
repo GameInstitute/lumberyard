@@ -54,7 +54,7 @@ CMannTagEditorDialog::~CMannTagEditorDialog()
 //////////////////////////////////////////////////////////////////////////
 BOOL CMannTagEditorDialog::OnInitDialog()
 {
-    setWindowTitle("Mannequin FragmentID Editor");
+    setWindowTitle(QObject::tr("Mannequin FragmentID Editor"));
     m_contexts = CMannequinDialog::GetCurrentInstance()->Contexts();
 
     ui.reset(new Ui::CMannTagEditorDialog);

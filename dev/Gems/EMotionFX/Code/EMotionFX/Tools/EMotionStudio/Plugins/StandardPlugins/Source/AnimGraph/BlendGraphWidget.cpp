@@ -808,12 +808,12 @@ namespace EMStudio
                     NodeConnection* connection = selectedConnections[0];
                     if (connection->GetIsDisabled())
                     {
-                        QAction* enableConnectionAction = menu.addAction("Enable Transition");
+                        QAction* enableConnectionAction = menu.addAction(QObject::tr("Enable Transition"));
                         connect(enableConnectionAction, SIGNAL(triggered()), this, SLOT(EnableSelectedTransitions()));
                     }
                     else
                     {
-                        QAction* disableConnectionAction = menu.addAction("Disable Transition");
+                        QAction* disableConnectionAction = menu.addAction(QObject::tr("Disable Transition"));
                         connect(disableConnectionAction, SIGNAL(triggered()), this, SLOT(DisableSelectedTransitions()));
                     }
 
@@ -824,7 +824,7 @@ namespace EMStudio
                         // allow to put the conditions into the clipboard
                         if (transition->GetNumConditions() > 0)
                         {
-                            QAction* copyAction = menu.addAction("Copy Conditions");
+                            QAction* copyAction = menu.addAction(QObject::tr("Copy Conditions"));
                             copyAction->setIcon(MysticQt::GetMysticQt()->FindIcon("Images/Icons/Copy.png"));
                             connect(copyAction, SIGNAL(triggered()), (QWidget*)mPlugin->GetAttributesWindow(), SLOT(OnCopyConditions()));
                         }
@@ -832,11 +832,11 @@ namespace EMStudio
                         // if we already copied some conditions, allow pasting
                         if (mPlugin->GetAttributesWindow()->GetCopyPasteConditionClipboard().GetIsEmpty() == false)
                         {
-                            QAction* pasteAction = menu.addAction("Paste Conditions");
+                            QAction* pasteAction = menu.addAction(QObject::tr("Paste Conditions"));
                             pasteAction->setIcon(MysticQt::GetMysticQt()->FindIcon("Images/Icons/Paste.png"));
                             connect(pasteAction, SIGNAL(triggered()), (QWidget*)mPlugin->GetAttributesWindow(), SLOT(OnPasteConditions()));
 
-                            QAction* pasteSelectiveAction = menu.addAction("Paste Conditions Selective");
+                            QAction* pasteSelectiveAction = menu.addAction(QObject::tr("Paste Conditions Selective"));
                             pasteSelectiveAction->setIcon(MysticQt::GetMysticQt()->FindIcon("Images/Icons/Paste.png"));
                             connect(pasteSelectiveAction, SIGNAL(triggered()), mPlugin->GetAttributesWindow(), SLOT(OnPasteConditionsSelective()));
                         }
@@ -866,14 +866,14 @@ namespace EMStudio
                     // enable transitions menu entry
                     if (showEnableTransitions)
                     {
-                        QAction* enableConnectionAction = menu.addAction("Enable Transitions");
+                        QAction* enableConnectionAction = menu.addAction(QObject::tr("Enable Transitions"));
                         connect(enableConnectionAction, SIGNAL(triggered()), this, SLOT(EnableSelectedTransitions()));
                     }
 
                     // disable transitions menu entry
                     if (showDisableTransitions)
                     {
-                        QAction* disableConnectionAction = menu.addAction("Disable Transitions");
+                        QAction* disableConnectionAction = menu.addAction(QObject::tr("Disable Transitions"));
                         connect(disableConnectionAction, SIGNAL(triggered()), this, SLOT(DisableSelectedTransitions()));
                     }
                 }

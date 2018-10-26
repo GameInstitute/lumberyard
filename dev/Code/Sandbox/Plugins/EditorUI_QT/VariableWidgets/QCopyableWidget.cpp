@@ -54,7 +54,7 @@ void QCopyableWidget::BuildMenu(QMenu *menu)
     menu->addSeparator();
     if (m_flags & ENABLE_COPY)
     {
-        action = menu->addAction("Copy");
+        action = menu->addAction(QObject::tr("Copy"));
         connect(action, &QAction::triggered, this, [this]()
             {
                 if ((bool)onCopyCallback)
@@ -65,7 +65,7 @@ void QCopyableWidget::BuildMenu(QMenu *menu)
     }
     if (m_flags & ENABLE_PASTE)
     {
-        action = menu->addAction("Paste");
+        action = menu->addAction(QObject::tr("Paste"));
         if (onCheckPasteCallback)
         {
             action->setDisabled(!onCheckPasteCallback());
@@ -85,7 +85,7 @@ void QCopyableWidget::BuildMenu(QMenu *menu)
     }
     if (m_flags & ENABLE_DUPLICATE)
     {
-        action = menu->addAction("Duplicate");
+        action = menu->addAction(QObject::tr("Duplicate"));
         connect(action, &QAction::triggered, this, [this](bool state)
             {
                 if ((bool)onDuplicateCallback)
@@ -96,7 +96,7 @@ void QCopyableWidget::BuildMenu(QMenu *menu)
     }
     if (m_flags & ENABLE_RESET)
     {
-        action = menu->addAction("Reset to default");
+        action = menu->addAction(QObject::tr("Reset to default"));
         connect(action, &QAction::triggered, this, [this]()
             {
                 if ((bool)onResetCallback)

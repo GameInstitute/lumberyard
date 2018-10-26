@@ -60,7 +60,7 @@ namespace AzToolsFramework
         m_browseButton->setText("...");
         m_browseButton->setMouseTracking(true);
         m_browseButton->setContentsMargins(0, 0, 0, 0);
-        m_browseButton->setToolTip("Browse for ATL control...");
+        m_browseButton->setToolTip(QObject::tr("Browse for ATL control..."));
 
         m_clearButton = new QPushButton(this);
         m_clearButton->setFlat(true);
@@ -69,7 +69,7 @@ namespace AzToolsFramework
         m_clearButton->setMouseTracking(true);
         m_clearButton->setIcon(QIcon(":/PropertyEditor/Resources/cross-small.png"));
         m_clearButton->setContentsMargins(0, 0, 0, 0);
-        m_clearButton->setToolTip("Clear ATL control");
+        m_clearButton->setToolTip(QObject::tr("Clear ATL control"));
 
         connect(m_controlEdit, &QLineEdit::editingFinished, this,
             [this] ()

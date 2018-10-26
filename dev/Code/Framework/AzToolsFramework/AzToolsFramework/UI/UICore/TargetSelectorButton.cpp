@@ -84,7 +84,7 @@ namespace AzToolsFramework
         if (!connected)
         {
             this->setIcon(QIcon(":/general/target_none"));
-            this->setText("Target: None");
+            this->setText(QObject::tr("Target: None"));
             return;
         }
 
@@ -93,21 +93,21 @@ namespace AzToolsFramework
         if (!info.GetPersistentId())
         {
             this->setIcon(QIcon(":/general/target_none"));
-            this->setText("Target: None");
+            this->setText(QObject::tr("Target: None"));
             return;
         }
 
         if (!info.IsValid())
         {
             this->setIcon(QIcon(":/general/target_none"));
-            this->setText("Target: None");
+            this->setText(QObject::tr("Target: None"));
             return;
         }
 
         QString displayTargetString;
         ConstructDisplayTargetString(displayTargetString, info);
 
-        this->setText(QString("Target: %1").arg(displayTargetString));
+        this->setText(QString(QObject::tr("Target: %1")).arg(displayTargetString));
         if (info.GetStatusFlags() & AzFramework::TF_ONLINE)
         {
             this->setIcon(QIcon(":/general/target_connected"));
@@ -125,18 +125,18 @@ namespace AzToolsFramework
         if (!info.GetPersistentId())
         {
             this->setIcon(QIcon(":/general/target_none"));
-            this->setText("Target: None");
+            this->setText(QObject::tr("Target: None"));
             return;
         }
 
         if (!info.IsValid())
         {
             this->setIcon(QIcon(":/general/target_none"));
-            this->setText("Target: None");
+            this->setText(QObject::tr("Target: None"));
             return;
         }
 
-        this->setText(QString("Target: %1").arg(info.GetDisplayName()));
+        this->setText(QString(QObject::tr("Target: %1")).arg(info.GetDisplayName()));
         if (info.GetStatusFlags() & AzFramework::TF_ONLINE)
         {
             this->setIcon(QIcon(":/general/target_connected"));

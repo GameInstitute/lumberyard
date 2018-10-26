@@ -96,7 +96,7 @@ namespace AZ
                 }
                 else
                 {
-                    ui->m_noSelectionLabel->setText("Empty node selected.");
+                    ui->m_noSelectionLabel->setText(QObject::tr("Empty node selected."));
                 }
                 ui->m_infoStack->setCurrentIndex(0);
             }

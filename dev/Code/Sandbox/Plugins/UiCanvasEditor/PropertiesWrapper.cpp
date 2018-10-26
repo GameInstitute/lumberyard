@@ -31,7 +31,7 @@ PropertiesWrapper::PropertiesWrapper(HierarchyWidget* hierarchy,
 
         QLabel* elementName = new QLabel(this);
         elementName->setObjectName(QStringLiteral("m_elementName"));
-        elementName->setText("No Canvas Loaded");
+        elementName->setText(QObject::tr("No Canvas Loaded"));
 
         innerLayout->addWidget(elementName);
 

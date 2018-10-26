@@ -123,7 +123,7 @@ void CPreviewerPage::OnInitDialog()
     m_ui->m_wndKeyProperties->SetSequence(m_sequence.get());
 
     // Tags panel
-    m_ui->m_tagsPanel->SetTitle("Preview Filter Tags");
+    m_ui->m_tagsPanel->SetTitle(QObject::tr("Preview Filter Tags"));
 
     // Toolbar
     InitToolbar();

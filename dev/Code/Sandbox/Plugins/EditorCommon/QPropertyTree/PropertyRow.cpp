@@ -1178,8 +1178,8 @@ bool PropertyRow::onContextMenu(QMenu &menu, QPropertyTree* tree)
 			if(!menu.isEmpty())
 				menu.addSeparator();
 
-				menu.addAction("Insert Before", handler, SLOT(onMenuChildInsertBefore()), QKeySequence("Shift+Insert"))->setEnabled(!container->userReadOnly());
-				menu.addAction("Remove", handler, SLOT(onMenuChildRemove()), QKeySequence("Delete"))->setEnabled(!container->userReadOnly());
+				menu.addAction(QObject::tr("Insert Before"), handler, SLOT(onMenuChildInsertBefore()), QKeySequence("Shift+Insert"))->setEnabled(!container->userReadOnly());
+				menu.addAction(QObject::tr("Remove"), handler, SLOT(onMenuChildRemove()), QKeySequence("Delete"))->setEnabled(!container->userReadOnly());
 		}
 	}
 
@@ -1187,8 +1187,8 @@ bool PropertyRow::onContextMenu(QMenu &menu, QPropertyTree* tree)
 		if(!menu.isEmpty())
 			menu.addSeparator();
 
-		menu.addAction("Expand", tree, SLOT(expandAll()));
-		menu.addAction("Collapse", tree, SLOT(collapseAll()));
+		menu.addAction(QObject::tr("Expand"), tree, SLOT(expandAll()));
+		menu.addAction(QObject::tr("Collapse"), tree, SLOT(collapseAll()));
 	}
 
 	return !menu.isEmpty();

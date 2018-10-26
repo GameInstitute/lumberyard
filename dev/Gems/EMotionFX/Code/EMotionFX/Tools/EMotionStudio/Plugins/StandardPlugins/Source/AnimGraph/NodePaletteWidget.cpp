@@ -121,7 +121,7 @@ namespace EMStudio
         mLayout->setSpacing(0);
 
         // create the initial text
-        mInitialText = new QLabel("<c>Create and activate a <b>Anim Graph</b> first.<br>Then <b>drag and drop</b> items from the<br>palette into the <b>Anim Graph window</b>.</c>");
+        mInitialText = new QLabel(QObject::tr("<c>Create and activate a <b>Anim Graph</b> first.<br>Then <b>drag and drop</b> items from the<br>palette into the <b>Anim Graph window</b>.</c>"));
         mInitialText->setAlignment(Qt::AlignCenter);
         mInitialText->setTextFormat(Qt::RichText);
         mInitialText->setMaximumSize(10000, 10000);
@@ -133,12 +133,12 @@ namespace EMStudio
 
         // create the tabbar
         mTabBar = new QTabBar();
-        mTabBar->addTab("Sources");
-        mTabBar->addTab("Blending");
-        mTabBar->addTab("Controllers");
-        mTabBar->addTab("Logic");
-        mTabBar->addTab("Math");
-        mTabBar->addTab("Misc");
+        mTabBar->addTab(QObject::tr("Sources"));
+        mTabBar->addTab(QObject::tr("Blending"));
+        mTabBar->addTab(QObject::tr("Controllers"));
+        mTabBar->addTab(QObject::tr("Logic"));
+        mTabBar->addTab(QObject::tr("Math"));
+        mTabBar->addTab(QObject::tr("Misc"));
         mTabBar->setVisible(false);
         connect(mTabBar, SIGNAL(currentChanged(int)), this, SLOT(OnChangeCategoryTab(int)));
 

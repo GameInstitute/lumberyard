@@ -223,11 +223,11 @@ namespace LUAEditor
 
         if (m_bWasFindInAll)
         {
-            this->setWindowTitle("Find in files...");
+            this->setWindowTitle(QObject::tr("Find in files..."));
         }
         else
         {
-            this->setWindowTitle("Find...");
+            this->setWindowTitle(QObject::tr("Find..."));
         }
     }
 
@@ -1343,17 +1343,17 @@ namespace LUAEditor
     void LUAEditorFindDialog::BusyOn()
     {
         m_gui->cancelButton->setEnabled(true);
-        m_gui->busyLabel->setText("Working");
+        m_gui->busyLabel->setText(QObject::tr("Working"));
     }
     void LUAEditorFindDialog::BusyOff()
     {
         m_gui->cancelButton->setEnabled(false);
-        m_gui->busyLabel->setText("Idle");
+        m_gui->busyLabel->setText(QObject::tr("Idle"));
     }
     void LUAEditorFindDialog::PostProcessOn()
     {
         m_gui->cancelButton->setEnabled(false);
-        m_gui->busyLabel->setText("List Prep");
+        m_gui->busyLabel->setText(QObject::tr("List Prep"));
     }
     void LUAEditorFindDialog::PostReplaceOn()
     {
@@ -1361,7 +1361,7 @@ namespace LUAEditor
         m_bReplaceThreadRunning = false;
 
         m_gui->cancelButton->setEnabled(true);
-        m_gui->busyLabel->setText("Replacing");
+        m_gui->busyLabel->setText(QObject::tr("Replacing"));
     }
 
     void LUAEditorFindDialog::showEvent(QShowEvent* event)

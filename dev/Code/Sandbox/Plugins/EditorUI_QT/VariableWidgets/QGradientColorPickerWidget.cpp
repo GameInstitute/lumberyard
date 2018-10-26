@@ -459,14 +459,14 @@ void QGradientColorPickerWidget::BuildCurveMenu(bool curveKeyMenu)
         m_curveMenu->addSeparator();
     }
 
-    QAction* action = m_curveMenu->addAction("Add Curve to presets");
+    QAction* action = m_curveMenu->addAction(QObject::tr("Add Curve to presets"));
     connect(action, &QAction::triggered, this, [&] {
             if ((bool)callback_add_curve_to_library)
             {
                 callback_add_curve_to_library();
             }
         });
-    action = m_curveMenu->addAction("Reset curve");
+    action = m_curveMenu->addAction(QObject::tr("Reset curve"));
     connect(action, &QAction::triggered, this, [&] {
             SCurveEditorContent content = m_content;
             content.m_curves.clear();

@@ -139,7 +139,7 @@ namespace AZ
                 
                 m_treeWidget->Build();
 
-                QLabel* label = new QLabel("Finish selecting nodes to continue editing settings.");
+                QLabel* label = new QLabel(QObject::tr("Finish selecting nodes to continue editing settings."));
                 label->setAlignment(Qt::AlignCenter);
                 OverlayWidget::PushLayerToContainingOverlay(this, label, m_treeWidget.get(), "Select nodes", buttons);
             }
@@ -167,7 +167,7 @@ namespace AZ
                     
                     if (total == 0)
                     {
-                        ui->m_statusLabel->setText("Default selection");
+                        ui->m_statusLabel->setText(QObject::tr("Default selection"));
                     }
                     else if (selected == total)
                     {
@@ -176,12 +176,12 @@ namespace AZ
                     else
                     {
                         ui->m_statusLabel->setText(
-                            QString("%1 of %2 %3 selected").arg(selected).arg(total).arg(m_filterName.c_str()));
+                            QString(QObject::tr("%1 of %2 %3 selected")).arg(selected).arg(total).arg(m_filterName.c_str()));
                     }
                 }
                 else
                 {
-                    ui->m_statusLabel->setText("No list assigned");
+                    ui->m_statusLabel->setText(QObject::tr("No list assigned"));
                 }
             }
 

@@ -530,15 +530,15 @@ namespace EMStudio
         {
             if (instanceSelected)
             {
-                QAction* resetTransformationAction = menu.addAction("Reset Transforms");
+                QAction* resetTransformationAction = menu.addAction(QObject::tr("Reset Transforms"));
                 connect(resetTransformationAction, SIGNAL(triggered()), this, SLOT(OnResetTransformationOfSelectedActorInstances()));
 
                 menu.addSeparator();
 
-                QAction* hideAction = menu.addAction("Hide Selected Actor Instances");
+                QAction* hideAction = menu.addAction(QObject::tr("Hide Selected Actor Instances"));
                 connect(hideAction, SIGNAL(triggered()), this, SLOT(OnHideSelected()));
 
-                QAction* unhideAction = menu.addAction("Unhide Selected Actor Instances");
+                QAction* unhideAction = menu.addAction(QObject::tr("Unhide Selected Actor Instances"));
                 connect(unhideAction, SIGNAL(triggered()), this, SLOT(OnUnhideSelected()));
 
                 menu.addSeparator();
@@ -546,39 +546,39 @@ namespace EMStudio
 
             if (actorSelected)
             {
-                QAction* addAction = menu.addAction("Create New Actor Instances");
+                QAction* addAction = menu.addAction(QObject::tr("Create New Actor Instances"));
                 addAction->setIcon(MysticQt::GetMysticQt()->FindIcon("Images/Icons/Plus.png"));
                 connect(addAction, SIGNAL(triggered()), this, SLOT(OnCreateInstanceButtonClicked()));
             }
 
             if (instanceSelected)
             {
-                QAction* cloneAction = menu.addAction("Clone Selected Actor Instances");
+                QAction* cloneAction = menu.addAction(QObject::tr("Clone Selected Actor Instances"));
                 cloneAction->setIcon(MysticQt::GetMysticQt()->FindIcon("Images/Icons/Plus.png"));
                 connect(cloneAction, SIGNAL(triggered()), this, SLOT(OnCloneSelected()));
             }
 
-            QAction* removeAction = menu.addAction("Remove Selected Actors/Actor Instances");
+            QAction* removeAction = menu.addAction(QObject::tr("Remove Selected Actors/Actor Instances"));
             removeAction->setIcon(MysticQt::GetMysticQt()->FindIcon("Images/Icons/Minus.png"));
             connect(removeAction, SIGNAL(triggered()), this, SLOT(OnRemoveButtonClicked()));
         }
 
         if (numTopItems > 0)
         {
-            QAction* clearAction = menu.addAction("Remove All Actors/Actor Instances");
+            QAction* clearAction = menu.addAction(QObject::tr("Remove All Actors/Actor Instances"));
             clearAction->setIcon(MysticQt::GetMysticQt()->FindIcon("Images/Icons/Clear.png"));
             connect(clearAction, SIGNAL(triggered()), this, SLOT(OnClearButtonClicked()));
 
             menu.addSeparator();
         }
 
-        QAction* loadAction = menu.addAction("Load Actors From File");
+        QAction* loadAction = menu.addAction(QObject::tr("Load Actors From File"));
         loadAction->setIcon(MysticQt::GetMysticQt()->FindIcon("Images/Icons/Open.png"));
         connect(loadAction, &QAction::triggered, GetMainWindow(), &MainWindow::OnFileOpenActor);
 
         if (numSelected > 0)
         {
-            QAction* saveAction = menu.addAction("Save Selected Actors");
+            QAction* saveAction = menu.addAction(QObject::tr("Save Selected Actors"));
             saveAction->setIcon(MysticQt::GetMysticQt()->FindIcon("/Images/Menu/FileSave.png"));
             connect(saveAction, SIGNAL(triggered()), GetMainWindow(), SLOT(OnFileSaveSelectedActors()));
         }

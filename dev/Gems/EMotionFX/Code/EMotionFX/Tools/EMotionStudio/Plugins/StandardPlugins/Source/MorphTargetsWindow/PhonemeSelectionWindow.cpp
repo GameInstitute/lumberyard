@@ -165,7 +165,7 @@ namespace EMStudio
     void PhonemeSelectionWindow::Init()
     {
         // set window title
-        setWindowTitle("Phoneme Selection Window");
+        setWindowTitle(QObject::tr("Phoneme Selection Window"));
         setSizeGripEnabled(false);
 
         // buttons to add / remove / clear phonemes
@@ -228,7 +228,7 @@ namespace EMStudio
         labelHelperWidgetAddLayout->setSpacing(0);
         labelHelperWidgetAddLayout->setMargin(2);
         labelHelperWidgetAdd->setLayout(labelHelperWidgetAddLayout);
-        QLabel* labelAdd = new QLabel("- Use drag&drop or double click to add -");
+        QLabel* labelAdd = new QLabel(QObject::tr("- Use drag&drop or double click to add -"));
         labelHelperWidgetAddLayout->addWidget(labelAdd);
         labelHelperWidgetAddLayout->setAlignment(labelAdd, Qt::AlignCenter);
 
@@ -258,7 +258,7 @@ namespace EMStudio
         labelHelperWidgetRemoveLayout->setSpacing(0);
         labelHelperWidgetRemoveLayout->setMargin(2);
         labelHelperWidgetRemove->setLayout(labelHelperWidgetRemoveLayout);
-        QLabel* labelRemove = new QLabel("- Use drag&drop or double click to remove -");
+        QLabel* labelRemove = new QLabel(QObject::tr("- Use drag&drop or double click to remove -"));
         labelHelperWidgetRemoveLayout->addWidget(labelRemove);
         labelHelperWidgetRemoveLayout->setAlignment(labelRemove, Qt::AlignCenter);
 

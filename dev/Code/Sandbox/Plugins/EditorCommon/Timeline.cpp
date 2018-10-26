@@ -2012,17 +2012,17 @@ void CTimeline::mousePressEvent(QMouseEvent* ev)
                     }
                 });
 
-            menu.addAction("Selection to Cursor", this, SLOT(OnMenuSelectionToCursor()))->setEnabled(hasSelection);
-            QAction* duplicateAction = menu.addAction("Duplicate", this, SLOT(OnMenuDuplicate()), QKeySequence("D"));
+            menu.addAction(QObject::tr("Selection to Cursor"), this, SLOT(OnMenuSelectionToCursor()))->setEnabled(hasSelection);
+            QAction* duplicateAction = menu.addAction(QObject::tr("Duplicate"), this, SLOT(OnMenuDuplicate()), QKeySequence("D"));
             duplicateAction->setEnabled(hasSelection);
             menu.addSeparator();
-            menu.addAction("Delete Event(s)", this, SLOT(OnMenuDelete()), QKeySequence("Delete"))->setEnabled(hasSelection);
+            menu.addAction(QObject::tr("Delete Event(s)"), this, SLOT(OnMenuDelete()), QKeySequence("Delete"))->setEnabled(hasSelection);
             menu.addSeparator();
-            menu.addAction("Play / Pause", this, SLOT(OnMenuPlay()), QKeySequence("Space"));
-            menu.addAction("Previous Frame", this, SLOT(OnMenuPreviousFrame()), QKeySequence(","));
-            menu.addAction("Next Frame", this, SLOT(OnMenuNextFrame()), QKeySequence("."));
-            menu.addAction("Jump to Previous Event", this, SLOT(OnMenuPreviousKey()), QKeySequence("X"));
-            menu.addAction("Jump to Next Event", this, SLOT(OnMenuNextKey()), QKeySequence("C"));
+            menu.addAction(QObject::tr("Play / Pause"), this, SLOT(OnMenuPlay()), QKeySequence("Space"));
+            menu.addAction(QObject::tr("Previous Frame"), this, SLOT(OnMenuPreviousFrame()), QKeySequence(","));
+            menu.addAction(QObject::tr("Next Frame"), this, SLOT(OnMenuNextFrame()), QKeySequence("."));
+            menu.addAction(QObject::tr("Jump to Previous Event"), this, SLOT(OnMenuPreviousKey()), QKeySequence("X"));
+            menu.addAction(QObject::tr("Jump to Next Event"), this, SLOT(OnMenuNextKey()), QKeySequence("C"));
             menu.exec(QCursor::pos(), duplicateAction);
         }
     }

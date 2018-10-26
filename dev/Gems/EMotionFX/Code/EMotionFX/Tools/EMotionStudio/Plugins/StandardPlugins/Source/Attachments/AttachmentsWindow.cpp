@@ -156,8 +156,8 @@ namespace EMStudio
         mNoSelectionWidget          = new QWidget();
         mWaitingForAttachmentLayout = new QVBoxLayout();
         mNoSelectionLayout          = new QVBoxLayout();
-        QLabel* waitingForAttachmentLabel = new QLabel("Please select an actor instance.");
-        QLabel* noSelectionLabel = new QLabel("No attachments to show.");
+        QLabel* waitingForAttachmentLabel = new QLabel(QObject::tr("Please select an actor instance."));
+        QLabel* noSelectionLabel = new QLabel(QObject::tr("No attachments to show."));
 
         mWaitingForAttachmentLayout->addLayout(buttonLayoutSelectionMode);
         mWaitingForAttachmentLayout->addWidget(waitingForAttachmentLabel);
@@ -385,10 +385,10 @@ namespace EMStudio
                 // create the import context menu
                 QMenu menu(this);
 
-                QAction* attachmentAction   = menu.addAction("Open Regular Attachment");
-                QAction* deformableAction   = menu.addAction("Open Skin Attachment");
+                QAction* attachmentAction   = menu.addAction(QObject::tr("Open Regular Attachment"));
+                QAction* deformableAction   = menu.addAction(QObject::tr("Open Skin Attachment"));
                 menu.addSeparator();
-                /*QAction* cancelAction     =*/menu.addAction("Cancel");
+                /*QAction* cancelAction     =*/menu.addAction(QObject::tr("Cancel"));
 
                 // add icons to the context menu
                 attachmentAction->setIcon(MysticQt::GetMysticQt()->FindIcon("Images/Icons/Open.png"));

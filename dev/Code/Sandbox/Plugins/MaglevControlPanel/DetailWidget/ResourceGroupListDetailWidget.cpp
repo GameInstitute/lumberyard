@@ -47,8 +47,8 @@ QMenu* ResourceGroupListDetailWidget::GetTreeContextMenu()
 {
     auto menu = new ToolTipMenu {};
 
-    auto addResourceGroup = menu->addAction("Add resource group");
-    addResourceGroup->setToolTip("Add a resource group to the Lumberyard project.");
+    auto addResourceGroup = menu->addAction(QObject::tr("Add resource group"));
+    addResourceGroup->setToolTip(QObject::tr("Add a resource group to the Lumberyard project."));
 
     connectUntilDeleted(addResourceGroup, &QAction::triggered, m_view, &ResourceManagementView::OnMenuNewResourceGroup);
 

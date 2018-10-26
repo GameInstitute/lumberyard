@@ -39,7 +39,7 @@ namespace ScriptCanvasEditor
             , m_manipulatingSelection(false)
             , m_model(nullptr)
         {
-            setWindowTitle("Node Outliner");
+            setWindowTitle(QObject::tr("Node Outliner"));
             setSizePolicy(QSizePolicy::MinimumExpanding, QSizePolicy::MinimumExpanding);
 
             QWidget* host = new NodeOutlinerHost();

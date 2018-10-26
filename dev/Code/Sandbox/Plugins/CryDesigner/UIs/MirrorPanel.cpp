@@ -25,13 +25,13 @@ MirrorPanel::MirrorPanel(MirrorTool* pMirrorTool)
 {
     QGridLayout* pGridLayout = new QGridLayout;
 
-    m_pApplyButton = new QPushButton("Apply");
-    m_pInvertButton = new QPushButton("Invert");
-    m_pFreezeButton = new QPushButton("Freeze");
-    m_pCenterPivotButton = new QPushButton("Center Pivot");
-    m_pAlignXButton = new QPushButton("AlignX");
-    m_pAlignYButton = new QPushButton("AlignY");
-    m_pAlignZButton = new QPushButton("AlignZ");
+    m_pApplyButton = new QPushButton(QObject::tr("Apply"));
+    m_pInvertButton = new QPushButton(QObject::tr("Invert"));
+    m_pFreezeButton = new QPushButton(QObject::tr("Freeze"));
+    m_pCenterPivotButton = new QPushButton(QObject::tr("Center Pivot"));
+    m_pAlignXButton = new QPushButton(QObject::tr("AlignX"));
+    m_pAlignYButton = new QPushButton(QObject::tr("AlignY"));
+    m_pAlignZButton = new QPushButton(QObject::tr("AlignZ"));
 
     pGridLayout->addWidget(m_pApplyButton, 0, 0, 1, 3, Qt::AlignTop);
     pGridLayout->addWidget(m_pFreezeButton, 0, 3, 1, 3, Qt::AlignTop);

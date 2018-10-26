@@ -31,19 +31,19 @@ namespace EMStudio
     LayoutManagerSaveAsWindow::LayoutManagerSaveAsWindow(const char* defaultName, QWidget* parent)
         : QDialog(parent)
     {
-        setWindowTitle("Save Layout As");
+        setWindowTitle(QObject::tr("Save Layout As"));
         setMinimumWidth(300);
 
         QVBoxLayout* layout = new QVBoxLayout();
-        layout->addWidget(new QLabel("Please enter the layout name:"));
+        layout->addWidget(new QLabel(QObject::tr("Please enter the layout name:")));
 
         mLineEdit = new QLineEdit(defaultName);
         connect(mLineEdit, SIGNAL(textChanged(QString)), this, SLOT(NameEditChanged(QString)));
         mLineEdit->selectAll();
 
         QHBoxLayout* buttonLayout   = new QHBoxLayout();
-        mOKButton                   = new QPushButton("OK");
-        QPushButton* cancelButton   = new QPushButton("Cancel");
+        mOKButton                   = new QPushButton(QObject::tr("OK"));
+        QPushButton* cancelButton   = new QPushButton(QObject::tr("Cancel"));
         buttonLayout->addWidget(mOKButton);
         buttonLayout->addWidget(cancelButton);
 

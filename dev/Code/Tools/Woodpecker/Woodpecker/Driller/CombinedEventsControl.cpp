@@ -58,7 +58,7 @@ namespace Driller
 
         m_Contents->setLayout(layout);
         m_collapsiblePanel->SetContent(m_Contents);
-        m_collapsiblePanel->SetTitle("Detailed Event View");
+        m_collapsiblePanel->SetTitle(QObject::tr("Detailed Event View"));
 
         m_EventTrack = aznew CEQDataTrack(this);
         m_EventTrack->SetupAxis("", 0.0f, 1.0f, false);

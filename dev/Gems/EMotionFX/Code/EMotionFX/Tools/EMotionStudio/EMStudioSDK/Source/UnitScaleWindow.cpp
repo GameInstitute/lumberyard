@@ -30,7 +30,7 @@ namespace EMStudio
         mScaleFactor = 1.0f;
         setModal(true);
 
-        setWindowTitle("Scale Factor Setup");
+        setWindowTitle(QObject::tr("Scale Factor Setup"));
         setObjectName("StyledWidgetDark");
         setFixedSize(220, 107);
 
@@ -39,7 +39,7 @@ namespace EMStudio
 
         QVBoxLayout* topLayout = new QVBoxLayout();
 
-        QLabel* topLabel = new QLabel("<b>Please setup a scale factor:</b>");
+        QLabel* topLabel = new QLabel(QObject::tr("<b>Please setup a scale factor:</b>"));
         topLabel->setStyleSheet("background-color: rgb(40, 40, 40); padding: 6px;");
         topLabel->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
         topLayout->addWidget(topLabel);
@@ -49,7 +49,7 @@ namespace EMStudio
         QHBoxLayout* scaleLayout = new QHBoxLayout();
         scaleLayout->setMargin(9);
 
-        scaleLayout->addWidget(new QLabel("Scale Factor:"));
+        scaleLayout->addWidget(new QLabel(QObject::tr("Scale Factor:")));
 
         mScaleSpinBox = new MysticQt::DoubleSpinBox();
         mScaleSpinBox->setRange(0.00001, 100000.0f);
@@ -63,8 +63,8 @@ namespace EMStudio
         QHBoxLayout* hLayout = new QHBoxLayout();
         hLayout->setContentsMargins(9, 0, 9, 9);
 
-        mOK     = new QPushButton("OK");
-        mCancel = new QPushButton("Cancel");
+        mOK     = new QPushButton(QObject::tr("OK"));
+		mCancel = new QPushButton(QObject::tr("Cancel"));
         hLayout->addWidget(mOK);
         hLayout->addWidget(mCancel);
 

@@ -330,7 +330,7 @@ namespace GraphCanvas
     MiniMapDockWidget::MiniMapDockWidget(const AZ::Crc32& graphCanvasEditorNotificationBusId, QWidget* parent)
         : AzQtComponents::StyledDockWidget(parent)
     {
-        setWindowTitle("MiniMap");
+        setWindowTitle(QObject::tr("MiniMap"));
 
         QWidget* host = new QWidget();
         QVBoxLayout* layout = new QVBoxLayout();

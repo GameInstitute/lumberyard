@@ -31,7 +31,7 @@ namespace EMStudio
         m_selectedTypeId = AZ::TypeId::CreateNull();
 
         // set the window title
-        setWindowTitle("Select A Condition");
+        setWindowTitle(QObject::tr("Select A Condition"));
 
         // create the layout
         QVBoxLayout* layout = new QVBoxLayout();
@@ -69,8 +69,8 @@ namespace EMStudio
 
         // create the buttons layout
         QHBoxLayout* buttonsLayout = new QHBoxLayout();
-        QPushButton* addButton = new QPushButton("Add Condition");
-        QPushButton* cancelButton = new QPushButton("Cancel");
+        QPushButton* addButton = new QPushButton(QObject::tr("Add Condition"));
+		QPushButton* cancelButton = new QPushButton(QObject::tr("Cancel"));
         buttonsLayout->addWidget(addButton);
         buttonsLayout->addWidget(cancelButton);
         layout->addLayout(buttonsLayout);

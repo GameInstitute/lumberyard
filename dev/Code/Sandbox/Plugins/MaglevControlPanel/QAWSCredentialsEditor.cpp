@@ -89,12 +89,12 @@ int ProfileSelector::AddScrollColumnHeadings(QVBoxLayout* scrollLayout)
     static const int controlHeight = 1; // How many "rows" of controls are we adding (just 1 horizontal row atm)
     QHBoxLayout* headingsLayout = new QHBoxLayout();
 
-    QLabel* profilesLabel = new QLabel("Profiles");
+    QLabel* profilesLabel = new QLabel(QObject::tr("Profiles"));
     headingsLayout->addWidget(profilesLabel, 0, Qt::AlignLeft);
 
     AddExtraScrollWidget(profilesLabel);
 
-    QLabel* removeLabel = new QLabel("Remove");
+    QLabel* removeLabel = new QLabel(QObject::tr("Remove"));
     headingsLayout->addWidget(removeLabel, 1, Qt::AlignRight);
 
     AddExtraScrollWidget(removeLabel);
@@ -107,7 +107,7 @@ void ProfileSelector::AddScrollHeadings(QVBoxLayout* scrollLayout)
 {
     QHBoxLayout* headingsLayout = new QHBoxLayout();
 
-    m_editLabel = new QLabel("<a href=\"Edit selected profile\" > Edit selected profile</a>");
+    m_editLabel = new QLabel(QObject::tr("<a href=\"Edit selected profile\" > Edit selected profile</a>"));
     m_editLabel->setObjectName("EditSelectedProfile");
     m_editLabel->setTextFormat(Qt::AutoText);
     m_editLabel->setTextInteractionFlags(Qt::LinksAccessibleByMouse);
@@ -271,7 +271,7 @@ void ProfileSelector::ShowConfirmDeleteDialog(QString profileName)
 {
     m_confirmDeleteDialog = new QDialog(this, Qt::CustomizeWindowHint | Qt::WindowTitleHint | Qt::Dialog | Qt::WindowCloseButtonHint);
 
-    m_confirmDeleteDialog->setWindowTitle("Delete profile?");
+    m_confirmDeleteDialog->setWindowTitle(QObject::tr("Delete profile?"));
 
     QString deleteStr = "Are you sure you want to delete the \"";
     deleteStr += profileName;
@@ -287,8 +287,8 @@ void ProfileSelector::ShowConfirmDeleteDialog(QString profileName)
 
     QHBoxLayout* responseLayout = new QHBoxLayout;
 
-    QPushButton* confirmButton = new QPushButton("Yes");
-    QPushButton* declineButton = new QPushButton("No");
+    QPushButton* confirmButton = new QPushButton(QObject::tr("Yes"));
+    QPushButton* declineButton = new QPushButton(QObject::tr("No"));
 
     QWidget::connect(confirmButton, &QPushButton::clicked, this, [this, profileName] { ConfirmDelete(profileName);
         });
@@ -353,7 +353,7 @@ int ProfileSelector::AddLowerScrollControls(QVBoxLayout* scrollLayout)
 {
     static const int controlHeight = 1; // How many "rows" of controls are we adding (just 1 horizontal row atm)
 
-    QPushButton* addProfileButton = new QPushButton("Add profile");
+    QPushButton* addProfileButton = new QPushButton(QObject::tr("Add profile"));
     scrollLayout->addWidget(addProfileButton, 0, Qt::AlignLeft | Qt::AlignBottom);
     QWidget::connect(addProfileButton, &QPushButton::clicked, this, &ProfileSelector::CreateNewProfile);
 

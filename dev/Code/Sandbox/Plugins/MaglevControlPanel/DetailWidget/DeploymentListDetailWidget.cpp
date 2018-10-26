@@ -43,8 +43,8 @@ QMenu* DeploymentListDetailWidget::GetTreeContextMenu()
 {
     auto menu = new ToolTipMenu {};
 
-    auto createDeployment = menu->addAction("Create deployment");
-    createDeployment->setToolTip("Create an AWS CloudFormation stack for a new deployment.");
+    auto createDeployment = menu->addAction(QObject::tr("Create deployment"));
+    createDeployment->setToolTip(QObject::tr("Create an AWS CloudFormation stack for a new deployment."));
     createDeployment->setEnabled(m_view->GetResourceManager()->IsProjectInitialized() && !m_view->GetResourceManager()->IsOperationInProgress());
 
     connectUntilDeleted(createDeployment, &QAction::triggered, m_view, &ResourceManagementView::OnMenuNewDeployment);

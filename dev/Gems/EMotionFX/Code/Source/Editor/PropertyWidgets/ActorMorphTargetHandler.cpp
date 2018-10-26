@@ -52,7 +52,7 @@ namespace EMotionFX
         const size_t morphTargetCount = m_morphTargetNames.size();
         if (morphTargetCount == 0)
         {
-            m_pickButton->setText("Select morph targets");
+            m_pickButton->setText(QObject::tr("Select morph targets"));
             m_resetButton->setVisible(false);
         }
         else if (morphTargetCount == 1)
@@ -89,7 +89,7 @@ namespace EMotionFX
         ActorEditorRequestBus::BroadcastResult(actorInstance, &ActorEditorRequests::GetSelectedActorInstance);
         if (!actorInstance)
         {
-            QMessageBox::warning(this, "No Actor Instance", "Cannot open node selection window. No valid actor instance selected.");
+            QMessageBox::warning(this, QObject::tr("No Actor Instance"), QObject::tr("Cannot open node selection window. No valid actor instance selected."));
             return;
         }
         EMotionFX::Actor* actor = actorInstance->GetActor();

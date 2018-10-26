@@ -57,8 +57,8 @@ namespace EMStudio
         mButtonLoopForever          = buttonGroup->GetButton(0, 0);
         mButtonMirror               = buttonGroup->GetButton(0, 1);
 
-        mButtonLoopForever->setText("Loop Forever");
-        mButtonMirror->setText("Mirror");
+        mButtonLoopForever->setText(QObject::tr("Loop Forever"));
+        mButtonMirror->setText(QObject::tr("Mirror"));
 
         connect(mButtonLoopForever, SIGNAL(clicked()), this, SLOT(UpdateMotions()));
         connect(mButtonMirror, SIGNAL(clicked()), this, SLOT(UpdateMotions()));
@@ -69,8 +69,8 @@ namespace EMStudio
         MysticQt::ButtonGroup* playModeButtonGroup = new MysticQt::ButtonGroup(this, 1, 2, MysticQt::ButtonGroup::MODE_RADIOBUTTONS);
         mButtonPlayForward  = playModeButtonGroup->GetButton(0, 0);
         mButtonPlayBackward = playModeButtonGroup->GetButton(0, 1);
-        mButtonPlayForward->setText("Forward");
-        mButtonPlayBackward->setText("Backward");
+        mButtonPlayForward->setText(QObject::tr("Forward"));
+        mButtonPlayBackward->setText(QObject::tr("Backward"));
         connect(mButtonPlayForward, SIGNAL(clicked()), this, SLOT(UpdateMotions()));
         connect(mButtonPlayBackward, SIGNAL(clicked()), this, SLOT(UpdateMotions()));
         motionPropertiesLayout->addWidget(playModeButtonGroup);
@@ -81,7 +81,7 @@ namespace EMStudio
         slidersLayout->setSpacing(1);
 
         // play speed slider
-        slidersLayout->addWidget(new QLabel("Play Speed"), 2, 0);
+        slidersLayout->addWidget(new QLabel(QObject::tr("Play Speed")), 2, 0);
 
         mPlaySpeedSlider = new MysticQt::Slider(Qt::Horizontal);
         mPlaySpeedSlider->setRange(10, 5000);

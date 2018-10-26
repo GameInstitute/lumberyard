@@ -40,7 +40,7 @@
 JointSelectionDialog::JointSelectionDialog(QWidget* parent)
     : QDialog(parent)
 {
-    setWindowTitle("Choose Joint...");
+    setWindowTitle(QObject::tr("Choose Joint..."));
     setWindowIcon(QIcon("Editor/Icons/animation/bone.png"));
     setWindowModality(Qt::ApplicationModal);
 
@@ -50,7 +50,7 @@ JointSelectionDialog::JointSelectionDialog(QWidget* parent)
     QBoxLayout* filterBox = new QBoxLayout(QBoxLayout::LeftToRight);
     layout->addLayout(filterBox);
     {
-        filterBox->addWidget(new QLabel("Filter:", this), 0);
+        filterBox->addWidget(new QLabel(QObject::tr("Filter:"), this), 0);
         filterBox->addWidget(m_filterEdit = new QLineEdit(this), 1);
         connect(m_filterEdit, SIGNAL(textChanged(const QString&)), this, SLOT(onFilterChanged(const QString&)));
         m_filterEdit->installEventFilter(this);
@@ -59,7 +59,7 @@ JointSelectionDialog::JointSelectionDialog(QWidget* parent)
     QBoxLayout* infoBox = new QBoxLayout(QBoxLayout::LeftToRight);
     layout->addLayout(infoBox);
     {
-        infoBox->addWidget(new QLabel("Skeleton:"));
+        infoBox->addWidget(new QLabel(QObject::tr("Skeleton:")));
         infoBox->addWidget(m_skeletonLabel = new QLabel(""), 1);
         //QFont font = m_skeletonLabel->font();
         //font.setBold(true);

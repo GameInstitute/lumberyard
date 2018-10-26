@@ -35,15 +35,15 @@ namespace EMStudio
         : QDialog(parent)
     {
         // set the window title
-        setWindowTitle("Collision Mesh Setup");
+        setWindowTitle(QObject::tr("Collision Mesh Setup"));
 
         // create the hierarchy widget
         mHierarchyWidget = new CollisionMeshesNodeHierarchyWidget(this);
 
         // create the ok and cancel buttons
         QHBoxLayout* buttonLayout   = new QHBoxLayout();
-        QPushButton* mOKButton      = new QPushButton("OK");
-        QPushButton* mCancelButton  = new QPushButton("Cancel");
+        QPushButton* mOKButton      = new QPushButton(QObject::tr("OK"));
+		QPushButton* mCancelButton = new QPushButton(QObject::tr("Cancel"));
         buttonLayout->addWidget(mOKButton);
         buttonLayout->addWidget(mCancelButton);
 

@@ -2269,39 +2269,39 @@ void CCurveEditor::PopulateControlContextMenu(QMenu* pMenu)
 
     bool needsSeperator = false;
 
-    pMenu->addAction("Delete selected keys", this, SLOT(OnDeleteSelectedKeys()));
+    pMenu->addAction(QObject::tr("Delete selected keys"), this, SLOT(OnDeleteSelectedKeys()));
     pMenu->addSeparator();
 
     // standard and smooth should only be available for both - flat, free, step, and linear should be available for all
     const int flagsFreeStep = EOptOutFree | EOptOutStep;
     if (OPTOUT(flagsFreeStep) != flagsFreeStep)
     {
-        pMenu->addAction("Standard", this, SLOT(OnSetSelectedKeysTangentStandard()));
-        pMenu->addAction("Auto Smooth", this, SLOT(OnSetSelectedKeysTangentSmooth()));
+        pMenu->addAction(QObject::tr("Standard"), this, SLOT(OnSetSelectedKeysTangentStandard()));
+        pMenu->addAction(QObject::tr("Auto Smooth"), this, SLOT(OnSetSelectedKeysTangentSmooth()));
         needsSeperator = true;
     }
 
     if (!OPTOUT(EOptOutFree))
     {
-        pMenu->addAction("Free", this, SLOT(OnSetSelectedKeysTangentFree()));
+        pMenu->addAction(QObject::tr("Free"), this, SLOT(OnSetSelectedKeysTangentFree()));
         needsSeperator = true;
     }
 
     if (!OPTOUT(EOptOutBezier))
     {
-        pMenu->addAction("Bezier", this, SLOT(OnSetSelectedKeysTangentBezier()));
+        pMenu->addAction(QObject::tr("Bezier"), this, SLOT(OnSetSelectedKeysTangentBezier()));
         needsSeperator = true;
     }
 
     if (!OPTOUT(EOptOutFlat))
     {
-        pMenu->addAction("Flat", this, SLOT(OnSetSelectedKeysTangentFlat()));
+        pMenu->addAction(QObject::tr("Flat"), this, SLOT(OnSetSelectedKeysTangentFlat()));
         needsSeperator = true;
     }
 
     if (!OPTOUT(EOptOutLinear))
     {
-        pMenu->addAction("Linear", this, SLOT(OnSetSelectedKeysTangentLinear()));
+        pMenu->addAction(QObject::tr("Linear"), this, SLOT(OnSetSelectedKeysTangentLinear()));
         needsSeperator = true;
     }
 
@@ -2313,31 +2313,31 @@ void CCurveEditor::PopulateControlContextMenu(QMenu* pMenu)
 
     if (!OPTOUT(EOptOutBezier))
     {
-        pMenu->addAction("IN Tangent - Bezier", this, SLOT(OnSetSelectedKeysInTangentBezier()));
+        pMenu->addAction(QObject::tr("IN Tangent - Bezier"), this, SLOT(OnSetSelectedKeysInTangentBezier()));
         needsSeperator = true;
     }
 
     if (!OPTOUT(EOptOutFree))
     {
-        pMenu->addAction("IN Tangent - Free", this, SLOT(OnSetSelectedKeysInTangentFree()));
+        pMenu->addAction(QObject::tr("IN Tangent - Free"), this, SLOT(OnSetSelectedKeysInTangentFree()));
         needsSeperator = true;
     }
 
     if (!OPTOUT(EOptOutFlat))
     {
-        pMenu->addAction("IN Tangent - Flat", this, SLOT(OnSetSelectedKeysInTangentFlat()));
+        pMenu->addAction(QObject::tr("IN Tangent - Flat"), this, SLOT(OnSetSelectedKeysInTangentFlat()));
         needsSeperator = true;
     }
 
     if (!OPTOUT(EOptOutLinear))
     {
-        pMenu->addAction("IN Tangent - Linear", this, SLOT(OnSetSelectedKeysInTangentLinear()));
+        pMenu->addAction(QObject::tr("IN Tangent - Linear"), this, SLOT(OnSetSelectedKeysInTangentLinear()));
         needsSeperator = true;
     }
 
     if (!OPTOUT(EOptOutStep))
     {
-        pMenu->addAction("IN Tangent - Step", this, SLOT(OnSetSelectedKeysInTangentStep()));
+        pMenu->addAction(QObject::tr("IN Tangent - Step"), this, SLOT(OnSetSelectedKeysInTangentStep()));
         needsSeperator = true;
     }
 
@@ -2349,31 +2349,31 @@ void CCurveEditor::PopulateControlContextMenu(QMenu* pMenu)
 
     if (!OPTOUT(EOptOutBezier))
     {
-        pMenu->addAction("OUT Tangent - Bezier", this, SLOT(OnSetSelectedKeysOutTangentBezier()));
+        pMenu->addAction(QObject::tr("OUT Tangent - Bezier"), this, SLOT(OnSetSelectedKeysOutTangentBezier()));
         needsSeperator = true;
     }
 
     if (!OPTOUT(EOptOutFree))
     {
-        pMenu->addAction("OUT Tangent - Free", this, SLOT(OnSetSelectedKeysOutTangentFree()));
+        pMenu->addAction(QObject::tr("OUT Tangent - Free"), this, SLOT(OnSetSelectedKeysOutTangentFree()));
         needsSeperator = true;
     }
 
     if (!OPTOUT(EOptOutFlat))
     {
-        pMenu->addAction("OUT Tangent - Flat", this, SLOT(OnSetSelectedKeysOutTangentFlat()));
+        pMenu->addAction(QObject::tr("OUT Tangent - Flat"), this, SLOT(OnSetSelectedKeysOutTangentFlat()));
         needsSeperator = true;
     }
 
     if (!OPTOUT(EOptOutLinear))
     {
-        pMenu->addAction("OUT Tangent - Linear", this, SLOT(OnSetSelectedKeysOutTangentLinear()));
+        pMenu->addAction(QObject::tr("OUT Tangent - Linear"), this, SLOT(OnSetSelectedKeysOutTangentLinear()));
         needsSeperator = true;
     }
 
     if (!OPTOUT(EOptOutStep))
     {
-        pMenu->addAction("OUT Tangent - Step", this, SLOT(OnSetSelectedKeysOutTangentStep()));
+        pMenu->addAction(QObject::tr("OUT Tangent - Step"), this, SLOT(OnSetSelectedKeysOutTangentStep()));
         needsSeperator = true;
     }
 
@@ -2384,8 +2384,8 @@ void CCurveEditor::PopulateControlContextMenu(QMenu* pMenu)
             pMenu->addSeparator();
         }
         needsSeperator = false;
-        pMenu->addAction("Fit curves horizontally", this, SLOT(OnFitCurvesHorizontally()));
-        pMenu->addAction("Fit curves vertically", this, SLOT(OnFitCurvesVertically()));
+        pMenu->addAction(QObject::tr("Fit curves horizontally"), this, SLOT(OnFitCurvesHorizontally()));
+        pMenu->addAction(QObject::tr("Fit curves vertically"), this, SLOT(OnFitCurvesVertically()));
     }
 }
 

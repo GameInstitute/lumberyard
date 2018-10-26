@@ -189,7 +189,7 @@ namespace ScriptCanvasEditor
             }
 
             m_attached = true;
-            ui->m_debugAttach->setText("Debugging: On");
+            ui->m_debugAttach->setText(QObject::tr("Debugging: On"));
         }
 
         void CanvasWidget::OnDetach(const AZ::EntityId& graphId)
@@ -202,7 +202,7 @@ namespace ScriptCanvasEditor
             }
 
             m_attached = false;
-            ui->m_debugAttach->setText("Debugging: Off");
+            ui->m_debugAttach->setText(QObject::tr("Debugging: Off"));
 
             ScriptCanvas::Debugger::NotificationBus::Handler::BusDisconnect();
         }

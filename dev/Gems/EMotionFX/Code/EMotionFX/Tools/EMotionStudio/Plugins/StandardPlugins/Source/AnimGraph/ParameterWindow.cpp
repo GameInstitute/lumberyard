@@ -77,8 +77,8 @@ namespace EMStudio
 
         // create the button layout
         QHBoxLayout* buttonLayout = new QHBoxLayout();
-        mOKButton       = new QPushButton("OK");
-        mCancelButton   = new QPushButton("Cancel");
+        mOKButton       = new QPushButton(QObject::tr("OK"));
+		mCancelButton = new QPushButton(QObject::tr("Cancel"));
         buttonLayout->addWidget(mOKButton);
         buttonLayout->addWidget(mCancelButton);
 
@@ -537,7 +537,7 @@ namespace EMStudio
                 EMotionFX::ActorInstance* actorInstance = GetCommandManager()->GetCurrentSelection().GetSingleActorInstance();
                 if (actorInstance && actorInstance->GetAnimGraphInstance())
                 {
-                    QAction* makeDefaultAction = menu.addAction("Make default value");
+                    QAction* makeDefaultAction = menu.addAction(QObject::tr("Make default value"));
                     makeDefaultAction->setIcon(MysticQt::GetMysticQt()->FindIcon("Images/Menu/Refresh.png")); // TODO: replace with a new icon?
                     connect(makeDefaultAction, &QAction::triggered, this, &ParameterWindow::OnMakeDefaultValue);
                 }
@@ -545,13 +545,13 @@ namespace EMStudio
             else
             {
                 // rename group action
-                QAction* renameGroupAction = menu.addAction("Rename group");
+                QAction* renameGroupAction = menu.addAction(QObject::tr("Rename group"));
                 renameGroupAction->setIcon(MysticQt::GetMysticQt()->FindIcon("Images/Icons/Edit.png"));
                 connect(renameGroupAction, &QAction::triggered, this, &ParameterWindow::OnRenameGroup);
             }
 
             // edit action
-            QAction* editAction = menu.addAction("Edit");
+            QAction* editAction = menu.addAction(QObject::tr("Edit"));
             editAction->setIcon(MysticQt::GetMysticQt()->FindIcon("Images/Icons/Edit.png"));
             connect(editAction, &QAction::triggered, this, &ParameterWindow::OnEditButton);
         }
@@ -560,8 +560,8 @@ namespace EMStudio
             menu.addSeparator();
 
             // select group parameter action
-            QMenu* groupMenu = new QMenu("Assign to group", &menu);
-            QAction* noneGroupAction = groupMenu->addAction("Default");
+            QMenu* groupMenu = new QMenu(QObject::tr("Assign to group"), &menu);
+            QAction* noneGroupAction = groupMenu->addAction(QObject::tr("Default"));
             noneGroupAction->setCheckable(true);
 
             if (!parameter)
@@ -616,7 +616,7 @@ namespace EMStudio
         // move up action
         if (moveUpPossible)
         {
-            QAction* moveUpAction = menu.addAction("Move up");
+            QAction* moveUpAction = menu.addAction(QObject::tr("Move up"));
             moveUpAction->setIcon(MysticQt::GetMysticQt()->FindIcon("Images/Icons/UpArrow.png"));
             connect(moveUpAction, &QAction::triggered, this, &ParameterWindow::OnMoveParameterUp);
         }
@@ -624,7 +624,7 @@ namespace EMStudio
         // move down action
         if (moveDownPossible)
         {
-            QAction* moveDownAction = menu.addAction("Move down");
+            QAction* moveDownAction = menu.addAction(QObject::tr("Move down"));
             moveDownAction->setIcon(MysticQt::GetMysticQt()->FindIcon("Images/Icons/DownArrow.png"));
             connect(moveDownAction, &QAction::triggered, this, &ParameterWindow::OnMoveParameterDown);
         }
@@ -632,12 +632,12 @@ namespace EMStudio
         menu.addSeparator();
 
         // add parameter action
-        QAction* addParameter = menu.addAction("Add parameter");
+        QAction* addParameter = menu.addAction(QObject::tr("Add parameter"));
         addParameter->setIcon(MysticQt::GetMysticQt()->FindIcon("Images/Icons/Plus.png"));
         connect(addParameter, &QAction::triggered, this, &ParameterWindow::OnAddParameter);
 
         // add group action
-        QAction* addGroupAction = menu.addAction("Add group");
+        QAction* addGroupAction = menu.addAction(QObject::tr("Add group"));
         addGroupAction->setIcon(MysticQt::GetMysticQt()->FindIcon("Images/Icons/Plus.png"));
         connect(addGroupAction, &QAction::triggered, this, &ParameterWindow::OnAddGroupButton);
 
@@ -646,7 +646,7 @@ namespace EMStudio
         // remove action
         if (!mSelectedParameterNames.empty())
         {
-            QAction* removeAction = menu.addAction("Remove");
+            QAction* removeAction = menu.addAction(QObject::tr("Remove"));
             removeAction->setIcon(MysticQt::GetMysticQt()->FindIcon("Images/Icons/Remove.png"));
             connect(removeAction, &QAction::triggered, this, &ParameterWindow::OnRemoveButton);
         }
@@ -654,7 +654,7 @@ namespace EMStudio
         // clear action
         if (animGraph->GetNumParameters() > 0)
         {
-            QAction* clearAction = menu.addAction("Clear");
+            QAction* clearAction = menu.addAction(QObject::tr("Clear"));
             clearAction->setIcon(MysticQt::GetMysticQt()->FindIcon("Images/Icons/Clear.png"));
             connect(clearAction, &QAction::triggered, this, &ParameterWindow::OnClearButton);
         }

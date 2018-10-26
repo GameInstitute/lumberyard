@@ -158,7 +158,7 @@ namespace Amazon {
         m_loadingInfoLbl.setProperty("HasNoWindowDecorations", true);
         m_loadingLbl.setProperty("HasNoWindowDecorations", true);
         m_loadingLbl.show();
-        m_loadingInfoLbl.setText("Connecting to Amazon...");
+        m_loadingInfoLbl.setText(QObject::tr("Connecting to Amazon..."));
         m_loadingInfoLbl.show();
         m_webViewFrame.hide();
         m_spacer->changeSize(WEBVIEW_WIDTH, WEBVIEW_HEIGHT - m_loadingLbl.size().height() - m_loadingInfoLbl.size().height());

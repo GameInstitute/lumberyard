@@ -113,7 +113,7 @@ QKeySequenceCaptureWidget::QKeySequenceCaptureWidget(QWidget* parent, QString pa
 
     if (m_sequence.isEmpty())
     {
-        setText("Click to assign");
+        setText(QObject::tr("Click to assign"));
     }
     else
     {
@@ -127,7 +127,7 @@ QKeySequenceCaptureWidget::QKeySequenceCaptureWidget(QWidget* parent, QString pa
     setFixedWidth(160);
     setAlignment(Qt::AlignRight);
     m_menu = new ContextMenu(this);
-    QAction* action = m_menu->addAction("Clear");
+    QAction* action = m_menu->addAction(QObject::tr("Clear"));
     connect(action, &QAction::triggered, this, [=]() { SetSequence(QKeySequence(), false);  });
 }
 
@@ -136,7 +136,7 @@ QKeySequenceCaptureWidget::QKeySequenceCaptureWidget(QWidget* parent, QString pa
     , m_path(path)
 {
     m_defaultSequence = m_sequence = QKeySequence();
-    setText("Click to assign");
+    setText(QObject::tr("Click to assign"));
     SetFlags(CAPTURE_MODIFIERS | DISPLAY_CAPTURE);
     setProperty("HotkeyLabel", "Standard");
     updateStyle();

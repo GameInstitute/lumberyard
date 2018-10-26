@@ -32,7 +32,7 @@ namespace EMStudio
         mFiles = files;
 
         // Update title of the dialog.
-        setWindowTitle("Recover Files");
+        setWindowTitle(QObject::tr("Recover Files"));
 
         // Set the window default size.
         resize(1024, 576);
@@ -40,7 +40,7 @@ namespace EMStudio
         QVBoxLayout* layout = new QVBoxLayout(this);
 
         // Add the top window message.
-        layout->addWidget(new QLabel("Some files have been corrupted but can be restored. The following files can be recovered:"));
+        layout->addWidget(new QLabel(QObject::tr("Some files have been corrupted but can be restored. The following files can be recovered:")));
 
         // Create the table widget.
         mTableWidget = new QTableWidget();
@@ -200,13 +200,13 @@ namespace EMStudio
         layout->addWidget(mTableWidget);
 
         // Create the warning message.
-        QLabel* warningLabel = new QLabel("<font color='yellow'>Warning: Files that will not be recovered will be deleted</font>");
+        QLabel* warningLabel = new QLabel(QObject::tr("<font color='yellow'>Warning: Files that will not be recovered will be deleted</font>"));
         warningLabel->setAlignment(Qt::AlignVCenter | Qt::AlignLeft);
 
         // Add the button layout.
         QHBoxLayout* buttonLayout      = new QHBoxLayout();
-        QPushButton* recoverButton     = new QPushButton("Recover Selected");
-        QPushButton* skipRecoverButton = new QPushButton("Skip Recovering");
+        QPushButton* recoverButton     = new QPushButton(QObject::tr("Recover Selected"));
+        QPushButton* skipRecoverButton = new QPushButton(QObject::tr("Skip Recovering"));
         buttonLayout->addWidget(warningLabel);
         buttonLayout->addWidget(recoverButton);
         buttonLayout->addWidget(skipRecoverButton);

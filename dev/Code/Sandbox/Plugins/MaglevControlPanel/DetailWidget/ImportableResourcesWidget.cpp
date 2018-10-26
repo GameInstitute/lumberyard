@@ -67,7 +67,7 @@ void ImportableResourcesWidget::CreateRegionRow()
 {
     //Add the labels for the first row
     QHBoxLayout* regionLayout = new QHBoxLayout;
-    QLabel* selectLabel = new QLabel("Select resources ");
+    QLabel* selectLabel = new QLabel(QObject::tr("Select resources "));
     selectLabel->setAlignment(Qt::AlignLeft | Qt::AlignVCenter);
     CreateLoadingLabel();
 
@@ -83,7 +83,7 @@ void ImportableResourcesWidget::CreateRegionRow()
     m_regionBox->setCurrentIndex(0);
     m_regionBox->setEditable(true);
 
-    QLabel* regionLabel = new QLabel("Region:");
+    QLabel* regionLabel = new QLabel(QObject::tr("Region:"));
     regionLabel->setAlignment(Qt::AlignRight | Qt::AlignVCenter);
 
     QHBoxLayout* regionLayout1 = new QHBoxLayout;
@@ -106,7 +106,7 @@ void ImportableResourcesWidget::CreateSearchRow()
     m_typeList = QStringList("All types") << "dynamodb" << "lambda" << "sqs" << "sns" << "s3";
 
     m_typeButton = new QPushButton{m_typeList[0]};
-    m_typeButton->setToolTip("Type of the resource to list");
+    m_typeButton->setToolTip(QObject::tr("Type of the resource to list"));
     m_buttonMenu = new QMenu{};
     for (int typeNum = 1; typeNum < m_typeList.length(); ++typeNum)
         m_buttonMenu->addAction(m_typeList[typeNum]);
@@ -132,7 +132,7 @@ void ImportableResourcesWidget::CreateLoadingLabel()
 
 void ImportableResourcesWidget::ListStart(QLabel* loadingProcess)
 {
-    loadingProcess->setText("Loading...");
+    loadingProcess->setText(QObject::tr("Loading..."));
     EnableConfigureButton(false);
     m_regionBox->setDisabled(true);
     m_regionBox->setToolTip(tr("Region cannot be changed when the table is loading"));
@@ -200,20 +200,20 @@ void ImportableResourcesWidget::OnTableContextMenuRequested(QPoint pos)
     auto menu = new ToolTipMenu{};
     if (m_currentState == State::Listing)
     {
-        auto copyAction = menu->addAction("Copy");
+        auto copyAction = menu->addAction(QObject::tr("Copy"));
         connect(copyAction, &QAction::triggered, this, [this, index](){OnMenuCopyClicked(index); });
-        auto configureAction = menu->addAction("Configure");
+        auto configureAction = menu->addAction(QObject::tr("Configure"));
         connect(configureAction, &QAction::triggered, this, [this, row](){OnMenuConfigureClicked(row);});
         if (!m_listfinished)
             configureAction->setDisabled(true);
     }
     else
     {
-        auto deleteAction = menu->addAction("Delete");
+        auto deleteAction = menu->addAction(QObject::tr("Delete"));
         connect(deleteAction, &QAction::triggered, this, [this, row](){OnMenuDeleteClicked(row);});
     }
 
-    auto viewResource = menu->addAction("View resource in AWS console");
+    auto viewResource = menu->addAction(QObject::tr("View resource in AWS console"));
     QString resourceType = m_importerModel->item(row, IAWSImporterModel::TypeColumn)->text();
     QString physicalResourceId = m_importerModel->item(row, IAWSImporterModel::ResourceColumn)->text();
     QString resourceArn = m_importerModel->item(row, IAWSImporterModel::ArnColumn)->text();
@@ -238,21 +238,21 @@ void ImportableResourcesWidget::OnMenuConfigureClicked(int row)
 {    
     //Only import the selected item
     for (int count = 0; count < m_selectedRowList.length(); ++count)
-        m_importerModel->item(m_selectedRowList[count], IAWSImporterModel::SelectedStateColumn)->setText("unselected");
+        m_importerModel->item(m_selectedRowList[count], IAWSImporterModel::SelectedStateColumn)->setText(QObject::tr("unselected"));
     m_selectedRowList.clear();
 
     m_importerModel->item(row, IAWSImporterModel::NameColumn)->setText("");
-    m_importerModel->item(row, IAWSImporterModel::SelectedStateColumn)->setText("selected");
+    m_importerModel->item(row, IAWSImporterModel::SelectedStateColumn)->setText(QObject::tr("selected"));
     m_selectedRowList.append(row);
     CreateConfigurationWindow();
-    m_importerModel->item(row, IAWSImporterModel::SelectedStateColumn)->setText("unselected");
+    m_importerModel->item(row, IAWSImporterModel::SelectedStateColumn)->setText(QObject::tr("unselected"));
 }
 
 void ImportableResourcesWidget::OnMenuDeleteClicked(int row)
 {
     m_selectedRowList.removeOne(row);
     m_importerModel->item(row, IAWSImporterModel::CheckableResourceColumn)->setCheckState(Qt::Unchecked);
-    m_importerModel->item(row, IAWSImporterModel::SelectedStateColumn)->setText("unselected");
+    m_importerModel->item(row, IAWSImporterModel::SelectedStateColumn)->setText(QObject::tr("unselected"));
     if (m_selectedRowList.count() == 0)
         m_dialog->close();
 }
@@ -329,10 +329,10 @@ void ImportableResourcesWidget::OnPrimaryButtonClick()
             m_selectedRowList.append(row);
             //If the resource is chosen, set its name empty and its state selected
             m_importerModel->item(row, IAWSImporterModel::NameColumn)->setText("");
-            m_importerModel->item(row, IAWSImporterModel::SelectedStateColumn)->setText("selected");
+            m_importerModel->item(row, IAWSImporterModel::SelectedStateColumn)->setText(QObject::tr("selected"));
         }
         else
-            m_importerModel->item(row, IAWSImporterModel::SelectedStateColumn)->setText("unselected");
+            m_importerModel->item(row, IAWSImporterModel::SelectedStateColumn)->setText(QObject::tr("unselected"));
     }
     CreateConfigurationWindow();
 }
@@ -346,7 +346,7 @@ void ImportableResourcesWidget::CreateConfigurationWindow()
     m_dialog->setWindowTitle(tr("Configuration"));
     m_dialog->GetPrimaryButton()->setText(tr("Import"));
     m_dialog->GetPrimaryButton()->show();
-    m_dialog->GetPrimaryButton()->setToolTip("Import all the selected resources.");
+    m_dialog->GetPrimaryButton()->setToolTip(QObject::tr("Import all the selected resources."));
 
     //Use the proxy model to filter the selected resources
     m_filterConfigurationProxyModel.reset(new QSortFilterProxyModel());
@@ -448,8 +448,8 @@ void ImportableResourcesWidget::ShowImportProcess()
     GetCancelButton()->setEnabled(false);
 
     //Show the progress bar
-    m_progress = new QProgressDialog("Importing Resource...", "Cancel", 0, m_selectedRowList.length(), this, Qt::WindowTitleHint | Qt::WindowCloseButtonHint);
-    m_progress->setWindowTitle("Importing");
+    m_progress = new QProgressDialog(QObject::tr("Importing Resource..."), QObject::tr("Cancel"), 0, m_selectedRowList.length(), this, Qt::WindowTitleHint | Qt::WindowCloseButtonHint);
+    m_progress->setWindowTitle(QObject::tr("Importing"));
     m_progress->setMinimumDuration(0);
     m_progress->setWindowModality(Qt::WindowModal);
     m_finishedImportRequests = 0;
@@ -472,7 +472,7 @@ void ImportableResourcesWidget::OnImporterOutput(const QVariant& output, const c
     {
         //Reset the checkstate for those successfully imported resources
         m_importerModel->item(m_selectedRowList[0], IAWSImporterModel::CheckableResourceColumn)->setCheckState(Qt::Unchecked);
-        m_importerModel->item(m_selectedRowList[0], IAWSImporterModel::SelectedStateColumn)->setText("unselected");
+        m_importerModel->item(m_selectedRowList[0], IAWSImporterModel::SelectedStateColumn)->setText(QObject::tr("unselected"));
 
         //Remove the first item in the list to get the next resource to import
         m_selectedRowList.removeFirst();
@@ -568,16 +568,16 @@ void ImportableResourcesWidget::EnableConfigureButton(bool enable)
 {
     GetPrimaryButton()->setEnabled(enable);
     if (enable)
-        GetPrimaryButton()->setToolTip("Configure the selected resources for import.");
+        GetPrimaryButton()->setToolTip(QObject::tr("Configure the selected resources for import."));
     else
-        GetPrimaryButton()->setToolTip("Select one or more resources after all the importable resources are listed.");
+        GetPrimaryButton()->setToolTip(QObject::tr("Select one or more resources after all the importable resources are listed."));
 }
 
 void ImportableResourcesWidget::EnableImportButton(bool enable)
 {
     m_dialog->GetPrimaryButton()->setEnabled(enable);
     if (enable)
-        m_dialog->GetPrimaryButton()->setToolTip("Import all the selected resources");
+        m_dialog->GetPrimaryButton()->setToolTip(QObject::tr("Import all the selected resources"));
     else
-        m_dialog->GetPrimaryButton()->setToolTip("Provide names for all the resources.");
+        m_dialog->GetPrimaryButton()->setToolTip(QObject::tr("Provide names for all the resources."));
 }

@@ -57,7 +57,7 @@ bool CEnvironementProbeObject::Init(IEditor* ie, CBaseObject* prev, const QStrin
 void CEnvironementProbeObject::InitVariables()
 {
     CVarEnumList<int>* enumList = new CVarEnumList<int>();
-    enumList->AddItem("skip update", 0);
+    enumList->AddItem(QObject::tr("skip update"), 0);
     //enumList->AddItem( "32",32 );
     //enumList->AddItem( "64",64 );
     //enumList->AddItem( "128",128 );

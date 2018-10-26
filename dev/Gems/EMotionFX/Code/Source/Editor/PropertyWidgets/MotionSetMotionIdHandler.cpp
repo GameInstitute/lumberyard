@@ -42,7 +42,7 @@ namespace EMotionFX
         const size_t numMotions = m_motionIds.size();
         if (numMotions == 0)
         {
-            m_pickButton->setText("Select motions");
+            m_pickButton->setText(QObject::tr("Select motions"));
         }
         else if (numMotions == 1)
         {
@@ -50,7 +50,7 @@ namespace EMotionFX
         }
         else
         {
-            m_pickButton->setText(QString("%1 motions").arg(numMotions));
+            m_pickButton->setText(QString(QObject::tr("%1 motions")).arg(numMotions));
         }
 
         // Build and set the tooltip containing all motion ids.

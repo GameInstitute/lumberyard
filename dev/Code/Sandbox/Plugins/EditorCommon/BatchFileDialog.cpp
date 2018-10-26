@@ -324,14 +324,14 @@ bool EDITOR_COMMON_API ShowBatchFileDialog(Serialization::StringList* result, co
     {
         if (settings.allowListLoading && !settings.readonlyList)
         {
-            QPushButton* loadListButton = new QPushButton("Load List...");
+            QPushButton* loadListButton = new QPushButton(QObject::tr("Load List..."));
             QObject::connect(loadListButton, SIGNAL(pressed()), &handler, SLOT(OnLoadList()));
             topRow->addWidget(loadListButton);
         }
-        QPushButton* selectAllButton = new QPushButton("Select All");
+        QPushButton* selectAllButton = new QPushButton(QObject::tr("Select All"));
         QObject::connect(selectAllButton, SIGNAL(pressed()), &handler, SLOT(OnSelectAll()));
         topRow->addWidget(selectAllButton);
-        QPushButton* selectNoneButton = new QPushButton("Select None");
+        QPushButton* selectNoneButton = new QPushButton(QObject::tr("Select None"));
         QObject::connect(selectNoneButton, SIGNAL(pressed()), &handler, SLOT(OnSelectNone()));
         topRow->addWidget(selectNoneButton);
     }

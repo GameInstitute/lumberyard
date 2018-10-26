@@ -50,7 +50,7 @@ namespace AzToolsFramework
         , m_mouseHover(false)
     {
         m_baseStyleSheet = styleSheet() + "padding: 0ex; border-radius: 2px;";
-        setToolTip("Filter by " + m_tagText + " for \"" + m_criteriaText + "\"");
+        setToolTip(QObject::tr("Filter by ") + m_tagText + " for \"" + m_criteriaText + "\"");
         setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
         setMinimumSize(60, 24);
 
@@ -342,7 +342,7 @@ namespace AzToolsFramework
         m_availableTagMenu->clear();
         for (QString& tag : m_acceptedTags)
         {
-            QAction* action = m_availableTagMenu->addAction("Create filters by \"" + tag + "\"");
+            QAction* action = m_availableTagMenu->addAction(QObject::tr("Create filters by \"") + tag + "\"");
             action->setData(tag);
             action->setCheckable(true);
             action->setChecked(tag == defaultTag);
@@ -700,7 +700,7 @@ namespace AzToolsFramework
             AZ::IO::FileIOBase::GetInstance()->CreatePath(absoluteFilterPath);
         }
 
-        QString filename = QFileDialog::getOpenFileName(this, "Load Filter", absoluteFilterPath, tr("Search Filter Files (*.sff)"), nullptr, QFileDialog::DontUseNativeDialog);
+        QString filename = QFileDialog::getOpenFileName(this, QObject::tr("Load Filter"), absoluteFilterPath, tr("Search Filter Files (*.sff)"), nullptr, QFileDialog::DontUseNativeDialog);
         if (!filename.isEmpty())
         {
             LoadFilter(filename.toStdString().c_str());

@@ -160,14 +160,14 @@ QMenu* StackResourcesWidget::GetResourceContextMenu(QMouseEvent* mouseEvent)
 
     if (!physicalResourceId.length())
     {
-        auto viewResource = menu->addAction("Resource not yet available");
+        auto viewResource = menu->addAction(QObject::tr("Resource not yet available"));
         viewResource->setDisabled(true);
     }
     else
     {
-        auto viewResource = menu->addAction("View resource in AWS console");
+        auto viewResource = menu->addAction(QObject::tr("View resource in AWS console"));
         connect(viewResource, &QAction::triggered, this, [this, physicalResourceId, resourceType]() { StackResourcesWidget::ViewConsoleResource(resourceType, physicalResourceId); });
-        auto clipboardCopy = menu->addAction("Copy resource ID to clipboard");
+        auto clipboardCopy = menu->addAction(QObject::tr("Copy resource ID to clipboard"));
         connect(clipboardCopy, &QAction::triggered, this, [physicalResourceId]() {QApplication::clipboard()->setText(physicalResourceId); });
     }
     return menu;

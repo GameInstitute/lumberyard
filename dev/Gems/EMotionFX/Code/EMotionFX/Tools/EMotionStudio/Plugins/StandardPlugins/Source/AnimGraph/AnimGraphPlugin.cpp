@@ -480,19 +480,19 @@ namespace EMStudio
         // During startup, plugins can be constructed more than once, so don't add connections for those items
         if (GetAttributeDock() != nullptr)
         {
-            mDockWindowActions[WINDOWS_PARAMETERWINDOW] = parent->addAction("Parameter Window");
+            mDockWindowActions[WINDOWS_PARAMETERWINDOW] = parent->addAction(QObject::tr("Parameter Window"));
             mDockWindowActions[WINDOWS_PARAMETERWINDOW]->setCheckable(true);
-            mDockWindowActions[WINDOWS_ATTRIBUTEWINDOW] = parent->addAction("Attribute Window");
+            mDockWindowActions[WINDOWS_ATTRIBUTEWINDOW] = parent->addAction(QObject::tr("Attribute Window"));
             mDockWindowActions[WINDOWS_ATTRIBUTEWINDOW]->setCheckable(true);
-            mDockWindowActions[WINDOWS_NODEGROUPWINDOW] = parent->addAction("Node Group Window");
+            mDockWindowActions[WINDOWS_NODEGROUPWINDOW] = parent->addAction(QObject::tr("Node Group Window"));
             mDockWindowActions[WINDOWS_NODEGROUPWINDOW]->setCheckable(true);
-            mDockWindowActions[WINDOWS_PALETTEWINDOW] = parent->addAction("Palette Window");
+            mDockWindowActions[WINDOWS_PALETTEWINDOW] = parent->addAction(QObject::tr("Palette Window"));
             mDockWindowActions[WINDOWS_PALETTEWINDOW]->setCheckable(true);
 #ifdef HAS_GAME_CONTROLLER
-            mDockWindowActions[WINDOWS_GAMECONTROLLERWINDOW] = parent->addAction("Game Controller Window");
+            mDockWindowActions[WINDOWS_GAMECONTROLLERWINDOW] = parent->addAction(QObject::tr("Game Controller Window"));
             mDockWindowActions[WINDOWS_GAMECONTROLLERWINDOW]->setCheckable(true);
 #endif
-            mDockWindowActions[WINDOWS_RECORDER] = parent->addAction("Recorder");
+            mDockWindowActions[WINDOWS_RECORDER] = parent->addAction(QObject::tr("Recorder"));
             mDockWindowActions[WINDOWS_RECORDER]->setCheckable(true);
 
             connect(mDockWindowActions[WINDOWS_PARAMETERWINDOW], SIGNAL(triggered()), this, SLOT(UpdateWindowVisibility()));
@@ -702,7 +702,7 @@ namespace EMStudio
         QMainWindow* mainWindow = GetMainWindow();
 
         // create the attribute dock window
-        mAttributeDock = new MysticQt::DockWidget(mainWindow, "Attributes");
+        mAttributeDock = new MysticQt::DockWidget(mainWindow, QObject::tr("Attributes"));
         MysticQt::DockHeader* dockHeader = new MysticQt::DockHeader(mAttributeDock);
         mAttributeDock->setTitleBarWidget(dockHeader);
         mainWindow->addDockWidget(Qt::RightDockWidgetArea, mAttributeDock);
@@ -732,7 +732,7 @@ namespace EMStudio
         dockHeader->UpdateIcons();
 
         // create the node palette dock
-        mNodePaletteDock = new MysticQt::DockWidget(mainWindow, "Anim Graph Palette");
+        mNodePaletteDock = new MysticQt::DockWidget(mainWindow, QObject::tr("Anim Graph Palette"));
         dockHeader = new MysticQt::DockHeader(mNodePaletteDock);
         mNodePaletteDock->setTitleBarWidget(dockHeader);
         mainWindow->addDockWidget(Qt::RightDockWidgetArea, mNodePaletteDock);
@@ -748,7 +748,7 @@ namespace EMStudio
 
         // create the parameter dock
         QScrollArea* scrollArea = new QScrollArea();
-        mParameterDock = new MysticQt::DockWidget(mainWindow, "Parameters");
+        mParameterDock = new MysticQt::DockWidget(mainWindow, QObject::tr("Parameters"));
         dockHeader = new MysticQt::DockHeader(mParameterDock);
         mParameterDock->setTitleBarWidget(dockHeader);
         mainWindow->addDockWidget(Qt::RightDockWidgetArea, mParameterDock);
@@ -768,7 +768,7 @@ namespace EMStudio
         mNavigateWidget = new NavigateWidget(this);
 
         // create the recorder dock
-        mRecorderDock = new MysticQt::DockWidget(mainWindow, "Recorder");
+        mRecorderDock = new MysticQt::DockWidget(mainWindow, QObject::tr("Recorder"));
         dockHeader = new MysticQt::DockHeader(mRecorderDock);
         mRecorderDock->setTitleBarWidget(dockHeader);
         mainWindow->addDockWidget(Qt::RightDockWidgetArea, mRecorderDock);
@@ -792,7 +792,7 @@ namespace EMStudio
 
     #ifdef HAS_GAME_CONTROLLER
         // create the game controller dock
-        mGameControllerDock = new MysticQt::DockWidget(mainWindow, "Game Controller");
+        mGameControllerDock = new MysticQt::DockWidget(mainWindow, QObject::tr("Game Controller"));
         dockHeader = new MysticQt::DockHeader(mGameControllerDock);
         mGameControllerDock->setTitleBarWidget(dockHeader);
         mainWindow->addDockWidget(Qt::RightDockWidgetArea, mGameControllerDock);
@@ -2736,7 +2736,7 @@ namespace EMStudio
             }
 
             msgBox.setText(text.c_str());
-            msgBox.setWindowTitle("Save Changes");
+            msgBox.setWindowTitle(QObject::tr("Save Changes"));
 
             if (showCancelButton)
             {

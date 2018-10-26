@@ -319,9 +319,9 @@ namespace DynamicContent
         btnAddFolder->setMenu(m_addFolderButtonMenu);
 
         m_settingsButtonMenu = new QMenu(this);
-        auto changeTargetPlatforms = m_settingsButtonMenu->addAction("Change Target Platforms");
+        auto changeTargetPlatforms = m_settingsButtonMenu->addAction(QObject::tr("Change Target Platforms"));
         connect(changeTargetPlatforms, &QAction::triggered, this, &QDynamicContentEditorMainWindow::OnChangeTargetPlatforms);
-        auto deleteManifest = m_settingsButtonMenu->addAction("Delete Manifest");
+        auto deleteManifest = m_settingsButtonMenu->addAction(QObject::tr("Delete Manifest"));
         connect(deleteManifest, &QAction::triggered, this, &QDynamicContentEditorMainWindow::OnDeleteManifest);
         settings->setMenu(m_settingsButtonMenu);
         settings->setIcon(QIcon("Editor/Icons/CloudCanvas/gear.png"));
@@ -380,7 +380,7 @@ namespace DynamicContent
 
         btnUpload->setProperty("class", "Primary");
 
-        cbManifestSelection->setEditText("Choose / create a manifest");
+        cbManifestSelection->setEditText(QObject::tr("Choose / create a manifest"));
 
         PythonExecute(COMMAND_LIST_MANIFESTS);
         
@@ -696,7 +696,7 @@ namespace DynamicContent
 
     void QUploadPackagesDialog::OnResetUploadPackagesDialogUI()
     {
-        setWindowTitle("Upload packages");
+        setWindowTitle(QObject::tr("Upload packages"));
 
         SetUploadButtonCurrentStatus(UploadButtonStatus::Upload);
         SetCancelButtonCurrentStatus(CancelButtonStatus::Cancel);
@@ -712,7 +712,7 @@ namespace DynamicContent
 
     void QUploadPackagesDialog::UpdateUploadPackagesDialogUI()
     {
-        setWindowTitle("Generate new keys");
+        setWindowTitle(QObject::tr("Generate new keys"));
 
         SetUploadButtonCurrentStatus(UploadButtonStatus::Continue);
         SetCancelButtonCurrentStatus(CancelButtonStatus::Back);
@@ -956,7 +956,7 @@ namespace DynamicContent
         }
         else if (status == QDynamicContentEditorMainWindow::AddFilesStatus::NoPlatformInfo)
         {
-            setWindowTitle("Error");
+            setWindowTitle(QObject::tr("Error"));
             warningLabel->setText(tr("The current files have not been processed by the Asset Processor and are not supported by the Dynamic Content Manager."));
         }
     }
@@ -1133,7 +1133,7 @@ namespace DynamicContent
         setupUi(this);
 
         buttonBox->button(QDialogButtonBox::Ok)->setProperty("class", "Primary");
-        packageName->setToolTip("Valid characters are 0-9a-zA-Z!_. and the maximum length is 100");
+        packageName->setToolTip(QObject::tr("Valid characters are 0-9a-zA-Z!_. and the maximum length is 100"));
         SetPlatformButtons();
     }
 
@@ -1783,7 +1783,7 @@ namespace DynamicContent
 
         if (selectedRow != -1)
         {
-            auto menuAction = m_contentMenu->addAction("Remove File");
+            auto menuAction = m_contentMenu->addAction(QObject::tr("Remove File"));
             connect(menuAction, &QAction::triggered, this, &QDynamicContentEditorMainWindow::OnRemoveFile);
         }
 
@@ -1799,18 +1799,18 @@ namespace DynamicContent
         {
             if (btnRemoveFromPack->isEnabled())
             {
-                auto menuAction = m_contentMenu->addAction("Remove File from Package");
+                auto menuAction = m_contentMenu->addAction(QObject::tr("Remove File from Package"));
                 connect(menuAction, &QAction::triggered, this, &QDynamicContentEditorMainWindow::OnRemoveFromPackage);
             }
             if (btnRemovePackage->isEnabled())
             {
-                auto menuAction = m_contentMenu->addAction("Delete Package");
+                auto menuAction = m_contentMenu->addAction(QObject::tr("Delete Package"));
                 connect(menuAction, &QAction::triggered, this, &QDynamicContentEditorMainWindow::OnRemovePackage);
             }
         }
         else
         {
-            auto menuAction = m_contentMenu->addAction("New Package");
+            auto menuAction = m_contentMenu->addAction(QObject::tr("New Package"));
             connect(menuAction, &QAction::triggered, this, &QDynamicContentEditorMainWindow::OnAddPackage);
         }
 

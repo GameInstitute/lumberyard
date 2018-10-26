@@ -456,7 +456,7 @@ void CCameraObject::OnContextMenu(QMenu* menu)
     {
         menu->addSeparator();
     }
-    QAction* action = menu->addAction("Set As View Camera");
+    QAction* action = menu->addAction(QObject::tr("Set As View Camera"));
     QObject::connect(action, &QAction::triggered, this, &CCameraObject::OnMenuSetAsViewCamera);
 
     CEntityObject::OnContextMenu(menu);

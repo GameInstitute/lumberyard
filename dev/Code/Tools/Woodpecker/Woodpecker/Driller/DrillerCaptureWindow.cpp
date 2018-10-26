@@ -221,7 +221,7 @@ namespace Driller
         }
         connect(ptrMapper, SIGNAL(mapped(int)), this, SLOT(OnQuantMenuFinal(int)));
 
-        m_gui->quantityButton->setText("120 frames");
+        m_gui->quantityButton->setText(QObject::tr("120 frames"));
         m_gui->quantityButton->setMenu(quantMenu);
 
         m_gui->scrollArea->setBackgroundRole(QPalette::Dark);

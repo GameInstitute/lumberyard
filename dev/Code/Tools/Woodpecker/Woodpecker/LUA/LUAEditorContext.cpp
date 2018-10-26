@@ -422,11 +422,11 @@ namespace LUAEditor
 
             // we may have unsaved changes:
             QMessageBox msgBox(this->m_pLUAEditorMainWindow);
-            msgBox.setText("A file has been modified by an outside program. Would you like to reload it from disk? If you do, you will lose any unsaved changes.");
+            msgBox.setText(QObject::tr("A file has been modified by an outside program. Would you like to reload it from disk? If you do, you will lose any unsaved changes."));
             msgBox.setInformativeText(info.m_assetName.c_str());
             msgBox.setStandardButtons(QMessageBox::Yes | QMessageBox::No);
-            msgBox.setButtonText(QMessageBox::Yes, "Reload From Disk");
-            msgBox.setButtonText(QMessageBox::No, "Don't reload");
+            msgBox.setButtonText(QMessageBox::Yes, QObject::tr("Reload From Disk"));
+            msgBox.setButtonText(QMessageBox::No, QObject::tr("Don't reload"));
             msgBox.setDefaultButton(QMessageBox::No);
             msgBox.setIcon(QMessageBox::Question);
             if (msgBox.exec() == QMessageBox::Yes)
@@ -1373,7 +1373,7 @@ namespace LUAEditor
 
             QMessageBox msgBox(m_pLUAEditorMainWindow);
             msgBox.setModal(true);
-            msgBox.setText("File not found");
+            msgBox.setText(QObject::tr("File not found"));
             msgBox.setInformativeText(physicalPath);
             msgBox.setStandardButtons(QMessageBox::Ok);
             msgBox.setDefaultButton(QMessageBox::Ok);
@@ -1428,7 +1428,7 @@ namespace LUAEditor
                 AZ_Warning(LUAEditorInfoName, false, AZStd::string::format("<span severity=\"err\">Could not open the file, file not found: '%s'</span>", assetId.c_str()).c_str());
                 QMessageBox msgBox(m_pLUAEditorMainWindow);
                 msgBox.setModal(true);
-                msgBox.setText("File not found");
+                msgBox.setText(QObject::tr("File not found"));
                 msgBox.setStandardButtons(QMessageBox::Ok);
                 msgBox.setDefaultButton(QMessageBox::Ok);
                 msgBox.setIcon(QMessageBox::Critical);
@@ -1942,7 +1942,7 @@ namespace LUAEditor
 
         // Globals
         ReferenceItem* global = aznew ReferenceItem("Globals", AZ::u64(0));
-        global->setToolTip("Globals");
+        global->setToolTip(QObject::tr("Globals"));
         global->setWhatsThis("Global Methods and Variables");
         m_referenceModel->appendRow(global);
 
@@ -1969,7 +1969,7 @@ namespace LUAEditor
 
         // Classes
         ReferenceItem* classes = aznew ReferenceItem("Classes", AZ::u64(0));
-        classes->setToolTip("Classes");
+        classes->setToolTip(QObject::tr("Classes"));
         classes->setWhatsThis("Classes");
         m_referenceModel->appendRow(classes);
 

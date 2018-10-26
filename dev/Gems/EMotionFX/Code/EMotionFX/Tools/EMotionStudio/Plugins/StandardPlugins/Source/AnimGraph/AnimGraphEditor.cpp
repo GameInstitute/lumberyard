@@ -86,7 +86,7 @@ namespace EMotionFX
         motionSetLayout->setSpacing(0);
         vLayout->addLayout(motionSetLayout);
 
-        QLabel* motionSetLabel = new QLabel("Preview with");
+        QLabel* motionSetLabel = new QLabel(QObject::tr("Preview with"));
         motionSetLayout->addWidget(motionSetLabel);
         motionSetLabel->setFixedWidth(120);
 
@@ -144,7 +144,7 @@ namespace EMotionFX
         // clear the motion set combobox
         m_motionSetComboBox->clear();
 
-        m_motionSetComboBox->addItem("Select a motion set");
+        m_motionSetComboBox->addItem(QObject::tr("Select a motion set"));
 
         // add each motion set name
         const uint32 numMotionSets = EMotionFX::GetMotionManager().GetNumMotionSets();
@@ -241,7 +241,7 @@ namespace EMotionFX
             {
                 // clear all items and add only "<multiple used"
                 m_motionSetComboBox->clear();
-                m_motionSetComboBox->addItem("<multiple used>");
+                m_motionSetComboBox->addItem(QObject::tr("<multiple used>"));
 
                 // disable the combobox to avoid user action
                 m_motionSetComboBox->setDisabled(true);

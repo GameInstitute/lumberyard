@@ -38,10 +38,10 @@ ResetXFormPanel::ResetXFormPanel(ResetXFormTool* pResetXFormTool)
 {
     QGridLayout* pGridLayout = new QGridLayout;
 
-    m_pPositionCheckBox = new QCheckBox("Position");
-    m_pRotationCheckBox = new QCheckBox("Rotation");
-    m_pScaleCheckBox = new QCheckBox("Scale");
-    QPushButton* pResetXFormPushButton = new QPushButton("Reset X Form");
+    m_pPositionCheckBox = new QCheckBox(QObject::tr("Position"));
+    m_pRotationCheckBox = new QCheckBox(QObject::tr("Rotation"));
+    m_pScaleCheckBox = new QCheckBox(QObject::tr("Scale"));
+    QPushButton* pResetXFormPushButton = new QPushButton(QObject::tr("Reset X Form"));
 
     QSettings settings;
     for (auto g : QString(CD::sessionName).split('\\'))

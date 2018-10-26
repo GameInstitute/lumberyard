@@ -76,7 +76,7 @@ namespace AZ
         }
 
         AZStd::string sourcePath = source->GetFullPath();
-        QAction* editImportSettingsAction = menu->addAction("Edit Settings...", [sourcePath]()
+        QAction* editImportSettingsAction = menu->addAction(QObject::tr("Edit Settings..."), [sourcePath]()
         {
             AssetImporterPlugin::GetInstance()->EditImportSettings(sourcePath);
         });

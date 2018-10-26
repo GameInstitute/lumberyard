@@ -1725,7 +1725,7 @@ namespace EMStudio
             TimeTrackElement* element = mPlugin->GetElementAt(mContextMenuX, mContextMenuY);
             if (element == nullptr)
             {
-                QAction* action = menu.addAction("Add Motion Event");
+                QAction* action = menu.addAction(QObject::tr("Add Motion Event"));
                 action->setIcon(MysticQt::GetMysticQt()->FindIcon("Images/Icons/Plus.png"));
                 connect(action, SIGNAL(triggered()), this, SLOT(OnAddElement()));
 
@@ -1736,7 +1736,7 @@ namespace EMStudio
                     MotionEventsPlugin* eventsPlugin = static_cast<MotionEventsPlugin*>(plugin);
                     if (eventsPlugin->CheckIfIsPresetReadyToDrop())
                     {
-                        QAction* presetAction = menu.addAction("Add Preset Event");
+                        QAction* presetAction = menu.addAction(QObject::tr("Add Preset Event"));
                         presetAction->setIcon(MysticQt::GetMysticQt()->FindIcon("Images/Icons/Plus.png"));
                         connect(presetAction, SIGNAL(triggered()), this, SLOT(OnCreatePresetEvent()));
                     }
@@ -1744,40 +1744,40 @@ namespace EMStudio
 
                 if (timeTrack->GetNumElements() > 0)
                 {
-                    action = menu.addAction("Cut All Events In Track");
+                    action = menu.addAction(QObject::tr("Cut All Events In Track"));
                     action->setIcon(MysticQt::GetMysticQt()->FindIcon("Images/Icons/Cut.png"));
                     connect(action, SIGNAL(triggered()), this, SLOT(OnCutTrack()));
 
-                    action = menu.addAction("Copy All Events In Track");
+                    action = menu.addAction(QObject::tr("Copy All Events In Track"));
                     action->setIcon(MysticQt::GetMysticQt()->FindIcon("Images/Icons/Copy.png"));
                     connect(action, SIGNAL(triggered()), this, SLOT(OnCopyTrack()));
                 }
 
                 if (GetIsReadyForPaste())
                 {
-                    action = menu.addAction("Paste");
+                    action = menu.addAction(QObject::tr("Paste"));
                     action->setIcon(MysticQt::GetMysticQt()->FindIcon("Images/Icons/Paste.png"));
                     connect(action, SIGNAL(triggered()), this, SLOT(OnPaste()));
 
-                    action = menu.addAction("Paste At Location");
+                    action = menu.addAction(QObject::tr("Paste At Location"));
                     action->setIcon(MysticQt::GetMysticQt()->FindIcon("Images/Icons/Paste.png"));
                     connect(action, SIGNAL(triggered()), this, SLOT(OnPasteAtLocation()));
                 }
             }
             else if (element->GetIsSelected())
             {
-                QAction* action = menu.addAction("Cut");
+                QAction* action = menu.addAction(QObject::tr("Cut"));
                 action->setIcon(MysticQt::GetMysticQt()->FindIcon("Images/Icons/Cut.png"));
                 connect(action, SIGNAL(triggered()), this, SLOT(OnCutElement()));
 
-                action = menu.addAction("Copy");
+                action = menu.addAction(QObject::tr("Copy"));
                 action->setIcon(MysticQt::GetMysticQt()->FindIcon("Images/Icons/Copy.png"));
                 connect(action, SIGNAL(triggered()), this, SLOT(OnCopyElement()));
             }
         }
         else
         {
-            QAction* action = menu.addAction("Add Event Track");
+            QAction* action = menu.addAction(QObject::tr("Add Event Track"));
             action->setIcon(MysticQt::GetMysticQt()->FindIcon("Images/Icons/Plus.png"));
             connect(action, SIGNAL(triggered()), this, SLOT(OnAddTrack()));
         }
@@ -1802,7 +1802,7 @@ namespace EMStudio
         if (timeTrack && timeTrack->GetNumElements() > 0)
         {
             // add the action
-            QAction* action = menu.addAction("Clear Track");
+            QAction* action = menu.addAction(QObject::tr("Clear Track"));
             action->setIcon(MysticQt::GetMysticQt()->FindIcon("Images/Icons/Clear.png"));
             connect(action, SIGNAL(triggered()), this, SLOT(RemoveAllMotionEventsInTrack()));
         }
@@ -2398,11 +2398,11 @@ namespace EMStudio
         //---------------------
         // Timeline actions
         //---------------------
-        QAction* action = menu.addAction("Zoom To Fit All");
+        QAction* action = menu.addAction(QObject::tr("Zoom To Fit All"));
         //action->setIcon( MysticQt::GetMysticQt()->FindIcon("Images/AnimGraphPlugin/FitAll.png") );
         connect(action, SIGNAL(triggered()), mPlugin, SLOT(OnZoomAll()));
 
-        action = menu.addAction("Reset Timeline");
+        action = menu.addAction(QObject::tr("Reset Timeline"));
         //action->setIcon( MysticQt::GetMysticQt()->FindIcon("Images/AnimGraphPlugin/FitAll.png") );
         connect(action, SIGNAL(triggered()), mPlugin, SLOT(OnResetTimeline()));
 
@@ -2414,7 +2414,7 @@ namespace EMStudio
         {
             menu.addSeparator();
 
-            action = menu.addAction("Show Node In Graph");
+            action = menu.addAction(QObject::tr("Show Node In Graph"));
             //action->setIcon( MysticQt::GetMysticQt()->FindIcon("Images/AnimGraphPlugin/FitAll.png") );
             connect(action, SIGNAL(triggered()), mPlugin, SLOT(OnShowNodeHistoryNodeInGraph()));
         }

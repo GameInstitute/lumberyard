@@ -77,8 +77,8 @@ namespace ScriptCanvasEditor
             };
 
             QMenu entityMenu;
-            QAction* setToSelf = entityMenu.addAction("Set to Self");
-            setToSelf->setToolTip("Reset the EntityId to the Entity that owns this graph.");
+            QAction* setToSelf = entityMenu.addAction(QObject::tr("Set to Self"));
+            setToSelf->setToolTip(QObject::tr("Reset the EntityId to the Entity that owns this graph."));
             setToSelf->setData(EntityMenuAction::SetToSelf);
 
             QAction* selectedItem = entityMenu.exec(globalPos);

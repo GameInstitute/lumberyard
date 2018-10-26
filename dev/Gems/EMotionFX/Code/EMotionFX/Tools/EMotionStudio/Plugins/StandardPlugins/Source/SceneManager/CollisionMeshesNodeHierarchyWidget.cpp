@@ -355,7 +355,7 @@ namespace EMStudio
 
         // show the menu
         QMenu menu(this);
-        menu.addAction("Add all towards root to selection");
+        menu.addAction(QObject::tr("Add all towards root to selection"));
         if (menu.exec(mHierarchy->mapToGlobal(pos)))
         {
             // disable signal to not have the update selection called each time

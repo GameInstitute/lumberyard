@@ -29,7 +29,7 @@ namespace EMStudio
         : QDialog(parent)
     {
         mAccepted = false;
-        setWindowTitle("Parameter Selection Window");
+        setWindowTitle(QObject::tr("Parameter Selection Window"));
 
         QVBoxLayout* layout = new QVBoxLayout();
 
@@ -37,8 +37,8 @@ namespace EMStudio
 
         // create the ok and cancel buttons
         QHBoxLayout* buttonLayout = new QHBoxLayout();
-        mOKButton       = new QPushButton("OK");
-        mCancelButton   = new QPushButton("Cancel");
+        mOKButton       = new QPushButton(QObject::tr("OK"));
+        mCancelButton   = new QPushButton(QObject::tr("Cancel"));
         buttonLayout->addWidget(mOKButton);
         buttonLayout->addWidget(mCancelButton);
 

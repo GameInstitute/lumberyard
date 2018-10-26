@@ -91,7 +91,7 @@ QPresetSelectorWidget::QPresetSelectorWidget(QWidget* parent /*= 0*/)
     m_menu = new QMenu(this);
     swabSizeMenu = new QMenu(this);
     QAction* action;
-    swabSizeMenu->setTitle("Preset preview size");
+    swabSizeMenu->setTitle(QObject::tr("Preset preview size"));
 
     action = swabSizeMenu->addAction(tr("Small"));
     connect(action, &QAction::triggered, this, [ = ] {
@@ -451,13 +451,13 @@ void QPresetSelectorWidget::BuildMainMenu()
     //////////////////////////////////////////////////////////////////////////
     if (m_menuFlags & PresetMenuFlag::MAIN_MENU_LIST_OPTIONS)
     {
-        action = m_menu->addAction("List");
+        action = m_menu->addAction(QObject::tr("List"));
         connect(action, &QAction::triggered, this, [ = ] {
                 viewType = ViewType::LIST_VIEW;
                 BuildPanelLayout(newLibFlag[m_currentLibrary], (newLibFlag[m_currentLibrary]) ? panelEditName.text() : libNames[m_currentLibrary]);
                 DisplayLibrary(m_currentLibrary);
             });
-        action = m_menu->addAction("Grid");
+        action = m_menu->addAction(QObject::tr("Grid"));
         connect(action, &QAction::triggered, this, [ = ] {
                 viewType = ViewType::GRID_VIEW;
                 BuildPanelLayout(newLibFlag[m_currentLibrary], (newLibFlag[m_currentLibrary]) ? panelEditName.text() : libNames[m_currentLibrary]);
@@ -499,16 +499,16 @@ void QPresetSelectorWidget::BuildMainMenu()
                 RemoveLibrary(m_currentLibrary);
                 BuildMainMenu();
             }
-            LoadPreset(QFileDialog::getOpenFileName(this, "Select preset to load", QString(), tr("Preset Files (*.cpf)")));
+            LoadPreset(QFileDialog::getOpenFileName(this, QObject::tr("Select preset to load"), QString(), tr("Preset Files (*.cpf)")));
         });
     //////////////////////////////////////////////////////////////////////////
     if (!m_amCreatingLib)
     {
-        action = m_menu->addAction("Export...");
+        action = m_menu->addAction(QObject::tr("Export..."));
         connect(action, &QAction::triggered, this, [ = ] {
                 if (!newLibFlag[m_currentLibrary])
                 {
-                    QString location = QFileDialog::getSaveFileName(this, "Select location to save preset", panelName.text(), tr("Preset Files (*.cpf)"));
+                    QString location = QFileDialog::getSaveFileName(this, QObject::tr("Select location to save preset"), panelName.text(), tr("Preset Files (*.cpf)"));
                     if (location.isEmpty()) //if the user hit cancel
                     {
                         return;
@@ -521,7 +521,7 @@ void QPresetSelectorWidget::BuildMainMenu()
     //////////////////////////////////////////////////////////////////////////
     if (!m_amCreatingLib)
     {
-        action = m_menu->addAction("Rename Library");
+        action = m_menu->addAction(QObject::tr("Rename Library"));
         connect(action, &QAction::triggered, this, [ = ] {
                 BuildPanelLayout(true, panelName.text());
                 DisplayLibrary(m_currentLibrary);
@@ -533,7 +533,7 @@ void QPresetSelectorWidget::BuildMainMenu()
         }
     }
     //////////////////////////////////////////////////////////////////////////
-    action = m_menu->addAction("Remove Library");
+    action = m_menu->addAction(QObject::tr("Remove Library"));
     connect(action, &QAction::triggered, this, [ = ] {
             if (m_currentLibrary < libNames.count())
             {
@@ -551,7 +551,7 @@ void QPresetSelectorWidget::BuildMainMenu()
     }
     m_menu->addSeparator();
     //////////////////////////////////////////////////////////////////////////
-    action = m_menu->addAction("Reset to default");
+    action = m_menu->addAction(QObject::tr("Reset to default"));
     if (m_currentLibrary != DEFAULT_PRESET_INDEX)
     {
         connect(action, &QAction::triggered, this, [=] { SelectPresetLibrary(DEFAULT_PRESET_INDEX); });
@@ -569,7 +569,7 @@ void QPresetSelectorWidget::BuildMainMenu()
     //////////////////////////////////////////////////////////////////////////
     if (m_menuFlags & PresetMenuFlag::MAIN_MENU_REMOVE_ALL)
     {
-        action = m_menu->addAction("Remove All Libraries");
+        action = m_menu->addAction(QObject::tr("Remove All Libraries"));
         connect(action, &QAction::triggered, this, [&] {
                 int answer = QMessageBox::warning(this, tr("Warning"), tr("This will remove ALL libraries!, Continue?"), QMessageBox::Yes | QMessageBox::No);
                 if (answer == QMessageBox::Button::Yes)

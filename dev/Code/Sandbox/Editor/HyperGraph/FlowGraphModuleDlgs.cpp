@@ -291,11 +291,11 @@ CFlowGraphNewModuleInputDlg::CFlowGraphNewModuleInputDlg(IFlowGraphModule::SModu
 
     if (m_pPort->input)
     {
-        setWindowTitle("Edit Module Input");
+        setWindowTitle(QObject::tr("Edit Module Input"));
     }
     else
     {
-        setWindowTitle("Edit Module Output");
+        setWindowTitle(QObject::tr("Edit Module Output"));
     }
 
     // connect

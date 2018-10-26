@@ -323,20 +323,20 @@ bool PropertyRowResourceSelector::onContextMenu(QMenu& menu, QPropertyTree* tree
     ResourceSelectorMenuHandler* handler = new ResourceSelectorMenuHandler(tree, this);
     if (!multiValue() && provider_ && provider_->CanSelect(type_.c_str(), value_.c_str(), id_))
     {
-        QAction* jumpToAction = menu.addAction("Jump to", handler, SLOT(onMenuJumpTo()));
+        QAction* jumpToAction = menu.addAction(QObject::tr("Jump to"), handler, SLOT(onMenuJumpTo()));
         menu.setDefaultAction(jumpToAction);
     }
     if (!userReadOnly())
     {
         if (!provider_ || provider_->CanPickFile(type_.c_str(), id_))
         {
-            menu.addAction(buttonIcon(tree, 0), "Pick Resource...", handler, SLOT(onMenuPickResource()))->setEnabled(!userReadOnly());
+            menu.addAction(buttonIcon(tree, 0), QObject::tr("Pick Resource..."), handler, SLOT(onMenuPickResource()))->setEnabled(!userReadOnly());
         }
         if (provider_ && provider_->CanCreate(type_.c_str(), id_))
         {
-            menu.addAction(buttonIcon(tree, 1), "Create...", handler, SLOT(onMenuCreateFile()));
+            menu.addAction(buttonIcon(tree, 1), QObject::tr("Create..."), handler, SLOT(onMenuCreateFile()));
         }
-        menu.addAction("Clear", handler, SLOT(onMenuClear()))->setEnabled(!userReadOnly());
+        menu.addAction(QObject::tr("Clear"), handler, SLOT(onMenuClear()))->setEnabled(!userReadOnly());
     }
     tree->addMenuHandler(handler);
 

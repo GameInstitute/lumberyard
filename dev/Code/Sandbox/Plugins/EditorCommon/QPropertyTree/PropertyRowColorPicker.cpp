@@ -117,7 +117,7 @@ void PropertyRowColorPicker::clear()
 
 bool PropertyRowColorPicker::onContextMenu(QMenu& menu, QPropertyTree* tree)
 {
-    QAction* action = menu.addAction("Clear");
+    QAction* action = menu.addAction(QObject::tr("Clear"));
     QObject::connect(action,
         &QAction::triggered,
         tree,

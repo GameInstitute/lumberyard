@@ -1271,7 +1271,7 @@ void CAttributeItem::resetItem()
     m_children.clear();
     m_defaultLabel = new QLabel(this);
     m_defaultLabel->setAlignment(Qt::AlignCenter);
-    m_defaultLabel->setText("Fill the panel by dragging parameter in.");
+    m_defaultLabel->setText(QObject::tr("Fill the panel by dragging parameter in."));
     m_defaultLabel->setMinimumHeight(100);
 
     if (m_widget)

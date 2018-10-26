@@ -124,7 +124,7 @@ void PropertyRowResourceFolderPath::serializeValue(Serialization::IArchive& ar)
 bool PropertyRowResourceFolderPath::onContextMenu(QMenu& menu, QPropertyTree* tree)
 {
     ResourceFolderPathMenuHandler* handler = new ResourceFolderPathMenuHandler(tree, this);
-    QAction* action = menu.addAction("Clear", handler, SLOT(onMenuClear()));
+    QAction* action = menu.addAction(QObject::tr("Clear"), handler, SLOT(onMenuClear()));
     action->setEnabled(!userReadOnly());
     SharedPtr<PropertyRow> selfPointer(this);
 

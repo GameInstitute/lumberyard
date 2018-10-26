@@ -309,7 +309,7 @@ enum
 
 BOOL CFragmentBrowser::OnInitDialog()
 {
-    setWindowTitle("Fragment Browser");
+    setWindowTitle(QObject::tr("Fragment Browser"));
 
     for (int i = 0; i < 10; i++)
     {

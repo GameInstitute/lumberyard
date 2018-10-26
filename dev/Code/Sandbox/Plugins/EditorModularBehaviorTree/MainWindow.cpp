@@ -33,12 +33,12 @@ MainWindow::MainWindow()
     setWindowFlags(Qt::Widget);
 
     QMenuBar* menu = new QMenuBar(this);
-    QMenu* fileMenu = menu->addMenu("&File");
-    connect(fileMenu->addAction("&New"), SIGNAL(triggered()), this, SLOT(OnMenuActionNew()));
-    connect(fileMenu->addAction("&Open"), SIGNAL(triggered()), this, SLOT(OnMenuActionOpen()));
+    QMenu* fileMenu = menu->addMenu(QObject::tr("&File"));
+    connect(fileMenu->addAction(QObject::tr("&New")), SIGNAL(triggered()), this, SLOT(OnMenuActionNew()));
+    connect(fileMenu->addAction(QObject::tr("&Open")), SIGNAL(triggered()), this, SLOT(OnMenuActionOpen()));
     // todo : add recent files menu
-    connect(fileMenu->addAction("&Save"), SIGNAL(triggered()), this, SLOT(OnMenuActionSave()));
-    connect(fileMenu->addAction("Save &as..."), SIGNAL(triggered()), this, SLOT(OnMenuActionSaveToFile()));
+    connect(fileMenu->addAction(QObject::tr("&Save")), SIGNAL(triggered()), this, SLOT(OnMenuActionSave()));
+    connect(fileMenu->addAction(QObject::tr("Save &as...")), SIGNAL(triggered()), this, SLOT(OnMenuActionSaveToFile()));
 
     setMenuBar(menu);
 

@@ -28,11 +28,11 @@ namespace ScriptCanvasEditor
             NodeFavorites(QWidget* parent = nullptr)
                 : AzQtComponents::StyledDockWidget(parent)
             {
-                setWindowTitle("Favorites");
+                setWindowTitle(QObject::tr("Favorites"));
                 setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
                 setMinimumWidth(200);
 
-                //QLabel* label = new QLabel("NodeFavorites");
+                //QLabel* label = new QLabel(QObject::tr("NodeFavorites"));
                 //QVBoxLayout* layout = new QVBoxLayout(this);
                 //layout->addWidget(label);
 

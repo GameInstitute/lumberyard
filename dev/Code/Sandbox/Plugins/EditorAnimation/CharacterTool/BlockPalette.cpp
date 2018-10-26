@@ -571,12 +571,12 @@ void BlockPalette::mousePressEvent(QMouseEvent* ev)
         int selectionCount = m_selectedItems.size();
 
         QMenu contextMenu;
-        contextMenu.setDefaultAction(contextMenu.addAction("Add", this, SLOT(OnMenuAdd())));
-        contextMenu.addAction("Delete", this, SLOT(OnMenuDelete()))->setEnabled(selectionCount != 0);
+        contextMenu.setDefaultAction(contextMenu.addAction(QObject::tr("Add"), this, SLOT(OnMenuAdd())));
+        contextMenu.addAction(QObject::tr("Delete"), this, SLOT(OnMenuDelete()))->setEnabled(selectionCount != 0);
         contextMenu.addSeparator();
         if (selectionCount == 1)
         {
-            QMenu* hotkeyMenu = contextMenu.addMenu("Assign Hotkey");
+            QMenu* hotkeyMenu = contextMenu.addMenu(QObject::tr("Assign Hotkey"));
             for (int i = 0; i < 10; ++i)
             {
                 QString text;
@@ -588,10 +588,10 @@ void BlockPalette::mousePressEvent(QMouseEvent* ev)
         }
         else
         {
-            contextMenu.addAction("Assign Hotkey")->setEnabled(false);
+            contextMenu.addAction(QObject::tr("Assign Hotkey"))->setEnabled(false);
         }
         contextMenu.addSeparator();
-        QAction* addWithSingleClick = contextMenu.addAction("Add Events with Single Click", this, SLOT(OnMenuAddWithSingleClick()));
+        QAction* addWithSingleClick = contextMenu.addAction(QObject::tr("Add Events with Single Click"), this, SLOT(OnMenuAddWithSingleClick()));
         addWithSingleClick->setCheckable(true);
         addWithSingleClick->setChecked(m_addWithSingleClick);
         contextMenu.exec(QCursor::pos());

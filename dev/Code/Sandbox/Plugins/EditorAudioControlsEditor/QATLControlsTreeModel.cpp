@@ -304,8 +304,8 @@ namespace AudioControls
                                     {
                                         QMessageBox messageBox;
                                         messageBox.setStandardButtons(QMessageBox::Ok);
-                                        messageBox.setWindowTitle("Audio Controls Editor");
-                                        messageBox.setText("This destination already contains a folder named '" + droppedFolderName + "'.");
+                                        messageBox.setWindowTitle(QObject::tr("Audio Controls Editor"));
+                                        messageBox.setText(QObject::tr("This destination already contains a folder named '") + droppedFolderName + "'.");
                                         messageBox.exec();
                                         return false;
                                     }

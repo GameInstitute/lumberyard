@@ -799,7 +799,7 @@ void SandboxIntegrationManager::SetupFlowGraphContextMenu(QMenu* menu)
                 entityMenu = flowgraphMenu->addMenu(entity->GetName().c_str());
             }
 
-            action = entityMenu->addAction("Add");
+            action = entityMenu->addAction(QObject::tr("Add"));
             QObject::connect(action, &QAction::triggered, action, [this, entityId] { ContextMenu_AddFlowGraph(entityId); });
 
             if (!flowgraphs.empty())

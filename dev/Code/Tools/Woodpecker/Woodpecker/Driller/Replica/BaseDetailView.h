@@ -97,13 +97,13 @@ namespace Driller
                 switch (static_cast<DetailMode>(i))
                 {
                 case DetailMode::High:
-                    m_gui->graphDetailType->addItem("High");
+                    m_gui->graphDetailType->addItem(QObject::tr("High"));
                     break;
                 case DetailMode::Medium:
-                    m_gui->graphDetailType->addItem("Medium");
+                    m_gui->graphDetailType->addItem(QObject::tr("Medium"));
                     break;
                 case DetailMode::Low:
-                    m_gui->graphDetailType->addItem("Low");
+                    m_gui->graphDetailType->addItem(QObject::tr("Low"));
                     break;
                 default:
                     AZ_Error("Woodpecker", false, "Unknown GraphDetailMode.");

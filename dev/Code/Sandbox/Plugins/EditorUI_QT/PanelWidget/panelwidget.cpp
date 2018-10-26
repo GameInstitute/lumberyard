@@ -221,9 +221,9 @@ void PanelWidget::addShowPanelItemsToMenu(QMenu* menu)
         else
         {
 #if USE_CUSTOM_CHECKBOXES
-            widgetAction->setCaption("Unnamed widget");
+            widgetAction->setCaption(QObject::tr("Unnamed widget"));
 #else
-            action = menu->addAction("Unnamed widget");
+            action = menu->addAction(QObject::tr("Unnamed widget"));
 #endif
         }
 #if USE_CUSTOM_CHECKBOXES
@@ -271,7 +271,7 @@ void PanelWidget::addShowPanelItemsToMenu(QMenu* menu)
     //Add extra menu options to show/hide multiple panels
     if (visiblePanelCount < panelCount)
     {
-        connect(menu->addAction("Show All"), &QAction::triggered, this, [this]()
+        connect(menu->addAction(QObject::tr("Show All")), &QAction::triggered, this, [this]()
             {
                 for (auto it : children())
                 {
@@ -290,7 +290,7 @@ void PanelWidget::addShowPanelItemsToMenu(QMenu* menu)
 
     if (visiblePanelCount > 0)
     {
-        connect(menu->addAction("Hide All"), &QAction::triggered, this, [this]()
+        connect(menu->addAction(QObject::tr("Hide All")), &QAction::triggered, this, [this]()
             {
                 for (auto it : children())
                 {
@@ -309,7 +309,7 @@ void PanelWidget::addShowPanelItemsToMenu(QMenu* menu)
 
     if (invisibleChangedPanels > 0)
     {
-        connect(menu->addAction("Show Changed"), &QAction::triggered, this, [this]()
+        connect(menu->addAction(QObject::tr("Show Changed")), &QAction::triggered, this, [this]()
             {
                 for (auto it : children())
                 {

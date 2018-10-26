@@ -184,7 +184,7 @@ namespace EMStudio
         EMotionFX::AnimGraphEditor* animGraphEditor = new EMotionFX::AnimGraphEditor(animGraph, serializeContext, mMainWidget);
 
         AzQtComponents::Card* animGraphCard = new AzQtComponents::Card(this);
-        animGraphCard->setTitle("Anim Graph");
+        animGraphCard->setTitle(QObject::tr("Anim Graph"));
         animGraphCard->setContentWidget(animGraphEditor);
         animGraphCard->setExpanded(true);
 
@@ -228,7 +228,7 @@ namespace EMStudio
             mainLayout->addWidget(card);
         } // for all conditions
 
-        QPushButton* addConditionButton = new QPushButton("Add condition");
+        QPushButton* addConditionButton = new QPushButton(QObject::tr("Add condition"));
         connect(addConditionButton, &QPushButton::clicked, this, &AttributesWindow::OnAddCondition);
         mainLayout->addWidget(addConditionButton);
     }
@@ -241,10 +241,10 @@ namespace EMStudio
 
         QMenu contextMenu(this);
 
-        QAction* addAction = contextMenu.addAction("Add condition");
+        QAction* addAction = contextMenu.addAction(QObject::tr("Add condition"));
         connect(addAction, &QAction::triggered, this, &AttributesWindow::OnAddCondition);
 
-        QAction* deleteAction = contextMenu.addAction("Delete condition");
+        QAction* deleteAction = contextMenu.addAction(QObject::tr("Delete condition"));
         deleteAction->setProperty("conditionIndex", conditionIndex);
         connect(deleteAction, &QAction::triggered, this, &AttributesWindow::OnRemoveCondition);
 
@@ -434,7 +434,7 @@ namespace EMStudio
         // allow to put the conditions into the clipboard
         if (transition->GetNumConditions() > 0)
         {
-            QAction* copyAction = menu.addAction("Copy Conditions");
+            QAction* copyAction = menu.addAction(QObject::tr("Copy Conditions"));
             copyAction->setIcon(MysticQt::GetMysticQt()->FindIcon("Images/Icons/Copy.png"));
             connect(copyAction, SIGNAL(triggered()), this, SLOT(OnCopyConditions()));
         }
@@ -442,11 +442,11 @@ namespace EMStudio
         // if we already copied some conditions, allow pasting
         if (mCopyPasteClipboard.GetIsEmpty() == false)
         {
-            QAction* pasteAction = menu.addAction("Paste Conditions");
+            QAction* pasteAction = menu.addAction(QObject::tr("Paste Conditions"));
             pasteAction->setIcon(MysticQt::GetMysticQt()->FindIcon("Images/Icons/Paste.png"));
             connect(pasteAction, SIGNAL(triggered()), this, SLOT(OnPasteConditions()));
 
-            QAction* pasteSelectiveAction = menu.addAction("Paste Conditions Selective");
+            QAction* pasteSelectiveAction = menu.addAction(QObject::tr("Paste Conditions Selective"));
             pasteSelectiveAction->setIcon(MysticQt::GetMysticQt()->FindIcon("Images/Icons/Paste.png"));
             connect(pasteSelectiveAction, SIGNAL(triggered()), this, SLOT(OnPasteConditionsSelective()));
         }
@@ -623,13 +623,13 @@ namespace EMStudio
         : QDialog(attributeWindow)
     {
         // update title of the about dialog
-        setWindowTitle("Paste Transition Conditions");
+        setWindowTitle(QObject::tr("Paste Transition Conditions"));
 
         // create the about dialog's layout
         QVBoxLayout* layout = new QVBoxLayout(this);
         layout->setSizeConstraint(QLayout::SetFixedSize);
 
-        layout->addWidget(new QLabel("Please select the conditions you want to paste:"));
+        layout->addWidget(new QLabel(QObject::tr("Please select the conditions you want to paste:")));
 
         mCheckboxes.Clear();
         const MCore::Array<AttributesWindow::CopyPasteConditionObject>& copyPasteClipboard = attributeWindow->GetCopyPasteConditionClipboard();
@@ -644,8 +644,8 @@ namespace EMStudio
 
         // create the ok and cancel buttons
         QHBoxLayout* buttonLayout = new QHBoxLayout();
-        mOKButton       = new QPushButton("OK");
-        mCancelButton   = new QPushButton("Cancel");
+        mOKButton       = new QPushButton(QObject::tr("OK"));
+        mCancelButton   = new QPushButton(QObject::tr("Cancel"));
         buttonLayout->addWidget(mOKButton);
         buttonLayout->addWidget(mCancelButton);
 

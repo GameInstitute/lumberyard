@@ -106,26 +106,26 @@ namespace EMStudio
         CreateEntry(viewMenu, "Gradient Background",    "",                     RENDER_USE_GRADIENTBACKGROUND);// don't add to the toolbar
 
         viewMenu->addSeparator();
-        viewMenu->addAction("Reset", this, SLOT(OnReset()));
+        viewMenu->addAction(QObject::tr("Reset"), this, SLOT(OnReset()));
 
         viewMenu->addSeparator();
-        viewMenu->addAction("Render Options", this, SLOT(OnOptions()));
+        viewMenu->addAction(QObject::tr("Render Options"), this, SLOT(OnOptions()));
 
         // the cameras menu
         QMenu* cameraMenu = mMenu->addMenu(tr("&Camera"));
         mCameraMenu = cameraMenu;
 
-        cameraMenu->addAction("Perspective",       this, SLOT(OnOrbitCamera()));
-        cameraMenu->addAction("Front",             this, SLOT(OnOrthoFrontCamera()));
-        cameraMenu->addAction("Back",              this, SLOT(OnOrthoBackCamera()));
-        cameraMenu->addAction("Left",              this, SLOT(OnOrthoLeftCamera()));
-        cameraMenu->addAction("Right",             this, SLOT(OnOrthoRightCamera()));
-        cameraMenu->addAction("Top",               this, SLOT(OnOrthoTopCamera()));
-        cameraMenu->addAction("Bottom",            this, SLOT(OnOrthoBottomCamera()));
+        cameraMenu->addAction(QObject::tr("Perspective"),       this, SLOT(OnOrbitCamera()));
+        cameraMenu->addAction(QObject::tr("Front"),             this, SLOT(OnOrthoFrontCamera()));
+        cameraMenu->addAction(QObject::tr("Back"),              this, SLOT(OnOrthoBackCamera()));
+        cameraMenu->addAction(QObject::tr("Left"),              this, SLOT(OnOrthoLeftCamera()));
+        cameraMenu->addAction(QObject::tr("Right"),             this, SLOT(OnOrthoRightCamera()));
+        cameraMenu->addAction(QObject::tr("Top"),               this, SLOT(OnOrthoTopCamera()));
+        cameraMenu->addAction(QObject::tr("Bottom"),            this, SLOT(OnOrthoBottomCamera()));
         cameraMenu->addSeparator();
-        cameraMenu->addAction("Reset Camera",      this, SLOT(OnResetCamera()));
-        cameraMenu->addAction("Show Selected",     this, SLOT(OnShowSelected()));
-        cameraMenu->addAction("Show Entire Scene", this, SLOT(OnShowEntireScene()));
+        cameraMenu->addAction(QObject::tr("Reset Camera"),      this, SLOT(OnResetCamera()));
+        cameraMenu->addAction(QObject::tr("Show Selected"),     this, SLOT(OnShowSelected()));
+        cameraMenu->addAction(QObject::tr("Show Entire Scene"), this, SLOT(OnShowEntireScene()));
         cameraMenu->addSeparator();
 
         mFollowCharacterAction = cameraMenu->addAction(tr("Follow Character"));

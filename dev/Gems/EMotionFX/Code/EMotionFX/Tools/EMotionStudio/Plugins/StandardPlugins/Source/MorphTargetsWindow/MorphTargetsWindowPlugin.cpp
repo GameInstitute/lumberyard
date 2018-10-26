@@ -75,7 +75,7 @@ namespace EMStudio
         mStaticTextWidget = new QWidget();
         mStaticTextLayout = new QVBoxLayout();
         mStaticTextWidget->setLayout(mStaticTextLayout);
-        QLabel* label = new QLabel("No morph targets to show.");
+        QLabel* label = new QLabel(QObject::tr("No morph targets to show."));
         mStaticTextLayout->addWidget(label);
         mStaticTextLayout->setAlignment(label, Qt::AlignCenter);
 

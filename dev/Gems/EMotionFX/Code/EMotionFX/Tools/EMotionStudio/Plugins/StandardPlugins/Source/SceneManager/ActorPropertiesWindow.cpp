@@ -67,7 +67,7 @@ namespace EMStudio
 
         // actor name
         rowNr = 0;
-        layout->addWidget(new QLabel("Actor Name:"), rowNr, 0);
+        layout->addWidget(new QLabel(QObject::tr("Actor Name:")), rowNr, 0);
         mNameEdit = new QLineEdit();
         connect(mNameEdit, SIGNAL(editingFinished()), this, SLOT(NameEditChanged()));
         layout->addWidget(mNameEdit, rowNr, 1);
@@ -80,14 +80,14 @@ namespace EMStudio
         mMotionExtractionNode = new MysticQt::LinkWidget();
         mMotionExtractionNode->setMinimumHeight(20);
         mMotionExtractionNode->setMaximumHeight(20);
-        layout->addWidget(new QLabel("Motion Extraction Node:"), rowNr, 0);
+        layout->addWidget(new QLabel(QObject::tr("Motion Extraction Node:")), rowNr, 0);
         mResetMotionExtractionNodeButton = new QPushButton();
-        EMStudioManager::MakeTransparentButton(mResetMotionExtractionNodeButton, "/Images/Icons/Remove.png",   "Reset selection");
+        EMStudioManager::MakeTransparentButton(mResetMotionExtractionNodeButton, "/Images/Icons/Remove.png", "Reset selection");
         extractNodeLayout->addWidget(mMotionExtractionNode);
         extractNodeLayout->addWidget(mResetMotionExtractionNodeButton);
 
         // add the find best match button
-        mFindBestMatchButton = new QPushButton("Find Best Match");
+        mFindBestMatchButton = new QPushButton(QObject::tr("Find Best Match"));
         mFindBestMatchButton->setMinimumHeight(20);
         mFindBestMatchButton->setMaximumHeight(20);
         mFindBestMatchButton->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
@@ -113,7 +113,7 @@ namespace EMStudio
         mRetargetRootNode = new MysticQt::LinkWidget();
         mRetargetRootNode->setMinimumHeight(20);
         mRetargetRootNode->setMaximumHeight(20);
-        layout->addWidget(new QLabel("Retarget Root Node:"), rowNr, 0);
+        layout->addWidget(new QLabel(QObject::tr("Retarget Root Node:")), rowNr, 0);
         mResetRetargetRootNodeButton = new QPushButton();
         EMStudioManager::MakeTransparentButton(mResetRetargetRootNodeButton, "/Images/Icons/Remove.png",   "Reset selection");
         retargetRootNodeLayout->addWidget(mRetargetRootNode);
@@ -134,7 +134,7 @@ namespace EMStudio
         excludedNodesLayout->setDirection(QBoxLayout::LeftToRight);
         excludedNodesLayout->setMargin(0);
         mExcludedNodesLink = new MysticQt::LinkWidget();
-        layout->addWidget(new QLabel("Excluded From Bounds:"), rowNr, 0);
+        layout->addWidget(new QLabel(QObject::tr("Excluded From Bounds:")), rowNr, 0);
         mResetExcludedNodesButton = new QPushButton();
         EMStudioManager::MakeTransparentButton(mResetExcludedNodesButton, "/Images/Icons/Remove.png",  "Reset selection");
         excludedNodesLayout->addWidget(mExcludedNodesLink);
@@ -155,8 +155,8 @@ namespace EMStudio
         mCollisionMeshesSetupLink = new MysticQt::LinkWidget();
         mCollisionMeshesSetupLink->setMinimumHeight(20);
         mCollisionMeshesSetupLink->setMaximumHeight(20);
-        mCollisionMeshesSetupLink->setText("Click to setup");
-        layout->addWidget(new QLabel("Collision Mesh Setup:"), rowNr, 0);
+        mCollisionMeshesSetupLink->setText(QObject::tr("Click to setup"));
+        layout->addWidget(new QLabel(QObject::tr("Collision Mesh Setup:")), rowNr, 0);
         layout->addWidget(mCollisionMeshesSetupLink, rowNr, 1);
         connect(mCollisionMeshesSetupLink, SIGNAL(clicked()), this, SLOT(OnCollisionMeshesSetup()));
 
@@ -166,8 +166,8 @@ namespace EMStudio
         mMirrorSetupLink = new MysticQt::LinkWidget();
         mMirrorSetupLink->setMinimumHeight(20);
         mMirrorSetupLink->setMaximumHeight(20);
-        mMirrorSetupLink->setText("Click to setup");
-        layout->addWidget(new QLabel("Mirror Setup:"), rowNr, 0);
+        mMirrorSetupLink->setText(QObject::tr("Click to setup"));
+        layout->addWidget(new QLabel(QObject::tr("Mirror Setup:")), rowNr, 0);
         layout->addWidget(mMirrorSetupLink, rowNr, 1);
         connect(mMirrorSetupLink, SIGNAL(clicked()), this, SLOT(OnMirrorSetup()));
 
@@ -267,7 +267,7 @@ namespace EMStudio
             mFindBestMatchButton->setVisible(false);
         }
 
-        mMotionExtractionNode->setToolTip("The node used to drive the character's movement and rotation");
+        mMotionExtractionNode->setToolTip(QObject::tr("The node used to drive the character's movement and rotation"));
         mMotionExtractionNode->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
 
 
@@ -286,7 +286,7 @@ namespace EMStudio
             mResetRetargetRootNodeButton->setVisible(true);
         }
 
-        mRetargetRootNode->setToolTip("The root node that will use special handling when retargeting. Z must point up.");
+        mRetargetRootNode->setToolTip(QObject::tr("The root node that will use special handling when retargeting. Z must point up."));
         mRetargetRootNode->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
 
 
@@ -299,11 +299,11 @@ namespace EMStudio
         }
         else
         {
-            const QString textLink = QString("%1 nodes").arg(calcNumExcludedNodes);
+            const QString textLink = QString(QObject::tr("%1 nodes")).arg(calcNumExcludedNodes);
             mExcludedNodesLink->setText(textLink);
             mResetExcludedNodesButton->setVisible(true);
         }
-        mExcludedNodesLink->setToolTip("Nodes that are excluded from bounding volume calculations");
+        mExcludedNodesLink->setToolTip(QObject::tr("Nodes that are excluded from bounding volume calculations"));
         mExcludedNodesLink->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
         mExcludedNodesLink->setEnabled(true);
 

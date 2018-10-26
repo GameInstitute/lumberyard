@@ -1181,18 +1181,18 @@ void CUiAnimViewNodesCtrl::AddGroupNodeAddItems(UiAnimContextMenu& contextMenu, 
     // only want this item on sequence node
     if (pAnimNode->GetNodeType() == eUiAVNT_Sequence)
     {
-        contextMenu.main.addAction("Add Selected UI Element(s)")->setData(eMI_AddSelectedUiElements);
+        contextMenu.main.addAction(QObject::tr("Add Selected UI Element(s)"))->setData(eMI_AddSelectedUiElements);
     }
 
     const bool bIsDirectorOrSequence = (pAnimNode->GetType() == eUiAnimNodeType_Director || pAnimNode->GetNodeType() == eUiAVNT_Sequence);
     CUiAnimViewAnimNode* pDirector = bIsDirectorOrSequence ? pAnimNode : pAnimNode->GetDirector();
 
 #if UI_ANIMATION_REMOVED
-    contextMenu.main.addAction("Add Comment Node")->setData(eMI_AddCommentNode);
-    contextMenu.main.addAction("Add Console Variable")->setData(eMI_AddConsoleVariable);
-    contextMenu.main.addAction("Add Script Variable")->setData(eMI_AddScriptVariable);
-    contextMenu.main.addAction("Add Material")->setData(eMI_AddMaterial);
-    contextMenu.main.addAction("Add Event")->setData(eMI_AddEvent);
+    contextMenu.main.addAction(QObject::tr("Add Comment Node"))->setData(eMI_AddCommentNode);
+    contextMenu.main.addAction(QObject::tr("Add Console Variable"))->setData(eMI_AddConsoleVariable);
+    contextMenu.main.addAction(QObject::tr("Add Script Variable"))->setData(eMI_AddScriptVariable);
+    contextMenu.main.addAction(QObject::tr("Add Material"))->setData(eMI_AddMaterial);
+    contextMenu.main.addAction(QObject::tr("Add Event"))->setData(eMI_AddEvent);
 #endif
 }
 
@@ -1237,11 +1237,11 @@ int CUiAnimViewNodesCtrl::ShowPopupMenuSingleSelection(UiAnimContextMenu& contex
     {
         AddMenuSeperatorConditional(contextMenu.main, bAppended);
 
-        contextMenu.main.addAction("Select In Viewport")->setData(eMI_SelectInViewport);
+        contextMenu.main.addAction(QObject::tr("Select In Viewport"))->setData(eMI_SelectInViewport);
 
         if (pAnimNode->GetType() == eUiAnimNodeType_Camera)
         {
-            contextMenu.main.addAction("Set As View Camera")->setData(eMI_SetAsViewCamera);
+            contextMenu.main.addAction(QObject::tr("Set As View Camera"))->setData(eMI_SetAsViewCamera);
         }
 
         bAppended = true;
@@ -1251,7 +1251,7 @@ int CUiAnimViewNodesCtrl::ShowPopupMenuSingleSelection(UiAnimContextMenu& contex
     {
         if (bOnNode || bOnSequence || bOnTrackNotSub)
         {
-            contextMenu.main.addAction("Delete")->setData(bOnTrackNotSub ? eMI_RemoveTrack : eMI_RemoveSelected);
+            contextMenu.main.addAction(QObject::tr("Delete"))->setData(bOnTrackNotSub ? eMI_RemoveTrack : eMI_RemoveSelected);
             bAppended = true;
         }
     }
@@ -1260,9 +1260,9 @@ int CUiAnimViewNodesCtrl::ShowPopupMenuSingleSelection(UiAnimContextMenu& contex
     {
         // Copy & paste keys
         AddMenuSeperatorConditional(contextMenu.main, bAppended);
-        contextMenu.main.addAction("Copy Keys")->setData(eMI_CopyKeys);
-        contextMenu.main.addAction("Copy Selected Keys")->setData(eMI_CopySelectedKeys);
-        contextMenu.main.addAction("Paste Keys")->setData(eMI_PasteKeys);
+        contextMenu.main.addAction(QObject::tr("Copy Keys"))->setData(eMI_CopyKeys);
+        contextMenu.main.addAction(QObject::tr("Copy Selected Keys"))->setData(eMI_CopySelectedKeys);
+        contextMenu.main.addAction(QObject::tr("Paste Keys"))->setData(eMI_PasteKeys);
         bAppended = true;
     }
 
@@ -1273,7 +1273,7 @@ int CUiAnimViewNodesCtrl::ShowPopupMenuSingleSelection(UiAnimContextMenu& contex
         if (!bOnSequence)
         {
             AddMenuSeperatorConditional(contextMenu.main, bAppended);
-            QAction* a = contextMenu.main.addAction("Disabled");
+            QAction* a = contextMenu.main.addAction(QObject::tr("Disabled"));
             a->setData(eMI_Disable);
             a->setCheckable(true);
             a->setChecked(pNode->IsDisabled());
@@ -1337,10 +1337,10 @@ int CUiAnimViewNodesCtrl::ShowPopupMenuSingleSelection(UiAnimContextMenu& contex
     if (bOnTrack)
     {
         AddMenuSeperatorConditional(contextMenu.main, bAppended);
-        contextMenu.main.addAction("Customize Track Color...")->setData(eMI_CustomizeTrackColor);
+        contextMenu.main.addAction(QObject::tr("Customize Track Color..."))->setData(eMI_CustomizeTrackColor);
         if (pTrack->HasCustomColor())
         {
-            contextMenu.main.addAction("Clear Custom Track Color")->setData(eMI_ClearCustomTrackColor);
+            contextMenu.main.addAction(QObject::tr("Clear Custom Track Color"))->setData(eMI_ClearCustomTrackColor);
         }
         bAppended = true;
     }
@@ -1399,12 +1399,12 @@ int CUiAnimViewNodesCtrl::ShowPopupMenuMultiSelection(UiAnimContextMenu& context
         }
     }
 
-    contextMenu.main.addAction("Remove Selected Nodes/Tracks")->setData(eMI_RemoveSelected);
+    contextMenu.main.addAction(QObject::tr("Remove Selected Nodes/Tracks"))->setData(eMI_RemoveSelected);
 
     if (bNodeSelected)
     {
         contextMenu.main.addSeparator();
-        contextMenu.main.addAction("Select In Viewport")->setData(eMI_SelectInViewport);
+        contextMenu.main.addAction(QObject::tr("Select In Viewport"))->setData(eMI_SelectInViewport);
     }
 
     return 0;

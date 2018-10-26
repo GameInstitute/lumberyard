@@ -106,8 +106,8 @@ QMenu* ResourceGroupDetailWidget::GetTreeContextMenu()
     auto menu = new ToolTipMenu {};
 
     auto addResource = m_view->CreateAddResourceMenu(m_resourceGroupStatusModel->GetTemplateModel(), this);
-    addResource->setTitle("Add resource");
-    addResource->setToolTip("Select an AWS resource to add to your resource group");
+    addResource->setTitle(QObject::tr("Add resource"));
+    addResource->setToolTip(QObject::tr("Select an AWS resource to add to your resource group"));
     addResource->setEnabled((m_layout.CurrentState() == State::NoResource || m_layout.CurrentState() == State::Status) && !m_resourceGroupStatusModel->IsPendingDelete());
     menu->addMenu(addResource);
 
@@ -117,13 +117,13 @@ QMenu* ResourceGroupDetailWidget::GetTreeContextMenu()
     connectUntilDeleted(update, &QAction::triggered, this, &ResourceGroupDetailWidget::OnUpdate);
 
     auto importResource = m_view->CreateImportResourceMenu(this);
-    importResource->setTitle("Import resource");
-    importResource->setToolTip("Import existing resources");
+    importResource->setTitle(QObject::tr("Import resource"));
+    importResource->setToolTip(QObject::tr("Import existing resources"));
     importResource->setEnabled((m_layout.CurrentState() == State::NoResource || m_layout.CurrentState() == State::Status) && !m_resourceGroupStatusModel->IsPendingDelete());
     menu->addMenu(importResource);
 
-    auto uploadCode= menu->addAction("Upload Lambda function code");
-    uploadCode->setToolTip("Upload the Lambda function code without a full feature stack update.");
+	auto uploadCode = menu->addAction(QObject::tr("Upload Lambda function code"));
+    uploadCode->setToolTip(QObject::tr("Upload the Lambda function code without a full feature stack update."));
     uploadCode->setEnabled((m_layout.CurrentState() == State::NoResource || m_layout.CurrentState() == State::Status) && !m_view->GetResourceManager()->IsOperationInProgress() && !m_resourceGroupStatusModel->IsPendingDelete());
     connectUntilDeleted(uploadCode, &QAction::triggered, this, &ResourceGroupDetailWidget::OnUploadCode);
 

@@ -116,10 +116,10 @@ void CMannNewSubADBFilterDialog::OnInitDialog()
     switch (m_mode)
     {
     case eContextDialog_Edit:
-        this->setWindowTitle("Edit Context");
+        this->setWindowTitle(QObject::tr("Edit Context"));
         break;
     case eContextDialog_CloneAndEdit:
-        this->setWindowTitle("Clone Context");
+        this->setWindowTitle(QObject::tr("Clone Context"));
         break;
     }
 

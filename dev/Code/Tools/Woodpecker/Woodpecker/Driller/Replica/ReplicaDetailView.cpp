@@ -161,11 +161,11 @@ namespace Driller
         activateWindow();
         setFocus();
 
-        setWindowTitle(QString("%1's ReplicaChunk Breakdown - %2").arg(replicaName).arg(replicaDataView->m_aggregator->GetInspectionFileName()));
+        setWindowTitle(QString(QObject::tr("%1's ReplicaChunk Breakdown - %2")).arg(replicaName).arg(replicaDataView->m_aggregator->GetInspectionFileName()));
 
         m_gui->replicaName->setText(replicaName);
 
-        m_gui->aggregationTypeComboBox->addItem(QString("Replica Chunk"));
+        m_gui->aggregationTypeComboBox->addItem(QString(QObject::tr("Replica Chunk")));
 
         if (m_gui->aggregationTypeComboBox->count() == 1)
         {

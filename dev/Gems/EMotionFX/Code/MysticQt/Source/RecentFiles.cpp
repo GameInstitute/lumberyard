@@ -167,7 +167,7 @@ namespace MysticQt
         if (recentFilesAdded > 0)
         {
             m_recentFilesMenu->addSeparator();
-            m_resetRecentFilesAction = m_recentFilesMenu->addAction("Reset Recent Files", this, &RecentFiles::OnClearRecentFiles);
+            m_resetRecentFilesAction = m_recentFilesMenu->addAction(QObject::tr("Reset Recent Files"), this, &RecentFiles::OnClearRecentFiles);
         }
     }
 

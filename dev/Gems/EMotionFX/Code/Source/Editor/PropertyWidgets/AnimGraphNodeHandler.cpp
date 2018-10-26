@@ -54,7 +54,7 @@ namespace EMotionFX
     {
         if (!m_nodeId.IsValid())
         {
-            m_pickButton->setText("Select node");
+            m_pickButton->setText(QObject::tr("Select node"));
         }
         else
         {

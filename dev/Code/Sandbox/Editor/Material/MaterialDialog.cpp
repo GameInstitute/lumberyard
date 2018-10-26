@@ -310,67 +310,67 @@ public:
         // Init enums.
         //////////////////////////////////////////////////////////////////////////
         enumTexType = new CVarEnumList<int>();
-        enumTexType->AddItem("2D", eTT_2D);
-        enumTexType->AddItem("Cube-Map", eTT_Cube);
-        enumTexType->AddItem("Nearest Cube-Map probe for alpha blended", eTT_NearestCube);
-        enumTexType->AddItem("Dynamic 2D-Map", eTT_Dyn2D);
-        enumTexType->AddItem("From User Params", eTT_User);
+        enumTexType->AddItem(QObject::tr("2D"), eTT_2D);
+        enumTexType->AddItem(QObject::tr("Cube-Map"), eTT_Cube);
+        enumTexType->AddItem(QObject::tr("Nearest Cube-Map probe for alpha blended"), eTT_NearestCube);
+        enumTexType->AddItem(QObject::tr("Dynamic 2D-Map"), eTT_Dyn2D);
+        enumTexType->AddItem(QObject::tr("From User Params"), eTT_User);
 
         enumTexGenType = new CVarEnumList<int>();
-        enumTexGenType->AddItem("Stream", ETG_Stream);
-        enumTexGenType->AddItem("World", ETG_World);
-        enumTexGenType->AddItem("Camera", ETG_Camera);
+        enumTexGenType->AddItem(QObject::tr("Stream"), ETG_Stream);
+        enumTexGenType->AddItem(QObject::tr("World"), ETG_World);
+        enumTexGenType->AddItem(QObject::tr("Camera"), ETG_Camera);
 
         enumTexModRotateType = new CVarEnumList<int>();
-        enumTexModRotateType->AddItem("No Change", ETMR_NoChange);
-        enumTexModRotateType->AddItem("Fixed Rotation", ETMR_Fixed);
-        enumTexModRotateType->AddItem("Constant Rotation", ETMR_Constant);
-        enumTexModRotateType->AddItem("Oscillated Rotation", ETMR_Oscillated);
+        enumTexModRotateType->AddItem(QObject::tr("No Change"), ETMR_NoChange);
+        enumTexModRotateType->AddItem(QObject::tr("Fixed Rotation"), ETMR_Fixed);
+        enumTexModRotateType->AddItem(QObject::tr("Constant Rotation"), ETMR_Constant);
+        enumTexModRotateType->AddItem(QObject::tr("Oscillated Rotation"), ETMR_Oscillated);
 
         enumTexModUMoveType = new CVarEnumList<int>();
-        enumTexModUMoveType->AddItem("No Change", ETMM_NoChange);
-        enumTexModUMoveType->AddItem("Fixed Moving", ETMM_Fixed);
-        enumTexModUMoveType->AddItem("Constant Moving", ETMM_Constant);
-        enumTexModUMoveType->AddItem("Jitter Moving", ETMM_Jitter);
-        enumTexModUMoveType->AddItem("Pan Moving", ETMM_Pan);
-        enumTexModUMoveType->AddItem("Stretch Moving", ETMM_Stretch);
-        enumTexModUMoveType->AddItem("Stretch-Repeat Moving", ETMM_StretchRepeat);
+        enumTexModUMoveType->AddItem(QObject::tr("No Change"), ETMM_NoChange);
+        enumTexModUMoveType->AddItem(QObject::tr("Fixed Moving"), ETMM_Fixed);
+        enumTexModUMoveType->AddItem(QObject::tr("Constant Moving"), ETMM_Constant);
+        enumTexModUMoveType->AddItem(QObject::tr("Jitter Moving"), ETMM_Jitter);
+        enumTexModUMoveType->AddItem(QObject::tr("Pan Moving"), ETMM_Pan);
+        enumTexModUMoveType->AddItem(QObject::tr("Stretch Moving"), ETMM_Stretch);
+        enumTexModUMoveType->AddItem(QObject::tr("Stretch-Repeat Moving"), ETMM_StretchRepeat);
 
         enumTexModVMoveType = new CVarEnumList<int>();
-        enumTexModVMoveType->AddItem("No Change", ETMM_NoChange);
-        enumTexModVMoveType->AddItem("Fixed Moving", ETMM_Fixed);
-        enumTexModVMoveType->AddItem("Constant Moving", ETMM_Constant);
-        enumTexModVMoveType->AddItem("Jitter Moving", ETMM_Jitter);
-        enumTexModVMoveType->AddItem("Pan Moving", ETMM_Pan);
-        enumTexModVMoveType->AddItem("Stretch Moving", ETMM_Stretch);
-        enumTexModVMoveType->AddItem("Stretch-Repeat Moving", ETMM_StretchRepeat);
+        enumTexModVMoveType->AddItem(QObject::tr("No Change"), ETMM_NoChange);
+        enumTexModVMoveType->AddItem(QObject::tr("Fixed Moving"), ETMM_Fixed);
+        enumTexModVMoveType->AddItem(QObject::tr("Constant Moving"), ETMM_Constant);
+        enumTexModVMoveType->AddItem(QObject::tr("Jitter Moving"), ETMM_Jitter);
+        enumTexModVMoveType->AddItem(QObject::tr("Pan Moving"), ETMM_Pan);
+        enumTexModVMoveType->AddItem(QObject::tr("Stretch Moving"), ETMM_Stretch);
+        enumTexModVMoveType->AddItem(QObject::tr("Stretch-Repeat Moving"), ETMM_StretchRepeat);
 
         enumTexFilterType = new CVarEnumList<int>();
-        enumTexFilterType->AddItem("Default", FILTER_NONE);
-        enumTexFilterType->AddItem("Point", FILTER_POINT);
-        enumTexFilterType->AddItem("Linear", FILTER_LINEAR);
-        enumTexFilterType->AddItem("Bilinear", FILTER_BILINEAR);
-        enumTexFilterType->AddItem("Trilinear", FILTER_TRILINEAR);
-        enumTexFilterType->AddItem("Anisotropic 2x", FILTER_ANISO2X);
-        enumTexFilterType->AddItem("Anisotropic 4x", FILTER_ANISO4X);
-        enumTexFilterType->AddItem("Anisotropic 8x", FILTER_ANISO8X);
-        enumTexFilterType->AddItem("Anisotropic 16x", FILTER_ANISO16X);
+        enumTexFilterType->AddItem(QObject::tr("Default"), FILTER_NONE);
+        enumTexFilterType->AddItem(QObject::tr("Point"), FILTER_POINT);
+        enumTexFilterType->AddItem(QObject::tr("Linear"), FILTER_LINEAR);
+        enumTexFilterType->AddItem(QObject::tr("Bilinear"), FILTER_BILINEAR);
+        enumTexFilterType->AddItem(QObject::tr("Trilinear"), FILTER_TRILINEAR);
+        enumTexFilterType->AddItem(QObject::tr("Anisotropic 2x"), FILTER_ANISO2X);
+        enumTexFilterType->AddItem(QObject::tr("Anisotropic 4x"), FILTER_ANISO4X);
+        enumTexFilterType->AddItem(QObject::tr("Anisotropic 8x"), FILTER_ANISO8X);
+        enumTexFilterType->AddItem(QObject::tr("Anisotropic 16x"), FILTER_ANISO16X);
 
         //////////////////////////////////////////////////////////////////////////
         // Vertex Mods.
         //////////////////////////////////////////////////////////////////////////
         enumVertexMod = new CVarEnumList<int>();
-        enumVertexMod->AddItem("None", eDT_Unknown);
-        enumVertexMod->AddItem("Sin Wave", eDT_SinWave);
-        enumVertexMod->AddItem("Sin Wave using vertex color", eDT_SinWaveUsingVtxColor);
-        enumVertexMod->AddItem("Bulge", eDT_Bulge);
-        enumVertexMod->AddItem("Squeeze", eDT_Squeeze);
-        enumVertexMod->AddItem("FixedOffset", eDT_FixedOffset);
+        enumVertexMod->AddItem(QObject::tr("None"), eDT_Unknown);
+        enumVertexMod->AddItem(QObject::tr("Sin Wave"), eDT_SinWave);
+        enumVertexMod->AddItem(QObject::tr("Sin Wave using vertex color"), eDT_SinWaveUsingVtxColor);
+        enumVertexMod->AddItem(QObject::tr("Bulge"), eDT_Bulge);
+        enumVertexMod->AddItem(QObject::tr("Squeeze"), eDT_Squeeze);
+        enumVertexMod->AddItem(QObject::tr("FixedOffset"), eDT_FixedOffset);
 
         //////////////////////////////////////////////////////////////////////////
 
         enumWaveType = new CVarEnumList<int>();
-        enumWaveType->AddItem("Sin", eWF_Sin);
+        enumWaveType->AddItem(QObject::tr("Sin"), eWF_Sin);
 
         //////////////////////////////////////////////////////////////////////////
         // Fill shaders enum.

@@ -219,7 +219,7 @@ namespace CharacterTool {
         delete m_menuView;
         m_menuView = createPopupMenu();
         m_menuView->setParent(this);
-        m_menuView->setTitle("&View");
+        m_menuView->setTitle(QObject::tr("&View"));
         menuBar()->insertMenu(menuBar()->actions()[1], m_menuView);
     }
 
@@ -238,7 +238,7 @@ namespace CharacterTool {
             m_menuLayout->addSeparator();
         }
         m_actionLayoutSaveState = addToLayout("Save Layout...", SLOT(OnLayoutSave()));
-        QMenu* removeMenu = m_menuLayout->addMenu("Remove");
+        QMenu* removeMenu = m_menuLayout->addMenu(QObject::tr("Remove"));
         if (layouts.empty())
         {
             removeMenu->setEnabled(false);
@@ -293,7 +293,7 @@ namespace CharacterTool {
                 topLayout->addWidget(m_transformPanel);
 
                 m_displayParametersButton = new QToolButton();
-                m_displayParametersButton->setText("Display Options");
+                m_displayParametersButton->setText(QObject::tr("Display Options"));
                 m_displayParametersButton->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
                 m_displayParametersButton->setCheckable(true);
                 m_displayParametersButton->setIcon(QIcon("Editor/Icons/animation/display_options.png"));
@@ -328,14 +328,14 @@ namespace CharacterTool {
         m_splitViewport->CompressedViewport()->installEventFilter(this);
 
         QMenuBar* menu = new QMenuBar(this);
-        QMenu* fileMenu = menu->addMenu("&File");
-        EXPECTED(connect(fileMenu->addAction("&New Character..."), SIGNAL(triggered()), this, SLOT(OnFileNewCharacter())));
-        EXPECTED(connect(fileMenu->addAction("&Open Character..."), SIGNAL(triggered()), this, SLOT(OnFileOpenCharacter())));
-        QMenu* menuFileRecent = fileMenu->addMenu("&Recent Characters");
+        QMenu* fileMenu = menu->addMenu(QObject::tr("&File"));
+        EXPECTED(connect(fileMenu->addAction(QObject::tr("&New Character...")), SIGNAL(triggered()), this, SLOT(OnFileNewCharacter())));
+        EXPECTED(connect(fileMenu->addAction(QObject::tr("&Open Character...")), SIGNAL(triggered()), this, SLOT(OnFileOpenCharacter())));
+        QMenu* menuFileRecent = fileMenu->addMenu(QObject::tr("&Recent Characters"));
         QObject::connect(menuFileRecent, &QMenu::aboutToShow, this, [=]() { OnFileRecentAboutToShow(menuFileRecent); });
-        EXPECTED(connect(fileMenu->addAction("&Save All"), SIGNAL(triggered()), this, SLOT(OnFileSaveAll())));
+        EXPECTED(connect(fileMenu->addAction(QObject::tr("&Save All")), SIGNAL(triggered()), this, SLOT(OnFileSaveAll())));
 
-        m_menuLayout = menu->addMenu("&Layout");
+        m_menuLayout = menu->addMenu(QObject::tr("&Layout"));
         UpdateLayoutMenu();
 
         setMenuBar(menu);
@@ -972,7 +972,7 @@ namespace CharacterTool {
 
         if (m_recentCharacters.empty())
         {
-            recentMenu->addAction("No characters were open recently")->setEnabled(false);
+            recentMenu->addAction(QObject::tr("No characters were open recently"))->setEnabled(false);
             return;
         }
 

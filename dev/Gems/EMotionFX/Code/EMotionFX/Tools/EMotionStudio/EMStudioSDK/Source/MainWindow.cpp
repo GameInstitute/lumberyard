@@ -285,7 +285,7 @@ namespace EMStudio
         menuLayout->setSpacing(0);
         menuLayout->addWidget(menuBar);
 
-        QLabel* modeLabel = new QLabel("Layout: ");
+        QLabel* modeLabel = new QLabel(QObject::tr("Layout: "));
         mApplicationMode = new MysticQt::ComboBox();
         menuLayout->addWidget(mApplicationMode);
 
@@ -369,10 +369,10 @@ namespace EMStudio
         // help menu
         menu = menuBar->addMenu(tr("&Help"));
 
-        QMenu* folders = menu->addMenu("Folders");
+        QMenu* folders = menu->addMenu(QObject::tr("Folders"));
         folders->setIcon(MysticQt::GetMysticQt()->FindIcon("Images/Icons/Open.png"));
-        folders->addAction("Open autosave folder", this, SLOT(OnOpenAutosaveFolder()));
-        folders->addAction("Open settings folder", this, SLOT(OnOpenSettingsFolder()));
+        folders->addAction(QObject::tr("Open autosave folder"), this, SLOT(OnOpenAutosaveFolder()));
+        folders->addAction(QObject::tr("Open settings folder"), this, SLOT(OnOpenSettingsFolder()));
 
         // Reset old workspace and start clean.
         GetManager()->GetWorkspace()->Reset();
@@ -1781,14 +1781,14 @@ namespace EMStudio
         }
 
         // add the save current menu
-        QAction* saveCurrentAction = mLayoutsMenu->addAction("Save Current");
+        QAction* saveCurrentAction = mLayoutsMenu->addAction(QObject::tr("Save Current"));
         connect(saveCurrentAction, SIGNAL(triggered()), this, SLOT(OnLayoutSaveAs()));
 
         // remove menu is needed only if at least one layout
         if (numLayoutNames > 0)
         {
             // add the remove menu
-            QMenu* removeMenu = mLayoutsMenu->addMenu("Remove");
+            QMenu* removeMenu = mLayoutsMenu->addMenu(QObject::tr("Remove"));
 
             // add each layout in the remove menu
             for (uint32 i = 0; i < numLayoutNames; ++i)
@@ -2102,8 +2102,8 @@ namespace EMStudio
                 {
                     // create the drop context menu
                     QMenu menu(this);
-                    QAction* openAction = menu.addAction("Open Actor");
-                    QAction* mergeAction = menu.addAction("Merge Actor");
+                    QAction* openAction = menu.addAction(QObject::tr("Open Actor"));
+                    QAction* mergeAction = menu.addAction(QObject::tr("Merge Actor"));
                     connect(openAction, SIGNAL(triggered()), this, SLOT(OnOpenDroppedActor()));
                     connect(mergeAction, SIGNAL(triggered()), this, SLOT(OnMergeDroppedActor()));
 

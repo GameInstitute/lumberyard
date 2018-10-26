@@ -4,29 +4,29 @@
 )
 
 echo "Release Sandbox"
-%QTDIR%\lrelease .\Sandbox_zh-cn.ts
+%QTDIR%\lrelease .\zh_cn\Sandbox.ts
 
 echo "Release Framework"
-%QTDIR%\lrelease .\AzQtComponents_zh-cn.ts
-%QTDIR%\lrelease .\AzToolsFramework_zh-cn.ts
+%QTDIR%\lrelease .\zh_cn\AzQtComponents.ts
+%QTDIR%\lrelease .\zh_cn\AzToolsFramework.ts
 echo "Release Plugins" 
-%QTDIR%\lrelease .\ComponentEntityEditorPlugin_zh-cn.ts
-%QTDIR%\lrelease .\CryDesigner_zh-cn.ts
-%QTDIR%\lrelease .\DeploymentTool_zh-cn.ts
-%QTDIR%\lrelease .\EditorAssetImporter_zh-cn.ts
-%QTDIR%\lrelease .\EditorAudioControlsEditor_zh-cn.ts
-%QTDIR%\lrelease .\EditorCommon_zh-cn.ts
-%QTDIR%\lrelease .\EditorUI_QT_zh-cn.ts
-%QTDIR%\lrelease .\FBXPlugin_zh-cn.ts
-%QTDIR%\lrelease .\MaglevControlPanel_zh-cn.ts
-%QTDIR%\lrelease .\ParticleEditorPlugin_zh-cn.ts
-%QTDIR%\lrelease .\PerforcePlugin_zh-cn.ts
-%QTDIR%\lrelease .\UiCanvasEditor_zh-cn.ts
+%QTDIR%\lrelease .\zh_cn\ComponentEntityEditorPlugin.ts
+%QTDIR%\lrelease .\zh_cn\CryDesigner.ts
+%QTDIR%\lrelease .\zh_cn\DeploymentTool.ts
+%QTDIR%\lrelease .\zh_cn\EditorAssetImporter.ts
+%QTDIR%\lrelease .\zh_cn\EditorAudioControlsEditor.ts
+%QTDIR%\lrelease .\zh_cn\EditorCommon.ts
+%QTDIR%\lrelease .\zh_cn\EditorUI_QT.ts
+%QTDIR%\lrelease .\zh_cn\FBXPlugin.ts
+%QTDIR%\lrelease .\zh_cn\MaglevControlPanel.ts
+%QTDIR%\lrelease .\zh_cn\ParticleEditorPlugin.ts
+%QTDIR%\lrelease .\zh_cn\PerforcePlugin.ts
+%QTDIR%\lrelease .\zh_cn\UiCanvasEditor.ts
 
 echo "Release Gems"
-%QTDIR%\lrelease .\CloudGemDynamicContent_zh-cn.ts
-%QTDIR%\lrelease .\EMotionFX_zh-cn.ts
-%QTDIR%\lrelease .\GraphCanvas_zh-cn.ts
-%QTDIR%\lrelease .\ScriptCanvas_zh-cn.ts
-%QTDIR%\lrelease .\ScriptCanvasDeveloper_zh-cn.ts
-%QTDIR%\lrelease .\Substance_zh-cn.ts
+%QTDIR%\lrelease .\zh_cn\CloudGemDynamicContent.ts
+%QTDIR%\lrelease .\zh_cn\EMotionFX.ts
+%QTDIR%\lrelease .\zh_cn\GraphCanvas.ts
+%QTDIR%\lrelease .\zh_cn\ScriptCanvas.ts
+%QTDIR%\lrelease .\zh_cn\ScriptCanvasDeveloper.ts
+%QTDIR%\lrelease .\zh_cn\Substance.ts

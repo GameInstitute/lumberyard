@@ -109,7 +109,7 @@ void DockableAttributePanel::Init(const QString& panelName, CBaseLibraryManager*
     SetOnVariableChangeCallbackRecurse(m_vars.get());
 
     //display helper text
-    setWindowTitle("Attributes");
+    setWindowTitle(QObject::tr("Attributes"));
     m_attributeView->ShowDefaultView();
     connect(m_attributeView, &CAttributeView::SignalRefreshAttributeView, this, &DockableAttributePanel::RefreshGroupNodeSettings);
     connect(m_attributeView, &CAttributeView::SignalBuildCustomAttributeList, this, &DockableAttributePanel::PassThroughSignalBuildPanelList);

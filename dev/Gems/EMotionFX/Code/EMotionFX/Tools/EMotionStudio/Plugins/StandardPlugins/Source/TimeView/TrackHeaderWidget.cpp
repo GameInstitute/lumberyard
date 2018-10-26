@@ -54,7 +54,7 @@ namespace EMStudio
         //mMainLayout->setSizeConstraint( QLayout::SizeConstraint::SetNoConstraint );
 
         // create the add track button
-        mAddTrackButton = new QPushButton("Add Event Track");
+        mAddTrackButton = new QPushButton(QObject::tr("Add Event Track"));
         mAddTrackButton->setIcon(MysticQt::GetMysticQt()->FindIcon("/Images/Icons/Plus.png"));
         connect(mAddTrackButton, SIGNAL(clicked()), this, SLOT(OnAddTrackButtonClicked()));
 
@@ -76,25 +76,25 @@ namespace EMStudio
         recorderLayout->setMargin(0);
         displayWidget->setLayout(recorderLayout);
 
-        mNodeActivityCheckBox = new QCheckBox("Node Activity");
+        mNodeActivityCheckBox = new QCheckBox(QObject::tr("Node Activity"));
         mNodeActivityCheckBox->setChecked(true);
         mNodeActivityCheckBox->setCheckable(true);
         connect(mNodeActivityCheckBox, SIGNAL(stateChanged(int)), this, SLOT(OnCheckBox(int)));
         recorderLayout->addWidget(mNodeActivityCheckBox);
 
-        mEventsCheckBox = new QCheckBox("Motion Events");
+        mEventsCheckBox = new QCheckBox(QObject::tr("Motion Events"));
         mEventsCheckBox->setChecked(true);
         mEventsCheckBox->setCheckable(true);
         connect(mEventsCheckBox, SIGNAL(stateChanged(int)), this, SLOT(OnCheckBox(int)));
         recorderLayout->addWidget(mEventsCheckBox);
 
-        mRelativeGraphCheckBox = new QCheckBox("Relative Graph");
+        mRelativeGraphCheckBox = new QCheckBox(QObject::tr("Relative Graph"));
         mRelativeGraphCheckBox->setChecked(true);
         mRelativeGraphCheckBox->setCheckable(true);
         connect(mRelativeGraphCheckBox, SIGNAL(stateChanged(int)), this, SLOT(OnCheckBox(int)));
         recorderLayout->addWidget(mRelativeGraphCheckBox);
 
-        mStackWidget->Add(displayWidget, "Display", false, false, true);
+        mStackWidget->Add(displayWidget, QObject::tr("Display"), false, false, true);
 
         //-----------
 
@@ -104,31 +104,31 @@ namespace EMStudio
         vizLayout->setMargin(0);
         vizWidget->setLayout(vizLayout);
 
-        mSortNodeActivityCheckBox = new QCheckBox("Sort Node Activity");
+        mSortNodeActivityCheckBox = new QCheckBox(QObject::tr("Sort Node Activity"));
         mSortNodeActivityCheckBox->setChecked(false);
         mSortNodeActivityCheckBox->setCheckable(true);
         connect(mSortNodeActivityCheckBox, SIGNAL(stateChanged(int)), this, SLOT(OnCheckBox(int)));
         vizLayout->addWidget(mSortNodeActivityCheckBox);
 
-        mNodeTypeColorsCheckBox = new QCheckBox("Use Node Type Colors");
+        mNodeTypeColorsCheckBox = new QCheckBox(QObject::tr("Use Node Type Colors"));
         mNodeTypeColorsCheckBox->setChecked(false);
         mNodeTypeColorsCheckBox->setCheckable(true);
         connect(mNodeTypeColorsCheckBox, SIGNAL(stateChanged(int)), this, SLOT(OnCheckBox(int)));
         vizLayout->addWidget(mNodeTypeColorsCheckBox);
 
-        mDetailedNodesCheckBox = new QCheckBox("Detailed Nodes");
+        mDetailedNodesCheckBox = new QCheckBox(QObject::tr("Detailed Nodes"));
         mDetailedNodesCheckBox->setChecked(false);
         mDetailedNodesCheckBox->setCheckable(true);
         connect(mDetailedNodesCheckBox, SIGNAL(stateChanged(int)), this, SLOT(OnDetailedNodesCheckBox(int)));
         vizLayout->addWidget(mDetailedNodesCheckBox);
 
-        mLimitGraphHeightCheckBox = new QCheckBox("Limit Graph Height");
+        mLimitGraphHeightCheckBox = new QCheckBox(QObject::tr("Limit Graph Height"));
         mLimitGraphHeightCheckBox->setChecked(true);
         mLimitGraphHeightCheckBox->setCheckable(true);
         connect(mLimitGraphHeightCheckBox, SIGNAL(stateChanged(int)), this, SLOT(OnCheckBox(int)));
         vizLayout->addWidget(mLimitGraphHeightCheckBox);
 
-        mStackWidget->Add(vizWidget, "Visual Options", false, false, true);
+        mStackWidget->Add(vizWidget, QObject::tr("Visual Options"), false, false, true);
 
         //-----------
 
@@ -138,43 +138,43 @@ namespace EMStudio
         contentsLayout->setMargin(0);
         contentsWidget->setLayout(contentsLayout);
 
-        mNodeNamesCheckBox = new QCheckBox("Show Node Names");
+        mNodeNamesCheckBox = new QCheckBox(QObject::tr("Show Node Names"));
         mNodeNamesCheckBox->setChecked(true);
         mNodeNamesCheckBox->setCheckable(true);
         connect(mNodeNamesCheckBox, SIGNAL(stateChanged(int)), this, SLOT(OnCheckBox(int)));
         contentsLayout->addWidget(mNodeNamesCheckBox);
 
-        mMotionFilesCheckBox = new QCheckBox("Show Motion Files");
+        mMotionFilesCheckBox = new QCheckBox(QObject::tr("Show Motion Files"));
         mMotionFilesCheckBox->setChecked(false);
         mMotionFilesCheckBox->setCheckable(true);
         connect(mMotionFilesCheckBox, SIGNAL(stateChanged(int)), this, SLOT(OnCheckBox(int)));
         contentsLayout->addWidget(mMotionFilesCheckBox);
 
         QHBoxLayout* comboLayout = new QHBoxLayout();
-        comboLayout->addWidget(new QLabel("Nodes:"));
+        comboLayout->addWidget(new QLabel(QObject::tr("Nodes:")));
         mNodeContentsComboBox = new MysticQt::ComboBox();
         mNodeContentsComboBox->setEditable(false);
-        mNodeContentsComboBox->addItem("Global Weights");
-        mNodeContentsComboBox->addItem("Local Weights");
-        mNodeContentsComboBox->addItem("Local Time");
+        mNodeContentsComboBox->addItem(QObject::tr("Global Weights"));
+        mNodeContentsComboBox->addItem(QObject::tr("Local Weights"));
+        mNodeContentsComboBox->addItem(QObject::tr("Local Time"));
         mNodeContentsComboBox->setCurrentIndex(0);
         connect(mNodeContentsComboBox, SIGNAL(currentIndexChanged(int)), this, SLOT(OnComboBoxIndexChanged(int)));
         comboLayout->addWidget(mNodeContentsComboBox);
         contentsLayout->addLayout(comboLayout);
 
         comboLayout = new QHBoxLayout();
-        comboLayout->addWidget(new QLabel("Graph:"));
+        comboLayout->addWidget(new QLabel(QObject::tr("Graph:")));
         mGraphContentsComboBox = new MysticQt::ComboBox();
         mGraphContentsComboBox->setEditable(false);
-        mGraphContentsComboBox->addItem("Global Weights");
-        mGraphContentsComboBox->addItem("Local Weights");
-        mGraphContentsComboBox->addItem("Local Time");
+        mGraphContentsComboBox->addItem(QObject::tr("Global Weights"));
+        mGraphContentsComboBox->addItem(QObject::tr("Local Weights"));
+        mGraphContentsComboBox->addItem(QObject::tr("Local Time"));
         mGraphContentsComboBox->setCurrentIndex(0);
         connect(mGraphContentsComboBox, SIGNAL(currentIndexChanged(int)), this, SLOT(OnComboBoxIndexChanged(int)));
         comboLayout->addWidget(mGraphContentsComboBox);
         contentsLayout->addLayout(comboLayout);
 
-        mStackWidget->Add(contentsWidget, "Contents", false, false, true);
+        mStackWidget->Add(contentsWidget, QObject::tr("Contents"), false, false, true);
 
         //-----------
 

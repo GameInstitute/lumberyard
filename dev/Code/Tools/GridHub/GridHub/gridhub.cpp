@@ -259,14 +259,14 @@ void GridHub::OnStartStopSession()
     if( m_hubComponent->IsInSession() )
     {
         m_hubComponent->StopSession();
-        ui.startStopService->setText("Start");
+        ui.startStopService->setText(QObject::tr("Start"));
         m_trayIcon->setIcon(QIcon(":/GridHub/Resources/Disconnected.png"));
     }
     else
     {
         if( m_hubComponent->StartSession() )
         {
-            ui.startStopService->setText("Stop");
+            ui.startStopService->setText(QObject::tr("Stop"));
             m_trayIcon->setIcon(QIcon(":/GridHub/Resources/Connected.png"));
         }
     }

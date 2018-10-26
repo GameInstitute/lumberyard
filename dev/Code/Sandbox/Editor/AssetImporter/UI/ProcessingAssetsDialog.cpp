@@ -64,13 +64,13 @@ void ProcessingAssetsDialog::UpdateTextsAndTitle(int numberOfProcessedFiles)
 {
     if (numberOfProcessedFiles > 1)
     {
-        setWindowTitle("Processing assets");
-        m_ui->label->setText("The Asset Processor will process your assets and when they are finished they will appear in the Asset Browser. You can view the status of your assets in the Asset Processor.");
+        setWindowTitle(QObject::tr("Processing assets"));
+        m_ui->label->setText(QObject::tr("The Asset Processor will process your assets and when they are finished they will appear in the Asset Browser. You can view the status of your assets in the Asset Processor."));
     }
     else
     {
-        setWindowTitle("Processing asset");
-        m_ui->label->setText("The Asset Processor will process your asset and when it is finished it will appear in the Asset Browser. You can view the status of your asset in the Asset Processor.");
+        setWindowTitle(QObject::tr("Processing asset"));
+        m_ui->label->setText(QObject::tr("The Asset Processor will process your asset and when it is finished it will appear in the Asset Browser. You can view the status of your asset in the Asset Processor."));
     }   
 }
 

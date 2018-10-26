@@ -198,7 +198,7 @@ namespace Driller
         // Always use the Qt dialog for consistency
         fileDialog.setOption(QFileDialog::DontUseNativeDialog, true);
         fileDialog.setAcceptMode(QFileDialog::AcceptSave);
-        fileDialog.setWindowTitle(QString("Export %1 To CSV").arg(m_aggregator->GetName()));
+        fileDialog.setWindowTitle(QString(QObject::tr("Export %1 To CSV")).arg(m_aggregator->GetName()));
         fileDialog.setNameFilter("CSV (*.csv)");
         fileDialog.setDefaultSuffix("csv");
 
@@ -206,7 +206,7 @@ namespace Driller
         {
             CollapsiblePanel* collapsiblePanel = aznew CollapsiblePanel(&fileDialog);
 
-            collapsiblePanel->SetTitle("Customize");
+            collapsiblePanel->SetTitle(QObject::tr("Customize"));
             collapsiblePanel->SetContent(customizeWidget);
 
             // I don't know why the decided to use a GridLayout here instead of nested layouts. But whatever.

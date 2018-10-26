@@ -172,10 +172,10 @@ namespace EMStudio
         connect(mActions[FILE_NEW], SIGNAL(triggered()), this, SLOT(OnCreateAnimGraph()));
 
         QPushButton* openMenuButton = new QPushButton();
-        mOpenMenu = new QMenu("&Open");
+        mOpenMenu = new QMenu(QObject::tr("&Open"));
         openMenuButton->setMenu(mOpenMenu);
         openMenuButton->setIcon(MysticQt::GetMysticQt()->FindIcon("Images/Icons/Open.png"));
-        openMenuButton->setToolTip("Open");
+        openMenuButton->setToolTip(QObject::tr("Open"));
         openMenuButton->setMinimumSize(dropdownButtonSize);
         openMenuButton->setMaximumSize(dropdownButtonSize);
         openMenuButton->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Preferred);
@@ -198,10 +198,10 @@ namespace EMStudio
         BuildOpenMenu();
 
         QPushButton* saveMenuButton = new QPushButton();
-        QMenu* saveMenu = new QMenu("&Save");
+        QMenu* saveMenu = new QMenu(QObject::tr("&Save"));
         saveMenuButton->setMenu(saveMenu);
         saveMenuButton->setIcon(MysticQt::GetMysticQt()->FindIcon("Images/Icons/Save.png"));
-        saveMenuButton->setToolTip("Save");
+        saveMenuButton->setToolTip(QObject::tr("Save"));
         saveMenuButton->setMinimumSize(dropdownButtonSize);
         saveMenuButton->setMaximumSize(dropdownButtonSize);
         saveMenuButton->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Preferred);
@@ -236,10 +236,10 @@ namespace EMStudio
 
         // Create the viz settings dropdown button
         QPushButton* vizMenuButton = new QPushButton();
-        QMenu* vizMenu = new QMenu("&Visualization");
+        QMenu* vizMenu = new QMenu(QObject::tr("&Visualization"));
         vizMenuButton->setMenu(vizMenu);
         vizMenuButton->setIcon(MysticQt::GetMysticQt()->FindIcon("Images/Icons/Visualization.png"));
-        vizMenuButton->setToolTip("Visualization");
+        vizMenuButton->setToolTip(QObject::tr("Visualization"));
         vizMenuButton->setStyleSheet("border: 0px;");
         vizMenuButton->setMinimumSize(dropdownButtonSize);
         vizMenuButton->setMaximumSize(dropdownButtonSize);
@@ -259,10 +259,10 @@ namespace EMStudio
                                         border: 0px; \
                                       }");
 
-        mActions[VISUALIZATION_PLAYSPEEDS] = vizMenu->addAction("Display Play Speeds");
-        mActions[VISUALIZATION_GLOBALWEIGHTS] = vizMenu->addAction("Display Global Weights");
-        mActions[VISUALIZATION_SYNCSTATUS] = vizMenu->addAction("Display Sync Status");
-        mActions[VISUALIZATION_PLAYPOSITIONS] = vizMenu->addAction("Display Play Positions");
+        mActions[VISUALIZATION_PLAYSPEEDS] = vizMenu->addAction(QObject::tr("Display Play Speeds"));
+        mActions[VISUALIZATION_GLOBALWEIGHTS] = vizMenu->addAction(QObject::tr("Display Global Weights"));
+        mActions[VISUALIZATION_SYNCSTATUS] = vizMenu->addAction(QObject::tr("Display Sync Status"));
+        mActions[VISUALIZATION_PLAYPOSITIONS] = vizMenu->addAction(QObject::tr("Display Play Positions"));
         connect(mActions[VISUALIZATION_PLAYSPEEDS], SIGNAL(triggered()), this, SLOT(OnDisplayPlaySpeeds()));
         connect(mActions[VISUALIZATION_GLOBALWEIGHTS], SIGNAL(triggered()), this, SLOT(OnDisplayGlobalWeights()));
         connect(mActions[VISUALIZATION_SYNCSTATUS], SIGNAL(triggered()), this, SLOT(OnDisplaySyncStatus()));
@@ -656,12 +656,12 @@ namespace EMStudio
     {        
         mOpenMenu->clear();
 //        disconnect(mActions[FILE_OPEN], SIGNAL(triggered()), mParentPlugin, SLOT(OnFileOpen()));
-        mActions[FILE_OPEN] = mOpenMenu->addAction("Open...");
+        mActions[FILE_OPEN] = mOpenMenu->addAction(QObject::tr("Open..."));
         connect(mActions[FILE_OPEN], SIGNAL(triggered()), mParentPlugin, SLOT(OnFileOpen()));
         const uint32 numAnimGraphs = EMotionFX::GetAnimGraphManager().GetNumAnimGraphs();
         if (numAnimGraphs > 0)
         {
-//            /*mActions[FILE_OPEN] =*/ mOpenMenu->addAction("Manage AnimGraphs...");
+//            /*mActions[FILE_OPEN] =*/ mOpenMenu->addAction(QObject::tr("Manage AnimGraphs..."));
             mOpenMenu->addSeparator();
             for (uint32 i = 0; i < numAnimGraphs; ++i)
             {

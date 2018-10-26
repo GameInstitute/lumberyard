@@ -47,7 +47,7 @@ public:
         setText("...");
         setMouseTracking(true);
         setContentsMargins(0, 0, 0, 0);
-        setToolTip("Browse...");
+        setToolTip(QObject::tr("Browse..."));
     }
 
 private:

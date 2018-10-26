@@ -490,7 +490,7 @@ namespace EMStudio
             }
 
             msgBox.setText(text.c_str());
-            msgBox.setWindowTitle("Save Changes");
+            msgBox.setWindowTitle(QObject::tr("Save Changes"));
 
             if (showCancelButton)
             {

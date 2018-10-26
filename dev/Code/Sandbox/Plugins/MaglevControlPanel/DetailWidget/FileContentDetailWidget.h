@@ -60,7 +60,7 @@ public:
             connectUntilDeleted(m_stackStatusModel.data(), &IStackStatusModel::modelReset, this, &FileContentDetailWidget::UpdateUI);
             connectUntilDeleted(m_view->GetResourceManager(), &IAWSResourceManager::OperationInProgressChanged, this, &FileContentDetailWidget::UpdateUI);
             m_uploadLambdaCodeButton = new QPushButton{};
-            m_uploadLambdaCodeButton->setText("Upload function code");
+            m_uploadLambdaCodeButton->setText(QObject::tr("Upload function code"));
             AddButton(m_uploadLambdaCodeButton);
             m_uploadLambdaCodeButton->show();
         }
@@ -148,31 +148,31 @@ public:
     {
         auto menu = new ToolTipMenu {};
 
-        auto saveFile = menu->addAction("Save file");
+        auto saveFile = menu->addAction(QObject::tr("Save file"));
         saveFile->setToolTip(m_view->m_menuSave->toolTip());
         saveFile->setEnabled(ShouldAllowSave());
         connectUntilDeleted(saveFile, &QAction::triggered, this, &FileContentDetailWidget::OnSaveRequested);
 
         if (!m_fileContentModel->DoNotDelete())
         {
-            auto deleteFile = menu->addAction("Delete file");
+            auto deleteFile = menu->addAction(QObject::tr("Delete file"));
             deleteFile->setToolTip(tr("Delete the file from disk."));
             connectUntilDeleted(deleteFile, &QAction::triggered, this, &FileContentDetailWidget::OnDeleteRequested);
         }
 
         menu->addSeparator();
 
-        auto openFile = menu->addAction("Open in script editor");
+        auto openFile = menu->addAction(QObject::tr("Open in script editor"));
         openFile->setToolTip(tr("Open file in the default script editor."));
         connectUntilDeleted(openFile, &QAction::triggered, this, &FileContentDetailWidget::OnOpenInScriptEditor);
 
-        auto openPathInExplorer = menu->addAction("View in Explorer");
+        auto openPathInExplorer = menu->addAction(QObject::tr("View in Explorer"));
         openPathInExplorer->setToolTip(tr("View the file in Windows Explorer."));
         connectUntilDeleted(openPathInExplorer, &QAction::triggered, this, &FileContentDetailWidget::OnOpenLocationInExplorer);
 
         menu->addSeparator();
 
-        auto copyPathToClipboard = menu->addAction("Copy to clipboard");
+        auto copyPathToClipboard = menu->addAction(QObject::tr("Copy to clipboard"));
         copyPathToClipboard->setToolTip(tr("Copy the file's path to the clipboard."));
         connectUntilDeleted(copyPathToClipboard, &QAction::triggered, this, &FileContentDetailWidget::OnCopyPathToClipboard);
 

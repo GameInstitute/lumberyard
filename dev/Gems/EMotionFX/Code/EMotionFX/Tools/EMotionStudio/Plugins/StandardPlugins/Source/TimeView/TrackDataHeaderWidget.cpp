@@ -490,7 +490,7 @@ namespace EMStudio
         // create the context menu
         QMenu menu(this);
 
-        QAction* action = menu.addAction("Add Event Track");
+        QAction* action = menu.addAction(QObject::tr("Add Event Track"));
         action->setIcon(MysticQt::GetMysticQt()->FindIcon("Images/Icons/Plus.png"));
         connect(action, SIGNAL(triggered()), this, SLOT(OnAddTrack()));
 
@@ -886,11 +886,11 @@ namespace EMStudio
         //---------------------
         // Timeline actions
         //---------------------
-        QAction* action = menu.addAction("Zoom To Fit All");
+        QAction* action = menu.addAction(QObject::tr("Zoom To Fit All"));
         //action->setIcon( MysticQt::GetMysticQt()->FindIcon("Images/AnimGraphPlugin/FitAll.png") );
         connect(action, SIGNAL(triggered()), mPlugin, SLOT(OnZoomAll()));
 
-        action = menu.addAction("Reset Timeline");
+        action = menu.addAction(QObject::tr("Reset Timeline"));
         //action->setIcon( MysticQt::GetMysticQt()->FindIcon("Images/AnimGraphPlugin/FitAll.png") );
         connect(action, SIGNAL(triggered()), mPlugin, SLOT(OnResetTimeline()));
 

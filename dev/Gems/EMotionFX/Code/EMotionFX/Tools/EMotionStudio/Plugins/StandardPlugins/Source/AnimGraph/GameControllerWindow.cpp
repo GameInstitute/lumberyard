@@ -139,7 +139,7 @@ namespace EMStudio
 
         QHBoxLayout* gameControllerLayout = new QHBoxLayout();
         gameControllerLayout->setMargin(0);
-        QLabel* activeControllerLabel = new QLabel("Active Controller:");
+        QLabel* activeControllerLabel = new QLabel(QObject::tr("Active Controller:"));
         activeControllerLabel->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
         gameControllerLayout->addWidget(activeControllerLabel);
         gameControllerLayout->addWidget(mGameControllerComboBox);
@@ -169,7 +169,7 @@ namespace EMStudio
         buttonsLayout->setSpacing(0);
         buttonsLayout->setMargin(0);
 
-        horizontalLayout->addWidget(new QLabel("Preset:"));
+        horizontalLayout->addWidget(new QLabel(QObject::tr("Preset:")));
         horizontalLayout->addWidget(mPresetComboBox);
         horizontalLayout->addLayout(buttonsLayout);
         horizontalLayout->addWidget(mPresetNameLineEdit);
@@ -178,7 +178,7 @@ namespace EMStudio
         QWidget* dummyWidget = new QWidget();
         dummyWidget->setObjectName("StyledWidgetDark");
         dummyWidget->setLayout(gameControllerLayout);
-        mDialogStack->Add(dummyWidget, "Game Controller And Preset Selection");
+        mDialogStack->Add(dummyWidget, QObject::tr("Game Controller And Preset Selection"));
         connect(mGameControllerComboBox, SIGNAL(currentIndexChanged(int)), this, SLOT(OnGameControllerComboBox(int)));
 
         DisablePresetInterface();
@@ -373,7 +373,7 @@ namespace EMStudio
             // add the axis combo box to the layout
             MysticQt::ComboBox* axesComboBox = new MysticQt::ComboBox();
             axesComboBox->setSizePolicy(QSizePolicy::MinimumExpanding, QSizePolicy::Fixed);
-            axesComboBox->addItem("None");
+            axesComboBox->addItem(QObject::tr("None"));
 
             // iterate over the elements and add the ones which are present on the current game controller to the combo box
             uint32 selectedComboItem = 0;
@@ -405,7 +405,7 @@ namespace EMStudio
                 uint32 numPresentElements = 0;
                 if (mGameController->GetIsPresent(GameController::ELEM_POS_X) && mGameController->GetIsPresent(GameController::ELEM_POS_Y))
                 {
-                    axesComboBox->addItem("Pos XY");
+                    axesComboBox->addItem(QObject::tr("Pos XY"));
                     if (settingsInfo->m_axis == 0)
                     {
                         selectedComboItem = numPresentElements + 1;
@@ -415,7 +415,7 @@ namespace EMStudio
 
                 if (mGameController->GetIsPresent(GameController::ELEM_ROT_X) && mGameController->GetIsPresent(GameController::ELEM_ROT_Y))
                 {
-                    axesComboBox->addItem("Rot XY");
+                    axesComboBox->addItem(QObject::tr("Rot XY"));
                     if (settingsInfo->m_axis == 1)
                     {
                         selectedComboItem = numPresentElements + 1;
@@ -432,12 +432,12 @@ namespace EMStudio
 
             // add the mode combo box to the layout
             MysticQt::ComboBox* modeComboBox = new MysticQt::ComboBox();
-            modeComboBox->addItem("Standard Mode");
-            modeComboBox->addItem("Zero To One Mode");
-            modeComboBox->addItem("Parameter Range Mode");
-            modeComboBox->addItem("Positive Param Range Mode");
-            modeComboBox->addItem("Negative Param Range Mode");
-            modeComboBox->addItem("Rotate Character");
+            modeComboBox->addItem(QObject::tr("Standard Mode"));
+            modeComboBox->addItem(QObject::tr("Zero To One Mode"));
+            modeComboBox->addItem(QObject::tr("Parameter Range Mode"));
+            modeComboBox->addItem(QObject::tr("Positive Param Range Mode"));
+            modeComboBox->addItem(QObject::tr("Negative Param Range Mode"));
+            modeComboBox->addItem(QObject::tr("Rotate Character"));
             modeComboBox->setSizePolicy(QSizePolicy::MinimumExpanding, QSizePolicy::Fixed);
             connect(modeComboBox, SIGNAL(currentIndexChanged(int)), this, SLOT(OnParameterModeComboBox(int)));
             modeComboBox->setCurrentIndex(settingsInfo->m_mode);
@@ -446,7 +446,7 @@ namespace EMStudio
             // add the invert checkbox to the layout
             QHBoxLayout* invertCheckBoxLayout = new QHBoxLayout();
             invertCheckBoxLayout->setMargin(0);
-            QLabel* invertLabel = new QLabel("Invert");
+            QLabel* invertLabel = new QLabel(QObject::tr("Invert"));
             invertCheckBoxLayout->addWidget(invertLabel);
             QCheckBox* invertCheckbox = new QCheckBox();
             invertLabel->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
@@ -502,12 +502,12 @@ namespace EMStudio
 
             // add the mode combo box to the layout
             MysticQt::ComboBox* modeComboBox = new MysticQt::ComboBox();
-            modeComboBox->addItem("None");
-            modeComboBox->addItem("Switch To State Mode");
-            modeComboBox->addItem("Toggle Bool Parameter Mode");
-            modeComboBox->addItem("Enable Bool While Pressed Mode");
-            modeComboBox->addItem("Disable Bool While Pressed Mode");
-            modeComboBox->addItem("Enable Bool For One Frame Only");
+            modeComboBox->addItem(QObject::tr("None"));
+            modeComboBox->addItem(QObject::tr("Switch To State Mode"));
+            modeComboBox->addItem(QObject::tr("Toggle Bool Parameter Mode"));
+            modeComboBox->addItem(QObject::tr("Enable Bool While Pressed Mode"));
+            modeComboBox->addItem(QObject::tr("Disable Bool While Pressed Mode"));
+            modeComboBox->addItem(QObject::tr("Enable Bool For One Frame Only"));
             //modeComboBox->addItem( "Execute Script Mode" );
             modeComboBox->setSizePolicy(QSizePolicy::MinimumExpanding, QSizePolicy::Fixed);
             connect(modeComboBox, SIGNAL(currentIndexChanged(int)), this, SLOT(OnButtonModeComboBox(int)));
@@ -550,7 +550,7 @@ namespace EMStudio
 
         // add the special case label for the pressed buttons
         mPreviewLabels[GameController::NUM_ELEMENTS] = new QLabel();
-        QLabel* realtimeButtonNameLabel = new QLabel("Buttons");
+        QLabel* realtimeButtonNameLabel = new QLabel(QObject::tr("Buttons"));
         realtimeButtonNameLabel->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
         previewGridLayout->addWidget(realtimeButtonNameLabel, realTimePreviewLabelCounter, 0);
         previewGridLayout->addWidget(mPreviewLabels[GameController::NUM_ELEMENTS], realTimePreviewLabelCounter, 1, Qt::AlignLeft);
@@ -559,7 +559,7 @@ namespace EMStudio
         QHBoxLayout* deadZoneLayout = new QHBoxLayout();
         deadZoneLayout->setMargin(0);
 
-        QLabel* deadZoneLabel = new QLabel("Dead Zone");
+        QLabel* deadZoneLabel = new QLabel(QObject::tr("Dead Zone"));
         deadZoneLabel->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
         previewGridLayout->addWidget(deadZoneLabel, realTimePreviewLabelCounter + 1, 0);
 
@@ -623,7 +623,7 @@ namespace EMStudio
 
         // construct the parameters name layout
         QHBoxLayout* parameterNameLayout = new QHBoxLayout();
-        QLabel* label = new QLabel("Parameters");
+        QLabel* label = new QLabel(QObject::tr("Parameters"));
         label->setStyleSheet("color: rgb(244, 156, 28);");
         label->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
         parameterNameLayout->addWidget(label);
@@ -639,7 +639,7 @@ namespace EMStudio
 
         // construct the buttons name layout
         QHBoxLayout* buttonNameLayout = new QHBoxLayout();
-        label = new QLabel("Buttons");
+        label = new QLabel(QObject::tr("Buttons"));
         label->setStyleSheet("color: rgb(244, 156, 28);");
         label->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
         buttonNameLayout->addWidget(label);
@@ -676,7 +676,7 @@ namespace EMStudio
     #endif
         mDynamicWidget->setLayout(dynamicWidgetLayout);
 
-        mDialogStack->Add(mDynamicWidget, "Game Controller Mapping", false, true);
+        mDialogStack->Add(mDynamicWidget, QObject::tr("Game Controller Mapping"), false, true);
     }
 
 
@@ -843,7 +843,7 @@ namespace EMStudio
 
             linkWidget->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
 
-            layout->addWidget(new QLabel("State:"));
+            layout->addWidget(new QLabel(QObject::tr("State:")));
             layout->addWidget(linkWidget);
             widget->setLayout(layout);
             break;
@@ -891,7 +891,7 @@ namespace EMStudio
                 }
             }
 
-            layout->addWidget(new QLabel("Bool Parameter:"));
+            layout->addWidget(new QLabel(QObject::tr("Bool Parameter:")));
             layout->addWidget(comboBox);
             widget->setLayout(layout);
             break;

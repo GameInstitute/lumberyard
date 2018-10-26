@@ -446,11 +446,11 @@ void QColorWidgetImp::buildMenu()
         m_VarEnableVar1->Get(randomActive);
         if (randomActive)
         {
-            action = m_menu->addAction("Single color");//launch random dlg
+            action = m_menu->addAction(QObject::tr("Single color"));//launch random dlg
         }
         else
         {
-            action = m_menu->addAction("Random between two colors");//launch random dlg
+            action = m_menu->addAction(QObject::tr("Random between two colors"));//launch random dlg
         }
         connect(action, &QAction::triggered, this, [&]()
             {
@@ -462,7 +462,7 @@ void QColorWidgetImp::buildMenu()
                 buildMenu();
             });
     }
-    action = m_menu->addAction("Reset");//launch export dlg
+    action = m_menu->addAction(QObject::tr("Reset"));//launch export dlg
     connect(action, &QAction::triggered, this, [&]()
         {
             SetMultiplierBox(m_defaultAlpha[0], 0);

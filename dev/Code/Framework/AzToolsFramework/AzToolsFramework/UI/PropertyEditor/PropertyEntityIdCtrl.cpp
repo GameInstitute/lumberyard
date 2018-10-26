@@ -60,7 +60,7 @@ namespace AzToolsFramework
         m_pickButton->setFixedSize(QSize(18, 18));
         m_pickButton->setContentsMargins(0, 0, 0, 0);
         m_pickButton->setIcon(QIcon(":/PropertyEditor/Resources/EntityPicker"));
-        m_pickButton->setToolTip("Pick an object in the viewport");
+        m_pickButton->setToolTip(QObject::tr("Pick an object in the viewport"));
         m_pickButton->setMouseTracking(true);
 
         m_clearButton = aznew QPushButton(this);
@@ -69,7 +69,7 @@ namespace AzToolsFramework
         m_clearButton->setFixedSize(QSize(18, 18));
         m_clearButton->setStyleSheet("border: none; padding: 0ex;");
         m_clearButton->setIcon(QIcon(":/PropertyEditor/Resources/cross-small"));
-        m_clearButton->setToolTip("Clear entity reference");
+        m_clearButton->setToolTip(QObject::tr("Clear entity reference"));
         m_clearButton->setMouseTracking(true);
 
         pLayout->addWidget(m_entityIdLabel);

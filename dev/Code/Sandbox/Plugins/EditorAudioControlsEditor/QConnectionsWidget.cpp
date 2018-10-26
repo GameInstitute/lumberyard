@@ -197,18 +197,18 @@ namespace AudioControls
             QMessageBox messageBox(this);
             messageBox.setStandardButtons(QMessageBox::Yes | QMessageBox::No);
             messageBox.setDefaultButton(QMessageBox::Yes);
-            messageBox.setWindowTitle("Audio Controls Editor");
+            messageBox.setWindowTitle(QObject::tr("Audio Controls Editor"));
             QList<QListWidgetItem*> selected = m_pConnectionList->selectedItems();
             const int size = selected.length();
             if (size > 0)
             {
                 if (size == 1)
                 {
-                    messageBox.setText("Are you sure you want to delete the connection between \"" + QtUtil::ToQString(m_pControl->GetName()) + "\" and \"" + selected[0]->text() + "\"?");
+                    messageBox.setText(QObject::tr("Are you sure you want to delete the connection between \"") + QtUtil::ToQString(m_pControl->GetName()) + "\" and \"" + selected[0]->text() + "\"?");
                 }
                 else
                 {
-                    messageBox.setText("Are you sure you want to delete the " + QString::number(size) + " selected connections?");
+                    messageBox.setText(QObject::tr("Are you sure you want to delete the ") + QString::number(size) + QObject::tr(" selected connections?"));
                 }
                 if (messageBox.exec() == QMessageBox::Yes)
                 {

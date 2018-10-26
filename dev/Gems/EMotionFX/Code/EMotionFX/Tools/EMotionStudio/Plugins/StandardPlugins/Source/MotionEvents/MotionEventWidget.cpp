@@ -51,21 +51,21 @@ namespace EMStudio
         mTickMode                       = new MysticQt::ButtonGroup(this, 1, 2, MysticQt::ButtonGroup::MODE_RADIOBUTTONS);
         QPushButton* tickEventButton    = mTickMode->GetButton(0, 0);
         QPushButton* rangeEventButton   = mTickMode->GetButton(0, 1);
-        tickEventButton->setText("Tick Event");
-        rangeEventButton->setText("Range Event");
+        tickEventButton->setText(QObject::tr("Tick Event"));
+        rangeEventButton->setText(QObject::tr("Range Event"));
         connect(tickEventButton, SIGNAL(clicked()), this, SLOT(ConvertToTickEvent()));
         connect(rangeEventButton, SIGNAL(clicked()), this, SLOT(ConvertToRangeEvent()));
 
         // add the properties
         QGridLayout* gridLayout = new QGridLayout();
 
-        gridLayout->addWidget(new QLabel("Mode:"),         0, 0, Qt::AlignLeft);
-        gridLayout->addWidget(new QLabel("Start Time:"),   1, 0, Qt::AlignLeft);
-        gridLayout->addWidget(new QLabel("End Time:"),     2, 0, Qt::AlignLeft);
-        gridLayout->addWidget(new QLabel("Length:"),       3, 0, Qt::AlignLeft);
-        gridLayout->addWidget(new QLabel("Type:"),         4, 0, Qt::AlignLeft);
-        gridLayout->addWidget(new QLabel("Parameter:"),    5, 0, Qt::AlignLeft);
-        gridLayout->addWidget(new QLabel("Mirror Type:"),  6, 0, Qt::AlignLeft);
+        gridLayout->addWidget(new QLabel(QObject::tr("Mode:")),         0, 0, Qt::AlignLeft);
+        gridLayout->addWidget(new QLabel(QObject::tr("Start Time:")),   1, 0, Qt::AlignLeft);
+        gridLayout->addWidget(new QLabel(QObject::tr("End Time:")),     2, 0, Qt::AlignLeft);
+        gridLayout->addWidget(new QLabel(QObject::tr("Length:")),       3, 0, Qt::AlignLeft);
+        gridLayout->addWidget(new QLabel(QObject::tr("Type:")),         4, 0, Qt::AlignLeft);
+        gridLayout->addWidget(new QLabel(QObject::tr("Parameter:")),    5, 0, Qt::AlignLeft);
+        gridLayout->addWidget(new QLabel(QObject::tr("Mirror Type:")),  6, 0, Qt::AlignLeft);
 
         mStartTime  = new MysticQt::DoubleSpinBox();
         mEndTime    = new MysticQt::DoubleSpinBox();

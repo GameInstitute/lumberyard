@@ -21,7 +21,7 @@
 CToolbarLibrary::CToolbarLibrary(QMainWindow* mainWindow)
     : IToolbar(mainWindow, TO_CSTR(CToolbarLibrary))
 {
-    setWindowTitle("Library");
+    setWindowTitle(QObject::tr("Library"));
     m_ignoreIndexChange = false;
 }
 
@@ -39,7 +39,7 @@ void CToolbarLibrary::init()
     m_list = new QComboBox(this);
     m_list->setFixedWidth(128);
     m_list->setLayoutDirection(Qt::LayoutDirection::LayoutDirectionAuto);
-    m_list->addItem("<loading..>");
+    m_list->addItem(QObject::tr("<loading..>"));
     addWidget(m_list);
 
     createAction("actionLibraryReload", tr("Reload"), tr("Reload library"), "libraryReload.png");

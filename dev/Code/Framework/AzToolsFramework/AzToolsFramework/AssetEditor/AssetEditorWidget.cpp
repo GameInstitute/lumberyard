@@ -129,10 +129,10 @@ namespace AzToolsFramework
                 connect(newAssetAction, &QAction::triggered, this, [assetType, this]() { CreateAsset(assetType); });
             }
 
-            QAction* openAssetAction = fileMenu->addAction("&Open");
+            QAction* openAssetAction = fileMenu->addAction(QObject::tr("&Open"));
             connect(openAssetAction, &QAction::triggered, this, &AssetEditorWidget::OpenAsset);
 
-            m_saveAssetAction = fileMenu->addAction("&Save");
+            m_saveAssetAction = fileMenu->addAction(QObject::tr("&Save"));
             m_saveAssetAction->setEnabled(false);
             connect(m_saveAssetAction, &QAction::triggered, this, &AssetEditorWidget::SaveAsset);
 

@@ -50,11 +50,11 @@ public:
     {
         auto menu = new ToolTipMenu {};
 
-        auto newFile = menu->addAction("New file");
+        auto newFile = menu->addAction(QObject::tr("New file"));
         newFile->setToolTip(m_view->m_menuNewFile->toolTip());
         connectUntilDeleted(newFile, &QAction::triggered, this, &CodeDirectoryDetailWidget::OnNewFile);
 
-        auto newDirectory = menu->addAction("New directory");
+        auto newDirectory = menu->addAction(QObject::tr("New directory"));
         newDirectory->setToolTip(m_view->m_menuNewDirectory->toolTip());
         connectUntilDeleted(newDirectory, &QAction::triggered, this, &CodeDirectoryDetailWidget::OnNewDirectory);
 
@@ -62,21 +62,21 @@ public:
 
         if (!m_codeDirectoryModel->DoNotDelete())
         {
-            auto deleteDirectory = menu->addAction("Delete directory");
-            deleteDirectory->setToolTip("Delete the directory from disk.");
+            auto deleteDirectory = menu->addAction(QObject::tr("Delete directory"));
+            deleteDirectory->setToolTip(QObject::tr("Delete the directory from disk."));
             connectUntilDeleted(deleteDirectory, &QAction::triggered, this, &CodeDirectoryDetailWidget::OnDeleteRequested);
         }
 
         menu->addSeparator(); 
         
         //Add right click menu option to code directory node in tree
-        auto openPathInExplorer = menu->addAction("View in Explorer");
+        auto openPathInExplorer = menu->addAction(QObject::tr("View in Explorer"));
         openPathInExplorer->setToolTip(tr("View the directory in Windows Explorer."));
         connectUntilDeleted(openPathInExplorer, &QAction::triggered, this, &CodeDirectoryDetailWidget::OnOpenPathInExplorer);
 
         menu->addSeparator();
 
-        auto copyPathToClipboard = menu->addAction("Copy path to clipboard");
+        auto copyPathToClipboard = menu->addAction(QObject::tr("Copy path to clipboard"));
         copyPathToClipboard->setToolTip(tr("Copy the directory's path to the clipboard."));
         connectUntilDeleted(copyPathToClipboard, &QAction::triggered, this, &CodeDirectoryDetailWidget::OnCopyPathToClipboard);
 

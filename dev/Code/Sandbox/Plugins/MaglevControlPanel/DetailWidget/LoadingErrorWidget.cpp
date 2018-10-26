@@ -73,7 +73,7 @@ LoadingErrorWidget::LoadingErrorWidget(ResourceManagementView* view, QWidget* pa
 
     // refresh button
     auto retryButton = new QPushButton(tr("Retry"));
-    retryButton->setToolTip("Retry the failed commands.");
+    retryButton->setToolTip(QObject::tr("Retry the failed commands."));
     retryButton->setMaximumWidth(100);
     connectUntilHidden(retryButton, &QPushButton::clicked, this, &LoadingErrorWidget::OnRetryClicked);
 
@@ -84,7 +84,7 @@ LoadingErrorWidget::LoadingErrorWidget(ResourceManagementView* view, QWidget* pa
     // cancel button
 
     auto cancelButton = new QPushButton(tr("Cancel"));
-    cancelButton->setToolTip("Closes the Cloud Canvas Resource Manager window.");
+    cancelButton->setToolTip(QObject::tr("Closes the Cloud Canvas Resource Manager window."));
     cancelButton->setMaximumWidth(100);
     connectUntilHidden(cancelButton, &QPushButton::clicked, this, &LoadingErrorWidget::OnCancelClicked);
     buttonLayout->addWidget(cancelButton);
