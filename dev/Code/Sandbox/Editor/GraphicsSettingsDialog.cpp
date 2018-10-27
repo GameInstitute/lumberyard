@@ -46,7 +46,7 @@ GraphicsSettingsDialog::GraphicsSettingsDialog(QWidget* parent /* = nullptr */)
     // Start initialization the dialog
     m_isLoading = true;
     m_ui->setupUi(this);
-    setWindowTitle(QObject::tr("Graphics Settings"));
+    setWindowTitle("Graphics Settings");
 
     /////////////////////////////////////////////
 

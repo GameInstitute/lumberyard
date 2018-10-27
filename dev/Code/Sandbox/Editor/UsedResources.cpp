@@ -54,7 +54,7 @@ void CUsedResources::Validate(IErrorReport* pReport)
         {
             CErrorRecord err;
 
-            err.error = QObject::tr("Resource File %1 not found,").arg(filename);
+            err.error = QString("Resource File %1 not found,").arg(filename);
             err.severity = CErrorRecord::ESEVERITY_ERROR;
             err.flags |= CErrorRecord::FLAG_NOFILE;
             pReport->ReportError(err);

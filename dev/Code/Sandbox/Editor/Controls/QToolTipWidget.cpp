@@ -140,7 +140,7 @@ void QToolTipWidget::SetTitle(QString title)
     }
     m_title->setProperty("tooltipLabel", "Title");
 
-    setWindowTitle(QObject::tr("ToolTip - ") + title);
+    setWindowTitle("ToolTip - " + title);
 }
 
 void QToolTipWidget::SetContent(QString content)
@@ -171,7 +171,7 @@ QToolTipWidget::QToolTipWidget(QWidget* parent)
     m_currentShortcuts = QVector<QLabel*>();
     m_content = new QLabel(this);
     m_specialContent = nullptr;
-    setWindowTitle(QObject::tr("ToolTip"));
+    setWindowTitle("ToolTip");
     setObjectName("ToolTip");
     setWindowFlags(Qt::ToolTip | Qt::FramelessWindowHint);
     setAttribute(Qt::WA_TranslucentBackground, true);

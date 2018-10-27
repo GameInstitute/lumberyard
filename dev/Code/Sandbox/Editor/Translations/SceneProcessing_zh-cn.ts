@@ -4,7 +4,7 @@
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../../../../../Gems/SceneProcessing/Code/Source/Config/Widgets/GraphTypeSelector.cpp" line="32"/>
+        <location filename="../../../../Gems/SceneProcessing/Code/Source/Config/Widgets/GraphTypeSelector.cpp" line="32"/>
         <source>Select required graph types</source>
         <translation>选择所需图表类型</translation>
     </message>

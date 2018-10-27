@@ -145,7 +145,7 @@ CFlowGraphSearchCtrl::CFlowGraphSearchCtrl(CHyperGraphDialog* pDialog)
     : AzQtComponents::StyledDockWidget(pDialog)
     , ui(new Ui::FlowGraphSearchCtrl())
 {
-    setWindowTitle(QObject::tr("Search"));
+    setWindowTitle("Search");
     m_pResultsCtrl = 0;
     m_pDialog = pDialog;
 
@@ -835,7 +835,7 @@ CFlowGraphSearchResultsCtrl::CFlowGraphSearchResultsCtrl(CHyperGraphDialog* pDia
     : AzQtComponents::StyledDockWidget(pDialog)
     , m_model(0)
 {
-    setWindowTitle(QObject::tr("Search Results"));
+    setWindowTitle("Search Results");
     m_pDialog = pDialog;
     m_dataView = new CFlowGraphSearchResultsView(this);
     setWidget(m_dataView);
@@ -884,7 +884,7 @@ void CFlowGraphSearchResultsCtrl::OnReportColumnRClick(const QPoint& pos)
 {
     QMenu menu;
 
-    QMenu* menuColumns = menu.addMenu(QObject::tr("Columns"));
+    QMenu* menuColumns = menu.addMenu("Columns");
     int nColumnCount = m_model->columnCount();
     for (int nColumn = 0; nColumn < nColumnCount; ++nColumn)
     {
@@ -897,16 +897,16 @@ void CFlowGraphSearchResultsCtrl::OnReportColumnRClick(const QPoint& pos)
             a->setEnabled(false);   // can't hide first column as it breaks ability to open/close the folder
         }
     }
-    menu.addAction(QObject::tr("Sort ascending"))->setData(ID_SORT_ASC);
-    menu.addAction(QObject::tr("Sort descending"))->setData(ID_SORT_DESC);
+    menu.addAction("Sort ascending")->setData(ID_SORT_ASC);
+    menu.addAction("Sort descending")->setData(ID_SORT_DESC);
     menu.addSeparator();
-    QAction* groupByAction = menu.addAction(QObject::tr("Group by this field"));
+    QAction* groupByAction = menu.addAction("Group by this field");
     groupByAction->setData(ID_GROUP_BY_THIS);
     groupByAction->setEnabled(!m_model->IsGrouping());
-    menu.addAction(QObject::tr("Ungroup"))->setData(ID_UNGROUP);
+    menu.addAction("Ungroup")->setData(ID_UNGROUP);
     // KDAB_PORT_UNUSED This functionality is not supported by QTreeView
     // menu.addSeparator();
-    // menu.addAction(QObject::tr("Enable Preview"))->setData(ID_ENABLE_PREVIEW);
+    // menu.addAction("Enable Preview")->setData(ID_ENABLE_PREVIEW);
 
     QAction* res = menu.exec(QCursor::pos());
     if (!res)

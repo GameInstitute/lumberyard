@@ -603,40 +603,38 @@ namespace Editor
 
     void EditorQtApplication::InstallEditorTranslators()
     {
-		QString translationFolder = ":/Translations/zh_cn";
-
 		// Sandbox
-		m_SandboxTranslator = CreateAndInitializeTranslator("Sandbox.qm", translationFolder);
+		m_SandboxTranslator = CreateAndInitializeTranslator("Sandbox_zh-cn.qm", ":/Translations");
 
 		// Framework
-		m_AzQtComponentsTranslator = CreateAndInitializeTranslator("AzQtComponents.qm", translationFolder);
-		m_AzToolsFrameworkTranslator = CreateAndInitializeTranslator("AzToolsFramework.qm", translationFolder);
+		m_AzQtComponentsTranslator = CreateAndInitializeTranslator("AzQtComponents_zh-cn.qm", ":/Translations");
+		m_AzToolsFrameworkTranslator = CreateAndInitializeTranslator("AzToolsFramework_zh-cn.qm", ":/Translations");
 
-		// Plugins
-		m_EditorUI_QTTranslator = CreateAndInitializeTranslator("EditorUI_QT.qm", translationFolder);
-		m_EditorCommonTranslator = CreateAndInitializeTranslator("EditorCommon.qm", translationFolder);
-		m_ComponentEntityEditorPluginTranslator = CreateAndInitializeTranslator("ComponentEntityEditorPlugin.qm", translationFolder);
-		m_CryDesignerTranslator = CreateAndInitializeTranslator("CryDesigner.qm", translationFolder);
-		//m_DeploymentToolTranslator = CreateAndInitializeTranslator("DeploymentTool.qm", translationFolder);
-		m_EditorAssetImporterTranslator = CreateAndInitializeTranslator("EditorAssetImporter.qm", translationFolder);
-		m_EditorAudioControlsEditorTranslator = CreateAndInitializeTranslator("EditorAudioControlsEditor.qm", translationFolder);
+		////// Plugins
+		m_EditorUI_QTTranslator = CreateAndInitializeTranslator("EditorUI_QT_zh-cn.qm", ":/Translations");
+		m_EditorCommonTranslator = CreateAndInitializeTranslator("EditorCommon_zh-cn.qm", ":/Translations");
+		m_ComponentEntityEditorPluginTranslator = CreateAndInitializeTranslator("ComponentEntityEditorPlugin_zh-cn.qm", ":/Translations");
+		m_CryDesignerTranslator = CreateAndInitializeTranslator("CryDesigner_zh-cn.qm", ":/Translations");
+		//m_DeploymentToolTranslator = CreateAndInitializeTranslator("DeploymentTool_zh-cn.qm", ":/Translations");
+		m_EditorAssetImporterTranslator = CreateAndInitializeTranslator("EditorAssetImporter_zh-cn.qm", ":/Translations");
+		m_EditorAudioControlsEditorTranslator = CreateAndInitializeTranslator("EditorAudioControlsEditor_zh-cn.qm", ":/Translations");
 
-		m_FBXPluginTranslator = CreateAndInitializeTranslator("FBXPlugin.qm", translationFolder);
-		m_MaglevControlPanelTranslator = CreateAndInitializeTranslator("MaglevControlPanel.qm", translationFolder);
-		m_ParticleEditorPluginTranslator = CreateAndInitializeTranslator("ParticleEditorPlugin.qm", translationFolder);
-		m_PerforcePluginTranslator = CreateAndInitializeTranslator("PerforcePlugin.qm", translationFolder);
-		m_UiCanvasEditorTranslator = CreateAndInitializeTranslator("UiCanvasEditor.qm", translationFolder);
-		m_EditorAnimationTranslator = CreateAndInitializeTranslator("EditorAnimation.qm", translationFolder);
-		m_EditorModularBehaviorTreeTranslator = CreateAndInitializeTranslator("EditorModularBehaviorTree.qm", translationFolder);
+		m_FBXPluginTranslator = CreateAndInitializeTranslator("FBXPlugin_zh-cn.qm", ":/Translations");
+		m_MaglevControlPanelTranslator = CreateAndInitializeTranslator("MaglevControlPanel_zh-cn.qm", ":/Translations");
+		m_ParticleEditorPluginTranslator = CreateAndInitializeTranslator("ParticleEditorPlugin_zh-cn.qm", ":/Translations");
+		m_PerforcePluginTranslator = CreateAndInitializeTranslator("PerforcePlugin_zh-cn.qm", ":/Translations");
+		//m_UiCanvasEditorTranslator = CreateAndInitializeTranslator("UiCanvasEditor_zh-cn.qm", ":/Translations");
+		m_EditorAnimationTranslator = CreateAndInitializeTranslator("EditorAnimation_zh-cn.qm", ":/Translations");
+		m_EditorModularBehaviorTreeTranslator = CreateAndInitializeTranslator("EditorModularBehaviorTree_zh-cn.qm", ":/Translations");
 
-		// Gems
-		m_CloudGemDynamicContentTranslator = CreateAndInitializeTranslator("CloudGemDynamicContent.qm", translationFolder);
-		m_EMotionFXTranslator = CreateAndInitializeTranslator("EMotionFX.qm", translationFolder);
-		m_GraphCanvasTranslator = CreateAndInitializeTranslator("GraphCanvas.qm", translationFolder);
-		m_ScriptCanvasTranslator = CreateAndInitializeTranslator("ScriptCanvas.qm", translationFolder);
-		m_ScriptCanvasDeveloperTranslator = CreateAndInitializeTranslator("ScriptCanvasDeveloper.qm", translationFolder);
-		m_SubstanceTranslator = CreateAndInitializeTranslator("Substance.qm", translationFolder);
-		m_SceneProcessingTranslator = CreateAndInitializeTranslator("SceneProcessing.qm", translationFolder);
+		//// Gems
+		m_CloudGemDynamicContentTranslator = CreateAndInitializeTranslator("CloudGemDynamicContent_zh-cn.qm", ":/Translations");
+		m_EMotionFXTranslator = CreateAndInitializeTranslator("EMotionFX_zh-cn.qm", ":/Translations");
+		m_GraphCanvasTranslator = CreateAndInitializeTranslator("GraphCanvas_zh-cn.qm", ":/Translations");
+		m_ScriptCanvasTranslator = CreateAndInitializeTranslator("ScriptCanvas_zh-cn.qm", ":/Translations");
+		m_ScriptCanvasDeveloperTranslator = CreateAndInitializeTranslator("ScriptCanvasDeveloper_zh-cn.qm", ":/Translations");
+		m_SubstanceTranslator = CreateAndInitializeTranslator("Substance_zh-cn.qm", ":/Translations");
+		m_SceneProcessingTranslator = CreateAndInitializeTranslator("SceneProcessing_zh-cn.qm", ":/Translations");
     }
 
     void EditorQtApplication::DeleteTranslator(QTranslator*& translator)
@@ -655,7 +653,7 @@ namespace Editor
 		DeleteTranslator(m_AzQtComponentsTranslator);
 		DeleteTranslator(m_AzToolsFrameworkTranslator);
 
-		// Plugins 
+		//// Plugins 
 		DeleteTranslator(m_ComponentEntityEditorPluginTranslator);
 		DeleteTranslator(m_CryDesignerTranslator);
 		//DeleteTranslator(m_DeploymentToolTranslator);

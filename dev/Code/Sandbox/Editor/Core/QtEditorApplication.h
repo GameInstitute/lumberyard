@@ -146,7 +146,7 @@ namespace Editor
 		QTranslator* m_AzQtComponentsTranslator = nullptr;
 		QTranslator* m_AzToolsFrameworkTranslator = nullptr;
 
-		// Plugins 
+		//// Plugins 
 		QTranslator* m_ComponentEntityEditorPluginTranslator = nullptr;
 		QTranslator* m_CryDesignerTranslator = nullptr;
 		//QTranslator* m_DeploymentToolTranslator = nullptr;

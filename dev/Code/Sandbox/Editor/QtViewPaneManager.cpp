@@ -1272,7 +1272,7 @@ bool QtViewPaneManager::RestoreLayout(QString layoutName)
     // if it doesn't contain the Entity Inspector and Outliner then we need to
     // save their previous layout for them and switch them to the new default
     // layout because they won't be able to do much without them
-    static const QString userLegacyLayout = QObject::tr("User Legacy Layout");
+    static const QString userLegacyLayout = "User Legacy Layout";
     if (!m_enableLegacyCryEntities && layoutName == s_lastLayoutName && !HasLayout(userLegacyLayout))
     {
         bool layoutHasEntityInspector = false;

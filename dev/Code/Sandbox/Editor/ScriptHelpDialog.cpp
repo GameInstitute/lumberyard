@@ -273,7 +273,7 @@ void CScriptHelpDialog::OnDoubleClick(const QModelIndex& index)
     const QString textForClipboard = module + QLatin1Char( '.' ) + command + "()";
 
     QApplication::clipboard()->setText(textForClipboard);
-    setWindowTitle(QString(QObject::tr("Script Help (Copied \"%1\" to clipboard)")).arg(textForClipboard));
+    setWindowTitle(QString("Script Help (Copied \"%1\" to clipboard)").arg(textForClipboard));
 }
 
 #include <ScriptHelpDialog.moc>

@@ -1650,7 +1650,7 @@ QBreakpointsPanel::QBreakpointsPanel(QWidget* parent)
     : AzQtComponents::StyledDockWidget(parent)
     , m_breakpointsTreeCtrl(new CBreakpointsTreeCtrl(this))
 {
-    setWindowTitle(QObject::tr("Breakpoints"));
+    setWindowTitle("Breakpoints");
     setWidget(m_breakpointsTreeCtrl);
 }
 
@@ -1802,40 +1802,40 @@ void CHyperGraphDialog::CreateMenuBar()
 {
     QMenuBar* mb = this->menuBar();
 
-    QMenu* fileMenu = mb->addMenu(QObject::tr("&File"));
-    fileMenu->addAction(QObject::tr("New"), this, SLOT(OnFileNew()), QKeySequence::New);
+    QMenu* fileMenu = mb->addMenu("&File");
+    fileMenu->addAction("New", this, SLOT(OnFileNew()), QKeySequence::New);
     RegisterLastActionForMetrics(fileMenu, "FlowGraphFileNew");
     /*
-    fileMenu->addAction(QObject::tr("New AI Action..."), this, SLOT(OnFileNewAction()));
-    fileMenu->addAction(QObject::tr("New Custom Action..."), this, SLOT(OnFileNewCustomAction()));
+    fileMenu->addAction("New AI Action...", this, SLOT(OnFileNewAction()));
+    fileMenu->addAction("New Custom Action...", this, SLOT(OnFileNewCustomAction()));
     */
     {
-        QMenu* subMenu = fileMenu->addMenu(QObject::tr("New Flow Graph Module..."));
-        subMenu->addAction(QObject::tr("Global"), this, SLOT(OnFileNewGlobalFGModule()));
+        QMenu* subMenu = fileMenu->addMenu("New Flow Graph Module...");
+        subMenu->addAction("Global", this, SLOT(OnFileNewGlobalFGModule()));
         RegisterLastActionForMetrics(subMenu, "FlowGraphFileNewModuleGlobal");
-        subMenu->addAction(QObject::tr("Level"), this, SLOT(OnFileNewLevelFGModule()));
+        subMenu->addAction("Level", this, SLOT(OnFileNewLevelFGModule()));
         RegisterLastActionForMetrics(subMenu, "FlowGraphFileNewModuleLevel");
         addActions(subMenu->actions());
     }
-    fileMenu->addAction(QObject::tr("New MaterialFX Graph..."), this, SLOT(OnFileNewMatFXGraph()));
+    fileMenu->addAction("New MaterialFX Graph...", this, SLOT(OnFileNewMatFXGraph()));
     RegisterLastActionForMetrics(fileMenu, "FlowGraphFileNewMaterialFXGraph");
-    fileMenu->addAction(QObject::tr("Open..."), this, SLOT(OnFileOpen()), QKeySequence::Open);
+    fileMenu->addAction("Open...", this, SLOT(OnFileOpen()), QKeySequence::Open);
     RegisterLastActionForMetrics(fileMenu, "FlowGraphFileOpen");
-    fileMenu->addAction(QObject::tr("&Save"), this, SLOT(OnFileSave()), QKeySequence::Save);
+    fileMenu->addAction("&Save", this, SLOT(OnFileSave()), QKeySequence::Save);
     RegisterLastActionForMetrics(fileMenu, "FlowGraphFileSave");
-    fileMenu->addAction(QObject::tr("Save &As..."), this, SLOT(OnFileSaveAs()));
+    fileMenu->addAction("Save &As...", this, SLOT(OnFileSaveAs()));
     RegisterLastActionForMetrics(fileMenu, "FlowGraphFileSaveAs");
     fileMenu->addSeparator();
-    fileMenu->addAction(QObject::tr("&Import..."), this, SLOT(OnFileImport()));
+    fileMenu->addAction("&Import...", this, SLOT(OnFileImport()));
     RegisterLastActionForMetrics(fileMenu, "FlowGraphFileImport");
-    fileMenu->addAction(QObject::tr("&Export Selection..."), this, SLOT(OnFileExportSelection()));
+    fileMenu->addAction("&Export Selection...", this, SLOT(OnFileExportSelection()));
     RegisterLastActionForMetrics(fileMenu, "FlowGraphFileExportSelection");
     addActions(fileMenu->actions());
 
-    QMenu* editMenu = mb->addMenu(QObject::tr("&Edit"));
-    m_undoAction = editMenu->addAction(QIcon(":/HyperGraph/toolbar/undo.png"), QObject::tr("Undo"), this, SLOT(OnEditUndo()), QKeySequence::Undo);
+    QMenu* editMenu = mb->addMenu("&Edit");
+    m_undoAction = editMenu->addAction(QIcon(":/HyperGraph/toolbar/undo.png"), "Undo", this, SLOT(OnEditUndo()), QKeySequence::Undo);
     RegisterLastActionForMetrics(editMenu, "FlowGraphEditUndo");
-    m_redoAction = editMenu->addAction(QIcon(":/HyperGraph/toolbar/redo.png"), QObject::tr("Redo"), this, SLOT(OnEditRedo()), QKeySequence::Redo);
+    m_redoAction = editMenu->addAction(QIcon(":/HyperGraph/toolbar/redo.png"), "Redo", this, SLOT(OnEditRedo()), QKeySequence::Redo);
     RegisterLastActionForMetrics(editMenu, "FlowGraphEditRedo");
     editMenu->addSeparator();
     editMenu->addAction(tr("Group"), m_widget, SLOT(OnCreateGroupFromSelection()));
@@ -1858,11 +1858,11 @@ void CHyperGraphDialog::CreateMenuBar()
     RegisterLastActionForMetrics(editMenu, "FlowGraphEditQuickCreateNode");
 
     editMenu->addSeparator();
-    editMenu->addAction(QObject::tr("&Find"), this, SLOT(OnFind()), QKeySequence::Find);
+    editMenu->addAction("&Find", this, SLOT(OnFind()), QKeySequence::Find);
     RegisterLastActionForMetrics(editMenu, "FlowGraphEditFind");
     addActions(editMenu->actions());
 
-    QMenu* viewMenu = mb->addMenu(QObject::tr("&View"));
+    QMenu* viewMenu = mb->addMenu("&View");
     viewMenu->addAction(m_componentsTaskPanel->toggleViewAction());
     viewMenu->addAction(m_graphsTreeDock->toggleViewAction());
     viewMenu->addAction(m_taskPanel->toggleViewAction());
@@ -1877,20 +1877,20 @@ void CHyperGraphDialog::CreateMenuBar()
     editMenu->addAction(tr("Refresh View"), m_widget, SLOT(OnShortcutRefresh()), QKeySequence(Qt::Key_R));
     RegisterLastActionForMetrics(viewMenu, "FlowGraphViewRefresh");
     {
-        QMenu* menu = viewMenu->addMenu(QObject::tr("Components"));
-        m_componentsApprovedAction = menu->addAction(QObject::tr("Release"), this, SLOT(OnComponentsViewToggle()));
+        QMenu* menu = viewMenu->addMenu("Components");
+        m_componentsApprovedAction = menu->addAction("Release", this, SLOT(OnComponentsViewToggle()));
         RegisterLastActionForMetrics(menu, "FlowGraphViewComponentsRelease");
         m_componentsApprovedAction->setCheckable(true);
         m_componentsApprovedAction->setData(EFLN_APPROVED);
-        m_componentsAdvancedAction = menu->addAction(QObject::tr("Advanced"), this, SLOT(OnComponentsViewToggle()));
+        m_componentsAdvancedAction = menu->addAction("Advanced", this, SLOT(OnComponentsViewToggle()));
         RegisterLastActionForMetrics(menu, "FlowGraphViewComponentsAdvanced");
         m_componentsAdvancedAction->setCheckable(true);
         m_componentsAdvancedAction->setData(EFLN_ADVANCED);
-        m_componentsDebugAction = menu->addAction(QObject::tr("Debug"), this, SLOT(OnComponentsViewToggle()));
+        m_componentsDebugAction = menu->addAction("Debug", this, SLOT(OnComponentsViewToggle()));
         RegisterLastActionForMetrics(menu, "FlowGraphViewComponentsDebug");
         m_componentsDebugAction->setCheckable(true);
         m_componentsDebugAction->setData(EFLN_DEBUG);
-        m_componentsObsoleteAction = menu->addAction(QObject::tr("Obsolete"), this, SLOT(OnComponentsViewToggle()));
+        m_componentsObsoleteAction = menu->addAction("Obsolete", this, SLOT(OnComponentsViewToggle()));
         RegisterLastActionForMetrics(menu, "FlowGraphViewComponentsObsolete");
         m_componentsObsoleteAction->setCheckable(true);
         m_componentsObsoleteAction->setData(EFLN_OBSOLETE);
@@ -1898,7 +1898,7 @@ void CHyperGraphDialog::CreateMenuBar()
 
         OnComponentsViewUpdate();
     }
-    m_viewMultiplayerAction = viewMenu->addAction(QObject::tr("Multiplayer"), this, SLOT(OnMultiPlayerViewToggle()));
+    m_viewMultiplayerAction = viewMenu->addAction("Multiplayer", this, SLOT(OnMultiPlayerViewToggle()));
     RegisterLastActionForMetrics(viewMenu, "FlowGraphViewMultiplayer");
     m_viewMultiplayerAction->setCheckable(true);
     if (m_taskPanel)
@@ -1907,34 +1907,34 @@ void CHyperGraphDialog::CreateMenuBar()
     }
     addActions(viewMenu->actions());
 
-    QMenu* toolsMenu = mb->addMenu(QObject::tr("T&ools"));
-    toolsMenu->addAction(QObject::tr("Edit &Graph Tokens..."), this, SLOT(OnEditGraphTokens()));
+    QMenu* toolsMenu = mb->addMenu("T&ools");
+    toolsMenu->addAction("Edit &Graph Tokens...", this, SLOT(OnEditGraphTokens()));
     RegisterLastActionForMetrics(toolsMenu, "FlowGraphToolsEditGraphTokens");
-    toolsMenu->addAction(QObject::tr("Edit &Module..."), this, SLOT(OnEditModuleInputsOutputs()));
+    toolsMenu->addAction("Edit &Module...", this, SLOT(OnEditModuleInputsOutputs()));
     RegisterLastActionForMetrics(toolsMenu, "FlowGraphToolsEditModule");
     addActions(toolsMenu->actions());
 
-    QMenu* debugMenu = mb->addMenu(QObject::tr("&Debug"));
-    m_debugToggleAction = debugMenu->addAction(QIcon(":/HyperGraph/toolbar/debug.png"), QObject::tr("Toggle Debugging"), this, SLOT(OnToggleDebug()));
+    QMenu* debugMenu = mb->addMenu("&Debug");
+    m_debugToggleAction = debugMenu->addAction(QIcon(":/HyperGraph/toolbar/debug.png"), "Toggle Debugging", this, SLOT(OnToggleDebug()));
     RegisterLastActionForMetrics(debugMenu, "FlowGraphDebugToggle");
     m_debugToggleAction->setCheckable(true);
-    m_debugEraseAction = debugMenu->addAction(QIcon(":/HyperGraph/toolbar/erase.png"), QObject::tr("Erase Debug Information"), this, SLOT(OnEraseDebug()));
+    m_debugEraseAction = debugMenu->addAction(QIcon(":/HyperGraph/toolbar/erase.png"), "Erase Debug Information", this, SLOT(OnEraseDebug()));
     RegisterLastActionForMetrics(debugMenu, "FlowGraphDebugEraseDebugInfo");
     {
-        QMenu* menu = debugMenu->addMenu(QObject::tr("Ignore Flowgraph Type"));
-        m_debugIgnoreAIAction = menu->addAction(QObject::tr("AI Action"), this, SLOT(OnDebugFlowgraphTypeToggle()));
+        QMenu* menu = debugMenu->addMenu("Ignore Flowgraph Type");
+        m_debugIgnoreAIAction = menu->addAction("AI Action", this, SLOT(OnDebugFlowgraphTypeToggle()));
         RegisterLastActionForMetrics(menu, "FlowGraphDebugIgnoreFlowGraphAIAction");
         m_debugIgnoreAIAction->setData(IFlowGraph::eFGT_AIAction);
         m_debugIgnoreAIAction->setCheckable(true);
-        m_debugIgnoreModuleAction = menu->addAction(QObject::tr("Module"), this, SLOT(OnDebugFlowgraphTypeToggle()));
+        m_debugIgnoreModuleAction = menu->addAction("Module", this, SLOT(OnDebugFlowgraphTypeToggle()));
         RegisterLastActionForMetrics(menu, "FlowGraphDebugIgnoreFlowGraphModule");
         m_debugIgnoreModuleAction->setData(IFlowGraph::eFGT_Module);
         m_debugIgnoreModuleAction->setCheckable(true);
-        m_debugIgnoreCustomAction = menu->addAction(QObject::tr("Custom Action"), this, SLOT(OnDebugFlowgraphTypeToggle()));
+        m_debugIgnoreCustomAction = menu->addAction("Custom Action", this, SLOT(OnDebugFlowgraphTypeToggle()));
         RegisterLastActionForMetrics(menu, "FlowGraphDebugIgnoreFlowGraphCustomAction");
         m_debugIgnoreCustomAction->setData(IFlowGraph::eFGT_CustomAction);
         m_debugIgnoreCustomAction->setCheckable(true);
-        m_debugIgnoreMaterialFXAction = menu->addAction(QObject::tr("MaterialFX"), this, SLOT(OnDebugFlowgraphTypeToggle()));
+        m_debugIgnoreMaterialFXAction = menu->addAction("MaterialFX", this, SLOT(OnDebugFlowgraphTypeToggle()));
         RegisterLastActionForMetrics(menu, "FlowGraphDebugIgnoreFlowGraphMaterialFX");
         m_debugIgnoreMaterialFXAction->setData(IFlowGraph::eFGT_MaterialFx);
         m_debugIgnoreMaterialFXAction->setCheckable(true);
@@ -1983,7 +1983,7 @@ void CHyperGraphDialog::CreateLeftPane()
     m_graphsTreeDock->setObjectName("m_graphsTreeDock");
     m_graphsTreeCtrl = new CHyperGraphsTreeCtrl(this);
     m_graphsTreeDock->setWidget(m_graphsTreeCtrl);
-    m_graphsTreeDock->setWindowTitle(QObject::tr("Graphs"));
+    m_graphsTreeDock->setWindowTitle("Graphs");
     addDockWidget(Qt::LeftDockWidgetArea, m_graphsTreeDock);
     m_graphsTreeCtrl->setSelectionMode(QTreeView::ExtendedSelection);
     m_graphsTreeCtrl->setSelectionBehavior(QTreeView::SelectRows);
@@ -3303,19 +3303,19 @@ bool CHyperGraphDialog::CreateContextMenu(QMenu& roMenu, TDTreeItems& rchSelecte
 
     if (aboMenuFlags[eIsGlobalModuleFolder])
     {
-        roMenu.addAction(QObject::tr("New Global Flow Graph Module"))->setData(ID_GRAPHS_NEW_GLOBAL_MODULE);
+        roMenu.addAction("New Global Flow Graph Module")->setData(ID_GRAPHS_NEW_GLOBAL_MODULE);
     }
 
     if (aboMenuFlags[eIsLevelModuleFolder])
     {
-        roMenu.addAction(QObject::tr("New Level Flow Graph Module"))->setData(ID_GRAPHS_NEW_LEVEL_MODULE);
+        roMenu.addAction("New Level Flow Graph Module")->setData(ID_GRAPHS_NEW_LEVEL_MODULE);
     }
 
     if (aboMenuFlags[eGraphValid])
     {
         if (!aboMenuFlags[eIsModule])
         {
-            roMenu.addAction(aboMenuFlags[eGraphEnabled] ? QObject::tr("Enable") : QObject::tr("Disable"))->setData(ID_GRAPHS_ENABLE);
+            roMenu.addAction(aboMenuFlags[eGraphEnabled] ? "Enable" : "Disable")->setData(ID_GRAPHS_ENABLE);
         }
 
         // we can only rename the custom graphs found in Files node
@@ -3346,14 +3346,14 @@ bool CHyperGraphDialog::CreateContextMenu(QMenu& roMenu, TDTreeItems& rchSelecte
 
     if (aboMenuFlags[eIsOwnedByEntity])
     {
-        roMenu.addAction(QObject::tr("Select Entity"))->setData(ID_GRAPHS_SELECT_ENTITY);
+        roMenu.addAction("Select Entity")->setData(ID_GRAPHS_SELECT_ENTITY);
         roMenu.addSeparator();
-        roMenu.addAction(QObject::tr("Delete Graph"))->setData(ID_GRAPHS_REMOVE_GRAPH);
+        roMenu.addAction("Delete Graph")->setData(ID_GRAPHS_REMOVE_GRAPH);
     }
 
     if (aboMenuFlags[eIsAssociatedToFlowGraph] && !aboMenuFlags[eIsModule] && !aboMenuFlags[eIsComponentEntity])
     {
-        roMenu.addAction(QObject::tr("Change Folder"))->setData(ID_GRAPHS_CHANGE_FOLDER);
+        roMenu.addAction("Change Folder")->setData(ID_GRAPHS_CHANGE_FOLDER);
     }
 
     if (aboMenuFlags[eIsEntitySubFolder])
@@ -3361,23 +3361,23 @@ bool CHyperGraphDialog::CreateContextMenu(QMenu& roMenu, TDTreeItems& rchSelecte
         // Renaming does not make sense in batch considering the current usage of the interface.
         if (rchSelectedItems.size() == 1)
         {
-            roMenu.addAction(QObject::tr("Change Group Name"))->setData(ID_GRAPHS_RENAME_FOLDER);
+            roMenu.addAction("Change Group Name")->setData(ID_GRAPHS_RENAME_FOLDER);
         }
     }
 
     if (aboMenuFlags[eIsEntitySubFolderOrFolder])
     {
-        roMenu.addAction(QObject::tr("Enable All"))->setData(ID_GRAPHS_ENABLE_ALL);
-        roMenu.addAction(QObject::tr("Disable All"))->setData(ID_GRAPHS_DISABLE_ALL);
+        roMenu.addAction("Enable All")->setData(ID_GRAPHS_ENABLE_ALL);
+        roMenu.addAction("Disable All")->setData(ID_GRAPHS_DISABLE_ALL);
     }
 
     if (aboMenuFlags[eGraphValid])
     {
         roMenu.addSeparator();
-        QAction* a = roMenu.addAction(QObject::tr("Enable (Break/Trace) points"));
+        QAction* a = roMenu.addAction("Enable (Break/Trace) points");
         a->setData(ID_GRAPHS_ENABLE_DEBUGGING);
         a->setEnabled(aboMenuFlags[eIsDebuggingEnabled]);
-        a = roMenu.addAction(QObject::tr("Disable (Break/Trace) points"));
+        a = roMenu.addAction("Disable (Break/Trace) points");
         a->setData(ID_GRAPHS_DISABLE_DEBUGGING);
         a->setEnabled(!aboMenuFlags[eIsDebuggingEnabled]);
     }
@@ -4073,28 +4073,28 @@ bool CHyperGraphDialog::CreateBreakpointContextMenu(QMenu& roMenu, QTreeWidgetIt
     {
     case SBreakpointItem::eIT_Graph:
     {
-        roMenu.addAction(QObject::tr("Remove Breakpoints for Graph"))->setData(ID_BREAKPOINT_REMOVE_GRAPH);
+        roMenu.addAction("Remove Breakpoints for Graph")->setData(ID_BREAKPOINT_REMOVE_GRAPH);
     }
     break;
     case SBreakpointItem::eIT_Node:
     {
-        roMenu.addAction(QObject::tr("Remove Breakpoints for Node"))->setData(ID_BREAKPOINT_REMOVE_NODE);
+        roMenu.addAction("Remove Breakpoints for Node")->setData(ID_BREAKPOINT_REMOVE_NODE);
     }
     break;
     case SBreakpointItem::eIT_Port:
     {
         if (m_pFlowGraphDebugger)
         {
-            roMenu.addAction(QObject::tr("Remove Breakpoint"))->setData(ID_BREAKPOINT_REMOVE_PORT);
+            roMenu.addAction("Remove Breakpoint")->setData(ID_BREAKPOINT_REMOVE_PORT);
             roMenu.addSeparator();
 
             const bool bIsEnabled = m_pFlowGraphDebugger->IsBreakpointEnabled(breakpointItem.flowgraph, breakpointItem.addr);
-            QAction* a = roMenu.addAction(QObject::tr("Enabled"));
+            QAction* a = roMenu.addAction("Enabled");
             a->setData(ID_BREAKPOINT_ENABLE);
             a->setCheckable(true);
             a->setChecked(bIsEnabled);
             const bool bIsTracepoint = m_pFlowGraphDebugger->IsTracepoint(breakpointItem.flowgraph, breakpointItem.addr);
-            a = roMenu.addAction(QObject::tr("Tracepoint"));
+            a = roMenu.addAction("Tracepoint");
             a->setData(ID_TRACEPOINT_ENABLE);
             a->setCheckable(true);
             a->setChecked(bIsTracepoint);
