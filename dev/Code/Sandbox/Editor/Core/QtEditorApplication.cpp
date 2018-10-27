@@ -37,6 +37,7 @@
 #include "Material/MaterialManager.h"
 
 #include "Util/BoostPythonHelpers.h"
+#include <CryPath.h>
 
 #include <AzCore/EBus/EBus.h>
 #include <AzCore/UserSettings/UserSettings.h>
@@ -593,48 +594,74 @@ namespace Editor
 
     QTranslator* EditorQtApplication::CreateAndInitializeTranslator(const QString& filename, const QString& directory)
     {
-        Q_ASSERT(QFile::exists(directory + "/" + filename));
+        //Q_ASSERT(QFile::exists(directory + "/" + filename));
 
         QTranslator* translator = new QTranslator();
-        translator->load(filename, directory);
-        installTranslator(translator);
+		if (translator->load(filename, directory))
+		{
+			installTranslator(translator);
+		}
+		else
+		{
+			CryWarning(VALIDATOR_MODULE_EDITOR, VALIDATOR_WARNING, "[UI i18n] Install Qt Translator %s failed!",filename.toLocal8Bit().data());
+		}
+       
         return translator;
     }
 
     void EditorQtApplication::InstallEditorTranslators()
     {
+		const char* engineRootPath = nullptr;
+		EBUS_EVENT_RESULT(engineRootPath, AzToolsFramework::ToolsApplicationRequestBus, GetEngineRootPath);
+		string engineRootDir = PathUtil::RemoveSlash(engineRootPath);
+
+		QString qtTranslationFilesPath;
+		QString editorSettingsFile = engineRootDir.c_str() + QString("/editor.ini");
+		QSettings *pEditorSetting = new QSettings(editorSettingsFile, QSettings::IniFormat);
+		QString editorLang = pEditorSetting->value("/Sandbox/Language").toString();
+		if (!editorLang.isNull())
+		{
+			qtTranslationFilesPath = engineRootDir.c_str() + QString("/Editor/UI/Translations/") + editorLang;
+			CryWarning(VALIDATOR_MODULE_EDITOR, VALIDATOR_WARNING, "[UI i18n] Read editor.ini successfully, editor folder is %s", qtTranslationFilesPath.toLocal8Bit().constData());
+		}
+		else
+		{
+			qtTranslationFilesPath = engineRootDir.c_str() + QString("/Editor/UI/Translations/") + QLocale::system().name().toLower();
+			CryWarning(VALIDATOR_MODULE_EDITOR, VALIDATOR_WARNING, "[UI i18n] Read editor.ini failed, but use system language, editor folder is %s", qtTranslationFilesPath.toLocal8Bit().constData());
+		}
+
 		// Sandbox
-		m_SandboxTranslator = CreateAndInitializeTranslator("Sandbox_zh-cn.qm", ":/Translations");
+		m_SandboxTranslator = CreateAndInitializeTranslator("Sandbox.qm", qtTranslationFilesPath);
 
 		// Framework
-		m_AzQtComponentsTranslator = CreateAndInitializeTranslator("AzQtComponents_zh-cn.qm", ":/Translations");
-		m_AzToolsFrameworkTranslator = CreateAndInitializeTranslator("AzToolsFramework_zh-cn.qm", ":/Translations");
+		m_AzQtComponentsTranslator = CreateAndInitializeTranslator("AzQtComponents.qm", qtTranslationFilesPath);
+		m_AzToolsFrameworkTranslator = CreateAndInitializeTranslator("AzToolsFramework.qm", qtTranslationFilesPath);
 
 		////// Plugins
-		m_EditorUI_QTTranslator = CreateAndInitializeTranslator("EditorUI_QT_zh-cn.qm", ":/Translations");
-		m_EditorCommonTranslator = CreateAndInitializeTranslator("EditorCommon_zh-cn.qm", ":/Translations");
-		m_ComponentEntityEditorPluginTranslator = CreateAndInitializeTranslator("ComponentEntityEditorPlugin_zh-cn.qm", ":/Translations");
-		m_CryDesignerTranslator = CreateAndInitializeTranslator("CryDesigner_zh-cn.qm", ":/Translations");
-		//m_DeploymentToolTranslator = CreateAndInitializeTranslator("DeploymentTool_zh-cn.qm", ":/Translations");
-		m_EditorAssetImporterTranslator = CreateAndInitializeTranslator("EditorAssetImporter_zh-cn.qm", ":/Translations");
-		m_EditorAudioControlsEditorTranslator = CreateAndInitializeTranslator("EditorAudioControlsEditor_zh-cn.qm", ":/Translations");
+		m_EditorUI_QTTranslator = CreateAndInitializeTranslator("EditorUI_QT.qm", qtTranslationFilesPath);
+		m_EditorCommonTranslator = CreateAndInitializeTranslator("EditorCommon.qm", qtTranslationFilesPath);
+		m_ComponentEntityEditorPluginTranslator = CreateAndInitializeTranslator("ComponentEntityEditorPlugin.qm", qtTranslationFilesPath);
+		m_CryDesignerTranslator = CreateAndInitializeTranslator("CryDesigner.qm", qtTranslationFilesPath);
+		//m_DeploymentToolTranslator = CreateAndInitializeTranslator("DeploymentTool.qm", qtTranslationFilesPath);
+		m_EditorAssetImporterTranslator = CreateAndInitializeTranslator("EditorAssetImporter.qm", qtTranslationFilesPath);
+		m_EditorAudioControlsEditorTranslator = CreateAndInitializeTranslator("EditorAudioControlsEditor.qm", qtTranslationFilesPath);
 
-		m_FBXPluginTranslator = CreateAndInitializeTranslator("FBXPlugin_zh-cn.qm", ":/Translations");
-		m_MaglevControlPanelTranslator = CreateAndInitializeTranslator("MaglevControlPanel_zh-cn.qm", ":/Translations");
-		m_ParticleEditorPluginTranslator = CreateAndInitializeTranslator("ParticleEditorPlugin_zh-cn.qm", ":/Translations");
-		m_PerforcePluginTranslator = CreateAndInitializeTranslator("PerforcePlugin_zh-cn.qm", ":/Translations");
-		//m_UiCanvasEditorTranslator = CreateAndInitializeTranslator("UiCanvasEditor_zh-cn.qm", ":/Translations");
-		m_EditorAnimationTranslator = CreateAndInitializeTranslator("EditorAnimation_zh-cn.qm", ":/Translations");
-		m_EditorModularBehaviorTreeTranslator = CreateAndInitializeTranslator("EditorModularBehaviorTree_zh-cn.qm", ":/Translations");
+		m_FBXPluginTranslator = CreateAndInitializeTranslator("FBXPlugin.qm", qtTranslationFilesPath);
+		m_MaglevControlPanelTranslator = CreateAndInitializeTranslator("MaglevControlPanel.qm", qtTranslationFilesPath);
+		m_ParticleEditorPluginTranslator = CreateAndInitializeTranslator("ParticleEditorPlugin.qm", qtTranslationFilesPath);
+		m_PerforcePluginTranslator = CreateAndInitializeTranslator("PerforcePlugin.qm", qtTranslationFilesPath);
+		m_UiCanvasEditorTranslator = CreateAndInitializeTranslator("UiCanvasEditor.qm", qtTranslationFilesPath);
+		m_EditorAnimationTranslator = CreateAndInitializeTranslator("EditorAnimation.qm", qtTranslationFilesPath);
+		m_EditorModularBehaviorTreeTranslator = CreateAndInitializeTranslator("EditorModularBehaviorTree.qm", qtTranslationFilesPath);
 
 		//// Gems
-		m_CloudGemDynamicContentTranslator = CreateAndInitializeTranslator("CloudGemDynamicContent_zh-cn.qm", ":/Translations");
-		m_EMotionFXTranslator = CreateAndInitializeTranslator("EMotionFX_zh-cn.qm", ":/Translations");
-		m_GraphCanvasTranslator = CreateAndInitializeTranslator("GraphCanvas_zh-cn.qm", ":/Translations");
-		m_ScriptCanvasTranslator = CreateAndInitializeTranslator("ScriptCanvas_zh-cn.qm", ":/Translations");
-		m_ScriptCanvasDeveloperTranslator = CreateAndInitializeTranslator("ScriptCanvasDeveloper_zh-cn.qm", ":/Translations");
-		m_SubstanceTranslator = CreateAndInitializeTranslator("Substance_zh-cn.qm", ":/Translations");
-		m_SceneProcessingTranslator = CreateAndInitializeTranslator("SceneProcessing_zh-cn.qm", ":/Translations");
+		m_CloudGemDynamicContentTranslator = CreateAndInitializeTranslator("CloudGemDynamicContent.qm", qtTranslationFilesPath);
+		m_EMotionFXTranslator = CreateAndInitializeTranslator("EMotionFX.qm", qtTranslationFilesPath);
+		m_GraphCanvasTranslator = CreateAndInitializeTranslator("GraphCanvas.qm", qtTranslationFilesPath);
+		m_ScriptCanvasTranslator = CreateAndInitializeTranslator("ScriptCanvas.qm", qtTranslationFilesPath);
+		m_ScriptCanvasDeveloperTranslator = CreateAndInitializeTranslator("ScriptCanvasDeveloper.qm", qtTranslationFilesPath);
+		m_SubstanceTranslator = CreateAndInitializeTranslator("Substance.qm", qtTranslationFilesPath);
+		m_SceneProcessingTranslator = CreateAndInitializeTranslator("SceneProcessing.qm", qtTranslationFilesPath);
     }
 
     void EditorQtApplication::DeleteTranslator(QTranslator*& translator)
@@ -656,7 +683,7 @@ namespace Editor
 		//// Plugins 
 		DeleteTranslator(m_ComponentEntityEditorPluginTranslator);
 		DeleteTranslator(m_CryDesignerTranslator);
-		//DeleteTranslator(m_DeploymentToolTranslator);
+		DeleteTranslator(m_DeploymentToolTranslator);
 		DeleteTranslator(m_EditorAssetImporterTranslator);
 		DeleteTranslator(m_EditorAudioControlsEditorTranslator);
 		DeleteTranslator(m_EditorCommonTranslator);
