@@ -1636,6 +1636,46 @@
             ]
         },
         {
+            "identifier" : "LibIconv",
+            "name" : "LibIconv",
+            "version" : "1.15",
+            "source" : "libiconv/1.15",
+            "optional" : 1,
+            "description" : "LibIconvSDKDescriptionSummary",
+            "detailedInstructions" : "LibIconvSDKDetailedInstructions",
+            "roles" : ["compilegame", "compileengine", "compilesandbox"],
+            "hostOS" : ["windows"],
+            "symlinks" :
+            [
+                {
+                    "compilers" : ["vc140", "vc141"],
+                    "source" : "libiconv/1.15",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/libiconv",
+                    "exampleFile" : "include/iconv.h"
+                }
+            ]
+        },
+        {
+            "identifier" : "LibIntl",
+            "name" : "LibIntl",
+            "version" : "0.17",
+            "source" : "libintl/0.17",
+            "optional" : 1,
+            "description" : "LibIntlSDKDescriptionSummary",
+            "detailedInstructions" : "LibIntlSDKDetailedInstructions",
+            "roles" : ["compilegame", "compileengine", "compilesandbox"],
+            "hostOS" : ["windows"],
+            "symlinks" :
+            [
+                {
+                    "compilers" : ["vc140", "vc141"],
+                    "source" : "libintl/0.17",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/libintl",
+                    "exampleFile" : "include/libintl.h"
+                }
+            ]
+        },
+        {
             "identifier" : "benchmark",
             "name" : "benchmarkName",
             "version" : "1.2.0",
