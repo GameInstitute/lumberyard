@@ -144,9 +144,35 @@ namespace Editor
         QTranslator* CreateAndInitializeTranslator(const QString& filename, const QString& directory);
         void DeleteTranslator(QTranslator*& translator);
 
-        QTranslator* m_editorTranslator = nullptr;
-        QTranslator* m_flowgraphTranslator = nullptr;
-        QTranslator* m_assetBrowserTranslator = nullptr;
+		// Sandbox
+		QTranslator* m_SandboxTranslator = nullptr;
+
+		// Framework
+		QTranslator* m_AzQtComponentsTranslator = nullptr;
+		QTranslator* m_AzToolsFrameworkTranslator = nullptr;
+
+		//// Plugins 
+		QTranslator* m_ComponentEntityEditorPluginTranslator = nullptr;
+		QTranslator* m_CryDesignerTranslator = nullptr;
+		QTranslator* m_DeploymentToolTranslator = nullptr;
+		QTranslator* m_EditorAssetImporterTranslator = nullptr;
+		QTranslator* m_EditorAudioControlsEditorTranslator = nullptr;
+		QTranslator* m_EditorCommonTranslator = nullptr;
+		QTranslator* m_EditorUI_QTTranslator = nullptr;
+		QTranslator* m_FBXPluginTranslator = nullptr;
+		QTranslator* m_MaglevControlPanelTranslator = nullptr;
+		QTranslator* m_ParticleEditorPluginTranslator = nullptr;
+		QTranslator* m_PerforcePluginTranslator = nullptr;
+		QTranslator* m_UiCanvasEditorTranslator = nullptr;
+
+		// Gems
+		QTranslator* m_CloudGemDynamicContentTranslator = nullptr;
+		QTranslator* m_EMotionFXTranslator = nullptr;
+		QTranslator* m_GraphCanvasTranslator = nullptr;
+		QTranslator* m_ScriptCanvasTranslator = nullptr;
+		QTranslator* m_ScriptCanvasDeveloperTranslator = nullptr;
+		QTranslator* m_SubstanceTranslator = nullptr;
+		
         QTimer* const m_idleTimer = nullptr;
         bool m_isMovingOrResizing = false;
 
