@@ -17,7 +17,7 @@ ComponentButton::ComponentButton(HierarchyWidget* hierarchy,
     QWidget* parent)
     : QPushButton(parent)
 {
-    setText("Add Component...");
+    setText(QObject::tr("Add Component..."));
 
     QObject::connect(this,
         &QPushButton::clicked,

@@ -232,7 +232,7 @@ BOOL CUiAnimViewDialog::OnInitDialog()
 
     m_wndCurveEditorDock = new AzQtComponents::StyledDockWidget(this);
     m_wndCurveEditorDock->setObjectName("m_wndCurveEditorDock");
-    m_wndCurveEditorDock->setWindowTitle("Curve Editor");
+    m_wndCurveEditorDock->setWindowTitle(QObject::tr("Curve Editor"));
     m_wndCurveEditor = new UiAnimViewCurveEditorDialog(this);
     m_wndCurveEditorDock->setWidget(m_wndCurveEditor);
     addDockWidget(Qt::BottomDockWidgetArea, m_wndCurveEditorDock);
@@ -260,16 +260,16 @@ void CUiAnimViewDialog::InitToolbar()
     m_mainToolBar = addToolBar("Sequence/Node Toolbar");
     m_mainToolBar->setObjectName("m_mainToolBar");
     m_mainToolBar->setFloatable(false);
-    m_mainToolBar->addWidget(new QLabel("Sequence/Node:"));
-    QAction* qaction = m_mainToolBar->addAction(QIcon(":/Trackview/main/tvmain-00.png"), "Add Sequence");
+    m_mainToolBar->addWidget(new QLabel(QObject::tr("Sequence/Node:")));
+    QAction* qaction = m_mainToolBar->addAction(QIcon(":/Trackview/main/tvmain-00.png"), QObject::tr("Add Sequence"));
     qaction->setData(ID_TV_ADD_SEQUENCE);
     m_actions[ID_TV_ADD_SEQUENCE] = qaction;
     connect(qaction, &QAction::triggered, this, &CUiAnimViewDialog::OnAddSequence);
-    qaction = m_mainToolBar->addAction(QIcon(":/Trackview/main/tvmain-01.png"), "Delete Sequence");
+    qaction = m_mainToolBar->addAction(QIcon(":/Trackview/main/tvmain-01.png"), QObject::tr("Delete Sequence"));
     qaction->setData(ID_TV_DEL_SEQUENCE);
     m_actions[ID_TV_DEL_SEQUENCE] = qaction;
     connect(qaction, &QAction::triggered, this, &CUiAnimViewDialog::OnDelSequence);
-    qaction = m_mainToolBar->addAction(QIcon(":/Trackview/main/tvmain-02.png"), "Edit Sequence");
+    qaction = m_mainToolBar->addAction(QIcon(":/Trackview/main/tvmain-02.png"), QObject::tr("Edit Sequence"));
     qaction->setData(ID_TV_EDIT_SEQUENCE);
     m_actions[ID_TV_EDIT_SEQUENCE] = qaction;
     connect(qaction, &QAction::triggered, this, &CUiAnimViewDialog::OnEditSequence);
@@ -278,17 +278,17 @@ void CUiAnimViewDialog::InitToolbar()
     m_mainToolBar->addWidget(m_sequencesComboBox);
     m_mainToolBar->addSeparator();
 
-    qaction = m_mainToolBar->addAction(QIcon(":/Trackview/main/tvmain-03.png"), "Add Selected Node");
+    qaction = m_mainToolBar->addAction(QIcon(":/Trackview/main/tvmain-03.png"), QObject::tr("Add Selected Node"));
     qaction->setData(ID_ADDNODE);
     m_actions[ID_ADDNODE] = qaction;
     connect(qaction, &QAction::triggered, this, &CUiAnimViewDialog::OnAddSelectedNode);
 
-    qaction = m_mainToolBar->addAction(QIcon(":/Trackview/main/tvmain-05.png"), "Find");
+    qaction = m_mainToolBar->addAction(QIcon(":/Trackview/main/tvmain-05.png"), QObject::tr("Find"));
     qaction->setData(ID_FIND);
     m_actions[ID_FIND] = qaction;
     connect(qaction, &QAction::triggered, this, &CUiAnimViewDialog::OnFindNode);
 
-    qaction = m_mainToolBar->addAction(QIcon(":/Trackview/main/tvmain-06.png"), "Toggle Disable");
+    qaction = m_mainToolBar->addAction(QIcon(":/Trackview/main/tvmain-06.png"), QObject::tr("Toggle Disable"));
     qaction->setCheckable(true);
     qaction->setData(ID_TRACKVIEW_TOGGLE_DISABLE);
     m_actions[ID_TRACKVIEW_TOGGLE_DISABLE] = qaction;
@@ -297,21 +297,21 @@ void CUiAnimViewDialog::InitToolbar()
     m_viewToolBar = addToolBar("View Toolbar");
     m_viewToolBar->setObjectName("m_viewToolBar");
     m_viewToolBar->setFloatable(false);
-    m_viewToolBar->addWidget(new QLabel("View:"));
-    qaction = m_viewToolBar->addAction(QIcon(":/Trackview/view/tvview-00.png"), "Track Editor");
+    m_viewToolBar->addWidget(new QLabel(QObject::tr("View:")));
+    qaction = m_viewToolBar->addAction(QIcon(":/Trackview/view/tvview-00.png"), QObject::tr("Track Editor"));
     qaction->setData(ID_TV_MODE_DOPESHEET);
     qaction->setShortcut(QKeySequence("Ctrl+D"));
     qaction->setCheckable(true);
     qaction->setChecked(true);
     m_actions[ID_TV_MODE_DOPESHEET] = qaction;
     connect(qaction, &QAction::triggered, this, &CUiAnimViewDialog::OnModeDopeSheet);
-    qaction = m_viewToolBar->addAction(QIcon(":/Trackview/view/tvview-01.png"), "Curve Editor");
+    qaction = m_viewToolBar->addAction(QIcon(":/Trackview/view/tvview-01.png"), QObject::tr("Curve Editor"));
     qaction->setData(ID_TV_MODE_CURVEEDITOR);
     qaction->setShortcut(QKeySequence("Ctrl+R"));
     qaction->setCheckable(true);
     m_actions[ID_TV_MODE_CURVEEDITOR] = qaction;
     connect(qaction, &QAction::triggered, this, &CUiAnimViewDialog::OnModeCurveEditor);
-    qaction = m_viewToolBar->addAction(QIcon(":/Trackview/view/tvview-02.png"), "Both");
+    qaction = m_viewToolBar->addAction(QIcon(":/Trackview/view/tvview-02.png"), QObject::tr("Both"));
     qaction->setData(ID_TV_MODE_OPENCURVEEDITOR);
     qaction->setShortcut(QKeySequence("Ctrl+B"));
     m_actions[ID_TV_MODE_OPENCURVEEDITOR] = qaction;
@@ -320,15 +320,15 @@ void CUiAnimViewDialog::InitToolbar()
     m_playToolBar = addToolBar("Play Toolbar");
     m_playToolBar->setObjectName("m_playToolBar");
     m_playToolBar->setFloatable(false);
-    m_playToolBar->addWidget(new QLabel("Play:"));
-    qaction = m_playToolBar->addAction(QIcon(":/Trackview/play/tvplay-00.png"), "Go to start of sequence");
+    m_playToolBar->addWidget(new QLabel(QObject::tr("Play:")));
+    qaction = m_playToolBar->addAction(QIcon(":/Trackview/play/tvplay-00.png"), QObject::tr("Go to start of sequence"));
     qaction->setData(ID_TV_JUMPSTART);
     m_actions[ID_TV_JUMPSTART] = qaction;
     connect(qaction, &QAction::triggered, this, &CUiAnimViewDialog::OnGoToStart);
 
     QToolButton* toolButton = new QToolButton(m_playToolBar);
     toolButton->setPopupMode(QToolButton::MenuButtonPopup);
-    qaction = new QAction(QIcon(":/Trackview/play/tvplay-01.png"), "Play Animation", this);
+    qaction = new QAction(QIcon(":/Trackview/play/tvplay-01.png"), QObject::tr("Play Animation"), this);
     qaction->setData(ID_TV_PLAY);
     qaction->setCheckable(true);
     m_actions[ID_TV_PLAY] = qaction;
@@ -366,7 +366,7 @@ void CUiAnimViewDialog::InitToolbar()
 
     toolButton = new QToolButton(m_playToolBar);
     toolButton->setPopupMode(QToolButton::MenuButtonPopup);
-    qaction = new QAction(QIcon(":/Trackview/play/tvplay-02.png"), "Stop", this);
+    qaction = new QAction(QIcon(":/Trackview/play/tvplay-02.png"), QObject::tr("Stop"), this);
     qaction->setData(ID_TV_STOP);
     m_actions[ID_TV_STOP] = qaction;
     connect(qaction, &QAction::triggered, this, &CUiAnimViewDialog::OnStop);
@@ -374,34 +374,34 @@ void CUiAnimViewDialog::InitToolbar()
     {
         QMenu* buttonMenu = new QMenu(this);
         toolButton->setMenu(buttonMenu);
-        qaction = buttonMenu->addAction("Stop");
+        qaction = buttonMenu->addAction(QObject::tr("Stop"));
         connect(qaction, &QAction::triggered, this, &CUiAnimViewDialog::OnStop);
         toolButton->addAction(qaction);
-        qaction = buttonMenu->addAction("Stop with Hard Reset");
+        qaction = buttonMenu->addAction(QObject::tr("Stop with Hard Reset"));
         qaction->setData(true);
         connect(qaction, &QAction::triggered, this, &CUiAnimViewDialog::OnStopHardReset);
     }
     m_playToolBar->addWidget(toolButton);
 
     m_playToolBar->addSeparator();
-    qaction = m_playToolBar->addAction(QIcon(":/Trackview/play/tvplay-03.png"), "Pause");
+    qaction = m_playToolBar->addAction(QIcon(":/Trackview/play/tvplay-03.png"), QObject::tr("Pause"));
     qaction->setData(ID_TV_PAUSE);
     qaction->setCheckable(true);
     m_actions[ID_TV_PAUSE] = qaction;
     connect(qaction, &QAction::triggered, this, &CUiAnimViewDialog::OnPause);
-    qaction = m_playToolBar->addAction(QIcon(":/Trackview/play/tvplay-04.png"), "Go to end of sequence");
+    qaction = m_playToolBar->addAction(QIcon(":/Trackview/play/tvplay-04.png"), QObject::tr("Go to end of sequence"));
     qaction->setData(ID_TV_JUMPEND);
     m_actions[ID_TV_JUMPEND] = qaction;
     connect(qaction, &QAction::triggered, this, &CUiAnimViewDialog::OnGoToEnd);
 
-    qaction = m_playToolBar->addAction(QIcon(":/Trackview/play/tvplay-05.png"), "Start Animation Recording");
+    qaction = m_playToolBar->addAction(QIcon(":/Trackview/play/tvplay-05.png"), QObject::tr("Start Animation Recording"));
     qaction->setData(ID_TV_RECORD);
     qaction->setCheckable(true);
     m_actions[ID_TV_RECORD] = qaction;
     connect(qaction, &QAction::triggered, this, &CUiAnimViewDialog::OnRecord);
 
     m_playToolBar->addSeparator();
-    qaction = m_playToolBar->addAction(QIcon(":/Trackview/play/tvplay-07.png"), "Loop");
+    qaction = m_playToolBar->addAction(QIcon(":/Trackview/play/tvplay-07.png"), QObject::tr("Loop"));
     qaction->setData(ID_PLAY_LOOP);
     qaction->setCheckable(true);
     m_actions[ID_PLAY_LOOP] = qaction;
@@ -412,14 +412,14 @@ void CUiAnimViewDialog::InitToolbar()
     m_playToolBar->addWidget(m_cursorPos);
 
     m_playToolBar->addSeparator();
-    qaction = m_playToolBar->addAction(QIcon(":/Trackview/play/tvplay-09.png"), "Undo");
+    qaction = m_playToolBar->addAction(QIcon(":/Trackview/play/tvplay-09.png"), QObject::tr("Undo"));
     qaction->setData(ID_UNDO);
     m_actions[ID_UNDO] = qaction;
     connect(qaction, &QAction::triggered, this, []()
         {
             UiAnimUndoManager::Get()->Undo();
         });
-    qaction = m_playToolBar->addAction(QIcon(":/Trackview/play/tvplay-10.png"), "Redo");
+    qaction = m_playToolBar->addAction(QIcon(":/Trackview/play/tvplay-10.png"), QObject::tr("Redo"));
     qaction->setData(ID_REDO);
     m_actions[ID_REDO] = qaction;
     connect(qaction, &QAction::triggered, this, []()
@@ -432,50 +432,50 @@ void CUiAnimViewDialog::InitToolbar()
     m_keysToolBar = addToolBar("Keys Toolbar");
     m_keysToolBar->setObjectName("m_keysToolBar");
     m_keysToolBar->setFloatable(false);
-    m_keysToolBar->addWidget(new QLabel("Keys:"));
-    qaction = m_keysToolBar->addAction(QIcon(":/Trackview/keys/tvkeys-00.png"), "Go to previous key");
+    m_keysToolBar->addWidget(new QLabel(QObject::tr("Keys:")));
+    qaction = m_keysToolBar->addAction(QIcon(":/Trackview/keys/tvkeys-00.png"), QObject::tr("Go to previous key"));
     qaction->setData(ID_TV_PREVKEY);
     m_actions[ID_TV_PREVKEY] = qaction;
     connect(qaction, &QAction::triggered, this, &CUiAnimViewDialog::OnGoToPrevKey);
-    qaction = m_keysToolBar->addAction(QIcon(":/Trackview/keys/tvkeys-01.png"), "Go to next key");
+    qaction = m_keysToolBar->addAction(QIcon(":/Trackview/keys/tvkeys-01.png"), QObject::tr("Go to next key"));
     qaction->setData(ID_TV_NEXTKEY);
     m_actions[ID_TV_NEXTKEY] = qaction;
     connect(qaction, &QAction::triggered, this, &CUiAnimViewDialog::OnGoToNextKey);
     m_keysToolBar->addSeparator();
-    qaction = m_keysToolBar->addAction(QIcon(":/Trackview/keys/tvkeys-02.png"), "Move Keys");
+    qaction = m_keysToolBar->addAction(QIcon(":/Trackview/keys/tvkeys-02.png"), QObject::tr("Move Keys"));
     qaction->setData(ID_TV_MOVEKEY);
     m_actions[ID_TV_MOVEKEY] = qaction;
     connect(qaction, &QAction::triggered, this, &CUiAnimViewDialog::OnMoveKey);
-    qaction = m_keysToolBar->addAction(QIcon(":/Trackview/keys/tvkeys-03.png"), "Slide Keys");
+    qaction = m_keysToolBar->addAction(QIcon(":/Trackview/keys/tvkeys-03.png"), QObject::tr("Slide Keys"));
     qaction->setData(ID_TV_SLIDEKEY);
     m_actions[ID_TV_SLIDEKEY] = qaction;
     connect(qaction, &QAction::triggered, this, &CUiAnimViewDialog::OnSlideKey);
-    qaction = m_keysToolBar->addAction(QIcon(":/Trackview/keys/tvkeys-04.png"), "Scale Keys");
+    qaction = m_keysToolBar->addAction(QIcon(":/Trackview/keys/tvkeys-04.png"), QObject::tr("Scale Keys"));
     qaction->setData(ID_TV_SCALEKEY);
     m_actions[ID_TV_SCALEKEY] = qaction;
     connect(qaction, &QAction::triggered, this, &CUiAnimViewDialog::OnScaleKey);
-    qaction = m_keysToolBar->addAction(QIcon(":/Trackview/keys/tvkeys-05.png"), "Add Keys");
+    qaction = m_keysToolBar->addAction(QIcon(":/Trackview/keys/tvkeys-05.png"), QObject::tr("Add Keys"));
     qaction->setData(ID_TV_ADDKEY);
     m_actions[ID_TV_ADDKEY] = qaction;
     connect(qaction, &QAction::triggered, this, &CUiAnimViewDialog::OnAddKey);
-    qaction = m_keysToolBar->addAction(QIcon(":/Trackview/keys/tvkeys-06.png"), "Delete Keys");
+    qaction = m_keysToolBar->addAction(QIcon(":/Trackview/keys/tvkeys-06.png"), QObject::tr("Delete Keys"));
     qaction->setData(ID_TV_DELKEY);
     m_actions[ID_TV_DELKEY] = qaction;
     connect(qaction, &QAction::triggered, this, &CUiAnimViewDialog::OnDelKey);
     m_keysToolBar->addSeparator();
-    qaction = m_keysToolBar->addAction(QIcon(":/Trackview/keys/tvkeys-07.png"), "No Snapping");
+    qaction = m_keysToolBar->addAction(QIcon(":/Trackview/keys/tvkeys-07.png"), QObject::tr("No Snapping"));
     qaction->setData(ID_TV_SNAP_NONE);
     m_actions[ID_TV_SNAP_NONE] = qaction;
     connect(qaction, &QAction::triggered, this, &CUiAnimViewDialog::OnSnapNone);
-    qaction = m_keysToolBar->addAction(QIcon(":/Trackview/keys/tvkeys-08.png"), "Magnet Snapping");
+    qaction = m_keysToolBar->addAction(QIcon(":/Trackview/keys/tvkeys-08.png"), QObject::tr("Magnet Snapping"));
     qaction->setData(ID_TV_SNAP_MAGNET);
     m_actions[ID_TV_SNAP_MAGNET] = qaction;
     connect(qaction, &QAction::triggered, this, &CUiAnimViewDialog::OnSnapMagnet);
-    qaction = m_keysToolBar->addAction(QIcon(":/Trackview/keys/tvkeys-09.png"), "Frame Snapping");
+    qaction = m_keysToolBar->addAction(QIcon(":/Trackview/keys/tvkeys-09.png"), QObject::tr("Frame Snapping"));
     qaction->setData(ID_TV_SNAP_FRAME);
     m_actions[ID_TV_SNAP_FRAME] = qaction;
     connect(qaction, &QAction::triggered, this, &CUiAnimViewDialog::OnSnapFrame);
-    qaction = m_keysToolBar->addAction(QIcon(":/Trackview/keys/tvkeys-10.png"), "Tick Snapping");
+    qaction = m_keysToolBar->addAction(QIcon(":/Trackview/keys/tvkeys-10.png"), QObject::tr("Tick Snapping"));
     qaction->setData(ID_TV_SNAP_TICK);
     m_actions[ID_TV_SNAP_TICK] = qaction;
     connect(qaction, &QAction::triggered, this, &CUiAnimViewDialog::OnSnapTick);
@@ -506,23 +506,23 @@ void CUiAnimViewDialog::InitMenu()
 {
     QMenuBar* mb = this->menuBar();
 
-    QMenu* m = mb->addMenu("&Sequence");
-    QAction* a = m->addAction("New Sequence...");
+    QMenu* m = mb->addMenu(QObject::tr("&Sequence"));
+    QAction* a = m->addAction(QObject::tr("New Sequence..."));
     a->setData(ID_TV_SEQUENCE_NEW);
     m_actions[ID_TV_SEQUENCE_NEW] = a;
     connect(a, &QAction::triggered, this, &CUiAnimViewDialog::OnAddSequence);
 
-    m = mb->addMenu("&View");
+    m = mb->addMenu(QObject::tr("&View"));
     m->addAction(m_actions[ID_TV_MODE_DOPESHEET]);
     m->addAction(m_actions[ID_TV_MODE_CURVEEDITOR]);
     m->addAction(m_actions[ID_TV_MODE_OPENCURVEEDITOR]);
     m->addSeparator();
-    a = m->addAction("Tick in Seconds");
+    a = m->addAction(QObject::tr("Tick in Seconds"));
     a->setData(ID_VIEW_TICKINSECONDS);
     a->setCheckable(true);
     m_actions[ID_VIEW_TICKINSECONDS] = a;
     connect(a, &QAction::triggered, this, &CUiAnimViewDialog::OnViewTickInSeconds);
-    a = m->addAction("Tick in Frames");
+    a = m->addAction(QObject::tr("Tick in Frames"));
     a->setData(ID_VIEW_TICKINFRAMES);
     a->setCheckable(true);
     m_actions[ID_VIEW_TICKINFRAMES] = a;
@@ -532,8 +532,8 @@ void CUiAnimViewDialog::InitMenu()
     // This dialog makes no sense while we only support component property tracks
     // if we add support for event tracks it might make sense
     // Currently we do not save the customized track colors
-    m = mb->addMenu("T&ools");
-    a = m->addAction("Customize &Track Colors...");
+    m = mb->addMenu(QObject::tr("T&ools"));
+    a = m->addAction(QObject::tr("Customize &Track Colors..."));
     a->setData(ID_TV_TOOLS_CUSTOMIZETRACKCOLORS);
     m_actions[ID_TV_TOOLS_CUSTOMIZETRACKCOLORS] = a;
     connect(a, &QAction::triggered, this, &CUiAnimViewDialog::OnCustomizeTrackColors);
@@ -968,7 +968,7 @@ void CUiAnimViewDialog::OnDelSequence()
         return;
     }
 
-    if (QMessageBox::question(this, "UI Animation", "Delete current sequence?") == QMessageBox::Yes)
+    if (QMessageBox::question(this, QObject::tr("UI Animation"), QObject::tr("Delete current sequence?")) == QMessageBox::Yes)
     {
         int sel = m_sequencesComboBox->currentIndex();
         QString seq = m_sequencesComboBox->currentText();

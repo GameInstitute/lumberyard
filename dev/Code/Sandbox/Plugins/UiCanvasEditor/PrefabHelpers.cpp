@@ -19,7 +19,7 @@ namespace PrefabHelpers
 {
     QAction* CreateSavePrefabAction(HierarchyWidget* hierarchy)
     {
-        QAction* action = new QAction("(Deprecated) Save as Prefab...", hierarchy);
+        QAction* action = new QAction(QObject::tr("(Deprecated) Save as Prefab..."), hierarchy);
         QObject::connect(action,
             &QAction::triggered,
             hierarchy,
@@ -30,8 +30,8 @@ namespace PrefabHelpers
                 if (selectedItems.isEmpty())
                 {
                     QMessageBox(QMessageBox::Information,
-                        "Selection Needed",
-                        "Please select an element in the Hierarchy pane",
+						QObject::tr("Selection Needed"),
+						QObject::tr("Please select an element in the Hierarchy pane"),
                         QMessageBox::Ok, hierarchy->GetEditorWindow()).exec();
 
                     return;
@@ -39,8 +39,8 @@ namespace PrefabHelpers
                 else if (selectedItems.size() > 1)
                 {
                     QMessageBox(QMessageBox::Information,
-                        "Too Many Items Selected",
-                        "Please select only one element in the Hierarchy pane",
+						QObject::tr("Too Many Items Selected"),
+						QObject::tr("Please select only one element in the Hierarchy pane"),
                         QMessageBox::Ok, hierarchy->GetEditorWindow()).exec();
 
                     return;
@@ -76,10 +76,10 @@ namespace PrefabHelpers
                     if (errorCode == UiCanvasInterface::ErrorCode::PrefabContainsExternalEntityRefs)
                     {
                         QMessageBox box(QMessageBox::Question,
-                            "External references",
-                            "The selected element contains references to elements that will not be in the prefab.\n"
+							QObject::tr("External references"),
+							QObject::tr("The selected element contains references to elements that will not be in the prefab.\n"
                             "If saved these references will be cleared in the prefab.\n\n"
-                            "Do you wish to save as prefab anyway?",
+                            "Do you wish to save as prefab anyway?"),
                             (QMessageBox::Yes | QMessageBox::No), hierarchy->GetEditorWindow());
                         box.setDefaultButton(QMessageBox::No);
 
@@ -94,8 +94,8 @@ namespace PrefabHelpers
                         // this should never happen, but will if we forget to update this code when a new error is
                         // added
                         QMessageBox(QMessageBox::Information,
-                            "Cannot save as prefab",
-                            "Unknown error",
+							QObject::tr("Cannot save as prefab"),
+							QObject::tr("Unknown error"),
                             QMessageBox::Ok, hierarchy->GetEditorWindow()).exec();
                         return;
                     }
@@ -117,8 +117,8 @@ namespace PrefabHelpers
                 }
 
                 QMessageBox(QMessageBox::Critical,
-                    "Error",
-                    "Unable to save file. Is the file read-only?",
+					QObject::tr("Error"),
+					QObject::tr("Unable to save file. Is the file read-only?"),
                     QMessageBox::Ok, hierarchy->GetEditorWindow()).exec();
             });
 
@@ -139,7 +139,7 @@ namespace PrefabHelpers
             return;
         }
 
-        QMenu* prefabMenu = parent->addMenu(QString("(Deprecated) Element%1 from prefab").arg(!addAtRoot && selectedItems.size() > 1 ? "s" : ""));
+        QMenu* prefabMenu = parent->addMenu(QString(QObject::tr("(Deprecated) Element%1 from prefab")).arg(!addAtRoot && selectedItems.size() > 1 ? "s" : ""));
 
         QList<QAction*> result;
         {

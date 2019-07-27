@@ -91,7 +91,7 @@ namespace HierarchyHelpers
         const QPoint* optionalPos)
     {
         QAction* action = new QAction(QIcon(":/Icons/Eye_Open.png"),
-                QString("&Empty element%1").arg(!addAtRoot && selectedItems.size() > 1 ? "s" : ""),
+                QString(QObject::tr("&Empty element%1")).arg(!addAtRoot && selectedItems.size() > 1 ? "s" : ""),
                 hierarchy);
         QObject::connect(action,
             &QAction::triggered,
@@ -192,8 +192,8 @@ namespace HierarchyHelpers
                 {
                     // This happens when the serialization version numbers DON'T match.
                     QMessageBox(QMessageBox::Critical,
-                        "Error",
-                        QString("Failed to load elements. The serialization format is incompatible."),
+						QObject::tr("Error"),
+						QObject::tr("Failed to load elements. The serialization format is incompatible."),
                         QMessageBox::Ok, widget->GetEditorWindow()).exec();
 
                     // Nothing more to do.
