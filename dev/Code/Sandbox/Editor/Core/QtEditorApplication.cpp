@@ -728,38 +728,36 @@ namespace Editor
 			CryWarning(VALIDATOR_MODULE_EDITOR, VALIDATOR_WARNING, "[UI i18n] Read editor.ini failed, but use system language, editor folder is %s", qtTranslationFilesPath.toLocal8Bit().constData());
 		}
 
-
 		// Sandbox
 		m_SandboxTranslator = CreateAndInitializeTranslator("Sandbox.qm", qtTranslationFilesPath);
 
 		// Framework
-        QString frameworkFilesPath = qtTranslationFilesPath+QString("/Framework");
-		m_AzQtComponentsTranslator = CreateAndInitializeTranslator("AzQtComponents.qm", frameworkFilesPath);
-		m_AzToolsFrameworkTranslator = CreateAndInitializeTranslator("AzToolsFramework.qm", frameworkFilesPath);
+		m_AzQtComponentsTranslator = CreateAndInitializeTranslator("AzQtComponents.qm", qtTranslationFilesPath);
+		m_AzToolsFrameworkTranslator = CreateAndInitializeTranslator("AzToolsFramework.qm", qtTranslationFilesPath);
 
 		// Plugins
-        QString pluginsFilesPath = qtTranslationFilesPath+QString("/Plugins");
-		m_ComponentEntityEditorPluginTranslator = CreateAndInitializeTranslator("ComponentEntityEditorPlugin.qm", pluginsFilesPath);
-		m_EditorUI_QTTranslator = CreateAndInitializeTranslator("EditorUI_QT.qm", pluginsFilesPath);
-		m_EditorCommonTranslator = CreateAndInitializeTranslator("EditorCommon.qm", pluginsFilesPath);
-		m_CryDesignerTranslator = CreateAndInitializeTranslator("CryDesigner.qm", pluginsFilesPath);
-		m_DeploymentToolTranslator = CreateAndInitializeTranslator("DeploymentTool.qm", pluginsFilesPath);
-		m_EditorAssetImporterTranslator = CreateAndInitializeTranslator("EditorAssetImporter.qm", pluginsFilesPath);
-		m_EditorAudioControlsEditorTranslator = CreateAndInitializeTranslator("EditorAudioControlsEditor.qm", pluginsFilesPath);
-		m_FBXPluginTranslator = CreateAndInitializeTranslator("FBXPlugin.qm", pluginsFilesPath);
-		m_MaglevControlPanelTranslator = CreateAndInitializeTranslator("MaglevControlPanel.qm", pluginsFilesPath);
-		m_ParticleEditorPluginTranslator = CreateAndInitializeTranslator("ParticleEditorPlugin.qm", pluginsFilesPath);
-		m_PerforcePluginTranslator = CreateAndInitializeTranslator("PerforcePlugin.qm", pluginsFilesPath);
-		m_UiCanvasEditorTranslator = CreateAndInitializeTranslator("UiCanvasEditor.qm", pluginsFilesPath);
+		m_ComponentEntityEditorPluginTranslator = CreateAndInitializeTranslator("ComponentEntityEditorPlugin.qm", qtTranslationFilesPath);
+		m_CryDesignerTranslator = CreateAndInitializeTranslator("CryDesigner.qm", qtTranslationFilesPath);
+		m_DeploymentToolTranslator = CreateAndInitializeTranslator("DeploymentTool.qm", qtTranslationFilesPath);
+		m_EditorAssetImporterTranslator = CreateAndInitializeTranslator("EditorAssetImporter.qm", qtTranslationFilesPath);
+		m_EditorAudioControlsEditorTranslator = CreateAndInitializeTranslator("EditorAudioControlsEditor.qm", qtTranslationFilesPath);
+		m_EditorCommonTranslator = CreateAndInitializeTranslator("EditorCommon.qm", qtTranslationFilesPath);
+		m_EditorUI_QTTranslator = CreateAndInitializeTranslator("EditorUI_QT.qm", qtTranslationFilesPath);
+		m_FBXPluginTranslator = CreateAndInitializeTranslator("FBXPlugin.qm", qtTranslationFilesPath);
+		m_MaglevControlPanelTranslator = CreateAndInitializeTranslator("MaglevControlPanel.qm", qtTranslationFilesPath);
+		m_ParticleEditorPluginTranslator = CreateAndInitializeTranslator("ParticleEditorPlugin.qm", qtTranslationFilesPath);
+		m_PerforcePluginTranslator = CreateAndInitializeTranslator("PerforcePlugin.qm", qtTranslationFilesPath);
+		m_ProjectSettingsToolTranslator = CreateAndInitializeTranslator("ProjectSettingsTool.qm", qtTranslationFilesPath);
+		m_UiCanvasEditorTranslator = CreateAndInitializeTranslator("UiCanvasEditor.qm", qtTranslationFilesPath);
 
 		// Gems
-        QString gemsFilesPath = qtTranslationFilesPath+QString("/Gems");
-		m_CloudGemDynamicContentTranslator = CreateAndInitializeTranslator("CloudGemDynamicContent.qm", gemsFilesPath);
-		m_EMotionFXTranslator = CreateAndInitializeTranslator("EMotionFX.qm", gemsFilesPath);
-		m_GraphCanvasTranslator = CreateAndInitializeTranslator("GraphCanvas.qm", gemsFilesPath);
-		m_ScriptCanvasTranslator = CreateAndInitializeTranslator("ScriptCanvas.qm", gemsFilesPath);
-		m_ScriptCanvasDeveloperTranslator = CreateAndInitializeTranslator("ScriptCanvasDeveloper.qm", gemsFilesPath);
-		m_SubstanceTranslator = CreateAndInitializeTranslator("Substance.qm", gemsFilesPath);
+		m_CloudGemDynamicContentTranslator = CreateAndInitializeTranslator("CloudGemDynamicContent.qm", qtTranslationFilesPath);
+		m_EMotionFXTranslator = CreateAndInitializeTranslator("EMotionFX.qm", qtTranslationFilesPath);
+		m_GraphCanvasTranslator = CreateAndInitializeTranslator("GraphCanvas.qm", qtTranslationFilesPath);
+		m_ImageProcessingTranslator = CreateAndInitializeTranslator("ImageProcessing.qm", qtTranslationFilesPath);
+		m_ScriptCanvasTranslator = CreateAndInitializeTranslator("ScriptCanvas.qm", qtTranslationFilesPath);
+		m_SliceFavoritesTranslator = CreateAndInitializeTranslator("SliceFavorites.qm", qtTranslationFilesPath);
+		m_SubstanceTranslator = CreateAndInitializeTranslator("Substance.qm", qtTranslationFilesPath);
     }
 
     void EditorQtApplication::DeleteTranslator(QTranslator*& translator)
@@ -790,14 +788,16 @@ namespace Editor
 		DeleteTranslator(m_MaglevControlPanelTranslator);
 		DeleteTranslator(m_ParticleEditorPluginTranslator);
 		DeleteTranslator(m_PerforcePluginTranslator);
+		DeleteTranslator(m_ProjectSettingsToolTranslator);
 		DeleteTranslator(m_UiCanvasEditorTranslator);
 
 		// Gems
 		DeleteTranslator(m_CloudGemDynamicContentTranslator);
 		DeleteTranslator(m_EMotionFXTranslator);
 		DeleteTranslator(m_GraphCanvasTranslator);
+		DeleteTranslator(m_ImageProcessingTranslator);
 		DeleteTranslator(m_ScriptCanvasTranslator);
-		DeleteTranslator(m_ScriptCanvasDeveloperTranslator);
+		DeleteTranslator(m_SliceFavoritesTranslator);
 		DeleteTranslator(m_SubstanceTranslator);
     }
 

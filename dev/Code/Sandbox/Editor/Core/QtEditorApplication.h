@@ -168,14 +168,16 @@ namespace Editor
 		QTranslator* m_MaglevControlPanelTranslator = nullptr;
 		QTranslator* m_ParticleEditorPluginTranslator = nullptr;
 		QTranslator* m_PerforcePluginTranslator = nullptr;
+		QTranslator* m_ProjectSettingsToolTranslator = nullptr;
 		QTranslator* m_UiCanvasEditorTranslator = nullptr;
 
 		// Gems
 		QTranslator* m_CloudGemDynamicContentTranslator = nullptr;
 		QTranslator* m_EMotionFXTranslator = nullptr;
 		QTranslator* m_GraphCanvasTranslator = nullptr;
+		QTranslator* m_ImageProcessingTranslator = nullptr;
 		QTranslator* m_ScriptCanvasTranslator = nullptr;
-		QTranslator* m_ScriptCanvasDeveloperTranslator = nullptr;
+		QTranslator* m_SliceFavoritesTranslator = nullptr;
 		QTranslator* m_SubstanceTranslator = nullptr;
         QTimer* const m_idleTimer = nullptr;
         bool m_isMovingOrResizing = false;
