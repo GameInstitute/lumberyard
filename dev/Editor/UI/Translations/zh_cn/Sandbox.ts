@@ -14128,7 +14128,7 @@ Synchronize Player with Camera</source>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/MainWindow.cpp" line="1755"/>
         <source>Lua Editor</source>
-        <translation>UI编辑器</translation>
+        <translation>Lua编辑器</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/MainWindow.cpp" line="1759"/>
