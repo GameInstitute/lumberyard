@@ -10,6 +10,11 @@ echo "Update Framework"
 %QTDIR%\lupdate -noobsolete ..\..\..\Code\Framework\AzToolsFramework 							-ts 	.\zh_cn\AzToolsFramework.ts
 
 echo "Update Gems"
+%QTDIR%\lupdate -noobsolete ..\..\..\Gems\Camera 							    				-ts 	.\zh_cn\Camera.ts
+%QTDIR%\lupdate -noobsolete ..\..\..\Gems\ImGui 							    				-ts 	.\zh_cn\ImGui.ts
+%QTDIR%\lupdate -noobsolete ..\..\..\Gems\PhysX 							    				-ts 	.\zh_cn\PhysX.ts
+%QTDIR%\lupdate -noobsolete ..\..\..\Gems\RenderToTexture 							    		-ts 	.\zh_cn\RenderToTexture.ts
+%QTDIR%\lupdate -noobsolete ..\..\..\Gems\StarterGameGem 							    		-ts 	.\zh_cn\StarterGameGem.ts
 %QTDIR%\lupdate -noobsolete ..\..\..\Gems\CloudGemDynamicContent 							    -ts 	.\zh_cn\CloudGemDynamicContent.ts
 %QTDIR%\lupdate -noobsolete ..\..\..\Gems\EMotionFX 								            -ts 	.\zh_cn\EMotionFX.ts
 %QTDIR%\lupdate -noobsolete ..\..\..\Gems\GraphCanvas 								            -ts 	.\zh_cn\GraphCanvas.ts
