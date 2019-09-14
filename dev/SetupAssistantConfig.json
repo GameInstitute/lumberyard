@@ -190,12 +190,12 @@
                 }
             ]
         },
-		{
-            "identifier" : "LibIconv",
-            "name" : "LibIconv",
+        {
+            "identifier" : "libiconv",
+            "name" : "libiconv",
             "version" : "1.15",
             "source" : "libiconv/1.15",
-            "optional" : 1,
+            "optional" : 0,
             "description" : "LibIconvSDKDescriptionSummary",
             "detailedInstructions" : "LibIconvSDKDetailedInstructions",
             "roles" : ["compilegame", "compileengine", "compilesandbox"],
@@ -211,11 +211,11 @@
             ]
         },
         {
-            "identifier" : "LibIntl",
-            "name" : "LibIntl",
+            "identifier" : "libintl",
+            "name" : "libintl",
             "version" : "0.17",
             "source" : "libintl/0.17",
-            "optional" : 1,
+            "optional" : 0,
             "description" : "LibIntlSDKDescriptionSummary",
             "detailedInstructions" : "LibIntlSDKDetailedInstructions",
             "roles" : ["compilegame", "compileengine", "compilesandbox"],
