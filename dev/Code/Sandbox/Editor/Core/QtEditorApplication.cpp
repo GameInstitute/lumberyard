@@ -751,6 +751,11 @@ namespace Editor
 		m_UiCanvasEditorTranslator = CreateAndInitializeTranslator("UiCanvasEditor.qm", qtTranslationFilesPath);
 
 		// Gems
+		m_Camera = CreateAndInitializeTranslator("Camera.qm", qtTranslationFilesPath);
+		m_ImGui = CreateAndInitializeTranslator("ImGui.qm", qtTranslationFilesPath);
+		m_PhysX = CreateAndInitializeTranslator("PhysX.qm", qtTranslationFilesPath);
+		m_RenderToTexture = CreateAndInitializeTranslator("RenderToTexture.qm", qtTranslationFilesPath);
+		m_StarterGameGem = CreateAndInitializeTranslator("StarterGameGem.qm", qtTranslationFilesPath);
 		m_CloudGemDynamicContentTranslator = CreateAndInitializeTranslator("CloudGemDynamicContent.qm", qtTranslationFilesPath);
 		m_EMotionFXTranslator = CreateAndInitializeTranslator("EMotionFX.qm", qtTranslationFilesPath);
 		m_GraphCanvasTranslator = CreateAndInitializeTranslator("GraphCanvas.qm", qtTranslationFilesPath);
@@ -792,6 +797,11 @@ namespace Editor
 		DeleteTranslator(m_UiCanvasEditorTranslator);
 
 		// Gems
+		DeleteTranslator(m_Camera);
+		DeleteTranslator(m_ImGui);
+		DeleteTranslator(m_PhysX);
+		DeleteTranslator(m_RenderToTexture);
+		DeleteTranslator(m_StarterGameGem);
 		DeleteTranslator(m_CloudGemDynamicContentTranslator);
 		DeleteTranslator(m_EMotionFXTranslator);
 		DeleteTranslator(m_GraphCanvasTranslator);

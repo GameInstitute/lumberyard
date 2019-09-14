@@ -172,6 +172,11 @@ namespace Editor
 		QTranslator* m_UiCanvasEditorTranslator = nullptr;
 
 		// Gems
+		QTranslator* m_Camera = nullptr;
+		QTranslator* m_ImGui = nullptr;
+		QTranslator* m_PhysX = nullptr;
+		QTranslator* m_RenderToTexture = nullptr;
+		QTranslator* m_StarterGameGem = nullptr;
 		QTranslator* m_CloudGemDynamicContentTranslator = nullptr;
 		QTranslator* m_EMotionFXTranslator = nullptr;
 		QTranslator* m_GraphCanvasTranslator = nullptr;
