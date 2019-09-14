@@ -1,0 +1,35 @@
+{
+    "name": "libiconv",
+    "source": "@3P:libiconv@",
+    "description": "libiconv",
+	"aliases": {
+        "lib_names": [
+            "libiconv",
+            "libiconv_a"
+        ],
+        "dll_names": [
+            "libiconv"
+        ]
+    },
+    "includes": [
+        "include"
+    ],
+    "lib_required": "True",
+    "platform": {
+        "win_x64_vs2015": {
+            "importlibpath": [
+                "lib"
+            ],
+            "sharedlibpath": [
+                "bin"
+            ],
+            "import": [
+                "${lib_names}.lib"
+            ],
+            "shared": [
+                "${dll_names}.dll"
+            ]
+        },
+        "win_x64_vs2017": "@win_x64_vs2015"
+    }
+}
