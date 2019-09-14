@@ -6,7 +6,7 @@
     <message>
         <location filename="../../../../Gems/StarterGameGem/Code/Source/PlayFromHereEditorSystemComponent.cpp" line="97"/>
         <source>Play From Here</source>
-        <translation type="unfinished"></translation>
+        <translation>从这里播放</translation>
     </message>
 </context>
 </TS>

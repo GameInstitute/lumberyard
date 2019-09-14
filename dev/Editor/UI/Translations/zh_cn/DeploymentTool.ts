@@ -447,7 +447,7 @@
     <message>
         <location filename="../../../../Code/Sandbox/Plugins/DeploymentTool/DeploymentToolWindow.cpp" line="550"/>
         <source>Please select a valid Project.</source>
-        <translation>请选择有效的项目</translation>
+        <translation>请选择有效的项目。</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Plugins/DeploymentTool/DeploymentToolWindow.cpp" line="559"/>

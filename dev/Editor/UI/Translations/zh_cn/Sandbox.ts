@@ -112,7 +112,7 @@
     <message>
         <location filename="../../../../Code/Sandbox/Editor/AIPointPanel.ui" line="129"/>
         <source>Linked Waypoints:</source>
-        <translation>已链接路点</translation>
+        <translation>已链接路点:</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/AIPointPanel.ui" line="151"/>
@@ -15182,7 +15182,7 @@ Check if Source Control Provider correctly setup and working directory is correc
         <location filename="../../../../Code/Sandbox/Editor/Material/MaterialBrowser.cpp" line="880"/>
         <source>Making new material will override material currently assigned to the slot %1 of %2<byte value="xd"/>
 Make new sub material?</source>
-        <translation>制作新材质将覆盖当前分配给％2的插槽％1的材质
+        <translation>制作新材质将覆盖当前分配给%2的插槽 %1的材质
 制作新的子材质？?</translation>
     </message>
     <message>
@@ -19182,7 +19182,7 @@ Use [Add Dialog] to create new one.</source>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/SequenceBatchRenderDialog.ui" line="234"/>
         <source>Input cvars for further customization:</source>
-        <translation>输入CVar进一步自定义</translation>
+        <translation>输入CVar进一步自定义:</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/SequenceBatchRenderDialog.ui" line="244"/>

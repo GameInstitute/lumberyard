@@ -6,7 +6,7 @@
     <message>
         <location filename="../../../../Gems/PhysX/Code/Editor/EditorWindow.ui" line="20"/>
         <source>PhysX Editor</source>
-        <translation type="unfinished"></translation>
+        <translation>PhysX编辑器</translation>
     </message>
 </context>
 <context>
@@ -14,12 +14,12 @@
     <message>
         <location filename="../../../../Gems/PhysX/Code/Editor/CollisionFilteringWidget.cpp" line="41"/>
         <source>Layers</source>
-        <translation type="unfinished"></translation>
+        <translation>图层</translation>
     </message>
     <message>
         <location filename="../../../../Gems/PhysX/Code/Editor/CollisionFilteringWidget.cpp" line="42"/>
         <source>Groups</source>
-        <translation type="unfinished"></translation>
+        <translation>组合</translation>
     </message>
 </context>
 <context>
@@ -27,7 +27,7 @@
     <message>
         <location filename="../../../../Gems/PhysX/Code/Editor/CollisionGroupWidget.cpp" line="38"/>
         <source>Edit Collision Groups</source>
-        <translation type="unfinished"></translation>
+        <translation>编辑碰撞组合</translation>
     </message>
 </context>
 <context>
@@ -35,12 +35,12 @@
     <message>
         <location filename="../../../../Gems/PhysX/Code/Editor/CollisionGroupsWidget.cpp" line="253"/>
         <source>Add</source>
-        <translation type="unfinished"></translation>
+        <translation>添加</translation>
     </message>
     <message>
         <location filename="../../../../Gems/PhysX/Code/Editor/CollisionGroupsWidget.cpp" line="474"/>
         <source>Remove</source>
-        <translation type="unfinished"></translation>
+        <translation>移除</translation>
     </message>
 </context>
 <context>
@@ -48,7 +48,7 @@
     <message>
         <location filename="../../../../Gems/PhysX/Code/Editor/CollisionLayerWidget.cpp" line="35"/>
         <source>Edit Collision Layers</source>
-        <translation type="unfinished"></translation>
+        <translation>编辑碰撞图层</translation>
     </message>
 </context>
 <context>
@@ -56,7 +56,7 @@
     <message>
         <location filename="../../../../Gems/PhysX/Code/Editor/ComboBoxEditButtonPair.cpp" line="34"/>
         <source>Edit</source>
-        <translation type="unfinished"></translation>
+        <translation>编辑</translation>
     </message>
 </context>
 <context>
@@ -64,17 +64,17 @@
     <message>
         <location filename="../../../../Gems/PhysX/Code/Editor/ConfigurationWidget.cpp" line="39"/>
         <source>Global Configuration</source>
-        <translation type="unfinished"></translation>
+        <translation>全局配置</translation>
     </message>
     <message>
         <location filename="../../../../Gems/PhysX/Code/Editor/ConfigurationWidget.cpp" line="40"/>
         <source>Collision Filtering</source>
-        <translation type="unfinished"></translation>
+        <translation>碰撞筛选</translation>
     </message>
     <message>
         <location filename="../../../../Gems/PhysX/Code/Editor/ConfigurationWidget.cpp" line="41"/>
         <source>Debugger</source>
-        <translation type="unfinished"></translation>
+        <translation>调试器</translation>
     </message>
 </context>
 </TS>

@@ -6,7 +6,7 @@
     <message>
         <location filename="../../../../Gems/Camera/Code/Source/CameraEditorSystemComponent.cpp" line="83"/>
         <source>Create camera entity from view</source>
-        <translation type="unfinished"></translation>
+        <translation>从视图创建摄像机实体</translation>
     </message>
 </context>
 </TS>

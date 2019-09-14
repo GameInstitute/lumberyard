@@ -92,7 +92,7 @@
     <message>
         <location filename="../../../../Gems/Substance/Code/EditorPlugin/QProceduralMaterialEditorMainWindow.ui" line="165"/>
         <source>&amp;Export Textures...</source>
-        <translation>&amp;导出贴图..</translation>
+        <translation>&amp;导出贴图...</translation>
     </message>
     <message>
         <location filename="../../../../Gems/Substance/Code/EditorPlugin/QProceduralMaterialEditorMainWindow.cpp" line="98"/>

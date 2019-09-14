@@ -831,7 +831,7 @@
         <location filename="../../../../Gems/ScriptCanvas/Code/Editor/View/Widgets/UnitTestPanel/UnitTestDockWidget.cpp" line="178"/>
         <location filename="../../../../Gems/ScriptCanvas/Code/Editor/View/Widgets/UnitTestPanel/UnitTestDockWidget.cpp" line="179"/>
         <source>Run this Test only.</source>
-        <translation>仅运行此测试</translation>
+        <translation>仅运行此测试。</translation>
     </message>
     <message>
         <location filename="../../../../Gems/ScriptCanvas/Code/Editor/View/Widgets/UnitTestPanel/UnitTestDockWidget.cpp" line="195"/>
@@ -1143,7 +1143,7 @@
     <message>
         <location filename="../../../../Gems/ScriptCanvas/Code/Editor/View/Widgets/UnitTestPanel/UnitTestDockWidget.ui" line="206"/>
         <source>Selected 0 test(s).</source>
-        <translation>已选择0个测试</translation>
+        <translation>已选择0个测试。</translation>
     </message>
 </context>
 <context>
