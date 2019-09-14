@@ -190,6 +190,26 @@
                 }
             ]
         },
+		{
+            "identifier" : "icu4c",
+            "name" : "icu4c",
+            "version" : "53.1",
+            "source" : "icu4c/53.1",
+            "optional" : 0,
+            "description" : "icu4cSDKDescriptionSummary",
+            "detailedInstructions" : "icu4cSDKDetailedInstructions",
+            "roles" : ["compilegame", "compileengine", "compilesandbox"],
+            "hostOS" : ["windows"],
+            "symlinks" :
+            [
+                {
+                    "compilers" : ["vc140", "vc141"],
+                    "source" : "icu4c/53.1",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/icu4c",
+                    "exampleFile" : "include/unicode/ucnv.h"
+                }
+            ]
+        },
         {
             "identifier" : "maya2014",
             "name" : "maya2014Name",

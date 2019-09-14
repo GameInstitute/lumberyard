@@ -1,0 +1,30 @@
+{
+    "name": "icu4c",
+    "source": "@3P:icu4c@",
+    "description": "icu4c",
+	"aliases": {
+        "lib_names": [
+            "icudt",
+            "icuin",
+			"icuio",
+			"icule",
+			"iculx",
+			"icuuc"
+        ]
+    },
+    "includes": [
+        "include"
+    ],
+    "lib_required": "True",
+    "platform": {
+        "win_x64_vs2015": {
+            "importlibpath": [
+                "Win64/VS2015/lib"
+            ],
+            "import": [
+                "${lib_names}.lib"
+            ]
+        },
+        "win_x64_vs2017": "@win_x64_vs2015"
+    }
+}
