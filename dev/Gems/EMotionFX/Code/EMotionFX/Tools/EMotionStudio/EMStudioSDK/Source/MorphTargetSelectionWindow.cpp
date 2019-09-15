@@ -21,7 +21,7 @@ namespace EMStudio
     MorphTargetSelectionWindow::MorphTargetSelectionWindow(QWidget* parent, bool multiSelect)
         : QDialog(parent)
     {
-        setWindowTitle("Morph target selection window");
+        setWindowTitle(tr("Morph target selection window"));
 
         QVBoxLayout* layout = new QVBoxLayout();
 
@@ -37,8 +37,8 @@ namespace EMStudio
         }
 
         QHBoxLayout* buttonLayout = new QHBoxLayout();
-        mOKButton       = new QPushButton("OK");
-        mCancelButton   = new QPushButton("Cancel");
+        mOKButton       = new QPushButton(tr("OK"));
+        mCancelButton   = new QPushButton(tr("Cancel"));
         buttonLayout->addWidget(mOKButton);
         buttonLayout->addWidget(mCancelButton);
 

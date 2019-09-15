@@ -49,14 +49,14 @@ namespace EMStudio
         : QDialog(parent)
     {
         // update title of the dialog
-        setWindowTitle("Reset Workspace");
+        setWindowTitle(tr("Reset Workspace"));
 
         QVBoxLayout* vLayout = new QVBoxLayout(this);
         vLayout->setAlignment(Qt::AlignTop);
 
         setObjectName("StyledWidgetDark");
 
-        QLabel* topLabel = new QLabel("<b>Select one or more items that you want to reset:</b>");
+        QLabel* topLabel = new QLabel(tr("<b>Select one or more items that you want to reset:</b>"));
         topLabel->setStyleSheet("background-color: rgb(40, 40, 40); padding: 6px;");
         topLabel->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
         vLayout->addWidget(topLabel);
@@ -73,19 +73,19 @@ namespace EMStudio
         m_actorCheckbox->setChecked(hasActors);
         m_actorCheckbox->setDisabled(!hasActors);
 
-        m_motionCheckbox = new QCheckBox("Motions");
+        m_motionCheckbox = new QCheckBox(tr("Motions"));
         const bool hasMotions = HasEntityInEditor(
             EMotionFX::GetMotionManager(), &EMotionFX::MotionManager::GetNumMotions, &EMotionFX::MotionManager::GetMotion);
         m_motionCheckbox->setChecked(hasMotions);
         m_motionCheckbox->setDisabled(!hasMotions);
 
-        m_motionSetCheckbox = new QCheckBox("Motion Sets");
+        m_motionSetCheckbox = new QCheckBox(tr("Motion Sets"));
         const bool hasMotionSets = HasEntityInEditor(
             EMotionFX::GetMotionManager(), &EMotionFX::MotionManager::GetNumMotionSets, &EMotionFX::MotionManager::GetMotionSet);
         m_motionSetCheckbox->setChecked(hasMotionSets);
         m_motionSetCheckbox->setDisabled(!hasMotionSets);
 
-        m_animGraphCheckbox = new QCheckBox("Anim Graphs");
+        m_animGraphCheckbox = new QCheckBox(tr("Anim Graphs"));
         const bool hasAnimGraphs = HasEntityInEditor(
             EMotionFX::GetAnimGraphManager(), &EMotionFX::AnimGraphManager::GetNumAnimGraphs, &EMotionFX::AnimGraphManager::GetAnimGraph);
         m_animGraphCheckbox->setChecked(hasAnimGraphs);

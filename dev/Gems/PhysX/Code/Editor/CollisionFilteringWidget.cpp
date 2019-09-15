@@ -38,8 +38,8 @@ namespace PhysX
             m_collisionGroupsWidget = new CollisionGroupsWidget();
 
             m_tabs = new AzQtComponents::SegmentControl();
-            m_tabs->addTab(m_collisionLayersWidget, "Layers");
-            m_tabs->addTab(m_collisionGroupsWidget, "Groups");
+            m_tabs->addTab(m_collisionLayersWidget, tr("Layers"));
+            m_tabs->addTab(m_collisionGroupsWidget, tr("Groups"));
             
             verticalLayout->addWidget(m_documentationLinkWidget);
             verticalLayout->addWidget(m_tabs);

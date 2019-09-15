@@ -111,26 +111,26 @@ namespace EMStudio
         CreateEntry(viewMenu, "Gradient Background",    "",                     RENDER_USE_GRADIENTBACKGROUND);// don't add to the toolbar
 
         viewMenu->addSeparator();
-        viewMenu->addAction("Reset", this, &RenderViewWidget::OnReset);
+        viewMenu->addAction(tr("Reset"), this, &RenderViewWidget::OnReset);
 
         viewMenu->addSeparator();
-        viewMenu->addAction("Render Options", this, &RenderViewWidget::OnOptions);
+        viewMenu->addAction(tr("Render Options"), this, &RenderViewWidget::OnOptions);
 
         // the cameras menu
         QMenu* cameraMenu = mMenu->addMenu(tr("&Camera"));
         mCameraMenu = cameraMenu;
 
-        cameraMenu->addAction("Perspective",       this, &RenderViewWidget::OnOrbitCamera);
-        cameraMenu->addAction("Front",             this, &RenderViewWidget::OnOrthoFrontCamera);
-        cameraMenu->addAction("Back",              this, &RenderViewWidget::OnOrthoBackCamera);
-        cameraMenu->addAction("Left",              this, &RenderViewWidget::OnOrthoLeftCamera);
-        cameraMenu->addAction("Right",             this, &RenderViewWidget::OnOrthoRightCamera);
-        cameraMenu->addAction("Top",               this, &RenderViewWidget::OnOrthoTopCamera);
-        cameraMenu->addAction("Bottom",            this, &RenderViewWidget::OnOrthoBottomCamera);
+        cameraMenu->addAction(tr("Perspective"),       this, &RenderViewWidget::OnOrbitCamera);
+        cameraMenu->addAction(tr("Front"),             this, &RenderViewWidget::OnOrthoFrontCamera);
+        cameraMenu->addAction(tr("Back"),              this, &RenderViewWidget::OnOrthoBackCamera);
+        cameraMenu->addAction(tr("Left"),              this, &RenderViewWidget::OnOrthoLeftCamera);
+        cameraMenu->addAction(tr("Right"),             this, &RenderViewWidget::OnOrthoRightCamera);
+        cameraMenu->addAction(tr("Top"),               this, &RenderViewWidget::OnOrthoTopCamera);
+        cameraMenu->addAction(tr("Bottom"),            this, &RenderViewWidget::OnOrthoBottomCamera);
         cameraMenu->addSeparator();
-        cameraMenu->addAction("Reset Camera",      [this]() { this->OnResetCamera(); });
-        cameraMenu->addAction("Show Selected",     this, &RenderViewWidget::OnShowSelected);
-        cameraMenu->addAction("Show Entire Scene", this, &RenderViewWidget::OnShowEntireScene);
+        cameraMenu->addAction(tr("Reset Camera"),      [this]() { this->OnResetCamera(); });
+        cameraMenu->addAction(tr("Show Selected"),     this, &RenderViewWidget::OnShowSelected);
+        cameraMenu->addAction(tr("Show Entire Scene"), this, &RenderViewWidget::OnShowEntireScene);
         cameraMenu->addSeparator();
 
         mFollowCharacterAction = cameraMenu->addAction(tr("Follow Character"));

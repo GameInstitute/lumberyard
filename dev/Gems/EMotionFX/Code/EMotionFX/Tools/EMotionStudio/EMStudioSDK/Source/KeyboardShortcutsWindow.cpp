@@ -87,7 +87,7 @@ namespace EMStudio
         vLayout->setMargin(0);
         vLayout->addWidget(mTableWidget);
 
-        QLabel* label = new QLabel("Double-click to adjust shortcut");
+        QLabel* label = new QLabel(tr("Double-click to adjust shortcut"));
         label->setAlignment(Qt::AlignCenter);
         vLayout->addWidget(label);
         mHLayout->addLayout(vLayout);
@@ -356,10 +356,10 @@ namespace EMStudio
         // create the context menu
         QMenu menu(this);
 
-        QAction* defaultAction = menu.addAction("Reset To Default");
+        QAction* defaultAction = menu.addAction(tr("Reset To Default"));
         connect(defaultAction, &QAction::triggered, this, &KeyboardShortcutsWindow::OnResetToDefault);
 
-        QAction* newKeyAction = menu.addAction("Assign New Key");
+        QAction* newKeyAction = menu.addAction(tr("Assign New Key"));
         connect(newKeyAction, &QAction::triggered, this, &KeyboardShortcutsWindow::OnAssignNewKey);
 
         // show the menu at the given position
@@ -376,7 +376,7 @@ namespace EMStudio
         setObjectName("ShortcutReceiverDialog");
 
         setWindowTitle(" ");
-        layout->addWidget(new QLabel("Press the new shortcut on the keyboard:"));
+        layout->addWidget(new QLabel(tr("Press the new shortcut on the keyboard:")));
 
         // find the initial shortcut
         //MysticQt::KeyboardShortcutManager* shortcutManager = GetMainWindow()->GetShortcutManager();
@@ -407,15 +407,15 @@ namespace EMStudio
         QHBoxLayout* buttonLayout = new QHBoxLayout();
         buttonLayout->setMargin(0);
 
-        mOKButton = new QPushButton("OK");
+        mOKButton = new QPushButton(tr("OK"));
         buttonLayout->addWidget(mOKButton);
         connect(mOKButton, &QPushButton::clicked, this, &ShortcutReceiverDialog::accept);
 
-        QPushButton* defaultButton = new QPushButton("Default");
+        QPushButton* defaultButton = new QPushButton(tr("Default"));
         buttonLayout->addWidget(defaultButton);
         connect(defaultButton, &QPushButton::clicked, this, &ShortcutReceiverDialog::ResetToDefault);
 
-        QPushButton* cancelButton = new QPushButton("Cancel");
+        QPushButton* cancelButton = new QPushButton(tr("Cancel"));
         buttonLayout->addWidget(cancelButton);
         connect(cancelButton, &QPushButton::clicked, this, &ShortcutReceiverDialog::reject);
 

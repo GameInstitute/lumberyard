@@ -39,7 +39,7 @@ namespace EMStudio
     {
         InputDialogValidatable inputDialog(GetMainWindow(), /*labelText=*/"Layout name:");
         inputDialog.SetText(GetMainWindow()->GetCurrentLayoutName());
-        inputDialog.setWindowTitle("New layout name");
+        inputDialog.setWindowTitle(QObject::tr("New layout name"));
         inputDialog.setMinimumWidth(300);
 
         if (inputDialog.exec() == QDialog::Rejected)
@@ -52,7 +52,7 @@ namespace EMStudio
         // If the file already exists, ask to overwrite or not.
         if (QFile::exists(filename.c_str()))
         {
-            QMessageBox msgBox(QMessageBox::Warning, "Overwrite Existing Layout?", "A layout with the same name already exists.<br>Would you like to overwrite it?<br><br>Click <b>yes</b> to <b>overwrite</b> the existing layout.<br>Click <b>no</b> to <b>cancel saving</b> this layout.", QMessageBox::Yes | QMessageBox::No, (QWidget*)EMStudio::GetMainWindow());
+            QMessageBox msgBox(QMessageBox::Warning, QObject::tr("Overwrite Existing Layout?"), QObject::tr("A layout with the same name already exists.<br>Would you like to overwrite it?<br><br>Click <b>yes</b> to <b>overwrite</b> the existing layout.<br>Click <b>no</b> to <b>cancel saving</b> this layout."), QMessageBox::Yes | QMessageBox::No, (QWidget*)EMStudio::GetMainWindow());
             msgBox.setTextFormat(Qt::RichText);
             if (msgBox.exec() != QMessageBox::Yes)
             {
@@ -68,7 +68,7 @@ namespace EMStudio
             GetMainWindow()->UpdateLayoutsMenu();
 
             MCore::LogInfo("Successfully saved layout to file '%s'", filename.c_str());
-            GetNotificationWindowManager()->CreateNotificationWindow(NotificationWindow::TYPE_SUCCESS, "Layout <font color=green>successfully</font> saved");
+            GetNotificationWindowManager()->CreateNotificationWindow(NotificationWindow::TYPE_SUCCESS, QObject::tr("Layout <font color=green>successfully</font> saved"));
         }
         else
         {
@@ -78,7 +78,7 @@ namespace EMStudio
             GetCommandManager()->AddError(errorMessage.c_str());
             GetCommandManager()->ShowErrorReport();
 
-            GetNotificationWindowManager()->CreateNotificationWindow(NotificationWindow::TYPE_ERROR, "Layout <font color=red>failed</font> to save");
+            GetNotificationWindowManager()->CreateNotificationWindow(NotificationWindow::TYPE_ERROR, QObject::tr("Layout <font color=red>failed</font> to save"));
         }
     }
 

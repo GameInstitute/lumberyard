@@ -228,10 +228,10 @@ void CSequenceBatchRenderDialog::OnInitDialog()
     }
     m_ui->m_buffersToCaptureCombo->setCurrentIndex(0);
 
-    m_ui->BATCH_RENDER_FILE_PREFIX->setText("Frame");
+    m_ui->BATCH_RENDER_FILE_PREFIX->setText(tr("Frame"));
     m_ui->BATCH_RENDER_FILE_PREFIX->setValidator(m_prefixValidator.data());
 
-    m_ui->m_progressStatusMsg->setText("Not running");
+    m_ui->m_progressStatusMsg->setText(tr("Not running"));
 
     m_ui->BATCH_RENDER_REMOVE_SEQ->setEnabled(false);
     m_ui->m_pGoBtn->setEnabled(false);
@@ -1411,7 +1411,7 @@ void CSequenceBatchRenderDialog::OnLoadBatch()
 void CSequenceBatchRenderDialog::OnSaveBatch()
 {
     QString savePath;
-    if (CFileUtil::SelectSaveFile("Render Batch Files (*.batch)", "batch",
+    if (CFileUtil::SelectSaveFile(tr("Render Batch Files (*.batch)"), "batch",
             Path::GetUserSandboxFolder(), savePath))
     {
         XmlNodeRef batchRenderListNode = XmlHelpers::CreateXmlNode("batchrenderlist");

@@ -72,10 +72,10 @@ QFileSelectResourceWidget::QFileSelectResourceWidget(CAttributeItem* parent, CAt
     {
     case ePropertyTexture:
     {
-        ui->path->lineEdit()->setPlaceholderText("Add a texture");
+        ui->path->lineEdit()->setPlaceholderText(tr("Add a texture"));
 
         // Open texture file in editor
-        btn = addButton("Open Input Bindings Editor", tr("Open File"), 1, 0, 1, 6);
+        btn = addButton(tr("Open Input Bindings Editor"), tr("Open File"), 1, 0, 1, 6);
         connect(btn, &QPushButton::clicked, this, &QFileSelectResourceWidget::OpenSourceFile);
         m_btns.push_back(btn);
         m_btns.back()->installEventFilter(this);
@@ -90,12 +90,12 @@ QFileSelectResourceWidget::QFileSelectResourceWidget(CAttributeItem* parent, CAt
     {
         //CreateDefaultResourcePreview();
         // Open AssetBrowser
-        ui->path->lineEdit()->setPlaceholderText("Add a material");
+        ui->path->lineEdit()->setPlaceholderText(tr("Add a material"));
         QIcon icon("Editor/UI/Icons/mann_folder.png");
         setMainButton("", tr("Browse"), &icon);
 
          // Open material editor
-        btn = addButton("Open Input Bindings Editor", tr("Open File"), 1, 0, 1, 6);
+        btn = addButton(tr("Open Input Bindings Editor"), tr("Open File"), 1, 0, 1, 6);
         connect(btn, &QPushButton::clicked, this, &QFileSelectResourceWidget::OpenSourceFile);
         m_btns.push_back(btn);
         m_btns.back()->installEventFilter(this);
@@ -104,7 +104,7 @@ QFileSelectResourceWidget::QFileSelectResourceWidget(CAttributeItem* parent, CAt
     }
     case ePropertyModel:
     {
-        ui->path->lineEdit()->setPlaceholderText("Add a model");
+        ui->path->lineEdit()->setPlaceholderText(tr("Add a model"));
 
         // Open Resource browser
         QIcon icon("Editor/UI/Icons/mann_folder.png");
@@ -113,7 +113,7 @@ QFileSelectResourceWidget::QFileSelectResourceWidget(CAttributeItem* parent, CAt
     }
     case ePropertyAudioTrigger:
     {
-        ui->path->lineEdit()->setPlaceholderText("Add a sound");
+        ui->path->lineEdit()->setPlaceholderText(tr("Add a sound"));
 
         // Open Resource browser
         QIcon icon("Editor/UI/Icons/mann_folder.png");

@@ -327,7 +327,7 @@ namespace EMStudio
         menuLayout->setSpacing(0);
         menuLayout->addWidget(menuBar);
 
-        QLabel* modeLabel = new QLabel("Layout: ");
+        QLabel* modeLabel = new QLabel(tr("Layout: "));
         mApplicationMode = new MysticQt::ComboBox();
         menuLayout->addWidget(mApplicationMode);
 
@@ -423,8 +423,8 @@ namespace EMStudio
 
         QMenu* folders = menu->addMenu("Folders");
         folders->setIcon(MysticQt::GetMysticQt()->FindIcon("Images/Icons/Open.png"));
-        folders->addAction("Open autosave folder", this, &MainWindow::OnOpenAutosaveFolder);
-        folders->addAction("Open settings folder", this, &MainWindow::OnOpenSettingsFolder);
+        folders->addAction(tr("Open autosave folder"), this, &MainWindow::OnOpenAutosaveFolder);
+        folders->addAction(tr("Open settings folder"), this, &MainWindow::OnOpenSettingsFolder);
 
         // Reset old workspace and start clean.
         GetManager()->GetWorkspace()->Reset();

@@ -50,7 +50,7 @@ namespace EMStudio
     // initialize the preferences window
     void PreferencesWindow::Init()
     {
-        setWindowTitle("Preferences");
+        setWindowTitle(tr("Preferences"));
         setSizeGripEnabled(false);
 
         const int32 iconSize = 64;

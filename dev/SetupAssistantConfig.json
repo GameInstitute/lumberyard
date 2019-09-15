@@ -206,7 +206,7 @@
                     "compilers" : ["vc140", "vc141"],
                     "source" : "libiconv/1.15",
                     "destination" : "$CODEFOLDERNAME$/SDKs/libiconv",
-                    "exampleFile" : "include/iconv.h"
+                    "exampleFile" : "lib/libiconv.lib"
                 }
             ]
         },
@@ -226,7 +226,7 @@
                     "compilers" : ["vc140", "vc141"],
                     "source" : "libintl/0.17",
                     "destination" : "$CODEFOLDERNAME$/SDKs/libintl",
-                    "exampleFile" : "include/libintl.h"
+                    "exampleFile" : "lib/libintl.lib"
                 }
             ]
         },

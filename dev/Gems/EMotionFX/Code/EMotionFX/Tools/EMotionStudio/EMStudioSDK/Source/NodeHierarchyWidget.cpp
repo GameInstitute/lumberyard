@@ -58,16 +58,16 @@ namespace EMStudio
         // create the display layout
         QHBoxLayout* displayLayout = new QHBoxLayout();
 
-        displayLayout->addWidget(new QLabel("Display:"));
+        displayLayout->addWidget(new QLabel(tr("Display:")));
 
         mDisplayButtonGroup     = new MysticQt::ButtonGroup(this, 1, 3);
         mDisplayMeshesButton    = mDisplayButtonGroup->GetButton(0, 0);
         mDisplayNodesButton     = mDisplayButtonGroup->GetButton(0, 1);
         mDisplayBonesButton     = mDisplayButtonGroup->GetButton(0, 2);
 
-        mDisplayMeshesButton->setText("Meshes");
-        mDisplayNodesButton->setText("Nodes");
-        mDisplayBonesButton->setText("Bones");
+        mDisplayMeshesButton->setText(tr("Meshes"));
+        mDisplayNodesButton->setText(tr("Nodes"));
+        mDisplayBonesButton->setText(tr("Bones"));
 
         mDisplayBonesButton->setIcon(*mBoneIcon);
         mDisplayNodesButton->setIcon(*mNodeIcon);
@@ -99,11 +99,11 @@ namespace EMStudio
         // create header items
         mHierarchy->setColumnCount(5);
         QStringList headerList;
-        headerList.append("Name");
-        headerList.append("Type");
-        headerList.append("Child");
-        headerList.append("Poly");
-        headerList.append("Mirror");
+        headerList.append(tr("Name"));
+        headerList.append(tr("Type"));
+        headerList.append(tr("Child"));
+        headerList.append(tr("Poly"));
+        headerList.append(tr("Mirror"));
         mHierarchy->setHeaderLabels(headerList);
 
         // set optical stuff for the tree
@@ -247,7 +247,7 @@ namespace EMStudio
         }
 
         rootItem->setText(0, actorName.c_str());
-        rootItem->setText(1, "Character");
+        rootItem->setText(1, tr("Character"));
         rootItem->setText(2, AZStd::to_string(numNodes).c_str());
         rootItem->setText(3, AZStd::to_string(numIndices / 3).c_str());
         rootItem->setText(4, "");
@@ -335,22 +335,22 @@ namespace EMStudio
             if (isBone)
             {
                 item->setIcon(0, *mBoneIcon);
-                item->setText(1, "Bone");
+                item->setText(1, tr("Bone"));
             }
             else if (isMeshNode)
             {
                 item->setIcon(0, *mMeshIcon);
-                item->setText(1, "Mesh");
+                item->setText(1, tr("Mesh"));
                 item->setText(3, QString::number(mesh->GetNumIndices() / 3));
             }
             else if (isNode)
             {
                 item->setIcon(0, *mNodeIcon);
-                item->setText(1, "Node");
+                item->setText(1, tr("Node"));
             }
             else
             {
-                item->setText(1, "Undefined");
+                item->setText(1, tr("Undefined"));
             }
 
 

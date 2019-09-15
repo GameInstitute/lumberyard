@@ -26,13 +26,13 @@ namespace EMStudio
         : QDialog(parent)
     {
         // set the window title
-        setWindowTitle("Load Actor Settings");
+        setWindowTitle(tr("Load Actor Settings"));
 
         AZStd::string filename;
         AzFramework::StringFunc::Path::GetFileName(filePath.c_str(), filename);
 
         // create the top layout
-        QLabel* topLabel = new QLabel(QString("File: <b>%1</b>").arg(filename.c_str()));
+        QLabel* topLabel = new QLabel(QString(tr("File: <b>%1</b>")).arg(filename.c_str()));
         topLabel->setStyleSheet("background-color: rgb(40, 40, 40); padding: 6px;");
         topLabel->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
         QVBoxLayout* topLayout = new QVBoxLayout();
@@ -44,7 +44,7 @@ namespace EMStudio
         const QSettings loadActorSettings(GetConfigFilename(), QSettings::IniFormat, this);
 
         // create the load meshes checkbox
-        mLoadMeshesCheckbox = new QCheckBox("Load Meshes");
+        mLoadMeshesCheckbox = new QCheckBox(tr("Load Meshes"));
         const bool loadMeshesValue = loadActorSettings.value("LoadMeshes", true).toBool();
         mLoadMeshesCheckbox->setChecked(loadMeshesValue);
 
@@ -52,17 +52,17 @@ namespace EMStudio
         connect(mLoadMeshesCheckbox, &QCheckBox::clicked, this, &LoadActorSettingsWindow::LoadMeshesClicked);
 
         // create the load collision meshes checkbox
-        mLoadCollisionMeshesCheckbox = new QCheckBox("Load Collision Meshes");
+        mLoadCollisionMeshesCheckbox = new QCheckBox(tr("Load Collision Meshes"));
         const bool loadCollisionMeshesValue = loadActorSettings.value("LoadCollisionMeshes", true).toBool();
         mLoadCollisionMeshesCheckbox->setChecked(loadCollisionMeshesValue);
 
         // create the load standard material layers checkbox
-        mLoadStandardMaterialLayersCheckbox = new QCheckBox("Load Standard Material Layers");
+        mLoadStandardMaterialLayersCheckbox = new QCheckBox(tr("Load Standard Material Layers"));
         const bool loadStandardMaterialLayersValue = loadActorSettings.value("LoadStandardMaterialLayers", true).toBool();
         mLoadStandardMaterialLayersCheckbox->setChecked(loadStandardMaterialLayersValue);
 
         // create the load skinning info checkbox
-        mLoadSkinningInfoCheckbox = new QCheckBox("Load Skinning Info");
+        mLoadSkinningInfoCheckbox = new QCheckBox(tr("Load Skinning Info"));
         const bool loadSkinningInfoValue = loadActorSettings.value("LoadSkinningInfo", true).toBool();
         mLoadSkinningInfoCheckbox->setChecked(loadSkinningInfoValue);
 
@@ -70,37 +70,37 @@ namespace EMStudio
         connect(mLoadSkinningInfoCheckbox, &QCheckBox::clicked, this, &LoadActorSettingsWindow::LoadSkinningInfoClicked);
 
         // create the load limits checkbox
-        mLoadLimitsCheckbox = new QCheckBox("Load Limits");
+        mLoadLimitsCheckbox = new QCheckBox(tr("Load Limits"));
         const bool loadLimitsValue = loadActorSettings.value("LoadLimits", true).toBool();
         mLoadLimitsCheckbox->setChecked(loadLimitsValue);
 
         // create the load geometry LODs checkbox
-        mLoadGeometryLODsCheckbox = new QCheckBox("Load Geometry LODs");
+        mLoadGeometryLODsCheckbox = new QCheckBox(tr("Load Geometry LODs"));
         const bool loadGeometryLODsValue = loadActorSettings.value("LoadGeometryLODs", true).toBool();
         mLoadGeometryLODsCheckbox->setChecked(loadGeometryLODsValue);
 
         // create the load skeletal LODs checkbox
-        mLoadSkeletalLODsCheckbox = new QCheckBox("Load Skeletal LODs");
+        mLoadSkeletalLODsCheckbox = new QCheckBox(tr("Load Skeletal LODs"));
         const bool loadSkeletalLODsValue = loadActorSettings.value("LoadSkeletalLODs", true).toBool();
         mLoadSkeletalLODsCheckbox->setChecked(loadSkeletalLODsValue);
 
         // create the load tangents checkbox
-        mLoadTangentsCheckbox = new QCheckBox("Load Tangents");
+        mLoadTangentsCheckbox = new QCheckBox(tr("Load Tangents"));
         const bool loadTangentsValue = loadActorSettings.value("LoadTangents", true).toBool();
         mLoadTangentsCheckbox->setChecked(loadTangentsValue);
 
         // create the auto generate tangents checkbox
-        mAutoGenerateTangentsCheckbox = new QCheckBox("Auto Generate Tangents");
+        mAutoGenerateTangentsCheckbox = new QCheckBox(tr("Auto Generate Tangents"));
         const bool autoGenerateTangentsValue = loadActorSettings.value("AutoGenerateTangents", true).toBool();
         mAutoGenerateTangentsCheckbox->setChecked(autoGenerateTangentsValue);
 
         // create the load morph targets checkbox
-        mLoadMorphTargetsCheckbox = new QCheckBox("Load Morph Targets");
+        mLoadMorphTargetsCheckbox = new QCheckBox(tr("Load Morph Targets"));
         const bool loadMorphTargetsValue = loadActorSettings.value("LoadMorphTargets", true).toBool();
         mLoadMorphTargetsCheckbox->setChecked(loadMorphTargetsValue);
 
         // create the dual quaternion skinning checkbox
-        mDualQuaternionSkinningCheckbox = new QCheckBox("Dual Quaternion Skinning");
+        mDualQuaternionSkinningCheckbox = new QCheckBox(tr("Dual Quaternion Skinning"));
         const bool dualQuaternionSkinningValue = loadActorSettings.value("DualQuaternionSkinning", false).toBool();
         mDualQuaternionSkinningCheckbox->setChecked(dualQuaternionSkinningValue);
 
@@ -153,8 +153,8 @@ namespace EMStudio
 
         // create the button layout
         QHBoxLayout* buttonLayout = new QHBoxLayout();
-        QPushButton* okButton = new QPushButton("OK");
-        QPushButton* cancelButton = new QPushButton("Cancel");
+        QPushButton* okButton = new QPushButton(tr("OK"));
+        QPushButton* cancelButton = new QPushButton(tr("Cancel"));
         buttonLayout->addWidget(okButton);
         buttonLayout->addWidget(cancelButton);
         buttonLayout->setAlignment(Qt::AlignBottom);

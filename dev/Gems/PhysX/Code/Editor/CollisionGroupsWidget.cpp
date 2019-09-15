@@ -250,7 +250,7 @@ namespace PhysX
 
             // New group button
             QPushButton* addNewGroup = new QPushButton();
-            addNewGroup->setText("Add");
+            addNewGroup->setText(tr("Add"));
             addNewGroup->setFixedSize(s_buttonWidth + s_rowHeaderWidthBuffer, s_rowHeight);
 
             m_mainLayout = new QVBoxLayout();
@@ -471,7 +471,7 @@ namespace PhysX
                 return;
             }
 
-            QPushButton* deleteRow = new QPushButton("Remove");
+            QPushButton* deleteRow = new QPushButton(tr("Remove"));
             deleteRow->setFixedSize(s_buttonWidth, s_rowHeight);
             m_gridLayout->addWidget(deleteRow, row, column);
             m_widgets.push_back(deleteRow);

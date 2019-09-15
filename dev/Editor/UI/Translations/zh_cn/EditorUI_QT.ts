@@ -835,10 +835,21 @@ Reloading library will discard all modifications to this library!</source>
 <context>
     <name>QFileSelectResourceWidget</name>
     <message>
+        <location filename="../../../../Code/Sandbox/Plugins/EditorUI_QT/VariableWidgets/QFileSelectResourceWidget.cpp" line="75"/>
+        <source>Add a texture</source>
+        <translation>添加贴图</translation>
+    </message>
+    <message>
         <location filename="../../../../Code/Sandbox/Plugins/EditorUI_QT/VariableWidgets/QFileSelectResourceWidget.cpp" line="78"/>
         <location filename="../../../../Code/Sandbox/Plugins/EditorUI_QT/VariableWidgets/QFileSelectResourceWidget.cpp" line="98"/>
         <source>Open File</source>
         <translation>打开文件</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/EditorUI_QT/VariableWidgets/QFileSelectResourceWidget.cpp" line="78"/>
+        <location filename="../../../../Code/Sandbox/Plugins/EditorUI_QT/VariableWidgets/QFileSelectResourceWidget.cpp" line="98"/>
+        <source>Open Input Bindings Editor</source>
+        <translation>打开输入绑定编辑器</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Plugins/EditorUI_QT/VariableWidgets/QFileSelectResourceWidget.cpp" line="85"/>
@@ -847,10 +858,25 @@ Reloading library will discard all modifications to this library!</source>
         <translation>浏览</translation>
     </message>
     <message>
+        <location filename="../../../../Code/Sandbox/Plugins/EditorUI_QT/VariableWidgets/QFileSelectResourceWidget.cpp" line="93"/>
+        <source>Add a material</source>
+        <translation>添加材质</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/EditorUI_QT/VariableWidgets/QFileSelectResourceWidget.cpp" line="107"/>
+        <source>Add a model</source>
+        <translation>添加模型</translation>
+    </message>
+    <message>
         <location filename="../../../../Code/Sandbox/Plugins/EditorUI_QT/VariableWidgets/QFileSelectResourceWidget.cpp" line="111"/>
         <location filename="../../../../Code/Sandbox/Plugins/EditorUI_QT/VariableWidgets/QFileSelectResourceWidget.cpp" line="120"/>
         <source>Open AssetBrowser</source>
         <translation>打开资源浏览器</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/EditorUI_QT/VariableWidgets/QFileSelectResourceWidget.cpp" line="116"/>
+        <source>Add a sound</source>
+        <translation>添加音频</translation>
     </message>
 </context>
 <context>

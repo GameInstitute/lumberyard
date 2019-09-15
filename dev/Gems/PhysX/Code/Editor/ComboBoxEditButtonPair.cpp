@@ -31,7 +31,7 @@ namespace PhysX
             m_editButton = new QPushButton();
             m_editButton->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
             m_editButton->setFixedSize(QSize(24, 16));
-            m_editButton->setToolTip(QString("Edit"));
+            m_editButton->setToolTip(QString(tr("Edit")));
             m_editButton->setIcon(QIcon(":/PropertyEditor/Resources/edit-asset.png"));
 
             layout->addWidget(m_comboBox);

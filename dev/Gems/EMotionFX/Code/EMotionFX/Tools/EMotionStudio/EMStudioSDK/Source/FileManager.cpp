@@ -419,9 +419,9 @@ namespace EMStudio
         QFileDialog::Options options;
         QString selectedFilter;
         const AZStd::string filename = QFileDialog::getSaveFileName(parent,                                 // parent
-                                                                    "Save",                                 // caption
+																	tr("Save"),                                 // caption
                                                                     GetLastUsedFolder(mLastActorFolder),    // directory
-                                                                    "EMotion FX Actor Files (*.actor)",
+																	tr("EMotion FX Actor Files (*.actor)"),
                                                                     &selectedFilter,
                                                                     options).toUtf8().data();
 
@@ -441,7 +441,7 @@ namespace EMStudio
         if (EMStudio::GetCommandManager()->ExecuteCommand(command, result))
         {
             GetNotificationWindowManager()->CreateNotificationWindow(NotificationWindow::TYPE_SUCCESS, 
-                "Actor <font color=green>successfully</font> saved");
+				tr("Actor <font color=green>successfully</font> saved"));
         }
         else
         {
@@ -459,9 +459,9 @@ namespace EMStudio
         QFileDialog::Options options;
         QString selectedFilter;
         AZStd::string filename = QFileDialog::getOpenFileName(parent,                                                   // parent
-                                                              "Open",                                                   // caption
+															  tr("Open"),                                                   // caption
                                                               GetLastUsedFolder(mLastWorkspaceFolder),                  // directory
-                                                              "EMotionFX Editor Workspace Files (*.emfxworkspace);;All Files (*)",
+														      tr("EMotionFX Editor Workspace Files (*.emfxworkspace);;All Files (*)"),
                                                               &selectedFilter,
                                                               options).toUtf8().data();
 
@@ -477,10 +477,10 @@ namespace EMStudio
 
         QFileDialog::Options options;
         QString selectedFilter;
-        AZStd::string filename = QFileDialog::getSaveFileName(parent,                                       // parent
-                                                              "Save",                                       // caption
+        AZStd::string filename = QFileDialog::getSaveFileName(parent,
+															  tr("Save"),                                       // caption
                                                               GetLastUsedFolder(mLastWorkspaceFolder),      // directory
-                                                              "EMotionFX Editor Workspace Files (*.emfxworkspace)",
+															  tr("EMotionFX Editor Workspace Files (*.emfxworkspace)"),
                                                               &selectedFilter,
                                                               options).toUtf8().data();
 
@@ -488,7 +488,7 @@ namespace EMStudio
 
         if (IsFileInAssetCache(filename))
         {
-            QMessageBox::critical(GetMainWindow(), "Error", "Saving workspace in the asset cache folder is not allowed. Please select a different location.", QMessageBox::Ok);
+            QMessageBox::critical(GetMainWindow(), tr("Error"), tr("Saving workspace in the asset cache folder is not allowed. Please select a different location."), QMessageBox::Ok);
             return AZStd::string();
         }
 
@@ -506,7 +506,7 @@ namespace EMStudio
         if (EMStudio::GetCommandManager()->ExecuteCommand(command, result))
         {
             GetNotificationWindowManager()->CreateNotificationWindow(NotificationWindow::TYPE_SUCCESS,
-                "Motion <font color=green>successfully</font> saved");
+				tr("Motion <font color=green>successfully</font> saved"));
         }
         else
         {
@@ -560,9 +560,9 @@ namespace EMStudio
         QFileDialog::Options options;
         QString selectedFilter;
         AZStd::string filename = QFileDialog::getSaveFileName(parent,                                       // parent
-                                                              "Save",                                       // caption
+			tr("Save"),                                       // caption
                                                               GetLastUsedFolder(mLastMotionSetFolder),      // directory
-                                                              "EMotion FX Motion Set Files (*.motionset)",
+				tr("EMotion FX Motion Set Files (*.motionset)"),
                                                               &selectedFilter,
                                                               options).toUtf8().data();
 
@@ -589,7 +589,7 @@ namespace EMStudio
             else
             {
                 GetNotificationWindowManager()->CreateNotificationWindow(NotificationWindow::TYPE_SUCCESS, 
-                    "MotionSet <font color=green>successfully</font> saved");
+					tr("MotionSet <font color=green>successfully</font> saved"));
             }
         }
         else
@@ -639,9 +639,9 @@ namespace EMStudio
         QFileDialog::Options options;
         QString selectedFilter;
         AZStd::string filename = QFileDialog::getSaveFileName(parent,                                                   // parent
-                                                              "Save",                                                   // caption
+			tr("Save"),                                                   // caption
                                                               GetLastUsedFolder(mLastAnimGraphFolder),                 // directory
-                                                              "EMotion FX Anim Graph Files (*.animgraph);;All Files (*)",
+				tr("EMotion FX Anim Graph Files (*.animgraph);;All Files (*)"),
                                                               &selectedFilter,
                                                               options).toUtf8().data();
 
@@ -661,9 +661,9 @@ namespace EMStudio
         QFileDialog::Options options;
         QString selectedFilter;
         const AZStd::string filename = QFileDialog::getOpenFileName(parent,                                         // parent
-                                                                    "Open",                                         // caption
+			tr("Open"),                                         // caption
                                                                     GetLastUsedFolder(mLastNodeMapFolder),          // directory
-                                                                    "Node Map Files (*.nodeMap);;All Files (*)",
+				tr("Node Map Files (*.nodeMap);;All Files (*)"),
                                                                     &selectedFilter,
                                                                     options).toUtf8().data();
 
@@ -682,9 +682,9 @@ namespace EMStudio
         QFileDialog::Options options;
         QString selectedFilter;
         const AZStd::string filename = QFileDialog::getSaveFileName(parent,                                         // parent
-                                                                    "Save",                                         // caption
+			tr("Save"),                                         // caption
                                                                     GetLastUsedFolder(mLastNodeMapFolder),          // directory
-                                                                    "Node Map Files (*.nodeMap);;All Files (*)",
+				tr("Node Map Files (*.nodeMap);;All Files (*)"),
                                                                     &selectedFilter,
                                                                     options).toUtf8().data();
 
@@ -712,9 +712,9 @@ namespace EMStudio
         QFileDialog::Options options;
         QString selectedFilter;
         QString filenameString = QFileDialog::getOpenFileName(parent,                                           // parent
-                                                              "Load",                                           // caption
+			tr("Load"),                                           // caption
                                                               dir.c_str(),                                     // directory
-                                                              "EMotion FX Config Files (*.cfg);;All Files (*)",
+				tr("EMotion FX Config Files (*.cfg);;All Files (*)"),
                                                               &selectedFilter,
                                                               options);
 
@@ -744,9 +744,9 @@ namespace EMStudio
         QFileDialog::Options options;
         QString selectedFilter;
         QString filename = QFileDialog::getSaveFileName(parent,                                                 // parent
-                                                        "Save",                                                 // caption
+			tr("Save"),                                                 // caption
                                                         dir.c_str(),                                           // directory
-                                                        "EMotion FX Blend Config Files (*.cfg);;All Files (*)",
+				tr("EMotion FX Blend Config Files (*.cfg);;All Files (*)"),
                                                         &selectedFilter,
                                                         options);
 
