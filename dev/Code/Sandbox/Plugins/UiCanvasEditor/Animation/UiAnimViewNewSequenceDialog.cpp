@@ -26,7 +26,7 @@ CUiAVNewSequenceDialog::CUiAVNewSequenceDialog(QWidget* parent)
 {
     ui->setupUi(this);
     connect(ui->buttonBox, &QDialogButtonBox::accepted, this, &CUiAVNewSequenceDialog::OnOK);
-    setWindowTitle("Add New Sequence");
+    setWindowTitle(tr("Add New Sequence"));
 }
 
 CUiAVNewSequenceDialog::~CUiAVNewSequenceDialog()
@@ -39,12 +39,12 @@ void CUiAVNewSequenceDialog::OnOK()
 
     if (m_sequenceName.isEmpty())
     {
-        QMessageBox::warning(this, "New Sequence", "A sequence name cannot be empty!");
+        QMessageBox::warning(this, tr("New Sequence"), tr("A sequence name cannot be empty!"));
         return;
     }
     else if (m_sequenceName.contains('/'))
     {
-        QMessageBox::warning(this, "New Sequence", "A sequence name cannot contain a '/' character!");
+        QMessageBox::warning(this, tr("New Sequence"), tr("A sequence name cannot contain a '/' character!"));
         return;
     }
 
@@ -55,7 +55,7 @@ void CUiAVNewSequenceDialog::OnOK()
 
         if (fullname.compare(m_sequenceName, Qt::CaseInsensitive) == 0)
         {
-            QMessageBox::warning(this, "New Sequence", "Sequence with this name already exists!");
+            QMessageBox::warning(this, tr("New Sequence"), tr("Sequence with this name already exists!"));
             return;
         }
     }

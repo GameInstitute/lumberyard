@@ -21,6 +21,33 @@
         <source>New sequence name:</source>
         <translation>新序列名称:</translation>
     </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/Animation/UiAnimViewNewSequenceDialog.cpp" line="29"/>
+        <source>Add New Sequence</source>
+        <translation>添加新序列</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/Animation/UiAnimViewNewSequenceDialog.cpp" line="42"/>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/Animation/UiAnimViewNewSequenceDialog.cpp" line="47"/>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/Animation/UiAnimViewNewSequenceDialog.cpp" line="58"/>
+        <source>New Sequence</source>
+        <translation>新建序列</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/Animation/UiAnimViewNewSequenceDialog.cpp" line="42"/>
+        <source>A sequence name cannot be empty!</source>
+        <translation>序列名称不能为空!</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/Animation/UiAnimViewNewSequenceDialog.cpp" line="47"/>
+        <source>A sequence name cannot contain a &apos;/&apos; character!</source>
+        <translation>序列名称不能包含 &apos;/&apos; 字符!</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/Animation/UiAnimViewNewSequenceDialog.cpp" line="58"/>
+        <source>Sequence with this name already exists!</source>
+        <translation>此名称的序列已存在!</translation>
+    </message>
 </context>
 <context>
     <name>CUiAVSequenceProps</name>
@@ -94,9 +121,232 @@
         <source>Loop</source>
         <translation>循环</translation>
     </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/Animation/UiAVSequenceProps.cpp" line="108"/>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/Animation/UiAVSequenceProps.cpp" line="113"/>
+        <source>Sequence Properties</source>
+        <translation>序列属性</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/Animation/UiAVSequenceProps.cpp" line="108"/>
+        <source>A sequence name cannot be empty!</source>
+        <translation>序列名称不能为空!</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/Animation/UiAVSequenceProps.cpp" line="113"/>
+        <source>A sequence name cannot contain a &apos;/&apos; character!</source>
+        <translation>序列名称不能包含 &apos;/&apos; 字符!</translation>
+    </message>
 </context>
 <context>
     <name>CUiAnimViewDialog</name>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/Animation/UiAnimViewDialog.cpp" line="235"/>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/Animation/UiAnimViewDialog.cpp" line="308"/>
+        <source>Curve Editor</source>
+        <translation>曲线编辑器</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/Animation/UiAnimViewDialog.cpp" line="263"/>
+        <source>Sequence/Node:</source>
+        <translation>序列/节点:</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/Animation/UiAnimViewDialog.cpp" line="264"/>
+        <source>Add Sequence</source>
+        <translation>添加序列</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/Animation/UiAnimViewDialog.cpp" line="268"/>
+        <source>Delete Sequence</source>
+        <translation>删除序列</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/Animation/UiAnimViewDialog.cpp" line="272"/>
+        <source>Edit Sequence</source>
+        <translation>编辑序列</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/Animation/UiAnimViewDialog.cpp" line="281"/>
+        <source>Add Selected Node</source>
+        <translation>添加所选节点</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/Animation/UiAnimViewDialog.cpp" line="286"/>
+        <source>Find</source>
+        <translation>查找</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/Animation/UiAnimViewDialog.cpp" line="291"/>
+        <source>Toggle Disable</source>
+        <translation>切换禁用</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/Animation/UiAnimViewDialog.cpp" line="300"/>
+        <source>View:</source>
+        <translation>视图:</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/Animation/UiAnimViewDialog.cpp" line="301"/>
+        <source>Track Editor</source>
+        <translation>轨迹百年机器</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/Animation/UiAnimViewDialog.cpp" line="314"/>
+        <source>Both</source>
+        <translation>两者</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/Animation/UiAnimViewDialog.cpp" line="324"/>
+        <source>Go to start of sequence</source>
+        <translation>转到序列开头</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/Animation/UiAnimViewDialog.cpp" line="331"/>
+        <source>Play Animation</source>
+        <translation>播放动画</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/Animation/UiAnimViewDialog.cpp" line="369"/>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/Animation/UiAnimViewDialog.cpp" line="377"/>
+        <source>Stop</source>
+        <translation>停止</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/Animation/UiAnimViewDialog.cpp" line="380"/>
+        <source>Stop with Hard Reset</source>
+        <translation>硬重置停止</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/Animation/UiAnimViewDialog.cpp" line="387"/>
+        <source>Pause</source>
+        <translation>暂停</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/Animation/UiAnimViewDialog.cpp" line="392"/>
+        <source>Go to end of sequence</source>
+        <translation>转到序列结尾</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/Animation/UiAnimViewDialog.cpp" line="397"/>
+        <source>Start Animation Recording</source>
+        <translation>开始动画录制</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/Animation/UiAnimViewDialog.cpp" line="404"/>
+        <source>Loop</source>
+        <translation>循环</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/Animation/UiAnimViewDialog.cpp" line="415"/>
+        <source>Undo</source>
+        <translation>撤销</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/Animation/UiAnimViewDialog.cpp" line="422"/>
+        <source>Redo</source>
+        <translation>恢复</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/Animation/UiAnimViewDialog.cpp" line="436"/>
+        <source>Go to previous key</source>
+        <translation>转到上一关键帧</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/Animation/UiAnimViewDialog.cpp" line="440"/>
+        <source>Go to next key</source>
+        <translation>转到下一关键帧</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/Animation/UiAnimViewDialog.cpp" line="445"/>
+        <source>Move Keys</source>
+        <translation>移动关键帧</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/Animation/UiAnimViewDialog.cpp" line="449"/>
+        <source>Slide Keys</source>
+        <translation>滑动关键帧</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/Animation/UiAnimViewDialog.cpp" line="453"/>
+        <source>Scale Keys</source>
+        <translation>缩放关键帧</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/Animation/UiAnimViewDialog.cpp" line="457"/>
+        <source>Add Keys</source>
+        <translation>添加关键帧</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/Animation/UiAnimViewDialog.cpp" line="461"/>
+        <source>Delete Keys</source>
+        <translation>删除关键帧</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/Animation/UiAnimViewDialog.cpp" line="466"/>
+        <source>No Snapping</source>
+        <translation>无对齐</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/Animation/UiAnimViewDialog.cpp" line="470"/>
+        <source>Magnet Snapping</source>
+        <translation>磁性对齐</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/Animation/UiAnimViewDialog.cpp" line="474"/>
+        <source>Frame Snapping</source>
+        <translation>帧对齐</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/Animation/UiAnimViewDialog.cpp" line="478"/>
+        <source>Tick Snapping</source>
+        <translation>Tick对齐</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/Animation/UiAnimViewDialog.cpp" line="509"/>
+        <source>&amp;Sequence</source>
+        <translation>&amp;序列</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/Animation/UiAnimViewDialog.cpp" line="510"/>
+        <source>New Sequence...</source>
+        <translation>新建序列...</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/Animation/UiAnimViewDialog.cpp" line="515"/>
+        <source>&amp;View</source>
+        <translation>&amp;视图</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/Animation/UiAnimViewDialog.cpp" line="520"/>
+        <source>Tick in Seconds</source>
+        <translation>以秒为单位</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/Animation/UiAnimViewDialog.cpp" line="525"/>
+        <source>Tick in Frames</source>
+        <translation>以帧为单位</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/Animation/UiAnimViewDialog.cpp" line="535"/>
+        <source>T&amp;ools</source>
+        <translation>工&amp;具</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/Animation/UiAnimViewDialog.cpp" line="536"/>
+        <source>Customize &amp;Track Colors...</source>
+        <translation>自定义&amp;轨迹颜色...</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/Animation/UiAnimViewDialog.cpp" line="971"/>
+        <source>UI Animation</source>
+        <translation>UI动画</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/Animation/UiAnimViewDialog.cpp" line="971"/>
+        <source>Delete current sequence?</source>
+        <translation>删除当前序列?</translation>
+    </message>
     <message>
         <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/Animation/UiAnimViewDialog.cpp" line="1390"/>
         <source>Frame rate for frame snapping</source>
@@ -279,6 +529,320 @@ Do you wish to recover them?</source>
 
 想恢复它们吗？</translation>
     </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/EditorMenu.cpp" line="74"/>
+        <source>&amp;File</source>
+        <translation>&amp;文件</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/EditorMenu.cpp" line="79"/>
+        <source>&amp;New Canvas</source>
+        <translation>&amp;新建画布</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/EditorMenu.cpp" line="91"/>
+        <source>&amp;Open Canvas...</source>
+        <translation>&amp;打开画布...</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/EditorMenu.cpp" line="187"/>
+        <source>&amp;Recent Files</source>
+        <translation>&amp;最近的文件</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/EditorMenu.cpp" line="208"/>
+        <source>Clear Recent Files</source>
+        <translation>清除最近的文件</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/EditorMenu.cpp" line="260"/>
+        <source>Select &amp;All</source>
+        <translation>全&amp;选</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/EditorMenu.cpp" line="278"/>
+        <source>Cu&amp;t</source>
+        <translation>剪&amp;切</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/EditorMenu.cpp" line="293"/>
+        <source>&amp;Copy</source>
+        <translation>&amp;复制</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/EditorMenu.cpp" line="310"/>
+        <source>&amp;Paste as sibling</source>
+        <translation>&amp;粘贴为兄弟</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/EditorMenu.cpp" line="310"/>
+        <source>&amp;Paste</source>
+        <translation>&amp;粘贴</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/EditorMenu.cpp" line="325"/>
+        <source>Paste as c&amp;hild</source>
+        <translation>粘贴为&amp;子级</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/EditorMenu.cpp" line="344"/>
+        <source>[DEBUG] View undo stack</source>
+        <translation>[调试] 查看撤销堆栈</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/EditorMenu.cpp" line="359"/>
+        <source>[DEBUG] Undo stack</source>
+        <translation>[调试] 撤销堆栈</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/EditorMenu.cpp" line="372"/>
+        <source>&amp;Find Elements...</source>
+        <translation>&amp;查找元素...</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/EditorMenu.cpp" line="389"/>
+        <source>Delete</source>
+        <translation>删除删除</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/EditorMenu.cpp" line="404"/>
+        <source>Align</source>
+        <translation>对齐</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/EditorMenu.cpp" line="412"/>
+        <source>Top Edges</source>
+        <translation>顶边</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/EditorMenu.cpp" line="415"/>
+        <source>Vertical Centers</source>
+        <translation>垂直中心</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/EditorMenu.cpp" line="418"/>
+        <source>Bottom Edges</source>
+        <translation>底边</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/EditorMenu.cpp" line="421"/>
+        <source>Left Edges</source>
+        <translation>左边</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/EditorMenu.cpp" line="424"/>
+        <source>Horizontal Centers</source>
+        <translation>水平中心</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/EditorMenu.cpp" line="427"/>
+        <source>Right Edges</source>
+        <translation>右边</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/EditorMenu.cpp" line="435"/>
+        <source>&amp;Edit</source>
+        <translation>&amp;编辑</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/EditorMenu.cpp" line="443"/>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/EditorMenu.cpp" line="847"/>
+        <source>&amp;View</source>
+        <translation>&amp;视图</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/EditorMenu.cpp" line="452"/>
+        <source>Zoom &amp;In</source>
+        <translation>放&amp;大</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/EditorMenu.cpp" line="468"/>
+        <source>Zoom &amp;Out</source>
+        <translation>缩&amp;小</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/EditorMenu.cpp" line="484"/>
+        <source>&amp;Fit Canvas</source>
+        <translation>&amp;适应画布</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/EditorMenu.cpp" line="503"/>
+        <source>Actual &amp;Size</source>
+        <translation>实际&amp;大小</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/EditorMenu.cpp" line="556"/>
+        <source>&amp;Rulers</source>
+        <translation>&amp;标尺</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/EditorMenu.cpp" line="574"/>
+        <source>&amp;Guides</source>
+        <translation>&amp;参考线</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/EditorMenu.cpp" line="592"/>
+        <source>Lock Guides</source>
+        <translation>锁定参考线</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/EditorMenu.cpp" line="611"/>
+        <source>Clear Guides</source>
+        <translation>清除参考线</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/EditorMenu.cpp" line="630"/>
+        <source>Draw &amp;Borders on Unselected Elements</source>
+        <translation>在非选中元素上&amp;绘制边框</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/EditorMenu.cpp" line="636"/>
+        <source>&amp;Draw Borders</source>
+        <translation>&amp;绘制边框</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/EditorMenu.cpp" line="654"/>
+        <source>Include &amp;Visual Elements</source>
+        <translation>包含&amp;可视元素</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/EditorMenu.cpp" line="671"/>
+        <source>Include &amp;Parent Elements</source>
+        <translation>包含&amp;父级元素</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/EditorMenu.cpp" line="688"/>
+        <source>Include &amp;Hidden Elements</source>
+        <translation>包含&amp;隐藏元素</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/EditorMenu.cpp" line="708"/>
+        <source>Reload All Fonts</source>
+        <translation>重新加载所有字体</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/EditorMenu.cpp" line="727"/>
+        <source>Set Current &amp;Language</source>
+        <translation>设置当前&amp;语言</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/EditorMenu.cpp" line="818"/>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/EditorMenu.cpp" line="826"/>
+        <source>&amp;Preview</source>
+        <translation>&amp;预览</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/EditorMenu.cpp" line="830"/>
+        <source>End &amp;Preview</source>
+        <translation>结束&amp;预览</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/EditorMenu.cpp" line="885"/>
+        <source>&amp;Help</source>
+        <translation>&amp;帮助</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/EditorMenu.cpp" line="890"/>
+        <source>&amp;Documentation</source>
+        <translation>&amp;文档</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/EditorMenu.cpp" line="905"/>
+        <source>&amp;Tutorials</source>
+        <translation>&amp;教程</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/EditorMenu.cpp" line="920"/>
+        <source>&amp;Forum</source>
+        <translation>&amp;论坛</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/EditorMenu.cpp" line="935"/>
+        <source>&amp;Give Us Feedback</source>
+        <translation>&amp;向我们反馈</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/EditorMenu.cpp" line="1018"/>
+        <source>Coordinate System Cycle</source>
+        <translation>坐标系循环</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/EditorMenu.cpp" line="1031"/>
+        <source>Snap to Grid Toggle</source>
+        <translation>切换对齐到网格</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/EditorMenu.cpp" line="1056"/>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/EditorMenu.cpp" line="1165"/>
+        <source>&amp;Save </source>
+        <translation>&amp;保存 </translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/EditorMenu.cpp" line="1056"/>
+        <source>Canvas</source>
+        <translation>画布</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/EditorMenu.cpp" line="1101"/>
+        <source>Save Canvas &amp;As...</source>
+        <translation>另存画布&amp;为...</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/EditorMenu.cpp" line="1145"/>
+        <source>&amp;Save Slice (slice entity not found)</source>
+        <translation>&amp;保存 Slice (slice 实体未找到)</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/EditorMenu.cpp" line="1158"/>
+        <source>&amp;Save Slice (slice entity is no longer an instance)</source>
+        <translation>&amp;保存 Slice (slice 实体不再是实例)</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/EditorMenu.cpp" line="1187"/>
+        <source>Save All Canvases</source>
+        <translation>保存所有画布</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/EditorMenu.cpp" line="1221"/>
+        <source>&amp;Close Canvas</source>
+        <translation>&amp;关闭画布</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/EditorMenu.cpp" line="1240"/>
+        <source>Close All but This Canvas</source>
+        <translation>除此画布之外关闭所有</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/EditorMenu.cpp" line="1240"/>
+        <source>Close All but Active Canvas</source>
+        <translation>除活动画布之外关闭所有</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/EditorMenu.cpp" line="1255"/>
+        <source>Close All Canvases</source>
+        <translation>关闭所有画布</translation>
+    </message>
+</context>
+<context>
+    <name>EnterPreviewToolbar</name>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/EnterPreviewToolbar.cpp" line="28"/>
+        <source>Preview</source>
+        <translation>预览</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/EnterPreviewToolbar.cpp" line="37"/>
+        <source>Switch to Preview mode</source>
+        <translation>切换到预览模式</translation>
+    </message>
+</context>
+<context>
+    <name>FeedbackDialog</name>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/FeedbackDialog.cpp" line="26"/>
+        <source>Give Us Feedback</source>
+        <translation>向我们反馈</translation>
+    </message>
 </context>
 <context>
     <name>FindEntityWidget</name>
@@ -296,6 +860,57 @@ Do you wish to recover them?</source>
         <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/FindEntityWidget.cpp" line="173"/>
         <source>Cancel</source>
         <translation>取消</translation>
+    </message>
+</context>
+<context>
+    <name>MainToolbar</name>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/MainToolbar.cpp" line="27"/>
+        <source>Zoom:</source>
+        <translation>缩放:</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/MainToolbar.cpp" line="33"/>
+        <source>Canvas zoom percentage</source>
+        <translation>画布缩放比例</translation>
+    </message>
+</context>
+<context>
+    <name>PreviewToolbar</name>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/PreviewToolbar.cpp" line="26"/>
+        <source>The current size of the viewport</source>
+        <translation>视口的当前大小</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/PreviewToolbar.cpp" line="31"/>
+        <source>Preview canvas size: </source>
+        <translation>预览画布大小: </translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/PreviewToolbar.cpp" line="37"/>
+        <source>The scale used to fit the canvas in the viewport</source>
+        <translation>用于在视口中调整画布的比例</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/PreviewToolbar.cpp" line="46"/>
+        <source>End Preview</source>
+        <translation>结束预览</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/PreviewToolbar.cpp" line="62"/>
+        <source>Switch back to Edit mode</source>
+        <translation>切换回编辑模式</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/PreviewToolbar.cpp" line="76"/>
+        <source>Viewport size: %1 x %2</source>
+        <translation>视口大小: %1 x %2</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/PreviewToolbar.cpp" line="82"/>
+        <source>Canvas scale: %1%</source>
+        <translation>画布比例: %1%</translation>
     </message>
 </context>
 <context>
@@ -446,6 +1061,16 @@ Are you sure you want to detach the selected instances?</source>
         <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/UiSliceManager.cpp" line="1016"/>
         <source>Cancel</source>
         <translation>取消</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/FeedbackDialog.cpp" line="16"/>
+        <source>&lt;h3&gt;We love getting feedback from our customers.&lt;/h3&gt;Feedback from our community helps us to constantly improve the UI Editor.&lt;br/&gt;&lt;br/&gt;In addition to using our forums and AWS support channels, you can always email us with your comments and suggestions at &lt;a href=&quot;mailto:lumberyard-feedback@amazon.com?subject=UI Editor Feedback&quot; style=&quot;color: #4285F4;&quot;&gt;lumberyard-feedback@amazon.com&lt;/a&gt;.  While we do not respond to everyone who submits feedback, we read everything and aspire to use your feedback to improve the UI Editor for everyone.</source>
+        <translation>&lt;h3&gt;我们喜欢从客户那里获得反馈。&lt;/h3&gt;来自社区的反馈有助于我们不断改进UI编辑器。&lt;br/&gt;&lt;br/&gt;除了使用我们的论坛和AWS支持渠道，您还可以随时通过&lt;a href=&quot;mailto:lumberyard-feedback@amazon.com?subject=UI Editor Feedback&quot; style=&quot;color: #4285F4;&quot;&gt;向我们发送您的意见和建议。虽然我们没有回复提交反馈的每个人，但我们会阅读所有内容并希望使用您的反馈来改进每个人的UI编辑器。</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/NewElementToolbarSection.cpp" line="21"/>
+        <source>New...</source>
+        <translation>新建...</translation>
     </message>
 </context>
 <context>

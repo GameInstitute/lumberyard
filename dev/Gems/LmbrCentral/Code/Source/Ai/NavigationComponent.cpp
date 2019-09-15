@@ -20,6 +20,7 @@
 #include <LmbrCentral/Physics/CryCharacterPhysicsBus.h>
 #include <LmbrCentral/Physics/CryPhysicsComponentRequestBus.h>
 #include <AzCore/RTTI/BehaviorContext.h>
+#include <AzFramework/Physics/CharacterBus.h>
 #ifdef LMBR_CENTRAL_EDITOR
 #include <AzToolsFramework/API/ToolsApplicationAPI.h>
 #endif
@@ -646,6 +647,8 @@ namespace LmbrCentral
         {
             if (m_movesPhysically)
             {
+				Physics::CharacterRequestBus::Event(GetEntityId(), &Physics::CharacterRequestBus::Events::TryRelativeMove, velocity * deltaTime, deltaTime);
+
                 if (CryCharacterPhysicsRequestBus::FindFirstHandler(GetEntityId()))
                 {
                     EBUS_EVENT_ID(GetEntityId(), LmbrCentral::CryCharacterPhysicsRequestBus, RequestVelocity, velocity, 0);

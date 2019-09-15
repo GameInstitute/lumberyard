@@ -23,18 +23,18 @@ PreviewToolbar::PreviewToolbar(EditorWindow* parent)
 
     // Add the current viewport resolution label
     addSeparator();
-    m_viewportSizeLabel->setToolTip(QString("The current size of the viewport"));
+    m_viewportSizeLabel->setToolTip(tr("The current size of the viewport"));
     addWidget(m_viewportSizeLabel);
 
     // Add the combo box to select a canvas size
     addSeparator();
-    QLabel* canvasSizeLabel = new QLabel("Preview canvas size: ", parent);
+    QLabel* canvasSizeLabel = new QLabel(tr("Preview canvas size: "), parent);
     addWidget(canvasSizeLabel);
     m_canvasSizeToolbarSection.reset(new PreviewCanvasSizeToolbarSection(this, false));
 
     // Add the canvas scale label
     addSeparator();
-    m_canvasScaleLabel->setToolTip(QString("The scale used to fit the canvas in the viewport"));
+    m_canvasScaleLabel->setToolTip(tr("The scale used to fit the canvas in the viewport"));
     addWidget(m_canvasScaleLabel);
 
     // Add a spacer widget to force the Edit button to be on the right of the toolbar area
@@ -43,7 +43,7 @@ PreviewToolbar::PreviewToolbar(EditorWindow* parent)
     addWidget(spacer);
 
     // Add the Edit button to the right of the toolbar
-    m_editButton = new QPushButton("End Preview", parent);
+    m_editButton = new QPushButton(tr("End Preview"), parent);
     QObject::connect(m_editButton,
         &QPushButton::clicked,
         parent,
@@ -59,7 +59,7 @@ PreviewToolbar::PreviewToolbar(EditorWindow* parent)
         });
     m_editButton->setEnabled(parent->GetEditorMode() == UiEditorMode::Preview);
 
-    m_editButton->setToolTip(QString("Switch back to Edit mode"));
+    m_editButton->setToolTip(tr("Switch back to Edit mode"));
 
     // this uses the "primary button" style from the global style sheet
     m_editButton->setProperty("class", "Primary");
@@ -73,13 +73,13 @@ PreviewToolbar::PreviewToolbar(EditorWindow* parent)
 
 void PreviewToolbar::ViewportHasResized(QResizeEvent* ev)
 {
-    m_viewportSizeLabel->setText(QString("Viewport size: %1 x %2").arg(QString::number(ev->size().width()),
+    m_viewportSizeLabel->setText(QString(tr("Viewport size: %1 x %2")).arg(QString::number(ev->size().width()),
             QString::number(ev->size().height())));
 }
 
 void PreviewToolbar::UpdatePreviewCanvasScale(float scale)
 {
-    m_canvasScaleLabel->setText(QString("Canvas scale: %1%").arg(QString::number(scale * 100.0f)));
+    m_canvasScaleLabel->setText(QString(tr("Canvas scale: %1%")).arg(QString::number(scale * 100.0f)));
 }
 
 #include <PreviewToolbar.moc>
