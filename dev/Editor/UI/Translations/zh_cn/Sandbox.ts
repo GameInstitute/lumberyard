@@ -7372,12 +7372,12 @@ Plain Text: %1</translation>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/SequenceBatchRenderDialog.cpp" line="231"/>
         <source>Frame</source>
-        <translation type="unfinished">帧</translation>
+        <translation>帧</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/SequenceBatchRenderDialog.cpp" line="234"/>
         <source>Not running</source>
-        <translation type="unfinished"></translation>
+        <translation>未运行</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/SequenceBatchRenderDialog.cpp" line="242"/>
@@ -7476,7 +7476,7 @@ Plain Text: %1</translation>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/SequenceBatchRenderDialog.cpp" line="1414"/>
         <source>Render Batch Files (*.batch)</source>
-        <translation type="unfinished"></translation>
+        <translation>渲染批处理文件 (*.batch)</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/SequenceBatchRenderDialog.cpp" line="1476"/>
@@ -8861,285 +8861,285 @@ Do you want to re - assign this shortcut ?</source>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewDialog.cpp" line="253"/>
         <source>Key</source>
-        <translation type="unfinished"></translation>
+        <translation>关键帧</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewDialog.cpp" line="261"/>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewDialog.cpp" line="393"/>
         <source>Curve Editor</source>
-        <translation type="unfinished"></translation>
+        <translation>曲线编辑器</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewDialog.cpp" line="320"/>
         <source>Sequence/Node:</source>
-        <translation type="unfinished"></translation>
+        <translation>序列/节点:</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewDialog.cpp" line="321"/>
         <source>Add Sequence</source>
-        <translation type="unfinished"></translation>
+        <translation>添加序列</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewDialog.cpp" line="325"/>
         <source>Delete Sequence</source>
-        <translation type="unfinished"></translation>
+        <translation>删除序列</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewDialog.cpp" line="329"/>
         <source>Edit Sequence Properties</source>
-        <translation type="unfinished"></translation>
+        <translation>编辑序列属性</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewDialog.cpp" line="335"/>
         <source>Select the sequence</source>
-        <translation type="unfinished"></translation>
+        <translation>编辑序列</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewDialog.cpp" line="342"/>
         <source>Add Selected Node</source>
-        <translation type="unfinished"></translation>
+        <translation>添加所选节点</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewDialog.cpp" line="354"/>
         <source>Add Director Node</source>
-        <translation type="unfinished"></translation>
+        <translation>添加导演节点</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewDialog.cpp" line="358"/>
         <source>Find</source>
-        <translation type="unfinished">查找</translation>
+        <translation>查找</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewDialog.cpp" line="363"/>
         <source>Toggle Disable</source>
-        <translation type="unfinished"></translation>
+        <translation>切换禁用</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewDialog.cpp" line="368"/>
         <source>Toggle Mute</source>
-        <translation type="unfinished"></translation>
+        <translation>切换静音</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewDialog.cpp" line="373"/>
         <source>Mute Selected Tracks</source>
-        <translation type="unfinished"></translation>
+        <translation>静音所选轨迹</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewDialog.cpp" line="377"/>
         <source>Unmute Selected Tracks</source>
-        <translation type="unfinished"></translation>
+        <translation>取消静音所选轨迹</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewDialog.cpp" line="385"/>
         <source>View:</source>
-        <translation type="unfinished"></translation>
+        <translation>视图:</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewDialog.cpp" line="386"/>
         <source>Track Editor</source>
-        <translation type="unfinished"></translation>
+        <translation>轨迹编辑器</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewDialog.cpp" line="399"/>
         <source>Both</source>
-        <translation type="unfinished"></translation>
+        <translation>两者</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewDialog.cpp" line="408"/>
         <source>Play:</source>
-        <translation type="unfinished"></translation>
+        <translation>播放:</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewDialog.cpp" line="409"/>
         <source>Go to start of sequence</source>
-        <translation type="unfinished"></translation>
+        <translation>转到序列开头</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewDialog.cpp" line="416"/>
         <source>Play Animation</source>
-        <translation type="unfinished"></translation>
+        <translation>播放动画</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewDialog.cpp" line="453"/>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewDialog.cpp" line="461"/>
         <source>Stop</source>
-        <translation type="unfinished">停止</translation>
+        <translation>停止停止</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewDialog.cpp" line="464"/>
         <source>Stop with Hard Reset</source>
-        <translation type="unfinished"></translation>
+        <translation>硬重置停止</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewDialog.cpp" line="471"/>
         <source>Pause</source>
-        <translation type="unfinished"></translation>
+        <translation>暂停</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewDialog.cpp" line="476"/>
         <source>Go to end of sequence</source>
-        <translation type="unfinished"></translation>
+        <translation>转到序列结尾</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewDialog.cpp" line="481"/>
         <source>Start Animation Recording</source>
-        <translation type="unfinished"></translation>
+        <translation>开始动画录制</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewDialog.cpp" line="489"/>
         <source>Start Auto Recording</source>
-        <translation type="unfinished"></translation>
+        <translation>开始自动录制</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewDialog.cpp" line="504"/>
         <source> 1 sec</source>
-        <translation type="unfinished"></translation>
+        <translation> 1 秒</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewDialog.cpp" line="508"/>
         <source>1/%1 sec</source>
-        <translation type="unfinished"></translation>
+        <translation>1/%1 秒</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewDialog.cpp" line="520"/>
         <source>Loop</source>
-        <translation type="unfinished">循环</translation>
+        <translation>循环</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewDialog.cpp" line="528"/>
         <source>Frame Rate</source>
-        <translation type="unfinished"></translation>
+        <translation>帧率</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewDialog.cpp" line="536"/>
         <source>Undo</source>
-        <translation type="unfinished">撤销</translation>
+        <translation>撤销</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewDialog.cpp" line="543"/>
         <source>Redo</source>
-        <translation type="unfinished">恢复</translation>
+        <translation>恢复</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewDialog.cpp" line="556"/>
         <source>Keys:</source>
-        <translation type="unfinished"></translation>
+        <translation>关键帧:</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewDialog.cpp" line="557"/>
         <source>Go to previous key</source>
-        <translation type="unfinished"></translation>
+        <translation>转到上一关键帧</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewDialog.cpp" line="561"/>
         <source>Go to next key</source>
-        <translation type="unfinished"></translation>
+        <translation>转到下一关键帧</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewDialog.cpp" line="566"/>
         <source>Move Keys</source>
-        <translation type="unfinished"></translation>
+        <translation>移动关键帧</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewDialog.cpp" line="570"/>
         <source>Slide Keys</source>
-        <translation type="unfinished"></translation>
+        <translation>滑动关键帧</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewDialog.cpp" line="574"/>
         <source>Scale Keys</source>
-        <translation type="unfinished"></translation>
+        <translation>缩放关键帧</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewDialog.cpp" line="578"/>
         <source>Add Keys</source>
-        <translation type="unfinished"></translation>
+        <translation>添加关键帧</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewDialog.cpp" line="582"/>
         <source>Delete Keys</source>
-        <translation type="unfinished"></translation>
+        <translation>删除关键帧</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewDialog.cpp" line="587"/>
         <source>No Snapping</source>
-        <translation type="unfinished"></translation>
+        <translation>无对齐</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewDialog.cpp" line="591"/>
         <source>Magnet Snapping</source>
-        <translation type="unfinished"></translation>
+        <translation>磁性对齐</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewDialog.cpp" line="595"/>
         <source>Frame Snapping</source>
-        <translation type="unfinished"></translation>
+        <translation>帧对齐</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewDialog.cpp" line="599"/>
         <source>Tick Snapping</source>
-        <translation type="unfinished"></translation>
+        <translation>Tick对齐</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewDialog.cpp" line="604"/>
         <source>Sync Selected Entity Nodes to Base Position</source>
-        <translation type="unfinished"></translation>
+        <translation>将所选实体节点同步到基准位置</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewDialog.cpp" line="608"/>
         <source>Sync Selected Entity Nodes from Base Position</source>
-        <translation type="unfinished"></translation>
+        <translation>将基准位置同步到所选实体节点</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewDialog.cpp" line="643"/>
         <source>&amp;Sequence</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;序列</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewDialog.cpp" line="644"/>
         <source>New Sequence...</source>
-        <translation type="unfinished"></translation>
+        <translation>新建序列...</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewDialog.cpp" line="649"/>
         <source>&amp;View</source>
-        <translation type="unfinished">&amp;视图</translation>
+        <translation>&amp;视图</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewDialog.cpp" line="654"/>
         <source>Tick in Seconds</source>
-        <translation type="unfinished"></translation>
+        <translation>以秒为单位</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewDialog.cpp" line="659"/>
         <source>Tick in Frames</source>
-        <translation type="unfinished"></translation>
+        <translation>以帧为单位</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewDialog.cpp" line="665"/>
         <source>T&amp;ools</source>
-        <translation type="unfinished"></translation>
+        <translation>工&amp;具</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewDialog.cpp" line="666"/>
         <source>Render Output...</source>
-        <translation type="unfinished"></translation>
+        <translation>渲染输出...</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewDialog.cpp" line="670"/>
         <source>Customize &amp;Track Colors...</source>
-        <translation type="unfinished"></translation>
+        <translation>自定义&amp;轨迹颜色...</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewDialog.cpp" line="895"/>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewDialog.cpp" line="900"/>
         <source>Active Camera</source>
-        <translation type="unfinished"></translation>
+        <translation>活动摄像机</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewDialog.cpp" line="1191"/>
         <source>Delete current sequence?</source>
-        <translation type="unfinished"></translation>
+        <translation>删除当前序列?</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewDialog.cpp" line="1574"/>
@@ -9154,17 +9154,17 @@ Do you want to re - assign this shortcut ?</source>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewDialog.cpp" line="2049"/>
         <source>Add </source>
-        <translation type="unfinished"></translation>
+        <translation>添加 </translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewDialog.cpp" line="2049"/>
         <source> Track</source>
-        <translation type="unfinished"></translation>
+        <translation> 轨迹</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewDialog.cpp" line="2061"/>
         <source>Tracks:</source>
-        <translation type="unfinished"></translation>
+        <translation>轨迹:</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewDialog.cpp" line="2320"/>
@@ -9309,271 +9309,271 @@ Please reduce the length.</source>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewNodes.cpp" line="1844"/>
         <source>Create Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>创建文件夹</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewNodes.cpp" line="1861"/>
         <source>Add Current Layer</source>
-        <translation type="unfinished"></translation>
+        <translation>添加当前图层</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewNodes.cpp" line="1866"/>
         <source>Add Radial Blur Node</source>
-        <translation type="unfinished"></translation>
+        <translation>添加径向模糊节点</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewNodes.cpp" line="1871"/>
         <source>Add Color Correction Node</source>
-        <translation type="unfinished"></translation>
+        <translation>添加颜色校正节点</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewNodes.cpp" line="1876"/>
         <source>Add Depth of Field Node</source>
-        <translation type="unfinished"></translation>
+        <translation>添加景深节点</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewNodes.cpp" line="1881"/>
         <source>Add Screen Fader</source>
-        <translation type="unfinished"></translation>
+        <translation>添加屏幕淡入淡出</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewNodes.cpp" line="1886"/>
         <source>Add Shadows Setup Node</source>
-        <translation type="unfinished"></translation>
+        <translation>添加阴影设置节点</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewNodes.cpp" line="1891"/>
         <source>Add Environment Node</source>
-        <translation type="unfinished"></translation>
+        <translation>添加环境节点</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewNodes.cpp" line="1897"/>
         <source>Add Director(Scene) Node</source>
-        <translation type="unfinished"></translation>
+        <translation>添加导演(场景)节点</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewNodes.cpp" line="1900"/>
         <source>Add Comment Node</source>
-        <translation type="unfinished"></translation>
+        <translation>添加注释节点</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewNodes.cpp" line="1901"/>
         <source>Add Console Variable Node</source>
-        <translation type="unfinished"></translation>
+        <translation>添加控制台变量节点</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewNodes.cpp" line="1902"/>
         <source>Add Script Variable Node</source>
-        <translation type="unfinished"></translation>
+        <translation>添加脚本变量节点</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewNodes.cpp" line="1903"/>
         <source>Add Material Node</source>
-        <translation type="unfinished"></translation>
+        <translation>添加材质节点</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewNodes.cpp" line="1904"/>
         <source>Add Event Node</source>
-        <translation type="unfinished"></translation>
+        <translation>添加事件节点</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewNodes.cpp" line="1963"/>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewNodes.cpp" line="1972"/>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewNodes.cpp" line="2275"/>
         <source>Select In Viewport</source>
-        <translation type="unfinished"></translation>
+        <translation>在视口中选中</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewNodes.cpp" line="1976"/>
         <source>Set As View Camera</source>
-        <translation type="unfinished"></translation>
+        <translation>设置为视图摄像机</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewNodes.cpp" line="1989"/>
         <source>Copy</source>
-        <translation type="unfinished">复制</translation>
+        <translation>复制</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewNodes.cpp" line="1995"/>
         <source>Paste</source>
-        <translation type="unfinished">粘贴</translation>
+        <translation>粘贴</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewNodes.cpp" line="2001"/>
         <source>Delete</source>
-        <translation type="unfinished">删除</translation>
+        <translation>删除</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewNodes.cpp" line="2009"/>
         <source>Rename</source>
-        <translation type="unfinished">重命名</translation>
+        <translation>重命名</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewNodes.cpp" line="2020"/>
         <source>Copy Keys</source>
-        <translation type="unfinished">复制关键帧</translation>
+        <translation>复制关键帧</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewNodes.cpp" line="2021"/>
         <source>Copy Selected Keys</source>
-        <translation type="unfinished">复制所选关键帧</translation>
+        <translation>复制所选关键帧</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewNodes.cpp" line="2022"/>
         <source>Paste Keys</source>
-        <translation type="unfinished">粘贴关键帧</translation>
+        <translation>粘贴关键帧</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewNodes.cpp" line="2033"/>
         <source>Disabled</source>
-        <translation type="unfinished"></translation>
+        <translation>已禁用</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewNodes.cpp" line="2051"/>
         <source>Muted</source>
-        <translation type="unfinished"></translation>
+        <translation>已静音</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewNodes.cpp" line="2063"/>
         <source>Active Director</source>
-        <translation type="unfinished"></translation>
+        <translation>活动导演节点</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewNodes.cpp" line="2078"/>
         <source>Expand all</source>
-        <translation type="unfinished">展开所有</translation>
+        <translation>展开所有</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewNodes.cpp" line="2079"/>
         <source>Collapse all</source>
-        <translation type="unfinished">Collapse all</translation>
+        <translation>折叠所有</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewNodes.cpp" line="2082"/>
         <source>Expand Folders</source>
-        <translation type="unfinished"></translation>
+        <translation>展开文件夹</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewNodes.cpp" line="2083"/>
         <source>Collapse Folders</source>
-        <translation type="unfinished"></translation>
+        <translation>折叠文件夹</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewNodes.cpp" line="2084"/>
         <source>Expand Entities</source>
-        <translation type="unfinished"></translation>
+        <translation>展开实体</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewNodes.cpp" line="2085"/>
         <source>Collapse Entities</source>
-        <translation type="unfinished"></translation>
+        <translation>折叠实体</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewNodes.cpp" line="2086"/>
         <source>Expand Cameras</source>
-        <translation type="unfinished"></translation>
+        <translation>展开摄像机</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewNodes.cpp" line="2087"/>
         <source>Collapse Cameras</source>
-        <translation type="unfinished"></translation>
+        <translation>折叠摄像机</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewNodes.cpp" line="2088"/>
         <source>Expand Materials</source>
-        <translation type="unfinished"></translation>
+        <translation>展开材质</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewNodes.cpp" line="2089"/>
         <source>Collapse Materials</source>
-        <translation type="unfinished"></translation>
+        <translation>折叠材质</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewNodes.cpp" line="2090"/>
         <source>Expand Events</source>
-        <translation type="unfinished"></translation>
+        <translation>展开事件</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewNodes.cpp" line="2091"/>
         <source>Collapse Events</source>
-        <translation type="unfinished"></translation>
+        <translation>折叠事件</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewNodes.cpp" line="2093"/>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewNodes.cpp" line="2480"/>
         <source>Expand</source>
-        <translation type="unfinished">展开</translation>
+        <translation>展开</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewNodes.cpp" line="2095"/>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewNodes.cpp" line="2480"/>
         <source>Collapse</source>
-        <translation type="unfinished">折叠</translation>
+        <translation>折叠</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewNodes.cpp" line="2123"/>
         <source>Add Track</source>
-        <translation type="unfinished"></translation>
+        <translation>添加轨迹</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewNodes.cpp" line="2136"/>
         <source>Import FBX File...</source>
-        <translation type="unfinished"></translation>
+        <translation>导入FBX文件...</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewNodes.cpp" line="2137"/>
         <source>Export FBX File...</source>
-        <translation type="unfinished"></translation>
+        <translation>导出FBX文件...</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewNodes.cpp" line="2145"/>
         <source>Edit Events...</source>
-        <translation type="unfinished"></translation>
+        <translation>编辑事件...</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewNodes.cpp" line="2194"/>
         <source>Set Animation Layer</source>
-        <translation type="unfinished"></translation>
+        <translation>设置动画图层</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewNodes.cpp" line="2204"/>
         <source>Customize Track Color...</source>
-        <translation type="unfinished"></translation>
+        <translation>自定义轨迹颜色...</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewNodes.cpp" line="2207"/>
         <source>Clear Custom Track Color</source>
-        <translation type="unfinished"></translation>
+        <translation>清除自定义轨迹颜色</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewNodes.cpp" line="2216"/>
         <source>%1 Tracks</source>
-        <translation type="unfinished">%1 条轨迹</translation>
+        <translation>%1 条轨迹</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewNodes.cpp" line="2267"/>
         <source>Copy Selected Nodes</source>
-        <translation type="unfinished"></translation>
+        <translation>复制所选节点</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewNodes.cpp" line="2270"/>
         <source>Remove Selected Nodes/Tracks</source>
-        <translation type="unfinished"></translation>
+        <translation>移除所选节点/轨迹</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewNodes.cpp" line="2286"/>
         <source>Import From FBX File</source>
-        <translation type="unfinished"></translation>
+        <translation>从FBX文件导入</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewNodes.cpp" line="2287"/>
         <source>Save To FBX File</source>
-        <translation type="unfinished"></translation>
+        <translation>保存到FBX文件</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewNodes.cpp" line="2727"/>
         <source>Layer #%1</source>
-        <translation type="unfinished"></translation>
+        <translation>图层 #%1</translation>
     </message>
 </context>
 <context>
@@ -9591,12 +9591,12 @@ Please reduce the length.</source>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewKeyPropertiesDlg.cpp" line="381"/>
         <source>There is an existing key at the specified time. If you continue, the existing key will be removed.</source>
-        <translation type="unfinished"></translation>
+        <translation>在指定时间存在关键帧。 如果继续，将删除现有关键帧。</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Editor/TrackView/TrackViewKeyPropertiesDlg.cpp" line="382"/>
         <source>Overwrite Existing Key?</source>
-        <translation type="unfinished"></translation>
+        <translation>覆盖现有关键帧?</translation>
     </message>
 </context>
 <context>
