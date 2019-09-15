@@ -189,7 +189,7 @@
     <message>
         <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/Animation/UiAnimViewDialog.cpp" line="301"/>
         <source>Track Editor</source>
-        <translation>轨迹百年机器</translation>
+        <translation>轨迹编辑器</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/Plugins/UiCanvasEditor/Animation/UiAnimViewDialog.cpp" line="314"/>
