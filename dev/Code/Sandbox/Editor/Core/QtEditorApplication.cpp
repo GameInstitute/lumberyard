@@ -709,9 +709,60 @@ namespace Editor
 
     void EditorQtApplication::InstallEditorTranslators()
     {
-        m_editorTranslator =        CreateAndInitializeTranslator("editor_en-us.qm", ":/Translations");
-        m_flowgraphTranslator =     CreateAndInitializeTranslator("flowgraph_en-us.qm", ":/Translations");
-        m_assetBrowserTranslator =  CreateAndInitializeTranslator("assetbrowser_en-us.qm", ":/Translations");
+		const char* engineRootPath = nullptr;
+		EBUS_EVENT_RESULT(engineRootPath, AzToolsFramework::ToolsApplicationRequestBus, GetEngineRootPath);
+		string engineRootDir = PathUtil::RemoveSlash(engineRootPath);
+
+		QString qtTranslationFilesPath;
+		QString editorSettingsFile = engineRootDir.c_str() + QString("/editor.ini");
+		QSettings *pEditorSetting = new QSettings(editorSettingsFile, QSettings::IniFormat);
+		QString editorLang = pEditorSetting->value("/Sandbox/Language").toString();
+		if (!editorLang.isNull())
+		{
+			qtTranslationFilesPath = engineRootDir.c_str() + QString("/Editor/UI/Translations/") + editorLang;
+			CryWarning(VALIDATOR_MODULE_EDITOR, VALIDATOR_WARNING, "[UI i18n] Read editor.ini successfully, editor folder is %s", qtTranslationFilesPath.toLocal8Bit().constData());
+		}
+		else
+		{
+			qtTranslationFilesPath = engineRootDir.c_str() + QString("/Editor/UI/Translations/") + QLocale::system().name().toLower();
+			CryWarning(VALIDATOR_MODULE_EDITOR, VALIDATOR_WARNING, "[UI i18n] Read editor.ini failed, but use system language, editor folder is %s", qtTranslationFilesPath.toLocal8Bit().constData());
+		}
+
+		// Sandbox
+		m_SandboxTranslator = CreateAndInitializeTranslator("Sandbox.qm", qtTranslationFilesPath);
+
+		// Framework
+		m_AzQtComponentsTranslator = CreateAndInitializeTranslator("AzQtComponents.qm", qtTranslationFilesPath);
+		m_AzToolsFrameworkTranslator = CreateAndInitializeTranslator("AzToolsFramework.qm", qtTranslationFilesPath);
+
+		// Plugins
+		m_ComponentEntityEditorPluginTranslator = CreateAndInitializeTranslator("ComponentEntityEditorPlugin.qm", qtTranslationFilesPath);
+		m_CryDesignerTranslator = CreateAndInitializeTranslator("CryDesigner.qm", qtTranslationFilesPath);
+		m_DeploymentToolTranslator = CreateAndInitializeTranslator("DeploymentTool.qm", qtTranslationFilesPath);
+		m_EditorAssetImporterTranslator = CreateAndInitializeTranslator("EditorAssetImporter.qm", qtTranslationFilesPath);
+		m_EditorAudioControlsEditorTranslator = CreateAndInitializeTranslator("EditorAudioControlsEditor.qm", qtTranslationFilesPath);
+		m_EditorCommonTranslator = CreateAndInitializeTranslator("EditorCommon.qm", qtTranslationFilesPath);
+		m_EditorUI_QTTranslator = CreateAndInitializeTranslator("EditorUI_QT.qm", qtTranslationFilesPath);
+		m_FBXPluginTranslator = CreateAndInitializeTranslator("FBXPlugin.qm", qtTranslationFilesPath);
+		m_MaglevControlPanelTranslator = CreateAndInitializeTranslator("MaglevControlPanel.qm", qtTranslationFilesPath);
+		m_ParticleEditorPluginTranslator = CreateAndInitializeTranslator("ParticleEditorPlugin.qm", qtTranslationFilesPath);
+		m_PerforcePluginTranslator = CreateAndInitializeTranslator("PerforcePlugin.qm", qtTranslationFilesPath);
+		m_ProjectSettingsToolTranslator = CreateAndInitializeTranslator("ProjectSettingsTool.qm", qtTranslationFilesPath);
+		m_UiCanvasEditorTranslator = CreateAndInitializeTranslator("UiCanvasEditor.qm", qtTranslationFilesPath);
+
+		// Gems
+		m_Camera = CreateAndInitializeTranslator("Camera.qm", qtTranslationFilesPath);
+		m_ImGui = CreateAndInitializeTranslator("ImGui.qm", qtTranslationFilesPath);
+		m_PhysX = CreateAndInitializeTranslator("PhysX.qm", qtTranslationFilesPath);
+		m_RenderToTexture = CreateAndInitializeTranslator("RenderToTexture.qm", qtTranslationFilesPath);
+		m_StarterGameGem = CreateAndInitializeTranslator("StarterGameGem.qm", qtTranslationFilesPath);
+		m_CloudGemDynamicContentTranslator = CreateAndInitializeTranslator("CloudGemDynamicContent.qm", qtTranslationFilesPath);
+		m_EMotionFXTranslator = CreateAndInitializeTranslator("EMotionFX.qm", qtTranslationFilesPath);
+		m_GraphCanvasTranslator = CreateAndInitializeTranslator("GraphCanvas.qm", qtTranslationFilesPath);
+		m_ImageProcessingTranslator = CreateAndInitializeTranslator("ImageProcessing.qm", qtTranslationFilesPath);
+		m_ScriptCanvasTranslator = CreateAndInitializeTranslator("ScriptCanvas.qm", qtTranslationFilesPath);
+		m_SliceFavoritesTranslator = CreateAndInitializeTranslator("SliceFavorites.qm", qtTranslationFilesPath);
+		m_SubstanceTranslator = CreateAndInitializeTranslator("Substance.qm", qtTranslationFilesPath);
     }
 
     void EditorQtApplication::DeleteTranslator(QTranslator*& translator)
@@ -723,9 +774,41 @@ namespace Editor
 
     void EditorQtApplication::UninstallEditorTranslators()
     {
-        DeleteTranslator(m_editorTranslator);
-        DeleteTranslator(m_flowgraphTranslator);
-        DeleteTranslator(m_assetBrowserTranslator);
+		// Sandbox
+		DeleteTranslator(m_SandboxTranslator);
+
+		// Framework
+		DeleteTranslator(m_AzQtComponentsTranslator);
+		DeleteTranslator(m_AzToolsFrameworkTranslator);
+
+		// Plugins 
+		DeleteTranslator(m_ComponentEntityEditorPluginTranslator);
+		DeleteTranslator(m_CryDesignerTranslator);
+		DeleteTranslator(m_DeploymentToolTranslator);
+		DeleteTranslator(m_EditorAssetImporterTranslator);
+		DeleteTranslator(m_EditorAudioControlsEditorTranslator);
+		DeleteTranslator(m_EditorCommonTranslator);
+		DeleteTranslator(m_EditorUI_QTTranslator);
+		DeleteTranslator(m_FBXPluginTranslator);
+		DeleteTranslator(m_MaglevControlPanelTranslator);
+		DeleteTranslator(m_ParticleEditorPluginTranslator);
+		DeleteTranslator(m_PerforcePluginTranslator);
+		DeleteTranslator(m_ProjectSettingsToolTranslator);
+		DeleteTranslator(m_UiCanvasEditorTranslator);
+
+		// Gems
+		DeleteTranslator(m_Camera);
+		DeleteTranslator(m_ImGui);
+		DeleteTranslator(m_PhysX);
+		DeleteTranslator(m_RenderToTexture);
+		DeleteTranslator(m_StarterGameGem);
+		DeleteTranslator(m_CloudGemDynamicContentTranslator);
+		DeleteTranslator(m_EMotionFXTranslator);
+		DeleteTranslator(m_GraphCanvasTranslator);
+		DeleteTranslator(m_ImageProcessingTranslator);
+		DeleteTranslator(m_ScriptCanvasTranslator);
+		DeleteTranslator(m_SliceFavoritesTranslator);
+		DeleteTranslator(m_SubstanceTranslator);
     }
 
     void EditorQtApplication::EnableOnIdle(bool enable)
